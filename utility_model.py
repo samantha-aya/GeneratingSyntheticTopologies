@@ -45,11 +45,18 @@ Inside the substation
 
 
 import json
+import os
 import xlrd
 import random
 import string
 
+#get input substation data from excel
+cwd = os.getcwd()
 
+#If output folder does not exist then create one
+if not os.path.exists(os.path.join(cwd,'Output\\')):
+    os.makedirs(os.path.join(cwd,'Output\\'))
+    output_folder = os.path.join(cwd,'Output\\')
 
 #Function generates a random universial device number
 def randUUIN():
@@ -99,8 +106,8 @@ def writeToFile(outputList, filePath):
     modelFile.write(json.dumps(outputList))
     modelFile.close()
 
-utilityNum = 1
-substationNumbers = [290,293,512] #get substation information from Excel or JSON
+#utilityNum = 1
+#substationNumbers = [290,293,512] #get substation information from Excel or JSON
 
 #Function is used to create a typical network mapping of a substation
 # parameters: substationNumbers = list of substation number for a utility, utilityNumber = number assigned for that utility
@@ -129,7 +136,7 @@ def generateSubstationLevel(substationNumbers,utilityNumber):
     
         substationLinks.extend([linkFirewalltoSwitch,linkSwitchtoRTU,linkRTUtoRelayA,linkRTUtoRelayB])
     
-        writeToFile(substationNodes+substationLinks,str(subNum)+"_substation")      #write nodes and links to a file; one file per substaion
+        writeToFile(substationNodes+substationLinks,os.path.join(output_folder,(str(subNum)+"_substation")))      #write nodes and links to a file; one file per substaion
     
         #ClearNodes and Links for next substation
         substationNodes = []
@@ -165,9 +172,9 @@ def generateUtilityLevel(substationNumbers, utilityNumbers):
         
             utilityLinks.append(linkUtilitytoSubstation)
     
-        writeToFile(utilityNodes+utilityLinks,str(utilityNum)+"_utility")     #write nodes and links to a file; one file per utility
+        writeToFile(utilityNodes+utilityLinks,os.path.join(output_folder,(str(utilityNum)+"_utility")))     #write nodes and links to a file; one file per utility
 
-##      writeToFile(substationNodes+substationLinks,str(utilityNum)+"_utility")     #write nodes and links to a file; one file per u  
+        ##writeToFile(substationNodes+substationLinks,str(utilityNum)+"_utility")     #write nodes and links to a file; one file per u
         utilityNodes = []
         utilityLinks = []
     
@@ -201,7 +208,7 @@ def generateRegulatoryLevel(utilityNumbers):
         
         regulatoryLinks.extend([linkRoutertoRouter,linkRoutertoFirewall,linkFirewalltoEMS])
     
-    writeToFile(regulatoryNodes+regulatoryLinks,"ERCOT_regulatory")
+    writeToFile(regulatoryNodes+regulatoryLinks,os.path.join(output_folder,"ERCOT_regulatory"))
         
         
         
