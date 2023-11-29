@@ -56,7 +56,7 @@ cwd = os.getcwd()
 #If output folder does not exist then create one
 if not os.path.exists(os.path.join(cwd,'Output\\')):
     os.makedirs(os.path.join(cwd,'Output\\'))
-    output_folder = os.path.join(cwd,'Output\\')
+output_folder = os.path.join(cwd,'Output\\')
 
 #Function generates a random universial device number
 def randUUIN():

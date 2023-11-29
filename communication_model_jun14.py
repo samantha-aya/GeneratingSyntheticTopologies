@@ -21,7 +21,7 @@ Example: Relay communication in substation X with the Main Control Center (let s
 |  Client  |      **********    ********      DACS     ********     **********     ||********|| 
 ||********||
 
-We detrmine which substation be allocated to which utility based on the clustering on distance.
+We determine which substation be allocated to which utility based on the clustering on distance.
 Each Utility is roughly controlling 10-12 Substations through different communication techniques.
 
 ||********|| DNP3 **********    ********       **********                    *****************
@@ -52,6 +52,9 @@ from collections import defaultdict
 from sklearn.cluster import KMeans
 import numpy as np
 import random
+import os
+
+cwd = os.getcwd()
 
 def isNotInNeighbors(lookingFor,list):
     for bus in list:
@@ -65,8 +68,7 @@ gmap3 = gmplot.GoogleMapPlotter(26.626, -98.1836, 9)
 gmap4 = gmplot.GoogleMapPlotter(26.626, -98.1836, 9)
 
 #sets the path for the excel file
-excelFilePath = "McAllenSubstationCoordinates.xls"
-
+excelFilePath = os.path.join(cwd, 'Input', 'McAllenSubstationCoordinates.xls')
 #create excel object in python
 excelFileObj = xlrd.open_workbook(excelFilePath)
 #get the first sheet in excel file. First sheet has substation number(NodeID), and latitude and longitude
@@ -74,7 +76,7 @@ firstSheet = excelFileObj.sheet_by_index(0)
 #gets the number of rows in fist sheet
 firstSheetLength = firstSheet.nrows
 
-# refernce Bus list
+# reference Bus list
 refBusList = []
 latList = []
 longList = []

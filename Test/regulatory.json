@@ -1,0 +1,1570 @@
+{
+    "region": "Region1",
+    "utilities": [
+        {
+            "region": "Region1",
+            "utility": "Utility1",
+            "substations": [
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility1",
+                    "substation": "Bus 2",
+                    "substation_id": 2,
+                    "latitude": 30.3334007,
+                    "longitude": -97.54395016,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 2",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub2",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 2",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 2",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 2",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 2",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 2",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 2",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.3334007,
+                            "Longitude": -97.54395016
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                },
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility1",
+                    "substation": "Bus 5",
+                    "substation_id": 5,
+                    "latitude": 30.35766383,
+                    "longitude": -97.53649316,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 5",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub5",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 5",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 5",
+                            "adminIP": "192.168.1.2",
+                            "label": "Relay2",
+                            "vlan": "VLAN1",
+                            "id": "Relay2",
+                            "busNumber": "Bus2",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 5",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 5",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 5",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 5",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 5",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.35766383,
+                            "Longitude": -97.53649316
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Relay2",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                },
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility1",
+                    "substation": "Bus 8",
+                    "substation_id": 6,
+                    "latitude": 30.34761038,
+                    "longitude": -97.46639525,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 8",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub6",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 8",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 8",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 8",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 8",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 8",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 8",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.34761038,
+                            "Longitude": -97.46639525
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                }
+            ],
+            "utility_id": "Util1",
+            "latitude": 30.346224969999998,
+            "longitude": -97.51561285666666,
+            "nodes": [],
+            "links": []
+        },
+        {
+            "region": "Region2",
+            "utility": "Utility2",
+            "substations": [
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility2",
+                    "substation": "Bus 1",
+                    "substation_id": 1,
+                    "latitude": 30.31230094,
+                    "longitude": -97.65009148,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 1",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub1",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 1",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 1",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 1",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 1",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 1",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 1",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.31230094,
+                            "Longitude": -97.65009148
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                },
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility2",
+                    "substation": "Bus 3",
+                    "substation_id": 3,
+                    "latitude": 30.33749946,
+                    "longitude": -97.6124486,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 3",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub3",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 3",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 3",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 3",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 3",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 3",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 3",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.33749946,
+                            "Longitude": -97.6124486
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                },
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility2",
+                    "substation": "Bus 4",
+                    "substation_id": 4,
+                    "latitude": 30.29410465,
+                    "longitude": -97.63254718,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 4",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub4",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 4",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 4",
+                            "adminIP": "192.168.1.2",
+                            "label": "Relay2",
+                            "vlan": "VLAN1",
+                            "id": "Relay2",
+                            "busNumber": "Bus2",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 4",
+                            "adminIP": "192.168.1.3",
+                            "label": "Relay3",
+                            "vlan": "VLAN1",
+                            "id": "Relay3",
+                            "busNumber": "Bus3",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 4",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 4",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 4",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 4",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 4",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.29410465,
+                            "Longitude": -97.63254718
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Relay2",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Relay3",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                },
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility2",
+                    "substation": "Bus 10",
+                    "substation_id": 7,
+                    "latitude": 30.27994306,
+                    "longitude": -97.67144822,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 10",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub7",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 10",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 10",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 10",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 10",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 10",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 10",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.27994306,
+                            "Longitude": -97.67144822
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                },
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility2",
+                    "substation": "Bus 11",
+                    "substation_id": 8,
+                    "latitude": 30.23978251,
+                    "longitude": -97.69249541,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 11",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub8",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 11",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 11",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 11",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 11",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 11",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 11",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.23978251,
+                            "Longitude": -97.69249541
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                },
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility2",
+                    "substation": "Bus 12",
+                    "substation_id": 9,
+                    "latitude": 30.21698319,
+                    "longitude": -97.68853357,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 12",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub9",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 12",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 12",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 12",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 12",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 12",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 12",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.21698319,
+                            "Longitude": -97.68853357
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                },
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility2",
+                    "substation": "Bus 13",
+                    "substation_id": 10,
+                    "latitude": 30.22001618,
+                    "longitude": -97.66573414,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 13",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub10",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 13",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 13",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 13",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 13",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 13",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 13",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.22001618,
+                            "Longitude": -97.66573414
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                },
+                {
+                    "region": "IEEE14",
+                    "utility": "Utility2",
+                    "substation": "Bus 14",
+                    "substation_id": 11,
+                    "latitude": 30.2552038,
+                    "longitude": -97.59915955,
+                    "nodes": [
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 14",
+                            "adminIP": "192.168.1.100",
+                            "label": "Controller01",
+                            "vlan": "VLAN1",
+                            "id": "Controller1",
+                            "substation_id": "Sub11",
+                            "relayIPlist": []
+                        },
+                        {
+                            "region": "IEEE14",
+                            "utility": null,
+                            "substation": "Bus 14",
+                            "adminIP": "192.168.1.1",
+                            "label": "Relay1",
+                            "vlan": "VLAN1",
+                            "id": "Relay1",
+                            "busNumber": "Bus1",
+                            "relayType": "Type1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 14",
+                            "adminIP": "192.168.2.1",
+                            "label": "Switch01",
+                            "vlan": "VLAN1",
+                            "id": "Switch1",
+                            "macTable": "MAC_Table1"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 14",
+                            "adminIP": "192.168.2.2",
+                            "label": "Switch02",
+                            "vlan": "VLAN1",
+                            "id": "Switch2",
+                            "macTable": "MAC_Table2"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 14",
+                            "adminIP": "192.168.3.1",
+                            "label": "Router01",
+                            "vlan": "VLAN1",
+                            "id": "Router1",
+                            "interfaces": {},
+                            "routingTable": {}
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 14",
+                            "adminIP": "192.168.4.1",
+                            "label": "Desktop01",
+                            "vlan": "VLAN1",
+                            "id": "Desktop1",
+                            "protocol": "Protocol"
+                        },
+                        {
+                            "region": "Region1",
+                            "utility": null,
+                            "substation": "Bus 14",
+                            "adminIP": "192.168.5.1",
+                            "label": "Firewall01",
+                            "vlan": "VLAN1",
+                            "id": "Firewall1",
+                            "acl": "ACL",
+                            "Latitude": 30.2552038,
+                            "Longitude": -97.59915955
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Relay1",
+                            "destination": "Controller1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Controller1",
+                            "destination": "Switch1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "DNP3"
+                        },
+                        {
+                            "source": "Switch1",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Desktop1",
+                            "destination": "Switch2",
+                            "link_type": "Ethernet",
+                            "bandwidth": 100,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Switch2",
+                            "destination": "Router1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        },
+                        {
+                            "source": "Router1",
+                            "destination": "Firewall1",
+                            "link_type": "Ethernet",
+                            "bandwidth": 1000,
+                            "distance": 10,
+                            "protocol": "IP"
+                        }
+                    ]
+                }
+            ],
+            "utility_id": "Util2",
+            "latitude": 30.26947922375,
+            "longitude": -97.65155726875,
+            "nodes": [],
+            "links": []
+        }
+    ],
+    "regulatory_id": "Reg1"
+}
