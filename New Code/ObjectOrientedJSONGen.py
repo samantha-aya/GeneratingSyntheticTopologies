@@ -145,8 +145,6 @@ class Regulatory:
 
 
 class CyberPhysicalSystem:
-    # ... existing methods ...
-
     def load_substations_from_csv(self, csv_file):
         df = pd.read_csv(csv_file, skiprows=1)
         substations = []
@@ -176,7 +174,6 @@ class CyberPhysicalSystem:
 
             # Create relays and link them to the relay controller
             for i in range(int(row['# of Buses'])):
-                # Example for creating a relay with a custom ID
                 relay_id = base_id + str(unique_node_no)
                 unique_node_no += 1
                 relay = Relay("Bus1", "Type1", row['Area Name'], None, row['Sub Name'], "192.168.1.1", "Relay01",
