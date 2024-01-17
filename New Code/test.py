@@ -1,37 +1,13 @@
-import pandas as pd
-
-# # Example DataFrame (Replace this with your actual DataFrame)
+# import pandas as pd
+# from sklearn.cluster import KMeans
+#
+# # Example DataFrame creation (replace with your actual DataFrame)
 # data = {
-#     'ColumnA': ['value1', 'value2', 'value1', 'value3', 'value2']
-# }
-# df = pd.DataFrame(data)
-#
-# # Get unique values from a column
-# unique_values = df['ColumnA'].unique()
-#
-# # Create a dictionary with keys as the unique values and values as a sequence starting from 52
-# starting_number = 52
-# unique_dict = {value: starting_number + i for i, value in enumerate(unique_values)}
-#
-# # Display the dictionary
-# print(unique_dict.get('value2'))
-
-# networklan = "10.52.30.1"
-# print(networklan[:-2]+"64")
-
-import pandas as pd
-from sklearn.cluster import KMeans
-
-# Sample DataFrame loading (replace this with your actual DataFrame)
-# df = pd.read_csv('your_file.csv')
-
-# Example DataFrame creation
-# data = {
-#     'Sub Num': [1, 2, 3, 4, 5, 6],
-#     'Sub Name': ['Sub A', 'Sub B', 'Sub C', 'D', 'E', 'F'],
-#     'Sub ID': [101, 102, 103, 104, 105, 106],
-#     'Longitude': [-104.99, -102.55, -100.75, -100.75, -100.75, -100.75],
-#     'Latitude': [39.74, 38.25, 37.47, 37.47, 37.47, 37.47],
+#     'Sub Num': [1, 2, 3],
+#     'Sub Name': ['Sub A', 'Sub B', 'Sub C'],
+#     'Sub ID': [101, 102, 103],
+#     'Longitude': [-104.99, -102.55, -100.75],
+#     'Latitude': [39.74, 38.25, 37.47],
 #     # ... include other columns as per your DataFrame
 # }
 # df = pd.DataFrame(data)
@@ -39,30 +15,69 @@ from sklearn.cluster import KMeans
 # # Selecting the columns for clustering
 # X = df[['Latitude', 'Longitude']]
 #
-# # Number of clusters - This can be adjusted based on specific needs
+# # Number of clusters
 # n_clusters = 3
 #
 # # Performing K-Means clustering
 # kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(X)
 #
+# # Extracting the centroids
+# centroids = kmeans.cluster_centers_
+#
 # # Adding the cluster labels (utility names) to the original DataFrame
 # df['Utility Name'] = 'Utility ' + pd.Series(kmeans.labels_).astype(str)
 #
-# print(df)
+# # Get unique utility names and their corresponding centroids
+# unique_utilities = df['Utility Name'].unique()
+# utility_centroids = {name: centroids[int(name.split(' ')[1])] for name in unique_utilities}
+#
+# # Create a dictionary with utility names, starting numbers, and centroids
+# starting_utl_number = 52
+# utility_dict = {
+#     name: {
+#         'id': starting_utl_number + i,
+#         'latitude': utility_centroids[name][0],
+#         'longitude': utility_centroids[name][1]
+#     }
+#     for i, name in enumerate(unique_utilities)
+# }
+#
+# print(utility_dict.get('Utility 1').get('id'))
+#
+# for key, val in utility_dict.items():
+#     # Constructing the base part of the ID
+#     util_label = f"Region.{key}"
+#     utl_ID = val.get('id')
+#     print(util_label)
+#     print(utl_ID)
+# # for utility_name, info in utility_dict.items():
+# #     centroid = info['centroid']
+# #     latitude = centroid[0]
+# #     longitude = centroid[1]
+# #     print(f"{utility_name}: Latitude = {latitude}, Longitude = {longitude}")
 
-# Correct initialization of an empty list
-my_list = []
+def extract_word_from_string(input_string, position):
+    """
+    Extracts a word from a given position in a string.
 
-# Example data to iterate over
-data = [1, 2, 3, 4, 5]
+    Parameters:
+    input_string (str): The string to extract the word from.
+    position (int): The position of the word to extract, starting from 0.
 
-# Loop through the data
-for item in data:
-    print(item)
-    # Append each item to the list
-    my_list.append(item)
+    Returns:
+    str: The extracted word.
+    """
+    words = input_string.split('.')
+    if position < len(words):
+        return words[position].split(' ')[0]
+    else:
+        return "Position out of range"
 
-# Print the resulting list
-print(my_list)
 
+# Example usage
+input_string = 'Utility 0.Bus 1..Firewall 1'
+position = 3  # For extracting 'Firewall' which is the 3rd word (position index starts from 0)
+extracted_word = extract_word_from_string(input_string, position)
+
+print(extracted_word)
 

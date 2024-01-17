@@ -40,6 +40,8 @@ class RelayController(Node):
         super().__init__(*args, **kwargs)
         self.relayIPlist = relayIPlist
 class Host(Node):
+    #this class of node is used for ICCPServer (Reg), EMS (Utilities)
+    #and ofcourse for hosts anywhere (Reg, Uils, Subtations)
     def __init__(self, openPorts, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.openPorts = openPorts
@@ -98,87 +100,81 @@ class Substation:
         self.links.append(link)
 
     def add_switch(self, switch):
-        #switch = Switch(arpTable=arptab)
         self.switches.append(switch)
 
     def add_rcs(self, rc):
-        #rc = RelayController(relayIPlist=relayIP)
         self.rcs.append(rc)
 
     def add_subFirewall(self, subFirewall):
-        #subFirewall = Firewall(acllist,interfacelist,self.latitude,self.longitude)
         self.substationFirewall.append(subFirewall)
 
     def add_subRouter(self, subRouter):
-        #subRouter = Router(interfacelist,routinglist)
         self.substationRouter.append(subRouter)
 
     def add_subSwitch(self, subSwitch):
-        #subSwitch = Switch(self,arptab)
         self.substationSwitch.append(subSwitch)
 
     def add_subRC(self, subRC):
-        #subRC = RelayController(relayIP)
         self.substationrelayController.append(subRC)
 
-# class Utility:
-#     def __init__(self, networkLan, subnetMask, utility_id, utility_name, substations, latitude, longitude):
-#         #self.region = region
-#         #self.utility = utility
-#         self.networkLan = networkLan
-#         self.subnetMask = subnetMask
-#         self.label = utility_id
-#         self.utility = utility_name
-#         self.substations = substations
-#         self.useableHost = []
-#         self.substationFirewalls = substationFirewalls
-#         self.latitude = latitude
-#         self.longitude = longitude
-#         self.nodes = []
-#         self.links = []
-#         self.utilityFirewall = utilFirewall
-#         self.utilityRouter = utilRouter
-#         self.utilitySwitch = utilswitch
-#         self.utilityEMS = utilEMS
-#         self.substationsRouter = subsRouter
-#         self.substationsFirewall = subsFirewall
-#         self.DMZFirewall = DMZfirewall
-#         self.linkUtlFirewalltoUtlRouter = linkUtlFirewalltoUtlRouter
-#         self.linkUtlRoutertoEMS = linkUtlRoutertoEMS
-#         self.linkSubEMStoSubsRouter = linkSubEMStoSubsRouter
-#         self.linkSubsRoutertoSubsFirewall = linkSubsRoutertoSubsFirewall
-#         self.compromised = False
-#
-#
-#         # Initialize utility components
-#         self.initialize_components()
-#
-#     def initialize_components(self):
-#         base_id = f"{self.region}.{self.utility}.{self.utility_id}.VLAN1."
-#
-#         # Create utility components
-#         self.firewall1 = Firewall("ACL1", self.latitude, self.longitude, self.region, self.utility, self.utility_id, "192.168.100.1", "Firewall01", "VLAN1", base_id + "Firewall1")
-#         self.router1 = Router({}, {}, self.region, self.utility, self.utility_id, "192.168.100.2", "Router01", "VLAN1", base_id + "Router1")
-#         self.switch = Switch("MAC_Table", self.region, self.utility, self.utility_id, "192.168.100.3", "Switch01", "VLAN1", base_id + "Switch")
-#         self.ems = CyberNode("EMS_Protocol", self.region, self.utility, self.utility_id, "192.168.100.4", "EMS01", "VLAN1", base_id + "EMS")
-#         self.router2 = Router({}, {}, self.region, self.utility, self.utility_id, "192.168.100.5", "Router02", "VLAN1", base_id + "Router2")
-#         self.firewall2 = Firewall("ACL2", self.latitude, self.longitude, self.region, self.utility, self.utility_id, "192.168.100.6", "Firewall02", "VLAN1", base_id + "Firewall2")
-#         self.dmz = CyberNode("DMZ_Protocol", self.region, self.utility, self.utility_id, "192.168.100.7", "DMZ01", "VLAN1", base_id + "DMZ")
-#
-#         # Add nodes to utility
-#         self.nodes.extend([self.firewall1, self.router1, self.switch, self.ems, self.router2, self.firewall2, self.dmz])
-#
-#         # Create links between nodes
-#         self.add_link(self.firewall1.id, self.router1.id, "Ethernet", 1000, 10, "IP")
-#         self.add_link(self.router1.id, self.switch.id, "Ethernet", 1000, 10, "IP")
-#         self.add_link(self.ems.id, self.switch.id, "Ethernet", 1000, 10, "IP")
-#         self.add_link(self.switch.id, self.router2.id, "Ethernet", 1000, 10, "IP")
-#         self.add_link(self.router2.id, self.firewall2.id, "Ethernet", 1000, 10, "IP")
-#         self.add_link(self.firewall2.id, self.dmz.id, "Ethernet", 1000, 10, "IP")
-#
-#     def add_link(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
-#         link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
-#         self.links.append(link)
+class Utility:
+    def __init__(self, networkLan, utl_id, utility_name, substations, subFirewalls, latitude, longitude):
+        self.networkLan = networkLan
+        self.subnetMask = "255.255.255.0"
+        self.label = utility_name
+        self.utility = utility_name
+        self.substations = substations
+        self.useableHost = [f"10.{utl_id}.0.{i}" for i in range(1, 254)]
+        self.substationFirewalls = subFirewalls #this should have a list of substation firewalls inside the utility
+        self.latitude = latitude
+        self.longitude = longitude
+        self.nodes = []
+        self.links = []
+        self.utilityFirewall = []
+        self.utilityRouter = []
+        self.utilitySwitch = "null"
+        self.utilityEMS = []
+        self.substationsRouter = []
+        self.substationsFirewall = []
+        self.DMZFirewall = []
+        self.linkUtlFirewalltoUtlRouter = []
+        self.linkUtlRoutertoEMS = []
+        self.linkSubEMStoSubsRouter = []
+        self.linkSubsRoutertoSubsFirewall = []
+        self.compromised = False
+
+    def add_node(self, node):
+        self.nodes.append(node)
+    def add_utilityFirewall(self, utilFirewall):
+        self.utilityFirewall.append(utilFirewall)
+    def add_utilityRouter(self, utilRouter):
+        self.utilityRouter.append(utilRouter)
+    def add_utilitySwitch(self, utilSwitch):
+        self.utilitySwitch.append(utilSwitch)
+    def add_utilityEMS(self, utilEMS):
+        self.utilityEMS.append(utilEMS)
+    def add_substationsRouter(self, substationsRouter):
+        self.substationsRouter.append(substationsRouter)
+    def add_substationsFirewall(self, substationsFirewall):
+        self.substationsFirewall.append(substationsFirewall)
+    def add_DMZFirewall(self, DMZFirewall):
+        self.DMZFirewall.append(DMZFirewall)
+
+    def add_link(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+        self.links.append(link)
+    def add_linkUtlFirewalltoUtlRouter(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+        self.linkUtlFirewalltoUtlRouter.append(link)
+    def add_linkUtlRoutertoEMS(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+        self.linkUtlRoutertoEMS.append(link)
+    def add_linkSubEMStoSubsRouter(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+        self.linkSubEMStoSubsRouter.append(link)
+    def add_linkSubsRoutertoSubsFirewall(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+        self.linkSubsRoutertoSubsFirewall.append(link)
 #
 # class Regulatory:
 #     def __init__(self, region, utilities):
@@ -201,6 +197,39 @@ class Substation:
 #                         self.links.append(Link(self.firewall.id, node.id, "Ethernet", 1000, 10, "IP"))
 #
 
+class Regulatory:
+    def __init__(self, label, networklan, utils, utilFirewalls, latitude, longitude,):
+        self.label = label
+        self.networkLan = networklan
+        self.subnetMask = "255.255.255.0"
+        self.utilities = utils
+        self.latitude = latitude
+        self.longitude = longitude
+        self.useableHost = [f"172.30.0.{i}" for i in range(1, 254)]
+        self.utilityFirewalls = utilFirewalls
+        self.iccpServer = []
+        self.regulatoryRouter = []
+        self.regulatoryFirewall = []
+        self.nodes = []
+        self.links = []
+        self.compromised = False
+
+    def add_node(self, node):
+        self.nodes.append(node)
+
+    def add_link(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+        self.links.append(link)
+
+    def add_iccpserver(self, server):
+        self.iccpServer.append(server)
+
+    def add_regRouter(self, router):
+        self.regulatoryRouter.append(router)
+
+    def add_regFirewall(self, firewall):
+        self.regulatoryFirewall.append(firewall)
+
 
 class CyberPhysicalSystem:
     def load_substations_from_csv(self, csv_file):
@@ -211,24 +240,30 @@ class CyberPhysicalSystem:
         n_clusters = 2
         # Performing K-Means clustering
         kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(X)
+        # Extracting the centroids
+        centroids = kmeans.cluster_centers_
 
         # Adding the cluster labels (utility names) to the original DataFrame
         df['Utility Name'] = 'Utility ' + pd.Series(kmeans.labels_).astype(str)
         unique_values = df['Utility Name'].unique()
+        utility_centroids = {name: centroids[int(name.split(' ')[1])] for name in unique_values}
         # Create a dictionary with keys as the unique values and values as a sequence starting from 52
         starting_utl_number = 52
-        unique_dict = {value: starting_utl_number + i for i, value in enumerate(unique_values)}
-
-        #setting starting number for switches and hosts
-        starting_switch_num = 59
-        starting_host_num = 60
+        unique_dict = {
+            name: {
+                'id': starting_utl_number + i,
+                'latitude': utility_centroids[name][0],
+                'longitude': utility_centroids[name][1]
+            }
+            for i, name in enumerate(unique_values)
+        }
 
         substations = []
         relay_num=100
         for _, row in df.iterrows():
             # Constructing the base part of the ID
             sub_label = f"Region.{row['Utility Name']}.{row['Sub Name']}"
-            utl_ID = unique_dict.get(row["Utility Name"])
+            utl_ID = unique_dict.get(row["Utility Name"]).get('id')
 
             # Create substation instance
             sub = Substation(
@@ -289,10 +324,10 @@ class CyberPhysicalSystem:
             sub.add_node(host2)
             # Create relay and relay controller nodes
             # Create relays
-            starting_relay_id = 2
+            starting_relay_id = 3
             relayiplist = []
             for i in range(int(row['# of Buses'])):
-                ip = f"10.{utl_ID}.{row['Sub Num']}.{starting_relay_id+1}"
+                ip = f"10.{utl_ID}.{row['Sub Num']}.{starting_relay_id}"
                 relayiplist.append(ip)
                 relay = Relay("", [], 'Line', 'OC',
                               utility=row['Utility Name'], substation=row['Sub Name'],
@@ -303,6 +338,7 @@ class CyberPhysicalSystem:
                 sub.add_node(relay)
                 # RC --> relays
                 sub.add_link(RC.label, relay.label, "Ethernet", 10.0, 10.0, "DNP3")
+                starting_relay_id=starting_relay_id+1
 
             RC.relayIPlist = relayiplist
             sub.add_node(RC)
@@ -333,8 +369,160 @@ class CyberPhysicalSystem:
 
             substations.append(sub)
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"
-            output_to_json_file(sub, filename=os.path.join(cwd,"Output",name_json))
-        return substations
+            output_to_json_file(sub, filename=os.path.join(cwd,"Output\\Substations",name_json))
+        return substations, unique_dict
+    def generate_utilties(self, substations, utility_dict):
+        firewall_start = len(substations)+1
+        router_start = len(substations)+1
+        ems_start = 2501
+        utilities = []
+        for key, val in utility_dict.items():
+            # Constructing the base part of the ID
+            util_label = f"Region.{key}"
+            print(key)
+            utl_ID = val.get('id')
+
+            util = Utility(
+                networkLan=f"10.{utl_ID}.0.0",
+                utl_id=utl_ID,
+                utility_name=key,
+                substations=[substation for substation in substations if substation.utility == key],
+                subFirewalls=[substation.substationFirewall for substation in substations if substation.utility == key],
+                latitude=val.get('latitude'),
+                longitude=val.get('longitude')
+            )
+
+            utilFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
+                                utility=key, substation="",
+                                adminIP=f"10.{utl_ID}.0.1",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.{key}..Firewall {firewall_start}",
+                                vlan='1')
+            utilRouter=Router([], [], utility=key, substation="",
+                                adminIP=f"10.{utl_ID}.0.2",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.{key}..Router {router_start}",
+                                vlan='1')
+            utilEMS=Host([], utility=key, substation="utl",
+                                adminIP=f"10.{utl_ID}.0.3",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.utl..Host {ems_start}",
+                                vlan='1')
+            router_start = router_start + 1
+            substationsRouter=Router([], [], utility=key, substation="",
+                                adminIP=f"10.{utl_ID}.0.4",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.{key}..Router {router_start}",
+                                vlan='1')
+            firewall_start = firewall_start+1
+            substationsFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
+                                utility=key, substation="",
+                                adminIP=f"10.{utl_ID}.0.5",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.{key}..Firewall {firewall_start}",
+                                vlan='1')
+            firewall_start = firewall_start + 1
+            DMZFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
+                                utility=key, substation="",
+                                adminIP=f"10.{utl_ID}.0.7",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.{key}..Firewall {firewall_start}",
+                                vlan='1')
+            firewall_start = firewall_start + 1
+            router_start = router_start + 1
+
+            util.add_node(utilFirewall)
+            util.add_node(utilRouter)
+            util.add_node(utilEMS)
+            util.add_node(substationsFirewall)
+            util.add_node(substationsRouter)
+            for s in substations:
+                util.add_node(s)
+            util.add_node(DMZFirewall)
+
+            # Add the non-node objects to the Utility
+            util.add_utilityFirewall(utilFirewall)
+            util.add_utilityRouter(utilRouter)
+            #util.add_utilitySwitch(utilSwitch)
+            util.add_utilityEMS(utilEMS)
+            util.add_substationsRouter(substationsRouter)
+            util.add_substationsFirewall(substationsFirewall)
+            util.add_DMZFirewall(DMZFirewall)
+
+            # firewall --> router
+            util.add_link(utilFirewall.label, utilRouter.label, "Ethernet", 10.0, 10.0, "DNP3")
+            # utility_router --> EMS
+            util.add_link(utilRouter.label, utilEMS.label, "Ethernet", 10.0, 10.0, "DNP3")
+            # EMS --> substationrouter
+            util.add_link(utilEMS.label, substationsRouter.label, "Ethernet", 10.0, 10.0, "DNP3")
+            # substationrouter --> substationFirewall
+            util.add_link(substationsRouter.label, substationsFirewall.label,  "Ethernet", 10.0, 10.0, "DNP3")
+            # substationFirewall --> individual substation firewalls
+            for s in substations:
+                util.add_link(substationsFirewall.label, s.substationFirewall[0].label, "Ethernet", 10.0, 10.0, "DNP3")
+            # utilityFirewall --> utilityEMS
+            util.add_link(utilFirewall.label, utilEMS.label, "Ethernet", 10.0, 10.0, "DNP3")
+            # utilityDMZ --> utilityEMS
+            util.add_link(DMZFirewall.label, utilEMS.label, "Ethernet", 10.0, 10.0, "DNP3")
+
+            utilities.append(util)
+            name_json = f"Region.{key}.json"
+            output_to_json_file(util, filename=os.path.join(cwd, "Output\\Utilities", name_json))
+        return utilities
+
+    def generate_BA(self, substations, utilities):
+        regulatory = []
+        reg = Regulatory(
+            label="Regulatory",
+            networklan= "172.30.0.0",
+            utils=utilities,
+            utilFirewalls=[ut.utilityFirewall for ut in utilities],
+            latitude=utilities[0].latitude,
+            longitude=utilities[0].longitude
+        )
+
+        regFirewall = Firewall([], [], reg.latitude, reg.longitude,
+                                utility="balancing_authority", substation="ba",
+                                adminIP=f"172.30.0.2",
+                                ipaddress=f"172.30.0.0",
+                                label=f"balancing_authority.ba..Firewall 1701",
+                                vlan='1')
+        regRouter = Router([], [],
+                                utility="balancing_authority", substation="ba",
+                                adminIP=f"172.30.0.3",
+                                ipaddress=f"172.30.0.0",
+                                label=f"balancing_authority.ba..Router 1551",
+                                vlan='1')
+        iccpserver = Host([],
+                                utility="balancing_authority", substation="ba",
+                                adminIP=f"172.30.0.1",
+                                ipaddress=f"172.30.0.0",
+                                label=f"balancing_authority.ba..Host 2801",
+                                vlan='1')
+
+        # Add node objects
+        reg.add_node(regFirewall)
+        reg.add_node(regRouter)
+        reg.add_node(iccpserver)
+        for u in utilities:
+            reg.add_node(u.utilityFirewall)
+
+        # Add the non-node objects to the Utility
+        reg.add_regRouter(regRouter)
+        reg.add_regFirewall(regFirewall)
+        reg.add_iccpserver(iccpserver)
+
+        # Add links
+        reg.add_link(iccpserver.label, regRouter.label, "Ethernet", 10.0, 10.0, "DNP3")
+        reg.add_link(regRouter.label, regFirewall.label, "Ethernet", 10.0, 10.0, "DNP3")
+        for u in utilities:
+            reg.add_link(regFirewall.label, u.utilityFirewall[0].label, "fiber", 10.0, 100.0, "DNP3")
+
+        regulatory.append(reg)
+        name_json = "Regulatory.json"
+        output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
+
+        return regulatory
 
 def to_json(obj):
     """Converts objects to a JSON-friendly format."""
@@ -352,11 +540,9 @@ def output_to_json_file(substation, filename):
 
 def generate_system_from_csv(csv_file):
     cps = CyberPhysicalSystem()
-    substations = cps.load_substations_from_csv(csv_file)
-    #utilities = cps.cluster_substations(substations)
-    #regulatory = Regulatory(region="Region1", utilities=utilities)
-    #regulatory.add_utility_links()  # Add links from regulatory firewall to utility firewalls
-
+    substations, utility_dict = cps.load_substations_from_csv(csv_file)
+    utilities = cps.generate_utilties(substations, utility_dict)
+    regulatory = cps.generate_BA(substations, utilities)
 
 
 # Example usage
