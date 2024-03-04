@@ -3,6 +3,10 @@ import numpy as np
 from sklearn.cluster import KMeans
 import json
 import os
+import configparser
+
+config = configparser.ConfigParser()
+config.read('settings.ini')
 
 cwd = os.getcwd()
 
@@ -237,7 +241,7 @@ class CyberPhysicalSystem:
         # Selecting the columns for clustering
         X = df[['Latitude', 'Longitude']]
         # Number of clusters - This can be adjusted based on specific needs
-        n_clusters = 2
+        n_clusters = int(config['DEFAULT']['n_clusters'])
         # Performing K-Means clustering
         kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(X)
         # Extracting the centroids
@@ -269,7 +273,7 @@ class CyberPhysicalSystem:
             sub = Substation(
                 relaynum=row['# of Buses'],
                 label=sub_label,
-                networklan=f"10.{utl_ID}.{row['Sub Name']}.0",
+                networklan=f"10.{utl_ID}.{row['Sub Num']}.0",
                 utility=row["Utility Name"],
                 substation_name=row["Sub Name"],
                 substation_num=row["Sub Num"],
@@ -472,6 +476,8 @@ class CyberPhysicalSystem:
 
     def generate_BA(self, substations, utilities):
         regulatory = []
+
+
         reg = Regulatory(
             label="Regulatory",
             networklan= "172.30.0.0",
@@ -545,6 +551,5 @@ def generate_system_from_csv(csv_file):
     regulatory = cps.generate_BA(substations, utilities)
 
 
-# Example usage
-generate_system_from_csv("Substation_14bus.csv")
+generate_system_from_csv("Substation_500bus.csv")
 

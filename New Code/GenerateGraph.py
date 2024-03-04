@@ -12,12 +12,12 @@ def create_hierarchical_substation_graph_no_crossings(substation_data):
 
     # Define levels for different types of nodes in the hierarchy
     levels = {
-        "RC": 2,
-        "Relay": 1,
-        "Switch": 3,
-        "Router": 4,
-        "Host": 0,
-        "Firewall": 5
+        "RC": 3,
+        "Relay": 0,
+        "Switch": 2,
+        "Router": 3,
+        "Host": 1,
+        "Firewall": 4
     }
     node_positions = {}
     y_level_dist = 1.0  # Vertical distance between levels
@@ -25,6 +25,7 @@ def create_hierarchical_substation_graph_no_crossings(substation_data):
 
     # Initialize x positions for nodes in each level to avoid crossings
     x_positions = {level: 0.0 for level in levels.values()}
+
 
     # Add nodes with positions based on their hierarchical level
     for node in substation_data['nodes']:
@@ -38,6 +39,7 @@ def create_hierarchical_substation_graph_no_crossings(substation_data):
         node_positions[node_id] = (x_pos, y_pos)
         x_positions[level] += x_level_width  # Increment x position for the next node in the same level
         print(node['label'])
+        print(x_positions[level], y_pos)
         G.add_node(node_id, label=node['label'])
 
     # Add links based on the connections specified in 'links'
@@ -212,7 +214,7 @@ def main(code_to_run, data):
 
 
 if __name__ == "__main__":
-    code_to_run = 3
+    code_to_run = 1
     #1-Generate substation internal layout
     #2-Generate substation-utility graph on a map
     #3-Generate utility internal layout
