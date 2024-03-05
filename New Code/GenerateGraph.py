@@ -216,7 +216,7 @@ def main(code_to_run, data):
 if __name__ == "__main__":
     code_to_run = 1
     #1-Generate substation internal layout
-    #2-Generate substation-utility graph on a map
+    #2-Generate substation-utility graph on a map -- Modify this part to use maps (some fancy python packages)
     #3-Generate utility internal layout
     #4-Generate regulatory/region internal layout
     file_path = os.path.join(cwd, 'Output\\Regulatory\\Regulatory.json')

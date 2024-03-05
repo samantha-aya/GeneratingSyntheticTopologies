@@ -511,7 +511,7 @@ class CyberPhysicalSystem:
         reg.add_node(regRouter)
         reg.add_node(iccpserver)
         for u in utilities:
-            reg.add_node(u.utilityFirewall)
+            reg.add_node(u.utilityFirewall[0])
 
         # Add the non-node objects to the Utility
         reg.add_regRouter(regRouter)
