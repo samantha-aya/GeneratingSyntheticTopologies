@@ -67,9 +67,10 @@ class Link:
         self.compromised = False
 
 class Substation:
-    def __init__(self, relaynum, label, networklan, utility, substation_name, substation_num, latitude, longitude, utl_id):
+    def __init__(self, relaynum, label, identity, networklan, utility, substation_name, substation_num, latitude, longitude, utl_id):
         self.relayCounter = relaynum
         self.label = label
+        self.identifier = identity
         self.networkLan = networklan
         self.supernetMask = "255.255.255.128"
         self.utility = utility
@@ -270,6 +271,10 @@ class CyberPhysicalSystem:
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
 
             # Create substation instance
+            # if substation is generating substation:
+            #     identity = 'Generating Sub'
+            # else:
+            #     identity = 'Transmission Sub'
             sub = Substation(
                 relaynum=row['# of Buses'],
                 label=sub_label,
@@ -279,7 +284,8 @@ class CyberPhysicalSystem:
                 substation_num=row["Sub Num"],
                 latitude=row['Latitude'],
                 longitude=row['Longitude'],
-                utl_id=utl_ID
+                utl_id=utl_ID,
+                identity = identity
             )
 
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
@@ -375,7 +381,7 @@ class CyberPhysicalSystem:
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"
             output_to_json_file(sub, filename=os.path.join(cwd,"Output\\Substations",name_json))
         return substations, unique_dict
-    def generate_utilties(self, substations, utility_dict):
+    def generate_utilties(self, substations, utility_dict, topology):
         firewall_start = len(substations)+1
         router_start = len(substations)+1
         ems_start = 2501
@@ -462,8 +468,13 @@ class CyberPhysicalSystem:
             # substationrouter --> substationFirewall
             util.add_link(substationsRouter.label, substationsFirewall.label,  "Ethernet", 10.0, 10.0, "DNP3")
             # substationFirewall --> individual substation firewalls
-            for s in substations:
-                util.add_link(substationsFirewall.label, s.substationFirewall[0].label, "Ethernet", 10.0, 10.0, "DNP3")
+            if topology == 'star':
+                for s in substations:
+                    util.add_link(substationsFirewall.label, s.substationFirewall[0].label, "Ethernet", 10.0, 10.0, "DNP3")
+            if topology == 'radial':
+                #write code to add link between generator substation and transmission substation
+                #and then link between transmission substation to utility control center
+
             # utilityFirewall --> utilityEMS
             util.add_link(utilFirewall.label, utilEMS.label, "Ethernet", 10.0, 10.0, "DNP3")
             # utilityDMZ --> utilityEMS
@@ -546,8 +557,9 @@ def output_to_json_file(substation, filename):
 
 def generate_system_from_csv(csv_file):
     cps = CyberPhysicalSystem()
+    topology = config['DEFAULT']['topology_configuration']
     substations, utility_dict = cps.load_substations_from_csv(csv_file)
-    utilities = cps.generate_utilties(substations, utility_dict)
+    utilities = cps.generate_utilties(substations, utility_dict, topology)
     regulatory = cps.generate_BA(substations, utilities)
 
 
