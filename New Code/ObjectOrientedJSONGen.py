@@ -271,7 +271,9 @@ class CyberPhysicalSystem:
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
 
             # Create substation instance
-            # if substation is generating substation:
+            #genMW = row['Gen MW'],
+            #genMVar = ['Gen Mvar'],
+            # if genMW is not None and genMW != '' and genMVar is not None and genMVar != '':
             #     identity = 'Generating Sub'
             # else:
             #     identity = 'Transmission Sub'
