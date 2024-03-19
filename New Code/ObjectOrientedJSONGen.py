@@ -57,20 +57,18 @@ class Relay(Node):
         self.relayType = relayType
         self.relaySubType = relaysubtype
 class Link:
-    def __init__(self, source, destination, link_type, bandwidth, distance, protocol):
+    def __init__(self, source, destination, link_type, bandwidth, distance):
         self.source = source
         self.destination = destination
         self.link_type = link_type
         self.bandwidth = bandwidth
         self.distance = distance
-        self.protocol = protocol
         self.compromised = False
 
 class Substation:
-    def __init__(self, relaynum, label, identity, networklan, utility, substation_name, substation_num, latitude, longitude, utl_id):
+    def __init__(self, relaynum, label, networklan, utility, substation_name, substation_num, latitude, longitude, utl_id):
         self.relayCounter = relaynum
         self.label = label
-        self.identifier = identity
         self.networkLan = networklan
         self.supernetMask = "255.255.255.128"
         self.utility = utility
@@ -100,8 +98,8 @@ class Substation:
     def add_node(self, node):
         self.nodes.append(node)
 
-    def add_link(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+    def add_link(self, source_id, destination_id, link_type, bandwidth, distance):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
         self.links.append(link)
 
     def add_switch(self, switch):
@@ -137,7 +135,7 @@ class Utility:
         self.links = []
         self.utilityFirewall = []
         self.utilityRouter = []
-        self.utilitySwitch = "null"
+        self.utilitySwitch = []
         self.utilityEMS = []
         self.substationsRouter = []
         self.substationsFirewall = []
@@ -165,45 +163,24 @@ class Utility:
     def add_DMZFirewall(self, DMZFirewall):
         self.DMZFirewall.append(DMZFirewall)
 
-    def add_link(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+    def add_link(self, source_id, destination_id, link_type, bandwidth, distance):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
         self.links.append(link)
-    def add_linkUtlFirewalltoUtlRouter(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+    def add_linkUtlFirewalltoUtlRouter(self, source_id, destination_id, link_type, bandwidth, distance):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
         self.linkUtlFirewalltoUtlRouter.append(link)
-    def add_linkUtlRoutertoEMS(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+    def add_linkUtlRoutertoEMS(self, source_id, destination_id, link_type, bandwidth, distance):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
         self.linkUtlRoutertoEMS.append(link)
-    def add_linkSubEMStoSubsRouter(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+    def add_linkSubEMStoSubsRouter(self, source_id, destination_id, link_type, bandwidth, distance):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
         self.linkSubEMStoSubsRouter.append(link)
-    def add_linkSubsRoutertoSubsFirewall(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+    def add_linkSubsRoutertoSubsFirewall(self, source_id, destination_id, link_type, bandwidth, distance):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
         self.linkSubsRoutertoSubsFirewall.append(link)
-#
-# class Regulatory:
-#     def __init__(self, region, utilities):
-#         self.region = region
-#         self.utilities = utilities
-#         self.regulatory_id = "{}".format(region)
-#         self.firewall = Firewall("ACL", "0.0", "0.0", region, None, self.regulatory_id, "192.168.100.1", "RegFirewall", "VLAN1", "RegFirewall1")
-#         self.router = Router({}, {}, region, None, self.regulatory_id, "192.168.100.2", "RegRouter", "VLAN1", "RegRouter1")
-#         self.iccp_server = CyberNode("ICCP", region, None, self.regulatory_id, "192.168.100.3", "ICCP_Server", "VLAN1", "ICCP1")
-#         self.links = [
-#             Link(self.iccp_server.id, self.router.id, "Ethernet", 1000, 10, "ICCP"),
-#             Link(self.router.id, self.firewall.id, "Ethernet", 1000, 10, "IP")
-#         ]
-#
-#     def add_utility_links(self):
-#         for utility in self.utilities:
-#             for substation in utility.substations:
-#                 for node in substation.nodes:
-#                     if isinstance(node, Firewall):
-#                         self.links.append(Link(self.firewall.id, node.id, "Ethernet", 1000, 10, "IP"))
-#
 
 class Regulatory:
-    def __init__(self, label, networklan, utils, utilFirewalls, latitude, longitude,):
+    def __init__(self, label, networklan, utils, utilFirewalls, latitude, longitude):
         self.label = label
         self.networkLan = networklan
         self.subnetMask = "255.255.255.0"
@@ -222,8 +199,8 @@ class Regulatory:
     def add_node(self, node):
         self.nodes.append(node)
 
-    def add_link(self, source_id, destination_id, link_type, bandwidth, distance, protocol):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance, protocol=protocol)
+    def add_link(self, source_id, destination_id, link_type, bandwidth, distance):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
         self.links.append(link)
 
     def add_iccpserver(self, server):
@@ -286,9 +263,7 @@ class CyberPhysicalSystem:
                 substation_num=row["Sub Num"],
                 latitude=row['Latitude'],
                 longitude=row['Longitude'],
-                utl_id=utl_ID,
-                identity = identity
-            )
+                utl_id=utl_ID)
 
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
@@ -349,7 +324,7 @@ class CyberPhysicalSystem:
                               label=f"{row['Utility Name']}.{row['Sub Name']}..Relay {relay_num+1}")
                 sub.add_node(relay)
                 # RC --> relays
-                sub.add_link(RC.label, relay.label, "Ethernet", 10.0, 10.0, "DNP3")
+                sub.add_link(RC.label, relay.label, "Ethernet", 10.0, 10.0)
                 starting_relay_id=starting_relay_id+1
 
             RC.relayIPlist = relayiplist
@@ -364,20 +339,18 @@ class CyberPhysicalSystem:
             sub.add_subRC(RC)
 
             # Create links between nodes
-            # firewall --> router
-            sub.add_link(firewall.label, router.label, "Ethernet", 10.0, 10.0, "DNP3")
+            # router --> firewall
+            sub.add_link(router.label, firewall.label, "Ethernet", 10.0, 10.0)
             # firewall --> switch.OT
-            sub.add_link(firewall.label, switch.label, "Ethernet", 10.0, 10.0, "DNP3")
+            sub.add_link(firewall.label, switch.label, "Ethernet", 10.0, 10.0)
             # switch.OT --> RC
-            sub.add_link(switch.label, RC.label, "Ethernet", 10.0, 10.0, "DNP3")
-            # router --> switch.Corp
-            sub.add_link(router.label, corp_switch.label, "Ethernet", 10.0, 10.0, "DNP3")
-            # switch.corp --> host1
-            sub.add_link(corp_switch.label, host1.label, "Ethernet", 10.0, 10.0, "DNP3")
-            # switch.corp --> host2
-            sub.add_link(corp_switch.label, host2.label, "Ethernet", 10.0, 10.0, "DNP3")
-            # RC --> relay
-            sub.add_link(corp_switch.label, host1.label, "Ethernet", 10.0, 10.0, "DNP3")
+            sub.add_link(switch.label, RC.label, "Ethernet", 10.0, 10.0)
+            # firewall --> switch.Corp
+            sub.add_link(firewall.label, corp_switch.label, "Ethernet", 10.0, 10.0)
+            # switch.Corp --> host1
+            sub.add_link(corp_switch.label, host1.label, "Ethernet", 10.0, 10.0)
+            # switch.Corp --> host2
+            sub.add_link(corp_switch.label, host2.label, "Ethernet", 10.0, 10.0)
 
             substations.append(sub)
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"
@@ -415,6 +388,11 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.0.0",
                                 label=f"{key}.{key}..Router {router_start}",
                                 vlan='1')
+            utilSwitch=Switch([], utility=key, substation="",
+                                adminIP=f"10.{utl_ID}.0.8",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.{key}..Switch {ems_start}",
+                                vlan='OT')
             utilEMS=Host([], utility=key, substation="utl",
                                 adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.0",
@@ -455,32 +433,33 @@ class CyberPhysicalSystem:
             # Add the non-node objects to the Utility
             util.add_utilityFirewall(utilFirewall)
             util.add_utilityRouter(utilRouter)
-            #util.add_utilitySwitch(utilSwitch)
+            util.add_utilitySwitch(utilSwitch)
             util.add_utilityEMS(utilEMS)
             util.add_substationsRouter(substationsRouter)
             util.add_substationsFirewall(substationsFirewall)
             util.add_DMZFirewall(DMZFirewall)
 
-            # firewall --> router
-            util.add_link(utilFirewall.label, utilRouter.label, "Ethernet", 10.0, 10.0, "DNP3")
-            # utility_router --> EMS
-            util.add_link(utilRouter.label, utilEMS.label, "Ethernet", 10.0, 10.0, "DNP3")
-            # EMS --> substationrouter
-            util.add_link(utilEMS.label, substationsRouter.label, "Ethernet", 10.0, 10.0, "DNP3")
+            # router --> firewall
+            util.add_link(utilRouter.label, utilFirewall.label, "Ethernet", 10.0, 10.0)
+            # utility_firewall --> EMSswitch
+            util.add_link(utilFirewall.label, utilSwitch.label, "Ethernet", 10.0, 10.0)
+            # EMSswitch --> EMS
+            util.add_link(utilSwitch.label, utilEMS.label, "Ethernet", 10.0, 10.0)
+
+            # EMSSwitch --> substationrouter
+            util.add_link(utilSwitch.label, substationsFirewall.label, "Ethernet", 10.0, 10.0)
             # substationrouter --> substationFirewall
-            util.add_link(substationsRouter.label, substationsFirewall.label,  "Ethernet", 10.0, 10.0, "DNP3")
-            # substationFirewall --> individual substation firewalls
+            util.add_link(substationsFirewall.label, substationsRouter.label, "Ethernet", 10.0, 10.0)
+            # substationsRouter --> individual substation routers
             if topology == 'star':
                 for s in substations:
-                    util.add_link(substationsFirewall.label, s.substationFirewall[0].label, "Ethernet", 10.0, 10.0, "DNP3")
+                    util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if topology == 'radial':
-                #write code to add link between generator substation and transmission substation
+                x=1#write code to add link between generator substation and transmission substation
                 #and then link between transmission substation to utility control center
 
-            # utilityFirewall --> utilityEMS
-            util.add_link(utilFirewall.label, utilEMS.label, "Ethernet", 10.0, 10.0, "DNP3")
-            # utilityDMZ --> utilityEMS
-            util.add_link(DMZFirewall.label, utilEMS.label, "Ethernet", 10.0, 10.0, "DNP3")
+            # utilityRouter --> DMZFirewall
+            util.add_link(utilRouter.label, DMZFirewall.label, "Ethernet", 10.0, 10.0)
 
             utilities.append(util)
             name_json = f"Region.{key}.json"
@@ -532,10 +511,10 @@ class CyberPhysicalSystem:
         reg.add_iccpserver(iccpserver)
 
         # Add links
-        reg.add_link(iccpserver.label, regRouter.label, "Ethernet", 10.0, 10.0, "DNP3")
-        reg.add_link(regRouter.label, regFirewall.label, "Ethernet", 10.0, 10.0, "DNP3")
+        reg.add_link(iccpserver.label, regFirewall.label, "Ethernet", 10.0, 10.0)
+        reg.add_link(regFirewall.label, regRouter.label, "Ethernet", 10.0, 10.0)
         for u in utilities:
-            reg.add_link(regFirewall.label, u.utilityFirewall[0].label, "fiber", 10.0, 100.0, "DNP3")
+            reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
 
         regulatory.append(reg)
         name_json = "Regulatory.json"
