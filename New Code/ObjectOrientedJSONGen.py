@@ -66,7 +66,7 @@ class Link:
         self.compromised = False
 
 class Substation:
-    def __init__(self, relaynum, label, networklan, utility, substation_name, substation_num, latitude, longitude, utl_id):
+    def __init__(self, relaynum, label, type, networklan, utility, substation_name, substation_num, latitude, longitude, utl_id):
         self.relayCounter = relaynum
         self.label = label
         self.networkLan = networklan
@@ -247,16 +247,27 @@ class CyberPhysicalSystem:
             sub_label = f"Region.{row['Utility Name']}.{row['Sub Name']}"
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
 
-            # Create substation instance
-            #genMW = row['Gen MW'],
-            #genMVar = ['Gen Mvar'],
-            # if genMW is not None and genMW != '' and genMVar is not None and genMVar != '':
-            #     identity = 'Generating Sub'
-            # else:
-            #     identity = 'Transmission Sub'
+        # # Determine if it is a generating sub or transmission sub
+        # is_generating_sub = False
+        # if row['Gen MW'] is not None and row['Gen MW'] != '' and row['Gen MVar'] is not None and row['Gen MVar'] != '':
+        #     is_generating_sub = True
+    
+        # if is_generating_sub:
+        #     sub_type = 'Generating Sub'
+        # else:
+        #     sub_type = 'Transmission Sub'
+    
+        # if topology_type == 'radial' and sub_type == 'Generating Sub':
+        #     # If radial topology is selected and it's a generating sub, connect directly to transmission sub
+        #     connected_to = f"Region.{row['Utility Name']}.{row['Transmission Sub Name']}" #Don't know which ones will connect here yet, need to figure that out.
+        # else:
+        #     # Otherwise, connect to the specified substation
+        #     connected_to = f"Region.{row['Utility Name']}.{row['Connected To Sub Name']}" #Don't know which ones will connect here yet, need to figure that out.
+            
             sub = Substation(
                 relaynum=row['# of Buses'],
                 label=sub_label,
+                #identity=sub_type,
                 networklan=f"10.{utl_ID}.{row['Sub Num']}.0",
                 utility=row["Utility Name"],
                 substation_name=row["Sub Name"],
