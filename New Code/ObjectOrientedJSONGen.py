@@ -257,7 +257,7 @@ class CyberPhysicalSystem:
         # else:
         #     sub_type = 'Transmission Sub'
     
-        # if topology_type == 'radial' and sub_type == 'Generating Sub':
+        # if topology_configuration == 'radial' and sub_type == 'Generating Sub':
         #     # If radial topology is selected and it's a generating sub, connect directly to transmission sub
         #     connected_to = f"Region.{row['Utility Name']}.{row['Transmission Sub Name']}" #Don't know which ones will connect here yet, need to figure that out.
         # else:
