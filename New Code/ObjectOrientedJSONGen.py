@@ -20,10 +20,7 @@ class Node:
         elif vlan == 'OT':
             self.subnetMask = '255.255.255.192'
         self.vlan = vlan
-        if row['Gen MW'] is not None and row['Gen MW'] != '' and row['Gen Mvar'] is not None and row['Gen Mvar'] != '':
-            self.genSubstation = genSubstation
-        else:
-            self.transSubstation = transSubstation
+        self.substation = substation
         self.label = label
         self.compromised = False
 class Firewall(Node):
@@ -101,17 +98,10 @@ class Substation:
         self.compromised = False
 
     class GenSubstation(Substation):
-    def __init__(self, mw, mvar, *args, **kwargs):
+    def __init__(self, genmw, genmvar, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.mw = mw
-        self.mvar = mvar
-
-    #check if we need some extra attribute for transmission substation -
-    #class TransSubstation(Substation):
-    #def __init__(self, trans, *args, **kwargs):
-    #    super().__init__(*args, **kwargs)
-    #    self.tans = trans
-        
+        self.genmw = genmw
+        self.genmvar = genmvar
     
     def add_node(self, node):
         self.nodes.append(node)
