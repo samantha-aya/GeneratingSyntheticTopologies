@@ -97,7 +97,7 @@ class Substation:
         self.substationrelayController = []
         self.compromised = False
 
-    class GenSubstation(Substation):
+class GenSubstation(Substation):
     def __init__(self, genmw, genmvar, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.genmw = genmw
