@@ -11,7 +11,7 @@ config.read('settings.ini')
 cwd = os.getcwd()
 
 class Node:
-    def __init__(self, utility, genSubstation, transSubstation, adminIP, ipaddress, label, vlan):
+    def __init__(self, utility, substation, adminIP, ipaddress, label, vlan):
         self.utility = utility
         self.adminIP = adminIP
         self.ipAddress = ipaddress
@@ -100,6 +100,19 @@ class Substation:
         self.substationrelayController = []
         self.compromised = False
 
+    class GenSubstation(Substation):
+    def __init__(self, mw, mvar, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.mw = mw
+        self.mvar = mvar
+
+    #check if we need some extra attribute for transmission substation -
+    #class TransSubstation(Substation):
+    #def __init__(self, trans, *args, **kwargs):
+    #    super().__init__(*args, **kwargs)
+    #    self.tans = trans
+        
+    
     def add_node(self, node):
         self.nodes.append(node)
 
