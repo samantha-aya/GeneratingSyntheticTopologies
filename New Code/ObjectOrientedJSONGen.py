@@ -40,17 +40,17 @@ class Switch(Node):
         super().__init__(*args, **kwargs)
         self.arpTable = arpTable
 class RelayController(Node):
-    def __init__(self, relayIPlist, protocol, *args, **kwargs):
+    def __init__(self, relayIPlist, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.relayIPlist = relayIPlist
-        self.protocol = protocol
+        #self.protocol = protocol
 class Host(Node):
     #this class of node is used for ICCPServer (Reg), EMS (Utilities)
     #and ofcourse for hosts anywhere (Reg, Uils, Subtations)
-    def __init__(self, openPorts, protocol, *args, **kwargs):
+    def __init__(self, openPorts, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.openPorts = openPorts
-        self.protocol = protocol
+        #self.protocol = protocol
 class Relay(Node):
     def __init__(self, busNumber, breakers, relayType, relaysubtype, *args, **kwargs):
         super().__init__(*args, **kwargs)
