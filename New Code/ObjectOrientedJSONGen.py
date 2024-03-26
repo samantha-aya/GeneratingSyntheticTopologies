@@ -58,6 +58,15 @@ class Relay(Node):
         self.busNumber = busNumber
         self.relayType = relayType
         self.relaySubType = relaysubtype
+
+#added RTU
+class RTU(Node):
+    def __init__(self, substationNumber, breakerList, protocol, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.substationNumber = substationNumber
+        self.breakerList = breakerList
+        self.protocol = protocol
+
 class Link:
     def __init__(self, source, destination, link_type, bandwidth, distance):
         self.source = source
@@ -97,12 +106,37 @@ class Substation:
         self.substationrelayController = []
         self.compromised = False
 
+    def add_node(self, node):
+        self.nodes.append(node)
+
+    def add_link(self, source_id, destination_id, link_type, bandwidth, distance):
+        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
+        self.links.append(link)
+
+    def add_switch(self, switch):
+        self.switches.append(switch)
+
+    def add_rcs(self, rc):
+        self.rcs.append(rc)
+
+    def add_subFirewall(self, subFirewall):
+        self.substationFirewall.append(subFirewall)
+
+    def add_subRouter(self, subRouter):
+        self.substationRouter.append(subRouter)
+
+    def add_subSwitch(self, subSwitch):
+        self.substationSwitch.append(subSwitch)
+
+    def add_subRC(self, subRC):
+        self.substationrelayController.append(subRC)
+
 class GenSubstation(Substation):
     def __init__(self, genmw, genmvar, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.genmw = genmw
         self.genmvar = genmvar
-    
+
     def add_node(self, node):
         self.nodes.append(node)
 
