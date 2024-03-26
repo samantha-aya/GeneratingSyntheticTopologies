@@ -137,31 +137,6 @@ class GenSubstation(Substation):
         self.genmw = genmw
         self.genmvar = genmvar
 
-    def add_node(self, node):
-        self.nodes.append(node)
-
-    def add_link(self, source_id, destination_id, link_type, bandwidth, distance):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
-        self.links.append(link)
-
-    def add_switch(self, switch):
-        self.switches.append(switch)
-
-    def add_rcs(self, rc):
-        self.rcs.append(rc)
-
-    def add_subFirewall(self, subFirewall):
-        self.substationFirewall.append(subFirewall)
-
-    def add_subRouter(self, subRouter):
-        self.substationRouter.append(subRouter)
-
-    def add_subSwitch(self, subSwitch):
-        self.substationSwitch.append(subSwitch)
-
-    def add_subRC(self, subRC):
-        self.substationrelayController.append(subRC)
-
 class Utility:
     def __init__(self, networkLan, utl_id, utility_name, substations, subFirewalls, latitude, longitude):
         self.networkLan = networkLan
@@ -258,6 +233,7 @@ class Regulatory:
 class CyberPhysicalSystem:
     def load_substations_from_csv(self, csv_file):
         df = pd.read_csv(csv_file, skiprows=1)
+        df["Gen MW"].fillna(99999, inplace=True)
         # Selecting the columns for clustering
         X = df[['Latitude', 'Longitude']]
         # Number of clusters - This can be adjusted based on specific needs
@@ -289,17 +265,32 @@ class CyberPhysicalSystem:
             sub_label = f"Region.{row['Utility Name']}.{row['Sub Name']}"
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
             
-            sub = Substation(
-                relaynum=row['# of Buses'],
-                label=sub_label,
-                networklan=f"10.{utl_ID}.{row['Sub Num']}.0",
-                utility=row["Utility Name"],
-                substation_name=row["Sub Name"],
-                substation_num=row["Sub Num"],
-                latitude=row['Latitude'],
-                longitude=row['Longitude'],
-                utl_id=utl_ID)
+            if row["Gen MW"] == 99999:
+                sub = Substation(
+                    relaynum=row['# of Buses'],
+                    label=sub_label,
+                    networklan=f"10.{utl_ID}.{row['Sub Num']}.0",
+                    utility=row["Utility Name"],
+                    substation_name=row["Sub Name"],
+                    substation_num=row["Sub Num"],
+                    latitude=row['Latitude'],
+                    longitude=row['Longitude'],
+                    utl_id=utl_ID)
 
+            else:
+                sub = GenSubstation(
+                    relaynum=row['# of Buses'],
+                    label=sub_label,
+                    networklan=f"10.{utl_ID}.{row['Sub Num']}.0",
+                    utility=row["Utility Name"],
+                    substation_name=row["Sub Name"],
+                    substation_num=row["Sub Num"],
+                    latitude=row['Latitude'],
+                    longitude=row['Longitude'],
+                    utl_id=utl_ID,
+                    genmw=row["Gen MW"],
+                    genmvar=row["Gen Mvar"])
+            
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.97",
@@ -389,7 +380,7 @@ class CyberPhysicalSystem:
 
             substations.append(sub)
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"
-            output_to_json_file(sub, filename=os.path.join(cwd,"Output\\Substations",name_json))
+            output_to_json_file(sub, filename=os.path.join(cwd,"Output/Substations",name_json))
         return substations, unique_dict
     def generate_utilties(self, substations, utility_dict, topology):
         firewall_start = len(substations)+1
@@ -490,6 +481,12 @@ class CyberPhysicalSystem:
                 for s in substations:
                     util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if topology == 'radial':
+                #for s
+                    #if class genSub (if it has the property gen MW)
+                        #prox math
+                        #connect to transmission sub
+                    #else
+                        #connect transmission to util
                 x=1#write code to add link between generator substation and transmission substation
                 #and then link between transmission substation to utility control center
 
@@ -498,7 +495,7 @@ class CyberPhysicalSystem:
 
             utilities.append(util)
             name_json = f"Region.{key}.json"
-            output_to_json_file(util, filename=os.path.join(cwd, "Output\\Utilities", name_json))
+            output_to_json_file(util, filename=os.path.join(cwd, "Output/Utilities", name_json))
         return utilities
 
     def generate_BA(self, substations, utilities):
@@ -553,7 +550,7 @@ class CyberPhysicalSystem:
 
         regulatory.append(reg)
         name_json = "Regulatory.json"
-        output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
+        output_to_json_file(reg, filename=os.path.join(cwd, "Output/Regulatory", name_json))
 
         return regulatory
 
