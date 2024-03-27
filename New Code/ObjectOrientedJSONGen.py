@@ -477,13 +477,13 @@ class CyberPhysicalSystem:
             # substationrouter --> substationFirewall
             util.add_link(substationsFirewall.label, substationsRouter.label, "Ethernet", 10.0, 10.0)
             # substationsRouter --> individual substation routers
-
-            if topology == 'star':
+            
+            if "star" in topology:
                 print("star")
 
                 for s in substations:
                     util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
-            if topology == 'radial':
+            if "radial" in topology:
                 print("radial")
                 for s in substations:
                     if row["Gen MW"] != 99999:
@@ -586,6 +586,7 @@ def output_to_json_file(substation, filename):
 def generate_system_from_csv(csv_file):
     cps = CyberPhysicalSystem()
     topology = config['DEFAULT']['topology_configuration']
+    print(topology)
     substations, utility_dict = cps.load_substations_from_csv(csv_file)
     utilities = cps.generate_utilties(substations, utility_dict, topology)
     regulatory = cps.generate_BA(substations, utilities)
