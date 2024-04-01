@@ -487,11 +487,9 @@ class CyberPhysicalSystem:
                 print("radial")
                 for s in substations:
                     if row["Gen MW"] != 99999:
-                        #proximity math, finding closest transmissio substation to calculate \
-                        # Create a KD Tree from the coordinates
-                        #tree = cKDTree(substations_coordinates)
-                        #closest_transmission_sub = calculate_closest_transmission_sub(tree, s)
-                        #util.add_link(s.substationRouter[0].label, closest_transmission_sub.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                        #look into other excel
+                        #in SubNum, look at Substation # in SubNum 1
+                        #connect SubNum to SubNum 1
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                     else:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
@@ -559,15 +557,6 @@ class CyberPhysicalSystem:
         output_to_json_file(reg, filename=os.path.join(cwd, "Output/Regulatory", name_json))
 
         return regulatory
-
-def calculate_closest_transmission_sub(tree, GenSubstation):
-    gen_coordinates = (GenSubstation.latitude, GenSubstation.longitude)
-    print(gen_coordinates)
-    # Query the KD Tree to find the index of the closest point
-    closest_idx = tree.query(gen_coordinates)[1]
-    closest_substation = substations[closest_idx]
-    print(closest_substation)
-    return closest_substation
 
 def to_json(obj):
     """Converts objects to a JSON-friendly format."""
