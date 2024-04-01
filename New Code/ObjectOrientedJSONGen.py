@@ -491,6 +491,10 @@ class CyberPhysicalSystem:
                         #connectingSub = row["SubNum 1"] #in second CSV file
                         #create connections between those 
                         #util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                        #look into other excel
+                        #in SubNum, look at Substation # in SubNum 1
+                        #connect SubNum to SubNum 1
+                        util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                     else:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
 
