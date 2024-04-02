@@ -486,14 +486,11 @@ class CyberPhysicalSystem:
             if "radial" in topology:
                 print("radial")
                 for s in substations:
-                    if row["Gen MW"] != 99999:
+                    if ["Gen MW"] != 99999:
                         #For SubNum, grab the substation number from SubNum 1
-                        #connectingSub = row["SubNum 1"] #in second CSV file
-                        #create connections between those 
+                        #connectingSub = ["SubNum 1"] #in second CSV file
+                        #Create connections between these
                         #util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
-                        #look into other excel
-                        #in SubNum, look at Substation # in SubNum 1
-                        #connect SubNum to SubNum 1
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                     else:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
@@ -583,7 +580,6 @@ def generate_system_from_csv(csv_file):
     substations, utility_dict = cps.load_substations_from_csv(csv_file)
     utilities = cps.generate_utilties(substations, utility_dict, topology)
     regulatory = cps.generate_BA(substations, utilities)
-
 
 generate_system_from_csv("Substation_500bus.csv")
 
