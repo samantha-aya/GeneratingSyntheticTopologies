@@ -120,6 +120,12 @@ class Substation:
     def add_subRC(self, subRC):
         self.substationrelayController.append(subRC)
 
+class GenSubstation(Substation):
+    def __init__(self, genmw, genmvar, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.genmw = genmw
+        self.genmvar = genmvar
+        
 class Utility:
     def __init__(self, networkLan, utl_id, utility_name, substations, subFirewalls, latitude, longitude):
         self.networkLan = networkLan
@@ -247,16 +253,31 @@ class CyberPhysicalSystem:
             sub_label = f"Region.{row['Utility Name']}.{row['Sub Name']}"
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
             
-            sub = Substation(
-                relaynum=row['# of Buses'],
-                label=sub_label,
-                networklan=f"10.{utl_ID}.{row['Sub Num']}.0",
-                utility=row["Utility Name"],
-                substation_name=row["Sub Name"],
-                substation_num=row["Sub Num"],
-                latitude=row['Latitude'],
-                longitude=row['Longitude'],
-                utl_id=utl_ID)
+            if row["Gen MW"] == 99999:
+                sub = Substation(
+                    relaynum=row['# of Buses'],
+                    label=sub_label,
+                    networklan=f"10.{utl_ID}.{row['Sub Num']}.0",
+                    utility=row["Utility Name"],
+                    substation_name=row["Sub Name"],
+                    substation_num=row["Sub Num"],
+                    latitude=row['Latitude'],
+                    longitude=row['Longitude'],
+                    utl_id=utl_ID)
+
+            else:
+                sub = GenSubstation(
+                    relaynum=row['# of Buses'],
+                    label=sub_label,
+                    networklan=f"10.{utl_ID}.{row['Sub Num']}.0",
+                    utility=row["Utility Name"],
+                    substation_name=row["Sub Name"],
+                    substation_num=row["Sub Num"],
+                    latitude=row['Latitude'],
+                    longitude=row['Longitude'],
+                    utl_id=utl_ID,
+                    genmw=row["Gen MW"],
+                    genmvar=row["Gen Mvar"])
 
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
@@ -444,12 +465,23 @@ class CyberPhysicalSystem:
             # substationrouter --> substationFirewall
             util.add_link(substationsFirewall.label, substationsRouter.label, "Ethernet", 10.0, 10.0)
             # substationsRouter --> individual substation routers
-            if topology == 'star':
+
+            if "star" in topology:
+                print("star")
+
                 for s in substations:
                     util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
-            if topology == 'radial':
-                x=1#write code to add link between generator substation and transmission substation
-                #and then link between transmission substation to utility control center
+            if "radial" in topology:
+                print("radial")
+                for s in substations:
+                    if ["Gen MW"] != 99999:
+                        #For SubNum, grab the substation number from SubNum 1
+                        #connectingSub = ["SubNum 1"] #in second CSV file
+                        #Create connections between these
+                        #util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                        util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                    else:
+                        util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
 
             # utilityRouter --> DMZFirewall
             util.add_link(utilRouter.label, DMZFirewall.label, "Ethernet", 10.0, 10.0)
