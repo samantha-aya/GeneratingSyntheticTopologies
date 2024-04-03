@@ -222,6 +222,10 @@ class Regulatory:
 class CyberPhysicalSystem:
     def load_substations_from_csv(self, csv_file):
         df = pd.read_csv(csv_file, skiprows=1)
+
+        #Replacing empty cells ('nan') with 9999, helps with reading the data since 'nan' doesn't work
+        df.fillna(99999, inplace=True)
+
         # Selecting the columns for clustering
         X = df[['Latitude', 'Longitude']]
         # Number of clusters - This can be adjusted based on specific needs
@@ -368,7 +372,7 @@ class CyberPhysicalSystem:
 
             substations.append(sub)
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"
-            output_to_json_file(sub, filename=os.path.join(cwd,"Output\\Substations",name_json))
+            output_to_json_file(sub, filename=os.path.join(cwd,"Output/Substations",name_json))
         return substations, unique_dict
     def generate_utilties(self, substations, utility_dict, topology):
         firewall_start = len(substations)+1
@@ -466,6 +470,8 @@ class CyberPhysicalSystem:
             util.add_link(substationsFirewall.label, substationsRouter.label, "Ethernet", 10.0, 10.0)
             # substationsRouter --> individual substation routers
 
+            df1 = pd.read_csv("Branches_500.csv")
+
             if "star" in topology:
                 print("star")
 
@@ -473,13 +479,17 @@ class CyberPhysicalSystem:
                     util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if "radial" in topology:
                 print("radial")
+                #for each substtaion, find the substationNum of the generation substation
                 for s in substations:
-                    if ["Gen MW"] != 99999:
-                        #For SubNum, grab the substation number from SubNum 1
-                        #connectingSub = ["SubNum 1"] #in second CSV file
+                    if hasattr(s, 'genmw'):
+                        print(s.genmw)
+                        #if s.genmw != 99999:
+                        print("generation sub number", s.substationNumber)
+                        #connectingSub = df1['SubNumberTo']
+                        #connectingSub = row['SubNumberTo']
+                        #print("Connecting substation:", connectingSub)
                         #Create connections between these
                         #util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
-                        util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                     else:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
 
@@ -488,7 +498,7 @@ class CyberPhysicalSystem:
 
             utilities.append(util)
             name_json = f"Region.{key}.json"
-            output_to_json_file(util, filename=os.path.join(cwd, "Output\\Utilities", name_json))
+            output_to_json_file(util, filename=os.path.join(cwd, "Output/Utilities", name_json))
         return utilities
 
     def generate_BA(self, substations, utilities):
@@ -543,7 +553,7 @@ class CyberPhysicalSystem:
 
         regulatory.append(reg)
         name_json = "Regulatory.json"
-        output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
+        output_to_json_file(reg, filename=os.path.join(cwd, "Output/Regulatory", name_json))
 
         return regulatory
 
