@@ -35,6 +35,7 @@ class Router(Node):
         super().__init__(*args, **kwargs)
         self.interfaces = interfaces
         self.routingTable = routingTable
+        #self.protocol = protocol
 class Switch(Node):
     def __init__(self, arpTable, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -43,12 +44,14 @@ class RelayController(Node):
     def __init__(self, relayIPlist, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.relayIPlist = relayIPlist
+        #self.protocol = protocol
 class Host(Node):
     #this class of node is used for ICCPServer (Reg), EMS (Utilities)
     #and ofcourse for hosts anywhere (Reg, Uils, Subtations)
     def __init__(self, openPorts, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.openPorts = openPorts
+        #self.protocol = protocol
 class Relay(Node):
     def __init__(self, busNumber, breakers, relayType, relaysubtype, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -445,7 +448,12 @@ class CyberPhysicalSystem:
             util.add_node(substationsFirewall)
             util.add_node(substationsRouter)
             for s in substations:
-                util.add_node(s)
+                if "star" in topology:
+                    util.add_node(s)
+
+                if "radial" in topology:
+                    if not hasattr(s, 'genmw'):
+                        util.add_node(s)
             util.add_node(DMZFirewall)
 
             # Add the non-node objects to the Utility
