@@ -30,6 +30,27 @@ class Firewall(Node):
         self.interfaces = interfaces
         self.Latitude = Latitude
         self.Longitude = Longitude
+
+    def add_acl_rule(self, acl_name, source, destination, action):
+        #this allows for an acl to be added
+        rule = {
+            "source": source,
+            "destination": destination,
+            "action": action #allow or deny
+        }
+        if acl_name in self.acls:
+            self.acls[acl_name].append(rule)
+        else:
+            self.acls[acl_name] = [rule]
+
+    def remove_acl_rule(self, acl_name, rule):
+        #remove specific acl
+        if acl_name in self.acls and rule in self.acls[acl_name]:
+            self.acls[acl_name].remove(rule)
+            if not self.acls[acl_name]:
+                del self.acls[acl_name]
+
+    
 class Router(Node):
     def __init__(self, interfaces, routingTable, *args, **kwargs):
         super().__init__(*args, **kwargs)
