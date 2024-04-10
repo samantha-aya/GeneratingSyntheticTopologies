@@ -594,7 +594,7 @@ class CyberPhysicalSystem:
                                 ipaddress=f"172.30.0.0",
                                 label=f"balancing_authority.ba..Firewall 1701",
                                 vlan='1')
-        regRouter = Router([], [],
+        regRouter = Router(interfaces=["eth0", "eth1"], routingTable={},
                                 utility="balancing_authority", substation="ba",
                                 adminIP=f"172.30.0.3",
                                 ipaddress=f"172.30.0.0",
@@ -618,6 +618,13 @@ class CyberPhysicalSystem:
         reg.add_regRouter(regRouter)
         reg.add_regFirewall(regFirewall)
         reg.add_iccpserver(iccpserver)
+
+        #firewall command to add the firewalls
+        regFirewall.add_acl_rule("acl0","10.52.1.","10.52.1.", "allow")
+            
+        #adding protocol function for reg
+        regRouter.set_protocol("eth0", "ICCP")
+        regRouter.set_protocol("eth1", "ICCP")
 
         # Add links
         reg.add_link(iccpserver.label, regFirewall.label, "Ethernet", 10.0, 10.0)
