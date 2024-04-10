@@ -26,7 +26,7 @@ class Node:
 class Firewall(Node):
     def __init__(self, acls, interfaces, Latitude, Longitude, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.acls = acls
+        self.acls = {}
         self.interfaces = interfaces
         self.Latitude = Latitude
         self.Longitude = Longitude
@@ -43,20 +43,29 @@ class Firewall(Node):
         else:
             self.acls[acl_name] = [rule]
 
-    def remove_acl_rule(self, acl_name, rule):
-        #remove specific acl
-        if acl_name in self.acls and rule in self.acls[acl_name]:
-            self.acls[acl_name].remove(rule)
-            if not self.acls[acl_name]:
-                del self.acls[acl_name]
+##    def remove_acl_rule(self, acl_name, rule):
+##        #remove specific acl
+##        if acl_name in self.acls and rule in self.acls[acl_name]:
+##            self.acls[acl_name].remove(rule)
+##            if not self.acls[acl_name]:
+##                del self.acls[acl_name]
 
     
 class Router(Node):
     def __init__(self, interfaces, routingTable, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.interfaces = interfaces
-        self.routingTable = routingTable
-        #self.protocol = protocol
+        self.routingTable = {}
+        self.protocol = {interface: None for interface in interfaces}
+
+    def set_protocol(self, interface, protocol):
+        #this functions lets us set the protocol
+        self.protocol[interface] = protocol
+##         if interface in self.protocol:
+##            self.protocol[interface] = protocol
+##        else:
+##            raise ValueError(f"Interface '{interface}' does not exist in the router.")
+        
 class Switch(Node):
     def __init__(self, arpTable, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -65,14 +74,23 @@ class RelayController(Node):
     def __init__(self, relayIPlist, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.relayIPlist = relayIPlist
-        #self.protocol = protocol
+        self.protocol = None
+
+    def set_protocol(self, protocol):
+        #this functions lets us set the protocol 
+        self.protocol = protocol
+        
 class Host(Node):
     #this class of node is used for ICCPServer (Reg), EMS (Utilities)
     #and ofcourse for hosts anywhere (Reg, Uils, Subtations)
     def __init__(self, openPorts, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.openPorts = openPorts
-        #self.protocol = protocol
+        self.protocol = None
+
+    def set_protocol(self, protocol):
+        #this functions lets us set the protocol 
+        self.protocol = protocol
+        
 class Relay(Node):
     def __init__(self, busNumber, breakers, relayType, relaysubtype, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -313,7 +331,7 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Firewall {row['Sub Num']}",
                                 vlan='Corporate')
-            router = Router([], [], utility=row["Utility Name"], substation=row["Sub Name"],
+            router = Router(interfaces=["eth0", "eth1"], routingTable={}, utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.98",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Router {row['Sub Num']}",
@@ -328,17 +346,17 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}.Corporate.Switch {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
-            host1 = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
+            host1 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
-            host2 = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
+            host2 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
-            RC = RelayController([], utility=row["Utility Name"], substation=row["Sub Name"],
+            RC = RelayController(relayIPlist=["192.168.1.1", "192.168.1.2"], utility=row["Utility Name"], substation=row["Sub Name"],
                                  adminIP=f"10.{utl_ID}.{row['Sub Num']}.2",
                                  ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0",
                                  label=f"{row['Utility Name']}.{row['Sub Name']}..RC {row['Sub Num']}",
@@ -379,6 +397,21 @@ class CyberPhysicalSystem:
             sub.add_subRouter(router)
             sub.add_subSwitch(switch)
             sub.add_subRC(RC)
+
+            #firewall command to add the firewalls
+            firewall.add_acl_rule("acl0","10.52.1.","10.52.1.", "allow")
+
+            #protocols added below to the router based on the interfaces
+            router.set_protocol("eth0", "DNP3")
+            router.set_protocol("eth1", "ICCP") #added this based on having varying protocols depending on where we're communicating
+            
+            #protocols added below to the router based on the ip list
+            RC.set_protocol("DNP3")
+
+            #protocols added below to the router based on the ports
+            host1.set_protocol("DNP3")
+            host2.set_protocol("DNP3")
+
 
             # Create links between nodes
             # router --> firewall
@@ -425,7 +458,7 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.0.0",
                                 label=f"{key}.{key}..Firewall {firewall_start}",
                                 vlan='1')
-            utilRouter=Router([], [], utility=key, substation="",
+            utilRouter=Router(interfaces=["eth0", "eth1"], routingTable={}, utility=key, substation="",
                                 adminIP=f"10.{utl_ID}.0.2",
                                 ipaddress=f"10.{utl_ID}.0.0",
                                 label=f"{key}.{key}..Router {router_start}",
@@ -435,7 +468,7 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.0.0",
                                 label=f"{key}.{key}..Switch {ems_start}",
                                 vlan='OT')
-            utilEMS=Host([], utility=key, substation="utl",
+            utilEMS=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.0",
                                 label=f"{key}.utl..Host {ems_start}",
@@ -485,6 +518,18 @@ class CyberPhysicalSystem:
             util.add_substationsRouter(substationsRouter)
             util.add_substationsFirewall(substationsFirewall)
             util.add_DMZFirewall(DMZFirewall)
+
+            #firewall command to add the firewalls
+            utilFirewall.add_acl_rule("acl1","10.52.1.","10.52.1.", "allow")
+            #shows up as a dict:
+                #rule: "source": source, "destination": destination, "allow/deny": action
+
+            #protocols added below to the router based on the interfaces
+            utilRouter.set_protocol("eth0", "ICCP")
+            utilRouter.set_protocol("eth1", "ICCP") #added this based on having varying protocols depending on where we're communicating
+
+            #protocols added below to the router based on the ports
+            utilEMS.set_protocol("ICCP")
 
             # router --> firewall
             util.add_link(utilRouter.label, utilFirewall.label, "Ethernet", 10.0, 10.0)
