@@ -31,11 +31,14 @@ class Firewall(Node):
         self.Latitude = Latitude
         self.Longitude = Longitude
 
-    def add_acl_rule(self, acl_name, source, destination, action):
+    def add_acl_rule(self, acl_name, description, source, destination, port, transportLayer, action):
         #this allows for an acl to be added
         rule = {
+            "description": description,
             "source": source,
             "destination": destination,
+            "port": port,
+            "transportLayer": transportLayer,
             "action": action #allow or deny
         }
         if acl_name in self.acls:
@@ -399,7 +402,7 @@ class CyberPhysicalSystem:
             sub.add_subRC(RC)
 
             #firewall command to add the firewalls
-            firewall.add_acl_rule("acl0","10.52.1.","10.52.1.", "allow")
+            firewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "allow")
 
             #protocols added below to the router based on the interfaces
             router.set_protocol("eth0", "DNP3")
@@ -520,7 +523,7 @@ class CyberPhysicalSystem:
             util.add_DMZFirewall(DMZFirewall)
 
             #firewall command to add the firewalls
-            utilFirewall.add_acl_rule("acl1","10.52.1.","10.52.1.", "allow")
+            utilFirewall.add_acl_rule("acl1", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "allow")
             #shows up as a dict:
                 #rule: "source": source, "destination": destination, "allow/deny": action
 
@@ -547,23 +550,23 @@ class CyberPhysicalSystem:
             df1 = pd.read_csv("Branches_500.csv")
 
             if "star" in topology:
-                print("star")
+                #print("star")
 
                 for s in substations:
                     util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if "radial" in topology:
-                print("radial")
+                #print("radial")
                 #for each substtaion, find the substationNum of the generation substation
                 for s in substations:
                     if hasattr(s, 'genmw'):
-                        print(s.genmw)
+                        #print(s.genmw)
                         #if s.genmw != 99999:
-                        print("generation sub number", s.substationNumber)
+                        #print("generation sub number", s.substationNumber)
                         #connectingSub = df1['SubNumberTo']
                         #connectingSub = row['SubNumberTo']
                         #print("Connecting substation:", connectingSub)
                         #Create connections between these
-                        #util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                        util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                     else:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
 
@@ -620,7 +623,9 @@ class CyberPhysicalSystem:
         reg.add_iccpserver(iccpserver)
 
         #firewall command to add the firewalls
-        regFirewall.add_acl_rule("acl0","10.52.1.","10.52.1.", "allow")
+        regFirewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "deny")
+        regFirewall.add_acl_rule("acl1", "Allow ICCP", "10.52.1.","10.52.1.", "50" ,"TCP", "allow")
+
             
         #adding protocol function for reg
         regRouter.set_protocol("eth0", "ICCP")
