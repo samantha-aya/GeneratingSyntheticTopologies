@@ -59,15 +59,6 @@ class Router(Node):
         super().__init__(*args, **kwargs)
         self.interfaces = interfaces
         self.routingTable = {}
-        self.protocol = {interface: None for interface in interfaces}
-
-    def set_protocol(self, interface, protocol):
-        #this functions lets us set the protocol
-        self.protocol[interface] = protocol
-##         if interface in self.protocol:
-##            self.protocol[interface] = protocol
-##        else:
-##            raise ValueError(f"Interface '{interface}' does not exist in the router.")
         
 class Switch(Node):
     def __init__(self, arpTable, *args, **kwargs):
@@ -77,22 +68,38 @@ class RelayController(Node):
     def __init__(self, relayIPlist, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.relayIPlist = relayIPlist
-        self.protocol = None
+        self.protocol = {}
 
-    def set_protocol(self, protocol):
+    def set_protocol(self, protocolLabel, port, transportLayer):
         #this functions lets us set the protocol 
-        self.protocol = protocol
+        protocol = {
+            #"protocolLabel": protocolLabel,
+            "port": port,
+            "transportLayer": transportLayer #tcp or udp
+        }
+        if protocolLabel in self.protocol:
+            self.protocol[protocolLabel].append(protocol)
+        else:
+            self.protocol[protocolLabel] = [protocol]
         
 class Host(Node):
     #this class of node is used for ICCPServer (Reg), EMS (Utilities)
     #and ofcourse for hosts anywhere (Reg, Uils, Subtations)
     def __init__(self, openPorts, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.protocol = None
+        self.protocol = {}
 
-    def set_protocol(self, protocol):
+    def set_protocol(self, protocolLabel, port, transportLayer):
         #this functions lets us set the protocol 
-        self.protocol = protocol
+        protocol = {
+            #"protocolLabel": protocolLabel,
+            "port": port,
+            "transportLayer": transportLayer #tcp or udp
+        }
+        if protocolLabel in self.protocol:
+            self.protocol[protocolLabel].append(protocol)
+        else:
+            self.protocol[protocolLabel] = [protocol]
         
 class Relay(Node):
     def __init__(self, busNumber, breakers, relayType, relaysubtype, *args, **kwargs):
@@ -101,6 +108,21 @@ class Relay(Node):
         self.busNumber = busNumber
         self.relayType = relayType
         self.relaySubType = relaysubtype
+        self.protocol = {}
+
+
+    def set_protocol(self, protocolLabel, port, transportLayer):
+        #this functions lets us set the protocol 
+        protocol = {
+            #"protocolLabel": protocolLabel,
+            "port": port,
+            "transportLayer": transportLayer #tcp or udp
+        }
+        if protocolLabel in self.protocol:
+            self.protocol[protocolLabel].append(protocol)
+        else:
+            self.protocol[protocolLabel] = [protocol]
+            
 class Link:
     def __init__(self, source, destination, link_type, bandwidth, distance):
         self.source = source
@@ -334,7 +356,7 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Firewall {row['Sub Num']}",
                                 vlan='Corporate')
-            router = Router(interfaces=["eth0", "eth1"], routingTable={}, utility=row["Utility Name"], substation=row["Sub Name"],
+            router = Router([], [], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.98",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Router {row['Sub Num']}",
@@ -403,17 +425,13 @@ class CyberPhysicalSystem:
 
             #firewall command to add the firewalls
             firewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "allow")
-
-            #protocols added below to the router based on the interfaces
-            router.set_protocol("eth0", "DNP3")
-            router.set_protocol("eth1", "ICCP") #added this based on having varying protocols depending on where we're communicating
             
             #protocols added below to the router based on the ip list
-            RC.set_protocol("DNP3")
+            RC.set_protocol("DNP3", "20000", "TCP")
 
             #protocols added below to the router based on the ports
-            host1.set_protocol("DNP3")
-            host2.set_protocol("DNP3")
+            host1.set_protocol("DNP3", "20000", "TCP")
+            host2.set_protocol("DNP3", "20000", "TCP")
 
 
             # Create links between nodes
@@ -527,12 +545,8 @@ class CyberPhysicalSystem:
             #shows up as a dict:
                 #rule: "source": source, "destination": destination, "allow/deny": action
 
-            #protocols added below to the router based on the interfaces
-            utilRouter.set_protocol("eth0", "ICCP")
-            utilRouter.set_protocol("eth1", "ICCP") #added this based on having varying protocols depending on where we're communicating
-
-            #protocols added below to the router based on the ports
-            utilEMS.set_protocol("ICCP")
+            #protocols added below 
+            utilEMS.set_protocol("ICCP", "102", "TCP")
 
             # router --> firewall
             util.add_link(utilRouter.label, utilFirewall.label, "Ethernet", 10.0, 10.0)
@@ -626,10 +640,8 @@ class CyberPhysicalSystem:
         regFirewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "deny")
         regFirewall.add_acl_rule("acl1", "Allow ICCP", "10.52.1.","10.52.1.", "50" ,"TCP", "allow")
 
-            
-        #adding protocol function for reg
-        regRouter.set_protocol("eth0", "ICCP")
-        regRouter.set_protocol("eth1", "ICCP")
+        #protocols added below to the router based on the ports
+        iccpserver.set_protocol("ICCP", "102", "TCP")
 
         # Add links
         reg.add_link(iccpserver.label, regFirewall.label, "Ethernet", 10.0, 10.0)
