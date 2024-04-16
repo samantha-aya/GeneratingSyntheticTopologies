@@ -447,15 +447,13 @@ class CyberPhysicalSystem:
             #firewall command to add the firewalls
             firewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "allow")
             
-            #protocols added below to the router based on the ip list
+            #protocols added below to the components
             RC.set_protocol("DNP3", "20000", "TCP")
-
-            #protocols added below to the router based on the ports
             host1.set_protocol("DNP3", "20000", "TCP")
             host2.set_protocol("DNP3", "20000", "TCP")
-            localDatabase.set_protocol("DNP3", "20000", "TCP")
+            localDatabase.set_protocol("SQL", "3306", "TCP")
             localWebServer.set_protocol("DNP3", "20000", "TCP")
-            hmi.set_protocol("DNP3", "20000", "TCP")
+            hmi.set_protocol("HTTP", "80", "TCP")
 
 
 
