@@ -139,6 +139,7 @@ class Substation:
         self.networkLan = networklan
         self.supernetMask = "255.255.255.128"
         self.utility = utility
+        self.utility_id = utl_id
         self.substation = substation_name
         self.substationNumber = substation_num
         self.OTAddress = networklan
@@ -188,10 +189,11 @@ class Substation:
         self.substationrelayController.append(subRC)
 
 class GenSubstation(Substation):
-    def __init__(self, genmw, genmvar, *args, **kwargs):
+    def __init__(self, genmw, genmvar, connecting_TS_num, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.genmw = genmw
         self.genmvar = genmvar
+        self.connecting_TS_num=connecting_TS_num
         
 class Utility:
     def __init__(self, networkLan, utl_id, utility_name, substations, subFirewalls, latitude, longitude):
@@ -199,6 +201,7 @@ class Utility:
         self.subnetMask = "255.255.255.0"
         self.label = utility_name
         self.utility = utility_name
+        self.id = utl_id
         self.substations = substations
         self.useableHost = [f"10.{utl_id}.0.{i}" for i in range(1, 254)]
         self.substationFirewalls = subFirewalls #this should have a list of substation firewalls inside the utility
@@ -290,7 +293,7 @@ class Regulatory:
 
 
 class CyberPhysicalSystem:
-    def load_substations_from_csv(self, csv_file):
+    def load_substations_from_csv(self, csv_file, substation_connections):
         df = pd.read_csv(csv_file, skiprows=1)
 
         #Replacing empty cells ('nan') with 9999, helps with reading the data since 'nan' doesn't work
@@ -304,8 +307,6 @@ class CyberPhysicalSystem:
         kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(X)
         # Extracting the centroids
         centroids = kmeans.cluster_centers_
-
-
 
         # Adding the cluster labels (utility names) to the original DataFrame
         df['Utility Name'] = 'Utility ' + pd.Series(kmeans.labels_).astype(str)
@@ -325,6 +326,7 @@ class CyberPhysicalSystem:
         substations = []
         relay_num=100
         for _, row in df.iterrows():
+            TS_num = 99999
             # Constructing the base part of the ID
             sub_label = f"Region.{row['Utility Name']}.{row['Sub Name']}"
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
@@ -342,6 +344,12 @@ class CyberPhysicalSystem:
                     utl_id=utl_ID)
 
             else:
+                for pair in substation_connections:
+                    if row["Sub Num"] in pair:
+                        # Return the other number in the pair
+                        TS_num = pair[1] if pair[0] == row["Sub Num"] else pair[0]
+                        print("Connecting TS found. The number is  ", TS_num)
+                        break
                 sub = GenSubstation(
                     relaynum=row['# of Buses'],
                     label=sub_label,
@@ -353,7 +361,8 @@ class CyberPhysicalSystem:
                     longitude=row['Longitude'],
                     utl_id=utl_ID,
                     genmw=row["Gen MW"],
-                    genmvar=row["Gen Mvar"])
+                    genmvar=row["Gen Mvar"],
+                    connecting_TS_num=TS_num)
 
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
@@ -381,16 +390,13 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
-<<<<<<< HEAD
             x = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.101",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
-            host2 = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
-=======
+
             host2 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
->>>>>>> 71c76bc17f44a81cdea2aba0c088c7c161ee83d2
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
@@ -490,11 +496,8 @@ class CyberPhysicalSystem:
 
             substations.append(sub)
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"
-<<<<<<< HEAD
-            output_to_json_file(sub, filename=os.path.join(cwd,"Output14\\Substations",name_json))
-=======
-            output_to_json_file(sub, filename=os.path.join(cwd,"Output/Substations",name_json))
->>>>>>> 71c76bc17f44a81cdea2aba0c088c7c161ee83d2
+            output_to_json_file(sub, filename=os.path.join(cwd,"Output\\Substations",name_json))
+
         return substations, unique_dict
     def generate_utilties(self, substations, utility_dict, topology):
         firewall_start = len(substations)+1
@@ -572,13 +575,10 @@ class CyberPhysicalSystem:
             util.add_node(iccpServer)
             util.add_node(substationsFirewall)
             util.add_node(substationsRouter)
+            #Add only those substations that are inside the utility as nodes
             for s in substations:
-                if "star" in topology:
+                if s.utility_id == util.id:
                     util.add_node(s)
-
-                if "radial" in topology:
-                    if not hasattr(s, 'genmw'):
-                        util.add_node(s)
             util.add_node(DMZFirewall)
 
             # Add the non-node objects to the Utility
@@ -616,24 +616,19 @@ class CyberPhysicalSystem:
             df1 = pd.read_csv("Branches_500.csv")
 
             if "star" in topology:
-                #print("star")
-
+                #directly connect all substations to the utility
                 for s in substations:
                     util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if "radial" in topology:
-                #print("radial")
-                #for each substtaion, find the substationNum of the generation substation
                 for s in substations:
-                    if hasattr(s, 'genmw'):
-                        #print(s.genmw)
-                        #if s.genmw != 99999:
-                        #print("generation sub number", s.substationNumber)
-                        #connectingSub = df1['SubNumberTo']
-                        #connectingSub = row['SubNumberTo']
-                        #print("Connecting substation:", connectingSub)
-                        #Create connections between these
-                        util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
-                    else:
+                    if hasattr(s, 'connecting_TS_num') and s.utility_id == util.id:
+                        for substation in substations:
+                            if substation.substationNumber == s.connecting_TS_num:
+                                s_to = substation
+                                break
+                        print("Connecting substation object found with router label   :", s_to.substationRouter[0].label)
+                        util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                    elif s.utility_id == util.id:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
 
             # utilityRouter --> DMZFirewall
@@ -641,79 +636,71 @@ class CyberPhysicalSystem:
 
             utilities.append(util)
             name_json = f"Region.{key}.json"
-<<<<<<< HEAD
-            output_to_json_file(util, filename=os.path.join(cwd, "Output14\\Utilities", name_json))
-=======
-            output_to_json_file(util, filename=os.path.join(cwd, "Output/Utilities", name_json))
->>>>>>> 71c76bc17f44a81cdea2aba0c088c7c161ee83d2
+            output_to_json_file(util, filename=os.path.join(cwd, "Output\\Utilities", name_json))
         return utilities
 
     def generate_BA(self, substations, utilities):
-        regulatory = []
+            regulatory = []
 
 
-        reg = Regulatory(
-            label="Regulatory",
-            networklan= "172.30.0.0",
-            utils=utilities,
-            utilFirewalls=[ut.utilityFirewall for ut in utilities],
-            latitude=utilities[0].latitude,
-            longitude=utilities[0].longitude
-        )
+            reg = Regulatory(
+                label="Regulatory",
+                networklan= "172.30.0.0",
+                utils=utilities,
+                utilFirewalls=[ut.utilityFirewall for ut in utilities],
+                latitude=utilities[0].latitude,
+                longitude=utilities[0].longitude
+            )
 
-        regFirewall = Firewall([], [], reg.latitude, reg.longitude,
-                                utility="balancing_authority", substation="ba",
-                                adminIP=f"172.30.0.2",
-                                ipaddress=f"172.30.0.0",
-                                label=f"balancing_authority.ba..Firewall 1701",
-                                vlan='1')
-        regRouter = Router(interfaces=["eth0", "eth1"], routingTable={},
-                                utility="balancing_authority", substation="ba",
-                                adminIP=f"172.30.0.3",
-                                ipaddress=f"172.30.0.0",
-                                label=f"balancing_authority.ba..Router 1551",
-                                vlan='1')
-        iccpClient = Host([],
-                                utility="balancing_authority", substation="ba",
-                                adminIP=f"172.30.0.1",
-                                ipaddress=f"172.30.0.0",
-                                label=f"balancing_authority.ba..Host 2801",
-                                vlan='1')
+            regFirewall = Firewall([], [], reg.latitude, reg.longitude,
+                                    utility="balancing_authority", substation="ba",
+                                    adminIP=f"172.30.0.2",
+                                    ipaddress=f"172.30.0.0",
+                                    label=f"balancing_authority.ba..Firewall 1701",
+                                    vlan='1')
+            regRouter = Router(interfaces=["eth0", "eth1"], routingTable={},
+                                    utility="balancing_authority", substation="ba",
+                                    adminIP=f"172.30.0.3",
+                                    ipaddress=f"172.30.0.0",
+                                    label=f"balancing_authority.ba..Router 1551",
+                                    vlan='1')
+            iccpClient = Host([],
+                                    utility="balancing_authority", substation="ba",
+                                    adminIP=f"172.30.0.1",
+                                    ipaddress=f"172.30.0.0",
+                                    label=f"balancing_authority.ba..Host 2801",
+                                    vlan='1')
 
-        # Add node objects
-        reg.add_node(regFirewall)
-        reg.add_node(regRouter)
-        reg.add_node(iccpClient)
-        for u in utilities:
-            reg.add_node(u.utilityFirewall[0])
+            # Add node objects
+            reg.add_node(regFirewall)
+            reg.add_node(regRouter)
+            reg.add_node(iccpClient)
+            for u in utilities:
+                reg.add_node(u.utilityFirewall[0])
 
-        # Add the non-node objects to the Utility
-        reg.add_regRouter(regRouter)
-        reg.add_regFirewall(regFirewall)
-        reg.add_iccpClient(iccpClient)
+            # Add the non-node objects to the Utility
+            reg.add_regRouter(regRouter)
+            reg.add_regFirewall(regFirewall)
+            reg.add_iccpClient(iccpClient)
 
-        #firewall command to add the firewalls
-        regFirewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "deny")
-        regFirewall.add_acl_rule("acl1", "Allow ICCP", "10.52.1.","10.52.1.", "50" ,"TCP", "allow")
+            #firewall command to add the firewalls
+            regFirewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "deny")
+            regFirewall.add_acl_rule("acl1", "Allow ICCP", "10.52.1.","10.52.1.", "50" ,"TCP", "allow")
 
-        #protocols added below to the router based on the ports
-        iccpClient.set_protocol("ICCP", "102", "TCP")
+            #protocols added below to the router based on the ports
+            iccpClient.set_protocol("ICCP", "102", "TCP")
 
-        # Add links
-        reg.add_link(iccpClient.label, regFirewall.label, "Ethernet", 10.0, 10.0)
-        reg.add_link(regFirewall.label, regRouter.label, "Ethernet", 10.0, 10.0)
-        for u in utilities:
-            reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
+            # Add links
+            reg.add_link(iccpClient.label, regFirewall.label, "Ethernet", 10.0, 10.0)
+            reg.add_link(regFirewall.label, regRouter.label, "Ethernet", 10.0, 10.0)
+            for u in utilities:
+                reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
 
-        regulatory.append(reg)
-        name_json = "Regulatory.json"
-<<<<<<< HEAD
-        output_to_json_file(reg, filename=os.path.join(cwd, "Output14\\Regulatory", name_json))
-=======
-        output_to_json_file(reg, filename=os.path.join(cwd, "Output/Regulatory", name_json))
->>>>>>> 71c76bc17f44a81cdea2aba0c088c7c161ee83d2
+            regulatory.append(reg)
+            name_json = "Regulatory.json"
+            output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
 
-        return regulatory
+            return regulatory
 
 def to_json(obj):
     """Converts objects to a JSON-friendly format."""
@@ -729,13 +716,26 @@ def output_to_json_file(substation, filename):
     with open(filename, "w") as file:
         json.dump(substation, file, default=to_json, indent=4)
 
-def generate_system_from_csv(csv_file):
+def get_substation_connections(branches_csv):
+    df = pd.read_csv(branches_csv)
+    # Convert columns to tuples
+    df['Pairs'] = list(zip(df['SubNumberFrom'], df['SubNumberTo']))
+    df = df[df['SubNumberFrom'] != df['SubNumberTo']]
+    # Find unique pairs
+    unique_pairs = df['Pairs'].unique()
+    # Display unique pairs
+    print(unique_pairs)
+
+    return unique_pairs
+
+def generate_system_from_csv(csv_file, branches_csv):
     cps = CyberPhysicalSystem()
     topology = config['DEFAULT']['topology_configuration']
-    substations, utility_dict = cps.load_substations_from_csv(csv_file)
+    substation_connections = get_substation_connections(branches_csv)
+    substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
     utilities = cps.generate_utilties(substations, utility_dict, topology)
     regulatory = cps.generate_BA(substations, utilities)
 
 
-generate_system_from_csv("Substation_14bus.csv")
+generate_system_from_csv("Substation_500bus.csv", "Branches_500.csv")
 
