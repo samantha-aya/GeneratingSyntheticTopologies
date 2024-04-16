@@ -262,7 +262,7 @@ class Regulatory:
         self.longitude = longitude
         self.useableHost = [f"172.30.0.{i}" for i in range(1, 254)]
         self.utilityFirewalls = utilFirewalls
-        self.iccpServer = []
+        self.iccpclient = []
         self.regulatoryRouter = []
         self.regulatoryFirewall = []
         self.nodes = []
@@ -276,8 +276,8 @@ class Regulatory:
         link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
         self.links.append(link)
 
-    def add_iccpserver(self, server):
-        self.iccpServer.append(server)
+    def add_iccpClient(self, server):
+        self.iccpclient.append(server)
 
     def add_regRouter(self, router):
         self.regulatoryRouter.append(router)
@@ -617,7 +617,7 @@ class CyberPhysicalSystem:
                                 ipaddress=f"172.30.0.0",
                                 label=f"balancing_authority.ba..Router 1551",
                                 vlan='1')
-        iccpserver = Host([],
+        iccpClient = Host([],
                                 utility="balancing_authority", substation="ba",
                                 adminIP=f"172.30.0.1",
                                 ipaddress=f"172.30.0.0",
@@ -627,24 +627,24 @@ class CyberPhysicalSystem:
         # Add node objects
         reg.add_node(regFirewall)
         reg.add_node(regRouter)
-        reg.add_node(iccpserver)
+        reg.add_node(iccpClient)
         for u in utilities:
             reg.add_node(u.utilityFirewall[0])
 
         # Add the non-node objects to the Utility
         reg.add_regRouter(regRouter)
         reg.add_regFirewall(regFirewall)
-        reg.add_iccpserver(iccpserver)
+        reg.add_iccpClient(iccpClient)
 
         #firewall command to add the firewalls
         regFirewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "deny")
         regFirewall.add_acl_rule("acl1", "Allow ICCP", "10.52.1.","10.52.1.", "50" ,"TCP", "allow")
 
         #protocols added below to the router based on the ports
-        iccpserver.set_protocol("ICCP", "102", "TCP")
+        iccpClient.set_protocol("ICCP", "102", "TCP")
 
         # Add links
-        reg.add_link(iccpserver.label, regFirewall.label, "Ethernet", 10.0, 10.0)
+        reg.add_link(iccpClient.label, regFirewall.label, "Ethernet", 10.0, 10.0)
         reg.add_link(regFirewall.label, regRouter.label, "Ethernet", 10.0, 10.0)
         for u in utilities:
             reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
