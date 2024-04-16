@@ -225,6 +225,8 @@ class CyberPhysicalSystem:
         # Extracting the centroids
         centroids = kmeans.cluster_centers_
 
+
+
         # Adding the cluster labels (utility names) to the original DataFrame
         df['Utility Name'] = 'Utility ' + pd.Series(kmeans.labels_).astype(str)
         unique_values = df['Utility Name'].unique()
@@ -281,6 +283,11 @@ class CyberPhysicalSystem:
                                 vlan='Corporate')
             host1 = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
+                                vlan='Corporate')
+            x = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
+                                adminIP=f"10.{utl_ID}.{row['Sub Num']}.101",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
@@ -347,7 +354,7 @@ class CyberPhysicalSystem:
 
             substations.append(sub)
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"
-            output_to_json_file(sub, filename=os.path.join(cwd,"Output\\Substations",name_json))
+            output_to_json_file(sub, filename=os.path.join(cwd,"Output14\\Substations",name_json))
         return substations, unique_dict
     def generate_utilties(self, substations, utility_dict, topology):
         firewall_start = len(substations)+1
@@ -456,7 +463,7 @@ class CyberPhysicalSystem:
 
             utilities.append(util)
             name_json = f"Region.{key}.json"
-            output_to_json_file(util, filename=os.path.join(cwd, "Output\\Utilities", name_json))
+            output_to_json_file(util, filename=os.path.join(cwd, "Output14\\Utilities", name_json))
         return utilities
 
     def generate_BA(self, substations, utilities):
@@ -511,7 +518,7 @@ class CyberPhysicalSystem:
 
         regulatory.append(reg)
         name_json = "Regulatory.json"
-        output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
+        output_to_json_file(reg, filename=os.path.join(cwd, "Output14\\Regulatory", name_json))
 
         return regulatory
 
@@ -537,5 +544,5 @@ def generate_system_from_csv(csv_file):
     regulatory = cps.generate_BA(substations, utilities)
 
 
-generate_system_from_csv("Substation_500bus.csv")
+generate_system_from_csv("Substation_14bus.csv")
 
