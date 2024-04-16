@@ -210,6 +210,7 @@ class Utility:
         self.utilityRouter = []
         self.utilitySwitch = []
         self.utilityEMS = []
+        self.iccpserver=[]
         self.substationsRouter = []
         self.substationsFirewall = []
         self.DMZFirewall = []
@@ -229,6 +230,8 @@ class Utility:
         self.utilitySwitch.append(utilSwitch)
     def add_utilityEMS(self, utilEMS):
         self.utilityEMS.append(utilEMS)
+    def add_iccpserver(self, iccpServer):
+        self.iccpserver.append(iccpServer)
     def add_substationsRouter(self, substationsRouter):
         self.substationsRouter.append(substationsRouter)
     def add_substationsFirewall(self, substationsFirewall):
@@ -381,6 +384,21 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
+            localDatabase = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
+                                vlan='Corporate')
+            localWebServer = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
+                                vlan='Corporate')
+            hmi = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
+                                vlan='Corporate')
             RC = RelayController(relayIPlist=["192.168.1.1", "192.168.1.2"], utility=row["Utility Name"], substation=row["Sub Name"],
                                  adminIP=f"10.{utl_ID}.{row['Sub Num']}.2",
                                  ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0",
@@ -394,6 +412,9 @@ class CyberPhysicalSystem:
             sub.add_node(corp_switch)
             sub.add_node(host1)
             sub.add_node(host2)
+            sub.add_node(localDatabase)
+            sub.add_node(localWebServer)
+            sub.add_node(hmi)
             # Create relay and relay controller nodes
             # Create relays
             starting_relay_id = 3
@@ -432,6 +453,10 @@ class CyberPhysicalSystem:
             #protocols added below to the router based on the ports
             host1.set_protocol("DNP3", "20000", "TCP")
             host2.set_protocol("DNP3", "20000", "TCP")
+            localDatabase.set_protocol("DNP3", "20000", "TCP")
+            localWebServer.set_protocol("DNP3", "20000", "TCP")
+            hmi.set_protocol("DNP3", "20000", "TCP")
+
 
 
             # Create links between nodes
@@ -447,6 +472,12 @@ class CyberPhysicalSystem:
             sub.add_link(corp_switch.label, host1.label, "Ethernet", 10.0, 10.0)
             # switch.Corp --> host2
             sub.add_link(corp_switch.label, host2.label, "Ethernet", 10.0, 10.0)
+            # switch.Corp --> localDatabase
+            sub.add_link(corp_switch.label, localDatabase.label, "Ethernet", 10.0, 10.0)
+            # switch.Corp --> localWebServer
+            sub.add_link(corp_switch.label, localWebServer.label, "Ethernet", 10.0, 10.0)
+            # switch.Corp --> hmi
+            sub.add_link(corp_switch.label, hmi.label, "Ethernet", 10.0, 10.0)
 
             substations.append(sub)
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"
@@ -494,6 +525,11 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.0.0",
                                 label=f"{key}.utl..Host {ems_start}",
                                 vlan='1')
+            iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
+                                adminIP=f"10.{utl_ID}.0.3",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.utl..Host {ems_start}",
+                                vlan='1') #need to fix this information or see what needs to be changed
             router_start = router_start + 1
             substationsRouter=Router([], [], utility=key, substation="",
                                 adminIP=f"10.{utl_ID}.0.4",
@@ -520,6 +556,7 @@ class CyberPhysicalSystem:
             util.add_node(utilFirewall)
             util.add_node(utilRouter)
             util.add_node(utilEMS)
+            util.add_node(iccpServer)
             util.add_node(substationsFirewall)
             util.add_node(substationsRouter)
             for s in substations:
@@ -536,6 +573,7 @@ class CyberPhysicalSystem:
             util.add_utilityRouter(utilRouter)
             util.add_utilitySwitch(utilSwitch)
             util.add_utilityEMS(utilEMS)
+            util.add_iccpserver(iccpServer)
             util.add_substationsRouter(substationsRouter)
             util.add_substationsFirewall(substationsFirewall)
             util.add_DMZFirewall(DMZFirewall)
@@ -547,6 +585,7 @@ class CyberPhysicalSystem:
 
             #protocols added below 
             utilEMS.set_protocol("ICCP", "102", "TCP")
+            iccpServer.set_protocol("ICCP", "102", "TCP")
 
             # router --> firewall
             util.add_link(utilRouter.label, utilFirewall.label, "Ethernet", 10.0, 10.0)
