@@ -158,7 +158,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }
@@ -204,96 +214,6 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.193.100",
-            "ipAddress": "10.53.193.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROEBUCK",
-            "label": "Utility 3.ROEBUCK..Host 385",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
-            "adminIP": "10.53.193.100",
-            "ipAddress": "10.53.193.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROEBUCK",
-            "label": "Utility 3.ROEBUCK..Host 386",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
-            "adminIP": "10.53.193.100",
-            "ipAddress": "10.53.193.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROEBUCK",
-            "label": "Utility 3.ROEBUCK..Host 385",
-            "compromised": false,
-            "protocol": {
-                "SQL": [
-                    {
-                        "port": "3306",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
-            "adminIP": "10.53.193.100",
-            "ipAddress": "10.53.193.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROEBUCK",
-            "label": "Utility 3.ROEBUCK..Host 386",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
-            "adminIP": "10.53.193.100",
-            "ipAddress": "10.53.193.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROEBUCK",
-            "label": "Utility 3.ROEBUCK..Host 386",
-            "compromised": false,
-            "protocol": {
-                "HTTP": [
-                    {
-                        "port": "80",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
             "adminIP": "10.53.193.3",
             "ipAddress": "10.53.193.0",
             "subnetMask": "255.255.255.192",
@@ -319,6 +239,78 @@
             "relayIPlist": [
                 "10.53.193.3"
             ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.193.100",
+            "ipAddress": "10.53.193.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROEBUCK",
+            "label": "Utility 3.ROEBUCK..Host 385",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.193.100",
+            "ipAddress": "10.53.193.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROEBUCK",
+            "label": "Utility 3.ROEBUCK..Host 386",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.193.100",
+            "ipAddress": "10.53.193.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROEBUCK",
+            "label": "Utility 3.ROEBUCK..LocalDatabase 385",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.193.100",
+            "ipAddress": "10.53.193.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROEBUCK",
+            "label": "Utility 3.ROEBUCK..LocalWebServer 386",
+            "compromised": false,
             "protocol": {
                 "DNP3": [
                     {
@@ -388,7 +380,7 @@
         },
         {
             "source": "Utility 3.ROEBUCK.Corporate.Switch 386",
-            "destination": "Utility 3.ROEBUCK..Host 385",
+            "destination": "Utility 3.ROEBUCK..LocalDatabase 385",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -396,15 +388,7 @@
         },
         {
             "source": "Utility 3.ROEBUCK.Corporate.Switch 386",
-            "destination": "Utility 3.ROEBUCK..Host 386",
-            "link_type": "Ethernet",
-            "bandwidth": 10.0,
-            "distance": 10.0,
-            "compromised": false
-        },
-        {
-            "source": "Utility 3.ROEBUCK.Corporate.Switch 386",
-            "destination": "Utility 3.ROEBUCK..Host 386",
+            "destination": "Utility 3.ROEBUCK..LocalWebServer 386",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -463,7 +447,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }

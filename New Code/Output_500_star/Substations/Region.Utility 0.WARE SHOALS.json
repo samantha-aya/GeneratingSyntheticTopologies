@@ -158,7 +158,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }
@@ -201,96 +211,6 @@
             "label": "Utility 0.WARE SHOALS.Corporate.Switch 242",
             "compromised": false,
             "arpTable": []
-        },
-        {
-            "utility": "Utility 0",
-            "adminIP": "10.55.121.100",
-            "ipAddress": "10.55.121.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WARE SHOALS",
-            "label": "Utility 0.WARE SHOALS..Host 241",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 0",
-            "adminIP": "10.55.121.100",
-            "ipAddress": "10.55.121.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WARE SHOALS",
-            "label": "Utility 0.WARE SHOALS..Host 242",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 0",
-            "adminIP": "10.55.121.100",
-            "ipAddress": "10.55.121.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WARE SHOALS",
-            "label": "Utility 0.WARE SHOALS..Host 241",
-            "compromised": false,
-            "protocol": {
-                "SQL": [
-                    {
-                        "port": "3306",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 0",
-            "adminIP": "10.55.121.100",
-            "ipAddress": "10.55.121.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WARE SHOALS",
-            "label": "Utility 0.WARE SHOALS..Host 242",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 0",
-            "adminIP": "10.55.121.100",
-            "ipAddress": "10.55.121.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WARE SHOALS",
-            "label": "Utility 0.WARE SHOALS..Host 242",
-            "compromised": false,
-            "protocol": {
-                "HTTP": [
-                    {
-                        "port": "80",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
         },
         {
             "utility": "Utility 0",
@@ -351,6 +271,78 @@
                 "10.55.121.4",
                 "10.55.121.5"
             ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.55.121.100",
+            "ipAddress": "10.55.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WARE SHOALS",
+            "label": "Utility 0.WARE SHOALS..Host 241",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.55.121.100",
+            "ipAddress": "10.55.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WARE SHOALS",
+            "label": "Utility 0.WARE SHOALS..Host 242",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.55.121.100",
+            "ipAddress": "10.55.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WARE SHOALS",
+            "label": "Utility 0.WARE SHOALS..LocalDatabase 241",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.55.121.100",
+            "ipAddress": "10.55.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WARE SHOALS",
+            "label": "Utility 0.WARE SHOALS..LocalWebServer 242",
+            "compromised": false,
             "protocol": {
                 "DNP3": [
                     {
@@ -436,7 +428,7 @@
         },
         {
             "source": "Utility 0.WARE SHOALS.Corporate.Switch 242",
-            "destination": "Utility 0.WARE SHOALS..Host 241",
+            "destination": "Utility 0.WARE SHOALS..LocalDatabase 241",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -444,15 +436,7 @@
         },
         {
             "source": "Utility 0.WARE SHOALS.Corporate.Switch 242",
-            "destination": "Utility 0.WARE SHOALS..Host 242",
-            "link_type": "Ethernet",
-            "bandwidth": 10.0,
-            "distance": 10.0,
-            "compromised": false
-        },
-        {
-            "source": "Utility 0.WARE SHOALS.Corporate.Switch 242",
-            "destination": "Utility 0.WARE SHOALS..Host 242",
+            "destination": "Utility 0.WARE SHOALS..LocalWebServer 242",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -513,7 +497,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }

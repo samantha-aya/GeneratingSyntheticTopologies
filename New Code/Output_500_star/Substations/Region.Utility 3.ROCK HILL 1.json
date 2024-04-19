@@ -158,7 +158,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }
@@ -204,96 +214,6 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.168.100",
-            "ipAddress": "10.53.168.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROCK HILL 1",
-            "label": "Utility 3.ROCK HILL 1..Host 335",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
-            "adminIP": "10.53.168.100",
-            "ipAddress": "10.53.168.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROCK HILL 1",
-            "label": "Utility 3.ROCK HILL 1..Host 336",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
-            "adminIP": "10.53.168.100",
-            "ipAddress": "10.53.168.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROCK HILL 1",
-            "label": "Utility 3.ROCK HILL 1..Host 335",
-            "compromised": false,
-            "protocol": {
-                "SQL": [
-                    {
-                        "port": "3306",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
-            "adminIP": "10.53.168.100",
-            "ipAddress": "10.53.168.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROCK HILL 1",
-            "label": "Utility 3.ROCK HILL 1..Host 336",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
-            "adminIP": "10.53.168.100",
-            "ipAddress": "10.53.168.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "ROCK HILL 1",
-            "label": "Utility 3.ROCK HILL 1..Host 336",
-            "compromised": false,
-            "protocol": {
-                "HTTP": [
-                    {
-                        "port": "80",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 3",
             "adminIP": "10.53.168.3",
             "ipAddress": "10.53.168.0",
             "subnetMask": "255.255.255.192",
@@ -335,6 +255,78 @@
                 "10.53.168.3",
                 "10.53.168.4"
             ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.168.100",
+            "ipAddress": "10.53.168.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCK HILL 1",
+            "label": "Utility 3.ROCK HILL 1..Host 335",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.168.100",
+            "ipAddress": "10.53.168.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCK HILL 1",
+            "label": "Utility 3.ROCK HILL 1..Host 336",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.168.100",
+            "ipAddress": "10.53.168.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCK HILL 1",
+            "label": "Utility 3.ROCK HILL 1..LocalDatabase 335",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.168.100",
+            "ipAddress": "10.53.168.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCK HILL 1",
+            "label": "Utility 3.ROCK HILL 1..LocalWebServer 336",
+            "compromised": false,
             "protocol": {
                 "DNP3": [
                     {
@@ -412,7 +404,7 @@
         },
         {
             "source": "Utility 3.ROCK HILL 1.Corporate.Switch 336",
-            "destination": "Utility 3.ROCK HILL 1..Host 335",
+            "destination": "Utility 3.ROCK HILL 1..LocalDatabase 335",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -420,15 +412,7 @@
         },
         {
             "source": "Utility 3.ROCK HILL 1.Corporate.Switch 336",
-            "destination": "Utility 3.ROCK HILL 1..Host 336",
-            "link_type": "Ethernet",
-            "bandwidth": 10.0,
-            "distance": 10.0,
-            "compromised": false
-        },
-        {
-            "source": "Utility 3.ROCK HILL 1.Corporate.Switch 336",
-            "destination": "Utility 3.ROCK HILL 1..Host 336",
+            "destination": "Utility 3.ROCK HILL 1..LocalWebServer 336",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -488,7 +472,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }

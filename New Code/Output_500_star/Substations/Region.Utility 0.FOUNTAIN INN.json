@@ -158,7 +158,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }
@@ -204,96 +214,6 @@
         },
         {
             "utility": "Utility 0",
-            "adminIP": "10.55.145.100",
-            "ipAddress": "10.55.145.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "FOUNTAIN INN",
-            "label": "Utility 0.FOUNTAIN INN..Host 289",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 0",
-            "adminIP": "10.55.145.100",
-            "ipAddress": "10.55.145.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "FOUNTAIN INN",
-            "label": "Utility 0.FOUNTAIN INN..Host 290",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 0",
-            "adminIP": "10.55.145.100",
-            "ipAddress": "10.55.145.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "FOUNTAIN INN",
-            "label": "Utility 0.FOUNTAIN INN..Host 289",
-            "compromised": false,
-            "protocol": {
-                "SQL": [
-                    {
-                        "port": "3306",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 0",
-            "adminIP": "10.55.145.100",
-            "ipAddress": "10.55.145.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "FOUNTAIN INN",
-            "label": "Utility 0.FOUNTAIN INN..Host 290",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 0",
-            "adminIP": "10.55.145.100",
-            "ipAddress": "10.55.145.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "FOUNTAIN INN",
-            "label": "Utility 0.FOUNTAIN INN..Host 290",
-            "compromised": false,
-            "protocol": {
-                "HTTP": [
-                    {
-                        "port": "80",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 0",
             "adminIP": "10.55.145.3",
             "ipAddress": "10.55.145.0",
             "subnetMask": "255.255.255.192",
@@ -335,6 +255,78 @@
                 "10.55.145.3",
                 "10.55.145.4"
             ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.55.145.100",
+            "ipAddress": "10.55.145.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FOUNTAIN INN",
+            "label": "Utility 0.FOUNTAIN INN..Host 289",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.55.145.100",
+            "ipAddress": "10.55.145.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FOUNTAIN INN",
+            "label": "Utility 0.FOUNTAIN INN..Host 290",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.55.145.100",
+            "ipAddress": "10.55.145.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FOUNTAIN INN",
+            "label": "Utility 0.FOUNTAIN INN..LocalDatabase 289",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.55.145.100",
+            "ipAddress": "10.55.145.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FOUNTAIN INN",
+            "label": "Utility 0.FOUNTAIN INN..LocalWebServer 290",
+            "compromised": false,
             "protocol": {
                 "DNP3": [
                     {
@@ -412,7 +404,7 @@
         },
         {
             "source": "Utility 0.FOUNTAIN INN.Corporate.Switch 290",
-            "destination": "Utility 0.FOUNTAIN INN..Host 289",
+            "destination": "Utility 0.FOUNTAIN INN..LocalDatabase 289",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -420,15 +412,7 @@
         },
         {
             "source": "Utility 0.FOUNTAIN INN.Corporate.Switch 290",
-            "destination": "Utility 0.FOUNTAIN INN..Host 290",
-            "link_type": "Ethernet",
-            "bandwidth": 10.0,
-            "distance": 10.0,
-            "compromised": false
-        },
-        {
-            "source": "Utility 0.FOUNTAIN INN.Corporate.Switch 290",
-            "destination": "Utility 0.FOUNTAIN INN..Host 290",
+            "destination": "Utility 0.FOUNTAIN INN..LocalWebServer 290",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -488,7 +472,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }

@@ -158,7 +158,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }
@@ -204,96 +214,6 @@
         },
         {
             "utility": "Utility 2",
-            "adminIP": "10.54.101.100",
-            "ipAddress": "10.54.101.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WATERLOO",
-            "label": "Utility 2.WATERLOO..Host 201",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 2",
-            "adminIP": "10.54.101.100",
-            "ipAddress": "10.54.101.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WATERLOO",
-            "label": "Utility 2.WATERLOO..Host 202",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 2",
-            "adminIP": "10.54.101.100",
-            "ipAddress": "10.54.101.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WATERLOO",
-            "label": "Utility 2.WATERLOO..Host 201",
-            "compromised": false,
-            "protocol": {
-                "SQL": [
-                    {
-                        "port": "3306",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 2",
-            "adminIP": "10.54.101.100",
-            "ipAddress": "10.54.101.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WATERLOO",
-            "label": "Utility 2.WATERLOO..Host 202",
-            "compromised": false,
-            "protocol": {
-                "DNP3": [
-                    {
-                        "port": "20000",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 2",
-            "adminIP": "10.54.101.100",
-            "ipAddress": "10.54.101.96",
-            "subnetMask": "255.255.255.224",
-            "vlan": "Corporate",
-            "substation": "WATERLOO",
-            "label": "Utility 2.WATERLOO..Host 202",
-            "compromised": false,
-            "protocol": {
-                "HTTP": [
-                    {
-                        "port": "80",
-                        "transportLayer": "TCP"
-                    }
-                ]
-            }
-        },
-        {
-            "utility": "Utility 2",
             "adminIP": "10.54.101.3",
             "ipAddress": "10.54.101.0",
             "subnetMask": "255.255.255.192",
@@ -335,6 +255,78 @@
                 "10.54.101.3",
                 "10.54.101.4"
             ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.54.101.100",
+            "ipAddress": "10.54.101.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WATERLOO",
+            "label": "Utility 2.WATERLOO..Host 201",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.54.101.100",
+            "ipAddress": "10.54.101.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WATERLOO",
+            "label": "Utility 2.WATERLOO..Host 202",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.54.101.100",
+            "ipAddress": "10.54.101.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WATERLOO",
+            "label": "Utility 2.WATERLOO..LocalDatabase 201",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.54.101.100",
+            "ipAddress": "10.54.101.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WATERLOO",
+            "label": "Utility 2.WATERLOO..LocalWebServer 202",
+            "compromised": false,
             "protocol": {
                 "DNP3": [
                     {
@@ -412,7 +404,7 @@
         },
         {
             "source": "Utility 2.WATERLOO.Corporate.Switch 202",
-            "destination": "Utility 2.WATERLOO..Host 201",
+            "destination": "Utility 2.WATERLOO..LocalDatabase 201",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -420,15 +412,7 @@
         },
         {
             "source": "Utility 2.WATERLOO.Corporate.Switch 202",
-            "destination": "Utility 2.WATERLOO..Host 202",
-            "link_type": "Ethernet",
-            "bandwidth": 10.0,
-            "distance": 10.0,
-            "compromised": false
-        },
-        {
-            "source": "Utility 2.WATERLOO.Corporate.Switch 202",
-            "destination": "Utility 2.WATERLOO..Host 202",
+            "destination": "Utility 2.WATERLOO..LocalWebServer 202",
             "link_type": "Ethernet",
             "bandwidth": 10.0,
             "distance": 10.0,
@@ -488,7 +472,17 @@
                         "description": "Block DNP3",
                         "source": "10.52.1.",
                         "destination": "10.52.1.",
-                        "port": "80",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }

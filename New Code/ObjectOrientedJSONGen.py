@@ -52,8 +52,6 @@ class Firewall(Node):
 ##            self.acls[acl_name].remove(rule)
 ##            if not self.acls[acl_name]:
 ##                del self.acls[acl_name]
-
-    
 class Router(Node):
     def __init__(self, interfaces, routingTable, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -404,12 +402,12 @@ class CyberPhysicalSystem:
             localDatabase = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
-                                label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..LocalDatabase {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             localWebServer = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
-                                label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..LocalWebServer {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             hmi = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
@@ -427,11 +425,8 @@ class CyberPhysicalSystem:
             sub.add_node(router)
             sub.add_node(switch)
             sub.add_node(corp_switch)
-            sub.add_node(host1)
-            sub.add_node(host2)
-            sub.add_node(localDatabase)
-            sub.add_node(localWebServer)
-            sub.add_node(hmi)
+
+            #sub.add_node(hmi)
             # Create relay and relay controller nodes
             # Create relays
             starting_relay_id = 3
@@ -452,6 +447,10 @@ class CyberPhysicalSystem:
 
             RC.relayIPlist = relayiplist
             sub.add_node(RC)
+            sub.add_node(host1)
+            sub.add_node(host2)
+            sub.add_node(localDatabase)
+            sub.add_node(localWebServer)
 
             #Add the non-nodes objects to the substations
             sub.add_switch(switch)
@@ -462,8 +461,9 @@ class CyberPhysicalSystem:
             sub.add_subRC(RC)
 
             #firewall command to add the firewalls
-            firewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "allow")
-            
+            firewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "20000" ,"TCP", "block")
+            firewall.add_acl_rule("acl1", "Allow ICCP", "10.52.1.","10.52.1.", "102" ,"TCP", "allow")
+
             #protocols added below to the components
             RC.set_protocol("DNP3", "20000", "TCP")
             host1.set_protocol("DNP3", "20000", "TCP")
@@ -492,7 +492,7 @@ class CyberPhysicalSystem:
             # switch.Corp --> localWebServer
             sub.add_link(corp_switch.label, localWebServer.label, "Ethernet", 10.0, 10.0)
             # switch.Corp --> hmi
-            sub.add_link(corp_switch.label, hmi.label, "Ethernet", 10.0, 10.0)
+            #sub.add_link(corp_switch.label, hmi.label, "Ethernet", 10.0, 10.0)
 
             substations.append(sub)
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"

@@ -12,12 +12,14 @@ def create_hierarchical_substation_graph_no_crossings(substation_data):
 
     # Define levels for different types of nodes in the hierarchy
     levels = {
-        "RC": 3,
+        "RC": 1,
         "Relay": 0,
         "Switch": 2,
-        "Router": 3,
+        "Router": 4,
         "Host": 1,
-        "Firewall": 4
+        "Firewall": 3,
+        "LocalDatabase": 1,
+        "LocalWebServer": 1
     }
     node_positions = {}
     y_level_dist = 1.0  # Vertical distance between levels
@@ -28,6 +30,7 @@ def create_hierarchical_substation_graph_no_crossings(substation_data):
 
 
     # Add nodes with positions based on their hierarchical level
+    i=1
     for node in substation_data['nodes']:
         node_id = node['label']
         words = node['label'].split('.')
@@ -40,7 +43,7 @@ def create_hierarchical_substation_graph_no_crossings(substation_data):
         x_positions[level] += x_level_width  # Increment x position for the next node in the same level
         print(node['label'])
         print(x_positions[level], y_pos)
-        G.add_node(node_id, label=node['label'])
+        G.add_node(node_id, label=node_type)#node['label'])
 
     # Add links based on the connections specified in 'links'
     for link in substation_data['links']:
@@ -145,7 +148,7 @@ def create_utilities_graph_with_color(data):
 def main(code_to_run, data):
     if code_to_run==1:
         # Select a specific substation to visualize
-        selected_substation_data = data['utilities'][0]['substations'][0]
+        selected_substation_data = data['utilities'][3]['substations'][40]
         # print("###############")
         # print(data['utilities'][0])
         # print("###############")
