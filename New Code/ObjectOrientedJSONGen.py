@@ -33,6 +33,7 @@ class Firewall(Node):
 
     def add_acl_rule(self, acl_name, description, source, destination, port, transportLayer, action):
         #this allows for an acl to be added
+        #multiple acls can be added 
         rule = {
             "description": description,
             "source": source,
@@ -69,9 +70,8 @@ class RelayController(Node):
         self.protocol = {}
 
     def set_protocol(self, protocolLabel, port, transportLayer):
-        #this functions lets us set the protocol 
+        #this functions lets us set the protocol for the relay controller
         protocol = {
-            #"protocolLabel": protocolLabel,
             "port": port,
             "transportLayer": transportLayer #tcp or udp
         }
@@ -82,15 +82,14 @@ class RelayController(Node):
         
 class Host(Node):
     #this class of node is used for ICCPServer (Reg), EMS (Utilities)
-    #and ofcourse for hosts anywhere (Reg, Uils, Subtations)
+    #and of course for hosts anywhere (Reg, Uils, Subtations)
     def __init__(self, openPorts, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.protocol = {}
 
     def set_protocol(self, protocolLabel, port, transportLayer):
-        #this functions lets us set the protocol 
+        #this functions lets us set the protocol for the cyber node/host
         protocol = {
-            #"protocolLabel": protocolLabel,
             "port": port,
             "transportLayer": transportLayer #tcp or udp
         }
@@ -110,9 +109,8 @@ class Relay(Node):
 
 
     def set_protocol(self, protocolLabel, port, transportLayer):
-        #this functions lets us set the protocol 
+        #this functions lets us set the protocol for the relay
         protocol = {
-            #"protocolLabel": protocolLabel,
             "port": port,
             "transportLayer": transportLayer #tcp or udp
         }
@@ -408,11 +406,6 @@ class CyberPhysicalSystem:
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalWebServer {(2*int(row['Sub Num']))}",
-                                vlan='Corporate')
-            hmi = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
-                                label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             RC = RelayController(relayIPlist=["192.168.1.1", "192.168.1.2"], utility=row["Utility Name"], substation=row["Sub Name"],
                                  adminIP=f"10.{utl_ID}.{row['Sub Num']}.2",
