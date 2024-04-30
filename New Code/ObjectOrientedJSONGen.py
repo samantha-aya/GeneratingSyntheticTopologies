@@ -419,7 +419,6 @@ class CyberPhysicalSystem:
             sub.add_node(switch)
             sub.add_node(corp_switch)
 
-            #sub.add_node(hmi)
             # Create relay and relay controller nodes
             # Create relays
             starting_relay_id = 3
@@ -463,8 +462,6 @@ class CyberPhysicalSystem:
             host2.set_protocol("DNP3", "20000", "TCP")
             localDatabase.set_protocol("SQL", "3306", "TCP")
             localWebServer.set_protocol("DNP3", "20000", "TCP")
-            hmi.set_protocol("HTTP", "80", "TCP")
-
 
 
             # Create links between nodes
@@ -484,8 +481,6 @@ class CyberPhysicalSystem:
             sub.add_link(corp_switch.label, localDatabase.label, "Ethernet", 10.0, 10.0)
             # switch.Corp --> localWebServer
             sub.add_link(corp_switch.label, localWebServer.label, "Ethernet", 10.0, 10.0)
-            # switch.Corp --> hmi
-            #sub.add_link(corp_switch.label, hmi.label, "Ethernet", 10.0, 10.0)
 
             substations.append(sub)
             name_json = f"Region.{row['Utility Name']}.{row['Sub Name']}.json"
