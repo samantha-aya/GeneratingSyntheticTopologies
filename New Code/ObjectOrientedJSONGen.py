@@ -289,7 +289,6 @@ class Regulatory:
     def add_regFirewall(self, firewall):
         self.regulatoryFirewall.append(firewall)
 
-
 class CyberPhysicalSystem:
     def load_substations_from_csv(self, csv_file, substation_connections):
         df = pd.read_csv(csv_file, skiprows=1)
@@ -630,6 +629,9 @@ class CyberPhysicalSystem:
                         util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                     elif s.utility_id == util.id:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+            if "statistics" in topology:
+                #generate connections between utility, substations using Zeyu's statistics
+
 
             # utilityRouter --> DMZFirewall
             util.add_link(utilRouter.label, DMZFirewall.label, "Ethernet", 10.0, 10.0)

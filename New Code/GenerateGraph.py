@@ -3,6 +3,10 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 import networkx as nx
 import os
+import configparser
+
+config = configparser.ConfigParser()
+config.read('settings.ini')
 
 cwd = os.getcwd()
 
@@ -132,16 +136,33 @@ def create_hierarchical_region_graph_no_crossings(region_data):
 
     return G, node_positions
 
-def create_utilities_graph_with_color(data):
+def create_utilities_graph_with_color(data, configuration):
     G = nx.Graph()
-    for utility in data['utilities']:
-        utility_id = utility['label']
-        G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='darkblue')
+    if configuration == 'star':
+        for utility in data['utilities']:
+            utility_id = utility['label']
+            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='darkblue')
 
-        for substation in utility['substations']:
-            G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
-                       color='lightblue')
-            G.add_edge(utility_id, substation['substation'])
+            for substation in utility['substations']:
+                G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
+                           color='lightblue')
+                G.add_edge(utility_id, substation['substation'])
+    elif configuration == 'radial':
+        for utility in data['utilities']:
+            utility_id = utility['label']
+            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='darkblue')
+
+            for substation in utility['substations']:
+                G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
+                           color='lightblue')
+                G.add_edge(utility_id, substation['substation'])
+    else:
+        print("Configuration is neither radial nor star.")
+
+
+
+    if configuration == 'radial':
+
 
     return G
 
@@ -170,7 +191,7 @@ def main(code_to_run, data):
         gdf = gpd.read_file('your_shapefile.shp')
 
         # Create the utilities graph
-        utilities_graph_with_color = create_utilities_graph_with_color(data)
+        utilities_graph_with_color = create_utilities_graph_with_color(data, configuration)
 
         # Plotting
         fig, ax = plt.subplots(figsize=(15, 15))
@@ -187,7 +208,7 @@ def main(code_to_run, data):
         nx.draw(utilities_graph_with_color, pos, with_labels=True, labels=labels, node_size=small_node_size, node_color=colors, font_size=5)
         plt.show()
     elif code_to_run==3:
-        # Select a specific substation to visualize
+        # Select a specific utility to visualize
         selected_utility_data = data['utilities'][0]
         utility_graph, utility_positions = create_hierarchical_utility_graph_no_crossings(
             selected_utility_data)
@@ -198,7 +219,7 @@ def main(code_to_run, data):
         nx.draw(utility_graph, utility_positions, with_labels=True, labels=labels, node_size=500,
                 node_color='lightgreen', font_size=12, arrows=True)
         plt.title(
-            f'Graph of Substation: {selected_utility_data["utility"]} with Hierarchical Structure and No Crossings')
+            f'Graph of Utility: {selected_utility_data["utility"]} with Hierarchical Structure and No Crossings')
         plt.show()
     elif code_to_run==4:
         # Select a specific substation to visualize
@@ -223,6 +244,7 @@ if __name__ == "__main__":
     #3-Generate utility internal layout
     #4-Generate regulatory/region internal layout
     file_path = os.path.join(cwd, 'Output\\Regulatory\\Regulatory.json')
+    configuration = config['DEFAULT']['topology_configuration']
     # Load the JSON file
     with open(file_path, 'r') as file:
         data = json.load(file)
