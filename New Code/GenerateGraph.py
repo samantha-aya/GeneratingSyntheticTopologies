@@ -150,11 +150,11 @@ def create_utilities_graph_with_color(data, configuration):
     elif configuration == 'radial':
         for utility in data['utilities']:
             utility_id = utility['label']
-            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='darkblue')
+            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='red')
 
             for substation in utility['substations']:
                 G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
-                           color='lightblue')
+                           color='blue')
                 G.add_edge(utility_id, substation['substation'])
     else:
         print("Configuration is neither radial nor star.")
