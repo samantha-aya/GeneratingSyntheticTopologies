@@ -313,7 +313,9 @@ class CyberPhysicalSystem:
             name: {
                 'id': starting_utl_number + i,
                 'latitude': utility_centroids[name][0],
-                'longitude': utility_centroids[name][1]
+                'longitude': utility_centroids[name][1],
+                'num_of_subs': 0,
+                'num_of_gens': 0
             }
             for i, name in enumerate(unique_values)
         }
@@ -619,6 +621,8 @@ class CyberPhysicalSystem:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if "statistics" in topology:
                 #generate connections between utility, substations using Zeyu's statistics
+                number_of_substations = len(util.substations)
+                number_of_generators = if hasattr()
 
 
             # utilityRouter --> DMZFirewall
