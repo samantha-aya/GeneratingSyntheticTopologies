@@ -156,7 +156,7 @@ def create_utilities_graph_with_color(data, configuration):
                 # print(utility_id)
                 # print(substation['substation'])
                 G.add_edge(utility_id, substation['substation'])
-    elif 'radial' in configuration:
+    elif 'radial' in configuration or 'statistics' in configuration:
         for utility in data['utilities']:
             utility_id = utility['label']
             G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color="red")
@@ -180,7 +180,7 @@ def create_utilities_graph_with_color(data, configuration):
                     G.add_edge(source_id, dest_id)
 
     else:
-        print("Configuration is neither radial nor star.")
+        print("Configuration is neither radial, statistics based nor star.")
 
     return G
 
@@ -213,7 +213,7 @@ def main(code_to_run, data):
 
         # Plotting
         fig, ax = plt.subplots(figsize=(15, 15))
-        gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.2)  # Plot the shapefile
+        gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
 
         # Adjusting the node size
         small_node_size = 50  # Smaller size for nodes
@@ -223,8 +223,8 @@ def main(code_to_run, data):
         labels = nx.get_node_attributes(utilities_graph_with_color, 'label')
         colors = [utilities_graph_with_color.nodes[node]['color'] for node in utilities_graph_with_color.nodes]
 
-        nx.draw(utilities_graph_with_color, pos, with_labels=True, labels=labels, node_size=small_node_size, node_color=colors, width=0.5,font_size=5)
-        plt.savefig('Output\\Regulatory\\Utilities_radial.pdf')
+        nx.draw(utilities_graph_with_color, pos, with_labels=True, labels=labels, node_size=small_node_size, node_color=colors, width=0.07,font_size=5)
+        plt.savefig('Output\\Regulatory\\Utilities_star.pdf')
         plt.show()
     elif code_to_run==3:
         # Select a specific utility to visualize
