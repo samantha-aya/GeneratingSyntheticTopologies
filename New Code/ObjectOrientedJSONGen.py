@@ -630,7 +630,7 @@ class CyberPhysicalSystem:
                 #generate connections between utility, substations using Zeyu's statistics
                 number_of_substations = val.get('num_of_subs')
                 number_of_generators = val.get('num_of_gens')
-                #statistics_based_connections = statistics_based(number_of_substations, number_of_generators)
+                statistics_based_connections = generate_nwk(number_of_substations, number_of_generators)
 
 
             # utilityRouter --> DMZFirewall

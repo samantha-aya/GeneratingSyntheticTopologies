@@ -1,7 +1,8 @@
-import cvxpy as cp
+
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
+from esa import SAW
 
 from ortools.sat.python import cp_model
 import math
@@ -14,7 +15,7 @@ def lognormal(x, a, b):
     # numpy.random.lognormal
     return 1/(a*x*np.sqrt(2*np.pi))*np.exp(-np.power(np.log(x) - b, 2)/(2*np.power(a, 2)))
 
-def generate_nwk(subs, gens):
+def generate_nwk(subs, gens, temp):
 
     probability = lognormal(np.array(range(1,11)), 0.57627298, 0.56637515 )
     # add 0.003 to each value in probablity
@@ -81,7 +82,7 @@ def generate_nwk(subs, gens):
     seq = []
     # for i in range(n_degree):
     #     seq += [degrees[i] for _ in range(solver.Value(nodes[i]))]
-    temp = [45,37,16,7,3,4 , 0 , 0 , 0 , 0]
+    temp = temp #[45,37,16,7,3,4 , 0 , 0 , 0 , 0]
     for i in range(10):
         seq += [degrees[i] for _ in range(temp[i])]
     seq = np.array(seq)
@@ -164,11 +165,11 @@ def generate_nwk(subs, gens):
     for i in results:
         subbase.nodes[order[i]]['color'] = 'r'
 
-    subbase.nodes[111]['color'] = 'black'
+    subbase.nodes[subs-1]['color'] = 'black'
 
     plt.figure(figsize=(16,16))
     colors = [node[1]['color'] for node in subbase.nodes(data=True)]
-    nx.draw_networkx(subbase, pos, with_labels=False, node_size=90, node_color=colors)
+    nx.draw_networkx(subbase, pos, with_labels=True, node_size=90, node_color=colors)
     plt.show()
 
     # avg_ebc_mw = 0.125
@@ -284,8 +285,23 @@ def generate_nwk(subs, gens):
     # plt.legend(loc=8, ncol=5, fontsize=14, frameon=False)
     # plt.show()
 
-subs = 112
-gens = 17
+subs = 100 #112
+gens = 6 #17
 if __name__ == "__main__":
    # stuff only to run when not called via 'import' here
-   generate_nwk(subs, gens)
+   # filepath = "D:/Github/ECEN689Project/ACTIVSg500.pwb"
+   # case = SAW(filepath)
+   # graph = case.to_graph(node='substation', geographic=True)
+   # #get degree sequence
+   # temp = [0] * 10
+   # for _, degree in graph.degree():
+   #     temp[degree] += 1
+   # # Find the index of the first non-zero value
+   # first_non_zero_index = next((i for i, x in enumerate(temp) if x != 0), None)
+   #
+   # # Slice the list from the first non-zero index to the end
+   # temp1 = temp[first_non_zero_index:] if first_non_zero_index is not None else []
+   #
+   # print(temp1)
+   temp1 = [45,37,16,7,3,4 , 0 , 0 , 0 , 0]
+   generate_nwk(subs, gens, temp1)
