@@ -14,7 +14,7 @@ def lognormal(x, a, b):
     # numpy.random.lognormal
     return 1/(a*x*np.sqrt(2*np.pi))*np.exp(-np.power(np.log(x) - b, 2)/(2*np.power(a, 2)))
 
-def statistics_based(subs, gens):
+def generate_nwk(subs, gens):
 
     probability = lognormal(np.array(range(1,11)), 0.57627298, 0.56637515 )
     # add 0.003 to each value in probablity
@@ -286,4 +286,6 @@ def statistics_based(subs, gens):
 
 subs = 112
 gens = 17
-statistics_based(subs, gens)
+if __name__ == "__main__":
+   # stuff only to run when not called via 'import' here
+   generate_nwk(subs, gens)

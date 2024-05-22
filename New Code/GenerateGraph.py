@@ -7,6 +7,9 @@ import configparser
 
 config = configparser.ConfigParser()
 config.read('settings.ini')
+configuration = config['DEFAULT']['topology_configuration']
+
+print("configuration is: ", configuration)
 
 cwd = os.getcwd()
 
@@ -138,31 +141,46 @@ def create_hierarchical_region_graph_no_crossings(region_data):
 
 def create_utilities_graph_with_color(data, configuration):
     G = nx.Graph()
-    if configuration == 'star':
-        for utility in data['utilities']:
-            utility_id = utility['label']
-            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='darkblue')
-
-            for substation in utility['substations']:
-                G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
-                           color='lightblue')
-                G.add_edge(utility_id, substation['substation'])
-    elif configuration == 'radial':
+    if 'star' in configuration:
         for utility in data['utilities']:
             utility_id = utility['label']
             G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='red')
 
             for substation in utility['substations']:
-                G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
-                           color='blue')
+                if substation['type'] == 'generation':
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
+                           color='green')
+                else:
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
+                           color='lightblue')
+                # print(utility_id)
+                # print(substation['substation'])
                 G.add_edge(utility_id, substation['substation'])
+    elif 'radial' in configuration:
+        for utility in data['utilities']:
+            utility_id = utility['label']
+            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color="red")
+
+            #add substation nodes
+            for substation in utility['substations']:
+                #if substation type is generation, color it green
+                if substation['type'] == 'generation':
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',color='green')
+                else:
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',color='lightblue')
+            #add edge only if there is a link between utility and substation
+            for link in utility['links']:
+                print(link['source'], link['destination'])
+                if f"{utility['label']}.{utility['utility']}" not in link['destination']:
+                    #get substation id from link
+                    source_id = link['source'].split(".")[1]
+                    print(source_id)
+                    dest_id = link['destination'].split(".")[1]
+                    print(dest_id)
+                    G.add_edge(source_id, dest_id)
+
     else:
         print("Configuration is neither radial nor star.")
-
-
-
-    if configuration == 'radial':
-
 
     return G
 
@@ -195,17 +213,18 @@ def main(code_to_run, data):
 
         # Plotting
         fig, ax = plt.subplots(figsize=(15, 15))
-        gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.5)  # Plot the shapefile
+        gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.2)  # Plot the shapefile
 
         # Adjusting the node size
-        small_node_size = 100  # Smaller size for nodes
+        small_node_size = 50  # Smaller size for nodes
 
         # Plot the utilities and substations
         pos = nx.get_node_attributes(utilities_graph_with_color, 'pos')
         labels = nx.get_node_attributes(utilities_graph_with_color, 'label')
         colors = [utilities_graph_with_color.nodes[node]['color'] for node in utilities_graph_with_color.nodes]
 
-        nx.draw(utilities_graph_with_color, pos, with_labels=True, labels=labels, node_size=small_node_size, node_color=colors, font_size=5)
+        nx.draw(utilities_graph_with_color, pos, with_labels=True, labels=labels, node_size=small_node_size, node_color=colors, width=0.5,font_size=5)
+        plt.savefig('Output\\Regulatory\\Utilities_radial.pdf')
         plt.show()
     elif code_to_run==3:
         # Select a specific utility to visualize
@@ -238,13 +257,13 @@ def main(code_to_run, data):
 
 
 if __name__ == "__main__":
-    code_to_run = 1
+    code_to_run = 2
     #1-Generate substation internal layout
     #2-Generate substation-utility graph on a map -- Modify this part to use maps (some fancy python packages)
     #3-Generate utility internal layout
     #4-Generate regulatory/region internal layout
     file_path = os.path.join(cwd, 'Output\\Regulatory\\Regulatory.json')
-    configuration = config['DEFAULT']['topology_configuration']
+
     # Load the JSON file
     with open(file_path, 'r') as file:
         data = json.load(file)

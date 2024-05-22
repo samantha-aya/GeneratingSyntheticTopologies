@@ -1,9 +1,11 @@
+import haversine
 import pandas as pd
 import numpy as np
 from sklearn.cluster import KMeans
 import json
 import os
 import configparser
+from statistics_based import generate_nwk#import zeyu's function
 
 config = configparser.ConfigParser()
 config.read('settings.ini')
@@ -158,6 +160,7 @@ class Substation:
         self.substationSwitch = []
         self.substationrelayController = []
         self.compromised = False
+        self.type= "transmission"
 
     def add_node(self, node):
         self.nodes.append(node)
@@ -190,6 +193,7 @@ class GenSubstation(Substation):
         self.genmw = genmw
         self.genmvar = genmvar
         self.connecting_TS_num=connecting_TS_num
+        self.type = "generation"
         
 class Utility:
     def __init__(self, networkLan, utl_id, utility_name, substations, subFirewalls, latitude, longitude):
@@ -314,8 +318,8 @@ class CyberPhysicalSystem:
                 'id': starting_utl_number + i,
                 'latitude': utility_centroids[name][0],
                 'longitude': utility_centroids[name][1],
-                'num_of_subs': 0,
-                'num_of_gens': 0
+                'num_of_subs': df.groupby('Utility Name').size()[name],
+                'num_of_gens': df[df['Gen MW'] != 99999].groupby('Utility Name').size()[name]
             }
             for i, name in enumerate(unique_values)
         }
@@ -341,12 +345,15 @@ class CyberPhysicalSystem:
                     utl_id=utl_ID)
 
             else:
+                # If the substation is a generation substation, we need to connect it to a transmission substation
+                # from the pairs in substations_connections, find the pair that contains the current substation
+                # then find the pair with minimum distance between them
+                minimum_distance = 99999
                 for pair in substation_connections:
-                    if row["Sub Num"] in pair:
-                        # Return the other number in the pair
-                        TS_num = pair[1] if pair[0] == row["Sub Num"] else pair[0]
-                        print("Connecting TS found. The number is  ", TS_num)
-                        break
+                    if row['Sub Num'] in pair:
+                        if minimum_distance > pair[2]:
+                            minimum_distance = pair[2]
+                            TS_num = pair[1] if row['Sub Num'] == pair[0] else pair[0]
                 sub = GenSubstation(
                     relaynum=row['# of Buses'],
                     label=sub_label,
@@ -528,12 +535,12 @@ class CyberPhysicalSystem:
             utilEMS=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.0",
-                                label=f"{key}.utl..Host {ems_start}",
+                                label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1')
             iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.0",
-                                label=f"{key}.utl..Host {ems_start}",
+                                label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1') #need to fix this information or see what needs to be changed
             router_start = router_start + 1
             substationsRouter=Router([], [], utility=key, substation="",
@@ -621,8 +628,9 @@ class CyberPhysicalSystem:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if "statistics" in topology:
                 #generate connections between utility, substations using Zeyu's statistics
-                number_of_substations = len(util.substations)
-                number_of_generators = if hasattr()
+                number_of_substations = val.get('num_of_subs')
+                number_of_generators = val.get('num_of_gens')
+                #statistics_based_connections = statistics_based(number_of_substations, number_of_generators)
 
 
             # utilityRouter --> DMZFirewall
@@ -710,22 +718,46 @@ def output_to_json_file(substation, filename):
     with open(filename, "w") as file:
         json.dump(substation, file, default=to_json, indent=4)
 
-def get_substation_connections(branches_csv):
+def get_substation_connections(branches_csv, substations_csv):
+    df2 = pd.read_csv(substations_csv, skiprows=1)
+    df2.fillna(99999, inplace=True)
     df = pd.read_csv(branches_csv)
     # Convert columns to tuples
     df['Pairs'] = list(zip(df['SubNumberFrom'], df['SubNumberTo']))
     df = df[df['SubNumberFrom'] != df['SubNumberTo']]
     # Find unique pairs
-    unique_pairs = df['Pairs'].unique()
+    unique_pairs0 = df['Pairs'].unique()
     # Display unique pairs
-    print(unique_pairs)
+    # print(unique_pairs)
+    unique_pairs = [None] * len(unique_pairs0)
+
+    #make sure that the unique_pairs0 does not have pair[0] and pair[1] as both generation substations
+    for pair in unique_pairs0:
+        for index, row in df2.iterrows():
+            #if both numbers in the pair are generation substations, remove the pair
+            if row['Sub Num'] == pair[0] and row['Gen MW'] != 99999:
+                if row['Sub Num'] == pair[1] and row['Gen MW'] != 99999:
+                    print("DELETED PAIR: ", pair)
+                    unique_pairs0 = np.delete(unique_pairs0, np.where(unique_pairs0 == pair), axis=0)
+
+    #find the distance between the substations using latitude and longitude information from df2 using haversine function
+    for i in range(len(unique_pairs0)):
+        for index, row in df2.iterrows():
+            if row['Sub Num'] == unique_pairs0[i][0]:
+                lat1 = row['Latitude']
+                lon1 = row['Longitude']
+            if row['Sub Num'] == unique_pairs0[i][1]:
+                lat2 = row['Latitude']
+                lon2 = row['Longitude']
+        unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
+
 
     return unique_pairs
 
 def generate_system_from_csv(csv_file, branches_csv):
     cps = CyberPhysicalSystem()
     topology = config['DEFAULT']['topology_configuration']
-    substation_connections = get_substation_connections(branches_csv)
+    substation_connections = get_substation_connections(branches_csv, csv_file)
     substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
     utilities = cps.generate_utilties(substations, utility_dict, topology)
     regulatory = cps.generate_BA(substations, utilities)
