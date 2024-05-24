@@ -1,98 +1,39 @@
-# # import pandas as pd
-# # from sklearn.cluster import KMeans
-# #
-# # # Example DataFrame creation (replace with your actual DataFrame)
-# # data = {
-# #     'Sub Num': [1, 2, 3],
-# #     'Sub Name': ['Sub A', 'Sub B', 'Sub C'],
-# #     'Sub ID': [101, 102, 103],
-# #     'Longitude': [-104.99, -102.55, -100.75],
-# #     'Latitude': [39.74, 38.25, 37.47],
-# #     # ... include other columns as per your DataFrame
-# # }
-# # df = pd.DataFrame(data)
-# #
-# # # Selecting the columns for clustering
-# # X = df[['Latitude', 'Longitude']]
-# #
-# # # Number of clusters
-# # n_clusters = 3
-# #
-# # # Performing K-Means clustering
-# # kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(X)
-# #
-# # # Extracting the centroids
-# # centroids = kmeans.cluster_centers_
-# #
-# # # Adding the cluster labels (utility names) to the original DataFrame
-# # df['Utility Name'] = 'Utility ' + pd.Series(kmeans.labels_).astype(str)
-# #
-# # # Get unique utility names and their corresponding centroids
-# # unique_utilities = df['Utility Name'].unique()
-# # utility_centroids = {name: centroids[int(name.split(' ')[1])] for name in unique_utilities}
-# #
-# # # Create a dictionary with utility names, starting numbers, and centroids
-# # starting_utl_number = 52
-# # utility_dict = {
-# #     name: {
-# #         'id': starting_utl_number + i,
-# #         'latitude': utility_centroids[name][0],
-# #         'longitude': utility_centroids[name][1]
-# #     }
-# #     for i, name in enumerate(unique_utilities)
-# # }
-# #
-# # print(utility_dict.get('Utility 1').get('id'))
-# #
-# # for key, val in utility_dict.items():
-# #     # Constructing the base part of the ID
-# #     util_label = f"Region.{key}"
-# #     utl_ID = val.get('id')
-# #     print(util_label)
-# #     print(utl_ID)
-# # # for utility_name, info in utility_dict.items():
-# # #     centroid = info['centroid']
-# # #     latitude = centroid[0]
-# # #     longitude = centroid[1]
-# # #     print(f"{utility_name}: Latitude = {latitude}, Longitude = {longitude}")
-#
-# def extract_word_from_string(input_string, position):
-#     """
-#     Extracts a word from a given position in a string.
-#
-#     Parameters:
-#     input_string (str): The string to extract the word from.
-#     position (int): The position of the word to extract, starting from 0.
-#
-#     Returns:
-#     str: The extracted word.
-#     """
-#     words = input_string.split('.')
-#     if position < len(words):
-#         return words[position].split(' ')[0]
-#     else:
-#         return "Position out of range"
-#
-#
-# # Example usage
-# input_string = 'Utility 0.Bus 1..Firewall 1'
-# position = 3  # For extracting 'Firewall' which is the 3rd word (position index starts from 0)
-# extracted_word = extract_word_from_string(input_string, position)
-#
-# print(extracted_word)
-#
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.spatial import procrustes
 
-#write a class to take two variables and return the sum of them
-class Sum:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-        self.c = self.add()
+# Example coordinates of nodes in network 1 (latitude, longitude)
+network1_coords = np.array([
+    [40.7128, -74.0060],  # New York City
+    [34.0522, -118.2437], # Los Angeles
+    [51.5074, -0.1278],   # London
+    [48.8566, 2.3522]     # Paris
+])
 
-    def add(self):
-        c = self.a + self.b
-        return c
+# Generate random coordinates for nodes in network 2
+# These could represent arbitrary positions or attributes
+np.random.seed(0)  # for reproducibility
+network2_coords = np.random.rand(*network1_coords.shape)
 
-test = Sum(2,3)
-print(test.add())
-print(test.c)
+# Calculate the centroid of each network
+centroid1 = np.mean(network1_coords, axis=0)
+centroid2 = np.mean(network2_coords, axis=0)
+
+# Calculate the rotation matrix
+H = np.dot((network1_coords - centroid1).T, (network2_coords - centroid2))
+U, _, Vt = np.linalg.svd(H)
+R = np.dot(U, Vt)
+
+# Rotate network 2
+network2_coords_rotated = np.dot((network2_coords - centroid2), R.T) + centroid1
+
+# Plot network 1 and rotated network 2
+plt.figure(figsize=(8, 6))
+plt.scatter(network1_coords[:, 1], network1_coords[:, 0], c='b', label='Network 1')
+plt.scatter(network2_coords_rotated[:, 1], network2_coords_rotated[:, 0], c='r', label='Network 2 (rotated)')
+plt.title('Network Alignment')
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
+plt.legend()
+plt.grid(True)
+plt.show()

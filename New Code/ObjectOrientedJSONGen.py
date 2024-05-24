@@ -6,6 +6,8 @@ import json
 import os
 import configparser
 from statistics_based import generate_nwk#import zeyu's function
+from esa import SAW
+from match_cyber_to_power import network_match
 
 config = configparser.ConfigParser()
 config.read('settings.ini')
@@ -495,7 +497,7 @@ class CyberPhysicalSystem:
             output_to_json_file(sub, filename=os.path.join(cwd,"Output\\Substations",name_json))
 
         return substations, unique_dict
-    def generate_utilties(self, substations, utility_dict, topology):
+    def generate_utilties(self, substations, utility_dict, topology, power_nwk):
         firewall_start = len(substations)+1
         router_start = len(substations)+1
         ems_start = 2501
@@ -630,7 +632,19 @@ class CyberPhysicalSystem:
                 #generate connections between utility, substations using Zeyu's statistics
                 number_of_substations = val.get('num_of_subs')
                 number_of_generators = val.get('num_of_gens')
-                statistics_based_connections = generate_nwk(number_of_substations, number_of_generators)
+                print("Number of substations in utility: ", number_of_substations)
+                print("Number of generators in utility: ", number_of_generators)
+                statistics_based_graph = generate_nwk(number_of_substations, number_of_generators)
+                # get a list of all substation numbers in the utility
+                substation_numbers = [s.substationNumber for s in substations if s.utility_id == util.id]
+                power_graph = power_nwk.subgraph(substation_numbers)
+                mapping = network_match(statistics_based_graph, power_graph)
+                #add node labels to the statistics based graph based on the mapping
+                for node in statistics_based_graph.nodes:
+                    statistics_based_graph.nodes[node]['label'] = mapping[node]
+                #add links to the utility based on the statistics based graph
+                for edge in statistics_based_graph.edges:
+                    util.add_link(substations[edge[0]].substationRouter[0].label, substations[edge[1]].substationRouter[0].label, "Ethernet", 10.0, 10.0)
 
 
             # utilityRouter --> DMZFirewall
@@ -718,7 +732,7 @@ def output_to_json_file(substation, filename):
     with open(filename, "w") as file:
         json.dump(substation, file, default=to_json, indent=4)
 
-def get_substation_connections(branches_csv, substations_csv):
+def get_substation_connections(branches_csv, substations_csv, pw_case_object):
     df2 = pd.read_csv(substations_csv, skiprows=1)
     df2.fillna(99999, inplace=True)
     df = pd.read_csv(branches_csv)
@@ -751,15 +765,22 @@ def get_substation_connections(branches_csv, substations_csv):
                 lon2 = row['Longitude']
         unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
 
+    #get graph from saw object
+    power_graph = pw_case_object.to_graph("substation", geographic=True)
 
-    return unique_pairs
+
+
+    return unique_pairs, power_graph
 
 def generate_system_from_csv(csv_file, branches_csv):
     cps = CyberPhysicalSystem()
     topology = config['DEFAULT']['topology_configuration']
-    substation_connections = get_substation_connections(branches_csv, csv_file)
+    filepath = r"D:\Github\ECEN689Project\New Code\ACTIVSg500.pwb"
+    print(filepath)
+    saw = SAW(FileName=filepath)
+    substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, saw)
     substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
-    utilities = cps.generate_utilties(substations, utility_dict, topology)
+    utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
     regulatory = cps.generate_BA(substations, utilities)
 
 

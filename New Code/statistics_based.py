@@ -2,7 +2,7 @@
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
-from esa import SAW
+
 
 from ortools.sat.python import cp_model
 import math
@@ -15,7 +15,7 @@ def lognormal(x, a, b):
     # numpy.random.lognormal
     return 1/(a*x*np.sqrt(2*np.pi))*np.exp(-np.power(np.log(x) - b, 2)/(2*np.power(a, 2)))
 
-def generate_nwk(subs, gens, temp):
+def generate_nwk(subs, gens):
 
     probability = lognormal(np.array(range(1,11)), 0.57627298, 0.56637515 )
     # add 0.003 to each value in probablity
@@ -31,7 +31,7 @@ def generate_nwk(subs, gens, temp):
 
     expected = (probability * n).astype(int)
     sum_degree = round(n*1.0777)*2
-    # sum_degree = n*(n-1)*nx.density(BC)
+    #sum_degree = n*(n-1)*nx.density(BC)
     print(expected, sum_degree)
     n_degree = len(expected)
     print(sum(expected))
@@ -80,11 +80,11 @@ def generate_nwk(subs, gens, temp):
     print(f'  wall time: {solver.WallTime()} s')
 
     seq = []
-    # for i in range(n_degree):
-    #     seq += [degrees[i] for _ in range(solver.Value(nodes[i]))]
-    temp = temp #[45,37,16,7,3,4 , 0 , 0 , 0 , 0]
-    for i in range(10):
-        seq += [degrees[i] for _ in range(temp[i])]
+    for i in range(n_degree):
+        seq += [degrees[i] for _ in range(solver.Value(nodes[i]))]
+    # temp = expected #[45,37,16,7,3,4 , 0 , 0 , 0 , 0]
+    # for i in range(10):
+    #     seq += [degrees[i] for _ in range(temp[i])]
     seq = np.array(seq)
     print("seq", seq)
     print(len(seq))
@@ -92,7 +92,7 @@ def generate_nwk(subs, gens, temp):
     target = np.array([-0.0728, 0.023, -0.355])
     best = None
     best_dist = float('inf')
-    for i in range(10000):
+    for i in range(100000):
         g = ig.Graph.Degree_Sequence(seq.tolist(), method="vl")
 
         A = g.get_edgelist()
@@ -127,50 +127,53 @@ def generate_nwk(subs, gens, temp):
     nx.draw_networkx(subbase,pos=pos,node_color='blue',node_size=90,with_labels=False)
     plt.show()
 
-    #node type assignments
-    candidates = len(subbase.nodes())
-    num_gen = gens
-    degree_list = [d for n, d in subbase.degree()]
-    order = [n for n, d in subbase.degree()]
-    bc_list = [d for n, d in nx.betweenness_centrality(subbase).items()]
-    hop_list = [nx.shortest_path_length(subbase, (subs-1), i) for i in order]
-    import picos as pc
-
-    x = pc.BinaryVariable('x', candidates)
-    y = pc.RealVariable('y', 3)
-    z = pc.RealVariable('z', 3)
-
-    avg_degree = 1.7407407407407407 #derived from real utility
-    avg_bc = 0.03630284995660414 #derived from real utility
-    avg_hop = 6.296296296296296 #derived from real utility
-
-    P = pc.Problem()
-    P.minimize = pc.sum(z)
-    P += pc.sum(x) == gens
-    P += y[0] == pc.sum(degree_list*x) - num_gen*avg_degree
-    P += y[1] == pc.sum(bc_list*x) - num_gen*avg_bc
-    P += y[2] == pc.sum(hop_list*x) - num_gen*avg_hop
-    P += z[0] >= y[0]
-    P += z[0] >= -y[0]
-    P += z[1] >= y[1]
-    P += z[1] >= -y[1]
-    P += z[2] >= y[2]
-    P += z[2] >= -y[2]
-    P.options.timelimit = 300
-    P.solve(solver="gurobi")
-    results = np.nonzero(x.np)[0]
-    for n in subbase.nodes():
-        subbase.nodes[n]['color'] = 'b'
-
-    for i in results:
-        subbase.nodes[order[i]]['color'] = 'r'
-
-    subbase.nodes[subs-1]['color'] = 'black'
-
-    plt.figure(figsize=(16,16))
-    colors = [node[1]['color'] for node in subbase.nodes(data=True)]
-    nx.draw_networkx(subbase, pos, with_labels=True, node_size=90, node_color=colors)
-    plt.show()
+    # #node type assignments
+    # candidates = len(subbase.nodes())
+    # num_gen = gens
+    # degree_list = [d for n, d in subbase.degree()]
+    # order = [n for n, d in subbase.degree()]
+    # bc_list = [d for n, d in nx.betweenness_centrality(subbase).items()]
+    # hop_list = [nx.shortest_path_length(subbase, (subs-1), i) for i in order]
+    # import picos as pc
+    #
+    # x = pc.BinaryVariable('x', candidates)
+    # y = pc.RealVariable('y', 3)
+    # z = pc.RealVariable('z', 3)
+    #
+    # avg_degree = 1.7407407407407407 #derived from real utility
+    # avg_bc = 0.03630284995660414 #derived from real utility
+    # avg_hop = 6.296296296296296 #derived from real utility
+    #
+    # P = pc.Problem()
+    # P.minimize = pc.sum(z)
+    # P += pc.sum(x) == gens
+    # P += y[0] == pc.sum(degree_list*x) - num_gen*avg_degree
+    # P += y[1] == pc.sum(bc_list*x) - num_gen*avg_bc
+    # P += y[2] == pc.sum(hop_list*x) - num_gen*avg_hop
+    # P += z[0] >= y[0]
+    # P += z[0] >= -y[0]
+    # P += z[1] >= y[1]
+    # P += z[1] >= -y[1]
+    # P += z[2] >= y[2]
+    # P += z[2] >= -y[2]
+    # P.options.timelimit = 300
+    # P.solve(solver="gurobi")
+    # results = np.nonzero(x.np)[0]
+    # for n in subbase.nodes():
+    #     subbase.nodes[n]['color'] = 'b'
+    #
+    # for i in results:
+    #     subbase.nodes[order[i]]['color'] = 'r'
+    #
+    # subbase.nodes[subs-1]['color'] = 'black'
+    #
+    #
+    #
+    # plt.figure(figsize=(16,16))
+    # colors = [node[1]['color'] for node in subbase.nodes(data=True)]
+    # nx.draw_networkx(subbase, pos, with_labels=True, node_size=90, node_color=colors)
+    # plt.show()
+    return subbase
 
     # avg_ebc_mw = 0.125
     # avg_ebc_plc = 0.0198
@@ -285,23 +288,7 @@ def generate_nwk(subs, gens, temp):
     # plt.legend(loc=8, ncol=5, fontsize=14, frameon=False)
     # plt.show()
 
-subs = 100 #112
-gens = 6 #17
+
 if __name__ == "__main__":
    # stuff only to run when not called via 'import' here
-   # filepath = "D:/Github/ECEN689Project/ACTIVSg500.pwb"
-   # case = SAW(filepath)
-   # graph = case.to_graph(node='substation', geographic=True)
-   # #get degree sequence
-   # temp = [0] * 10
-   # for _, degree in graph.degree():
-   #     temp[degree] += 1
-   # # Find the index of the first non-zero value
-   # first_non_zero_index = next((i for i, x in enumerate(temp) if x != 0), None)
-   #
-   # # Slice the list from the first non-zero index to the end
-   # temp1 = temp[first_non_zero_index:] if first_non_zero_index is not None else []
-   #
-   # print(temp1)
-   temp1 = [45,37,16,7,3,4 , 0 , 0 , 0 , 0]
-   generate_nwk(subs, gens, temp1)
+   cyber_nwk = generate_nwk(subs, gens)
