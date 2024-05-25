@@ -2,6 +2,7 @@
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
+import random
 
 
 from ortools.sat.python import cp_model
@@ -14,6 +15,78 @@ from numpy.linalg import norm
 def lognormal(x, a, b):
     # numpy.random.lognormal
     return 1/(a*x*np.sqrt(2*np.pi))*np.exp(-np.power(np.log(x) - b, 2)/(2*np.power(a, 2)))
+
+def havel_hakimi(seq):
+    # if seq is empty or only contains zeros,
+    # degree sequence is valid
+    if len(seq) < 1 or all(deg == 0 for deg in seq):
+        print("Finished! Graph IS constructable with Havel Hakimi algorithm.")
+        return True
+
+    seq.sort()
+
+    last = seq[len(seq)-1]
+    if last > len(seq)-1:
+        print("Failed! Graph IS NOT constructable with Havel Hakimi algorithm.")
+        return False
+
+    # remove last element
+    seq.remove(last)
+
+    # iterate seq backwards
+    for num in range(len(seq)-1, len(seq)-last-1, -1):
+        if seq[num] > 0:
+            seq[num] -= 1
+        else:
+            print("\nFailed! Graph is not constructable with Havel Hakimi algorithm")
+            return False
+
+    # print(" --alg-->", end="")
+    # print(seq)
+
+    # recursive call
+    return havel_hakimi(seq)
+
+
+def find_random_edge(g, exclude_edges=set()):
+    edges = list(g.edges())
+    random.shuffle(edges)
+    for edge in edges:
+        if edge not in exclude_edges and (edge[1], edge[0]) not in exclude_edges:
+            return edge
+    return None
+
+
+def double_edge_swap(g, u1, v1, u2, v2):
+    # Ensure no parallel edges, self-loops, and edges exist in the graph
+    if (g.has_edge(u1, v2) or g.has_edge(u2, v1) or
+            u1 == v2 or u2 == v1 or
+            not g.has_edge(u1, v1) or not g.has_edge(u2, v2)):
+        return False
+
+    # Remove the old edges
+    g.remove_edge(u1, v1)
+    g.remove_edge(u2, v2)
+
+    # Add the new edges
+    g.add_edge(u1, v2)
+    g.add_edge(u2, v1)
+    return True
+
+
+def reduce_nodes_to_n(g, n):
+    nodes_to_remove = [node for node in g.nodes() if g.degree(node) == 1]
+    while len(g.nodes()) > n and nodes_to_remove:
+        node = nodes_to_remove.pop()
+        g.remove_node(node)
+        print(f"Removed node {node} with degree 1 to reduce the number of nodes")
+
+        # Update the list of nodes to remove
+        nodes_to_remove = [node for node in g.nodes() if g.degree(node) == 1]
+
+    if len(g.nodes()) > n:
+        print(f"Unable to reduce the number of nodes to {n} by removing only nodes with degree 1")
+
 
 def generate_nwk(subs, gens):
 
@@ -89,13 +162,75 @@ def generate_nwk(subs, gens):
     print("seq", seq)
     print(len(seq))
 
+    havel_hakimi(seq.tolist())
+
     target = np.array([-0.0728, 0.023, -0.355])
     best = None
     best_dist = float('inf')
-    for i in range(100000):
-        g = ig.Graph.Degree_Sequence(seq.tolist(), method="vl")
+    for i in range(10000):
+        #print('iteration:', i)
+        g = ig.Graph.Degree_Sequence(seq.tolist(), method="simple") #nx.havel_hakimi_graph(seq.tolist()) #
+        g = ig.Graph.to_networkx(g)
 
-        A = g.get_edgelist()
+        #if the graph is not connected then get all the isolated components and add edges between them
+        if not nx.is_connected(g):
+           # print("Graph is not connected")
+            isolated_components = list(nx.connected_components(g))
+
+            # Connect isolated components
+            for i in range(len(isolated_components) - 1):
+                component1 = isolated_components[i]
+                component2 = isolated_components[i + 1]
+
+                # Select random nodes from each component to connect
+                node1 = random.choice(list(component1))
+                node2 = random.choice(list(component2))
+
+                # Ensure no self-loops
+                while node1 == node2:
+                    node2 = random.choice(list(component2))
+
+                # Perform a double-edge swap
+                random_edge1 = find_random_edge(g)
+                random_edge2 = find_random_edge(g, {random_edge1})
+
+                if random_edge1 and random_edge2:
+                    u1, v1 = random_edge1
+                    u2, v2 = random_edge2
+
+                    # Swap edges to maintain the degree of nodes
+                    if double_edge_swap(g, u1, v1, node1, node2):
+                        print(f"Connected node {node1} from component {i} to node {node2} from component {i + 1}")
+                    else:
+                        # If swap was not successful, connect directly and adjust later
+                        g.add_edge(node1, node2)
+                        #print(
+                            #f"Directly connected node {node1} from component {i} to node {node2} from component {i + 1}")
+                else:
+                    # If not enough edges to swap, connect directly and adjust later
+                    g.add_edge(node1, node2)
+                    #print(f"Directly connected node {node1} from component {i} to node {node2} from component {i + 1}")
+
+        # Ensure no vertex has degree 0 by adding edges if necessary
+        for node in g.nodes():
+            if g.degree(node) == 0:
+                other_node = random.choice(list(g.nodes()))
+                while other_node == node or g.has_edge(node, other_node):
+                    other_node = random.choice(list(g.nodes()))
+
+                g.add_edge(node, other_node)
+                #print(f"Added edge between node {node} and node {other_node} to ensure no vertex has degree 0")
+
+        # Reduce the number of nodes to the desired number
+        reduce_nodes_to_n(g, subs)
+
+        # Verify the graph is now connected
+        if nx.is_connected(g):
+            print("Graph is now connected")
+        else:
+            print("Graph is still not connected")
+
+        A = g.edges()
         subbase = nx.Graph(A)
         eigens = nx.adjacency_spectrum(subbase)
         atts = np.array([abs(eigens[0]) - abs(eigens[1]), nx.average_clustering(subbase), nx.degree_assortativity_coefficient(subbase)])
@@ -291,4 +426,6 @@ def generate_nwk(subs, gens):
 
 if __name__ == "__main__":
    # stuff only to run when not called via 'import' here
+   # subs=50
+   # gens=2
    cyber_nwk = generate_nwk(subs, gens)

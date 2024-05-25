@@ -767,6 +767,9 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object):
 
     #get graph from saw object
     power_graph = pw_case_object.to_graph("substation", geographic=True)
+    print(power_graph.nodes(data=True))
+    for node in power_graph.nodes():
+        print("Node:", node, "Attributes:", power_graph.nodes[node])
 
 
 
