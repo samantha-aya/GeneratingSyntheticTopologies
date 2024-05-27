@@ -399,7 +399,6 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
-
             host2 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
@@ -415,6 +414,18 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalWebServer {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
+            outstation = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..outstation {(2*int(row['Sub Num'])-1)}",
+                                vlan='Corporate')
+
+            hmi = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..hmi {(2*int(row['Sub Num'])-1)}",
+                                vlan='Corporate')
+
             RC = RelayController(relayIPlist=["192.168.1.1", "192.168.1.2"], utility=row["Utility Name"], substation=row["Sub Name"],
                                  adminIP=f"10.{utl_ID}.{row['Sub Num']}.2",
                                  ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0",
@@ -461,15 +472,21 @@ class CyberPhysicalSystem:
             sub.add_subRC(RC)
 
             #firewall command to add the firewalls
-            firewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "20000" ,"TCP", "block")
-            firewall.add_acl_rule("acl1", "Allow ICCP", "10.52.1.","10.52.1.", "102" ,"TCP", "allow")
+            firewall.add_acl_rule("acl0", "Allow DNP3", "10.52.1.","10.52.1.", "20000" ,"TCP", "allow")
+            firewall.add_acl_rule("acl1", "Allow HTTPS", "10.52.1.","10.52.1.", "443" ,"TCP", "allow")
+            firewall.add_acl_rule("acl2", "Block ICCP", "all","all", "102" ,"TCP", "block")
+            firewall.add_acl_rule("acl3", "Block SQL", "all","all", "3306" ,"TCP", "block")
 
             #protocols added below to the components
             RC.set_protocol("DNP3", "20000", "TCP")
-            host1.set_protocol("DNP3", "20000", "TCP")
-            host2.set_protocol("DNP3", "20000", "TCP")
+            host1.set_protocol("HTTPS", "443", "TCP")
+            host2.set_protocol("HTTPS", "443", "TCP")
             localDatabase.set_protocol("SQL", "3306", "TCP")
-            localWebServer.set_protocol("DNP3", "20000", "TCP")
+            localWebServer.set_protocol("HTTPS", "443", "TCP")
+#            outstation.set_protocol("DNP3", "20000", "TCP")
+#            outstation.set_protocol("SQL", "3306", "TCP")
+#            hmi.set_protocol("HTTPS", "443", "TCP")
+
 
 
             # Create links between nodes
@@ -542,6 +559,11 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.0.0",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1') #need to fix this information or see what needs to be changed
+            utilHMI=Host(openPorts=[16, 32], utility=key, substation="utl",
+                                adminIP=f"10.{utl_ID}.0.3",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.{key}..Host {ems_start}",
+                                vlan='1') #need to fix this information or see what needs to be changed
             router_start = router_start + 1
             substationsRouter=Router([], [], utility=key, substation="",
                                 adminIP=f"10.{utl_ID}.0.4",
@@ -588,13 +610,15 @@ class CyberPhysicalSystem:
             util.add_DMZFirewall(DMZFirewall)
 
             #firewall command to add the firewalls
-            utilFirewall.add_acl_rule("acl1", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "allow")
-            #shows up as a dict:
-                #rule: "source": source, "destination": destination, "allow/deny": action
-
+            utilFirewall.add_acl_rule("acl0", "Allow DNP3", "10.52.1.","10.52.1.", "20000" ,"TCP", "allow") #between utilEMS and SubRC
+            utilFirewall.add_acl_rule("acl1", "Allow HTTPS", "10.52.1.","10.52.1.", "443" ,"TCP", "allow") #between utilHMI and SubWebServer
+            utilFirewall.add_acl_rule("acl2", "Allow ICCP", "10.52.1.","10.52.1.", "102" ,"TCP", "allow") #between utilICCPServer and regICCPClient
+            utilFirewall.add_acl_rule("acl3", "Block SQL", "all","all", "3306" ,"TCP", "block") #SQL is not to be found in the utility
+            
             #protocols added below 
-            utilEMS.set_protocol("ICCP", "102", "TCP")
+            utilEMS.set_protocol("DNP3", "20000", "TCP")
             iccpServer.set_protocol("ICCP", "102", "TCP")
+            utilHMI.set_protocol("HTTPS", "443", "TCP")
 
             # router --> firewall
             util.add_link(utilRouter.label, utilFirewall.label, "Ethernet", 10.0, 10.0)
@@ -686,8 +710,10 @@ class CyberPhysicalSystem:
             reg.add_iccpClient(iccpClient)
 
             #firewall command to add the firewalls
-            regFirewall.add_acl_rule("acl0", "Block DNP3", "10.52.1.","10.52.1.", "80" ,"TCP", "deny")
-            regFirewall.add_acl_rule("acl1", "Allow ICCP", "10.52.1.","10.52.1.", "50" ,"TCP", "allow")
+            regFirewall.add_acl_rule("acl0", "Block ICCP", "all","all", "102" ,"TCP", "block") #between regICCPClient and utilICCPServer
+            regFirewall.add_acl_rule("acl1", "Block HTTPS", "10.52.1.","10.52.1.", "443" ,"TCP", "block") #HTTPS is not to be found in the utility
+            regFirewall.add_acl_rule("acl2", "Block DNP3", "10.52.1.","10.52.1.", "20000" ,"TCP", "block") #DNP3 is not to be found in the utility
+            regFirewall.add_acl_rule("acl3", "Block SQL", "all","all", "3306" ,"TCP", "block") #SQL is not to be found in the utility
 
             #protocols added below to the router based on the ports
             iccpClient.set_protocol("ICCP", "102", "TCP")
