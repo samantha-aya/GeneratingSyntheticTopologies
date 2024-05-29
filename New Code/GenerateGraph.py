@@ -8,6 +8,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read('settings.ini')
 configuration = config['DEFAULT']['topology_configuration']
+case = config['DEFAULT']['case']
 
 print("configuration is: ", configuration)
 
@@ -209,7 +210,10 @@ def main(code_to_run, data):
     elif code_to_run==2:
         ##### Code to generate utility data #####
         # Load the shapefile
-        gdf = gpd.read_file('your_shapefile.shp')
+        if '500' in case:
+            gdf = gpd.read_file('Nc.shp')
+        elif '2k' in case:
+            gdf = gpd.read_file('Tx.shp')
 
         # Create the utilities graph
         utilities_graph_with_color = create_utilities_graph_with_color(data, configuration)

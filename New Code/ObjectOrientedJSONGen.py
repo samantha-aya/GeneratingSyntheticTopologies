@@ -836,7 +836,7 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object):
 def generate_system_from_csv(csv_file, branches_csv):
     cps = CyberPhysicalSystem()
 
-    filepath = r"D:\Github\ECEN689Project\New Code\ACTIVSg500.pwb"
+    filepath = r"D:\Github\ECEN689Project\New Code\ACTIVSg2000.pwb"
     print(filepath)
     saw = SAW(FileName=filepath)
     substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, saw)
@@ -845,5 +845,5 @@ def generate_system_from_csv(csv_file, branches_csv):
     regulatory = cps.generate_BA(substations, utilities)
 
 
-generate_system_from_csv("Substation_500bus.csv", "Branches_500.csv")
+generate_system_from_csv("Substation_2k.csv", "Branches_2k.csv")
 
