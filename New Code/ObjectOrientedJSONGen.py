@@ -15,6 +15,7 @@ import logging
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)
 logging.basicConfig(filename='D:/Github/ECEN689Project/New Code/progress.log', filemode='w', level=logging.INFO)
+#logging.basicConfig(filename='C:/ECEN689Project/New Code/progress.log', filemode='w', level=logging.INFO)
 logger = logging.getLogger()
 
 config = configparser.ConfigParser()
@@ -405,10 +406,10 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
-            x = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
+            hmi = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.101",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
-                                label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..hmi {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
 
             host2 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
@@ -431,6 +432,11 @@ class CyberPhysicalSystem:
                                  ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0",
                                  label=f"{row['Utility Name']}.{row['Sub Name']}..RC {row['Sub Num']}",
                                  vlan='OT')
+            outstation = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..outstation {(2*int(row['Sub Num']))}",
+                                vlan='Corporate')
 
             #Add above nodes to substation
             sub.add_node(firewall)
@@ -462,6 +468,8 @@ class CyberPhysicalSystem:
             sub.add_node(host2)
             sub.add_node(localDatabase)
             sub.add_node(localWebServer)
+            sub.add_node(hmi)
+            sub.add_node(outstation)
 
             #Add the non-nodes objects to the substations
             sub.add_switch(switch)
@@ -483,9 +491,9 @@ class CyberPhysicalSystem:
             host2.set_protocol("HTTPS", "443", "TCP")
             localDatabase.set_protocol("SQL", "3306", "TCP")
             localWebServer.set_protocol("HTTPS", "443", "TCP")
-#            outstation.set_protocol("DNP3", "20000", "TCP")
-#            outstation.set_protocol("SQL", "3306", "TCP")
-#            hmi.set_protocol("HTTPS", "443", "TCP")
+            outstation.set_protocol("DNP3", "20000", "TCP")
+            outstation.set_protocol("SQL", "3306", "TCP")
+            hmi.set_protocol("HTTPS", "443", "TCP")
 
             # Create links between nodes
             # router --> firewall
@@ -564,6 +572,11 @@ class CyberPhysicalSystem:
                                 ipaddress=f"10.{utl_ID}.0.0",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1')
+            utilHMI=Host(openPorts=[16, 32], utility=key, substation="utl",
+                                adminIP=f"10.{utl_ID}.0.3",
+                                ipaddress=f"10.{utl_ID}.0.0",
+                                label=f"{key}.{key}..Host {ems_start}",
+                                vlan='1')            
             iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.0",
@@ -595,6 +608,7 @@ class CyberPhysicalSystem:
             util.add_node(utilFirewall)
             util.add_node(utilRouter)
             util.add_node(utilEMS)
+            util.add_node(utilHMI)
             util.add_node(iccpServer)
             util.add_node(substationsFirewall)
             util.add_node(substationsRouter)
@@ -623,7 +637,7 @@ class CyberPhysicalSystem:
             #protocols added below 
             utilEMS.set_protocol("DNP3", "20000", "TCP")
             iccpServer.set_protocol("ICCP", "102", "TCP")
-##            utilHMI.set_protocol("HTTPS", "443", "TCP")
+            utilHMI.set_protocol("HTTPS", "443", "TCP")
 
             # router --> firewall
             util.add_link(utilRouter.label, utilFirewall.label, "Ethernet", 10.0, 10.0)
