@@ -158,8 +158,7 @@ def create_utilities_graph_with_color(data, configuration):
                 G.add_edge(utility_id, substation['substation'])
     elif 'radial' in configuration or 'statistics' in configuration:
         for utility in data['utilities']:
-            utility_id = utility['label']
-            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color="red")
+
 
             #add substation nodes
             for substation in utility['substations']:
@@ -169,15 +168,19 @@ def create_utilities_graph_with_color(data, configuration):
                 else:
                     G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',color='lightblue')
             #add edge only if there is a link between utility and substation
+            #add edges between substations
             for link in utility['links']:
                 print(link['source'], link['destination'])
-                if f"{utility['label']}.{utility['utility']}" not in link['destination']:
+                if f"{utility['label']}.{utility['utility']}" not in link['destination'] and f"{utility['label']}.{utility['utility']}" not in link['source']:
                     #get substation id from link
                     source_id = link['source'].split(".")[1]
                     print(source_id)
                     dest_id = link['destination'].split(".")[1]
                     print(dest_id)
                     G.add_edge(source_id, dest_id)
+
+            utility_id = utility['label']
+            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color="red")
 
     else:
         print("Configuration is neither radial, statistics based nor star.")
@@ -223,7 +226,7 @@ def main(code_to_run, data):
         labels = nx.get_node_attributes(utilities_graph_with_color, 'label')
         colors = [utilities_graph_with_color.nodes[node]['color'] for node in utilities_graph_with_color.nodes]
 
-        nx.draw(utilities_graph_with_color, pos, with_labels=True, labels=labels, node_size=small_node_size, node_color=colors, width=0.07,font_size=5)
+        nx.draw(utilities_graph_with_color, pos, with_labels=True, labels=labels, node_size=small_node_size, node_color=colors, width=1,font_size=5)
         plt.savefig('Output\\Regulatory\\Utilities_star.pdf')
         plt.show()
     elif code_to_run==3:

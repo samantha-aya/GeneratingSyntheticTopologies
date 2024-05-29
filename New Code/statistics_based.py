@@ -247,6 +247,9 @@ def generate_nwk(subs, gens):
     #         largest_component = c
     # subbase = base.subgraph(largest_component)
     subbase = best
+
+    #remove self loops from subbase
+    subbase.remove_edges_from(nx.selfloop_edges(subbase))
     print('Num of nodes:', len(subbase.nodes()))
     density = len(subbase.edges())/len(subbase.nodes())
     print('Density:', len(subbase.edges())/len(subbase.nodes()))
@@ -261,6 +264,17 @@ def generate_nwk(subs, gens):
     pos = nx.kamada_kawai_layout(subbase)
     nx.draw_networkx(subbase,pos=pos,node_color='blue',node_size=90,with_labels=False)
     plt.show()
+
+    #find the node with highest degree
+    max_degree = 0
+    max_node = 0
+    for node in subbase.nodes():
+        if subbase.degree(node) > max_degree:
+            max_degree = subbase.degree(node)
+            max_node = node
+
+
+
 
     # #node type assignments
     # candidates = len(subbase.nodes())
@@ -308,7 +322,7 @@ def generate_nwk(subs, gens):
     # colors = [node[1]['color'] for node in subbase.nodes(data=True)]
     # nx.draw_networkx(subbase, pos, with_labels=True, node_size=90, node_color=colors)
     # plt.show()
-    return subbase
+    return subbase, max_node
 
     # avg_ebc_mw = 0.125
     # avg_ebc_plc = 0.0198
@@ -426,6 +440,6 @@ def generate_nwk(subs, gens):
 
 if __name__ == "__main__":
    # stuff only to run when not called via 'import' here
-   # subs=50
-   # gens=2
+   subs=50
+   gens=2
    cyber_nwk = generate_nwk(subs, gens)

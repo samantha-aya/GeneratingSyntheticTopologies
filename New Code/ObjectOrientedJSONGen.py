@@ -7,10 +7,19 @@ import os
 import configparser
 from statistics_based import generate_nwk#import zeyu's function
 from esa import SAW
-from match_cyber_to_power import network_match
+from match import main
+
+import logging
+
+# Configure logging
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
+logging.basicConfig(filename='D:/Github/ECEN689Project/New Code/progress.log', filemode='w', level=logging.INFO)
+logger = logging.getLogger()
 
 config = configparser.ConfigParser()
 config.read('settings.ini')
+topology = config['DEFAULT']['topology_configuration']
 
 cwd = os.getcwd()
 
@@ -508,15 +517,27 @@ class CyberPhysicalSystem:
             print(key)
             utl_ID = val.get('id')
 
-            util = Utility(
-                networkLan=f"10.{utl_ID}.0.0",
-                utl_id=utl_ID,
-                utility_name=key,
-                substations=[substation for substation in substations if substation.utility == key],
-                subFirewalls=[substation.substationFirewall for substation in substations if substation.utility == key],
-                latitude=val.get('latitude'),
-                longitude=val.get('longitude')
-            )
+            if topology == 'statistics':
+                util = Utility(
+                    networkLan=f"10.{utl_ID}.0.0",
+                    utl_id=utl_ID,
+                    utility_name=key,
+                    substations=[substation for substation in substations if substation.utility == key],
+                    subFirewalls=[substation.substationFirewall for substation in substations if substation.utility == key],
+                    latitude=0,
+                    longitude=0
+                )
+            else:
+                util = Utility(
+                    networkLan=f"10.{utl_ID}.0.0",
+                    utl_id=utl_ID,
+                    utility_name=key,
+                    substations=[substation for substation in substations if substation.utility == key],
+                    subFirewalls=[substation.substationFirewall for substation in substations if
+                                  substation.utility == key],
+                    latitude=val.get('latitude'),
+                    longitude=val.get('longitude')
+                )
 
             utilFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
@@ -634,17 +655,46 @@ class CyberPhysicalSystem:
                 number_of_generators = val.get('num_of_gens')
                 print("Number of substations in utility: ", number_of_substations)
                 print("Number of generators in utility: ", number_of_generators)
-                statistics_based_graph = generate_nwk(number_of_substations, number_of_generators)
+                statistics_based_graph, max_deg_node = generate_nwk(number_of_substations, number_of_generators)
                 # get a list of all substation numbers in the utility
                 substation_numbers = [s.substationNumber for s in substations if s.utility_id == util.id]
+                #print the substation numbers in the utility to check along with the utility id
+                logger.info(f"Substation numbers in utility: {substation_numbers}")
+                logger.info(f"Number of substations: {len(substation_numbers)}")
+                logger.info(f"Utility id: {util.id}")
                 power_graph = power_nwk.subgraph(substation_numbers)
-                mapping = network_match(statistics_based_graph, power_graph)
+                #mapping = network_match(statistics_based_graph, power_graph)
+                mapping = main(statistics_based_graph, power_graph)
+                util_node = mapping[max_deg_node]
+                logger.info(f"Mapping: {mapping}")
+                logger.info(f"Number of subs in mapping: {len(mapping)}")
                 #add node labels to the statistics based graph based on the mapping
                 for node in statistics_based_graph.nodes:
                     statistics_based_graph.nodes[node]['label'] = mapping[node]
+                #print labels of the nodes in the statistics based graph
+                logger.info(f"Labels of the nodes in the statistics based graph: {statistics_based_graph.nodes(data=True)}")
+                logger.info(
+                    f"Labels of the nodes in the power based graph: {power_graph.nodes(data=True)}")
                 #add links to the utility based on the statistics based graph
                 for edge in statistics_based_graph.edges:
-                    util.add_link(substations[edge[0]].substationRouter[0].label, substations[edge[1]].substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                    source = statistics_based_graph.nodes[edge[0]]['label']
+                    logger.info(f"Source: {source}")
+                    destination = statistics_based_graph.nodes[edge[1]]['label']
+                    logger.info(f"Destination: {destination}")
+                    #find the substation with substation number equal to source and destination
+                    for substation in substations:
+                        if substation.substationNumber == int(source):
+                            source_substation = substation
+                        if substation.substationNumber == int(destination):
+                            destination_substation = substation
+                        if substation.substationNumber == int(util_node):
+                            util.latitude = substation.latitude
+                            util.longitude = substation.longitude
+                    logger.info(f"Source substation: {source_substation.substationNumber}")
+                    logger.info(f"Destination substation: {destination_substation.substationNumber}")
+                    util.add_link(source_substation.substationRouter[0].label, destination_substation.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                    logger.info(f"Link added between {source_substation.substationRouter[0].label} and {destination_substation.substationRouter[0].label}")
+
 
 
             # utilityRouter --> DMZFirewall
@@ -777,7 +827,7 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object):
 
 def generate_system_from_csv(csv_file, branches_csv):
     cps = CyberPhysicalSystem()
-    topology = config['DEFAULT']['topology_configuration']
+
     filepath = r"D:\Github\ECEN689Project\New Code\ACTIVSg500.pwb"
     print(filepath)
     saw = SAW(FileName=filepath)
