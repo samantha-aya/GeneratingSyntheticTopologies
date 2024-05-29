@@ -322,6 +322,7 @@ class CyberPhysicalSystem:
         # Adding the cluster labels (utility names) to the original DataFrame
         df['Utility Name'] = 'Utility ' + pd.Series(kmeans.labels_).astype(str)
         unique_values = df['Utility Name'].unique()
+        print(unique_values)
         utility_centroids = {name: centroids[int(name.split(' ')[1])] for name in unique_values}
         # Create a dictionary with keys as the unique values and values as a sequence starting from 52
         starting_utl_number = 52
@@ -331,7 +332,7 @@ class CyberPhysicalSystem:
                 'latitude': utility_centroids[name][0],
                 'longitude': utility_centroids[name][1],
                 'num_of_subs': df.groupby('Utility Name').size()[name],
-                'num_of_gens': df[df['Gen MW'] != 99999].groupby('Utility Name').size()[name]
+                'num_of_gens': get_num_of_gens(df, name)
             }
             for i, name in enumerate(unique_values)
         }
@@ -823,7 +824,7 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object):
             #if both numbers in the pair are generation substations, remove the pair
             if row['Sub Num'] == pair[0] and row['Gen MW'] != 99999:
                 if row['Sub Num'] == pair[1] and row['Gen MW'] != 99999:
-                    print("DELETED PAIR: ", pair)
+                    # print("DELETED PAIR: ", pair)
                     unique_pairs0 = np.delete(unique_pairs0, np.where(unique_pairs0 == pair), axis=0)
 
     #find the distance between the substations using latitude and longitude information from df2 using haversine function
@@ -839,14 +840,21 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object):
 
     #get graph from saw object
     power_graph = pw_case_object.to_graph("substation", geographic=True)
-    print(power_graph.nodes(data=True))
-    for node in power_graph.nodes():
-        print("Node:", node, "Attributes:", power_graph.nodes[node])
+    # print(power_graph.nodes(data=True))
+    # for node in power_graph.nodes():
+    #     print("Node:", node, "Attributes:", power_graph.nodes[node])
 
 
 
     return unique_pairs, power_graph
 
+def get_num_of_gens(df, name):
+    try:
+        # Return the count excluding rows where 'Gen MW' is 99999
+        return df[df['Gen MW'] != 99999].groupby('Utility Name').size()[name]
+    except KeyError:
+        # Return 0 if the key is not found
+        return 0
 def generate_system_from_csv(csv_file, branches_csv):
     cps = CyberPhysicalSystem()
 

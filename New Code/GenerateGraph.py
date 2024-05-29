@@ -223,14 +223,14 @@ def main(code_to_run, data):
         gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
 
         # Adjusting the node size
-        small_node_size = 50  # Smaller size for nodes
+        small_node_size = 10  # Smaller size for nodes
 
         # Plot the utilities and substations
         pos = nx.get_node_attributes(utilities_graph_with_color, 'pos')
         labels = nx.get_node_attributes(utilities_graph_with_color, 'label')
         colors = [utilities_graph_with_color.nodes[node]['color'] for node in utilities_graph_with_color.nodes]
 
-        nx.draw(utilities_graph_with_color, pos, with_labels=True, labels=labels, node_size=small_node_size, node_color=colors, width=1,font_size=5)
+        nx.draw(utilities_graph_with_color, pos, with_labels=False, labels=labels, node_size=small_node_size, node_color=colors, width=0.2,font_size=5)
         plt.savefig('Output\\Regulatory\\Utilities_star.pdf')
         plt.show()
     elif code_to_run==3:
