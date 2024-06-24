@@ -381,15 +381,16 @@ class CyberPhysicalSystem:
                     genmvar=row["Gen Mvar"],
                     connecting_TS_num=TS_num)
 
+            #change adminIPs for all
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.97",
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", # 3 addresses, 67 (routing), 98 (corp), 2 (OT)
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.2", # 3 addresses, 67 (routing), 98 (corp), 2 (OT)
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Firewall {row['Sub Num']}",
                                 vlan='Corporate')
             router = Router([], [], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.98",
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #change to 66 (routing subnet), and admin ip
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", #change to 66 (routing subnet), and admin ip
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Router {row['Sub Num']}",
                                 vlan='Corporate')
             switch=Switch([], utility=row["Utility Name"], substation=row["Sub Name"],
@@ -404,37 +405,37 @@ class CyberPhysicalSystem:
                                 vlan='Corporate')
             localDatabase = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #corp host IP: 99
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.99", #corp host IP: 99
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalDatabase {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             localWebServer = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #corp host IP: 100
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.100", #corp host IP: 100
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalWebServer {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             hmi = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.101",
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #corp host IP: 101
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.101", #corp host IP: 101
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..hmi {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             host1 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #corp host IP: 102
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.102", #corp host IP: 102
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             host2 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #corp host IP: 103
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.103", #corp host IP: 103
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             RC = RelayController(relayIPlist=["192.168.1.1", "192.168.1.2"], utility=row["Utility Name"], substation=row["Sub Name"],
                                  adminIP=f"10.{utl_ID}.{row['Sub Num']}.2",
-                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0", #OT host IP: 3
+                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.3", #OT host IP: 3
                                  label=f"{row['Utility Name']}.{row['Sub Name']}..RC {row['Sub Num']}",
                                  vlan='OT')
             outstation = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #OT host IP: 4
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.4", #OT host IP: 4
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..outstation {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
 
