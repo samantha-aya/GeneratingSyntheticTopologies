@@ -11,18 +11,17 @@ from match import main
 
 import logging
 
+cwd = os.getcwd()
 # Configure logging
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)
-logging.basicConfig(filename='D:/Github/ECEN689Project/New Code/progress.log', filemode='w', level=logging.INFO)
+logging.basicConfig(filename=os.path.join(cwd, 'progress.log'), filemode='w', level=logging.INFO)
 #logging.basicConfig(filename='C:/ECEN689Project/New Code/progress.log', filemode='w', level=logging.INFO)
 logger = logging.getLogger()
 
 config = configparser.ConfigParser()
 config.read('settings.ini')
 topology = config['DEFAULT']['topology_configuration']
-
-cwd = os.getcwd()
 
 class Node:
     def __init__(self, utility, substation, adminIP, ipaddress, label, vlan):
@@ -891,17 +890,23 @@ def get_num_of_gens(df, name):
     except KeyError:
         # Return 0 if the key is not found
         return 0
-def generate_system_from_csv(csv_file, branches_csv):
+def generate_system_from_csv(csv_file, branches_csv, filepath):
     cps = CyberPhysicalSystem()
-
-    filepath = r"D:\Github\ECEN689Project\New Code\ACTIVSg2000.pwb"
-    print(filepath)
     saw = SAW(FileName=filepath)
     substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, saw)
     substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
     utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
     regulatory = cps.generate_BA(substations, utilities)
 
+selected_case = config['DEFAULT']['case']
+if selected_case == '2k':
+    filepath = os.path.join(cwd, 'ACTIVSg2000.pwb')
+    sub_file = "Substation_2k.csv"
+    branch_file = "Branches_2k.csv"
+elif selected_case == '500':
+    filepath = os.path.join(cwd, 'ACTIVSg500.pwb')
+    sub_file = "Substation_500bus.csv"
+    branch_file = "Branches_500bus.csv"
 
-generate_system_from_csv("Substation_2k.csv", "Branches_2k.csv")
+generate_system_from_csv(sub_file, branch_file, filepath)
 
