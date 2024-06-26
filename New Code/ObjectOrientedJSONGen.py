@@ -876,7 +876,10 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object):
         unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
 
     #get graph from saw object
-    power_graph = pw_case_object.to_graph("substation", geographic=True)
+    if pw_case_object is not None:
+        power_graph = pw_case_object.to_graph("substation", geographic=True)
+    else:
+        power_graph = None
     # print(power_graph.nodes(data=True))
     # for node in power_graph.nodes():
     #     print("Node:", node, "Attributes:", power_graph.nodes[node])
@@ -892,13 +895,21 @@ def get_num_of_gens(df, name):
         return 0
 def generate_system_from_csv(csv_file, branches_csv, filepath):
     cps = CyberPhysicalSystem()
-    saw = SAW(FileName=filepath)
-    substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, saw)
-    substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
-    utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
-    regulatory = cps.generate_BA(substations, utilities)
+    if no_powerworld:
+        substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, None)
+        substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
+        utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
+        regulatory = cps.generate_BA(substations, utilities)
+    else:
+        saw = SAW(FileName=filepath)
+        substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, saw)
+        substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
+        utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
+        regulatory = cps.generate_BA(substations, utilities)
 
+no_powerworld = bool(config['DEFAULT']['no_powerworld'])
 selected_case = config['DEFAULT']['case']
+print('Selected case:', selected_case)
 if selected_case == '2k':
     filepath = os.path.join(cwd, 'ACTIVSg2000.pwb')
     sub_file = "Substation_2k.csv"
@@ -907,6 +918,10 @@ elif selected_case == '500':
     filepath = os.path.join(cwd, 'ACTIVSg500.pwb')
     sub_file = "Substation_500bus.csv"
     branch_file = "Branches_500bus.csv"
+elif '10k' in selected_case:
+    filepath = os.path.join(cwd, 'ACTIVSg10k.pwb')
+    sub_file = "Substation_10k.csv"
+    branch_file = "Branches_10k.csv"
 
 generate_system_from_csv(sub_file, branch_file, filepath)
 
