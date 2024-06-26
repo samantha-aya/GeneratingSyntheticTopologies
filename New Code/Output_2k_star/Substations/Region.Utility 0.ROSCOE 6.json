@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.ROSCOE 6",
+    "networkLan": "10.52.156.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "ROSCOE 6",
+    "substationNumber": 156,
+    "OTAddress": "10.52.156.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.156.1",
+        "10.52.156.2",
+        "10.52.156.3",
+        "10.52.156.4",
+        "10.52.156.5",
+        "10.52.156.6",
+        "10.52.156.7",
+        "10.52.156.8",
+        "10.52.156.9",
+        "10.52.156.10",
+        "10.52.156.11",
+        "10.52.156.12",
+        "10.52.156.13",
+        "10.52.156.14",
+        "10.52.156.15",
+        "10.52.156.16",
+        "10.52.156.17",
+        "10.52.156.18",
+        "10.52.156.19",
+        "10.52.156.20",
+        "10.52.156.21",
+        "10.52.156.22",
+        "10.52.156.23",
+        "10.52.156.24",
+        "10.52.156.25",
+        "10.52.156.26",
+        "10.52.156.27",
+        "10.52.156.28",
+        "10.52.156.29",
+        "10.52.156.30",
+        "10.52.156.31",
+        "10.52.156.32",
+        "10.52.156.33",
+        "10.52.156.34",
+        "10.52.156.35",
+        "10.52.156.36",
+        "10.52.156.37",
+        "10.52.156.38",
+        "10.52.156.39",
+        "10.52.156.40",
+        "10.52.156.41",
+        "10.52.156.42",
+        "10.52.156.43",
+        "10.52.156.44",
+        "10.52.156.45",
+        "10.52.156.46",
+        "10.52.156.47",
+        "10.52.156.48",
+        "10.52.156.49",
+        "10.52.156.50",
+        "10.52.156.51",
+        "10.52.156.52",
+        "10.52.156.53",
+        "10.52.156.54",
+        "10.52.156.55",
+        "10.52.156.56",
+        "10.52.156.57",
+        "10.52.156.58",
+        "10.52.156.59",
+        "10.52.156.60",
+        "10.52.156.61",
+        "10.52.156.62"
+    ],
+    "routeAddress": "10.52.156.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.156.65",
+        "10.52.156.66",
+        "10.52.156.67",
+        "10.52.156.68",
+        "10.52.156.69",
+        "10.52.156.70",
+        "10.52.156.71",
+        "10.52.156.72",
+        "10.52.156.73",
+        "10.52.156.74",
+        "10.52.156.75",
+        "10.52.156.76",
+        "10.52.156.77",
+        "10.52.156.78",
+        "10.52.156.79",
+        "10.52.156.80",
+        "10.52.156.81",
+        "10.52.156.82",
+        "10.52.156.83",
+        "10.52.156.84",
+        "10.52.156.85",
+        "10.52.156.86",
+        "10.52.156.87",
+        "10.52.156.88",
+        "10.52.156.89",
+        "10.52.156.90",
+        "10.52.156.91",
+        "10.52.156.92",
+        "10.52.156.93",
+        "10.52.156.94"
+    ],
+    "corporateAddress": "10.52.156.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.156.97",
+        "10.52.156.98",
+        "10.52.156.99",
+        "10.52.156.100",
+        "10.52.156.101",
+        "10.52.156.102",
+        "10.52.156.103",
+        "10.52.156.104",
+        "10.52.156.105",
+        "10.52.156.106",
+        "10.52.156.107",
+        "10.52.156.108",
+        "10.52.156.109",
+        "10.52.156.110",
+        "10.52.156.111",
+        "10.52.156.112",
+        "10.52.156.113",
+        "10.52.156.114",
+        "10.52.156.115",
+        "10.52.156.116",
+        "10.52.156.117",
+        "10.52.156.118",
+        "10.52.156.119",
+        "10.52.156.120",
+        "10.52.156.121",
+        "10.52.156.122",
+        "10.52.156.123",
+        "10.52.156.124",
+        "10.52.156.125"
+    ],
+    "latitude": 32.415,
+    "longitude": -100.574,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.97",
+            "ipAddress": "10.52.156.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..Firewall 156",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.415,
+            "Longitude": -100.574
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.98",
+            "ipAddress": "10.52.156.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..Router 156",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.1",
+            "ipAddress": "10.52.156.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6.OT.Switch 311",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.99",
+            "ipAddress": "10.52.156.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6.Corporate.Switch 312",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.3",
+            "ipAddress": "10.52.156.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.2",
+            "ipAddress": "10.52.156.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..RC 156",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.156.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.100",
+            "ipAddress": "10.52.156.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..Host 311",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.100",
+            "ipAddress": "10.52.156.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..Host 312",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.100",
+            "ipAddress": "10.52.156.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..LocalDatabase 311",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.100",
+            "ipAddress": "10.52.156.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..LocalWebServer 312",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.ROSCOE 6..RC 156",
+            "destination": "Utility 0.ROSCOE 6..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROSCOE 6..Router 156",
+            "destination": "Utility 0.ROSCOE 6..Firewall 156",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROSCOE 6..Firewall 156",
+            "destination": "Utility 0.ROSCOE 6.OT.Switch 311",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROSCOE 6.OT.Switch 311",
+            "destination": "Utility 0.ROSCOE 6..RC 156",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROSCOE 6..Firewall 156",
+            "destination": "Utility 0.ROSCOE 6.Corporate.Switch 312",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROSCOE 6.Corporate.Switch 312",
+            "destination": "Utility 0.ROSCOE 6..Host 311",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROSCOE 6.Corporate.Switch 312",
+            "destination": "Utility 0.ROSCOE 6..Host 312",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROSCOE 6.Corporate.Switch 312",
+            "destination": "Utility 0.ROSCOE 6..LocalDatabase 311",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROSCOE 6.Corporate.Switch 312",
+            "destination": "Utility 0.ROSCOE 6..LocalWebServer 312",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.1",
+            "ipAddress": "10.52.156.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6.OT.Switch 311",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.2",
+            "ipAddress": "10.52.156.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..RC 156",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.156.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.97",
+            "ipAddress": "10.52.156.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..Firewall 156",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.415,
+            "Longitude": -100.574
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.98",
+            "ipAddress": "10.52.156.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..Router 156",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.1",
+            "ipAddress": "10.52.156.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6.OT.Switch 311",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.156.2",
+            "ipAddress": "10.52.156.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROSCOE 6",
+            "label": "Utility 0.ROSCOE 6..RC 156",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.156.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

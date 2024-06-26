@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 25.PLANO 2",
+    "networkLan": "10.137.369.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 25",
+    "utility_id": 137,
+    "substation": "PLANO 2",
+    "substationNumber": 369,
+    "OTAddress": "10.137.369.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.137.369.1",
+        "10.137.369.2",
+        "10.137.369.3",
+        "10.137.369.4",
+        "10.137.369.5",
+        "10.137.369.6",
+        "10.137.369.7",
+        "10.137.369.8",
+        "10.137.369.9",
+        "10.137.369.10",
+        "10.137.369.11",
+        "10.137.369.12",
+        "10.137.369.13",
+        "10.137.369.14",
+        "10.137.369.15",
+        "10.137.369.16",
+        "10.137.369.17",
+        "10.137.369.18",
+        "10.137.369.19",
+        "10.137.369.20",
+        "10.137.369.21",
+        "10.137.369.22",
+        "10.137.369.23",
+        "10.137.369.24",
+        "10.137.369.25",
+        "10.137.369.26",
+        "10.137.369.27",
+        "10.137.369.28",
+        "10.137.369.29",
+        "10.137.369.30",
+        "10.137.369.31",
+        "10.137.369.32",
+        "10.137.369.33",
+        "10.137.369.34",
+        "10.137.369.35",
+        "10.137.369.36",
+        "10.137.369.37",
+        "10.137.369.38",
+        "10.137.369.39",
+        "10.137.369.40",
+        "10.137.369.41",
+        "10.137.369.42",
+        "10.137.369.43",
+        "10.137.369.44",
+        "10.137.369.45",
+        "10.137.369.46",
+        "10.137.369.47",
+        "10.137.369.48",
+        "10.137.369.49",
+        "10.137.369.50",
+        "10.137.369.51",
+        "10.137.369.52",
+        "10.137.369.53",
+        "10.137.369.54",
+        "10.137.369.55",
+        "10.137.369.56",
+        "10.137.369.57",
+        "10.137.369.58",
+        "10.137.369.59",
+        "10.137.369.60",
+        "10.137.369.61",
+        "10.137.369.62"
+    ],
+    "routeAddress": "10.137.369.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.137.369.65",
+        "10.137.369.66",
+        "10.137.369.67",
+        "10.137.369.68",
+        "10.137.369.69",
+        "10.137.369.70",
+        "10.137.369.71",
+        "10.137.369.72",
+        "10.137.369.73",
+        "10.137.369.74",
+        "10.137.369.75",
+        "10.137.369.76",
+        "10.137.369.77",
+        "10.137.369.78",
+        "10.137.369.79",
+        "10.137.369.80",
+        "10.137.369.81",
+        "10.137.369.82",
+        "10.137.369.83",
+        "10.137.369.84",
+        "10.137.369.85",
+        "10.137.369.86",
+        "10.137.369.87",
+        "10.137.369.88",
+        "10.137.369.89",
+        "10.137.369.90",
+        "10.137.369.91",
+        "10.137.369.92",
+        "10.137.369.93",
+        "10.137.369.94"
+    ],
+    "corporateAddress": "10.137.369.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.137.369.97",
+        "10.137.369.98",
+        "10.137.369.99",
+        "10.137.369.100",
+        "10.137.369.101",
+        "10.137.369.102",
+        "10.137.369.103",
+        "10.137.369.104",
+        "10.137.369.105",
+        "10.137.369.106",
+        "10.137.369.107",
+        "10.137.369.108",
+        "10.137.369.109",
+        "10.137.369.110",
+        "10.137.369.111",
+        "10.137.369.112",
+        "10.137.369.113",
+        "10.137.369.114",
+        "10.137.369.115",
+        "10.137.369.116",
+        "10.137.369.117",
+        "10.137.369.118",
+        "10.137.369.119",
+        "10.137.369.120",
+        "10.137.369.121",
+        "10.137.369.122",
+        "10.137.369.123",
+        "10.137.369.124",
+        "10.137.369.125"
+    ],
+    "latitude": 33.032,
+    "longitude": -96.673,
+    "nodes": [
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.97",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..Firewall 369",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.032,
+            "Longitude": -96.673
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.98",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..Router 369",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.1",
+            "ipAddress": "10.137.369.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2.OT.Switch 737",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.99",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2.Corporate.Switch 738",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.3",
+            "ipAddress": "10.137.369.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.2",
+            "ipAddress": "10.137.369.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..RC 369",
+            "compromised": false,
+            "relayIPlist": [
+                "10.137.369.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.100",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..Host 737",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.100",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..Host 738",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.100",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..LocalDatabase 737",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.100",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..LocalWebServer 738",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.101",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..hmi 737",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.100",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..outstation 738",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 25.PLANO 2..RC 369",
+            "destination": "Utility 25.PLANO 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 25.PLANO 2..Router 369",
+            "destination": "Utility 25.PLANO 2..Firewall 369",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 25.PLANO 2..Firewall 369",
+            "destination": "Utility 25.PLANO 2.OT.Switch 737",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 25.PLANO 2.OT.Switch 737",
+            "destination": "Utility 25.PLANO 2..RC 369",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 25.PLANO 2..Firewall 369",
+            "destination": "Utility 25.PLANO 2.Corporate.Switch 738",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 25.PLANO 2.Corporate.Switch 738",
+            "destination": "Utility 25.PLANO 2..Host 737",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 25.PLANO 2.Corporate.Switch 738",
+            "destination": "Utility 25.PLANO 2..Host 738",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 25.PLANO 2.Corporate.Switch 738",
+            "destination": "Utility 25.PLANO 2..LocalDatabase 737",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 25.PLANO 2.Corporate.Switch 738",
+            "destination": "Utility 25.PLANO 2..LocalWebServer 738",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.1",
+            "ipAddress": "10.137.369.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2.OT.Switch 737",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.2",
+            "ipAddress": "10.137.369.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..RC 369",
+            "compromised": false,
+            "relayIPlist": [
+                "10.137.369.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.97",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..Firewall 369",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.032,
+            "Longitude": -96.673
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.98",
+            "ipAddress": "10.137.369.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..Router 369",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.1",
+            "ipAddress": "10.137.369.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2.OT.Switch 737",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 25",
+            "adminIP": "10.137.369.2",
+            "ipAddress": "10.137.369.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 2",
+            "label": "Utility 25.PLANO 2..RC 369",
+            "compromised": false,
+            "relayIPlist": [
+                "10.137.369.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

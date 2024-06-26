@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 129.ARLINGTON 4",
+    "networkLan": "10.151.606.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 129",
+    "utility_id": 151,
+    "substation": "ARLINGTON 4",
+    "substationNumber": 606,
+    "OTAddress": "10.151.606.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.151.606.1",
+        "10.151.606.2",
+        "10.151.606.3",
+        "10.151.606.4",
+        "10.151.606.5",
+        "10.151.606.6",
+        "10.151.606.7",
+        "10.151.606.8",
+        "10.151.606.9",
+        "10.151.606.10",
+        "10.151.606.11",
+        "10.151.606.12",
+        "10.151.606.13",
+        "10.151.606.14",
+        "10.151.606.15",
+        "10.151.606.16",
+        "10.151.606.17",
+        "10.151.606.18",
+        "10.151.606.19",
+        "10.151.606.20",
+        "10.151.606.21",
+        "10.151.606.22",
+        "10.151.606.23",
+        "10.151.606.24",
+        "10.151.606.25",
+        "10.151.606.26",
+        "10.151.606.27",
+        "10.151.606.28",
+        "10.151.606.29",
+        "10.151.606.30",
+        "10.151.606.31",
+        "10.151.606.32",
+        "10.151.606.33",
+        "10.151.606.34",
+        "10.151.606.35",
+        "10.151.606.36",
+        "10.151.606.37",
+        "10.151.606.38",
+        "10.151.606.39",
+        "10.151.606.40",
+        "10.151.606.41",
+        "10.151.606.42",
+        "10.151.606.43",
+        "10.151.606.44",
+        "10.151.606.45",
+        "10.151.606.46",
+        "10.151.606.47",
+        "10.151.606.48",
+        "10.151.606.49",
+        "10.151.606.50",
+        "10.151.606.51",
+        "10.151.606.52",
+        "10.151.606.53",
+        "10.151.606.54",
+        "10.151.606.55",
+        "10.151.606.56",
+        "10.151.606.57",
+        "10.151.606.58",
+        "10.151.606.59",
+        "10.151.606.60",
+        "10.151.606.61",
+        "10.151.606.62"
+    ],
+    "routeAddress": "10.151.606.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.151.606.65",
+        "10.151.606.66",
+        "10.151.606.67",
+        "10.151.606.68",
+        "10.151.606.69",
+        "10.151.606.70",
+        "10.151.606.71",
+        "10.151.606.72",
+        "10.151.606.73",
+        "10.151.606.74",
+        "10.151.606.75",
+        "10.151.606.76",
+        "10.151.606.77",
+        "10.151.606.78",
+        "10.151.606.79",
+        "10.151.606.80",
+        "10.151.606.81",
+        "10.151.606.82",
+        "10.151.606.83",
+        "10.151.606.84",
+        "10.151.606.85",
+        "10.151.606.86",
+        "10.151.606.87",
+        "10.151.606.88",
+        "10.151.606.89",
+        "10.151.606.90",
+        "10.151.606.91",
+        "10.151.606.92",
+        "10.151.606.93",
+        "10.151.606.94"
+    ],
+    "corporateAddress": "10.151.606.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.151.606.97",
+        "10.151.606.98",
+        "10.151.606.99",
+        "10.151.606.100",
+        "10.151.606.101",
+        "10.151.606.102",
+        "10.151.606.103",
+        "10.151.606.104",
+        "10.151.606.105",
+        "10.151.606.106",
+        "10.151.606.107",
+        "10.151.606.108",
+        "10.151.606.109",
+        "10.151.606.110",
+        "10.151.606.111",
+        "10.151.606.112",
+        "10.151.606.113",
+        "10.151.606.114",
+        "10.151.606.115",
+        "10.151.606.116",
+        "10.151.606.117",
+        "10.151.606.118",
+        "10.151.606.119",
+        "10.151.606.120",
+        "10.151.606.121",
+        "10.151.606.122",
+        "10.151.606.123",
+        "10.151.606.124",
+        "10.151.606.125"
+    ],
+    "latitude": 32.754,
+    "longitude": -97.083,
+    "nodes": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.97",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..Firewall 606",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.754,
+            "Longitude": -97.083
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.98",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..Router 606",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.1",
+            "ipAddress": "10.151.606.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4.OT.Switch 1211",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.99",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4.Corporate.Switch 1212",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.3",
+            "ipAddress": "10.151.606.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.2",
+            "ipAddress": "10.151.606.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..RC 606",
+            "compromised": false,
+            "relayIPlist": [
+                "10.151.606.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.100",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..Host 1211",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.100",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..Host 1212",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.100",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..LocalDatabase 1211",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.100",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..LocalWebServer 1212",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.101",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..hmi 1211",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.100",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..outstation 1212",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 129.ARLINGTON 4..RC 606",
+            "destination": "Utility 129.ARLINGTON 4..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 4..Router 606",
+            "destination": "Utility 129.ARLINGTON 4..Firewall 606",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 4..Firewall 606",
+            "destination": "Utility 129.ARLINGTON 4.OT.Switch 1211",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 4.OT.Switch 1211",
+            "destination": "Utility 129.ARLINGTON 4..RC 606",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 4..Firewall 606",
+            "destination": "Utility 129.ARLINGTON 4.Corporate.Switch 1212",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 4.Corporate.Switch 1212",
+            "destination": "Utility 129.ARLINGTON 4..Host 1211",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 4.Corporate.Switch 1212",
+            "destination": "Utility 129.ARLINGTON 4..Host 1212",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 4.Corporate.Switch 1212",
+            "destination": "Utility 129.ARLINGTON 4..LocalDatabase 1211",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 4.Corporate.Switch 1212",
+            "destination": "Utility 129.ARLINGTON 4..LocalWebServer 1212",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.1",
+            "ipAddress": "10.151.606.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4.OT.Switch 1211",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.2",
+            "ipAddress": "10.151.606.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..RC 606",
+            "compromised": false,
+            "relayIPlist": [
+                "10.151.606.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.97",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..Firewall 606",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.754,
+            "Longitude": -97.083
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.98",
+            "ipAddress": "10.151.606.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..Router 606",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.1",
+            "ipAddress": "10.151.606.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4.OT.Switch 1211",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.606.2",
+            "ipAddress": "10.151.606.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 4",
+            "label": "Utility 129.ARLINGTON 4..RC 606",
+            "compromised": false,
+            "relayIPlist": [
+                "10.151.606.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

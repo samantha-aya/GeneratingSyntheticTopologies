@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 114.BEDFORD 2",
+    "networkLan": "10.141.516.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 114",
+    "utility_id": 141,
+    "substation": "BEDFORD 2",
+    "substationNumber": 516,
+    "OTAddress": "10.141.516.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.141.516.1",
+        "10.141.516.2",
+        "10.141.516.3",
+        "10.141.516.4",
+        "10.141.516.5",
+        "10.141.516.6",
+        "10.141.516.7",
+        "10.141.516.8",
+        "10.141.516.9",
+        "10.141.516.10",
+        "10.141.516.11",
+        "10.141.516.12",
+        "10.141.516.13",
+        "10.141.516.14",
+        "10.141.516.15",
+        "10.141.516.16",
+        "10.141.516.17",
+        "10.141.516.18",
+        "10.141.516.19",
+        "10.141.516.20",
+        "10.141.516.21",
+        "10.141.516.22",
+        "10.141.516.23",
+        "10.141.516.24",
+        "10.141.516.25",
+        "10.141.516.26",
+        "10.141.516.27",
+        "10.141.516.28",
+        "10.141.516.29",
+        "10.141.516.30",
+        "10.141.516.31",
+        "10.141.516.32",
+        "10.141.516.33",
+        "10.141.516.34",
+        "10.141.516.35",
+        "10.141.516.36",
+        "10.141.516.37",
+        "10.141.516.38",
+        "10.141.516.39",
+        "10.141.516.40",
+        "10.141.516.41",
+        "10.141.516.42",
+        "10.141.516.43",
+        "10.141.516.44",
+        "10.141.516.45",
+        "10.141.516.46",
+        "10.141.516.47",
+        "10.141.516.48",
+        "10.141.516.49",
+        "10.141.516.50",
+        "10.141.516.51",
+        "10.141.516.52",
+        "10.141.516.53",
+        "10.141.516.54",
+        "10.141.516.55",
+        "10.141.516.56",
+        "10.141.516.57",
+        "10.141.516.58",
+        "10.141.516.59",
+        "10.141.516.60",
+        "10.141.516.61",
+        "10.141.516.62"
+    ],
+    "routeAddress": "10.141.516.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.141.516.65",
+        "10.141.516.66",
+        "10.141.516.67",
+        "10.141.516.68",
+        "10.141.516.69",
+        "10.141.516.70",
+        "10.141.516.71",
+        "10.141.516.72",
+        "10.141.516.73",
+        "10.141.516.74",
+        "10.141.516.75",
+        "10.141.516.76",
+        "10.141.516.77",
+        "10.141.516.78",
+        "10.141.516.79",
+        "10.141.516.80",
+        "10.141.516.81",
+        "10.141.516.82",
+        "10.141.516.83",
+        "10.141.516.84",
+        "10.141.516.85",
+        "10.141.516.86",
+        "10.141.516.87",
+        "10.141.516.88",
+        "10.141.516.89",
+        "10.141.516.90",
+        "10.141.516.91",
+        "10.141.516.92",
+        "10.141.516.93",
+        "10.141.516.94"
+    ],
+    "corporateAddress": "10.141.516.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.141.516.97",
+        "10.141.516.98",
+        "10.141.516.99",
+        "10.141.516.100",
+        "10.141.516.101",
+        "10.141.516.102",
+        "10.141.516.103",
+        "10.141.516.104",
+        "10.141.516.105",
+        "10.141.516.106",
+        "10.141.516.107",
+        "10.141.516.108",
+        "10.141.516.109",
+        "10.141.516.110",
+        "10.141.516.111",
+        "10.141.516.112",
+        "10.141.516.113",
+        "10.141.516.114",
+        "10.141.516.115",
+        "10.141.516.116",
+        "10.141.516.117",
+        "10.141.516.118",
+        "10.141.516.119",
+        "10.141.516.120",
+        "10.141.516.121",
+        "10.141.516.122",
+        "10.141.516.123",
+        "10.141.516.124",
+        "10.141.516.125"
+    ],
+    "latitude": 32.831,
+    "longitude": -97.145,
+    "nodes": [
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.97",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..Firewall 516",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.831,
+            "Longitude": -97.145
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.98",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..Router 516",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.1",
+            "ipAddress": "10.141.516.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2.OT.Switch 1031",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.99",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2.Corporate.Switch 1032",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.3",
+            "ipAddress": "10.141.516.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.2",
+            "ipAddress": "10.141.516.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..RC 516",
+            "compromised": false,
+            "relayIPlist": [
+                "10.141.516.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.100",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..Host 1031",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.100",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..Host 1032",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.100",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..LocalDatabase 1031",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.100",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..LocalWebServer 1032",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.101",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..hmi 1031",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.100",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..outstation 1032",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 114.BEDFORD 2..RC 516",
+            "destination": "Utility 114.BEDFORD 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 114.BEDFORD 2..Router 516",
+            "destination": "Utility 114.BEDFORD 2..Firewall 516",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 114.BEDFORD 2..Firewall 516",
+            "destination": "Utility 114.BEDFORD 2.OT.Switch 1031",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 114.BEDFORD 2.OT.Switch 1031",
+            "destination": "Utility 114.BEDFORD 2..RC 516",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 114.BEDFORD 2..Firewall 516",
+            "destination": "Utility 114.BEDFORD 2.Corporate.Switch 1032",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 114.BEDFORD 2.Corporate.Switch 1032",
+            "destination": "Utility 114.BEDFORD 2..Host 1031",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 114.BEDFORD 2.Corporate.Switch 1032",
+            "destination": "Utility 114.BEDFORD 2..Host 1032",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 114.BEDFORD 2.Corporate.Switch 1032",
+            "destination": "Utility 114.BEDFORD 2..LocalDatabase 1031",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 114.BEDFORD 2.Corporate.Switch 1032",
+            "destination": "Utility 114.BEDFORD 2..LocalWebServer 1032",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.1",
+            "ipAddress": "10.141.516.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2.OT.Switch 1031",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.2",
+            "ipAddress": "10.141.516.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..RC 516",
+            "compromised": false,
+            "relayIPlist": [
+                "10.141.516.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.97",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..Firewall 516",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.831,
+            "Longitude": -97.145
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.98",
+            "ipAddress": "10.141.516.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..Router 516",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.1",
+            "ipAddress": "10.141.516.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2.OT.Switch 1031",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 114",
+            "adminIP": "10.141.516.2",
+            "ipAddress": "10.141.516.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BEDFORD 2",
+            "label": "Utility 114.BEDFORD 2..RC 516",
+            "compromised": false,
+            "relayIPlist": [
+                "10.141.516.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.NORDHEIM",
+    "networkLan": "10.56.900.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "NORDHEIM",
+    "substationNumber": 900,
+    "OTAddress": "10.56.900.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.900.1",
+        "10.56.900.2",
+        "10.56.900.3",
+        "10.56.900.4",
+        "10.56.900.5",
+        "10.56.900.6",
+        "10.56.900.7",
+        "10.56.900.8",
+        "10.56.900.9",
+        "10.56.900.10",
+        "10.56.900.11",
+        "10.56.900.12",
+        "10.56.900.13",
+        "10.56.900.14",
+        "10.56.900.15",
+        "10.56.900.16",
+        "10.56.900.17",
+        "10.56.900.18",
+        "10.56.900.19",
+        "10.56.900.20",
+        "10.56.900.21",
+        "10.56.900.22",
+        "10.56.900.23",
+        "10.56.900.24",
+        "10.56.900.25",
+        "10.56.900.26",
+        "10.56.900.27",
+        "10.56.900.28",
+        "10.56.900.29",
+        "10.56.900.30",
+        "10.56.900.31",
+        "10.56.900.32",
+        "10.56.900.33",
+        "10.56.900.34",
+        "10.56.900.35",
+        "10.56.900.36",
+        "10.56.900.37",
+        "10.56.900.38",
+        "10.56.900.39",
+        "10.56.900.40",
+        "10.56.900.41",
+        "10.56.900.42",
+        "10.56.900.43",
+        "10.56.900.44",
+        "10.56.900.45",
+        "10.56.900.46",
+        "10.56.900.47",
+        "10.56.900.48",
+        "10.56.900.49",
+        "10.56.900.50",
+        "10.56.900.51",
+        "10.56.900.52",
+        "10.56.900.53",
+        "10.56.900.54",
+        "10.56.900.55",
+        "10.56.900.56",
+        "10.56.900.57",
+        "10.56.900.58",
+        "10.56.900.59",
+        "10.56.900.60",
+        "10.56.900.61",
+        "10.56.900.62"
+    ],
+    "routeAddress": "10.56.900.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.900.65",
+        "10.56.900.66",
+        "10.56.900.67",
+        "10.56.900.68",
+        "10.56.900.69",
+        "10.56.900.70",
+        "10.56.900.71",
+        "10.56.900.72",
+        "10.56.900.73",
+        "10.56.900.74",
+        "10.56.900.75",
+        "10.56.900.76",
+        "10.56.900.77",
+        "10.56.900.78",
+        "10.56.900.79",
+        "10.56.900.80",
+        "10.56.900.81",
+        "10.56.900.82",
+        "10.56.900.83",
+        "10.56.900.84",
+        "10.56.900.85",
+        "10.56.900.86",
+        "10.56.900.87",
+        "10.56.900.88",
+        "10.56.900.89",
+        "10.56.900.90",
+        "10.56.900.91",
+        "10.56.900.92",
+        "10.56.900.93",
+        "10.56.900.94"
+    ],
+    "corporateAddress": "10.56.900.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.900.97",
+        "10.56.900.98",
+        "10.56.900.99",
+        "10.56.900.100",
+        "10.56.900.101",
+        "10.56.900.102",
+        "10.56.900.103",
+        "10.56.900.104",
+        "10.56.900.105",
+        "10.56.900.106",
+        "10.56.900.107",
+        "10.56.900.108",
+        "10.56.900.109",
+        "10.56.900.110",
+        "10.56.900.111",
+        "10.56.900.112",
+        "10.56.900.113",
+        "10.56.900.114",
+        "10.56.900.115",
+        "10.56.900.116",
+        "10.56.900.117",
+        "10.56.900.118",
+        "10.56.900.119",
+        "10.56.900.120",
+        "10.56.900.121",
+        "10.56.900.122",
+        "10.56.900.123",
+        "10.56.900.124",
+        "10.56.900.125"
+    ],
+    "latitude": 28.914,
+    "longitude": -97.633,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.97",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..Firewall 900",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.914,
+            "Longitude": -97.633
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.98",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..Router 900",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.1",
+            "ipAddress": "10.56.900.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM.OT.Switch 1799",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.99",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM.Corporate.Switch 1800",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.3",
+            "ipAddress": "10.56.900.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.2",
+            "ipAddress": "10.56.900.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..RC 900",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.900.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.100",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..Host 1799",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.100",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..Host 1800",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.100",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..LocalDatabase 1799",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.100",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..LocalWebServer 1800",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.101",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..hmi 1799",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.100",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..outstation 1800",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.NORDHEIM..RC 900",
+            "destination": "Utility 3.NORDHEIM..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.NORDHEIM..Router 900",
+            "destination": "Utility 3.NORDHEIM..Firewall 900",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.NORDHEIM..Firewall 900",
+            "destination": "Utility 3.NORDHEIM.OT.Switch 1799",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.NORDHEIM.OT.Switch 1799",
+            "destination": "Utility 3.NORDHEIM..RC 900",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.NORDHEIM..Firewall 900",
+            "destination": "Utility 3.NORDHEIM.Corporate.Switch 1800",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.NORDHEIM.Corporate.Switch 1800",
+            "destination": "Utility 3.NORDHEIM..Host 1799",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.NORDHEIM.Corporate.Switch 1800",
+            "destination": "Utility 3.NORDHEIM..Host 1800",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.NORDHEIM.Corporate.Switch 1800",
+            "destination": "Utility 3.NORDHEIM..LocalDatabase 1799",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.NORDHEIM.Corporate.Switch 1800",
+            "destination": "Utility 3.NORDHEIM..LocalWebServer 1800",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.1",
+            "ipAddress": "10.56.900.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM.OT.Switch 1799",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.2",
+            "ipAddress": "10.56.900.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..RC 900",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.900.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.97",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..Firewall 900",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.914,
+            "Longitude": -97.633
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.98",
+            "ipAddress": "10.56.900.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..Router 900",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.1",
+            "ipAddress": "10.56.900.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM.OT.Switch 1799",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.900.2",
+            "ipAddress": "10.56.900.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NORDHEIM",
+            "label": "Utility 3.NORDHEIM..RC 900",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.900.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,660 @@
+{
+    "relayCounter": 3,
+    "label": "Region.Utility 5.SYNDER",
+    "networkLan": "10.53.210.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 5",
+    "utility_id": 53,
+    "substation": "SYNDER",
+    "substationNumber": 210,
+    "OTAddress": "10.53.210.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.210.1",
+        "10.53.210.2",
+        "10.53.210.3",
+        "10.53.210.4",
+        "10.53.210.5",
+        "10.53.210.6",
+        "10.53.210.7",
+        "10.53.210.8",
+        "10.53.210.9",
+        "10.53.210.10",
+        "10.53.210.11",
+        "10.53.210.12",
+        "10.53.210.13",
+        "10.53.210.14",
+        "10.53.210.15",
+        "10.53.210.16",
+        "10.53.210.17",
+        "10.53.210.18",
+        "10.53.210.19",
+        "10.53.210.20",
+        "10.53.210.21",
+        "10.53.210.22",
+        "10.53.210.23",
+        "10.53.210.24",
+        "10.53.210.25",
+        "10.53.210.26",
+        "10.53.210.27",
+        "10.53.210.28",
+        "10.53.210.29",
+        "10.53.210.30",
+        "10.53.210.31",
+        "10.53.210.32",
+        "10.53.210.33",
+        "10.53.210.34",
+        "10.53.210.35",
+        "10.53.210.36",
+        "10.53.210.37",
+        "10.53.210.38",
+        "10.53.210.39",
+        "10.53.210.40",
+        "10.53.210.41",
+        "10.53.210.42",
+        "10.53.210.43",
+        "10.53.210.44",
+        "10.53.210.45",
+        "10.53.210.46",
+        "10.53.210.47",
+        "10.53.210.48",
+        "10.53.210.49",
+        "10.53.210.50",
+        "10.53.210.51",
+        "10.53.210.52",
+        "10.53.210.53",
+        "10.53.210.54",
+        "10.53.210.55",
+        "10.53.210.56",
+        "10.53.210.57",
+        "10.53.210.58",
+        "10.53.210.59",
+        "10.53.210.60",
+        "10.53.210.61",
+        "10.53.210.62"
+    ],
+    "routeAddress": "10.53.210.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.210.65",
+        "10.53.210.66",
+        "10.53.210.67",
+        "10.53.210.68",
+        "10.53.210.69",
+        "10.53.210.70",
+        "10.53.210.71",
+        "10.53.210.72",
+        "10.53.210.73",
+        "10.53.210.74",
+        "10.53.210.75",
+        "10.53.210.76",
+        "10.53.210.77",
+        "10.53.210.78",
+        "10.53.210.79",
+        "10.53.210.80",
+        "10.53.210.81",
+        "10.53.210.82",
+        "10.53.210.83",
+        "10.53.210.84",
+        "10.53.210.85",
+        "10.53.210.86",
+        "10.53.210.87",
+        "10.53.210.88",
+        "10.53.210.89",
+        "10.53.210.90",
+        "10.53.210.91",
+        "10.53.210.92",
+        "10.53.210.93",
+        "10.53.210.94"
+    ],
+    "corporateAddress": "10.53.210.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.210.97",
+        "10.53.210.98",
+        "10.53.210.99",
+        "10.53.210.100",
+        "10.53.210.101",
+        "10.53.210.102",
+        "10.53.210.103",
+        "10.53.210.104",
+        "10.53.210.105",
+        "10.53.210.106",
+        "10.53.210.107",
+        "10.53.210.108",
+        "10.53.210.109",
+        "10.53.210.110",
+        "10.53.210.111",
+        "10.53.210.112",
+        "10.53.210.113",
+        "10.53.210.114",
+        "10.53.210.115",
+        "10.53.210.116",
+        "10.53.210.117",
+        "10.53.210.118",
+        "10.53.210.119",
+        "10.53.210.120",
+        "10.53.210.121",
+        "10.53.210.122",
+        "10.53.210.123",
+        "10.53.210.124",
+        "10.53.210.125"
+    ],
+    "latitude": 32.739,
+    "longitude": -100.739,
+    "nodes": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.97",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..Firewall 210",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.739,
+            "Longitude": -100.739
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.98",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..Router 210",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.1",
+            "ipAddress": "10.53.210.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER.OT.Switch 419",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.99",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER.Corporate.Switch 420",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.3",
+            "ipAddress": "10.53.210.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.4",
+            "ipAddress": "10.53.210.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.5",
+            "ipAddress": "10.53.210.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.2",
+            "ipAddress": "10.53.210.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..RC 210",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.210.3",
+                "10.53.210.4",
+                "10.53.210.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.100",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..Host 419",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.100",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..Host 420",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.100",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..LocalDatabase 419",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.100",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..LocalWebServer 420",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.101",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..hmi 419",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.100",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..outstation 420",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 5.SYNDER..RC 210",
+            "destination": "Utility 5.SYNDER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER..RC 210",
+            "destination": "Utility 5.SYNDER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER..RC 210",
+            "destination": "Utility 5.SYNDER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER..Router 210",
+            "destination": "Utility 5.SYNDER..Firewall 210",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER..Firewall 210",
+            "destination": "Utility 5.SYNDER.OT.Switch 419",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER.OT.Switch 419",
+            "destination": "Utility 5.SYNDER..RC 210",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER..Firewall 210",
+            "destination": "Utility 5.SYNDER.Corporate.Switch 420",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER.Corporate.Switch 420",
+            "destination": "Utility 5.SYNDER..Host 419",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER.Corporate.Switch 420",
+            "destination": "Utility 5.SYNDER..Host 420",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER.Corporate.Switch 420",
+            "destination": "Utility 5.SYNDER..LocalDatabase 419",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SYNDER.Corporate.Switch 420",
+            "destination": "Utility 5.SYNDER..LocalWebServer 420",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.1",
+            "ipAddress": "10.53.210.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER.OT.Switch 419",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.2",
+            "ipAddress": "10.53.210.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..RC 210",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.210.3",
+                "10.53.210.4",
+                "10.53.210.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.97",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..Firewall 210",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.739,
+            "Longitude": -100.739
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.98",
+            "ipAddress": "10.53.210.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..Router 210",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.1",
+            "ipAddress": "10.53.210.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER.OT.Switch 419",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.210.2",
+            "ipAddress": "10.53.210.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SYNDER",
+            "label": "Utility 5.SYNDER..RC 210",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.210.3",
+                "10.53.210.4",
+                "10.53.210.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 137.25,
+    "genmvar": -10.41,
+    "connecting_TS_num": 223
+}

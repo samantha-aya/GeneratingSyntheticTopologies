@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.FORT WORTH 16",
+    "networkLan": "10.52.608.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "FORT WORTH 16",
+    "substationNumber": 608,
+    "OTAddress": "10.52.608.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.608.1",
+        "10.52.608.2",
+        "10.52.608.3",
+        "10.52.608.4",
+        "10.52.608.5",
+        "10.52.608.6",
+        "10.52.608.7",
+        "10.52.608.8",
+        "10.52.608.9",
+        "10.52.608.10",
+        "10.52.608.11",
+        "10.52.608.12",
+        "10.52.608.13",
+        "10.52.608.14",
+        "10.52.608.15",
+        "10.52.608.16",
+        "10.52.608.17",
+        "10.52.608.18",
+        "10.52.608.19",
+        "10.52.608.20",
+        "10.52.608.21",
+        "10.52.608.22",
+        "10.52.608.23",
+        "10.52.608.24",
+        "10.52.608.25",
+        "10.52.608.26",
+        "10.52.608.27",
+        "10.52.608.28",
+        "10.52.608.29",
+        "10.52.608.30",
+        "10.52.608.31",
+        "10.52.608.32",
+        "10.52.608.33",
+        "10.52.608.34",
+        "10.52.608.35",
+        "10.52.608.36",
+        "10.52.608.37",
+        "10.52.608.38",
+        "10.52.608.39",
+        "10.52.608.40",
+        "10.52.608.41",
+        "10.52.608.42",
+        "10.52.608.43",
+        "10.52.608.44",
+        "10.52.608.45",
+        "10.52.608.46",
+        "10.52.608.47",
+        "10.52.608.48",
+        "10.52.608.49",
+        "10.52.608.50",
+        "10.52.608.51",
+        "10.52.608.52",
+        "10.52.608.53",
+        "10.52.608.54",
+        "10.52.608.55",
+        "10.52.608.56",
+        "10.52.608.57",
+        "10.52.608.58",
+        "10.52.608.59",
+        "10.52.608.60",
+        "10.52.608.61",
+        "10.52.608.62"
+    ],
+    "routeAddress": "10.52.608.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.608.65",
+        "10.52.608.66",
+        "10.52.608.67",
+        "10.52.608.68",
+        "10.52.608.69",
+        "10.52.608.70",
+        "10.52.608.71",
+        "10.52.608.72",
+        "10.52.608.73",
+        "10.52.608.74",
+        "10.52.608.75",
+        "10.52.608.76",
+        "10.52.608.77",
+        "10.52.608.78",
+        "10.52.608.79",
+        "10.52.608.80",
+        "10.52.608.81",
+        "10.52.608.82",
+        "10.52.608.83",
+        "10.52.608.84",
+        "10.52.608.85",
+        "10.52.608.86",
+        "10.52.608.87",
+        "10.52.608.88",
+        "10.52.608.89",
+        "10.52.608.90",
+        "10.52.608.91",
+        "10.52.608.92",
+        "10.52.608.93",
+        "10.52.608.94"
+    ],
+    "corporateAddress": "10.52.608.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.608.97",
+        "10.52.608.98",
+        "10.52.608.99",
+        "10.52.608.100",
+        "10.52.608.101",
+        "10.52.608.102",
+        "10.52.608.103",
+        "10.52.608.104",
+        "10.52.608.105",
+        "10.52.608.106",
+        "10.52.608.107",
+        "10.52.608.108",
+        "10.52.608.109",
+        "10.52.608.110",
+        "10.52.608.111",
+        "10.52.608.112",
+        "10.52.608.113",
+        "10.52.608.114",
+        "10.52.608.115",
+        "10.52.608.116",
+        "10.52.608.117",
+        "10.52.608.118",
+        "10.52.608.119",
+        "10.52.608.120",
+        "10.52.608.121",
+        "10.52.608.122",
+        "10.52.608.123",
+        "10.52.608.124",
+        "10.52.608.125"
+    ],
+    "latitude": 32.882,
+    "longitude": -97.346,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.97",
+            "ipAddress": "10.52.608.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..Firewall 608",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.882,
+            "Longitude": -97.346
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.98",
+            "ipAddress": "10.52.608.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..Router 608",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.1",
+            "ipAddress": "10.52.608.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16.OT.Switch 1215",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.99",
+            "ipAddress": "10.52.608.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16.Corporate.Switch 1216",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.3",
+            "ipAddress": "10.52.608.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.2",
+            "ipAddress": "10.52.608.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..RC 608",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.608.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.100",
+            "ipAddress": "10.52.608.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..Host 1215",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.100",
+            "ipAddress": "10.52.608.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..Host 1216",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.100",
+            "ipAddress": "10.52.608.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..LocalDatabase 1215",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.100",
+            "ipAddress": "10.52.608.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..LocalWebServer 1216",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.FORT WORTH 16..RC 608",
+            "destination": "Utility 0.FORT WORTH 16..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORT WORTH 16..Router 608",
+            "destination": "Utility 0.FORT WORTH 16..Firewall 608",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORT WORTH 16..Firewall 608",
+            "destination": "Utility 0.FORT WORTH 16.OT.Switch 1215",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORT WORTH 16.OT.Switch 1215",
+            "destination": "Utility 0.FORT WORTH 16..RC 608",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORT WORTH 16..Firewall 608",
+            "destination": "Utility 0.FORT WORTH 16.Corporate.Switch 1216",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORT WORTH 16.Corporate.Switch 1216",
+            "destination": "Utility 0.FORT WORTH 16..Host 1215",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORT WORTH 16.Corporate.Switch 1216",
+            "destination": "Utility 0.FORT WORTH 16..Host 1216",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORT WORTH 16.Corporate.Switch 1216",
+            "destination": "Utility 0.FORT WORTH 16..LocalDatabase 1215",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORT WORTH 16.Corporate.Switch 1216",
+            "destination": "Utility 0.FORT WORTH 16..LocalWebServer 1216",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.1",
+            "ipAddress": "10.52.608.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16.OT.Switch 1215",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.2",
+            "ipAddress": "10.52.608.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..RC 608",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.608.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.97",
+            "ipAddress": "10.52.608.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..Firewall 608",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.882,
+            "Longitude": -97.346
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.98",
+            "ipAddress": "10.52.608.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..Router 608",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.1",
+            "ipAddress": "10.52.608.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16.OT.Switch 1215",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.608.2",
+            "ipAddress": "10.52.608.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORT WORTH 16",
+            "label": "Utility 0.FORT WORTH 16..RC 608",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.608.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

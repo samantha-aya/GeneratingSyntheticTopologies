@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.DENTON 6",
+    "networkLan": "10.55.599.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "DENTON 6",
+    "substationNumber": 599,
+    "OTAddress": "10.55.599.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.599.1",
+        "10.55.599.2",
+        "10.55.599.3",
+        "10.55.599.4",
+        "10.55.599.5",
+        "10.55.599.6",
+        "10.55.599.7",
+        "10.55.599.8",
+        "10.55.599.9",
+        "10.55.599.10",
+        "10.55.599.11",
+        "10.55.599.12",
+        "10.55.599.13",
+        "10.55.599.14",
+        "10.55.599.15",
+        "10.55.599.16",
+        "10.55.599.17",
+        "10.55.599.18",
+        "10.55.599.19",
+        "10.55.599.20",
+        "10.55.599.21",
+        "10.55.599.22",
+        "10.55.599.23",
+        "10.55.599.24",
+        "10.55.599.25",
+        "10.55.599.26",
+        "10.55.599.27",
+        "10.55.599.28",
+        "10.55.599.29",
+        "10.55.599.30",
+        "10.55.599.31",
+        "10.55.599.32",
+        "10.55.599.33",
+        "10.55.599.34",
+        "10.55.599.35",
+        "10.55.599.36",
+        "10.55.599.37",
+        "10.55.599.38",
+        "10.55.599.39",
+        "10.55.599.40",
+        "10.55.599.41",
+        "10.55.599.42",
+        "10.55.599.43",
+        "10.55.599.44",
+        "10.55.599.45",
+        "10.55.599.46",
+        "10.55.599.47",
+        "10.55.599.48",
+        "10.55.599.49",
+        "10.55.599.50",
+        "10.55.599.51",
+        "10.55.599.52",
+        "10.55.599.53",
+        "10.55.599.54",
+        "10.55.599.55",
+        "10.55.599.56",
+        "10.55.599.57",
+        "10.55.599.58",
+        "10.55.599.59",
+        "10.55.599.60",
+        "10.55.599.61",
+        "10.55.599.62"
+    ],
+    "routeAddress": "10.55.599.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.599.65",
+        "10.55.599.66",
+        "10.55.599.67",
+        "10.55.599.68",
+        "10.55.599.69",
+        "10.55.599.70",
+        "10.55.599.71",
+        "10.55.599.72",
+        "10.55.599.73",
+        "10.55.599.74",
+        "10.55.599.75",
+        "10.55.599.76",
+        "10.55.599.77",
+        "10.55.599.78",
+        "10.55.599.79",
+        "10.55.599.80",
+        "10.55.599.81",
+        "10.55.599.82",
+        "10.55.599.83",
+        "10.55.599.84",
+        "10.55.599.85",
+        "10.55.599.86",
+        "10.55.599.87",
+        "10.55.599.88",
+        "10.55.599.89",
+        "10.55.599.90",
+        "10.55.599.91",
+        "10.55.599.92",
+        "10.55.599.93",
+        "10.55.599.94"
+    ],
+    "corporateAddress": "10.55.599.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.599.97",
+        "10.55.599.98",
+        "10.55.599.99",
+        "10.55.599.100",
+        "10.55.599.101",
+        "10.55.599.102",
+        "10.55.599.103",
+        "10.55.599.104",
+        "10.55.599.105",
+        "10.55.599.106",
+        "10.55.599.107",
+        "10.55.599.108",
+        "10.55.599.109",
+        "10.55.599.110",
+        "10.55.599.111",
+        "10.55.599.112",
+        "10.55.599.113",
+        "10.55.599.114",
+        "10.55.599.115",
+        "10.55.599.116",
+        "10.55.599.117",
+        "10.55.599.118",
+        "10.55.599.119",
+        "10.55.599.120",
+        "10.55.599.121",
+        "10.55.599.122",
+        "10.55.599.123",
+        "10.55.599.124",
+        "10.55.599.125"
+    ],
+    "latitude": 33.228,
+    "longitude": -97.184,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.97",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..Firewall 599",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.228,
+            "Longitude": -97.184
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.98",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..Router 599",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.1",
+            "ipAddress": "10.55.599.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6.OT.Switch 1197",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.99",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6.Corporate.Switch 1198",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.3",
+            "ipAddress": "10.55.599.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.2",
+            "ipAddress": "10.55.599.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..RC 599",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.599.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.100",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..Host 1197",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.100",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..Host 1198",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.100",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..LocalDatabase 1197",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.100",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..LocalWebServer 1198",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.101",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..hmi 1197",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.100",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..outstation 1198",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.DENTON 6..RC 599",
+            "destination": "Utility 2.DENTON 6..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENTON 6..Router 599",
+            "destination": "Utility 2.DENTON 6..Firewall 599",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENTON 6..Firewall 599",
+            "destination": "Utility 2.DENTON 6.OT.Switch 1197",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENTON 6.OT.Switch 1197",
+            "destination": "Utility 2.DENTON 6..RC 599",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENTON 6..Firewall 599",
+            "destination": "Utility 2.DENTON 6.Corporate.Switch 1198",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENTON 6.Corporate.Switch 1198",
+            "destination": "Utility 2.DENTON 6..Host 1197",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENTON 6.Corporate.Switch 1198",
+            "destination": "Utility 2.DENTON 6..Host 1198",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENTON 6.Corporate.Switch 1198",
+            "destination": "Utility 2.DENTON 6..LocalDatabase 1197",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENTON 6.Corporate.Switch 1198",
+            "destination": "Utility 2.DENTON 6..LocalWebServer 1198",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.1",
+            "ipAddress": "10.55.599.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6.OT.Switch 1197",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.2",
+            "ipAddress": "10.55.599.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..RC 599",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.599.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.97",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..Firewall 599",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.228,
+            "Longitude": -97.184
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.98",
+            "ipAddress": "10.55.599.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..Router 599",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.1",
+            "ipAddress": "10.55.599.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6.OT.Switch 1197",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.599.2",
+            "ipAddress": "10.55.599.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENTON 6",
+            "label": "Utility 2.DENTON 6..RC 599",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.599.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

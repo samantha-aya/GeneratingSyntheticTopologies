@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.LAREDO 6",
+    "networkLan": "10.53.259.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "LAREDO 6",
+    "substationNumber": 259,
+    "OTAddress": "10.53.259.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.259.1",
+        "10.53.259.2",
+        "10.53.259.3",
+        "10.53.259.4",
+        "10.53.259.5",
+        "10.53.259.6",
+        "10.53.259.7",
+        "10.53.259.8",
+        "10.53.259.9",
+        "10.53.259.10",
+        "10.53.259.11",
+        "10.53.259.12",
+        "10.53.259.13",
+        "10.53.259.14",
+        "10.53.259.15",
+        "10.53.259.16",
+        "10.53.259.17",
+        "10.53.259.18",
+        "10.53.259.19",
+        "10.53.259.20",
+        "10.53.259.21",
+        "10.53.259.22",
+        "10.53.259.23",
+        "10.53.259.24",
+        "10.53.259.25",
+        "10.53.259.26",
+        "10.53.259.27",
+        "10.53.259.28",
+        "10.53.259.29",
+        "10.53.259.30",
+        "10.53.259.31",
+        "10.53.259.32",
+        "10.53.259.33",
+        "10.53.259.34",
+        "10.53.259.35",
+        "10.53.259.36",
+        "10.53.259.37",
+        "10.53.259.38",
+        "10.53.259.39",
+        "10.53.259.40",
+        "10.53.259.41",
+        "10.53.259.42",
+        "10.53.259.43",
+        "10.53.259.44",
+        "10.53.259.45",
+        "10.53.259.46",
+        "10.53.259.47",
+        "10.53.259.48",
+        "10.53.259.49",
+        "10.53.259.50",
+        "10.53.259.51",
+        "10.53.259.52",
+        "10.53.259.53",
+        "10.53.259.54",
+        "10.53.259.55",
+        "10.53.259.56",
+        "10.53.259.57",
+        "10.53.259.58",
+        "10.53.259.59",
+        "10.53.259.60",
+        "10.53.259.61",
+        "10.53.259.62"
+    ],
+    "routeAddress": "10.53.259.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.259.65",
+        "10.53.259.66",
+        "10.53.259.67",
+        "10.53.259.68",
+        "10.53.259.69",
+        "10.53.259.70",
+        "10.53.259.71",
+        "10.53.259.72",
+        "10.53.259.73",
+        "10.53.259.74",
+        "10.53.259.75",
+        "10.53.259.76",
+        "10.53.259.77",
+        "10.53.259.78",
+        "10.53.259.79",
+        "10.53.259.80",
+        "10.53.259.81",
+        "10.53.259.82",
+        "10.53.259.83",
+        "10.53.259.84",
+        "10.53.259.85",
+        "10.53.259.86",
+        "10.53.259.87",
+        "10.53.259.88",
+        "10.53.259.89",
+        "10.53.259.90",
+        "10.53.259.91",
+        "10.53.259.92",
+        "10.53.259.93",
+        "10.53.259.94"
+    ],
+    "corporateAddress": "10.53.259.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.259.97",
+        "10.53.259.98",
+        "10.53.259.99",
+        "10.53.259.100",
+        "10.53.259.101",
+        "10.53.259.102",
+        "10.53.259.103",
+        "10.53.259.104",
+        "10.53.259.105",
+        "10.53.259.106",
+        "10.53.259.107",
+        "10.53.259.108",
+        "10.53.259.109",
+        "10.53.259.110",
+        "10.53.259.111",
+        "10.53.259.112",
+        "10.53.259.113",
+        "10.53.259.114",
+        "10.53.259.115",
+        "10.53.259.116",
+        "10.53.259.117",
+        "10.53.259.118",
+        "10.53.259.119",
+        "10.53.259.120",
+        "10.53.259.121",
+        "10.53.259.122",
+        "10.53.259.123",
+        "10.53.259.124",
+        "10.53.259.125"
+    ],
+    "latitude": 27.514,
+    "longitude": -99.502,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.97",
+            "ipAddress": "10.53.259.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..Firewall 259",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.514,
+            "Longitude": -99.502
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.98",
+            "ipAddress": "10.53.259.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..Router 259",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.1",
+            "ipAddress": "10.53.259.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6.OT.Switch 517",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.99",
+            "ipAddress": "10.53.259.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6.Corporate.Switch 518",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.3",
+            "ipAddress": "10.53.259.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.2",
+            "ipAddress": "10.53.259.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..RC 259",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.259.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.100",
+            "ipAddress": "10.53.259.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..Host 517",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.100",
+            "ipAddress": "10.53.259.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..Host 518",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.100",
+            "ipAddress": "10.53.259.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..LocalDatabase 517",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.100",
+            "ipAddress": "10.53.259.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..LocalWebServer 518",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.LAREDO 6..RC 259",
+            "destination": "Utility 1.LAREDO 6..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LAREDO 6..Router 259",
+            "destination": "Utility 1.LAREDO 6..Firewall 259",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LAREDO 6..Firewall 259",
+            "destination": "Utility 1.LAREDO 6.OT.Switch 517",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LAREDO 6.OT.Switch 517",
+            "destination": "Utility 1.LAREDO 6..RC 259",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LAREDO 6..Firewall 259",
+            "destination": "Utility 1.LAREDO 6.Corporate.Switch 518",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LAREDO 6.Corporate.Switch 518",
+            "destination": "Utility 1.LAREDO 6..Host 517",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LAREDO 6.Corporate.Switch 518",
+            "destination": "Utility 1.LAREDO 6..Host 518",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LAREDO 6.Corporate.Switch 518",
+            "destination": "Utility 1.LAREDO 6..LocalDatabase 517",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LAREDO 6.Corporate.Switch 518",
+            "destination": "Utility 1.LAREDO 6..LocalWebServer 518",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.1",
+            "ipAddress": "10.53.259.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6.OT.Switch 517",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.2",
+            "ipAddress": "10.53.259.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..RC 259",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.259.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.97",
+            "ipAddress": "10.53.259.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..Firewall 259",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.514,
+            "Longitude": -99.502
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.98",
+            "ipAddress": "10.53.259.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..Router 259",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.1",
+            "ipAddress": "10.53.259.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6.OT.Switch 517",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.259.2",
+            "ipAddress": "10.53.259.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAREDO 6",
+            "label": "Utility 1.LAREDO 6..RC 259",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.259.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 143.BARDWELL",
+    "networkLan": "10.157.419.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 143",
+    "utility_id": 157,
+    "substation": "BARDWELL",
+    "substationNumber": 419,
+    "OTAddress": "10.157.419.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.157.419.1",
+        "10.157.419.2",
+        "10.157.419.3",
+        "10.157.419.4",
+        "10.157.419.5",
+        "10.157.419.6",
+        "10.157.419.7",
+        "10.157.419.8",
+        "10.157.419.9",
+        "10.157.419.10",
+        "10.157.419.11",
+        "10.157.419.12",
+        "10.157.419.13",
+        "10.157.419.14",
+        "10.157.419.15",
+        "10.157.419.16",
+        "10.157.419.17",
+        "10.157.419.18",
+        "10.157.419.19",
+        "10.157.419.20",
+        "10.157.419.21",
+        "10.157.419.22",
+        "10.157.419.23",
+        "10.157.419.24",
+        "10.157.419.25",
+        "10.157.419.26",
+        "10.157.419.27",
+        "10.157.419.28",
+        "10.157.419.29",
+        "10.157.419.30",
+        "10.157.419.31",
+        "10.157.419.32",
+        "10.157.419.33",
+        "10.157.419.34",
+        "10.157.419.35",
+        "10.157.419.36",
+        "10.157.419.37",
+        "10.157.419.38",
+        "10.157.419.39",
+        "10.157.419.40",
+        "10.157.419.41",
+        "10.157.419.42",
+        "10.157.419.43",
+        "10.157.419.44",
+        "10.157.419.45",
+        "10.157.419.46",
+        "10.157.419.47",
+        "10.157.419.48",
+        "10.157.419.49",
+        "10.157.419.50",
+        "10.157.419.51",
+        "10.157.419.52",
+        "10.157.419.53",
+        "10.157.419.54",
+        "10.157.419.55",
+        "10.157.419.56",
+        "10.157.419.57",
+        "10.157.419.58",
+        "10.157.419.59",
+        "10.157.419.60",
+        "10.157.419.61",
+        "10.157.419.62"
+    ],
+    "routeAddress": "10.157.419.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.157.419.65",
+        "10.157.419.66",
+        "10.157.419.67",
+        "10.157.419.68",
+        "10.157.419.69",
+        "10.157.419.70",
+        "10.157.419.71",
+        "10.157.419.72",
+        "10.157.419.73",
+        "10.157.419.74",
+        "10.157.419.75",
+        "10.157.419.76",
+        "10.157.419.77",
+        "10.157.419.78",
+        "10.157.419.79",
+        "10.157.419.80",
+        "10.157.419.81",
+        "10.157.419.82",
+        "10.157.419.83",
+        "10.157.419.84",
+        "10.157.419.85",
+        "10.157.419.86",
+        "10.157.419.87",
+        "10.157.419.88",
+        "10.157.419.89",
+        "10.157.419.90",
+        "10.157.419.91",
+        "10.157.419.92",
+        "10.157.419.93",
+        "10.157.419.94"
+    ],
+    "corporateAddress": "10.157.419.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.157.419.97",
+        "10.157.419.98",
+        "10.157.419.99",
+        "10.157.419.100",
+        "10.157.419.101",
+        "10.157.419.102",
+        "10.157.419.103",
+        "10.157.419.104",
+        "10.157.419.105",
+        "10.157.419.106",
+        "10.157.419.107",
+        "10.157.419.108",
+        "10.157.419.109",
+        "10.157.419.110",
+        "10.157.419.111",
+        "10.157.419.112",
+        "10.157.419.113",
+        "10.157.419.114",
+        "10.157.419.115",
+        "10.157.419.116",
+        "10.157.419.117",
+        "10.157.419.118",
+        "10.157.419.119",
+        "10.157.419.120",
+        "10.157.419.121",
+        "10.157.419.122",
+        "10.157.419.123",
+        "10.157.419.124",
+        "10.157.419.125"
+    ],
+    "latitude": 32.211,
+    "longitude": -96.753,
+    "nodes": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.97",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..Firewall 419",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.211,
+            "Longitude": -96.753
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.98",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..Router 419",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.1",
+            "ipAddress": "10.157.419.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL.OT.Switch 837",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.99",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL.Corporate.Switch 838",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.3",
+            "ipAddress": "10.157.419.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.2",
+            "ipAddress": "10.157.419.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..RC 419",
+            "compromised": false,
+            "relayIPlist": [
+                "10.157.419.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.100",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..Host 837",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.100",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..Host 838",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.100",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..LocalDatabase 837",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.100",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..LocalWebServer 838",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.101",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..hmi 837",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.100",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..outstation 838",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 143.BARDWELL..RC 419",
+            "destination": "Utility 143.BARDWELL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.BARDWELL..Router 419",
+            "destination": "Utility 143.BARDWELL..Firewall 419",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.BARDWELL..Firewall 419",
+            "destination": "Utility 143.BARDWELL.OT.Switch 837",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.BARDWELL.OT.Switch 837",
+            "destination": "Utility 143.BARDWELL..RC 419",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.BARDWELL..Firewall 419",
+            "destination": "Utility 143.BARDWELL.Corporate.Switch 838",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.BARDWELL.Corporate.Switch 838",
+            "destination": "Utility 143.BARDWELL..Host 837",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.BARDWELL.Corporate.Switch 838",
+            "destination": "Utility 143.BARDWELL..Host 838",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.BARDWELL.Corporate.Switch 838",
+            "destination": "Utility 143.BARDWELL..LocalDatabase 837",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.BARDWELL.Corporate.Switch 838",
+            "destination": "Utility 143.BARDWELL..LocalWebServer 838",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.1",
+            "ipAddress": "10.157.419.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL.OT.Switch 837",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.2",
+            "ipAddress": "10.157.419.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..RC 419",
+            "compromised": false,
+            "relayIPlist": [
+                "10.157.419.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.97",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..Firewall 419",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.211,
+            "Longitude": -96.753
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.98",
+            "ipAddress": "10.157.419.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..Router 419",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.1",
+            "ipAddress": "10.157.419.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL.OT.Switch 837",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.419.2",
+            "ipAddress": "10.157.419.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BARDWELL",
+            "label": "Utility 143.BARDWELL..RC 419",
+            "compromised": false,
+            "relayIPlist": [
+                "10.157.419.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

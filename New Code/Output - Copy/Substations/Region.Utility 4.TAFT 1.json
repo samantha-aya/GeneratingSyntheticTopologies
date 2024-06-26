@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 4.TAFT 1",
+    "networkLan": "10.57.350.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "TAFT 1",
+    "substationNumber": 350,
+    "OTAddress": "10.57.350.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.350.1",
+        "10.57.350.2",
+        "10.57.350.3",
+        "10.57.350.4",
+        "10.57.350.5",
+        "10.57.350.6",
+        "10.57.350.7",
+        "10.57.350.8",
+        "10.57.350.9",
+        "10.57.350.10",
+        "10.57.350.11",
+        "10.57.350.12",
+        "10.57.350.13",
+        "10.57.350.14",
+        "10.57.350.15",
+        "10.57.350.16",
+        "10.57.350.17",
+        "10.57.350.18",
+        "10.57.350.19",
+        "10.57.350.20",
+        "10.57.350.21",
+        "10.57.350.22",
+        "10.57.350.23",
+        "10.57.350.24",
+        "10.57.350.25",
+        "10.57.350.26",
+        "10.57.350.27",
+        "10.57.350.28",
+        "10.57.350.29",
+        "10.57.350.30",
+        "10.57.350.31",
+        "10.57.350.32",
+        "10.57.350.33",
+        "10.57.350.34",
+        "10.57.350.35",
+        "10.57.350.36",
+        "10.57.350.37",
+        "10.57.350.38",
+        "10.57.350.39",
+        "10.57.350.40",
+        "10.57.350.41",
+        "10.57.350.42",
+        "10.57.350.43",
+        "10.57.350.44",
+        "10.57.350.45",
+        "10.57.350.46",
+        "10.57.350.47",
+        "10.57.350.48",
+        "10.57.350.49",
+        "10.57.350.50",
+        "10.57.350.51",
+        "10.57.350.52",
+        "10.57.350.53",
+        "10.57.350.54",
+        "10.57.350.55",
+        "10.57.350.56",
+        "10.57.350.57",
+        "10.57.350.58",
+        "10.57.350.59",
+        "10.57.350.60",
+        "10.57.350.61",
+        "10.57.350.62"
+    ],
+    "routeAddress": "10.57.350.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.350.65",
+        "10.57.350.66",
+        "10.57.350.67",
+        "10.57.350.68",
+        "10.57.350.69",
+        "10.57.350.70",
+        "10.57.350.71",
+        "10.57.350.72",
+        "10.57.350.73",
+        "10.57.350.74",
+        "10.57.350.75",
+        "10.57.350.76",
+        "10.57.350.77",
+        "10.57.350.78",
+        "10.57.350.79",
+        "10.57.350.80",
+        "10.57.350.81",
+        "10.57.350.82",
+        "10.57.350.83",
+        "10.57.350.84",
+        "10.57.350.85",
+        "10.57.350.86",
+        "10.57.350.87",
+        "10.57.350.88",
+        "10.57.350.89",
+        "10.57.350.90",
+        "10.57.350.91",
+        "10.57.350.92",
+        "10.57.350.93",
+        "10.57.350.94"
+    ],
+    "corporateAddress": "10.57.350.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.350.97",
+        "10.57.350.98",
+        "10.57.350.99",
+        "10.57.350.100",
+        "10.57.350.101",
+        "10.57.350.102",
+        "10.57.350.103",
+        "10.57.350.104",
+        "10.57.350.105",
+        "10.57.350.106",
+        "10.57.350.107",
+        "10.57.350.108",
+        "10.57.350.109",
+        "10.57.350.110",
+        "10.57.350.111",
+        "10.57.350.112",
+        "10.57.350.113",
+        "10.57.350.114",
+        "10.57.350.115",
+        "10.57.350.116",
+        "10.57.350.117",
+        "10.57.350.118",
+        "10.57.350.119",
+        "10.57.350.120",
+        "10.57.350.121",
+        "10.57.350.122",
+        "10.57.350.123",
+        "10.57.350.124",
+        "10.57.350.125"
+    ],
+    "latitude": 27.996,
+    "longitude": -97.297,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.97",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..Firewall 350",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.996,
+            "Longitude": -97.297
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.98",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..Router 350",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.1",
+            "ipAddress": "10.57.350.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1.OT.Switch 699",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.99",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1.Corporate.Switch 700",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.3",
+            "ipAddress": "10.57.350.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.4",
+            "ipAddress": "10.57.350.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.2",
+            "ipAddress": "10.57.350.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..RC 350",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.350.3",
+                "10.57.350.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.100",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..Host 699",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.100",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..Host 700",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.100",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..LocalDatabase 699",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.100",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..LocalWebServer 700",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.101",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..hmi 699",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.100",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..outstation 700",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.TAFT 1..RC 350",
+            "destination": "Utility 4.TAFT 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.TAFT 1..RC 350",
+            "destination": "Utility 4.TAFT 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.TAFT 1..Router 350",
+            "destination": "Utility 4.TAFT 1..Firewall 350",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.TAFT 1..Firewall 350",
+            "destination": "Utility 4.TAFT 1.OT.Switch 699",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.TAFT 1.OT.Switch 699",
+            "destination": "Utility 4.TAFT 1..RC 350",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.TAFT 1..Firewall 350",
+            "destination": "Utility 4.TAFT 1.Corporate.Switch 700",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.TAFT 1.Corporate.Switch 700",
+            "destination": "Utility 4.TAFT 1..Host 699",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.TAFT 1.Corporate.Switch 700",
+            "destination": "Utility 4.TAFT 1..Host 700",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.TAFT 1.Corporate.Switch 700",
+            "destination": "Utility 4.TAFT 1..LocalDatabase 699",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.TAFT 1.Corporate.Switch 700",
+            "destination": "Utility 4.TAFT 1..LocalWebServer 700",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.1",
+            "ipAddress": "10.57.350.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1.OT.Switch 699",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.2",
+            "ipAddress": "10.57.350.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..RC 350",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.350.3",
+                "10.57.350.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.97",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..Firewall 350",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.996,
+            "Longitude": -97.297
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.98",
+            "ipAddress": "10.57.350.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..Router 350",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.1",
+            "ipAddress": "10.57.350.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1.OT.Switch 699",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.350.2",
+            "ipAddress": "10.57.350.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TAFT 1",
+            "label": "Utility 4.TAFT 1..RC 350",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.350.3",
+                "10.57.350.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 150.07,
+    "genmvar": 42.62,
+    "connecting_TS_num": 275
+}

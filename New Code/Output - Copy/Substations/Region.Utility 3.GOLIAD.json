@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.GOLIAD",
+    "networkLan": "10.56.347.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "GOLIAD",
+    "substationNumber": 347,
+    "OTAddress": "10.56.347.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.347.1",
+        "10.56.347.2",
+        "10.56.347.3",
+        "10.56.347.4",
+        "10.56.347.5",
+        "10.56.347.6",
+        "10.56.347.7",
+        "10.56.347.8",
+        "10.56.347.9",
+        "10.56.347.10",
+        "10.56.347.11",
+        "10.56.347.12",
+        "10.56.347.13",
+        "10.56.347.14",
+        "10.56.347.15",
+        "10.56.347.16",
+        "10.56.347.17",
+        "10.56.347.18",
+        "10.56.347.19",
+        "10.56.347.20",
+        "10.56.347.21",
+        "10.56.347.22",
+        "10.56.347.23",
+        "10.56.347.24",
+        "10.56.347.25",
+        "10.56.347.26",
+        "10.56.347.27",
+        "10.56.347.28",
+        "10.56.347.29",
+        "10.56.347.30",
+        "10.56.347.31",
+        "10.56.347.32",
+        "10.56.347.33",
+        "10.56.347.34",
+        "10.56.347.35",
+        "10.56.347.36",
+        "10.56.347.37",
+        "10.56.347.38",
+        "10.56.347.39",
+        "10.56.347.40",
+        "10.56.347.41",
+        "10.56.347.42",
+        "10.56.347.43",
+        "10.56.347.44",
+        "10.56.347.45",
+        "10.56.347.46",
+        "10.56.347.47",
+        "10.56.347.48",
+        "10.56.347.49",
+        "10.56.347.50",
+        "10.56.347.51",
+        "10.56.347.52",
+        "10.56.347.53",
+        "10.56.347.54",
+        "10.56.347.55",
+        "10.56.347.56",
+        "10.56.347.57",
+        "10.56.347.58",
+        "10.56.347.59",
+        "10.56.347.60",
+        "10.56.347.61",
+        "10.56.347.62"
+    ],
+    "routeAddress": "10.56.347.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.347.65",
+        "10.56.347.66",
+        "10.56.347.67",
+        "10.56.347.68",
+        "10.56.347.69",
+        "10.56.347.70",
+        "10.56.347.71",
+        "10.56.347.72",
+        "10.56.347.73",
+        "10.56.347.74",
+        "10.56.347.75",
+        "10.56.347.76",
+        "10.56.347.77",
+        "10.56.347.78",
+        "10.56.347.79",
+        "10.56.347.80",
+        "10.56.347.81",
+        "10.56.347.82",
+        "10.56.347.83",
+        "10.56.347.84",
+        "10.56.347.85",
+        "10.56.347.86",
+        "10.56.347.87",
+        "10.56.347.88",
+        "10.56.347.89",
+        "10.56.347.90",
+        "10.56.347.91",
+        "10.56.347.92",
+        "10.56.347.93",
+        "10.56.347.94"
+    ],
+    "corporateAddress": "10.56.347.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.347.97",
+        "10.56.347.98",
+        "10.56.347.99",
+        "10.56.347.100",
+        "10.56.347.101",
+        "10.56.347.102",
+        "10.56.347.103",
+        "10.56.347.104",
+        "10.56.347.105",
+        "10.56.347.106",
+        "10.56.347.107",
+        "10.56.347.108",
+        "10.56.347.109",
+        "10.56.347.110",
+        "10.56.347.111",
+        "10.56.347.112",
+        "10.56.347.113",
+        "10.56.347.114",
+        "10.56.347.115",
+        "10.56.347.116",
+        "10.56.347.117",
+        "10.56.347.118",
+        "10.56.347.119",
+        "10.56.347.120",
+        "10.56.347.121",
+        "10.56.347.122",
+        "10.56.347.123",
+        "10.56.347.124",
+        "10.56.347.125"
+    ],
+    "latitude": 28.568,
+    "longitude": -97.579,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.97",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..Firewall 347",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.568,
+            "Longitude": -97.579
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.98",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..Router 347",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.1",
+            "ipAddress": "10.56.347.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD.OT.Switch 693",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.99",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD.Corporate.Switch 694",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.3",
+            "ipAddress": "10.56.347.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.2",
+            "ipAddress": "10.56.347.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..RC 347",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.347.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.100",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..Host 693",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.100",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..Host 694",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.100",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..LocalDatabase 693",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.100",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..LocalWebServer 694",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.101",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..hmi 693",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.100",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..outstation 694",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.GOLIAD..RC 347",
+            "destination": "Utility 3.GOLIAD..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.GOLIAD..Router 347",
+            "destination": "Utility 3.GOLIAD..Firewall 347",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.GOLIAD..Firewall 347",
+            "destination": "Utility 3.GOLIAD.OT.Switch 693",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.GOLIAD.OT.Switch 693",
+            "destination": "Utility 3.GOLIAD..RC 347",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.GOLIAD..Firewall 347",
+            "destination": "Utility 3.GOLIAD.Corporate.Switch 694",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.GOLIAD.Corporate.Switch 694",
+            "destination": "Utility 3.GOLIAD..Host 693",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.GOLIAD.Corporate.Switch 694",
+            "destination": "Utility 3.GOLIAD..Host 694",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.GOLIAD.Corporate.Switch 694",
+            "destination": "Utility 3.GOLIAD..LocalDatabase 693",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.GOLIAD.Corporate.Switch 694",
+            "destination": "Utility 3.GOLIAD..LocalWebServer 694",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.1",
+            "ipAddress": "10.56.347.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD.OT.Switch 693",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.2",
+            "ipAddress": "10.56.347.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..RC 347",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.347.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.97",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..Firewall 347",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.568,
+            "Longitude": -97.579
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.98",
+            "ipAddress": "10.56.347.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..Router 347",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.1",
+            "ipAddress": "10.56.347.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD.OT.Switch 693",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.347.2",
+            "ipAddress": "10.56.347.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOLIAD",
+            "label": "Utility 3.GOLIAD..RC 347",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.347.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

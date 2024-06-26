@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 141.MISSION 2",
+    "networkLan": "10.126.333.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 141",
+    "utility_id": 126,
+    "substation": "MISSION 2",
+    "substationNumber": 333,
+    "OTAddress": "10.126.333.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.126.333.1",
+        "10.126.333.2",
+        "10.126.333.3",
+        "10.126.333.4",
+        "10.126.333.5",
+        "10.126.333.6",
+        "10.126.333.7",
+        "10.126.333.8",
+        "10.126.333.9",
+        "10.126.333.10",
+        "10.126.333.11",
+        "10.126.333.12",
+        "10.126.333.13",
+        "10.126.333.14",
+        "10.126.333.15",
+        "10.126.333.16",
+        "10.126.333.17",
+        "10.126.333.18",
+        "10.126.333.19",
+        "10.126.333.20",
+        "10.126.333.21",
+        "10.126.333.22",
+        "10.126.333.23",
+        "10.126.333.24",
+        "10.126.333.25",
+        "10.126.333.26",
+        "10.126.333.27",
+        "10.126.333.28",
+        "10.126.333.29",
+        "10.126.333.30",
+        "10.126.333.31",
+        "10.126.333.32",
+        "10.126.333.33",
+        "10.126.333.34",
+        "10.126.333.35",
+        "10.126.333.36",
+        "10.126.333.37",
+        "10.126.333.38",
+        "10.126.333.39",
+        "10.126.333.40",
+        "10.126.333.41",
+        "10.126.333.42",
+        "10.126.333.43",
+        "10.126.333.44",
+        "10.126.333.45",
+        "10.126.333.46",
+        "10.126.333.47",
+        "10.126.333.48",
+        "10.126.333.49",
+        "10.126.333.50",
+        "10.126.333.51",
+        "10.126.333.52",
+        "10.126.333.53",
+        "10.126.333.54",
+        "10.126.333.55",
+        "10.126.333.56",
+        "10.126.333.57",
+        "10.126.333.58",
+        "10.126.333.59",
+        "10.126.333.60",
+        "10.126.333.61",
+        "10.126.333.62"
+    ],
+    "routeAddress": "10.126.333.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.126.333.65",
+        "10.126.333.66",
+        "10.126.333.67",
+        "10.126.333.68",
+        "10.126.333.69",
+        "10.126.333.70",
+        "10.126.333.71",
+        "10.126.333.72",
+        "10.126.333.73",
+        "10.126.333.74",
+        "10.126.333.75",
+        "10.126.333.76",
+        "10.126.333.77",
+        "10.126.333.78",
+        "10.126.333.79",
+        "10.126.333.80",
+        "10.126.333.81",
+        "10.126.333.82",
+        "10.126.333.83",
+        "10.126.333.84",
+        "10.126.333.85",
+        "10.126.333.86",
+        "10.126.333.87",
+        "10.126.333.88",
+        "10.126.333.89",
+        "10.126.333.90",
+        "10.126.333.91",
+        "10.126.333.92",
+        "10.126.333.93",
+        "10.126.333.94"
+    ],
+    "corporateAddress": "10.126.333.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.126.333.97",
+        "10.126.333.98",
+        "10.126.333.99",
+        "10.126.333.100",
+        "10.126.333.101",
+        "10.126.333.102",
+        "10.126.333.103",
+        "10.126.333.104",
+        "10.126.333.105",
+        "10.126.333.106",
+        "10.126.333.107",
+        "10.126.333.108",
+        "10.126.333.109",
+        "10.126.333.110",
+        "10.126.333.111",
+        "10.126.333.112",
+        "10.126.333.113",
+        "10.126.333.114",
+        "10.126.333.115",
+        "10.126.333.116",
+        "10.126.333.117",
+        "10.126.333.118",
+        "10.126.333.119",
+        "10.126.333.120",
+        "10.126.333.121",
+        "10.126.333.122",
+        "10.126.333.123",
+        "10.126.333.124",
+        "10.126.333.125"
+    ],
+    "latitude": 26.296,
+    "longitude": -98.3,
+    "nodes": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.97",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..Firewall 333",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.296,
+            "Longitude": -98.3
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.98",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..Router 333",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.1",
+            "ipAddress": "10.126.333.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2.OT.Switch 665",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.99",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2.Corporate.Switch 666",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.3",
+            "ipAddress": "10.126.333.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.2",
+            "ipAddress": "10.126.333.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..RC 333",
+            "compromised": false,
+            "relayIPlist": [
+                "10.126.333.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.100",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..Host 665",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.100",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..Host 666",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.100",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..LocalDatabase 665",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.100",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..LocalWebServer 666",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.101",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..hmi 665",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.100",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..outstation 666",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 141.MISSION 2..RC 333",
+            "destination": "Utility 141.MISSION 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.MISSION 2..Router 333",
+            "destination": "Utility 141.MISSION 2..Firewall 333",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.MISSION 2..Firewall 333",
+            "destination": "Utility 141.MISSION 2.OT.Switch 665",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.MISSION 2.OT.Switch 665",
+            "destination": "Utility 141.MISSION 2..RC 333",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.MISSION 2..Firewall 333",
+            "destination": "Utility 141.MISSION 2.Corporate.Switch 666",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.MISSION 2.Corporate.Switch 666",
+            "destination": "Utility 141.MISSION 2..Host 665",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.MISSION 2.Corporate.Switch 666",
+            "destination": "Utility 141.MISSION 2..Host 666",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.MISSION 2.Corporate.Switch 666",
+            "destination": "Utility 141.MISSION 2..LocalDatabase 665",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.MISSION 2.Corporate.Switch 666",
+            "destination": "Utility 141.MISSION 2..LocalWebServer 666",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.1",
+            "ipAddress": "10.126.333.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2.OT.Switch 665",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.2",
+            "ipAddress": "10.126.333.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..RC 333",
+            "compromised": false,
+            "relayIPlist": [
+                "10.126.333.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.97",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..Firewall 333",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.296,
+            "Longitude": -98.3
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.98",
+            "ipAddress": "10.126.333.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..Router 333",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.1",
+            "ipAddress": "10.126.333.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2.OT.Switch 665",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.333.2",
+            "ipAddress": "10.126.333.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MISSION 2",
+            "label": "Utility 141.MISSION 2..RC 333",
+            "compromised": false,
+            "relayIPlist": [
+                "10.126.333.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

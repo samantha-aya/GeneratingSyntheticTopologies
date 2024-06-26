@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.BLANCO",
+    "networkLan": "10.56.849.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "BLANCO",
+    "substationNumber": 849,
+    "OTAddress": "10.56.849.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.849.1",
+        "10.56.849.2",
+        "10.56.849.3",
+        "10.56.849.4",
+        "10.56.849.5",
+        "10.56.849.6",
+        "10.56.849.7",
+        "10.56.849.8",
+        "10.56.849.9",
+        "10.56.849.10",
+        "10.56.849.11",
+        "10.56.849.12",
+        "10.56.849.13",
+        "10.56.849.14",
+        "10.56.849.15",
+        "10.56.849.16",
+        "10.56.849.17",
+        "10.56.849.18",
+        "10.56.849.19",
+        "10.56.849.20",
+        "10.56.849.21",
+        "10.56.849.22",
+        "10.56.849.23",
+        "10.56.849.24",
+        "10.56.849.25",
+        "10.56.849.26",
+        "10.56.849.27",
+        "10.56.849.28",
+        "10.56.849.29",
+        "10.56.849.30",
+        "10.56.849.31",
+        "10.56.849.32",
+        "10.56.849.33",
+        "10.56.849.34",
+        "10.56.849.35",
+        "10.56.849.36",
+        "10.56.849.37",
+        "10.56.849.38",
+        "10.56.849.39",
+        "10.56.849.40",
+        "10.56.849.41",
+        "10.56.849.42",
+        "10.56.849.43",
+        "10.56.849.44",
+        "10.56.849.45",
+        "10.56.849.46",
+        "10.56.849.47",
+        "10.56.849.48",
+        "10.56.849.49",
+        "10.56.849.50",
+        "10.56.849.51",
+        "10.56.849.52",
+        "10.56.849.53",
+        "10.56.849.54",
+        "10.56.849.55",
+        "10.56.849.56",
+        "10.56.849.57",
+        "10.56.849.58",
+        "10.56.849.59",
+        "10.56.849.60",
+        "10.56.849.61",
+        "10.56.849.62"
+    ],
+    "routeAddress": "10.56.849.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.849.65",
+        "10.56.849.66",
+        "10.56.849.67",
+        "10.56.849.68",
+        "10.56.849.69",
+        "10.56.849.70",
+        "10.56.849.71",
+        "10.56.849.72",
+        "10.56.849.73",
+        "10.56.849.74",
+        "10.56.849.75",
+        "10.56.849.76",
+        "10.56.849.77",
+        "10.56.849.78",
+        "10.56.849.79",
+        "10.56.849.80",
+        "10.56.849.81",
+        "10.56.849.82",
+        "10.56.849.83",
+        "10.56.849.84",
+        "10.56.849.85",
+        "10.56.849.86",
+        "10.56.849.87",
+        "10.56.849.88",
+        "10.56.849.89",
+        "10.56.849.90",
+        "10.56.849.91",
+        "10.56.849.92",
+        "10.56.849.93",
+        "10.56.849.94"
+    ],
+    "corporateAddress": "10.56.849.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.849.97",
+        "10.56.849.98",
+        "10.56.849.99",
+        "10.56.849.100",
+        "10.56.849.101",
+        "10.56.849.102",
+        "10.56.849.103",
+        "10.56.849.104",
+        "10.56.849.105",
+        "10.56.849.106",
+        "10.56.849.107",
+        "10.56.849.108",
+        "10.56.849.109",
+        "10.56.849.110",
+        "10.56.849.111",
+        "10.56.849.112",
+        "10.56.849.113",
+        "10.56.849.114",
+        "10.56.849.115",
+        "10.56.849.116",
+        "10.56.849.117",
+        "10.56.849.118",
+        "10.56.849.119",
+        "10.56.849.120",
+        "10.56.849.121",
+        "10.56.849.122",
+        "10.56.849.123",
+        "10.56.849.124",
+        "10.56.849.125"
+    ],
+    "latitude": 30.183,
+    "longitude": -98.567,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.97",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..Firewall 849",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.183,
+            "Longitude": -98.567
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.98",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..Router 849",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.1",
+            "ipAddress": "10.56.849.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO.OT.Switch 1697",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.99",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO.Corporate.Switch 1698",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.3",
+            "ipAddress": "10.56.849.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.2",
+            "ipAddress": "10.56.849.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..RC 849",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.849.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.100",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..Host 1697",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.100",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..Host 1698",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.100",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..LocalDatabase 1697",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.100",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..LocalWebServer 1698",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.101",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..hmi 1697",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.100",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..outstation 1698",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.BLANCO..RC 849",
+            "destination": "Utility 3.BLANCO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BLANCO..Router 849",
+            "destination": "Utility 3.BLANCO..Firewall 849",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BLANCO..Firewall 849",
+            "destination": "Utility 3.BLANCO.OT.Switch 1697",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BLANCO.OT.Switch 1697",
+            "destination": "Utility 3.BLANCO..RC 849",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BLANCO..Firewall 849",
+            "destination": "Utility 3.BLANCO.Corporate.Switch 1698",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BLANCO.Corporate.Switch 1698",
+            "destination": "Utility 3.BLANCO..Host 1697",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BLANCO.Corporate.Switch 1698",
+            "destination": "Utility 3.BLANCO..Host 1698",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BLANCO.Corporate.Switch 1698",
+            "destination": "Utility 3.BLANCO..LocalDatabase 1697",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BLANCO.Corporate.Switch 1698",
+            "destination": "Utility 3.BLANCO..LocalWebServer 1698",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.1",
+            "ipAddress": "10.56.849.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO.OT.Switch 1697",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.2",
+            "ipAddress": "10.56.849.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..RC 849",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.849.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.97",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..Firewall 849",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.183,
+            "Longitude": -98.567
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.98",
+            "ipAddress": "10.56.849.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..Router 849",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.1",
+            "ipAddress": "10.56.849.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO.OT.Switch 1697",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.849.2",
+            "ipAddress": "10.56.849.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BLANCO",
+            "label": "Utility 3.BLANCO..RC 849",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.849.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

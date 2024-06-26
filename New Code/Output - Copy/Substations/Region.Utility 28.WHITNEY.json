@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 28.WHITNEY",
+    "networkLan": "10.156.583.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 28",
+    "utility_id": 156,
+    "substation": "WHITNEY",
+    "substationNumber": 583,
+    "OTAddress": "10.156.583.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.156.583.1",
+        "10.156.583.2",
+        "10.156.583.3",
+        "10.156.583.4",
+        "10.156.583.5",
+        "10.156.583.6",
+        "10.156.583.7",
+        "10.156.583.8",
+        "10.156.583.9",
+        "10.156.583.10",
+        "10.156.583.11",
+        "10.156.583.12",
+        "10.156.583.13",
+        "10.156.583.14",
+        "10.156.583.15",
+        "10.156.583.16",
+        "10.156.583.17",
+        "10.156.583.18",
+        "10.156.583.19",
+        "10.156.583.20",
+        "10.156.583.21",
+        "10.156.583.22",
+        "10.156.583.23",
+        "10.156.583.24",
+        "10.156.583.25",
+        "10.156.583.26",
+        "10.156.583.27",
+        "10.156.583.28",
+        "10.156.583.29",
+        "10.156.583.30",
+        "10.156.583.31",
+        "10.156.583.32",
+        "10.156.583.33",
+        "10.156.583.34",
+        "10.156.583.35",
+        "10.156.583.36",
+        "10.156.583.37",
+        "10.156.583.38",
+        "10.156.583.39",
+        "10.156.583.40",
+        "10.156.583.41",
+        "10.156.583.42",
+        "10.156.583.43",
+        "10.156.583.44",
+        "10.156.583.45",
+        "10.156.583.46",
+        "10.156.583.47",
+        "10.156.583.48",
+        "10.156.583.49",
+        "10.156.583.50",
+        "10.156.583.51",
+        "10.156.583.52",
+        "10.156.583.53",
+        "10.156.583.54",
+        "10.156.583.55",
+        "10.156.583.56",
+        "10.156.583.57",
+        "10.156.583.58",
+        "10.156.583.59",
+        "10.156.583.60",
+        "10.156.583.61",
+        "10.156.583.62"
+    ],
+    "routeAddress": "10.156.583.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.156.583.65",
+        "10.156.583.66",
+        "10.156.583.67",
+        "10.156.583.68",
+        "10.156.583.69",
+        "10.156.583.70",
+        "10.156.583.71",
+        "10.156.583.72",
+        "10.156.583.73",
+        "10.156.583.74",
+        "10.156.583.75",
+        "10.156.583.76",
+        "10.156.583.77",
+        "10.156.583.78",
+        "10.156.583.79",
+        "10.156.583.80",
+        "10.156.583.81",
+        "10.156.583.82",
+        "10.156.583.83",
+        "10.156.583.84",
+        "10.156.583.85",
+        "10.156.583.86",
+        "10.156.583.87",
+        "10.156.583.88",
+        "10.156.583.89",
+        "10.156.583.90",
+        "10.156.583.91",
+        "10.156.583.92",
+        "10.156.583.93",
+        "10.156.583.94"
+    ],
+    "corporateAddress": "10.156.583.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.156.583.97",
+        "10.156.583.98",
+        "10.156.583.99",
+        "10.156.583.100",
+        "10.156.583.101",
+        "10.156.583.102",
+        "10.156.583.103",
+        "10.156.583.104",
+        "10.156.583.105",
+        "10.156.583.106",
+        "10.156.583.107",
+        "10.156.583.108",
+        "10.156.583.109",
+        "10.156.583.110",
+        "10.156.583.111",
+        "10.156.583.112",
+        "10.156.583.113",
+        "10.156.583.114",
+        "10.156.583.115",
+        "10.156.583.116",
+        "10.156.583.117",
+        "10.156.583.118",
+        "10.156.583.119",
+        "10.156.583.120",
+        "10.156.583.121",
+        "10.156.583.122",
+        "10.156.583.123",
+        "10.156.583.124",
+        "10.156.583.125"
+    ],
+    "latitude": 31.96,
+    "longitude": -97.33,
+    "nodes": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.97",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..Firewall 583",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.96,
+            "Longitude": -97.33
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.98",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..Router 583",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.1",
+            "ipAddress": "10.156.583.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY.OT.Switch 1165",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.99",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY.Corporate.Switch 1166",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.3",
+            "ipAddress": "10.156.583.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.2",
+            "ipAddress": "10.156.583.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..RC 583",
+            "compromised": false,
+            "relayIPlist": [
+                "10.156.583.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.100",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..Host 1165",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.100",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..Host 1166",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.100",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..LocalDatabase 1165",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.100",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..LocalWebServer 1166",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.101",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..hmi 1165",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.100",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..outstation 1166",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 28.WHITNEY..RC 583",
+            "destination": "Utility 28.WHITNEY..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.WHITNEY..Router 583",
+            "destination": "Utility 28.WHITNEY..Firewall 583",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.WHITNEY..Firewall 583",
+            "destination": "Utility 28.WHITNEY.OT.Switch 1165",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.WHITNEY.OT.Switch 1165",
+            "destination": "Utility 28.WHITNEY..RC 583",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.WHITNEY..Firewall 583",
+            "destination": "Utility 28.WHITNEY.Corporate.Switch 1166",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.WHITNEY.Corporate.Switch 1166",
+            "destination": "Utility 28.WHITNEY..Host 1165",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.WHITNEY.Corporate.Switch 1166",
+            "destination": "Utility 28.WHITNEY..Host 1166",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.WHITNEY.Corporate.Switch 1166",
+            "destination": "Utility 28.WHITNEY..LocalDatabase 1165",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.WHITNEY.Corporate.Switch 1166",
+            "destination": "Utility 28.WHITNEY..LocalWebServer 1166",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.1",
+            "ipAddress": "10.156.583.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY.OT.Switch 1165",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.2",
+            "ipAddress": "10.156.583.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..RC 583",
+            "compromised": false,
+            "relayIPlist": [
+                "10.156.583.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.97",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..Firewall 583",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.96,
+            "Longitude": -97.33
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.98",
+            "ipAddress": "10.156.583.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..Router 583",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.1",
+            "ipAddress": "10.156.583.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY.OT.Switch 1165",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.583.2",
+            "ipAddress": "10.156.583.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITNEY",
+            "label": "Utility 28.WHITNEY..RC 583",
+            "compromised": false,
+            "relayIPlist": [
+                "10.156.583.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

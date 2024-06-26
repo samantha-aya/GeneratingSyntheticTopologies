@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.CHARLOTTE",
+    "networkLan": "10.56.246.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "CHARLOTTE",
+    "substationNumber": 246,
+    "OTAddress": "10.56.246.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.246.1",
+        "10.56.246.2",
+        "10.56.246.3",
+        "10.56.246.4",
+        "10.56.246.5",
+        "10.56.246.6",
+        "10.56.246.7",
+        "10.56.246.8",
+        "10.56.246.9",
+        "10.56.246.10",
+        "10.56.246.11",
+        "10.56.246.12",
+        "10.56.246.13",
+        "10.56.246.14",
+        "10.56.246.15",
+        "10.56.246.16",
+        "10.56.246.17",
+        "10.56.246.18",
+        "10.56.246.19",
+        "10.56.246.20",
+        "10.56.246.21",
+        "10.56.246.22",
+        "10.56.246.23",
+        "10.56.246.24",
+        "10.56.246.25",
+        "10.56.246.26",
+        "10.56.246.27",
+        "10.56.246.28",
+        "10.56.246.29",
+        "10.56.246.30",
+        "10.56.246.31",
+        "10.56.246.32",
+        "10.56.246.33",
+        "10.56.246.34",
+        "10.56.246.35",
+        "10.56.246.36",
+        "10.56.246.37",
+        "10.56.246.38",
+        "10.56.246.39",
+        "10.56.246.40",
+        "10.56.246.41",
+        "10.56.246.42",
+        "10.56.246.43",
+        "10.56.246.44",
+        "10.56.246.45",
+        "10.56.246.46",
+        "10.56.246.47",
+        "10.56.246.48",
+        "10.56.246.49",
+        "10.56.246.50",
+        "10.56.246.51",
+        "10.56.246.52",
+        "10.56.246.53",
+        "10.56.246.54",
+        "10.56.246.55",
+        "10.56.246.56",
+        "10.56.246.57",
+        "10.56.246.58",
+        "10.56.246.59",
+        "10.56.246.60",
+        "10.56.246.61",
+        "10.56.246.62"
+    ],
+    "routeAddress": "10.56.246.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.246.65",
+        "10.56.246.66",
+        "10.56.246.67",
+        "10.56.246.68",
+        "10.56.246.69",
+        "10.56.246.70",
+        "10.56.246.71",
+        "10.56.246.72",
+        "10.56.246.73",
+        "10.56.246.74",
+        "10.56.246.75",
+        "10.56.246.76",
+        "10.56.246.77",
+        "10.56.246.78",
+        "10.56.246.79",
+        "10.56.246.80",
+        "10.56.246.81",
+        "10.56.246.82",
+        "10.56.246.83",
+        "10.56.246.84",
+        "10.56.246.85",
+        "10.56.246.86",
+        "10.56.246.87",
+        "10.56.246.88",
+        "10.56.246.89",
+        "10.56.246.90",
+        "10.56.246.91",
+        "10.56.246.92",
+        "10.56.246.93",
+        "10.56.246.94"
+    ],
+    "corporateAddress": "10.56.246.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.246.97",
+        "10.56.246.98",
+        "10.56.246.99",
+        "10.56.246.100",
+        "10.56.246.101",
+        "10.56.246.102",
+        "10.56.246.103",
+        "10.56.246.104",
+        "10.56.246.105",
+        "10.56.246.106",
+        "10.56.246.107",
+        "10.56.246.108",
+        "10.56.246.109",
+        "10.56.246.110",
+        "10.56.246.111",
+        "10.56.246.112",
+        "10.56.246.113",
+        "10.56.246.114",
+        "10.56.246.115",
+        "10.56.246.116",
+        "10.56.246.117",
+        "10.56.246.118",
+        "10.56.246.119",
+        "10.56.246.120",
+        "10.56.246.121",
+        "10.56.246.122",
+        "10.56.246.123",
+        "10.56.246.124",
+        "10.56.246.125"
+    ],
+    "latitude": 28.791,
+    "longitude": -98.718,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.97",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..Firewall 246",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.791,
+            "Longitude": -98.718
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.98",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..Router 246",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.1",
+            "ipAddress": "10.56.246.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE.OT.Switch 491",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.99",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE.Corporate.Switch 492",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.3",
+            "ipAddress": "10.56.246.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.2",
+            "ipAddress": "10.56.246.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..RC 246",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.246.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.100",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..Host 491",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.100",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..Host 492",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.100",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..LocalDatabase 491",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.100",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..LocalWebServer 492",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.101",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..hmi 491",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.100",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..outstation 492",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.CHARLOTTE..RC 246",
+            "destination": "Utility 3.CHARLOTTE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHARLOTTE..Router 246",
+            "destination": "Utility 3.CHARLOTTE..Firewall 246",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHARLOTTE..Firewall 246",
+            "destination": "Utility 3.CHARLOTTE.OT.Switch 491",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHARLOTTE.OT.Switch 491",
+            "destination": "Utility 3.CHARLOTTE..RC 246",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHARLOTTE..Firewall 246",
+            "destination": "Utility 3.CHARLOTTE.Corporate.Switch 492",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHARLOTTE.Corporate.Switch 492",
+            "destination": "Utility 3.CHARLOTTE..Host 491",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHARLOTTE.Corporate.Switch 492",
+            "destination": "Utility 3.CHARLOTTE..Host 492",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHARLOTTE.Corporate.Switch 492",
+            "destination": "Utility 3.CHARLOTTE..LocalDatabase 491",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHARLOTTE.Corporate.Switch 492",
+            "destination": "Utility 3.CHARLOTTE..LocalWebServer 492",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.1",
+            "ipAddress": "10.56.246.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE.OT.Switch 491",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.2",
+            "ipAddress": "10.56.246.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..RC 246",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.246.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.97",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..Firewall 246",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.791,
+            "Longitude": -98.718
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.98",
+            "ipAddress": "10.56.246.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..Router 246",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.1",
+            "ipAddress": "10.56.246.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE.OT.Switch 491",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.246.2",
+            "ipAddress": "10.56.246.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHARLOTTE",
+            "label": "Utility 3.CHARLOTTE..RC 246",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.246.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

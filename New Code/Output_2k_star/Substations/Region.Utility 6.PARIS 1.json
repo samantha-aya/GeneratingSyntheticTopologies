@@ -1,0 +1,790 @@
+{
+    "relayCounter": 8,
+    "label": "Region.Utility 6.PARIS 1",
+    "networkLan": "10.54.133.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 6",
+    "utility_id": 54,
+    "substation": "PARIS 1",
+    "substationNumber": 133,
+    "OTAddress": "10.54.133.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.54.133.1",
+        "10.54.133.2",
+        "10.54.133.3",
+        "10.54.133.4",
+        "10.54.133.5",
+        "10.54.133.6",
+        "10.54.133.7",
+        "10.54.133.8",
+        "10.54.133.9",
+        "10.54.133.10",
+        "10.54.133.11",
+        "10.54.133.12",
+        "10.54.133.13",
+        "10.54.133.14",
+        "10.54.133.15",
+        "10.54.133.16",
+        "10.54.133.17",
+        "10.54.133.18",
+        "10.54.133.19",
+        "10.54.133.20",
+        "10.54.133.21",
+        "10.54.133.22",
+        "10.54.133.23",
+        "10.54.133.24",
+        "10.54.133.25",
+        "10.54.133.26",
+        "10.54.133.27",
+        "10.54.133.28",
+        "10.54.133.29",
+        "10.54.133.30",
+        "10.54.133.31",
+        "10.54.133.32",
+        "10.54.133.33",
+        "10.54.133.34",
+        "10.54.133.35",
+        "10.54.133.36",
+        "10.54.133.37",
+        "10.54.133.38",
+        "10.54.133.39",
+        "10.54.133.40",
+        "10.54.133.41",
+        "10.54.133.42",
+        "10.54.133.43",
+        "10.54.133.44",
+        "10.54.133.45",
+        "10.54.133.46",
+        "10.54.133.47",
+        "10.54.133.48",
+        "10.54.133.49",
+        "10.54.133.50",
+        "10.54.133.51",
+        "10.54.133.52",
+        "10.54.133.53",
+        "10.54.133.54",
+        "10.54.133.55",
+        "10.54.133.56",
+        "10.54.133.57",
+        "10.54.133.58",
+        "10.54.133.59",
+        "10.54.133.60",
+        "10.54.133.61",
+        "10.54.133.62"
+    ],
+    "routeAddress": "10.54.133.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.54.133.65",
+        "10.54.133.66",
+        "10.54.133.67",
+        "10.54.133.68",
+        "10.54.133.69",
+        "10.54.133.70",
+        "10.54.133.71",
+        "10.54.133.72",
+        "10.54.133.73",
+        "10.54.133.74",
+        "10.54.133.75",
+        "10.54.133.76",
+        "10.54.133.77",
+        "10.54.133.78",
+        "10.54.133.79",
+        "10.54.133.80",
+        "10.54.133.81",
+        "10.54.133.82",
+        "10.54.133.83",
+        "10.54.133.84",
+        "10.54.133.85",
+        "10.54.133.86",
+        "10.54.133.87",
+        "10.54.133.88",
+        "10.54.133.89",
+        "10.54.133.90",
+        "10.54.133.91",
+        "10.54.133.92",
+        "10.54.133.93",
+        "10.54.133.94"
+    ],
+    "corporateAddress": "10.54.133.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.54.133.97",
+        "10.54.133.98",
+        "10.54.133.99",
+        "10.54.133.100",
+        "10.54.133.101",
+        "10.54.133.102",
+        "10.54.133.103",
+        "10.54.133.104",
+        "10.54.133.105",
+        "10.54.133.106",
+        "10.54.133.107",
+        "10.54.133.108",
+        "10.54.133.109",
+        "10.54.133.110",
+        "10.54.133.111",
+        "10.54.133.112",
+        "10.54.133.113",
+        "10.54.133.114",
+        "10.54.133.115",
+        "10.54.133.116",
+        "10.54.133.117",
+        "10.54.133.118",
+        "10.54.133.119",
+        "10.54.133.120",
+        "10.54.133.121",
+        "10.54.133.122",
+        "10.54.133.123",
+        "10.54.133.124",
+        "10.54.133.125"
+    ],
+    "latitude": 33.631,
+    "longitude": -95.59,
+    "nodes": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.97",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Firewall 133",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.631,
+            "Longitude": -95.59
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.98",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Router 133",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.1",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1.OT.Switch 265",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.99",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1.Corporate.Switch 266",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.3",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.4",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.5",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.6",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.7",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.8",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.9",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.10",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.2",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..RC 133",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.133.3",
+                "10.54.133.4",
+                "10.54.133.5",
+                "10.54.133.6",
+                "10.54.133.7",
+                "10.54.133.8",
+                "10.54.133.9",
+                "10.54.133.10"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.100",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Host 265",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.100",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Host 266",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.100",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..LocalDatabase 265",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.100",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..LocalWebServer 266",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.101",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..hmi 265",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.100",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..outstation 266",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 6.PARIS 1..RC 133",
+            "destination": "Utility 6.PARIS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..RC 133",
+            "destination": "Utility 6.PARIS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..RC 133",
+            "destination": "Utility 6.PARIS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..RC 133",
+            "destination": "Utility 6.PARIS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..RC 133",
+            "destination": "Utility 6.PARIS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..RC 133",
+            "destination": "Utility 6.PARIS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..RC 133",
+            "destination": "Utility 6.PARIS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..RC 133",
+            "destination": "Utility 6.PARIS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..Router 133",
+            "destination": "Utility 6.PARIS 1..Firewall 133",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..Firewall 133",
+            "destination": "Utility 6.PARIS 1.OT.Switch 265",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1.OT.Switch 265",
+            "destination": "Utility 6.PARIS 1..RC 133",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1..Firewall 133",
+            "destination": "Utility 6.PARIS 1.Corporate.Switch 266",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1.Corporate.Switch 266",
+            "destination": "Utility 6.PARIS 1..Host 265",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1.Corporate.Switch 266",
+            "destination": "Utility 6.PARIS 1..Host 266",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1.Corporate.Switch 266",
+            "destination": "Utility 6.PARIS 1..LocalDatabase 265",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.PARIS 1.Corporate.Switch 266",
+            "destination": "Utility 6.PARIS 1..LocalWebServer 266",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.1",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1.OT.Switch 265",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.2",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..RC 133",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.133.3",
+                "10.54.133.4",
+                "10.54.133.5",
+                "10.54.133.6",
+                "10.54.133.7",
+                "10.54.133.8",
+                "10.54.133.9",
+                "10.54.133.10"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.97",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Firewall 133",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.631,
+            "Longitude": -95.59
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.98",
+            "ipAddress": "10.54.133.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..Router 133",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.1",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1.OT.Switch 265",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.133.2",
+            "ipAddress": "10.54.133.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PARIS 1",
+            "label": "Utility 6.PARIS 1..RC 133",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.133.3",
+                "10.54.133.4",
+                "10.54.133.5",
+                "10.54.133.6",
+                "10.54.133.7",
+                "10.54.133.8",
+                "10.54.133.9",
+                "10.54.133.10"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 1105.23,
+    "genmvar": -105.42,
+    "connecting_TS_num": 69
+}

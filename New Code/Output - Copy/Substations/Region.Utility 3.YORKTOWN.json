@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.YORKTOWN",
+    "networkLan": "10.56.862.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "YORKTOWN",
+    "substationNumber": 862,
+    "OTAddress": "10.56.862.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.862.1",
+        "10.56.862.2",
+        "10.56.862.3",
+        "10.56.862.4",
+        "10.56.862.5",
+        "10.56.862.6",
+        "10.56.862.7",
+        "10.56.862.8",
+        "10.56.862.9",
+        "10.56.862.10",
+        "10.56.862.11",
+        "10.56.862.12",
+        "10.56.862.13",
+        "10.56.862.14",
+        "10.56.862.15",
+        "10.56.862.16",
+        "10.56.862.17",
+        "10.56.862.18",
+        "10.56.862.19",
+        "10.56.862.20",
+        "10.56.862.21",
+        "10.56.862.22",
+        "10.56.862.23",
+        "10.56.862.24",
+        "10.56.862.25",
+        "10.56.862.26",
+        "10.56.862.27",
+        "10.56.862.28",
+        "10.56.862.29",
+        "10.56.862.30",
+        "10.56.862.31",
+        "10.56.862.32",
+        "10.56.862.33",
+        "10.56.862.34",
+        "10.56.862.35",
+        "10.56.862.36",
+        "10.56.862.37",
+        "10.56.862.38",
+        "10.56.862.39",
+        "10.56.862.40",
+        "10.56.862.41",
+        "10.56.862.42",
+        "10.56.862.43",
+        "10.56.862.44",
+        "10.56.862.45",
+        "10.56.862.46",
+        "10.56.862.47",
+        "10.56.862.48",
+        "10.56.862.49",
+        "10.56.862.50",
+        "10.56.862.51",
+        "10.56.862.52",
+        "10.56.862.53",
+        "10.56.862.54",
+        "10.56.862.55",
+        "10.56.862.56",
+        "10.56.862.57",
+        "10.56.862.58",
+        "10.56.862.59",
+        "10.56.862.60",
+        "10.56.862.61",
+        "10.56.862.62"
+    ],
+    "routeAddress": "10.56.862.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.862.65",
+        "10.56.862.66",
+        "10.56.862.67",
+        "10.56.862.68",
+        "10.56.862.69",
+        "10.56.862.70",
+        "10.56.862.71",
+        "10.56.862.72",
+        "10.56.862.73",
+        "10.56.862.74",
+        "10.56.862.75",
+        "10.56.862.76",
+        "10.56.862.77",
+        "10.56.862.78",
+        "10.56.862.79",
+        "10.56.862.80",
+        "10.56.862.81",
+        "10.56.862.82",
+        "10.56.862.83",
+        "10.56.862.84",
+        "10.56.862.85",
+        "10.56.862.86",
+        "10.56.862.87",
+        "10.56.862.88",
+        "10.56.862.89",
+        "10.56.862.90",
+        "10.56.862.91",
+        "10.56.862.92",
+        "10.56.862.93",
+        "10.56.862.94"
+    ],
+    "corporateAddress": "10.56.862.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.862.97",
+        "10.56.862.98",
+        "10.56.862.99",
+        "10.56.862.100",
+        "10.56.862.101",
+        "10.56.862.102",
+        "10.56.862.103",
+        "10.56.862.104",
+        "10.56.862.105",
+        "10.56.862.106",
+        "10.56.862.107",
+        "10.56.862.108",
+        "10.56.862.109",
+        "10.56.862.110",
+        "10.56.862.111",
+        "10.56.862.112",
+        "10.56.862.113",
+        "10.56.862.114",
+        "10.56.862.115",
+        "10.56.862.116",
+        "10.56.862.117",
+        "10.56.862.118",
+        "10.56.862.119",
+        "10.56.862.120",
+        "10.56.862.121",
+        "10.56.862.122",
+        "10.56.862.123",
+        "10.56.862.124",
+        "10.56.862.125"
+    ],
+    "latitude": 28.858,
+    "longitude": -97.429,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.97",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..Firewall 862",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.858,
+            "Longitude": -97.429
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.98",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..Router 862",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.1",
+            "ipAddress": "10.56.862.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN.OT.Switch 1723",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.99",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN.Corporate.Switch 1724",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.3",
+            "ipAddress": "10.56.862.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.2",
+            "ipAddress": "10.56.862.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..RC 862",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.862.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.100",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..Host 1723",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.100",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..Host 1724",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.100",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..LocalDatabase 1723",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.100",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..LocalWebServer 1724",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.101",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..hmi 1723",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.100",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..outstation 1724",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.YORKTOWN..RC 862",
+            "destination": "Utility 3.YORKTOWN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.YORKTOWN..Router 862",
+            "destination": "Utility 3.YORKTOWN..Firewall 862",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.YORKTOWN..Firewall 862",
+            "destination": "Utility 3.YORKTOWN.OT.Switch 1723",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.YORKTOWN.OT.Switch 1723",
+            "destination": "Utility 3.YORKTOWN..RC 862",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.YORKTOWN..Firewall 862",
+            "destination": "Utility 3.YORKTOWN.Corporate.Switch 1724",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.YORKTOWN.Corporate.Switch 1724",
+            "destination": "Utility 3.YORKTOWN..Host 1723",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.YORKTOWN.Corporate.Switch 1724",
+            "destination": "Utility 3.YORKTOWN..Host 1724",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.YORKTOWN.Corporate.Switch 1724",
+            "destination": "Utility 3.YORKTOWN..LocalDatabase 1723",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.YORKTOWN.Corporate.Switch 1724",
+            "destination": "Utility 3.YORKTOWN..LocalWebServer 1724",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.1",
+            "ipAddress": "10.56.862.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN.OT.Switch 1723",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.2",
+            "ipAddress": "10.56.862.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..RC 862",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.862.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.97",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..Firewall 862",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.858,
+            "Longitude": -97.429
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.98",
+            "ipAddress": "10.56.862.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..Router 862",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.1",
+            "ipAddress": "10.56.862.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN.OT.Switch 1723",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.862.2",
+            "ipAddress": "10.56.862.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "YORKTOWN",
+            "label": "Utility 3.YORKTOWN..RC 862",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.862.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

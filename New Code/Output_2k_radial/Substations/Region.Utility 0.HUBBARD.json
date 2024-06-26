@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.HUBBARD",
+    "networkLan": "10.52.517.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "HUBBARD",
+    "substationNumber": 517,
+    "OTAddress": "10.52.517.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.517.1",
+        "10.52.517.2",
+        "10.52.517.3",
+        "10.52.517.4",
+        "10.52.517.5",
+        "10.52.517.6",
+        "10.52.517.7",
+        "10.52.517.8",
+        "10.52.517.9",
+        "10.52.517.10",
+        "10.52.517.11",
+        "10.52.517.12",
+        "10.52.517.13",
+        "10.52.517.14",
+        "10.52.517.15",
+        "10.52.517.16",
+        "10.52.517.17",
+        "10.52.517.18",
+        "10.52.517.19",
+        "10.52.517.20",
+        "10.52.517.21",
+        "10.52.517.22",
+        "10.52.517.23",
+        "10.52.517.24",
+        "10.52.517.25",
+        "10.52.517.26",
+        "10.52.517.27",
+        "10.52.517.28",
+        "10.52.517.29",
+        "10.52.517.30",
+        "10.52.517.31",
+        "10.52.517.32",
+        "10.52.517.33",
+        "10.52.517.34",
+        "10.52.517.35",
+        "10.52.517.36",
+        "10.52.517.37",
+        "10.52.517.38",
+        "10.52.517.39",
+        "10.52.517.40",
+        "10.52.517.41",
+        "10.52.517.42",
+        "10.52.517.43",
+        "10.52.517.44",
+        "10.52.517.45",
+        "10.52.517.46",
+        "10.52.517.47",
+        "10.52.517.48",
+        "10.52.517.49",
+        "10.52.517.50",
+        "10.52.517.51",
+        "10.52.517.52",
+        "10.52.517.53",
+        "10.52.517.54",
+        "10.52.517.55",
+        "10.52.517.56",
+        "10.52.517.57",
+        "10.52.517.58",
+        "10.52.517.59",
+        "10.52.517.60",
+        "10.52.517.61",
+        "10.52.517.62"
+    ],
+    "routeAddress": "10.52.517.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.517.65",
+        "10.52.517.66",
+        "10.52.517.67",
+        "10.52.517.68",
+        "10.52.517.69",
+        "10.52.517.70",
+        "10.52.517.71",
+        "10.52.517.72",
+        "10.52.517.73",
+        "10.52.517.74",
+        "10.52.517.75",
+        "10.52.517.76",
+        "10.52.517.77",
+        "10.52.517.78",
+        "10.52.517.79",
+        "10.52.517.80",
+        "10.52.517.81",
+        "10.52.517.82",
+        "10.52.517.83",
+        "10.52.517.84",
+        "10.52.517.85",
+        "10.52.517.86",
+        "10.52.517.87",
+        "10.52.517.88",
+        "10.52.517.89",
+        "10.52.517.90",
+        "10.52.517.91",
+        "10.52.517.92",
+        "10.52.517.93",
+        "10.52.517.94"
+    ],
+    "corporateAddress": "10.52.517.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.517.97",
+        "10.52.517.98",
+        "10.52.517.99",
+        "10.52.517.100",
+        "10.52.517.101",
+        "10.52.517.102",
+        "10.52.517.103",
+        "10.52.517.104",
+        "10.52.517.105",
+        "10.52.517.106",
+        "10.52.517.107",
+        "10.52.517.108",
+        "10.52.517.109",
+        "10.52.517.110",
+        "10.52.517.111",
+        "10.52.517.112",
+        "10.52.517.113",
+        "10.52.517.114",
+        "10.52.517.115",
+        "10.52.517.116",
+        "10.52.517.117",
+        "10.52.517.118",
+        "10.52.517.119",
+        "10.52.517.120",
+        "10.52.517.121",
+        "10.52.517.122",
+        "10.52.517.123",
+        "10.52.517.124",
+        "10.52.517.125"
+    ],
+    "latitude": 31.849,
+    "longitude": -96.807,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.97",
+            "ipAddress": "10.52.517.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..Firewall 517",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.849,
+            "Longitude": -96.807
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.98",
+            "ipAddress": "10.52.517.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..Router 517",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.1",
+            "ipAddress": "10.52.517.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD.OT.Switch 1033",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.99",
+            "ipAddress": "10.52.517.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD.Corporate.Switch 1034",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.3",
+            "ipAddress": "10.52.517.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.2",
+            "ipAddress": "10.52.517.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..RC 517",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.517.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.100",
+            "ipAddress": "10.52.517.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..Host 1033",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.100",
+            "ipAddress": "10.52.517.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..Host 1034",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.100",
+            "ipAddress": "10.52.517.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..LocalDatabase 1033",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.100",
+            "ipAddress": "10.52.517.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..LocalWebServer 1034",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.HUBBARD..RC 517",
+            "destination": "Utility 0.HUBBARD..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HUBBARD..Router 517",
+            "destination": "Utility 0.HUBBARD..Firewall 517",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HUBBARD..Firewall 517",
+            "destination": "Utility 0.HUBBARD.OT.Switch 1033",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HUBBARD.OT.Switch 1033",
+            "destination": "Utility 0.HUBBARD..RC 517",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HUBBARD..Firewall 517",
+            "destination": "Utility 0.HUBBARD.Corporate.Switch 1034",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HUBBARD.Corporate.Switch 1034",
+            "destination": "Utility 0.HUBBARD..Host 1033",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HUBBARD.Corporate.Switch 1034",
+            "destination": "Utility 0.HUBBARD..Host 1034",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HUBBARD.Corporate.Switch 1034",
+            "destination": "Utility 0.HUBBARD..LocalDatabase 1033",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HUBBARD.Corporate.Switch 1034",
+            "destination": "Utility 0.HUBBARD..LocalWebServer 1034",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.1",
+            "ipAddress": "10.52.517.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD.OT.Switch 1033",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.2",
+            "ipAddress": "10.52.517.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..RC 517",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.517.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.97",
+            "ipAddress": "10.52.517.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..Firewall 517",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.849,
+            "Longitude": -96.807
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.98",
+            "ipAddress": "10.52.517.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..Router 517",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.1",
+            "ipAddress": "10.52.517.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD.OT.Switch 1033",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.517.2",
+            "ipAddress": "10.52.517.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HUBBARD",
+            "label": "Utility 0.HUBBARD..RC 517",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.517.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

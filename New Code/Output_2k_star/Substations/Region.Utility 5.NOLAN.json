@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 5.NOLAN",
+    "networkLan": "10.53.185.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 5",
+    "utility_id": 53,
+    "substation": "NOLAN",
+    "substationNumber": 185,
+    "OTAddress": "10.53.185.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.185.1",
+        "10.53.185.2",
+        "10.53.185.3",
+        "10.53.185.4",
+        "10.53.185.5",
+        "10.53.185.6",
+        "10.53.185.7",
+        "10.53.185.8",
+        "10.53.185.9",
+        "10.53.185.10",
+        "10.53.185.11",
+        "10.53.185.12",
+        "10.53.185.13",
+        "10.53.185.14",
+        "10.53.185.15",
+        "10.53.185.16",
+        "10.53.185.17",
+        "10.53.185.18",
+        "10.53.185.19",
+        "10.53.185.20",
+        "10.53.185.21",
+        "10.53.185.22",
+        "10.53.185.23",
+        "10.53.185.24",
+        "10.53.185.25",
+        "10.53.185.26",
+        "10.53.185.27",
+        "10.53.185.28",
+        "10.53.185.29",
+        "10.53.185.30",
+        "10.53.185.31",
+        "10.53.185.32",
+        "10.53.185.33",
+        "10.53.185.34",
+        "10.53.185.35",
+        "10.53.185.36",
+        "10.53.185.37",
+        "10.53.185.38",
+        "10.53.185.39",
+        "10.53.185.40",
+        "10.53.185.41",
+        "10.53.185.42",
+        "10.53.185.43",
+        "10.53.185.44",
+        "10.53.185.45",
+        "10.53.185.46",
+        "10.53.185.47",
+        "10.53.185.48",
+        "10.53.185.49",
+        "10.53.185.50",
+        "10.53.185.51",
+        "10.53.185.52",
+        "10.53.185.53",
+        "10.53.185.54",
+        "10.53.185.55",
+        "10.53.185.56",
+        "10.53.185.57",
+        "10.53.185.58",
+        "10.53.185.59",
+        "10.53.185.60",
+        "10.53.185.61",
+        "10.53.185.62"
+    ],
+    "routeAddress": "10.53.185.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.185.65",
+        "10.53.185.66",
+        "10.53.185.67",
+        "10.53.185.68",
+        "10.53.185.69",
+        "10.53.185.70",
+        "10.53.185.71",
+        "10.53.185.72",
+        "10.53.185.73",
+        "10.53.185.74",
+        "10.53.185.75",
+        "10.53.185.76",
+        "10.53.185.77",
+        "10.53.185.78",
+        "10.53.185.79",
+        "10.53.185.80",
+        "10.53.185.81",
+        "10.53.185.82",
+        "10.53.185.83",
+        "10.53.185.84",
+        "10.53.185.85",
+        "10.53.185.86",
+        "10.53.185.87",
+        "10.53.185.88",
+        "10.53.185.89",
+        "10.53.185.90",
+        "10.53.185.91",
+        "10.53.185.92",
+        "10.53.185.93",
+        "10.53.185.94"
+    ],
+    "corporateAddress": "10.53.185.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.185.97",
+        "10.53.185.98",
+        "10.53.185.99",
+        "10.53.185.100",
+        "10.53.185.101",
+        "10.53.185.102",
+        "10.53.185.103",
+        "10.53.185.104",
+        "10.53.185.105",
+        "10.53.185.106",
+        "10.53.185.107",
+        "10.53.185.108",
+        "10.53.185.109",
+        "10.53.185.110",
+        "10.53.185.111",
+        "10.53.185.112",
+        "10.53.185.113",
+        "10.53.185.114",
+        "10.53.185.115",
+        "10.53.185.116",
+        "10.53.185.117",
+        "10.53.185.118",
+        "10.53.185.119",
+        "10.53.185.120",
+        "10.53.185.121",
+        "10.53.185.122",
+        "10.53.185.123",
+        "10.53.185.124",
+        "10.53.185.125"
+    ],
+    "latitude": 32.288,
+    "longitude": -100.1,
+    "nodes": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.97",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..Firewall 185",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.288,
+            "Longitude": -100.1
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.98",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..Router 185",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.1",
+            "ipAddress": "10.53.185.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN.OT.Switch 369",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.99",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN.Corporate.Switch 370",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.3",
+            "ipAddress": "10.53.185.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.4",
+            "ipAddress": "10.53.185.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.2",
+            "ipAddress": "10.53.185.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..RC 185",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.185.3",
+                "10.53.185.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.100",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..Host 369",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.100",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..Host 370",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.100",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..LocalDatabase 369",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.100",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..LocalWebServer 370",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.101",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..hmi 369",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.100",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..outstation 370",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 5.NOLAN..RC 185",
+            "destination": "Utility 5.NOLAN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.NOLAN..RC 185",
+            "destination": "Utility 5.NOLAN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.NOLAN..Router 185",
+            "destination": "Utility 5.NOLAN..Firewall 185",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.NOLAN..Firewall 185",
+            "destination": "Utility 5.NOLAN.OT.Switch 369",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.NOLAN.OT.Switch 369",
+            "destination": "Utility 5.NOLAN..RC 185",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.NOLAN..Firewall 185",
+            "destination": "Utility 5.NOLAN.Corporate.Switch 370",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.NOLAN.Corporate.Switch 370",
+            "destination": "Utility 5.NOLAN..Host 369",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.NOLAN.Corporate.Switch 370",
+            "destination": "Utility 5.NOLAN..Host 370",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.NOLAN.Corporate.Switch 370",
+            "destination": "Utility 5.NOLAN..LocalDatabase 369",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.NOLAN.Corporate.Switch 370",
+            "destination": "Utility 5.NOLAN..LocalWebServer 370",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.1",
+            "ipAddress": "10.53.185.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN.OT.Switch 369",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.2",
+            "ipAddress": "10.53.185.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..RC 185",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.185.3",
+                "10.53.185.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.97",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..Firewall 185",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.288,
+            "Longitude": -100.1
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.98",
+            "ipAddress": "10.53.185.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..Router 185",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.1",
+            "ipAddress": "10.53.185.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN.OT.Switch 369",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.185.2",
+            "ipAddress": "10.53.185.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NOLAN",
+            "label": "Utility 5.NOLAN..RC 185",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.185.3",
+                "10.53.185.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 127.65,
+    "genmvar": -24.51,
+    "connecting_TS_num": 221
+}

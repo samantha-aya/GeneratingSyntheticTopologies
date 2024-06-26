@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 53.TOLAR",
+    "networkLan": "10.147.452.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 53",
+    "utility_id": 147,
+    "substation": "TOLAR",
+    "substationNumber": 452,
+    "OTAddress": "10.147.452.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.147.452.1",
+        "10.147.452.2",
+        "10.147.452.3",
+        "10.147.452.4",
+        "10.147.452.5",
+        "10.147.452.6",
+        "10.147.452.7",
+        "10.147.452.8",
+        "10.147.452.9",
+        "10.147.452.10",
+        "10.147.452.11",
+        "10.147.452.12",
+        "10.147.452.13",
+        "10.147.452.14",
+        "10.147.452.15",
+        "10.147.452.16",
+        "10.147.452.17",
+        "10.147.452.18",
+        "10.147.452.19",
+        "10.147.452.20",
+        "10.147.452.21",
+        "10.147.452.22",
+        "10.147.452.23",
+        "10.147.452.24",
+        "10.147.452.25",
+        "10.147.452.26",
+        "10.147.452.27",
+        "10.147.452.28",
+        "10.147.452.29",
+        "10.147.452.30",
+        "10.147.452.31",
+        "10.147.452.32",
+        "10.147.452.33",
+        "10.147.452.34",
+        "10.147.452.35",
+        "10.147.452.36",
+        "10.147.452.37",
+        "10.147.452.38",
+        "10.147.452.39",
+        "10.147.452.40",
+        "10.147.452.41",
+        "10.147.452.42",
+        "10.147.452.43",
+        "10.147.452.44",
+        "10.147.452.45",
+        "10.147.452.46",
+        "10.147.452.47",
+        "10.147.452.48",
+        "10.147.452.49",
+        "10.147.452.50",
+        "10.147.452.51",
+        "10.147.452.52",
+        "10.147.452.53",
+        "10.147.452.54",
+        "10.147.452.55",
+        "10.147.452.56",
+        "10.147.452.57",
+        "10.147.452.58",
+        "10.147.452.59",
+        "10.147.452.60",
+        "10.147.452.61",
+        "10.147.452.62"
+    ],
+    "routeAddress": "10.147.452.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.147.452.65",
+        "10.147.452.66",
+        "10.147.452.67",
+        "10.147.452.68",
+        "10.147.452.69",
+        "10.147.452.70",
+        "10.147.452.71",
+        "10.147.452.72",
+        "10.147.452.73",
+        "10.147.452.74",
+        "10.147.452.75",
+        "10.147.452.76",
+        "10.147.452.77",
+        "10.147.452.78",
+        "10.147.452.79",
+        "10.147.452.80",
+        "10.147.452.81",
+        "10.147.452.82",
+        "10.147.452.83",
+        "10.147.452.84",
+        "10.147.452.85",
+        "10.147.452.86",
+        "10.147.452.87",
+        "10.147.452.88",
+        "10.147.452.89",
+        "10.147.452.90",
+        "10.147.452.91",
+        "10.147.452.92",
+        "10.147.452.93",
+        "10.147.452.94"
+    ],
+    "corporateAddress": "10.147.452.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.147.452.97",
+        "10.147.452.98",
+        "10.147.452.99",
+        "10.147.452.100",
+        "10.147.452.101",
+        "10.147.452.102",
+        "10.147.452.103",
+        "10.147.452.104",
+        "10.147.452.105",
+        "10.147.452.106",
+        "10.147.452.107",
+        "10.147.452.108",
+        "10.147.452.109",
+        "10.147.452.110",
+        "10.147.452.111",
+        "10.147.452.112",
+        "10.147.452.113",
+        "10.147.452.114",
+        "10.147.452.115",
+        "10.147.452.116",
+        "10.147.452.117",
+        "10.147.452.118",
+        "10.147.452.119",
+        "10.147.452.120",
+        "10.147.452.121",
+        "10.147.452.122",
+        "10.147.452.123",
+        "10.147.452.124",
+        "10.147.452.125"
+    ],
+    "latitude": 32.363,
+    "longitude": -97.924,
+    "nodes": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.97",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..Firewall 452",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.363,
+            "Longitude": -97.924
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.98",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..Router 452",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.1",
+            "ipAddress": "10.147.452.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR.OT.Switch 903",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.99",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR.Corporate.Switch 904",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.3",
+            "ipAddress": "10.147.452.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.2",
+            "ipAddress": "10.147.452.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..RC 452",
+            "compromised": false,
+            "relayIPlist": [
+                "10.147.452.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.100",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..Host 903",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.100",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..Host 904",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.100",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..LocalDatabase 903",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.100",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..LocalWebServer 904",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.101",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..hmi 903",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.100",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..outstation 904",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 53.TOLAR..RC 452",
+            "destination": "Utility 53.TOLAR..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.TOLAR..Router 452",
+            "destination": "Utility 53.TOLAR..Firewall 452",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.TOLAR..Firewall 452",
+            "destination": "Utility 53.TOLAR.OT.Switch 903",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.TOLAR.OT.Switch 903",
+            "destination": "Utility 53.TOLAR..RC 452",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.TOLAR..Firewall 452",
+            "destination": "Utility 53.TOLAR.Corporate.Switch 904",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.TOLAR.Corporate.Switch 904",
+            "destination": "Utility 53.TOLAR..Host 903",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.TOLAR.Corporate.Switch 904",
+            "destination": "Utility 53.TOLAR..Host 904",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.TOLAR.Corporate.Switch 904",
+            "destination": "Utility 53.TOLAR..LocalDatabase 903",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.TOLAR.Corporate.Switch 904",
+            "destination": "Utility 53.TOLAR..LocalWebServer 904",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.1",
+            "ipAddress": "10.147.452.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR.OT.Switch 903",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.2",
+            "ipAddress": "10.147.452.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..RC 452",
+            "compromised": false,
+            "relayIPlist": [
+                "10.147.452.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.97",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..Firewall 452",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.363,
+            "Longitude": -97.924
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.98",
+            "ipAddress": "10.147.452.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..Router 452",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.1",
+            "ipAddress": "10.147.452.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR.OT.Switch 903",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.452.2",
+            "ipAddress": "10.147.452.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TOLAR",
+            "label": "Utility 53.TOLAR..RC 452",
+            "compromised": false,
+            "relayIPlist": [
+                "10.147.452.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

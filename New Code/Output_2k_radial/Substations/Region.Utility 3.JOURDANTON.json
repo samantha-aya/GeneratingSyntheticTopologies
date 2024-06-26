@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.JOURDANTON",
+    "networkLan": "10.56.305.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "JOURDANTON",
+    "substationNumber": 305,
+    "OTAddress": "10.56.305.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.305.1",
+        "10.56.305.2",
+        "10.56.305.3",
+        "10.56.305.4",
+        "10.56.305.5",
+        "10.56.305.6",
+        "10.56.305.7",
+        "10.56.305.8",
+        "10.56.305.9",
+        "10.56.305.10",
+        "10.56.305.11",
+        "10.56.305.12",
+        "10.56.305.13",
+        "10.56.305.14",
+        "10.56.305.15",
+        "10.56.305.16",
+        "10.56.305.17",
+        "10.56.305.18",
+        "10.56.305.19",
+        "10.56.305.20",
+        "10.56.305.21",
+        "10.56.305.22",
+        "10.56.305.23",
+        "10.56.305.24",
+        "10.56.305.25",
+        "10.56.305.26",
+        "10.56.305.27",
+        "10.56.305.28",
+        "10.56.305.29",
+        "10.56.305.30",
+        "10.56.305.31",
+        "10.56.305.32",
+        "10.56.305.33",
+        "10.56.305.34",
+        "10.56.305.35",
+        "10.56.305.36",
+        "10.56.305.37",
+        "10.56.305.38",
+        "10.56.305.39",
+        "10.56.305.40",
+        "10.56.305.41",
+        "10.56.305.42",
+        "10.56.305.43",
+        "10.56.305.44",
+        "10.56.305.45",
+        "10.56.305.46",
+        "10.56.305.47",
+        "10.56.305.48",
+        "10.56.305.49",
+        "10.56.305.50",
+        "10.56.305.51",
+        "10.56.305.52",
+        "10.56.305.53",
+        "10.56.305.54",
+        "10.56.305.55",
+        "10.56.305.56",
+        "10.56.305.57",
+        "10.56.305.58",
+        "10.56.305.59",
+        "10.56.305.60",
+        "10.56.305.61",
+        "10.56.305.62"
+    ],
+    "routeAddress": "10.56.305.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.305.65",
+        "10.56.305.66",
+        "10.56.305.67",
+        "10.56.305.68",
+        "10.56.305.69",
+        "10.56.305.70",
+        "10.56.305.71",
+        "10.56.305.72",
+        "10.56.305.73",
+        "10.56.305.74",
+        "10.56.305.75",
+        "10.56.305.76",
+        "10.56.305.77",
+        "10.56.305.78",
+        "10.56.305.79",
+        "10.56.305.80",
+        "10.56.305.81",
+        "10.56.305.82",
+        "10.56.305.83",
+        "10.56.305.84",
+        "10.56.305.85",
+        "10.56.305.86",
+        "10.56.305.87",
+        "10.56.305.88",
+        "10.56.305.89",
+        "10.56.305.90",
+        "10.56.305.91",
+        "10.56.305.92",
+        "10.56.305.93",
+        "10.56.305.94"
+    ],
+    "corporateAddress": "10.56.305.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.305.97",
+        "10.56.305.98",
+        "10.56.305.99",
+        "10.56.305.100",
+        "10.56.305.101",
+        "10.56.305.102",
+        "10.56.305.103",
+        "10.56.305.104",
+        "10.56.305.105",
+        "10.56.305.106",
+        "10.56.305.107",
+        "10.56.305.108",
+        "10.56.305.109",
+        "10.56.305.110",
+        "10.56.305.111",
+        "10.56.305.112",
+        "10.56.305.113",
+        "10.56.305.114",
+        "10.56.305.115",
+        "10.56.305.116",
+        "10.56.305.117",
+        "10.56.305.118",
+        "10.56.305.119",
+        "10.56.305.120",
+        "10.56.305.121",
+        "10.56.305.122",
+        "10.56.305.123",
+        "10.56.305.124",
+        "10.56.305.125"
+    ],
+    "latitude": 28.765,
+    "longitude": -98.486,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.97",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..Firewall 305",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.765,
+            "Longitude": -98.486
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.98",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..Router 305",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.1",
+            "ipAddress": "10.56.305.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON.OT.Switch 609",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.99",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON.Corporate.Switch 610",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.3",
+            "ipAddress": "10.56.305.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.2",
+            "ipAddress": "10.56.305.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..RC 305",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.305.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.100",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..Host 609",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.100",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..Host 610",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.100",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..LocalDatabase 609",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.100",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..LocalWebServer 610",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.101",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..hmi 609",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.100",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..outstation 610",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.JOURDANTON..RC 305",
+            "destination": "Utility 3.JOURDANTON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.JOURDANTON..Router 305",
+            "destination": "Utility 3.JOURDANTON..Firewall 305",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.JOURDANTON..Firewall 305",
+            "destination": "Utility 3.JOURDANTON.OT.Switch 609",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.JOURDANTON.OT.Switch 609",
+            "destination": "Utility 3.JOURDANTON..RC 305",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.JOURDANTON..Firewall 305",
+            "destination": "Utility 3.JOURDANTON.Corporate.Switch 610",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.JOURDANTON.Corporate.Switch 610",
+            "destination": "Utility 3.JOURDANTON..Host 609",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.JOURDANTON.Corporate.Switch 610",
+            "destination": "Utility 3.JOURDANTON..Host 610",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.JOURDANTON.Corporate.Switch 610",
+            "destination": "Utility 3.JOURDANTON..LocalDatabase 609",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.JOURDANTON.Corporate.Switch 610",
+            "destination": "Utility 3.JOURDANTON..LocalWebServer 610",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.1",
+            "ipAddress": "10.56.305.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON.OT.Switch 609",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.2",
+            "ipAddress": "10.56.305.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..RC 305",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.305.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.97",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..Firewall 305",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.765,
+            "Longitude": -98.486
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.98",
+            "ipAddress": "10.56.305.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..Router 305",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.1",
+            "ipAddress": "10.56.305.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON.OT.Switch 609",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.305.2",
+            "ipAddress": "10.56.305.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "JOURDANTON",
+            "label": "Utility 3.JOURDANTON..RC 305",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.305.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

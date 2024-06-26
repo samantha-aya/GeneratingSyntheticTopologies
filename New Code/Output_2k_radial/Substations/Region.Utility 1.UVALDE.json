@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.UVALDE",
+    "networkLan": "10.53.213.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "UVALDE",
+    "substationNumber": 213,
+    "OTAddress": "10.53.213.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.213.1",
+        "10.53.213.2",
+        "10.53.213.3",
+        "10.53.213.4",
+        "10.53.213.5",
+        "10.53.213.6",
+        "10.53.213.7",
+        "10.53.213.8",
+        "10.53.213.9",
+        "10.53.213.10",
+        "10.53.213.11",
+        "10.53.213.12",
+        "10.53.213.13",
+        "10.53.213.14",
+        "10.53.213.15",
+        "10.53.213.16",
+        "10.53.213.17",
+        "10.53.213.18",
+        "10.53.213.19",
+        "10.53.213.20",
+        "10.53.213.21",
+        "10.53.213.22",
+        "10.53.213.23",
+        "10.53.213.24",
+        "10.53.213.25",
+        "10.53.213.26",
+        "10.53.213.27",
+        "10.53.213.28",
+        "10.53.213.29",
+        "10.53.213.30",
+        "10.53.213.31",
+        "10.53.213.32",
+        "10.53.213.33",
+        "10.53.213.34",
+        "10.53.213.35",
+        "10.53.213.36",
+        "10.53.213.37",
+        "10.53.213.38",
+        "10.53.213.39",
+        "10.53.213.40",
+        "10.53.213.41",
+        "10.53.213.42",
+        "10.53.213.43",
+        "10.53.213.44",
+        "10.53.213.45",
+        "10.53.213.46",
+        "10.53.213.47",
+        "10.53.213.48",
+        "10.53.213.49",
+        "10.53.213.50",
+        "10.53.213.51",
+        "10.53.213.52",
+        "10.53.213.53",
+        "10.53.213.54",
+        "10.53.213.55",
+        "10.53.213.56",
+        "10.53.213.57",
+        "10.53.213.58",
+        "10.53.213.59",
+        "10.53.213.60",
+        "10.53.213.61",
+        "10.53.213.62"
+    ],
+    "routeAddress": "10.53.213.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.213.65",
+        "10.53.213.66",
+        "10.53.213.67",
+        "10.53.213.68",
+        "10.53.213.69",
+        "10.53.213.70",
+        "10.53.213.71",
+        "10.53.213.72",
+        "10.53.213.73",
+        "10.53.213.74",
+        "10.53.213.75",
+        "10.53.213.76",
+        "10.53.213.77",
+        "10.53.213.78",
+        "10.53.213.79",
+        "10.53.213.80",
+        "10.53.213.81",
+        "10.53.213.82",
+        "10.53.213.83",
+        "10.53.213.84",
+        "10.53.213.85",
+        "10.53.213.86",
+        "10.53.213.87",
+        "10.53.213.88",
+        "10.53.213.89",
+        "10.53.213.90",
+        "10.53.213.91",
+        "10.53.213.92",
+        "10.53.213.93",
+        "10.53.213.94"
+    ],
+    "corporateAddress": "10.53.213.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.213.97",
+        "10.53.213.98",
+        "10.53.213.99",
+        "10.53.213.100",
+        "10.53.213.101",
+        "10.53.213.102",
+        "10.53.213.103",
+        "10.53.213.104",
+        "10.53.213.105",
+        "10.53.213.106",
+        "10.53.213.107",
+        "10.53.213.108",
+        "10.53.213.109",
+        "10.53.213.110",
+        "10.53.213.111",
+        "10.53.213.112",
+        "10.53.213.113",
+        "10.53.213.114",
+        "10.53.213.115",
+        "10.53.213.116",
+        "10.53.213.117",
+        "10.53.213.118",
+        "10.53.213.119",
+        "10.53.213.120",
+        "10.53.213.121",
+        "10.53.213.122",
+        "10.53.213.123",
+        "10.53.213.124",
+        "10.53.213.125"
+    ],
+    "latitude": 29.151,
+    "longitude": -100.016,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.97",
+            "ipAddress": "10.53.213.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..Firewall 213",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.151,
+            "Longitude": -100.016
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.98",
+            "ipAddress": "10.53.213.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..Router 213",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.1",
+            "ipAddress": "10.53.213.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE.OT.Switch 425",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.99",
+            "ipAddress": "10.53.213.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE.Corporate.Switch 426",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.3",
+            "ipAddress": "10.53.213.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.2",
+            "ipAddress": "10.53.213.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..RC 213",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.213.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.100",
+            "ipAddress": "10.53.213.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..Host 425",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.100",
+            "ipAddress": "10.53.213.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..Host 426",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.100",
+            "ipAddress": "10.53.213.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..LocalDatabase 425",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.100",
+            "ipAddress": "10.53.213.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..LocalWebServer 426",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.UVALDE..RC 213",
+            "destination": "Utility 1.UVALDE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.UVALDE..Router 213",
+            "destination": "Utility 1.UVALDE..Firewall 213",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.UVALDE..Firewall 213",
+            "destination": "Utility 1.UVALDE.OT.Switch 425",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.UVALDE.OT.Switch 425",
+            "destination": "Utility 1.UVALDE..RC 213",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.UVALDE..Firewall 213",
+            "destination": "Utility 1.UVALDE.Corporate.Switch 426",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.UVALDE.Corporate.Switch 426",
+            "destination": "Utility 1.UVALDE..Host 425",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.UVALDE.Corporate.Switch 426",
+            "destination": "Utility 1.UVALDE..Host 426",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.UVALDE.Corporate.Switch 426",
+            "destination": "Utility 1.UVALDE..LocalDatabase 425",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.UVALDE.Corporate.Switch 426",
+            "destination": "Utility 1.UVALDE..LocalWebServer 426",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.1",
+            "ipAddress": "10.53.213.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE.OT.Switch 425",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.2",
+            "ipAddress": "10.53.213.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..RC 213",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.213.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.97",
+            "ipAddress": "10.53.213.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..Firewall 213",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.151,
+            "Longitude": -100.016
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.98",
+            "ipAddress": "10.53.213.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..Router 213",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.1",
+            "ipAddress": "10.53.213.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE.OT.Switch 425",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.213.2",
+            "ipAddress": "10.53.213.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "UVALDE",
+            "label": "Utility 1.UVALDE..RC 213",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.213.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

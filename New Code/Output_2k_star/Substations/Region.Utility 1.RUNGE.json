@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.RUNGE",
+    "networkLan": "10.53.735.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "RUNGE",
+    "substationNumber": 735,
+    "OTAddress": "10.53.735.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.735.1",
+        "10.53.735.2",
+        "10.53.735.3",
+        "10.53.735.4",
+        "10.53.735.5",
+        "10.53.735.6",
+        "10.53.735.7",
+        "10.53.735.8",
+        "10.53.735.9",
+        "10.53.735.10",
+        "10.53.735.11",
+        "10.53.735.12",
+        "10.53.735.13",
+        "10.53.735.14",
+        "10.53.735.15",
+        "10.53.735.16",
+        "10.53.735.17",
+        "10.53.735.18",
+        "10.53.735.19",
+        "10.53.735.20",
+        "10.53.735.21",
+        "10.53.735.22",
+        "10.53.735.23",
+        "10.53.735.24",
+        "10.53.735.25",
+        "10.53.735.26",
+        "10.53.735.27",
+        "10.53.735.28",
+        "10.53.735.29",
+        "10.53.735.30",
+        "10.53.735.31",
+        "10.53.735.32",
+        "10.53.735.33",
+        "10.53.735.34",
+        "10.53.735.35",
+        "10.53.735.36",
+        "10.53.735.37",
+        "10.53.735.38",
+        "10.53.735.39",
+        "10.53.735.40",
+        "10.53.735.41",
+        "10.53.735.42",
+        "10.53.735.43",
+        "10.53.735.44",
+        "10.53.735.45",
+        "10.53.735.46",
+        "10.53.735.47",
+        "10.53.735.48",
+        "10.53.735.49",
+        "10.53.735.50",
+        "10.53.735.51",
+        "10.53.735.52",
+        "10.53.735.53",
+        "10.53.735.54",
+        "10.53.735.55",
+        "10.53.735.56",
+        "10.53.735.57",
+        "10.53.735.58",
+        "10.53.735.59",
+        "10.53.735.60",
+        "10.53.735.61",
+        "10.53.735.62"
+    ],
+    "routeAddress": "10.53.735.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.735.65",
+        "10.53.735.66",
+        "10.53.735.67",
+        "10.53.735.68",
+        "10.53.735.69",
+        "10.53.735.70",
+        "10.53.735.71",
+        "10.53.735.72",
+        "10.53.735.73",
+        "10.53.735.74",
+        "10.53.735.75",
+        "10.53.735.76",
+        "10.53.735.77",
+        "10.53.735.78",
+        "10.53.735.79",
+        "10.53.735.80",
+        "10.53.735.81",
+        "10.53.735.82",
+        "10.53.735.83",
+        "10.53.735.84",
+        "10.53.735.85",
+        "10.53.735.86",
+        "10.53.735.87",
+        "10.53.735.88",
+        "10.53.735.89",
+        "10.53.735.90",
+        "10.53.735.91",
+        "10.53.735.92",
+        "10.53.735.93",
+        "10.53.735.94"
+    ],
+    "corporateAddress": "10.53.735.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.735.97",
+        "10.53.735.98",
+        "10.53.735.99",
+        "10.53.735.100",
+        "10.53.735.101",
+        "10.53.735.102",
+        "10.53.735.103",
+        "10.53.735.104",
+        "10.53.735.105",
+        "10.53.735.106",
+        "10.53.735.107",
+        "10.53.735.108",
+        "10.53.735.109",
+        "10.53.735.110",
+        "10.53.735.111",
+        "10.53.735.112",
+        "10.53.735.113",
+        "10.53.735.114",
+        "10.53.735.115",
+        "10.53.735.116",
+        "10.53.735.117",
+        "10.53.735.118",
+        "10.53.735.119",
+        "10.53.735.120",
+        "10.53.735.121",
+        "10.53.735.122",
+        "10.53.735.123",
+        "10.53.735.124",
+        "10.53.735.125"
+    ],
+    "latitude": 28.952,
+    "longitude": -97.887,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.97",
+            "ipAddress": "10.53.735.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..Firewall 735",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.952,
+            "Longitude": -97.887
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.98",
+            "ipAddress": "10.53.735.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..Router 735",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.1",
+            "ipAddress": "10.53.735.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE.OT.Switch 1469",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.99",
+            "ipAddress": "10.53.735.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE.Corporate.Switch 1470",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.3",
+            "ipAddress": "10.53.735.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.2",
+            "ipAddress": "10.53.735.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..RC 735",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.735.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.100",
+            "ipAddress": "10.53.735.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..Host 1469",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.100",
+            "ipAddress": "10.53.735.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..Host 1470",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.100",
+            "ipAddress": "10.53.735.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..LocalDatabase 1469",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.100",
+            "ipAddress": "10.53.735.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..LocalWebServer 1470",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.RUNGE..RC 735",
+            "destination": "Utility 1.RUNGE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.RUNGE..Router 735",
+            "destination": "Utility 1.RUNGE..Firewall 735",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.RUNGE..Firewall 735",
+            "destination": "Utility 1.RUNGE.OT.Switch 1469",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.RUNGE.OT.Switch 1469",
+            "destination": "Utility 1.RUNGE..RC 735",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.RUNGE..Firewall 735",
+            "destination": "Utility 1.RUNGE.Corporate.Switch 1470",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.RUNGE.Corporate.Switch 1470",
+            "destination": "Utility 1.RUNGE..Host 1469",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.RUNGE.Corporate.Switch 1470",
+            "destination": "Utility 1.RUNGE..Host 1470",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.RUNGE.Corporate.Switch 1470",
+            "destination": "Utility 1.RUNGE..LocalDatabase 1469",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.RUNGE.Corporate.Switch 1470",
+            "destination": "Utility 1.RUNGE..LocalWebServer 1470",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.1",
+            "ipAddress": "10.53.735.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE.OT.Switch 1469",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.2",
+            "ipAddress": "10.53.735.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..RC 735",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.735.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.97",
+            "ipAddress": "10.53.735.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..Firewall 735",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.952,
+            "Longitude": -97.887
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.98",
+            "ipAddress": "10.53.735.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..Router 735",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.1",
+            "ipAddress": "10.53.735.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE.OT.Switch 1469",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.735.2",
+            "ipAddress": "10.53.735.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RUNGE",
+            "label": "Utility 1.RUNGE..RC 735",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.735.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

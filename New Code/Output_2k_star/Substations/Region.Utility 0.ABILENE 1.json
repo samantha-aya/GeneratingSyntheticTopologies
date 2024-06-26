@@ -1,0 +1,670 @@
+{
+    "relayCounter": 5,
+    "label": "Region.Utility 0.ABILENE 1",
+    "networkLan": "10.52.194.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "ABILENE 1",
+    "substationNumber": 194,
+    "OTAddress": "10.52.194.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.194.1",
+        "10.52.194.2",
+        "10.52.194.3",
+        "10.52.194.4",
+        "10.52.194.5",
+        "10.52.194.6",
+        "10.52.194.7",
+        "10.52.194.8",
+        "10.52.194.9",
+        "10.52.194.10",
+        "10.52.194.11",
+        "10.52.194.12",
+        "10.52.194.13",
+        "10.52.194.14",
+        "10.52.194.15",
+        "10.52.194.16",
+        "10.52.194.17",
+        "10.52.194.18",
+        "10.52.194.19",
+        "10.52.194.20",
+        "10.52.194.21",
+        "10.52.194.22",
+        "10.52.194.23",
+        "10.52.194.24",
+        "10.52.194.25",
+        "10.52.194.26",
+        "10.52.194.27",
+        "10.52.194.28",
+        "10.52.194.29",
+        "10.52.194.30",
+        "10.52.194.31",
+        "10.52.194.32",
+        "10.52.194.33",
+        "10.52.194.34",
+        "10.52.194.35",
+        "10.52.194.36",
+        "10.52.194.37",
+        "10.52.194.38",
+        "10.52.194.39",
+        "10.52.194.40",
+        "10.52.194.41",
+        "10.52.194.42",
+        "10.52.194.43",
+        "10.52.194.44",
+        "10.52.194.45",
+        "10.52.194.46",
+        "10.52.194.47",
+        "10.52.194.48",
+        "10.52.194.49",
+        "10.52.194.50",
+        "10.52.194.51",
+        "10.52.194.52",
+        "10.52.194.53",
+        "10.52.194.54",
+        "10.52.194.55",
+        "10.52.194.56",
+        "10.52.194.57",
+        "10.52.194.58",
+        "10.52.194.59",
+        "10.52.194.60",
+        "10.52.194.61",
+        "10.52.194.62"
+    ],
+    "routeAddress": "10.52.194.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.194.65",
+        "10.52.194.66",
+        "10.52.194.67",
+        "10.52.194.68",
+        "10.52.194.69",
+        "10.52.194.70",
+        "10.52.194.71",
+        "10.52.194.72",
+        "10.52.194.73",
+        "10.52.194.74",
+        "10.52.194.75",
+        "10.52.194.76",
+        "10.52.194.77",
+        "10.52.194.78",
+        "10.52.194.79",
+        "10.52.194.80",
+        "10.52.194.81",
+        "10.52.194.82",
+        "10.52.194.83",
+        "10.52.194.84",
+        "10.52.194.85",
+        "10.52.194.86",
+        "10.52.194.87",
+        "10.52.194.88",
+        "10.52.194.89",
+        "10.52.194.90",
+        "10.52.194.91",
+        "10.52.194.92",
+        "10.52.194.93",
+        "10.52.194.94"
+    ],
+    "corporateAddress": "10.52.194.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.194.97",
+        "10.52.194.98",
+        "10.52.194.99",
+        "10.52.194.100",
+        "10.52.194.101",
+        "10.52.194.102",
+        "10.52.194.103",
+        "10.52.194.104",
+        "10.52.194.105",
+        "10.52.194.106",
+        "10.52.194.107",
+        "10.52.194.108",
+        "10.52.194.109",
+        "10.52.194.110",
+        "10.52.194.111",
+        "10.52.194.112",
+        "10.52.194.113",
+        "10.52.194.114",
+        "10.52.194.115",
+        "10.52.194.116",
+        "10.52.194.117",
+        "10.52.194.118",
+        "10.52.194.119",
+        "10.52.194.120",
+        "10.52.194.121",
+        "10.52.194.122",
+        "10.52.194.123",
+        "10.52.194.124",
+        "10.52.194.125"
+    ],
+    "latitude": 32.514,
+    "longitude": -99.656,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.97",
+            "ipAddress": "10.52.194.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Firewall 194",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.514,
+            "Longitude": -99.656
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.98",
+            "ipAddress": "10.52.194.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Router 194",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.1",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1.OT.Switch 387",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.99",
+            "ipAddress": "10.52.194.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1.Corporate.Switch 388",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.3",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.4",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.5",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.6",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.7",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.2",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..RC 194",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.194.3",
+                "10.52.194.4",
+                "10.52.194.5",
+                "10.52.194.6",
+                "10.52.194.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.100",
+            "ipAddress": "10.52.194.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Host 387",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.100",
+            "ipAddress": "10.52.194.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Host 388",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.100",
+            "ipAddress": "10.52.194.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..LocalDatabase 387",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.100",
+            "ipAddress": "10.52.194.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..LocalWebServer 388",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.ABILENE 1..RC 194",
+            "destination": "Utility 0.ABILENE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1..RC 194",
+            "destination": "Utility 0.ABILENE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1..RC 194",
+            "destination": "Utility 0.ABILENE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1..RC 194",
+            "destination": "Utility 0.ABILENE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1..RC 194",
+            "destination": "Utility 0.ABILENE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1..Router 194",
+            "destination": "Utility 0.ABILENE 1..Firewall 194",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1..Firewall 194",
+            "destination": "Utility 0.ABILENE 1.OT.Switch 387",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1.OT.Switch 387",
+            "destination": "Utility 0.ABILENE 1..RC 194",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1..Firewall 194",
+            "destination": "Utility 0.ABILENE 1.Corporate.Switch 388",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1.Corporate.Switch 388",
+            "destination": "Utility 0.ABILENE 1..Host 387",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1.Corporate.Switch 388",
+            "destination": "Utility 0.ABILENE 1..Host 388",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1.Corporate.Switch 388",
+            "destination": "Utility 0.ABILENE 1..LocalDatabase 387",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ABILENE 1.Corporate.Switch 388",
+            "destination": "Utility 0.ABILENE 1..LocalWebServer 388",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.1",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1.OT.Switch 387",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.2",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..RC 194",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.194.3",
+                "10.52.194.4",
+                "10.52.194.5",
+                "10.52.194.6",
+                "10.52.194.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.97",
+            "ipAddress": "10.52.194.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Firewall 194",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.514,
+            "Longitude": -99.656
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.98",
+            "ipAddress": "10.52.194.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..Router 194",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.1",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1.OT.Switch 387",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.194.2",
+            "ipAddress": "10.52.194.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 1",
+            "label": "Utility 0.ABILENE 1..RC 194",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.194.3",
+                "10.52.194.4",
+                "10.52.194.5",
+                "10.52.194.6",
+                "10.52.194.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 150.0,
+    "genmvar": 30.83,
+    "connecting_TS_num": 201
+}

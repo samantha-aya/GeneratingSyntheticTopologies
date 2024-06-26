@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 43.DESOTO",
+    "networkLan": "10.148.475.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 43",
+    "utility_id": 148,
+    "substation": "DESOTO",
+    "substationNumber": 475,
+    "OTAddress": "10.148.475.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.148.475.1",
+        "10.148.475.2",
+        "10.148.475.3",
+        "10.148.475.4",
+        "10.148.475.5",
+        "10.148.475.6",
+        "10.148.475.7",
+        "10.148.475.8",
+        "10.148.475.9",
+        "10.148.475.10",
+        "10.148.475.11",
+        "10.148.475.12",
+        "10.148.475.13",
+        "10.148.475.14",
+        "10.148.475.15",
+        "10.148.475.16",
+        "10.148.475.17",
+        "10.148.475.18",
+        "10.148.475.19",
+        "10.148.475.20",
+        "10.148.475.21",
+        "10.148.475.22",
+        "10.148.475.23",
+        "10.148.475.24",
+        "10.148.475.25",
+        "10.148.475.26",
+        "10.148.475.27",
+        "10.148.475.28",
+        "10.148.475.29",
+        "10.148.475.30",
+        "10.148.475.31",
+        "10.148.475.32",
+        "10.148.475.33",
+        "10.148.475.34",
+        "10.148.475.35",
+        "10.148.475.36",
+        "10.148.475.37",
+        "10.148.475.38",
+        "10.148.475.39",
+        "10.148.475.40",
+        "10.148.475.41",
+        "10.148.475.42",
+        "10.148.475.43",
+        "10.148.475.44",
+        "10.148.475.45",
+        "10.148.475.46",
+        "10.148.475.47",
+        "10.148.475.48",
+        "10.148.475.49",
+        "10.148.475.50",
+        "10.148.475.51",
+        "10.148.475.52",
+        "10.148.475.53",
+        "10.148.475.54",
+        "10.148.475.55",
+        "10.148.475.56",
+        "10.148.475.57",
+        "10.148.475.58",
+        "10.148.475.59",
+        "10.148.475.60",
+        "10.148.475.61",
+        "10.148.475.62"
+    ],
+    "routeAddress": "10.148.475.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.148.475.65",
+        "10.148.475.66",
+        "10.148.475.67",
+        "10.148.475.68",
+        "10.148.475.69",
+        "10.148.475.70",
+        "10.148.475.71",
+        "10.148.475.72",
+        "10.148.475.73",
+        "10.148.475.74",
+        "10.148.475.75",
+        "10.148.475.76",
+        "10.148.475.77",
+        "10.148.475.78",
+        "10.148.475.79",
+        "10.148.475.80",
+        "10.148.475.81",
+        "10.148.475.82",
+        "10.148.475.83",
+        "10.148.475.84",
+        "10.148.475.85",
+        "10.148.475.86",
+        "10.148.475.87",
+        "10.148.475.88",
+        "10.148.475.89",
+        "10.148.475.90",
+        "10.148.475.91",
+        "10.148.475.92",
+        "10.148.475.93",
+        "10.148.475.94"
+    ],
+    "corporateAddress": "10.148.475.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.148.475.97",
+        "10.148.475.98",
+        "10.148.475.99",
+        "10.148.475.100",
+        "10.148.475.101",
+        "10.148.475.102",
+        "10.148.475.103",
+        "10.148.475.104",
+        "10.148.475.105",
+        "10.148.475.106",
+        "10.148.475.107",
+        "10.148.475.108",
+        "10.148.475.109",
+        "10.148.475.110",
+        "10.148.475.111",
+        "10.148.475.112",
+        "10.148.475.113",
+        "10.148.475.114",
+        "10.148.475.115",
+        "10.148.475.116",
+        "10.148.475.117",
+        "10.148.475.118",
+        "10.148.475.119",
+        "10.148.475.120",
+        "10.148.475.121",
+        "10.148.475.122",
+        "10.148.475.123",
+        "10.148.475.124",
+        "10.148.475.125"
+    ],
+    "latitude": 32.599,
+    "longitude": -96.864,
+    "nodes": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.97",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..Firewall 475",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.599,
+            "Longitude": -96.864
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.98",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..Router 475",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.1",
+            "ipAddress": "10.148.475.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO.OT.Switch 949",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.99",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO.Corporate.Switch 950",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.3",
+            "ipAddress": "10.148.475.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.2",
+            "ipAddress": "10.148.475.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..RC 475",
+            "compromised": false,
+            "relayIPlist": [
+                "10.148.475.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.100",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..Host 949",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.100",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..Host 950",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.100",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..LocalDatabase 949",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.100",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..LocalWebServer 950",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.101",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..hmi 949",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.100",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..outstation 950",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 43.DESOTO..RC 475",
+            "destination": "Utility 43.DESOTO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DESOTO..Router 475",
+            "destination": "Utility 43.DESOTO..Firewall 475",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DESOTO..Firewall 475",
+            "destination": "Utility 43.DESOTO.OT.Switch 949",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DESOTO.OT.Switch 949",
+            "destination": "Utility 43.DESOTO..RC 475",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DESOTO..Firewall 475",
+            "destination": "Utility 43.DESOTO.Corporate.Switch 950",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DESOTO.Corporate.Switch 950",
+            "destination": "Utility 43.DESOTO..Host 949",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DESOTO.Corporate.Switch 950",
+            "destination": "Utility 43.DESOTO..Host 950",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DESOTO.Corporate.Switch 950",
+            "destination": "Utility 43.DESOTO..LocalDatabase 949",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DESOTO.Corporate.Switch 950",
+            "destination": "Utility 43.DESOTO..LocalWebServer 950",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.1",
+            "ipAddress": "10.148.475.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO.OT.Switch 949",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.2",
+            "ipAddress": "10.148.475.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..RC 475",
+            "compromised": false,
+            "relayIPlist": [
+                "10.148.475.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.97",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..Firewall 475",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.599,
+            "Longitude": -96.864
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.98",
+            "ipAddress": "10.148.475.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..Router 475",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.1",
+            "ipAddress": "10.148.475.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO.OT.Switch 949",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.475.2",
+            "ipAddress": "10.148.475.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DESOTO",
+            "label": "Utility 43.DESOTO..RC 475",
+            "compromised": false,
+            "relayIPlist": [
+                "10.148.475.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

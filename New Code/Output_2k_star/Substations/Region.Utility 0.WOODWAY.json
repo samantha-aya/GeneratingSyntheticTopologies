@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.WOODWAY",
+    "networkLan": "10.52.701.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "WOODWAY",
+    "substationNumber": 701,
+    "OTAddress": "10.52.701.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.701.1",
+        "10.52.701.2",
+        "10.52.701.3",
+        "10.52.701.4",
+        "10.52.701.5",
+        "10.52.701.6",
+        "10.52.701.7",
+        "10.52.701.8",
+        "10.52.701.9",
+        "10.52.701.10",
+        "10.52.701.11",
+        "10.52.701.12",
+        "10.52.701.13",
+        "10.52.701.14",
+        "10.52.701.15",
+        "10.52.701.16",
+        "10.52.701.17",
+        "10.52.701.18",
+        "10.52.701.19",
+        "10.52.701.20",
+        "10.52.701.21",
+        "10.52.701.22",
+        "10.52.701.23",
+        "10.52.701.24",
+        "10.52.701.25",
+        "10.52.701.26",
+        "10.52.701.27",
+        "10.52.701.28",
+        "10.52.701.29",
+        "10.52.701.30",
+        "10.52.701.31",
+        "10.52.701.32",
+        "10.52.701.33",
+        "10.52.701.34",
+        "10.52.701.35",
+        "10.52.701.36",
+        "10.52.701.37",
+        "10.52.701.38",
+        "10.52.701.39",
+        "10.52.701.40",
+        "10.52.701.41",
+        "10.52.701.42",
+        "10.52.701.43",
+        "10.52.701.44",
+        "10.52.701.45",
+        "10.52.701.46",
+        "10.52.701.47",
+        "10.52.701.48",
+        "10.52.701.49",
+        "10.52.701.50",
+        "10.52.701.51",
+        "10.52.701.52",
+        "10.52.701.53",
+        "10.52.701.54",
+        "10.52.701.55",
+        "10.52.701.56",
+        "10.52.701.57",
+        "10.52.701.58",
+        "10.52.701.59",
+        "10.52.701.60",
+        "10.52.701.61",
+        "10.52.701.62"
+    ],
+    "routeAddress": "10.52.701.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.701.65",
+        "10.52.701.66",
+        "10.52.701.67",
+        "10.52.701.68",
+        "10.52.701.69",
+        "10.52.701.70",
+        "10.52.701.71",
+        "10.52.701.72",
+        "10.52.701.73",
+        "10.52.701.74",
+        "10.52.701.75",
+        "10.52.701.76",
+        "10.52.701.77",
+        "10.52.701.78",
+        "10.52.701.79",
+        "10.52.701.80",
+        "10.52.701.81",
+        "10.52.701.82",
+        "10.52.701.83",
+        "10.52.701.84",
+        "10.52.701.85",
+        "10.52.701.86",
+        "10.52.701.87",
+        "10.52.701.88",
+        "10.52.701.89",
+        "10.52.701.90",
+        "10.52.701.91",
+        "10.52.701.92",
+        "10.52.701.93",
+        "10.52.701.94"
+    ],
+    "corporateAddress": "10.52.701.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.701.97",
+        "10.52.701.98",
+        "10.52.701.99",
+        "10.52.701.100",
+        "10.52.701.101",
+        "10.52.701.102",
+        "10.52.701.103",
+        "10.52.701.104",
+        "10.52.701.105",
+        "10.52.701.106",
+        "10.52.701.107",
+        "10.52.701.108",
+        "10.52.701.109",
+        "10.52.701.110",
+        "10.52.701.111",
+        "10.52.701.112",
+        "10.52.701.113",
+        "10.52.701.114",
+        "10.52.701.115",
+        "10.52.701.116",
+        "10.52.701.117",
+        "10.52.701.118",
+        "10.52.701.119",
+        "10.52.701.120",
+        "10.52.701.121",
+        "10.52.701.122",
+        "10.52.701.123",
+        "10.52.701.124",
+        "10.52.701.125"
+    ],
+    "latitude": 31.53,
+    "longitude": -97.26,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.97",
+            "ipAddress": "10.52.701.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..Firewall 701",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.53,
+            "Longitude": -97.26
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.98",
+            "ipAddress": "10.52.701.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..Router 701",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.1",
+            "ipAddress": "10.52.701.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY.OT.Switch 1401",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.99",
+            "ipAddress": "10.52.701.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY.Corporate.Switch 1402",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.3",
+            "ipAddress": "10.52.701.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.2",
+            "ipAddress": "10.52.701.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..RC 701",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.701.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.100",
+            "ipAddress": "10.52.701.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..Host 1401",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.100",
+            "ipAddress": "10.52.701.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..Host 1402",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.100",
+            "ipAddress": "10.52.701.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..LocalDatabase 1401",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.100",
+            "ipAddress": "10.52.701.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..LocalWebServer 1402",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.WOODWAY..RC 701",
+            "destination": "Utility 0.WOODWAY..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.WOODWAY..Router 701",
+            "destination": "Utility 0.WOODWAY..Firewall 701",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.WOODWAY..Firewall 701",
+            "destination": "Utility 0.WOODWAY.OT.Switch 1401",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.WOODWAY.OT.Switch 1401",
+            "destination": "Utility 0.WOODWAY..RC 701",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.WOODWAY..Firewall 701",
+            "destination": "Utility 0.WOODWAY.Corporate.Switch 1402",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.WOODWAY.Corporate.Switch 1402",
+            "destination": "Utility 0.WOODWAY..Host 1401",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.WOODWAY.Corporate.Switch 1402",
+            "destination": "Utility 0.WOODWAY..Host 1402",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.WOODWAY.Corporate.Switch 1402",
+            "destination": "Utility 0.WOODWAY..LocalDatabase 1401",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.WOODWAY.Corporate.Switch 1402",
+            "destination": "Utility 0.WOODWAY..LocalWebServer 1402",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.1",
+            "ipAddress": "10.52.701.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY.OT.Switch 1401",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.2",
+            "ipAddress": "10.52.701.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..RC 701",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.701.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.97",
+            "ipAddress": "10.52.701.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..Firewall 701",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.53,
+            "Longitude": -97.26
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.98",
+            "ipAddress": "10.52.701.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..Router 701",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.1",
+            "ipAddress": "10.52.701.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY.OT.Switch 1401",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.701.2",
+            "ipAddress": "10.52.701.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WOODWAY",
+            "label": "Utility 0.WOODWAY..RC 701",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.701.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

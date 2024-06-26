@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 60.GORDONVILLE",
+    "networkLan": "10.78.79.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 60",
+    "utility_id": 78,
+    "substation": "GORDONVILLE",
+    "substationNumber": 79,
+    "OTAddress": "10.78.79.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.78.79.1",
+        "10.78.79.2",
+        "10.78.79.3",
+        "10.78.79.4",
+        "10.78.79.5",
+        "10.78.79.6",
+        "10.78.79.7",
+        "10.78.79.8",
+        "10.78.79.9",
+        "10.78.79.10",
+        "10.78.79.11",
+        "10.78.79.12",
+        "10.78.79.13",
+        "10.78.79.14",
+        "10.78.79.15",
+        "10.78.79.16",
+        "10.78.79.17",
+        "10.78.79.18",
+        "10.78.79.19",
+        "10.78.79.20",
+        "10.78.79.21",
+        "10.78.79.22",
+        "10.78.79.23",
+        "10.78.79.24",
+        "10.78.79.25",
+        "10.78.79.26",
+        "10.78.79.27",
+        "10.78.79.28",
+        "10.78.79.29",
+        "10.78.79.30",
+        "10.78.79.31",
+        "10.78.79.32",
+        "10.78.79.33",
+        "10.78.79.34",
+        "10.78.79.35",
+        "10.78.79.36",
+        "10.78.79.37",
+        "10.78.79.38",
+        "10.78.79.39",
+        "10.78.79.40",
+        "10.78.79.41",
+        "10.78.79.42",
+        "10.78.79.43",
+        "10.78.79.44",
+        "10.78.79.45",
+        "10.78.79.46",
+        "10.78.79.47",
+        "10.78.79.48",
+        "10.78.79.49",
+        "10.78.79.50",
+        "10.78.79.51",
+        "10.78.79.52",
+        "10.78.79.53",
+        "10.78.79.54",
+        "10.78.79.55",
+        "10.78.79.56",
+        "10.78.79.57",
+        "10.78.79.58",
+        "10.78.79.59",
+        "10.78.79.60",
+        "10.78.79.61",
+        "10.78.79.62"
+    ],
+    "routeAddress": "10.78.79.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.78.79.65",
+        "10.78.79.66",
+        "10.78.79.67",
+        "10.78.79.68",
+        "10.78.79.69",
+        "10.78.79.70",
+        "10.78.79.71",
+        "10.78.79.72",
+        "10.78.79.73",
+        "10.78.79.74",
+        "10.78.79.75",
+        "10.78.79.76",
+        "10.78.79.77",
+        "10.78.79.78",
+        "10.78.79.79",
+        "10.78.79.80",
+        "10.78.79.81",
+        "10.78.79.82",
+        "10.78.79.83",
+        "10.78.79.84",
+        "10.78.79.85",
+        "10.78.79.86",
+        "10.78.79.87",
+        "10.78.79.88",
+        "10.78.79.89",
+        "10.78.79.90",
+        "10.78.79.91",
+        "10.78.79.92",
+        "10.78.79.93",
+        "10.78.79.94"
+    ],
+    "corporateAddress": "10.78.79.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.78.79.97",
+        "10.78.79.98",
+        "10.78.79.99",
+        "10.78.79.100",
+        "10.78.79.101",
+        "10.78.79.102",
+        "10.78.79.103",
+        "10.78.79.104",
+        "10.78.79.105",
+        "10.78.79.106",
+        "10.78.79.107",
+        "10.78.79.108",
+        "10.78.79.109",
+        "10.78.79.110",
+        "10.78.79.111",
+        "10.78.79.112",
+        "10.78.79.113",
+        "10.78.79.114",
+        "10.78.79.115",
+        "10.78.79.116",
+        "10.78.79.117",
+        "10.78.79.118",
+        "10.78.79.119",
+        "10.78.79.120",
+        "10.78.79.121",
+        "10.78.79.122",
+        "10.78.79.123",
+        "10.78.79.124",
+        "10.78.79.125"
+    ],
+    "latitude": 33.831,
+    "longitude": -96.84,
+    "nodes": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.97",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..Firewall 79",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.831,
+            "Longitude": -96.84
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.98",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..Router 79",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.1",
+            "ipAddress": "10.78.79.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE.OT.Switch 157",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.99",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE.Corporate.Switch 158",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.3",
+            "ipAddress": "10.78.79.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.2",
+            "ipAddress": "10.78.79.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..RC 79",
+            "compromised": false,
+            "relayIPlist": [
+                "10.78.79.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.100",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..Host 157",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.100",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..Host 158",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.100",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..LocalDatabase 157",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.100",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..LocalWebServer 158",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.101",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..hmi 157",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.100",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..outstation 158",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 60.GORDONVILLE..RC 79",
+            "destination": "Utility 60.GORDONVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.GORDONVILLE..Router 79",
+            "destination": "Utility 60.GORDONVILLE..Firewall 79",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.GORDONVILLE..Firewall 79",
+            "destination": "Utility 60.GORDONVILLE.OT.Switch 157",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.GORDONVILLE.OT.Switch 157",
+            "destination": "Utility 60.GORDONVILLE..RC 79",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.GORDONVILLE..Firewall 79",
+            "destination": "Utility 60.GORDONVILLE.Corporate.Switch 158",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.GORDONVILLE.Corporate.Switch 158",
+            "destination": "Utility 60.GORDONVILLE..Host 157",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.GORDONVILLE.Corporate.Switch 158",
+            "destination": "Utility 60.GORDONVILLE..Host 158",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.GORDONVILLE.Corporate.Switch 158",
+            "destination": "Utility 60.GORDONVILLE..LocalDatabase 157",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.GORDONVILLE.Corporate.Switch 158",
+            "destination": "Utility 60.GORDONVILLE..LocalWebServer 158",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.1",
+            "ipAddress": "10.78.79.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE.OT.Switch 157",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.2",
+            "ipAddress": "10.78.79.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..RC 79",
+            "compromised": false,
+            "relayIPlist": [
+                "10.78.79.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.97",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..Firewall 79",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.831,
+            "Longitude": -96.84
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.98",
+            "ipAddress": "10.78.79.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..Router 79",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.1",
+            "ipAddress": "10.78.79.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE.OT.Switch 157",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.79.2",
+            "ipAddress": "10.78.79.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDONVILLE",
+            "label": "Utility 60.GORDONVILLE..RC 79",
+            "compromised": false,
+            "relayIPlist": [
+                "10.78.79.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

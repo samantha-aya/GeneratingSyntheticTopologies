@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 5.ELECTRA",
+    "networkLan": "10.53.93.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 5",
+    "utility_id": 53,
+    "substation": "ELECTRA",
+    "substationNumber": 93,
+    "OTAddress": "10.53.93.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.93.1",
+        "10.53.93.2",
+        "10.53.93.3",
+        "10.53.93.4",
+        "10.53.93.5",
+        "10.53.93.6",
+        "10.53.93.7",
+        "10.53.93.8",
+        "10.53.93.9",
+        "10.53.93.10",
+        "10.53.93.11",
+        "10.53.93.12",
+        "10.53.93.13",
+        "10.53.93.14",
+        "10.53.93.15",
+        "10.53.93.16",
+        "10.53.93.17",
+        "10.53.93.18",
+        "10.53.93.19",
+        "10.53.93.20",
+        "10.53.93.21",
+        "10.53.93.22",
+        "10.53.93.23",
+        "10.53.93.24",
+        "10.53.93.25",
+        "10.53.93.26",
+        "10.53.93.27",
+        "10.53.93.28",
+        "10.53.93.29",
+        "10.53.93.30",
+        "10.53.93.31",
+        "10.53.93.32",
+        "10.53.93.33",
+        "10.53.93.34",
+        "10.53.93.35",
+        "10.53.93.36",
+        "10.53.93.37",
+        "10.53.93.38",
+        "10.53.93.39",
+        "10.53.93.40",
+        "10.53.93.41",
+        "10.53.93.42",
+        "10.53.93.43",
+        "10.53.93.44",
+        "10.53.93.45",
+        "10.53.93.46",
+        "10.53.93.47",
+        "10.53.93.48",
+        "10.53.93.49",
+        "10.53.93.50",
+        "10.53.93.51",
+        "10.53.93.52",
+        "10.53.93.53",
+        "10.53.93.54",
+        "10.53.93.55",
+        "10.53.93.56",
+        "10.53.93.57",
+        "10.53.93.58",
+        "10.53.93.59",
+        "10.53.93.60",
+        "10.53.93.61",
+        "10.53.93.62"
+    ],
+    "routeAddress": "10.53.93.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.93.65",
+        "10.53.93.66",
+        "10.53.93.67",
+        "10.53.93.68",
+        "10.53.93.69",
+        "10.53.93.70",
+        "10.53.93.71",
+        "10.53.93.72",
+        "10.53.93.73",
+        "10.53.93.74",
+        "10.53.93.75",
+        "10.53.93.76",
+        "10.53.93.77",
+        "10.53.93.78",
+        "10.53.93.79",
+        "10.53.93.80",
+        "10.53.93.81",
+        "10.53.93.82",
+        "10.53.93.83",
+        "10.53.93.84",
+        "10.53.93.85",
+        "10.53.93.86",
+        "10.53.93.87",
+        "10.53.93.88",
+        "10.53.93.89",
+        "10.53.93.90",
+        "10.53.93.91",
+        "10.53.93.92",
+        "10.53.93.93",
+        "10.53.93.94"
+    ],
+    "corporateAddress": "10.53.93.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.93.97",
+        "10.53.93.98",
+        "10.53.93.99",
+        "10.53.93.100",
+        "10.53.93.101",
+        "10.53.93.102",
+        "10.53.93.103",
+        "10.53.93.104",
+        "10.53.93.105",
+        "10.53.93.106",
+        "10.53.93.107",
+        "10.53.93.108",
+        "10.53.93.109",
+        "10.53.93.110",
+        "10.53.93.111",
+        "10.53.93.112",
+        "10.53.93.113",
+        "10.53.93.114",
+        "10.53.93.115",
+        "10.53.93.116",
+        "10.53.93.117",
+        "10.53.93.118",
+        "10.53.93.119",
+        "10.53.93.120",
+        "10.53.93.121",
+        "10.53.93.122",
+        "10.53.93.123",
+        "10.53.93.124",
+        "10.53.93.125"
+    ],
+    "latitude": 34.132,
+    "longitude": -99.107,
+    "nodes": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.97",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..Firewall 93",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 34.132,
+            "Longitude": -99.107
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.98",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..Router 93",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.1",
+            "ipAddress": "10.53.93.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA.OT.Switch 185",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.99",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA.Corporate.Switch 186",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.3",
+            "ipAddress": "10.53.93.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.2",
+            "ipAddress": "10.53.93.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..RC 93",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.93.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.100",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..Host 185",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.100",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..Host 186",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.100",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..LocalDatabase 185",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.100",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..LocalWebServer 186",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.101",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..hmi 185",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.100",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..outstation 186",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 5.ELECTRA..RC 93",
+            "destination": "Utility 5.ELECTRA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ELECTRA..Router 93",
+            "destination": "Utility 5.ELECTRA..Firewall 93",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ELECTRA..Firewall 93",
+            "destination": "Utility 5.ELECTRA.OT.Switch 185",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ELECTRA.OT.Switch 185",
+            "destination": "Utility 5.ELECTRA..RC 93",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ELECTRA..Firewall 93",
+            "destination": "Utility 5.ELECTRA.Corporate.Switch 186",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ELECTRA.Corporate.Switch 186",
+            "destination": "Utility 5.ELECTRA..Host 185",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ELECTRA.Corporate.Switch 186",
+            "destination": "Utility 5.ELECTRA..Host 186",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ELECTRA.Corporate.Switch 186",
+            "destination": "Utility 5.ELECTRA..LocalDatabase 185",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ELECTRA.Corporate.Switch 186",
+            "destination": "Utility 5.ELECTRA..LocalWebServer 186",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.1",
+            "ipAddress": "10.53.93.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA.OT.Switch 185",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.2",
+            "ipAddress": "10.53.93.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..RC 93",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.93.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.97",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..Firewall 93",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 34.132,
+            "Longitude": -99.107
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.98",
+            "ipAddress": "10.53.93.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..Router 93",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.1",
+            "ipAddress": "10.53.93.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA.OT.Switch 185",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.93.2",
+            "ipAddress": "10.53.93.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELECTRA",
+            "label": "Utility 5.ELECTRA..RC 93",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.93.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

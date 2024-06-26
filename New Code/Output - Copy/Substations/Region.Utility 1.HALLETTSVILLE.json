@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.HALLETTSVILLE",
+    "networkLan": "10.58.775.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 58,
+    "substation": "HALLETTSVILLE",
+    "substationNumber": 775,
+    "OTAddress": "10.58.775.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.58.775.1",
+        "10.58.775.2",
+        "10.58.775.3",
+        "10.58.775.4",
+        "10.58.775.5",
+        "10.58.775.6",
+        "10.58.775.7",
+        "10.58.775.8",
+        "10.58.775.9",
+        "10.58.775.10",
+        "10.58.775.11",
+        "10.58.775.12",
+        "10.58.775.13",
+        "10.58.775.14",
+        "10.58.775.15",
+        "10.58.775.16",
+        "10.58.775.17",
+        "10.58.775.18",
+        "10.58.775.19",
+        "10.58.775.20",
+        "10.58.775.21",
+        "10.58.775.22",
+        "10.58.775.23",
+        "10.58.775.24",
+        "10.58.775.25",
+        "10.58.775.26",
+        "10.58.775.27",
+        "10.58.775.28",
+        "10.58.775.29",
+        "10.58.775.30",
+        "10.58.775.31",
+        "10.58.775.32",
+        "10.58.775.33",
+        "10.58.775.34",
+        "10.58.775.35",
+        "10.58.775.36",
+        "10.58.775.37",
+        "10.58.775.38",
+        "10.58.775.39",
+        "10.58.775.40",
+        "10.58.775.41",
+        "10.58.775.42",
+        "10.58.775.43",
+        "10.58.775.44",
+        "10.58.775.45",
+        "10.58.775.46",
+        "10.58.775.47",
+        "10.58.775.48",
+        "10.58.775.49",
+        "10.58.775.50",
+        "10.58.775.51",
+        "10.58.775.52",
+        "10.58.775.53",
+        "10.58.775.54",
+        "10.58.775.55",
+        "10.58.775.56",
+        "10.58.775.57",
+        "10.58.775.58",
+        "10.58.775.59",
+        "10.58.775.60",
+        "10.58.775.61",
+        "10.58.775.62"
+    ],
+    "routeAddress": "10.58.775.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.58.775.65",
+        "10.58.775.66",
+        "10.58.775.67",
+        "10.58.775.68",
+        "10.58.775.69",
+        "10.58.775.70",
+        "10.58.775.71",
+        "10.58.775.72",
+        "10.58.775.73",
+        "10.58.775.74",
+        "10.58.775.75",
+        "10.58.775.76",
+        "10.58.775.77",
+        "10.58.775.78",
+        "10.58.775.79",
+        "10.58.775.80",
+        "10.58.775.81",
+        "10.58.775.82",
+        "10.58.775.83",
+        "10.58.775.84",
+        "10.58.775.85",
+        "10.58.775.86",
+        "10.58.775.87",
+        "10.58.775.88",
+        "10.58.775.89",
+        "10.58.775.90",
+        "10.58.775.91",
+        "10.58.775.92",
+        "10.58.775.93",
+        "10.58.775.94"
+    ],
+    "corporateAddress": "10.58.775.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.58.775.97",
+        "10.58.775.98",
+        "10.58.775.99",
+        "10.58.775.100",
+        "10.58.775.101",
+        "10.58.775.102",
+        "10.58.775.103",
+        "10.58.775.104",
+        "10.58.775.105",
+        "10.58.775.106",
+        "10.58.775.107",
+        "10.58.775.108",
+        "10.58.775.109",
+        "10.58.775.110",
+        "10.58.775.111",
+        "10.58.775.112",
+        "10.58.775.113",
+        "10.58.775.114",
+        "10.58.775.115",
+        "10.58.775.116",
+        "10.58.775.117",
+        "10.58.775.118",
+        "10.58.775.119",
+        "10.58.775.120",
+        "10.58.775.121",
+        "10.58.775.122",
+        "10.58.775.123",
+        "10.58.775.124",
+        "10.58.775.125"
+    ],
+    "latitude": 29.38,
+    "longitude": -96.836,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.97",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..Firewall 775",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.38,
+            "Longitude": -96.836
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.98",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..Router 775",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.1",
+            "ipAddress": "10.58.775.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE.OT.Switch 1549",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.99",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE.Corporate.Switch 1550",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.3",
+            "ipAddress": "10.58.775.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.2",
+            "ipAddress": "10.58.775.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..RC 775",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.775.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.100",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..Host 1549",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.100",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..Host 1550",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.100",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..LocalDatabase 1549",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.100",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..LocalWebServer 1550",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.101",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..hmi 1549",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.100",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..outstation 1550",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.HALLETTSVILLE..RC 775",
+            "destination": "Utility 1.HALLETTSVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HALLETTSVILLE..Router 775",
+            "destination": "Utility 1.HALLETTSVILLE..Firewall 775",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HALLETTSVILLE..Firewall 775",
+            "destination": "Utility 1.HALLETTSVILLE.OT.Switch 1549",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HALLETTSVILLE.OT.Switch 1549",
+            "destination": "Utility 1.HALLETTSVILLE..RC 775",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HALLETTSVILLE..Firewall 775",
+            "destination": "Utility 1.HALLETTSVILLE.Corporate.Switch 1550",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HALLETTSVILLE.Corporate.Switch 1550",
+            "destination": "Utility 1.HALLETTSVILLE..Host 1549",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HALLETTSVILLE.Corporate.Switch 1550",
+            "destination": "Utility 1.HALLETTSVILLE..Host 1550",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HALLETTSVILLE.Corporate.Switch 1550",
+            "destination": "Utility 1.HALLETTSVILLE..LocalDatabase 1549",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HALLETTSVILLE.Corporate.Switch 1550",
+            "destination": "Utility 1.HALLETTSVILLE..LocalWebServer 1550",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.1",
+            "ipAddress": "10.58.775.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE.OT.Switch 1549",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.2",
+            "ipAddress": "10.58.775.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..RC 775",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.775.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.97",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..Firewall 775",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.38,
+            "Longitude": -96.836
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.98",
+            "ipAddress": "10.58.775.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..Router 775",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.1",
+            "ipAddress": "10.58.775.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE.OT.Switch 1549",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.775.2",
+            "ipAddress": "10.58.775.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HALLETTSVILLE",
+            "label": "Utility 1.HALLETTSVILLE..RC 775",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.775.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

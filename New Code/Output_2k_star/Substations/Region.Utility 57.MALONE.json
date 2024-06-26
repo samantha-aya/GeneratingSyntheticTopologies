@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 57.MALONE",
+    "networkLan": "10.160.488.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 57",
+    "utility_id": 160,
+    "substation": "MALONE",
+    "substationNumber": 488,
+    "OTAddress": "10.160.488.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.160.488.1",
+        "10.160.488.2",
+        "10.160.488.3",
+        "10.160.488.4",
+        "10.160.488.5",
+        "10.160.488.6",
+        "10.160.488.7",
+        "10.160.488.8",
+        "10.160.488.9",
+        "10.160.488.10",
+        "10.160.488.11",
+        "10.160.488.12",
+        "10.160.488.13",
+        "10.160.488.14",
+        "10.160.488.15",
+        "10.160.488.16",
+        "10.160.488.17",
+        "10.160.488.18",
+        "10.160.488.19",
+        "10.160.488.20",
+        "10.160.488.21",
+        "10.160.488.22",
+        "10.160.488.23",
+        "10.160.488.24",
+        "10.160.488.25",
+        "10.160.488.26",
+        "10.160.488.27",
+        "10.160.488.28",
+        "10.160.488.29",
+        "10.160.488.30",
+        "10.160.488.31",
+        "10.160.488.32",
+        "10.160.488.33",
+        "10.160.488.34",
+        "10.160.488.35",
+        "10.160.488.36",
+        "10.160.488.37",
+        "10.160.488.38",
+        "10.160.488.39",
+        "10.160.488.40",
+        "10.160.488.41",
+        "10.160.488.42",
+        "10.160.488.43",
+        "10.160.488.44",
+        "10.160.488.45",
+        "10.160.488.46",
+        "10.160.488.47",
+        "10.160.488.48",
+        "10.160.488.49",
+        "10.160.488.50",
+        "10.160.488.51",
+        "10.160.488.52",
+        "10.160.488.53",
+        "10.160.488.54",
+        "10.160.488.55",
+        "10.160.488.56",
+        "10.160.488.57",
+        "10.160.488.58",
+        "10.160.488.59",
+        "10.160.488.60",
+        "10.160.488.61",
+        "10.160.488.62"
+    ],
+    "routeAddress": "10.160.488.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.160.488.65",
+        "10.160.488.66",
+        "10.160.488.67",
+        "10.160.488.68",
+        "10.160.488.69",
+        "10.160.488.70",
+        "10.160.488.71",
+        "10.160.488.72",
+        "10.160.488.73",
+        "10.160.488.74",
+        "10.160.488.75",
+        "10.160.488.76",
+        "10.160.488.77",
+        "10.160.488.78",
+        "10.160.488.79",
+        "10.160.488.80",
+        "10.160.488.81",
+        "10.160.488.82",
+        "10.160.488.83",
+        "10.160.488.84",
+        "10.160.488.85",
+        "10.160.488.86",
+        "10.160.488.87",
+        "10.160.488.88",
+        "10.160.488.89",
+        "10.160.488.90",
+        "10.160.488.91",
+        "10.160.488.92",
+        "10.160.488.93",
+        "10.160.488.94"
+    ],
+    "corporateAddress": "10.160.488.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.160.488.97",
+        "10.160.488.98",
+        "10.160.488.99",
+        "10.160.488.100",
+        "10.160.488.101",
+        "10.160.488.102",
+        "10.160.488.103",
+        "10.160.488.104",
+        "10.160.488.105",
+        "10.160.488.106",
+        "10.160.488.107",
+        "10.160.488.108",
+        "10.160.488.109",
+        "10.160.488.110",
+        "10.160.488.111",
+        "10.160.488.112",
+        "10.160.488.113",
+        "10.160.488.114",
+        "10.160.488.115",
+        "10.160.488.116",
+        "10.160.488.117",
+        "10.160.488.118",
+        "10.160.488.119",
+        "10.160.488.120",
+        "10.160.488.121",
+        "10.160.488.122",
+        "10.160.488.123",
+        "10.160.488.124",
+        "10.160.488.125"
+    ],
+    "latitude": 31.925,
+    "longitude": -96.905,
+    "nodes": [
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.97",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..Firewall 488",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.925,
+            "Longitude": -96.905
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.98",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..Router 488",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.1",
+            "ipAddress": "10.160.488.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE.OT.Switch 975",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.99",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE.Corporate.Switch 976",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.3",
+            "ipAddress": "10.160.488.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.2",
+            "ipAddress": "10.160.488.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..RC 488",
+            "compromised": false,
+            "relayIPlist": [
+                "10.160.488.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.100",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..Host 975",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.100",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..Host 976",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.100",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..LocalDatabase 975",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.100",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..LocalWebServer 976",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.101",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..hmi 975",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.100",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..outstation 976",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 57.MALONE..RC 488",
+            "destination": "Utility 57.MALONE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 57.MALONE..Router 488",
+            "destination": "Utility 57.MALONE..Firewall 488",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 57.MALONE..Firewall 488",
+            "destination": "Utility 57.MALONE.OT.Switch 975",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 57.MALONE.OT.Switch 975",
+            "destination": "Utility 57.MALONE..RC 488",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 57.MALONE..Firewall 488",
+            "destination": "Utility 57.MALONE.Corporate.Switch 976",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 57.MALONE.Corporate.Switch 976",
+            "destination": "Utility 57.MALONE..Host 975",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 57.MALONE.Corporate.Switch 976",
+            "destination": "Utility 57.MALONE..Host 976",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 57.MALONE.Corporate.Switch 976",
+            "destination": "Utility 57.MALONE..LocalDatabase 975",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 57.MALONE.Corporate.Switch 976",
+            "destination": "Utility 57.MALONE..LocalWebServer 976",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.1",
+            "ipAddress": "10.160.488.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE.OT.Switch 975",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.2",
+            "ipAddress": "10.160.488.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..RC 488",
+            "compromised": false,
+            "relayIPlist": [
+                "10.160.488.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.97",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..Firewall 488",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.925,
+            "Longitude": -96.905
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.98",
+            "ipAddress": "10.160.488.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..Router 488",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.1",
+            "ipAddress": "10.160.488.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE.OT.Switch 975",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 57",
+            "adminIP": "10.160.488.2",
+            "ipAddress": "10.160.488.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MALONE",
+            "label": "Utility 57.MALONE..RC 488",
+            "compromised": false,
+            "relayIPlist": [
+                "10.160.488.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

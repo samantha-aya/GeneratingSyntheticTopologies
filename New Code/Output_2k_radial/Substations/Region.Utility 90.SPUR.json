@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 90.SPUR",
+    "networkLan": "10.87.118.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 90",
+    "utility_id": 87,
+    "substation": "SPUR",
+    "substationNumber": 118,
+    "OTAddress": "10.87.118.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.87.118.1",
+        "10.87.118.2",
+        "10.87.118.3",
+        "10.87.118.4",
+        "10.87.118.5",
+        "10.87.118.6",
+        "10.87.118.7",
+        "10.87.118.8",
+        "10.87.118.9",
+        "10.87.118.10",
+        "10.87.118.11",
+        "10.87.118.12",
+        "10.87.118.13",
+        "10.87.118.14",
+        "10.87.118.15",
+        "10.87.118.16",
+        "10.87.118.17",
+        "10.87.118.18",
+        "10.87.118.19",
+        "10.87.118.20",
+        "10.87.118.21",
+        "10.87.118.22",
+        "10.87.118.23",
+        "10.87.118.24",
+        "10.87.118.25",
+        "10.87.118.26",
+        "10.87.118.27",
+        "10.87.118.28",
+        "10.87.118.29",
+        "10.87.118.30",
+        "10.87.118.31",
+        "10.87.118.32",
+        "10.87.118.33",
+        "10.87.118.34",
+        "10.87.118.35",
+        "10.87.118.36",
+        "10.87.118.37",
+        "10.87.118.38",
+        "10.87.118.39",
+        "10.87.118.40",
+        "10.87.118.41",
+        "10.87.118.42",
+        "10.87.118.43",
+        "10.87.118.44",
+        "10.87.118.45",
+        "10.87.118.46",
+        "10.87.118.47",
+        "10.87.118.48",
+        "10.87.118.49",
+        "10.87.118.50",
+        "10.87.118.51",
+        "10.87.118.52",
+        "10.87.118.53",
+        "10.87.118.54",
+        "10.87.118.55",
+        "10.87.118.56",
+        "10.87.118.57",
+        "10.87.118.58",
+        "10.87.118.59",
+        "10.87.118.60",
+        "10.87.118.61",
+        "10.87.118.62"
+    ],
+    "routeAddress": "10.87.118.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.87.118.65",
+        "10.87.118.66",
+        "10.87.118.67",
+        "10.87.118.68",
+        "10.87.118.69",
+        "10.87.118.70",
+        "10.87.118.71",
+        "10.87.118.72",
+        "10.87.118.73",
+        "10.87.118.74",
+        "10.87.118.75",
+        "10.87.118.76",
+        "10.87.118.77",
+        "10.87.118.78",
+        "10.87.118.79",
+        "10.87.118.80",
+        "10.87.118.81",
+        "10.87.118.82",
+        "10.87.118.83",
+        "10.87.118.84",
+        "10.87.118.85",
+        "10.87.118.86",
+        "10.87.118.87",
+        "10.87.118.88",
+        "10.87.118.89",
+        "10.87.118.90",
+        "10.87.118.91",
+        "10.87.118.92",
+        "10.87.118.93",
+        "10.87.118.94"
+    ],
+    "corporateAddress": "10.87.118.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.87.118.97",
+        "10.87.118.98",
+        "10.87.118.99",
+        "10.87.118.100",
+        "10.87.118.101",
+        "10.87.118.102",
+        "10.87.118.103",
+        "10.87.118.104",
+        "10.87.118.105",
+        "10.87.118.106",
+        "10.87.118.107",
+        "10.87.118.108",
+        "10.87.118.109",
+        "10.87.118.110",
+        "10.87.118.111",
+        "10.87.118.112",
+        "10.87.118.113",
+        "10.87.118.114",
+        "10.87.118.115",
+        "10.87.118.116",
+        "10.87.118.117",
+        "10.87.118.118",
+        "10.87.118.119",
+        "10.87.118.120",
+        "10.87.118.121",
+        "10.87.118.122",
+        "10.87.118.123",
+        "10.87.118.124",
+        "10.87.118.125"
+    ],
+    "latitude": 33.341,
+    "longitude": -100.715,
+    "nodes": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.97",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..Firewall 118",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.341,
+            "Longitude": -100.715
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.98",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..Router 118",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.1",
+            "ipAddress": "10.87.118.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR.OT.Switch 235",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.99",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR.Corporate.Switch 236",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.3",
+            "ipAddress": "10.87.118.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.2",
+            "ipAddress": "10.87.118.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..RC 118",
+            "compromised": false,
+            "relayIPlist": [
+                "10.87.118.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.100",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..Host 235",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.100",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..Host 236",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.100",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..LocalDatabase 235",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.100",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..LocalWebServer 236",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.101",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..hmi 235",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.100",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..outstation 236",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 90.SPUR..RC 118",
+            "destination": "Utility 90.SPUR..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.SPUR..Router 118",
+            "destination": "Utility 90.SPUR..Firewall 118",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.SPUR..Firewall 118",
+            "destination": "Utility 90.SPUR.OT.Switch 235",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.SPUR.OT.Switch 235",
+            "destination": "Utility 90.SPUR..RC 118",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.SPUR..Firewall 118",
+            "destination": "Utility 90.SPUR.Corporate.Switch 236",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.SPUR.Corporate.Switch 236",
+            "destination": "Utility 90.SPUR..Host 235",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.SPUR.Corporate.Switch 236",
+            "destination": "Utility 90.SPUR..Host 236",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.SPUR.Corporate.Switch 236",
+            "destination": "Utility 90.SPUR..LocalDatabase 235",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.SPUR.Corporate.Switch 236",
+            "destination": "Utility 90.SPUR..LocalWebServer 236",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.1",
+            "ipAddress": "10.87.118.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR.OT.Switch 235",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.2",
+            "ipAddress": "10.87.118.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..RC 118",
+            "compromised": false,
+            "relayIPlist": [
+                "10.87.118.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.97",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..Firewall 118",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.341,
+            "Longitude": -100.715
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.98",
+            "ipAddress": "10.87.118.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..Router 118",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.1",
+            "ipAddress": "10.87.118.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR.OT.Switch 235",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.118.2",
+            "ipAddress": "10.87.118.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPUR",
+            "label": "Utility 90.SPUR..RC 118",
+            "compromised": false,
+            "relayIPlist": [
+                "10.87.118.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

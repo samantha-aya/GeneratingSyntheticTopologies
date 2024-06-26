@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.FORESTBURG",
+    "networkLan": "10.52.65.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "FORESTBURG",
+    "substationNumber": 65,
+    "OTAddress": "10.52.65.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.65.1",
+        "10.52.65.2",
+        "10.52.65.3",
+        "10.52.65.4",
+        "10.52.65.5",
+        "10.52.65.6",
+        "10.52.65.7",
+        "10.52.65.8",
+        "10.52.65.9",
+        "10.52.65.10",
+        "10.52.65.11",
+        "10.52.65.12",
+        "10.52.65.13",
+        "10.52.65.14",
+        "10.52.65.15",
+        "10.52.65.16",
+        "10.52.65.17",
+        "10.52.65.18",
+        "10.52.65.19",
+        "10.52.65.20",
+        "10.52.65.21",
+        "10.52.65.22",
+        "10.52.65.23",
+        "10.52.65.24",
+        "10.52.65.25",
+        "10.52.65.26",
+        "10.52.65.27",
+        "10.52.65.28",
+        "10.52.65.29",
+        "10.52.65.30",
+        "10.52.65.31",
+        "10.52.65.32",
+        "10.52.65.33",
+        "10.52.65.34",
+        "10.52.65.35",
+        "10.52.65.36",
+        "10.52.65.37",
+        "10.52.65.38",
+        "10.52.65.39",
+        "10.52.65.40",
+        "10.52.65.41",
+        "10.52.65.42",
+        "10.52.65.43",
+        "10.52.65.44",
+        "10.52.65.45",
+        "10.52.65.46",
+        "10.52.65.47",
+        "10.52.65.48",
+        "10.52.65.49",
+        "10.52.65.50",
+        "10.52.65.51",
+        "10.52.65.52",
+        "10.52.65.53",
+        "10.52.65.54",
+        "10.52.65.55",
+        "10.52.65.56",
+        "10.52.65.57",
+        "10.52.65.58",
+        "10.52.65.59",
+        "10.52.65.60",
+        "10.52.65.61",
+        "10.52.65.62"
+    ],
+    "routeAddress": "10.52.65.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.65.65",
+        "10.52.65.66",
+        "10.52.65.67",
+        "10.52.65.68",
+        "10.52.65.69",
+        "10.52.65.70",
+        "10.52.65.71",
+        "10.52.65.72",
+        "10.52.65.73",
+        "10.52.65.74",
+        "10.52.65.75",
+        "10.52.65.76",
+        "10.52.65.77",
+        "10.52.65.78",
+        "10.52.65.79",
+        "10.52.65.80",
+        "10.52.65.81",
+        "10.52.65.82",
+        "10.52.65.83",
+        "10.52.65.84",
+        "10.52.65.85",
+        "10.52.65.86",
+        "10.52.65.87",
+        "10.52.65.88",
+        "10.52.65.89",
+        "10.52.65.90",
+        "10.52.65.91",
+        "10.52.65.92",
+        "10.52.65.93",
+        "10.52.65.94"
+    ],
+    "corporateAddress": "10.52.65.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.65.97",
+        "10.52.65.98",
+        "10.52.65.99",
+        "10.52.65.100",
+        "10.52.65.101",
+        "10.52.65.102",
+        "10.52.65.103",
+        "10.52.65.104",
+        "10.52.65.105",
+        "10.52.65.106",
+        "10.52.65.107",
+        "10.52.65.108",
+        "10.52.65.109",
+        "10.52.65.110",
+        "10.52.65.111",
+        "10.52.65.112",
+        "10.52.65.113",
+        "10.52.65.114",
+        "10.52.65.115",
+        "10.52.65.116",
+        "10.52.65.117",
+        "10.52.65.118",
+        "10.52.65.119",
+        "10.52.65.120",
+        "10.52.65.121",
+        "10.52.65.122",
+        "10.52.65.123",
+        "10.52.65.124",
+        "10.52.65.125"
+    ],
+    "latitude": 33.472,
+    "longitude": -97.445,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.97",
+            "ipAddress": "10.52.65.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..Firewall 65",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.472,
+            "Longitude": -97.445
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.98",
+            "ipAddress": "10.52.65.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..Router 65",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.1",
+            "ipAddress": "10.52.65.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG.OT.Switch 129",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.99",
+            "ipAddress": "10.52.65.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG.Corporate.Switch 130",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.3",
+            "ipAddress": "10.52.65.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.2",
+            "ipAddress": "10.52.65.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..RC 65",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.65.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.100",
+            "ipAddress": "10.52.65.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..Host 129",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.100",
+            "ipAddress": "10.52.65.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..Host 130",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.100",
+            "ipAddress": "10.52.65.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..LocalDatabase 129",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.100",
+            "ipAddress": "10.52.65.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..LocalWebServer 130",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.FORESTBURG..RC 65",
+            "destination": "Utility 0.FORESTBURG..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORESTBURG..Router 65",
+            "destination": "Utility 0.FORESTBURG..Firewall 65",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORESTBURG..Firewall 65",
+            "destination": "Utility 0.FORESTBURG.OT.Switch 129",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORESTBURG.OT.Switch 129",
+            "destination": "Utility 0.FORESTBURG..RC 65",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORESTBURG..Firewall 65",
+            "destination": "Utility 0.FORESTBURG.Corporate.Switch 130",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORESTBURG.Corporate.Switch 130",
+            "destination": "Utility 0.FORESTBURG..Host 129",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORESTBURG.Corporate.Switch 130",
+            "destination": "Utility 0.FORESTBURG..Host 130",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORESTBURG.Corporate.Switch 130",
+            "destination": "Utility 0.FORESTBURG..LocalDatabase 129",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FORESTBURG.Corporate.Switch 130",
+            "destination": "Utility 0.FORESTBURG..LocalWebServer 130",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.1",
+            "ipAddress": "10.52.65.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG.OT.Switch 129",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.2",
+            "ipAddress": "10.52.65.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..RC 65",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.65.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.97",
+            "ipAddress": "10.52.65.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..Firewall 65",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.472,
+            "Longitude": -97.445
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.98",
+            "ipAddress": "10.52.65.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..Router 65",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.1",
+            "ipAddress": "10.52.65.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG.OT.Switch 129",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.65.2",
+            "ipAddress": "10.52.65.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORESTBURG",
+            "label": "Utility 0.FORESTBURG..RC 65",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.65.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

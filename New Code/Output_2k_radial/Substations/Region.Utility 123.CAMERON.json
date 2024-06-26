@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 123.CAMERON",
+    "networkLan": "10.159.780.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 123",
+    "utility_id": 159,
+    "substation": "CAMERON",
+    "substationNumber": 780,
+    "OTAddress": "10.159.780.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.159.780.1",
+        "10.159.780.2",
+        "10.159.780.3",
+        "10.159.780.4",
+        "10.159.780.5",
+        "10.159.780.6",
+        "10.159.780.7",
+        "10.159.780.8",
+        "10.159.780.9",
+        "10.159.780.10",
+        "10.159.780.11",
+        "10.159.780.12",
+        "10.159.780.13",
+        "10.159.780.14",
+        "10.159.780.15",
+        "10.159.780.16",
+        "10.159.780.17",
+        "10.159.780.18",
+        "10.159.780.19",
+        "10.159.780.20",
+        "10.159.780.21",
+        "10.159.780.22",
+        "10.159.780.23",
+        "10.159.780.24",
+        "10.159.780.25",
+        "10.159.780.26",
+        "10.159.780.27",
+        "10.159.780.28",
+        "10.159.780.29",
+        "10.159.780.30",
+        "10.159.780.31",
+        "10.159.780.32",
+        "10.159.780.33",
+        "10.159.780.34",
+        "10.159.780.35",
+        "10.159.780.36",
+        "10.159.780.37",
+        "10.159.780.38",
+        "10.159.780.39",
+        "10.159.780.40",
+        "10.159.780.41",
+        "10.159.780.42",
+        "10.159.780.43",
+        "10.159.780.44",
+        "10.159.780.45",
+        "10.159.780.46",
+        "10.159.780.47",
+        "10.159.780.48",
+        "10.159.780.49",
+        "10.159.780.50",
+        "10.159.780.51",
+        "10.159.780.52",
+        "10.159.780.53",
+        "10.159.780.54",
+        "10.159.780.55",
+        "10.159.780.56",
+        "10.159.780.57",
+        "10.159.780.58",
+        "10.159.780.59",
+        "10.159.780.60",
+        "10.159.780.61",
+        "10.159.780.62"
+    ],
+    "routeAddress": "10.159.780.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.159.780.65",
+        "10.159.780.66",
+        "10.159.780.67",
+        "10.159.780.68",
+        "10.159.780.69",
+        "10.159.780.70",
+        "10.159.780.71",
+        "10.159.780.72",
+        "10.159.780.73",
+        "10.159.780.74",
+        "10.159.780.75",
+        "10.159.780.76",
+        "10.159.780.77",
+        "10.159.780.78",
+        "10.159.780.79",
+        "10.159.780.80",
+        "10.159.780.81",
+        "10.159.780.82",
+        "10.159.780.83",
+        "10.159.780.84",
+        "10.159.780.85",
+        "10.159.780.86",
+        "10.159.780.87",
+        "10.159.780.88",
+        "10.159.780.89",
+        "10.159.780.90",
+        "10.159.780.91",
+        "10.159.780.92",
+        "10.159.780.93",
+        "10.159.780.94"
+    ],
+    "corporateAddress": "10.159.780.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.159.780.97",
+        "10.159.780.98",
+        "10.159.780.99",
+        "10.159.780.100",
+        "10.159.780.101",
+        "10.159.780.102",
+        "10.159.780.103",
+        "10.159.780.104",
+        "10.159.780.105",
+        "10.159.780.106",
+        "10.159.780.107",
+        "10.159.780.108",
+        "10.159.780.109",
+        "10.159.780.110",
+        "10.159.780.111",
+        "10.159.780.112",
+        "10.159.780.113",
+        "10.159.780.114",
+        "10.159.780.115",
+        "10.159.780.116",
+        "10.159.780.117",
+        "10.159.780.118",
+        "10.159.780.119",
+        "10.159.780.120",
+        "10.159.780.121",
+        "10.159.780.122",
+        "10.159.780.123",
+        "10.159.780.124",
+        "10.159.780.125"
+    ],
+    "latitude": 30.891,
+    "longitude": -96.908,
+    "nodes": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.97",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..Firewall 780",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.891,
+            "Longitude": -96.908
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.98",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..Router 780",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.1",
+            "ipAddress": "10.159.780.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON.OT.Switch 1559",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.99",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON.Corporate.Switch 1560",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.3",
+            "ipAddress": "10.159.780.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.2",
+            "ipAddress": "10.159.780.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..RC 780",
+            "compromised": false,
+            "relayIPlist": [
+                "10.159.780.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.100",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..Host 1559",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.100",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..Host 1560",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.100",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..LocalDatabase 1559",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.100",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..LocalWebServer 1560",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.101",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..hmi 1559",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.100",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..outstation 1560",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 123.CAMERON..RC 780",
+            "destination": "Utility 123.CAMERON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.CAMERON..Router 780",
+            "destination": "Utility 123.CAMERON..Firewall 780",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.CAMERON..Firewall 780",
+            "destination": "Utility 123.CAMERON.OT.Switch 1559",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.CAMERON.OT.Switch 1559",
+            "destination": "Utility 123.CAMERON..RC 780",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.CAMERON..Firewall 780",
+            "destination": "Utility 123.CAMERON.Corporate.Switch 1560",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.CAMERON.Corporate.Switch 1560",
+            "destination": "Utility 123.CAMERON..Host 1559",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.CAMERON.Corporate.Switch 1560",
+            "destination": "Utility 123.CAMERON..Host 1560",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.CAMERON.Corporate.Switch 1560",
+            "destination": "Utility 123.CAMERON..LocalDatabase 1559",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.CAMERON.Corporate.Switch 1560",
+            "destination": "Utility 123.CAMERON..LocalWebServer 1560",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.1",
+            "ipAddress": "10.159.780.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON.OT.Switch 1559",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.2",
+            "ipAddress": "10.159.780.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..RC 780",
+            "compromised": false,
+            "relayIPlist": [
+                "10.159.780.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.97",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..Firewall 780",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.891,
+            "Longitude": -96.908
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.98",
+            "ipAddress": "10.159.780.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..Router 780",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.1",
+            "ipAddress": "10.159.780.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON.OT.Switch 1559",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.780.2",
+            "ipAddress": "10.159.780.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CAMERON",
+            "label": "Utility 123.CAMERON..RC 780",
+            "compromised": false,
+            "relayIPlist": [
+                "10.159.780.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

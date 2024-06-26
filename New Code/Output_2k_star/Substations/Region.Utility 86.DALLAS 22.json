@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 86.DALLAS 22",
+    "networkLan": "10.133.552.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 86",
+    "utility_id": 133,
+    "substation": "DALLAS 22",
+    "substationNumber": 552,
+    "OTAddress": "10.133.552.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.133.552.1",
+        "10.133.552.2",
+        "10.133.552.3",
+        "10.133.552.4",
+        "10.133.552.5",
+        "10.133.552.6",
+        "10.133.552.7",
+        "10.133.552.8",
+        "10.133.552.9",
+        "10.133.552.10",
+        "10.133.552.11",
+        "10.133.552.12",
+        "10.133.552.13",
+        "10.133.552.14",
+        "10.133.552.15",
+        "10.133.552.16",
+        "10.133.552.17",
+        "10.133.552.18",
+        "10.133.552.19",
+        "10.133.552.20",
+        "10.133.552.21",
+        "10.133.552.22",
+        "10.133.552.23",
+        "10.133.552.24",
+        "10.133.552.25",
+        "10.133.552.26",
+        "10.133.552.27",
+        "10.133.552.28",
+        "10.133.552.29",
+        "10.133.552.30",
+        "10.133.552.31",
+        "10.133.552.32",
+        "10.133.552.33",
+        "10.133.552.34",
+        "10.133.552.35",
+        "10.133.552.36",
+        "10.133.552.37",
+        "10.133.552.38",
+        "10.133.552.39",
+        "10.133.552.40",
+        "10.133.552.41",
+        "10.133.552.42",
+        "10.133.552.43",
+        "10.133.552.44",
+        "10.133.552.45",
+        "10.133.552.46",
+        "10.133.552.47",
+        "10.133.552.48",
+        "10.133.552.49",
+        "10.133.552.50",
+        "10.133.552.51",
+        "10.133.552.52",
+        "10.133.552.53",
+        "10.133.552.54",
+        "10.133.552.55",
+        "10.133.552.56",
+        "10.133.552.57",
+        "10.133.552.58",
+        "10.133.552.59",
+        "10.133.552.60",
+        "10.133.552.61",
+        "10.133.552.62"
+    ],
+    "routeAddress": "10.133.552.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.133.552.65",
+        "10.133.552.66",
+        "10.133.552.67",
+        "10.133.552.68",
+        "10.133.552.69",
+        "10.133.552.70",
+        "10.133.552.71",
+        "10.133.552.72",
+        "10.133.552.73",
+        "10.133.552.74",
+        "10.133.552.75",
+        "10.133.552.76",
+        "10.133.552.77",
+        "10.133.552.78",
+        "10.133.552.79",
+        "10.133.552.80",
+        "10.133.552.81",
+        "10.133.552.82",
+        "10.133.552.83",
+        "10.133.552.84",
+        "10.133.552.85",
+        "10.133.552.86",
+        "10.133.552.87",
+        "10.133.552.88",
+        "10.133.552.89",
+        "10.133.552.90",
+        "10.133.552.91",
+        "10.133.552.92",
+        "10.133.552.93",
+        "10.133.552.94"
+    ],
+    "corporateAddress": "10.133.552.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.133.552.97",
+        "10.133.552.98",
+        "10.133.552.99",
+        "10.133.552.100",
+        "10.133.552.101",
+        "10.133.552.102",
+        "10.133.552.103",
+        "10.133.552.104",
+        "10.133.552.105",
+        "10.133.552.106",
+        "10.133.552.107",
+        "10.133.552.108",
+        "10.133.552.109",
+        "10.133.552.110",
+        "10.133.552.111",
+        "10.133.552.112",
+        "10.133.552.113",
+        "10.133.552.114",
+        "10.133.552.115",
+        "10.133.552.116",
+        "10.133.552.117",
+        "10.133.552.118",
+        "10.133.552.119",
+        "10.133.552.120",
+        "10.133.552.121",
+        "10.133.552.122",
+        "10.133.552.123",
+        "10.133.552.124",
+        "10.133.552.125"
+    ],
+    "latitude": 32.903,
+    "longitude": -96.793,
+    "nodes": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.97",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..Firewall 552",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.903,
+            "Longitude": -96.793
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.98",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..Router 552",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.1",
+            "ipAddress": "10.133.552.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22.OT.Switch 1103",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.99",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22.Corporate.Switch 1104",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.3",
+            "ipAddress": "10.133.552.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.2",
+            "ipAddress": "10.133.552.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..RC 552",
+            "compromised": false,
+            "relayIPlist": [
+                "10.133.552.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.100",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..Host 1103",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.100",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..Host 1104",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.100",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..LocalDatabase 1103",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.100",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..LocalWebServer 1104",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.101",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..hmi 1103",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.100",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..outstation 1104",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 86.DALLAS 22..RC 552",
+            "destination": "Utility 86.DALLAS 22..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.DALLAS 22..Router 552",
+            "destination": "Utility 86.DALLAS 22..Firewall 552",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.DALLAS 22..Firewall 552",
+            "destination": "Utility 86.DALLAS 22.OT.Switch 1103",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.DALLAS 22.OT.Switch 1103",
+            "destination": "Utility 86.DALLAS 22..RC 552",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.DALLAS 22..Firewall 552",
+            "destination": "Utility 86.DALLAS 22.Corporate.Switch 1104",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.DALLAS 22.Corporate.Switch 1104",
+            "destination": "Utility 86.DALLAS 22..Host 1103",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.DALLAS 22.Corporate.Switch 1104",
+            "destination": "Utility 86.DALLAS 22..Host 1104",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.DALLAS 22.Corporate.Switch 1104",
+            "destination": "Utility 86.DALLAS 22..LocalDatabase 1103",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.DALLAS 22.Corporate.Switch 1104",
+            "destination": "Utility 86.DALLAS 22..LocalWebServer 1104",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.1",
+            "ipAddress": "10.133.552.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22.OT.Switch 1103",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.2",
+            "ipAddress": "10.133.552.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..RC 552",
+            "compromised": false,
+            "relayIPlist": [
+                "10.133.552.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.97",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..Firewall 552",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.903,
+            "Longitude": -96.793
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.98",
+            "ipAddress": "10.133.552.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..Router 552",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.1",
+            "ipAddress": "10.133.552.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22.OT.Switch 1103",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.552.2",
+            "ipAddress": "10.133.552.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 22",
+            "label": "Utility 86.DALLAS 22..RC 552",
+            "compromised": false,
+            "relayIPlist": [
+                "10.133.552.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

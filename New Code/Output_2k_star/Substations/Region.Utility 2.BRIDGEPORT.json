@@ -1,0 +1,816 @@
+{
+    "relayCounter": 9,
+    "label": "Region.Utility 2.BRIDGEPORT",
+    "networkLan": "10.55.632.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "BRIDGEPORT",
+    "substationNumber": 632,
+    "OTAddress": "10.55.632.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.632.1",
+        "10.55.632.2",
+        "10.55.632.3",
+        "10.55.632.4",
+        "10.55.632.5",
+        "10.55.632.6",
+        "10.55.632.7",
+        "10.55.632.8",
+        "10.55.632.9",
+        "10.55.632.10",
+        "10.55.632.11",
+        "10.55.632.12",
+        "10.55.632.13",
+        "10.55.632.14",
+        "10.55.632.15",
+        "10.55.632.16",
+        "10.55.632.17",
+        "10.55.632.18",
+        "10.55.632.19",
+        "10.55.632.20",
+        "10.55.632.21",
+        "10.55.632.22",
+        "10.55.632.23",
+        "10.55.632.24",
+        "10.55.632.25",
+        "10.55.632.26",
+        "10.55.632.27",
+        "10.55.632.28",
+        "10.55.632.29",
+        "10.55.632.30",
+        "10.55.632.31",
+        "10.55.632.32",
+        "10.55.632.33",
+        "10.55.632.34",
+        "10.55.632.35",
+        "10.55.632.36",
+        "10.55.632.37",
+        "10.55.632.38",
+        "10.55.632.39",
+        "10.55.632.40",
+        "10.55.632.41",
+        "10.55.632.42",
+        "10.55.632.43",
+        "10.55.632.44",
+        "10.55.632.45",
+        "10.55.632.46",
+        "10.55.632.47",
+        "10.55.632.48",
+        "10.55.632.49",
+        "10.55.632.50",
+        "10.55.632.51",
+        "10.55.632.52",
+        "10.55.632.53",
+        "10.55.632.54",
+        "10.55.632.55",
+        "10.55.632.56",
+        "10.55.632.57",
+        "10.55.632.58",
+        "10.55.632.59",
+        "10.55.632.60",
+        "10.55.632.61",
+        "10.55.632.62"
+    ],
+    "routeAddress": "10.55.632.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.632.65",
+        "10.55.632.66",
+        "10.55.632.67",
+        "10.55.632.68",
+        "10.55.632.69",
+        "10.55.632.70",
+        "10.55.632.71",
+        "10.55.632.72",
+        "10.55.632.73",
+        "10.55.632.74",
+        "10.55.632.75",
+        "10.55.632.76",
+        "10.55.632.77",
+        "10.55.632.78",
+        "10.55.632.79",
+        "10.55.632.80",
+        "10.55.632.81",
+        "10.55.632.82",
+        "10.55.632.83",
+        "10.55.632.84",
+        "10.55.632.85",
+        "10.55.632.86",
+        "10.55.632.87",
+        "10.55.632.88",
+        "10.55.632.89",
+        "10.55.632.90",
+        "10.55.632.91",
+        "10.55.632.92",
+        "10.55.632.93",
+        "10.55.632.94"
+    ],
+    "corporateAddress": "10.55.632.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.632.97",
+        "10.55.632.98",
+        "10.55.632.99",
+        "10.55.632.100",
+        "10.55.632.101",
+        "10.55.632.102",
+        "10.55.632.103",
+        "10.55.632.104",
+        "10.55.632.105",
+        "10.55.632.106",
+        "10.55.632.107",
+        "10.55.632.108",
+        "10.55.632.109",
+        "10.55.632.110",
+        "10.55.632.111",
+        "10.55.632.112",
+        "10.55.632.113",
+        "10.55.632.114",
+        "10.55.632.115",
+        "10.55.632.116",
+        "10.55.632.117",
+        "10.55.632.118",
+        "10.55.632.119",
+        "10.55.632.120",
+        "10.55.632.121",
+        "10.55.632.122",
+        "10.55.632.123",
+        "10.55.632.124",
+        "10.55.632.125"
+    ],
+    "latitude": 33.196,
+    "longitude": -97.921,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.97",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Firewall 632",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.196,
+            "Longitude": -97.921
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.98",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Router 632",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.1",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT.OT.Switch 1263",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.99",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT.Corporate.Switch 1264",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.3",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.4",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.5",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.6",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.7",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.8",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.9",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.10",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.11",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.2",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..RC 632",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.632.3",
+                "10.55.632.4",
+                "10.55.632.5",
+                "10.55.632.6",
+                "10.55.632.7",
+                "10.55.632.8",
+                "10.55.632.9",
+                "10.55.632.10",
+                "10.55.632.11"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.100",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Host 1263",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.100",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Host 1264",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.100",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..LocalDatabase 1263",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.100",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..LocalWebServer 1264",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.101",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..hmi 1263",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.100",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..outstation 1264",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.BRIDGEPORT..RC 632",
+            "destination": "Utility 2.BRIDGEPORT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..RC 632",
+            "destination": "Utility 2.BRIDGEPORT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..RC 632",
+            "destination": "Utility 2.BRIDGEPORT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..RC 632",
+            "destination": "Utility 2.BRIDGEPORT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..RC 632",
+            "destination": "Utility 2.BRIDGEPORT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..RC 632",
+            "destination": "Utility 2.BRIDGEPORT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..RC 632",
+            "destination": "Utility 2.BRIDGEPORT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..RC 632",
+            "destination": "Utility 2.BRIDGEPORT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..RC 632",
+            "destination": "Utility 2.BRIDGEPORT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..Router 632",
+            "destination": "Utility 2.BRIDGEPORT..Firewall 632",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..Firewall 632",
+            "destination": "Utility 2.BRIDGEPORT.OT.Switch 1263",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT.OT.Switch 1263",
+            "destination": "Utility 2.BRIDGEPORT..RC 632",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT..Firewall 632",
+            "destination": "Utility 2.BRIDGEPORT.Corporate.Switch 1264",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT.Corporate.Switch 1264",
+            "destination": "Utility 2.BRIDGEPORT..Host 1263",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT.Corporate.Switch 1264",
+            "destination": "Utility 2.BRIDGEPORT..Host 1264",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT.Corporate.Switch 1264",
+            "destination": "Utility 2.BRIDGEPORT..LocalDatabase 1263",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BRIDGEPORT.Corporate.Switch 1264",
+            "destination": "Utility 2.BRIDGEPORT..LocalWebServer 1264",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.1",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT.OT.Switch 1263",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.2",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..RC 632",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.632.3",
+                "10.55.632.4",
+                "10.55.632.5",
+                "10.55.632.6",
+                "10.55.632.7",
+                "10.55.632.8",
+                "10.55.632.9",
+                "10.55.632.10",
+                "10.55.632.11"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.97",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Firewall 632",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.196,
+            "Longitude": -97.921
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.98",
+            "ipAddress": "10.55.632.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..Router 632",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.1",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT.OT.Switch 1263",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.632.2",
+            "ipAddress": "10.55.632.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRIDGEPORT",
+            "label": "Utility 2.BRIDGEPORT..RC 632",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.632.3",
+                "10.55.632.4",
+                "10.55.632.5",
+                "10.55.632.6",
+                "10.55.632.7",
+                "10.55.632.8",
+                "10.55.632.9",
+                "10.55.632.10",
+                "10.55.632.11"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 1286.78,
+    "genmvar": -66.81,
+    "connecting_TS_num": 514
+}

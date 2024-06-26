@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 93.D HANIS",
+    "networkLan": "10.108.746.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 93",
+    "utility_id": 108,
+    "substation": "D HANIS",
+    "substationNumber": 746,
+    "OTAddress": "10.108.746.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.108.746.1",
+        "10.108.746.2",
+        "10.108.746.3",
+        "10.108.746.4",
+        "10.108.746.5",
+        "10.108.746.6",
+        "10.108.746.7",
+        "10.108.746.8",
+        "10.108.746.9",
+        "10.108.746.10",
+        "10.108.746.11",
+        "10.108.746.12",
+        "10.108.746.13",
+        "10.108.746.14",
+        "10.108.746.15",
+        "10.108.746.16",
+        "10.108.746.17",
+        "10.108.746.18",
+        "10.108.746.19",
+        "10.108.746.20",
+        "10.108.746.21",
+        "10.108.746.22",
+        "10.108.746.23",
+        "10.108.746.24",
+        "10.108.746.25",
+        "10.108.746.26",
+        "10.108.746.27",
+        "10.108.746.28",
+        "10.108.746.29",
+        "10.108.746.30",
+        "10.108.746.31",
+        "10.108.746.32",
+        "10.108.746.33",
+        "10.108.746.34",
+        "10.108.746.35",
+        "10.108.746.36",
+        "10.108.746.37",
+        "10.108.746.38",
+        "10.108.746.39",
+        "10.108.746.40",
+        "10.108.746.41",
+        "10.108.746.42",
+        "10.108.746.43",
+        "10.108.746.44",
+        "10.108.746.45",
+        "10.108.746.46",
+        "10.108.746.47",
+        "10.108.746.48",
+        "10.108.746.49",
+        "10.108.746.50",
+        "10.108.746.51",
+        "10.108.746.52",
+        "10.108.746.53",
+        "10.108.746.54",
+        "10.108.746.55",
+        "10.108.746.56",
+        "10.108.746.57",
+        "10.108.746.58",
+        "10.108.746.59",
+        "10.108.746.60",
+        "10.108.746.61",
+        "10.108.746.62"
+    ],
+    "routeAddress": "10.108.746.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.108.746.65",
+        "10.108.746.66",
+        "10.108.746.67",
+        "10.108.746.68",
+        "10.108.746.69",
+        "10.108.746.70",
+        "10.108.746.71",
+        "10.108.746.72",
+        "10.108.746.73",
+        "10.108.746.74",
+        "10.108.746.75",
+        "10.108.746.76",
+        "10.108.746.77",
+        "10.108.746.78",
+        "10.108.746.79",
+        "10.108.746.80",
+        "10.108.746.81",
+        "10.108.746.82",
+        "10.108.746.83",
+        "10.108.746.84",
+        "10.108.746.85",
+        "10.108.746.86",
+        "10.108.746.87",
+        "10.108.746.88",
+        "10.108.746.89",
+        "10.108.746.90",
+        "10.108.746.91",
+        "10.108.746.92",
+        "10.108.746.93",
+        "10.108.746.94"
+    ],
+    "corporateAddress": "10.108.746.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.108.746.97",
+        "10.108.746.98",
+        "10.108.746.99",
+        "10.108.746.100",
+        "10.108.746.101",
+        "10.108.746.102",
+        "10.108.746.103",
+        "10.108.746.104",
+        "10.108.746.105",
+        "10.108.746.106",
+        "10.108.746.107",
+        "10.108.746.108",
+        "10.108.746.109",
+        "10.108.746.110",
+        "10.108.746.111",
+        "10.108.746.112",
+        "10.108.746.113",
+        "10.108.746.114",
+        "10.108.746.115",
+        "10.108.746.116",
+        "10.108.746.117",
+        "10.108.746.118",
+        "10.108.746.119",
+        "10.108.746.120",
+        "10.108.746.121",
+        "10.108.746.122",
+        "10.108.746.123",
+        "10.108.746.124",
+        "10.108.746.125"
+    ],
+    "latitude": 29.285,
+    "longitude": -99.329,
+    "nodes": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.97",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..Firewall 746",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.285,
+            "Longitude": -99.329
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.98",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..Router 746",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.1",
+            "ipAddress": "10.108.746.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS.OT.Switch 1491",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.99",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS.Corporate.Switch 1492",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.3",
+            "ipAddress": "10.108.746.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.2",
+            "ipAddress": "10.108.746.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..RC 746",
+            "compromised": false,
+            "relayIPlist": [
+                "10.108.746.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.100",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..Host 1491",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.100",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..Host 1492",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.100",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..LocalDatabase 1491",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.100",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..LocalWebServer 1492",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.101",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..hmi 1491",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.100",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..outstation 1492",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 93.D HANIS..RC 746",
+            "destination": "Utility 93.D HANIS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.D HANIS..Router 746",
+            "destination": "Utility 93.D HANIS..Firewall 746",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.D HANIS..Firewall 746",
+            "destination": "Utility 93.D HANIS.OT.Switch 1491",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.D HANIS.OT.Switch 1491",
+            "destination": "Utility 93.D HANIS..RC 746",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.D HANIS..Firewall 746",
+            "destination": "Utility 93.D HANIS.Corporate.Switch 1492",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.D HANIS.Corporate.Switch 1492",
+            "destination": "Utility 93.D HANIS..Host 1491",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.D HANIS.Corporate.Switch 1492",
+            "destination": "Utility 93.D HANIS..Host 1492",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.D HANIS.Corporate.Switch 1492",
+            "destination": "Utility 93.D HANIS..LocalDatabase 1491",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.D HANIS.Corporate.Switch 1492",
+            "destination": "Utility 93.D HANIS..LocalWebServer 1492",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.1",
+            "ipAddress": "10.108.746.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS.OT.Switch 1491",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.2",
+            "ipAddress": "10.108.746.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..RC 746",
+            "compromised": false,
+            "relayIPlist": [
+                "10.108.746.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.97",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..Firewall 746",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.285,
+            "Longitude": -99.329
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.98",
+            "ipAddress": "10.108.746.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..Router 746",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.1",
+            "ipAddress": "10.108.746.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS.OT.Switch 1491",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.746.2",
+            "ipAddress": "10.108.746.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "D HANIS",
+            "label": "Utility 93.D HANIS..RC 746",
+            "compromised": false,
+            "relayIPlist": [
+                "10.108.746.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

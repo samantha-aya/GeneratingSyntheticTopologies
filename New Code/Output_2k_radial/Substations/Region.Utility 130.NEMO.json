@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 130.NEMO",
+    "networkLan": "10.145.704.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 130",
+    "utility_id": 145,
+    "substation": "NEMO",
+    "substationNumber": 704,
+    "OTAddress": "10.145.704.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.145.704.1",
+        "10.145.704.2",
+        "10.145.704.3",
+        "10.145.704.4",
+        "10.145.704.5",
+        "10.145.704.6",
+        "10.145.704.7",
+        "10.145.704.8",
+        "10.145.704.9",
+        "10.145.704.10",
+        "10.145.704.11",
+        "10.145.704.12",
+        "10.145.704.13",
+        "10.145.704.14",
+        "10.145.704.15",
+        "10.145.704.16",
+        "10.145.704.17",
+        "10.145.704.18",
+        "10.145.704.19",
+        "10.145.704.20",
+        "10.145.704.21",
+        "10.145.704.22",
+        "10.145.704.23",
+        "10.145.704.24",
+        "10.145.704.25",
+        "10.145.704.26",
+        "10.145.704.27",
+        "10.145.704.28",
+        "10.145.704.29",
+        "10.145.704.30",
+        "10.145.704.31",
+        "10.145.704.32",
+        "10.145.704.33",
+        "10.145.704.34",
+        "10.145.704.35",
+        "10.145.704.36",
+        "10.145.704.37",
+        "10.145.704.38",
+        "10.145.704.39",
+        "10.145.704.40",
+        "10.145.704.41",
+        "10.145.704.42",
+        "10.145.704.43",
+        "10.145.704.44",
+        "10.145.704.45",
+        "10.145.704.46",
+        "10.145.704.47",
+        "10.145.704.48",
+        "10.145.704.49",
+        "10.145.704.50",
+        "10.145.704.51",
+        "10.145.704.52",
+        "10.145.704.53",
+        "10.145.704.54",
+        "10.145.704.55",
+        "10.145.704.56",
+        "10.145.704.57",
+        "10.145.704.58",
+        "10.145.704.59",
+        "10.145.704.60",
+        "10.145.704.61",
+        "10.145.704.62"
+    ],
+    "routeAddress": "10.145.704.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.145.704.65",
+        "10.145.704.66",
+        "10.145.704.67",
+        "10.145.704.68",
+        "10.145.704.69",
+        "10.145.704.70",
+        "10.145.704.71",
+        "10.145.704.72",
+        "10.145.704.73",
+        "10.145.704.74",
+        "10.145.704.75",
+        "10.145.704.76",
+        "10.145.704.77",
+        "10.145.704.78",
+        "10.145.704.79",
+        "10.145.704.80",
+        "10.145.704.81",
+        "10.145.704.82",
+        "10.145.704.83",
+        "10.145.704.84",
+        "10.145.704.85",
+        "10.145.704.86",
+        "10.145.704.87",
+        "10.145.704.88",
+        "10.145.704.89",
+        "10.145.704.90",
+        "10.145.704.91",
+        "10.145.704.92",
+        "10.145.704.93",
+        "10.145.704.94"
+    ],
+    "corporateAddress": "10.145.704.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.145.704.97",
+        "10.145.704.98",
+        "10.145.704.99",
+        "10.145.704.100",
+        "10.145.704.101",
+        "10.145.704.102",
+        "10.145.704.103",
+        "10.145.704.104",
+        "10.145.704.105",
+        "10.145.704.106",
+        "10.145.704.107",
+        "10.145.704.108",
+        "10.145.704.109",
+        "10.145.704.110",
+        "10.145.704.111",
+        "10.145.704.112",
+        "10.145.704.113",
+        "10.145.704.114",
+        "10.145.704.115",
+        "10.145.704.116",
+        "10.145.704.117",
+        "10.145.704.118",
+        "10.145.704.119",
+        "10.145.704.120",
+        "10.145.704.121",
+        "10.145.704.122",
+        "10.145.704.123",
+        "10.145.704.124",
+        "10.145.704.125"
+    ],
+    "latitude": 32.266,
+    "longitude": -97.655,
+    "nodes": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.97",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..Firewall 704",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.266,
+            "Longitude": -97.655
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.98",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..Router 704",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.1",
+            "ipAddress": "10.145.704.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO.OT.Switch 1407",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.99",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO.Corporate.Switch 1408",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.3",
+            "ipAddress": "10.145.704.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.2",
+            "ipAddress": "10.145.704.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..RC 704",
+            "compromised": false,
+            "relayIPlist": [
+                "10.145.704.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.100",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..Host 1407",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.100",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..Host 1408",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.100",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..LocalDatabase 1407",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.100",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..LocalWebServer 1408",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.101",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..hmi 1407",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.100",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..outstation 1408",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 130.NEMO..RC 704",
+            "destination": "Utility 130.NEMO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.NEMO..Router 704",
+            "destination": "Utility 130.NEMO..Firewall 704",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.NEMO..Firewall 704",
+            "destination": "Utility 130.NEMO.OT.Switch 1407",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.NEMO.OT.Switch 1407",
+            "destination": "Utility 130.NEMO..RC 704",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.NEMO..Firewall 704",
+            "destination": "Utility 130.NEMO.Corporate.Switch 1408",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.NEMO.Corporate.Switch 1408",
+            "destination": "Utility 130.NEMO..Host 1407",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.NEMO.Corporate.Switch 1408",
+            "destination": "Utility 130.NEMO..Host 1408",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.NEMO.Corporate.Switch 1408",
+            "destination": "Utility 130.NEMO..LocalDatabase 1407",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.NEMO.Corporate.Switch 1408",
+            "destination": "Utility 130.NEMO..LocalWebServer 1408",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.1",
+            "ipAddress": "10.145.704.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO.OT.Switch 1407",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.2",
+            "ipAddress": "10.145.704.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..RC 704",
+            "compromised": false,
+            "relayIPlist": [
+                "10.145.704.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.97",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..Firewall 704",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.266,
+            "Longitude": -97.655
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.98",
+            "ipAddress": "10.145.704.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..Router 704",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.1",
+            "ipAddress": "10.145.704.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO.OT.Switch 1407",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.704.2",
+            "ipAddress": "10.145.704.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEMO",
+            "label": "Utility 130.NEMO..RC 704",
+            "compromised": false,
+            "relayIPlist": [
+                "10.145.704.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

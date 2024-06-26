@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 32.SOUTH HOUSTON",
+    "networkLan": "10.176.977.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 32",
+    "utility_id": 176,
+    "substation": "SOUTH HOUSTON",
+    "substationNumber": 977,
+    "OTAddress": "10.176.977.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.176.977.1",
+        "10.176.977.2",
+        "10.176.977.3",
+        "10.176.977.4",
+        "10.176.977.5",
+        "10.176.977.6",
+        "10.176.977.7",
+        "10.176.977.8",
+        "10.176.977.9",
+        "10.176.977.10",
+        "10.176.977.11",
+        "10.176.977.12",
+        "10.176.977.13",
+        "10.176.977.14",
+        "10.176.977.15",
+        "10.176.977.16",
+        "10.176.977.17",
+        "10.176.977.18",
+        "10.176.977.19",
+        "10.176.977.20",
+        "10.176.977.21",
+        "10.176.977.22",
+        "10.176.977.23",
+        "10.176.977.24",
+        "10.176.977.25",
+        "10.176.977.26",
+        "10.176.977.27",
+        "10.176.977.28",
+        "10.176.977.29",
+        "10.176.977.30",
+        "10.176.977.31",
+        "10.176.977.32",
+        "10.176.977.33",
+        "10.176.977.34",
+        "10.176.977.35",
+        "10.176.977.36",
+        "10.176.977.37",
+        "10.176.977.38",
+        "10.176.977.39",
+        "10.176.977.40",
+        "10.176.977.41",
+        "10.176.977.42",
+        "10.176.977.43",
+        "10.176.977.44",
+        "10.176.977.45",
+        "10.176.977.46",
+        "10.176.977.47",
+        "10.176.977.48",
+        "10.176.977.49",
+        "10.176.977.50",
+        "10.176.977.51",
+        "10.176.977.52",
+        "10.176.977.53",
+        "10.176.977.54",
+        "10.176.977.55",
+        "10.176.977.56",
+        "10.176.977.57",
+        "10.176.977.58",
+        "10.176.977.59",
+        "10.176.977.60",
+        "10.176.977.61",
+        "10.176.977.62"
+    ],
+    "routeAddress": "10.176.977.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.176.977.65",
+        "10.176.977.66",
+        "10.176.977.67",
+        "10.176.977.68",
+        "10.176.977.69",
+        "10.176.977.70",
+        "10.176.977.71",
+        "10.176.977.72",
+        "10.176.977.73",
+        "10.176.977.74",
+        "10.176.977.75",
+        "10.176.977.76",
+        "10.176.977.77",
+        "10.176.977.78",
+        "10.176.977.79",
+        "10.176.977.80",
+        "10.176.977.81",
+        "10.176.977.82",
+        "10.176.977.83",
+        "10.176.977.84",
+        "10.176.977.85",
+        "10.176.977.86",
+        "10.176.977.87",
+        "10.176.977.88",
+        "10.176.977.89",
+        "10.176.977.90",
+        "10.176.977.91",
+        "10.176.977.92",
+        "10.176.977.93",
+        "10.176.977.94"
+    ],
+    "corporateAddress": "10.176.977.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.176.977.97",
+        "10.176.977.98",
+        "10.176.977.99",
+        "10.176.977.100",
+        "10.176.977.101",
+        "10.176.977.102",
+        "10.176.977.103",
+        "10.176.977.104",
+        "10.176.977.105",
+        "10.176.977.106",
+        "10.176.977.107",
+        "10.176.977.108",
+        "10.176.977.109",
+        "10.176.977.110",
+        "10.176.977.111",
+        "10.176.977.112",
+        "10.176.977.113",
+        "10.176.977.114",
+        "10.176.977.115",
+        "10.176.977.116",
+        "10.176.977.117",
+        "10.176.977.118",
+        "10.176.977.119",
+        "10.176.977.120",
+        "10.176.977.121",
+        "10.176.977.122",
+        "10.176.977.123",
+        "10.176.977.124",
+        "10.176.977.125"
+    ],
+    "latitude": 29.661,
+    "longitude": -95.23,
+    "nodes": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.97",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..Firewall 977",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.661,
+            "Longitude": -95.23
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.98",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..Router 977",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.1",
+            "ipAddress": "10.176.977.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON.OT.Switch 1953",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.99",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON.Corporate.Switch 1954",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.3",
+            "ipAddress": "10.176.977.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.2",
+            "ipAddress": "10.176.977.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..RC 977",
+            "compromised": false,
+            "relayIPlist": [
+                "10.176.977.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.100",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..Host 1953",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.100",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..Host 1954",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.100",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..LocalDatabase 1953",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.100",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..LocalWebServer 1954",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.101",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..hmi 1953",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.100",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..outstation 1954",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 32.SOUTH HOUSTON..RC 977",
+            "destination": "Utility 32.SOUTH HOUSTON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.SOUTH HOUSTON..Router 977",
+            "destination": "Utility 32.SOUTH HOUSTON..Firewall 977",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.SOUTH HOUSTON..Firewall 977",
+            "destination": "Utility 32.SOUTH HOUSTON.OT.Switch 1953",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.SOUTH HOUSTON.OT.Switch 1953",
+            "destination": "Utility 32.SOUTH HOUSTON..RC 977",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.SOUTH HOUSTON..Firewall 977",
+            "destination": "Utility 32.SOUTH HOUSTON.Corporate.Switch 1954",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.SOUTH HOUSTON.Corporate.Switch 1954",
+            "destination": "Utility 32.SOUTH HOUSTON..Host 1953",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.SOUTH HOUSTON.Corporate.Switch 1954",
+            "destination": "Utility 32.SOUTH HOUSTON..Host 1954",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.SOUTH HOUSTON.Corporate.Switch 1954",
+            "destination": "Utility 32.SOUTH HOUSTON..LocalDatabase 1953",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.SOUTH HOUSTON.Corporate.Switch 1954",
+            "destination": "Utility 32.SOUTH HOUSTON..LocalWebServer 1954",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.1",
+            "ipAddress": "10.176.977.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON.OT.Switch 1953",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.2",
+            "ipAddress": "10.176.977.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..RC 977",
+            "compromised": false,
+            "relayIPlist": [
+                "10.176.977.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.97",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..Firewall 977",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.661,
+            "Longitude": -95.23
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.98",
+            "ipAddress": "10.176.977.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..Router 977",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.1",
+            "ipAddress": "10.176.977.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON.OT.Switch 1953",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.977.2",
+            "ipAddress": "10.176.977.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOUTH HOUSTON",
+            "label": "Utility 32.SOUTH HOUSTON..RC 977",
+            "compromised": false,
+            "relayIPlist": [
+                "10.176.977.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

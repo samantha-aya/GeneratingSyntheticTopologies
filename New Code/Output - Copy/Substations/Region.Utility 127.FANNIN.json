@@ -1,0 +1,660 @@
+{
+    "relayCounter": 3,
+    "label": "Region.Utility 127.FANNIN",
+    "networkLan": "10.122.256.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 127",
+    "utility_id": 122,
+    "substation": "FANNIN",
+    "substationNumber": 256,
+    "OTAddress": "10.122.256.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.122.256.1",
+        "10.122.256.2",
+        "10.122.256.3",
+        "10.122.256.4",
+        "10.122.256.5",
+        "10.122.256.6",
+        "10.122.256.7",
+        "10.122.256.8",
+        "10.122.256.9",
+        "10.122.256.10",
+        "10.122.256.11",
+        "10.122.256.12",
+        "10.122.256.13",
+        "10.122.256.14",
+        "10.122.256.15",
+        "10.122.256.16",
+        "10.122.256.17",
+        "10.122.256.18",
+        "10.122.256.19",
+        "10.122.256.20",
+        "10.122.256.21",
+        "10.122.256.22",
+        "10.122.256.23",
+        "10.122.256.24",
+        "10.122.256.25",
+        "10.122.256.26",
+        "10.122.256.27",
+        "10.122.256.28",
+        "10.122.256.29",
+        "10.122.256.30",
+        "10.122.256.31",
+        "10.122.256.32",
+        "10.122.256.33",
+        "10.122.256.34",
+        "10.122.256.35",
+        "10.122.256.36",
+        "10.122.256.37",
+        "10.122.256.38",
+        "10.122.256.39",
+        "10.122.256.40",
+        "10.122.256.41",
+        "10.122.256.42",
+        "10.122.256.43",
+        "10.122.256.44",
+        "10.122.256.45",
+        "10.122.256.46",
+        "10.122.256.47",
+        "10.122.256.48",
+        "10.122.256.49",
+        "10.122.256.50",
+        "10.122.256.51",
+        "10.122.256.52",
+        "10.122.256.53",
+        "10.122.256.54",
+        "10.122.256.55",
+        "10.122.256.56",
+        "10.122.256.57",
+        "10.122.256.58",
+        "10.122.256.59",
+        "10.122.256.60",
+        "10.122.256.61",
+        "10.122.256.62"
+    ],
+    "routeAddress": "10.122.256.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.122.256.65",
+        "10.122.256.66",
+        "10.122.256.67",
+        "10.122.256.68",
+        "10.122.256.69",
+        "10.122.256.70",
+        "10.122.256.71",
+        "10.122.256.72",
+        "10.122.256.73",
+        "10.122.256.74",
+        "10.122.256.75",
+        "10.122.256.76",
+        "10.122.256.77",
+        "10.122.256.78",
+        "10.122.256.79",
+        "10.122.256.80",
+        "10.122.256.81",
+        "10.122.256.82",
+        "10.122.256.83",
+        "10.122.256.84",
+        "10.122.256.85",
+        "10.122.256.86",
+        "10.122.256.87",
+        "10.122.256.88",
+        "10.122.256.89",
+        "10.122.256.90",
+        "10.122.256.91",
+        "10.122.256.92",
+        "10.122.256.93",
+        "10.122.256.94"
+    ],
+    "corporateAddress": "10.122.256.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.122.256.97",
+        "10.122.256.98",
+        "10.122.256.99",
+        "10.122.256.100",
+        "10.122.256.101",
+        "10.122.256.102",
+        "10.122.256.103",
+        "10.122.256.104",
+        "10.122.256.105",
+        "10.122.256.106",
+        "10.122.256.107",
+        "10.122.256.108",
+        "10.122.256.109",
+        "10.122.256.110",
+        "10.122.256.111",
+        "10.122.256.112",
+        "10.122.256.113",
+        "10.122.256.114",
+        "10.122.256.115",
+        "10.122.256.116",
+        "10.122.256.117",
+        "10.122.256.118",
+        "10.122.256.119",
+        "10.122.256.120",
+        "10.122.256.121",
+        "10.122.256.122",
+        "10.122.256.123",
+        "10.122.256.124",
+        "10.122.256.125"
+    ],
+    "latitude": 28.713,
+    "longitude": -97.214,
+    "nodes": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.97",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..Firewall 256",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.713,
+            "Longitude": -97.214
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.98",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..Router 256",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.1",
+            "ipAddress": "10.122.256.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN.OT.Switch 511",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.99",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN.Corporate.Switch 512",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.3",
+            "ipAddress": "10.122.256.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.4",
+            "ipAddress": "10.122.256.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.5",
+            "ipAddress": "10.122.256.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.2",
+            "ipAddress": "10.122.256.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..RC 256",
+            "compromised": false,
+            "relayIPlist": [
+                "10.122.256.3",
+                "10.122.256.4",
+                "10.122.256.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.100",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..Host 511",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.100",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..Host 512",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.100",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..LocalDatabase 511",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.100",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..LocalWebServer 512",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.101",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..hmi 511",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.100",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..outstation 512",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 127.FANNIN..RC 256",
+            "destination": "Utility 127.FANNIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN..RC 256",
+            "destination": "Utility 127.FANNIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN..RC 256",
+            "destination": "Utility 127.FANNIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN..Router 256",
+            "destination": "Utility 127.FANNIN..Firewall 256",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN..Firewall 256",
+            "destination": "Utility 127.FANNIN.OT.Switch 511",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN.OT.Switch 511",
+            "destination": "Utility 127.FANNIN..RC 256",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN..Firewall 256",
+            "destination": "Utility 127.FANNIN.Corporate.Switch 512",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN.Corporate.Switch 512",
+            "destination": "Utility 127.FANNIN..Host 511",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN.Corporate.Switch 512",
+            "destination": "Utility 127.FANNIN..Host 512",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN.Corporate.Switch 512",
+            "destination": "Utility 127.FANNIN..LocalDatabase 511",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.FANNIN.Corporate.Switch 512",
+            "destination": "Utility 127.FANNIN..LocalWebServer 512",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.1",
+            "ipAddress": "10.122.256.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN.OT.Switch 511",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.2",
+            "ipAddress": "10.122.256.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..RC 256",
+            "compromised": false,
+            "relayIPlist": [
+                "10.122.256.3",
+                "10.122.256.4",
+                "10.122.256.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.97",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..Firewall 256",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.713,
+            "Longitude": -97.214
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.98",
+            "ipAddress": "10.122.256.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..Router 256",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.1",
+            "ipAddress": "10.122.256.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN.OT.Switch 511",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.256.2",
+            "ipAddress": "10.122.256.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FANNIN",
+            "label": "Utility 127.FANNIN..RC 256",
+            "compromised": false,
+            "relayIPlist": [
+                "10.122.256.3",
+                "10.122.256.4",
+                "10.122.256.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 460.56,
+    "genmvar": -23.08,
+    "connecting_TS_num": 1066
+}

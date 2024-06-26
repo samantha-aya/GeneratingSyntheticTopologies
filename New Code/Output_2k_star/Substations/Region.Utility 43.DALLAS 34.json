@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 43.DALLAS 34",
+    "networkLan": "10.148.694.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 43",
+    "utility_id": 148,
+    "substation": "DALLAS 34",
+    "substationNumber": 694,
+    "OTAddress": "10.148.694.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.148.694.1",
+        "10.148.694.2",
+        "10.148.694.3",
+        "10.148.694.4",
+        "10.148.694.5",
+        "10.148.694.6",
+        "10.148.694.7",
+        "10.148.694.8",
+        "10.148.694.9",
+        "10.148.694.10",
+        "10.148.694.11",
+        "10.148.694.12",
+        "10.148.694.13",
+        "10.148.694.14",
+        "10.148.694.15",
+        "10.148.694.16",
+        "10.148.694.17",
+        "10.148.694.18",
+        "10.148.694.19",
+        "10.148.694.20",
+        "10.148.694.21",
+        "10.148.694.22",
+        "10.148.694.23",
+        "10.148.694.24",
+        "10.148.694.25",
+        "10.148.694.26",
+        "10.148.694.27",
+        "10.148.694.28",
+        "10.148.694.29",
+        "10.148.694.30",
+        "10.148.694.31",
+        "10.148.694.32",
+        "10.148.694.33",
+        "10.148.694.34",
+        "10.148.694.35",
+        "10.148.694.36",
+        "10.148.694.37",
+        "10.148.694.38",
+        "10.148.694.39",
+        "10.148.694.40",
+        "10.148.694.41",
+        "10.148.694.42",
+        "10.148.694.43",
+        "10.148.694.44",
+        "10.148.694.45",
+        "10.148.694.46",
+        "10.148.694.47",
+        "10.148.694.48",
+        "10.148.694.49",
+        "10.148.694.50",
+        "10.148.694.51",
+        "10.148.694.52",
+        "10.148.694.53",
+        "10.148.694.54",
+        "10.148.694.55",
+        "10.148.694.56",
+        "10.148.694.57",
+        "10.148.694.58",
+        "10.148.694.59",
+        "10.148.694.60",
+        "10.148.694.61",
+        "10.148.694.62"
+    ],
+    "routeAddress": "10.148.694.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.148.694.65",
+        "10.148.694.66",
+        "10.148.694.67",
+        "10.148.694.68",
+        "10.148.694.69",
+        "10.148.694.70",
+        "10.148.694.71",
+        "10.148.694.72",
+        "10.148.694.73",
+        "10.148.694.74",
+        "10.148.694.75",
+        "10.148.694.76",
+        "10.148.694.77",
+        "10.148.694.78",
+        "10.148.694.79",
+        "10.148.694.80",
+        "10.148.694.81",
+        "10.148.694.82",
+        "10.148.694.83",
+        "10.148.694.84",
+        "10.148.694.85",
+        "10.148.694.86",
+        "10.148.694.87",
+        "10.148.694.88",
+        "10.148.694.89",
+        "10.148.694.90",
+        "10.148.694.91",
+        "10.148.694.92",
+        "10.148.694.93",
+        "10.148.694.94"
+    ],
+    "corporateAddress": "10.148.694.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.148.694.97",
+        "10.148.694.98",
+        "10.148.694.99",
+        "10.148.694.100",
+        "10.148.694.101",
+        "10.148.694.102",
+        "10.148.694.103",
+        "10.148.694.104",
+        "10.148.694.105",
+        "10.148.694.106",
+        "10.148.694.107",
+        "10.148.694.108",
+        "10.148.694.109",
+        "10.148.694.110",
+        "10.148.694.111",
+        "10.148.694.112",
+        "10.148.694.113",
+        "10.148.694.114",
+        "10.148.694.115",
+        "10.148.694.116",
+        "10.148.694.117",
+        "10.148.694.118",
+        "10.148.694.119",
+        "10.148.694.120",
+        "10.148.694.121",
+        "10.148.694.122",
+        "10.148.694.123",
+        "10.148.694.124",
+        "10.148.694.125"
+    ],
+    "latitude": 32.661,
+    "longitude": -96.841,
+    "nodes": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.97",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..Firewall 694",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.661,
+            "Longitude": -96.841
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.98",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..Router 694",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.1",
+            "ipAddress": "10.148.694.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34.OT.Switch 1387",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.99",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34.Corporate.Switch 1388",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.3",
+            "ipAddress": "10.148.694.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.2",
+            "ipAddress": "10.148.694.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..RC 694",
+            "compromised": false,
+            "relayIPlist": [
+                "10.148.694.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.100",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..Host 1387",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.100",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..Host 1388",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.100",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..LocalDatabase 1387",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.100",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..LocalWebServer 1388",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.101",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..hmi 1387",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.100",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..outstation 1388",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 43.DALLAS 34..RC 694",
+            "destination": "Utility 43.DALLAS 34..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DALLAS 34..Router 694",
+            "destination": "Utility 43.DALLAS 34..Firewall 694",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DALLAS 34..Firewall 694",
+            "destination": "Utility 43.DALLAS 34.OT.Switch 1387",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DALLAS 34.OT.Switch 1387",
+            "destination": "Utility 43.DALLAS 34..RC 694",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DALLAS 34..Firewall 694",
+            "destination": "Utility 43.DALLAS 34.Corporate.Switch 1388",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DALLAS 34.Corporate.Switch 1388",
+            "destination": "Utility 43.DALLAS 34..Host 1387",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DALLAS 34.Corporate.Switch 1388",
+            "destination": "Utility 43.DALLAS 34..Host 1388",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DALLAS 34.Corporate.Switch 1388",
+            "destination": "Utility 43.DALLAS 34..LocalDatabase 1387",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 43.DALLAS 34.Corporate.Switch 1388",
+            "destination": "Utility 43.DALLAS 34..LocalWebServer 1388",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.1",
+            "ipAddress": "10.148.694.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34.OT.Switch 1387",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.2",
+            "ipAddress": "10.148.694.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..RC 694",
+            "compromised": false,
+            "relayIPlist": [
+                "10.148.694.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.97",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..Firewall 694",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.661,
+            "Longitude": -96.841
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.98",
+            "ipAddress": "10.148.694.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..Router 694",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.1",
+            "ipAddress": "10.148.694.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34.OT.Switch 1387",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 43",
+            "adminIP": "10.148.694.2",
+            "ipAddress": "10.148.694.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 34",
+            "label": "Utility 43.DALLAS 34..RC 694",
+            "compromised": false,
+            "relayIPlist": [
+                "10.148.694.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

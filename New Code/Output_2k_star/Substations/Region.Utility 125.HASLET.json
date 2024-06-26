@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 125.HASLET",
+    "networkLan": "10.140.418.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 125",
+    "utility_id": 140,
+    "substation": "HASLET",
+    "substationNumber": 418,
+    "OTAddress": "10.140.418.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.140.418.1",
+        "10.140.418.2",
+        "10.140.418.3",
+        "10.140.418.4",
+        "10.140.418.5",
+        "10.140.418.6",
+        "10.140.418.7",
+        "10.140.418.8",
+        "10.140.418.9",
+        "10.140.418.10",
+        "10.140.418.11",
+        "10.140.418.12",
+        "10.140.418.13",
+        "10.140.418.14",
+        "10.140.418.15",
+        "10.140.418.16",
+        "10.140.418.17",
+        "10.140.418.18",
+        "10.140.418.19",
+        "10.140.418.20",
+        "10.140.418.21",
+        "10.140.418.22",
+        "10.140.418.23",
+        "10.140.418.24",
+        "10.140.418.25",
+        "10.140.418.26",
+        "10.140.418.27",
+        "10.140.418.28",
+        "10.140.418.29",
+        "10.140.418.30",
+        "10.140.418.31",
+        "10.140.418.32",
+        "10.140.418.33",
+        "10.140.418.34",
+        "10.140.418.35",
+        "10.140.418.36",
+        "10.140.418.37",
+        "10.140.418.38",
+        "10.140.418.39",
+        "10.140.418.40",
+        "10.140.418.41",
+        "10.140.418.42",
+        "10.140.418.43",
+        "10.140.418.44",
+        "10.140.418.45",
+        "10.140.418.46",
+        "10.140.418.47",
+        "10.140.418.48",
+        "10.140.418.49",
+        "10.140.418.50",
+        "10.140.418.51",
+        "10.140.418.52",
+        "10.140.418.53",
+        "10.140.418.54",
+        "10.140.418.55",
+        "10.140.418.56",
+        "10.140.418.57",
+        "10.140.418.58",
+        "10.140.418.59",
+        "10.140.418.60",
+        "10.140.418.61",
+        "10.140.418.62"
+    ],
+    "routeAddress": "10.140.418.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.140.418.65",
+        "10.140.418.66",
+        "10.140.418.67",
+        "10.140.418.68",
+        "10.140.418.69",
+        "10.140.418.70",
+        "10.140.418.71",
+        "10.140.418.72",
+        "10.140.418.73",
+        "10.140.418.74",
+        "10.140.418.75",
+        "10.140.418.76",
+        "10.140.418.77",
+        "10.140.418.78",
+        "10.140.418.79",
+        "10.140.418.80",
+        "10.140.418.81",
+        "10.140.418.82",
+        "10.140.418.83",
+        "10.140.418.84",
+        "10.140.418.85",
+        "10.140.418.86",
+        "10.140.418.87",
+        "10.140.418.88",
+        "10.140.418.89",
+        "10.140.418.90",
+        "10.140.418.91",
+        "10.140.418.92",
+        "10.140.418.93",
+        "10.140.418.94"
+    ],
+    "corporateAddress": "10.140.418.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.140.418.97",
+        "10.140.418.98",
+        "10.140.418.99",
+        "10.140.418.100",
+        "10.140.418.101",
+        "10.140.418.102",
+        "10.140.418.103",
+        "10.140.418.104",
+        "10.140.418.105",
+        "10.140.418.106",
+        "10.140.418.107",
+        "10.140.418.108",
+        "10.140.418.109",
+        "10.140.418.110",
+        "10.140.418.111",
+        "10.140.418.112",
+        "10.140.418.113",
+        "10.140.418.114",
+        "10.140.418.115",
+        "10.140.418.116",
+        "10.140.418.117",
+        "10.140.418.118",
+        "10.140.418.119",
+        "10.140.418.120",
+        "10.140.418.121",
+        "10.140.418.122",
+        "10.140.418.123",
+        "10.140.418.124",
+        "10.140.418.125"
+    ],
+    "latitude": 32.987,
+    "longitude": -97.377,
+    "nodes": [
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.97",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..Firewall 418",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.987,
+            "Longitude": -97.377
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.98",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..Router 418",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.1",
+            "ipAddress": "10.140.418.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET.OT.Switch 835",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.99",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET.Corporate.Switch 836",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.3",
+            "ipAddress": "10.140.418.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.2",
+            "ipAddress": "10.140.418.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..RC 418",
+            "compromised": false,
+            "relayIPlist": [
+                "10.140.418.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.100",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..Host 835",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.100",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..Host 836",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.100",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..LocalDatabase 835",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.100",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..LocalWebServer 836",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.101",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..hmi 835",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.100",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..outstation 836",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 125.HASLET..RC 418",
+            "destination": "Utility 125.HASLET..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 125.HASLET..Router 418",
+            "destination": "Utility 125.HASLET..Firewall 418",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 125.HASLET..Firewall 418",
+            "destination": "Utility 125.HASLET.OT.Switch 835",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 125.HASLET.OT.Switch 835",
+            "destination": "Utility 125.HASLET..RC 418",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 125.HASLET..Firewall 418",
+            "destination": "Utility 125.HASLET.Corporate.Switch 836",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 125.HASLET.Corporate.Switch 836",
+            "destination": "Utility 125.HASLET..Host 835",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 125.HASLET.Corporate.Switch 836",
+            "destination": "Utility 125.HASLET..Host 836",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 125.HASLET.Corporate.Switch 836",
+            "destination": "Utility 125.HASLET..LocalDatabase 835",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 125.HASLET.Corporate.Switch 836",
+            "destination": "Utility 125.HASLET..LocalWebServer 836",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.1",
+            "ipAddress": "10.140.418.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET.OT.Switch 835",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.2",
+            "ipAddress": "10.140.418.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..RC 418",
+            "compromised": false,
+            "relayIPlist": [
+                "10.140.418.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.97",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..Firewall 418",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.987,
+            "Longitude": -97.377
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.98",
+            "ipAddress": "10.140.418.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..Router 418",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.1",
+            "ipAddress": "10.140.418.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET.OT.Switch 835",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 125",
+            "adminIP": "10.140.418.2",
+            "ipAddress": "10.140.418.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HASLET",
+            "label": "Utility 125.HASLET..RC 418",
+            "compromised": false,
+            "relayIPlist": [
+                "10.140.418.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

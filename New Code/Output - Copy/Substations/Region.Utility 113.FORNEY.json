@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 113.FORNEY",
+    "networkLan": "10.149.558.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 113",
+    "utility_id": 149,
+    "substation": "FORNEY",
+    "substationNumber": 558,
+    "OTAddress": "10.149.558.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.149.558.1",
+        "10.149.558.2",
+        "10.149.558.3",
+        "10.149.558.4",
+        "10.149.558.5",
+        "10.149.558.6",
+        "10.149.558.7",
+        "10.149.558.8",
+        "10.149.558.9",
+        "10.149.558.10",
+        "10.149.558.11",
+        "10.149.558.12",
+        "10.149.558.13",
+        "10.149.558.14",
+        "10.149.558.15",
+        "10.149.558.16",
+        "10.149.558.17",
+        "10.149.558.18",
+        "10.149.558.19",
+        "10.149.558.20",
+        "10.149.558.21",
+        "10.149.558.22",
+        "10.149.558.23",
+        "10.149.558.24",
+        "10.149.558.25",
+        "10.149.558.26",
+        "10.149.558.27",
+        "10.149.558.28",
+        "10.149.558.29",
+        "10.149.558.30",
+        "10.149.558.31",
+        "10.149.558.32",
+        "10.149.558.33",
+        "10.149.558.34",
+        "10.149.558.35",
+        "10.149.558.36",
+        "10.149.558.37",
+        "10.149.558.38",
+        "10.149.558.39",
+        "10.149.558.40",
+        "10.149.558.41",
+        "10.149.558.42",
+        "10.149.558.43",
+        "10.149.558.44",
+        "10.149.558.45",
+        "10.149.558.46",
+        "10.149.558.47",
+        "10.149.558.48",
+        "10.149.558.49",
+        "10.149.558.50",
+        "10.149.558.51",
+        "10.149.558.52",
+        "10.149.558.53",
+        "10.149.558.54",
+        "10.149.558.55",
+        "10.149.558.56",
+        "10.149.558.57",
+        "10.149.558.58",
+        "10.149.558.59",
+        "10.149.558.60",
+        "10.149.558.61",
+        "10.149.558.62"
+    ],
+    "routeAddress": "10.149.558.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.149.558.65",
+        "10.149.558.66",
+        "10.149.558.67",
+        "10.149.558.68",
+        "10.149.558.69",
+        "10.149.558.70",
+        "10.149.558.71",
+        "10.149.558.72",
+        "10.149.558.73",
+        "10.149.558.74",
+        "10.149.558.75",
+        "10.149.558.76",
+        "10.149.558.77",
+        "10.149.558.78",
+        "10.149.558.79",
+        "10.149.558.80",
+        "10.149.558.81",
+        "10.149.558.82",
+        "10.149.558.83",
+        "10.149.558.84",
+        "10.149.558.85",
+        "10.149.558.86",
+        "10.149.558.87",
+        "10.149.558.88",
+        "10.149.558.89",
+        "10.149.558.90",
+        "10.149.558.91",
+        "10.149.558.92",
+        "10.149.558.93",
+        "10.149.558.94"
+    ],
+    "corporateAddress": "10.149.558.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.149.558.97",
+        "10.149.558.98",
+        "10.149.558.99",
+        "10.149.558.100",
+        "10.149.558.101",
+        "10.149.558.102",
+        "10.149.558.103",
+        "10.149.558.104",
+        "10.149.558.105",
+        "10.149.558.106",
+        "10.149.558.107",
+        "10.149.558.108",
+        "10.149.558.109",
+        "10.149.558.110",
+        "10.149.558.111",
+        "10.149.558.112",
+        "10.149.558.113",
+        "10.149.558.114",
+        "10.149.558.115",
+        "10.149.558.116",
+        "10.149.558.117",
+        "10.149.558.118",
+        "10.149.558.119",
+        "10.149.558.120",
+        "10.149.558.121",
+        "10.149.558.122",
+        "10.149.558.123",
+        "10.149.558.124",
+        "10.149.558.125"
+    ],
+    "latitude": 32.743,
+    "longitude": -96.455,
+    "nodes": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.97",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..Firewall 558",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.743,
+            "Longitude": -96.455
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.98",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..Router 558",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.1",
+            "ipAddress": "10.149.558.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY.OT.Switch 1115",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.99",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY.Corporate.Switch 1116",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.3",
+            "ipAddress": "10.149.558.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.2",
+            "ipAddress": "10.149.558.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..RC 558",
+            "compromised": false,
+            "relayIPlist": [
+                "10.149.558.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.100",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..Host 1115",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.100",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..Host 1116",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.100",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..LocalDatabase 1115",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.100",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..LocalWebServer 1116",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.101",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..hmi 1115",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.100",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..outstation 1116",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 113.FORNEY..RC 558",
+            "destination": "Utility 113.FORNEY..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.FORNEY..Router 558",
+            "destination": "Utility 113.FORNEY..Firewall 558",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.FORNEY..Firewall 558",
+            "destination": "Utility 113.FORNEY.OT.Switch 1115",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.FORNEY.OT.Switch 1115",
+            "destination": "Utility 113.FORNEY..RC 558",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.FORNEY..Firewall 558",
+            "destination": "Utility 113.FORNEY.Corporate.Switch 1116",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.FORNEY.Corporate.Switch 1116",
+            "destination": "Utility 113.FORNEY..Host 1115",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.FORNEY.Corporate.Switch 1116",
+            "destination": "Utility 113.FORNEY..Host 1116",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.FORNEY.Corporate.Switch 1116",
+            "destination": "Utility 113.FORNEY..LocalDatabase 1115",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.FORNEY.Corporate.Switch 1116",
+            "destination": "Utility 113.FORNEY..LocalWebServer 1116",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.1",
+            "ipAddress": "10.149.558.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY.OT.Switch 1115",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.2",
+            "ipAddress": "10.149.558.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..RC 558",
+            "compromised": false,
+            "relayIPlist": [
+                "10.149.558.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.97",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..Firewall 558",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.743,
+            "Longitude": -96.455
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.98",
+            "ipAddress": "10.149.558.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..Router 558",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.1",
+            "ipAddress": "10.149.558.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY.OT.Switch 1115",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.558.2",
+            "ipAddress": "10.149.558.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORNEY",
+            "label": "Utility 113.FORNEY..RC 558",
+            "compromised": false,
+            "relayIPlist": [
+                "10.149.558.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

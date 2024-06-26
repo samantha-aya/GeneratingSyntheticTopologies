@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 113.MESQUITE 3",
+    "networkLan": "10.149.600.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 113",
+    "utility_id": 149,
+    "substation": "MESQUITE 3",
+    "substationNumber": 600,
+    "OTAddress": "10.149.600.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.149.600.1",
+        "10.149.600.2",
+        "10.149.600.3",
+        "10.149.600.4",
+        "10.149.600.5",
+        "10.149.600.6",
+        "10.149.600.7",
+        "10.149.600.8",
+        "10.149.600.9",
+        "10.149.600.10",
+        "10.149.600.11",
+        "10.149.600.12",
+        "10.149.600.13",
+        "10.149.600.14",
+        "10.149.600.15",
+        "10.149.600.16",
+        "10.149.600.17",
+        "10.149.600.18",
+        "10.149.600.19",
+        "10.149.600.20",
+        "10.149.600.21",
+        "10.149.600.22",
+        "10.149.600.23",
+        "10.149.600.24",
+        "10.149.600.25",
+        "10.149.600.26",
+        "10.149.600.27",
+        "10.149.600.28",
+        "10.149.600.29",
+        "10.149.600.30",
+        "10.149.600.31",
+        "10.149.600.32",
+        "10.149.600.33",
+        "10.149.600.34",
+        "10.149.600.35",
+        "10.149.600.36",
+        "10.149.600.37",
+        "10.149.600.38",
+        "10.149.600.39",
+        "10.149.600.40",
+        "10.149.600.41",
+        "10.149.600.42",
+        "10.149.600.43",
+        "10.149.600.44",
+        "10.149.600.45",
+        "10.149.600.46",
+        "10.149.600.47",
+        "10.149.600.48",
+        "10.149.600.49",
+        "10.149.600.50",
+        "10.149.600.51",
+        "10.149.600.52",
+        "10.149.600.53",
+        "10.149.600.54",
+        "10.149.600.55",
+        "10.149.600.56",
+        "10.149.600.57",
+        "10.149.600.58",
+        "10.149.600.59",
+        "10.149.600.60",
+        "10.149.600.61",
+        "10.149.600.62"
+    ],
+    "routeAddress": "10.149.600.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.149.600.65",
+        "10.149.600.66",
+        "10.149.600.67",
+        "10.149.600.68",
+        "10.149.600.69",
+        "10.149.600.70",
+        "10.149.600.71",
+        "10.149.600.72",
+        "10.149.600.73",
+        "10.149.600.74",
+        "10.149.600.75",
+        "10.149.600.76",
+        "10.149.600.77",
+        "10.149.600.78",
+        "10.149.600.79",
+        "10.149.600.80",
+        "10.149.600.81",
+        "10.149.600.82",
+        "10.149.600.83",
+        "10.149.600.84",
+        "10.149.600.85",
+        "10.149.600.86",
+        "10.149.600.87",
+        "10.149.600.88",
+        "10.149.600.89",
+        "10.149.600.90",
+        "10.149.600.91",
+        "10.149.600.92",
+        "10.149.600.93",
+        "10.149.600.94"
+    ],
+    "corporateAddress": "10.149.600.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.149.600.97",
+        "10.149.600.98",
+        "10.149.600.99",
+        "10.149.600.100",
+        "10.149.600.101",
+        "10.149.600.102",
+        "10.149.600.103",
+        "10.149.600.104",
+        "10.149.600.105",
+        "10.149.600.106",
+        "10.149.600.107",
+        "10.149.600.108",
+        "10.149.600.109",
+        "10.149.600.110",
+        "10.149.600.111",
+        "10.149.600.112",
+        "10.149.600.113",
+        "10.149.600.114",
+        "10.149.600.115",
+        "10.149.600.116",
+        "10.149.600.117",
+        "10.149.600.118",
+        "10.149.600.119",
+        "10.149.600.120",
+        "10.149.600.121",
+        "10.149.600.122",
+        "10.149.600.123",
+        "10.149.600.124",
+        "10.149.600.125"
+    ],
+    "latitude": 32.817,
+    "longitude": -96.63,
+    "nodes": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.97",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..Firewall 600",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.817,
+            "Longitude": -96.63
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.98",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..Router 600",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.1",
+            "ipAddress": "10.149.600.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3.OT.Switch 1199",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.99",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3.Corporate.Switch 1200",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.3",
+            "ipAddress": "10.149.600.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.2",
+            "ipAddress": "10.149.600.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..RC 600",
+            "compromised": false,
+            "relayIPlist": [
+                "10.149.600.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.100",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..Host 1199",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.100",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..Host 1200",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.100",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..LocalDatabase 1199",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.100",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..LocalWebServer 1200",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.101",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..hmi 1199",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.100",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..outstation 1200",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 113.MESQUITE 3..RC 600",
+            "destination": "Utility 113.MESQUITE 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.MESQUITE 3..Router 600",
+            "destination": "Utility 113.MESQUITE 3..Firewall 600",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.MESQUITE 3..Firewall 600",
+            "destination": "Utility 113.MESQUITE 3.OT.Switch 1199",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.MESQUITE 3.OT.Switch 1199",
+            "destination": "Utility 113.MESQUITE 3..RC 600",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.MESQUITE 3..Firewall 600",
+            "destination": "Utility 113.MESQUITE 3.Corporate.Switch 1200",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.MESQUITE 3.Corporate.Switch 1200",
+            "destination": "Utility 113.MESQUITE 3..Host 1199",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.MESQUITE 3.Corporate.Switch 1200",
+            "destination": "Utility 113.MESQUITE 3..Host 1200",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.MESQUITE 3.Corporate.Switch 1200",
+            "destination": "Utility 113.MESQUITE 3..LocalDatabase 1199",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 113.MESQUITE 3.Corporate.Switch 1200",
+            "destination": "Utility 113.MESQUITE 3..LocalWebServer 1200",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.1",
+            "ipAddress": "10.149.600.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3.OT.Switch 1199",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.2",
+            "ipAddress": "10.149.600.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..RC 600",
+            "compromised": false,
+            "relayIPlist": [
+                "10.149.600.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.97",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..Firewall 600",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.817,
+            "Longitude": -96.63
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.98",
+            "ipAddress": "10.149.600.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..Router 600",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.1",
+            "ipAddress": "10.149.600.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3.OT.Switch 1199",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 113",
+            "adminIP": "10.149.600.2",
+            "ipAddress": "10.149.600.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MESQUITE 3",
+            "label": "Utility 113.MESQUITE 3..RC 600",
+            "compromised": false,
+            "relayIPlist": [
+                "10.149.600.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

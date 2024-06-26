@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.DENISON 2",
+    "networkLan": "10.55.102.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "DENISON 2",
+    "substationNumber": 102,
+    "OTAddress": "10.55.102.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.102.1",
+        "10.55.102.2",
+        "10.55.102.3",
+        "10.55.102.4",
+        "10.55.102.5",
+        "10.55.102.6",
+        "10.55.102.7",
+        "10.55.102.8",
+        "10.55.102.9",
+        "10.55.102.10",
+        "10.55.102.11",
+        "10.55.102.12",
+        "10.55.102.13",
+        "10.55.102.14",
+        "10.55.102.15",
+        "10.55.102.16",
+        "10.55.102.17",
+        "10.55.102.18",
+        "10.55.102.19",
+        "10.55.102.20",
+        "10.55.102.21",
+        "10.55.102.22",
+        "10.55.102.23",
+        "10.55.102.24",
+        "10.55.102.25",
+        "10.55.102.26",
+        "10.55.102.27",
+        "10.55.102.28",
+        "10.55.102.29",
+        "10.55.102.30",
+        "10.55.102.31",
+        "10.55.102.32",
+        "10.55.102.33",
+        "10.55.102.34",
+        "10.55.102.35",
+        "10.55.102.36",
+        "10.55.102.37",
+        "10.55.102.38",
+        "10.55.102.39",
+        "10.55.102.40",
+        "10.55.102.41",
+        "10.55.102.42",
+        "10.55.102.43",
+        "10.55.102.44",
+        "10.55.102.45",
+        "10.55.102.46",
+        "10.55.102.47",
+        "10.55.102.48",
+        "10.55.102.49",
+        "10.55.102.50",
+        "10.55.102.51",
+        "10.55.102.52",
+        "10.55.102.53",
+        "10.55.102.54",
+        "10.55.102.55",
+        "10.55.102.56",
+        "10.55.102.57",
+        "10.55.102.58",
+        "10.55.102.59",
+        "10.55.102.60",
+        "10.55.102.61",
+        "10.55.102.62"
+    ],
+    "routeAddress": "10.55.102.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.102.65",
+        "10.55.102.66",
+        "10.55.102.67",
+        "10.55.102.68",
+        "10.55.102.69",
+        "10.55.102.70",
+        "10.55.102.71",
+        "10.55.102.72",
+        "10.55.102.73",
+        "10.55.102.74",
+        "10.55.102.75",
+        "10.55.102.76",
+        "10.55.102.77",
+        "10.55.102.78",
+        "10.55.102.79",
+        "10.55.102.80",
+        "10.55.102.81",
+        "10.55.102.82",
+        "10.55.102.83",
+        "10.55.102.84",
+        "10.55.102.85",
+        "10.55.102.86",
+        "10.55.102.87",
+        "10.55.102.88",
+        "10.55.102.89",
+        "10.55.102.90",
+        "10.55.102.91",
+        "10.55.102.92",
+        "10.55.102.93",
+        "10.55.102.94"
+    ],
+    "corporateAddress": "10.55.102.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.102.97",
+        "10.55.102.98",
+        "10.55.102.99",
+        "10.55.102.100",
+        "10.55.102.101",
+        "10.55.102.102",
+        "10.55.102.103",
+        "10.55.102.104",
+        "10.55.102.105",
+        "10.55.102.106",
+        "10.55.102.107",
+        "10.55.102.108",
+        "10.55.102.109",
+        "10.55.102.110",
+        "10.55.102.111",
+        "10.55.102.112",
+        "10.55.102.113",
+        "10.55.102.114",
+        "10.55.102.115",
+        "10.55.102.116",
+        "10.55.102.117",
+        "10.55.102.118",
+        "10.55.102.119",
+        "10.55.102.120",
+        "10.55.102.121",
+        "10.55.102.122",
+        "10.55.102.123",
+        "10.55.102.124",
+        "10.55.102.125"
+    ],
+    "latitude": 33.771,
+    "longitude": -96.604,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.97",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..Firewall 102",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.771,
+            "Longitude": -96.604
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.98",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..Router 102",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.1",
+            "ipAddress": "10.55.102.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2.OT.Switch 203",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.99",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2.Corporate.Switch 204",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.3",
+            "ipAddress": "10.55.102.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.2",
+            "ipAddress": "10.55.102.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..RC 102",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.102.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.100",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..Host 203",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.100",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..Host 204",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.100",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..LocalDatabase 203",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.100",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..LocalWebServer 204",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.101",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..hmi 203",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.100",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..outstation 204",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.DENISON 2..RC 102",
+            "destination": "Utility 2.DENISON 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENISON 2..Router 102",
+            "destination": "Utility 2.DENISON 2..Firewall 102",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENISON 2..Firewall 102",
+            "destination": "Utility 2.DENISON 2.OT.Switch 203",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENISON 2.OT.Switch 203",
+            "destination": "Utility 2.DENISON 2..RC 102",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENISON 2..Firewall 102",
+            "destination": "Utility 2.DENISON 2.Corporate.Switch 204",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENISON 2.Corporate.Switch 204",
+            "destination": "Utility 2.DENISON 2..Host 203",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENISON 2.Corporate.Switch 204",
+            "destination": "Utility 2.DENISON 2..Host 204",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENISON 2.Corporate.Switch 204",
+            "destination": "Utility 2.DENISON 2..LocalDatabase 203",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.DENISON 2.Corporate.Switch 204",
+            "destination": "Utility 2.DENISON 2..LocalWebServer 204",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.1",
+            "ipAddress": "10.55.102.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2.OT.Switch 203",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.2",
+            "ipAddress": "10.55.102.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..RC 102",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.102.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.97",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..Firewall 102",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.771,
+            "Longitude": -96.604
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.98",
+            "ipAddress": "10.55.102.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..Router 102",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.1",
+            "ipAddress": "10.55.102.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2.OT.Switch 203",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.102.2",
+            "ipAddress": "10.55.102.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DENISON 2",
+            "label": "Utility 2.DENISON 2..RC 102",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.102.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

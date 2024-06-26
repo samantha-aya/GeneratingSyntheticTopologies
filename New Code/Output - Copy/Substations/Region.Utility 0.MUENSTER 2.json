@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.MUENSTER 2",
+    "networkLan": "10.52.130.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "MUENSTER 2",
+    "substationNumber": 130,
+    "OTAddress": "10.52.130.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.130.1",
+        "10.52.130.2",
+        "10.52.130.3",
+        "10.52.130.4",
+        "10.52.130.5",
+        "10.52.130.6",
+        "10.52.130.7",
+        "10.52.130.8",
+        "10.52.130.9",
+        "10.52.130.10",
+        "10.52.130.11",
+        "10.52.130.12",
+        "10.52.130.13",
+        "10.52.130.14",
+        "10.52.130.15",
+        "10.52.130.16",
+        "10.52.130.17",
+        "10.52.130.18",
+        "10.52.130.19",
+        "10.52.130.20",
+        "10.52.130.21",
+        "10.52.130.22",
+        "10.52.130.23",
+        "10.52.130.24",
+        "10.52.130.25",
+        "10.52.130.26",
+        "10.52.130.27",
+        "10.52.130.28",
+        "10.52.130.29",
+        "10.52.130.30",
+        "10.52.130.31",
+        "10.52.130.32",
+        "10.52.130.33",
+        "10.52.130.34",
+        "10.52.130.35",
+        "10.52.130.36",
+        "10.52.130.37",
+        "10.52.130.38",
+        "10.52.130.39",
+        "10.52.130.40",
+        "10.52.130.41",
+        "10.52.130.42",
+        "10.52.130.43",
+        "10.52.130.44",
+        "10.52.130.45",
+        "10.52.130.46",
+        "10.52.130.47",
+        "10.52.130.48",
+        "10.52.130.49",
+        "10.52.130.50",
+        "10.52.130.51",
+        "10.52.130.52",
+        "10.52.130.53",
+        "10.52.130.54",
+        "10.52.130.55",
+        "10.52.130.56",
+        "10.52.130.57",
+        "10.52.130.58",
+        "10.52.130.59",
+        "10.52.130.60",
+        "10.52.130.61",
+        "10.52.130.62"
+    ],
+    "routeAddress": "10.52.130.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.130.65",
+        "10.52.130.66",
+        "10.52.130.67",
+        "10.52.130.68",
+        "10.52.130.69",
+        "10.52.130.70",
+        "10.52.130.71",
+        "10.52.130.72",
+        "10.52.130.73",
+        "10.52.130.74",
+        "10.52.130.75",
+        "10.52.130.76",
+        "10.52.130.77",
+        "10.52.130.78",
+        "10.52.130.79",
+        "10.52.130.80",
+        "10.52.130.81",
+        "10.52.130.82",
+        "10.52.130.83",
+        "10.52.130.84",
+        "10.52.130.85",
+        "10.52.130.86",
+        "10.52.130.87",
+        "10.52.130.88",
+        "10.52.130.89",
+        "10.52.130.90",
+        "10.52.130.91",
+        "10.52.130.92",
+        "10.52.130.93",
+        "10.52.130.94"
+    ],
+    "corporateAddress": "10.52.130.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.130.97",
+        "10.52.130.98",
+        "10.52.130.99",
+        "10.52.130.100",
+        "10.52.130.101",
+        "10.52.130.102",
+        "10.52.130.103",
+        "10.52.130.104",
+        "10.52.130.105",
+        "10.52.130.106",
+        "10.52.130.107",
+        "10.52.130.108",
+        "10.52.130.109",
+        "10.52.130.110",
+        "10.52.130.111",
+        "10.52.130.112",
+        "10.52.130.113",
+        "10.52.130.114",
+        "10.52.130.115",
+        "10.52.130.116",
+        "10.52.130.117",
+        "10.52.130.118",
+        "10.52.130.119",
+        "10.52.130.120",
+        "10.52.130.121",
+        "10.52.130.122",
+        "10.52.130.123",
+        "10.52.130.124",
+        "10.52.130.125"
+    ],
+    "latitude": 33.682,
+    "longitude": -97.383,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.97",
+            "ipAddress": "10.52.130.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..Firewall 130",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.682,
+            "Longitude": -97.383
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.98",
+            "ipAddress": "10.52.130.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..Router 130",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.1",
+            "ipAddress": "10.52.130.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2.OT.Switch 259",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.99",
+            "ipAddress": "10.52.130.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2.Corporate.Switch 260",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.3",
+            "ipAddress": "10.52.130.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.2",
+            "ipAddress": "10.52.130.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..RC 130",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.130.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.100",
+            "ipAddress": "10.52.130.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..Host 259",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.100",
+            "ipAddress": "10.52.130.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..Host 260",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.100",
+            "ipAddress": "10.52.130.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..LocalDatabase 259",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.100",
+            "ipAddress": "10.52.130.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..LocalWebServer 260",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.MUENSTER 2..RC 130",
+            "destination": "Utility 0.MUENSTER 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MUENSTER 2..Router 130",
+            "destination": "Utility 0.MUENSTER 2..Firewall 130",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MUENSTER 2..Firewall 130",
+            "destination": "Utility 0.MUENSTER 2.OT.Switch 259",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MUENSTER 2.OT.Switch 259",
+            "destination": "Utility 0.MUENSTER 2..RC 130",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MUENSTER 2..Firewall 130",
+            "destination": "Utility 0.MUENSTER 2.Corporate.Switch 260",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MUENSTER 2.Corporate.Switch 260",
+            "destination": "Utility 0.MUENSTER 2..Host 259",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MUENSTER 2.Corporate.Switch 260",
+            "destination": "Utility 0.MUENSTER 2..Host 260",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MUENSTER 2.Corporate.Switch 260",
+            "destination": "Utility 0.MUENSTER 2..LocalDatabase 259",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MUENSTER 2.Corporate.Switch 260",
+            "destination": "Utility 0.MUENSTER 2..LocalWebServer 260",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.1",
+            "ipAddress": "10.52.130.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2.OT.Switch 259",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.2",
+            "ipAddress": "10.52.130.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..RC 130",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.130.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.97",
+            "ipAddress": "10.52.130.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..Firewall 130",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.682,
+            "Longitude": -97.383
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.98",
+            "ipAddress": "10.52.130.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..Router 130",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.1",
+            "ipAddress": "10.52.130.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2.OT.Switch 259",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.130.2",
+            "ipAddress": "10.52.130.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MUENSTER 2",
+            "label": "Utility 0.MUENSTER 2..RC 130",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.130.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

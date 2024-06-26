@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 132.RIESEL 2",
+    "networkLan": "10.154.604.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 132",
+    "utility_id": 154,
+    "substation": "RIESEL 2",
+    "substationNumber": 604,
+    "OTAddress": "10.154.604.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.154.604.1",
+        "10.154.604.2",
+        "10.154.604.3",
+        "10.154.604.4",
+        "10.154.604.5",
+        "10.154.604.6",
+        "10.154.604.7",
+        "10.154.604.8",
+        "10.154.604.9",
+        "10.154.604.10",
+        "10.154.604.11",
+        "10.154.604.12",
+        "10.154.604.13",
+        "10.154.604.14",
+        "10.154.604.15",
+        "10.154.604.16",
+        "10.154.604.17",
+        "10.154.604.18",
+        "10.154.604.19",
+        "10.154.604.20",
+        "10.154.604.21",
+        "10.154.604.22",
+        "10.154.604.23",
+        "10.154.604.24",
+        "10.154.604.25",
+        "10.154.604.26",
+        "10.154.604.27",
+        "10.154.604.28",
+        "10.154.604.29",
+        "10.154.604.30",
+        "10.154.604.31",
+        "10.154.604.32",
+        "10.154.604.33",
+        "10.154.604.34",
+        "10.154.604.35",
+        "10.154.604.36",
+        "10.154.604.37",
+        "10.154.604.38",
+        "10.154.604.39",
+        "10.154.604.40",
+        "10.154.604.41",
+        "10.154.604.42",
+        "10.154.604.43",
+        "10.154.604.44",
+        "10.154.604.45",
+        "10.154.604.46",
+        "10.154.604.47",
+        "10.154.604.48",
+        "10.154.604.49",
+        "10.154.604.50",
+        "10.154.604.51",
+        "10.154.604.52",
+        "10.154.604.53",
+        "10.154.604.54",
+        "10.154.604.55",
+        "10.154.604.56",
+        "10.154.604.57",
+        "10.154.604.58",
+        "10.154.604.59",
+        "10.154.604.60",
+        "10.154.604.61",
+        "10.154.604.62"
+    ],
+    "routeAddress": "10.154.604.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.154.604.65",
+        "10.154.604.66",
+        "10.154.604.67",
+        "10.154.604.68",
+        "10.154.604.69",
+        "10.154.604.70",
+        "10.154.604.71",
+        "10.154.604.72",
+        "10.154.604.73",
+        "10.154.604.74",
+        "10.154.604.75",
+        "10.154.604.76",
+        "10.154.604.77",
+        "10.154.604.78",
+        "10.154.604.79",
+        "10.154.604.80",
+        "10.154.604.81",
+        "10.154.604.82",
+        "10.154.604.83",
+        "10.154.604.84",
+        "10.154.604.85",
+        "10.154.604.86",
+        "10.154.604.87",
+        "10.154.604.88",
+        "10.154.604.89",
+        "10.154.604.90",
+        "10.154.604.91",
+        "10.154.604.92",
+        "10.154.604.93",
+        "10.154.604.94"
+    ],
+    "corporateAddress": "10.154.604.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.154.604.97",
+        "10.154.604.98",
+        "10.154.604.99",
+        "10.154.604.100",
+        "10.154.604.101",
+        "10.154.604.102",
+        "10.154.604.103",
+        "10.154.604.104",
+        "10.154.604.105",
+        "10.154.604.106",
+        "10.154.604.107",
+        "10.154.604.108",
+        "10.154.604.109",
+        "10.154.604.110",
+        "10.154.604.111",
+        "10.154.604.112",
+        "10.154.604.113",
+        "10.154.604.114",
+        "10.154.604.115",
+        "10.154.604.116",
+        "10.154.604.117",
+        "10.154.604.118",
+        "10.154.604.119",
+        "10.154.604.120",
+        "10.154.604.121",
+        "10.154.604.122",
+        "10.154.604.123",
+        "10.154.604.124",
+        "10.154.604.125"
+    ],
+    "latitude": 31.355,
+    "longitude": -97.013,
+    "nodes": [
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.97",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..Firewall 604",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.355,
+            "Longitude": -97.013
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.98",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..Router 604",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.1",
+            "ipAddress": "10.154.604.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2.OT.Switch 1207",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.99",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2.Corporate.Switch 1208",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.3",
+            "ipAddress": "10.154.604.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.2",
+            "ipAddress": "10.154.604.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..RC 604",
+            "compromised": false,
+            "relayIPlist": [
+                "10.154.604.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.100",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..Host 1207",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.100",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..Host 1208",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.100",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..LocalDatabase 1207",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.100",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..LocalWebServer 1208",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.101",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..hmi 1207",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.100",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..outstation 1208",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 132.RIESEL 2..RC 604",
+            "destination": "Utility 132.RIESEL 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 132.RIESEL 2..Router 604",
+            "destination": "Utility 132.RIESEL 2..Firewall 604",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 132.RIESEL 2..Firewall 604",
+            "destination": "Utility 132.RIESEL 2.OT.Switch 1207",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 132.RIESEL 2.OT.Switch 1207",
+            "destination": "Utility 132.RIESEL 2..RC 604",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 132.RIESEL 2..Firewall 604",
+            "destination": "Utility 132.RIESEL 2.Corporate.Switch 1208",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 132.RIESEL 2.Corporate.Switch 1208",
+            "destination": "Utility 132.RIESEL 2..Host 1207",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 132.RIESEL 2.Corporate.Switch 1208",
+            "destination": "Utility 132.RIESEL 2..Host 1208",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 132.RIESEL 2.Corporate.Switch 1208",
+            "destination": "Utility 132.RIESEL 2..LocalDatabase 1207",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 132.RIESEL 2.Corporate.Switch 1208",
+            "destination": "Utility 132.RIESEL 2..LocalWebServer 1208",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.1",
+            "ipAddress": "10.154.604.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2.OT.Switch 1207",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.2",
+            "ipAddress": "10.154.604.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..RC 604",
+            "compromised": false,
+            "relayIPlist": [
+                "10.154.604.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.97",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..Firewall 604",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.355,
+            "Longitude": -97.013
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.98",
+            "ipAddress": "10.154.604.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..Router 604",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.1",
+            "ipAddress": "10.154.604.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2.OT.Switch 1207",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 132",
+            "adminIP": "10.154.604.2",
+            "ipAddress": "10.154.604.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIESEL 2",
+            "label": "Utility 132.RIESEL 2..RC 604",
+            "compromised": false,
+            "relayIPlist": [
+                "10.154.604.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,589 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 0.KILLEEN 4",
+    "networkLan": "10.52.505.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "KILLEEN 4",
+    "substationNumber": 505,
+    "OTAddress": "10.52.505.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.505.1",
+        "10.52.505.2",
+        "10.52.505.3",
+        "10.52.505.4",
+        "10.52.505.5",
+        "10.52.505.6",
+        "10.52.505.7",
+        "10.52.505.8",
+        "10.52.505.9",
+        "10.52.505.10",
+        "10.52.505.11",
+        "10.52.505.12",
+        "10.52.505.13",
+        "10.52.505.14",
+        "10.52.505.15",
+        "10.52.505.16",
+        "10.52.505.17",
+        "10.52.505.18",
+        "10.52.505.19",
+        "10.52.505.20",
+        "10.52.505.21",
+        "10.52.505.22",
+        "10.52.505.23",
+        "10.52.505.24",
+        "10.52.505.25",
+        "10.52.505.26",
+        "10.52.505.27",
+        "10.52.505.28",
+        "10.52.505.29",
+        "10.52.505.30",
+        "10.52.505.31",
+        "10.52.505.32",
+        "10.52.505.33",
+        "10.52.505.34",
+        "10.52.505.35",
+        "10.52.505.36",
+        "10.52.505.37",
+        "10.52.505.38",
+        "10.52.505.39",
+        "10.52.505.40",
+        "10.52.505.41",
+        "10.52.505.42",
+        "10.52.505.43",
+        "10.52.505.44",
+        "10.52.505.45",
+        "10.52.505.46",
+        "10.52.505.47",
+        "10.52.505.48",
+        "10.52.505.49",
+        "10.52.505.50",
+        "10.52.505.51",
+        "10.52.505.52",
+        "10.52.505.53",
+        "10.52.505.54",
+        "10.52.505.55",
+        "10.52.505.56",
+        "10.52.505.57",
+        "10.52.505.58",
+        "10.52.505.59",
+        "10.52.505.60",
+        "10.52.505.61",
+        "10.52.505.62"
+    ],
+    "routeAddress": "10.52.505.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.505.65",
+        "10.52.505.66",
+        "10.52.505.67",
+        "10.52.505.68",
+        "10.52.505.69",
+        "10.52.505.70",
+        "10.52.505.71",
+        "10.52.505.72",
+        "10.52.505.73",
+        "10.52.505.74",
+        "10.52.505.75",
+        "10.52.505.76",
+        "10.52.505.77",
+        "10.52.505.78",
+        "10.52.505.79",
+        "10.52.505.80",
+        "10.52.505.81",
+        "10.52.505.82",
+        "10.52.505.83",
+        "10.52.505.84",
+        "10.52.505.85",
+        "10.52.505.86",
+        "10.52.505.87",
+        "10.52.505.88",
+        "10.52.505.89",
+        "10.52.505.90",
+        "10.52.505.91",
+        "10.52.505.92",
+        "10.52.505.93",
+        "10.52.505.94"
+    ],
+    "corporateAddress": "10.52.505.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.505.97",
+        "10.52.505.98",
+        "10.52.505.99",
+        "10.52.505.100",
+        "10.52.505.101",
+        "10.52.505.102",
+        "10.52.505.103",
+        "10.52.505.104",
+        "10.52.505.105",
+        "10.52.505.106",
+        "10.52.505.107",
+        "10.52.505.108",
+        "10.52.505.109",
+        "10.52.505.110",
+        "10.52.505.111",
+        "10.52.505.112",
+        "10.52.505.113",
+        "10.52.505.114",
+        "10.52.505.115",
+        "10.52.505.116",
+        "10.52.505.117",
+        "10.52.505.118",
+        "10.52.505.119",
+        "10.52.505.120",
+        "10.52.505.121",
+        "10.52.505.122",
+        "10.52.505.123",
+        "10.52.505.124",
+        "10.52.505.125"
+    ],
+    "latitude": 30.936,
+    "longitude": -97.935,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.97",
+            "ipAddress": "10.52.505.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..Firewall 505",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.936,
+            "Longitude": -97.935
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.98",
+            "ipAddress": "10.52.505.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..Router 505",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.1",
+            "ipAddress": "10.52.505.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4.OT.Switch 1009",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.99",
+            "ipAddress": "10.52.505.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4.Corporate.Switch 1010",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.3",
+            "ipAddress": "10.52.505.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.4",
+            "ipAddress": "10.52.505.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.2",
+            "ipAddress": "10.52.505.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..RC 505",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.505.3",
+                "10.52.505.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.100",
+            "ipAddress": "10.52.505.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..Host 1009",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.100",
+            "ipAddress": "10.52.505.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..Host 1010",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.100",
+            "ipAddress": "10.52.505.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..LocalDatabase 1009",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.100",
+            "ipAddress": "10.52.505.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..LocalWebServer 1010",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.KILLEEN 4..RC 505",
+            "destination": "Utility 0.KILLEEN 4..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KILLEEN 4..RC 505",
+            "destination": "Utility 0.KILLEEN 4..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KILLEEN 4..Router 505",
+            "destination": "Utility 0.KILLEEN 4..Firewall 505",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KILLEEN 4..Firewall 505",
+            "destination": "Utility 0.KILLEEN 4.OT.Switch 1009",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KILLEEN 4.OT.Switch 1009",
+            "destination": "Utility 0.KILLEEN 4..RC 505",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KILLEEN 4..Firewall 505",
+            "destination": "Utility 0.KILLEEN 4.Corporate.Switch 1010",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KILLEEN 4.Corporate.Switch 1010",
+            "destination": "Utility 0.KILLEEN 4..Host 1009",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KILLEEN 4.Corporate.Switch 1010",
+            "destination": "Utility 0.KILLEEN 4..Host 1010",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KILLEEN 4.Corporate.Switch 1010",
+            "destination": "Utility 0.KILLEEN 4..LocalDatabase 1009",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KILLEEN 4.Corporate.Switch 1010",
+            "destination": "Utility 0.KILLEEN 4..LocalWebServer 1010",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.1",
+            "ipAddress": "10.52.505.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4.OT.Switch 1009",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.2",
+            "ipAddress": "10.52.505.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..RC 505",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.505.3",
+                "10.52.505.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.97",
+            "ipAddress": "10.52.505.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..Firewall 505",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.936,
+            "Longitude": -97.935
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.98",
+            "ipAddress": "10.52.505.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..Router 505",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.1",
+            "ipAddress": "10.52.505.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4.OT.Switch 1009",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.505.2",
+            "ipAddress": "10.52.505.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KILLEEN 4",
+            "label": "Utility 0.KILLEEN 4..RC 505",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.505.3",
+                "10.52.505.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 62.GONZALES",
+    "networkLan": "10.165.756.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 62",
+    "utility_id": 165,
+    "substation": "GONZALES",
+    "substationNumber": 756,
+    "OTAddress": "10.165.756.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.165.756.1",
+        "10.165.756.2",
+        "10.165.756.3",
+        "10.165.756.4",
+        "10.165.756.5",
+        "10.165.756.6",
+        "10.165.756.7",
+        "10.165.756.8",
+        "10.165.756.9",
+        "10.165.756.10",
+        "10.165.756.11",
+        "10.165.756.12",
+        "10.165.756.13",
+        "10.165.756.14",
+        "10.165.756.15",
+        "10.165.756.16",
+        "10.165.756.17",
+        "10.165.756.18",
+        "10.165.756.19",
+        "10.165.756.20",
+        "10.165.756.21",
+        "10.165.756.22",
+        "10.165.756.23",
+        "10.165.756.24",
+        "10.165.756.25",
+        "10.165.756.26",
+        "10.165.756.27",
+        "10.165.756.28",
+        "10.165.756.29",
+        "10.165.756.30",
+        "10.165.756.31",
+        "10.165.756.32",
+        "10.165.756.33",
+        "10.165.756.34",
+        "10.165.756.35",
+        "10.165.756.36",
+        "10.165.756.37",
+        "10.165.756.38",
+        "10.165.756.39",
+        "10.165.756.40",
+        "10.165.756.41",
+        "10.165.756.42",
+        "10.165.756.43",
+        "10.165.756.44",
+        "10.165.756.45",
+        "10.165.756.46",
+        "10.165.756.47",
+        "10.165.756.48",
+        "10.165.756.49",
+        "10.165.756.50",
+        "10.165.756.51",
+        "10.165.756.52",
+        "10.165.756.53",
+        "10.165.756.54",
+        "10.165.756.55",
+        "10.165.756.56",
+        "10.165.756.57",
+        "10.165.756.58",
+        "10.165.756.59",
+        "10.165.756.60",
+        "10.165.756.61",
+        "10.165.756.62"
+    ],
+    "routeAddress": "10.165.756.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.165.756.65",
+        "10.165.756.66",
+        "10.165.756.67",
+        "10.165.756.68",
+        "10.165.756.69",
+        "10.165.756.70",
+        "10.165.756.71",
+        "10.165.756.72",
+        "10.165.756.73",
+        "10.165.756.74",
+        "10.165.756.75",
+        "10.165.756.76",
+        "10.165.756.77",
+        "10.165.756.78",
+        "10.165.756.79",
+        "10.165.756.80",
+        "10.165.756.81",
+        "10.165.756.82",
+        "10.165.756.83",
+        "10.165.756.84",
+        "10.165.756.85",
+        "10.165.756.86",
+        "10.165.756.87",
+        "10.165.756.88",
+        "10.165.756.89",
+        "10.165.756.90",
+        "10.165.756.91",
+        "10.165.756.92",
+        "10.165.756.93",
+        "10.165.756.94"
+    ],
+    "corporateAddress": "10.165.756.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.165.756.97",
+        "10.165.756.98",
+        "10.165.756.99",
+        "10.165.756.100",
+        "10.165.756.101",
+        "10.165.756.102",
+        "10.165.756.103",
+        "10.165.756.104",
+        "10.165.756.105",
+        "10.165.756.106",
+        "10.165.756.107",
+        "10.165.756.108",
+        "10.165.756.109",
+        "10.165.756.110",
+        "10.165.756.111",
+        "10.165.756.112",
+        "10.165.756.113",
+        "10.165.756.114",
+        "10.165.756.115",
+        "10.165.756.116",
+        "10.165.756.117",
+        "10.165.756.118",
+        "10.165.756.119",
+        "10.165.756.120",
+        "10.165.756.121",
+        "10.165.756.122",
+        "10.165.756.123",
+        "10.165.756.124",
+        "10.165.756.125"
+    ],
+    "latitude": 29.477,
+    "longitude": -97.449,
+    "nodes": [
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.97",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..Firewall 756",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.477,
+            "Longitude": -97.449
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.98",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..Router 756",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.1",
+            "ipAddress": "10.165.756.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES.OT.Switch 1511",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.99",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES.Corporate.Switch 1512",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.3",
+            "ipAddress": "10.165.756.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.2",
+            "ipAddress": "10.165.756.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..RC 756",
+            "compromised": false,
+            "relayIPlist": [
+                "10.165.756.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.100",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..Host 1511",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.100",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..Host 1512",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.100",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..LocalDatabase 1511",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.100",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..LocalWebServer 1512",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.101",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..hmi 1511",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.100",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..outstation 1512",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 62.GONZALES..RC 756",
+            "destination": "Utility 62.GONZALES..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 62.GONZALES..Router 756",
+            "destination": "Utility 62.GONZALES..Firewall 756",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 62.GONZALES..Firewall 756",
+            "destination": "Utility 62.GONZALES.OT.Switch 1511",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 62.GONZALES.OT.Switch 1511",
+            "destination": "Utility 62.GONZALES..RC 756",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 62.GONZALES..Firewall 756",
+            "destination": "Utility 62.GONZALES.Corporate.Switch 1512",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 62.GONZALES.Corporate.Switch 1512",
+            "destination": "Utility 62.GONZALES..Host 1511",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 62.GONZALES.Corporate.Switch 1512",
+            "destination": "Utility 62.GONZALES..Host 1512",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 62.GONZALES.Corporate.Switch 1512",
+            "destination": "Utility 62.GONZALES..LocalDatabase 1511",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 62.GONZALES.Corporate.Switch 1512",
+            "destination": "Utility 62.GONZALES..LocalWebServer 1512",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.1",
+            "ipAddress": "10.165.756.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES.OT.Switch 1511",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.2",
+            "ipAddress": "10.165.756.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..RC 756",
+            "compromised": false,
+            "relayIPlist": [
+                "10.165.756.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.97",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..Firewall 756",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.477,
+            "Longitude": -97.449
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.98",
+            "ipAddress": "10.165.756.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..Router 756",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.1",
+            "ipAddress": "10.165.756.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES.OT.Switch 1511",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 62",
+            "adminIP": "10.165.756.2",
+            "ipAddress": "10.165.756.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GONZALES",
+            "label": "Utility 62.GONZALES..RC 756",
+            "compromised": false,
+            "relayIPlist": [
+                "10.165.756.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

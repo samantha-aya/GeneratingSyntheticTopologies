@@ -1,0 +1,712 @@
+{
+    "relayCounter": 5,
+    "label": "Region.Utility 14.WADSWORTH",
+    "networkLan": "10.187.968.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 14",
+    "utility_id": 187,
+    "substation": "WADSWORTH",
+    "substationNumber": 968,
+    "OTAddress": "10.187.968.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.187.968.1",
+        "10.187.968.2",
+        "10.187.968.3",
+        "10.187.968.4",
+        "10.187.968.5",
+        "10.187.968.6",
+        "10.187.968.7",
+        "10.187.968.8",
+        "10.187.968.9",
+        "10.187.968.10",
+        "10.187.968.11",
+        "10.187.968.12",
+        "10.187.968.13",
+        "10.187.968.14",
+        "10.187.968.15",
+        "10.187.968.16",
+        "10.187.968.17",
+        "10.187.968.18",
+        "10.187.968.19",
+        "10.187.968.20",
+        "10.187.968.21",
+        "10.187.968.22",
+        "10.187.968.23",
+        "10.187.968.24",
+        "10.187.968.25",
+        "10.187.968.26",
+        "10.187.968.27",
+        "10.187.968.28",
+        "10.187.968.29",
+        "10.187.968.30",
+        "10.187.968.31",
+        "10.187.968.32",
+        "10.187.968.33",
+        "10.187.968.34",
+        "10.187.968.35",
+        "10.187.968.36",
+        "10.187.968.37",
+        "10.187.968.38",
+        "10.187.968.39",
+        "10.187.968.40",
+        "10.187.968.41",
+        "10.187.968.42",
+        "10.187.968.43",
+        "10.187.968.44",
+        "10.187.968.45",
+        "10.187.968.46",
+        "10.187.968.47",
+        "10.187.968.48",
+        "10.187.968.49",
+        "10.187.968.50",
+        "10.187.968.51",
+        "10.187.968.52",
+        "10.187.968.53",
+        "10.187.968.54",
+        "10.187.968.55",
+        "10.187.968.56",
+        "10.187.968.57",
+        "10.187.968.58",
+        "10.187.968.59",
+        "10.187.968.60",
+        "10.187.968.61",
+        "10.187.968.62"
+    ],
+    "routeAddress": "10.187.968.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.187.968.65",
+        "10.187.968.66",
+        "10.187.968.67",
+        "10.187.968.68",
+        "10.187.968.69",
+        "10.187.968.70",
+        "10.187.968.71",
+        "10.187.968.72",
+        "10.187.968.73",
+        "10.187.968.74",
+        "10.187.968.75",
+        "10.187.968.76",
+        "10.187.968.77",
+        "10.187.968.78",
+        "10.187.968.79",
+        "10.187.968.80",
+        "10.187.968.81",
+        "10.187.968.82",
+        "10.187.968.83",
+        "10.187.968.84",
+        "10.187.968.85",
+        "10.187.968.86",
+        "10.187.968.87",
+        "10.187.968.88",
+        "10.187.968.89",
+        "10.187.968.90",
+        "10.187.968.91",
+        "10.187.968.92",
+        "10.187.968.93",
+        "10.187.968.94"
+    ],
+    "corporateAddress": "10.187.968.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.187.968.97",
+        "10.187.968.98",
+        "10.187.968.99",
+        "10.187.968.100",
+        "10.187.968.101",
+        "10.187.968.102",
+        "10.187.968.103",
+        "10.187.968.104",
+        "10.187.968.105",
+        "10.187.968.106",
+        "10.187.968.107",
+        "10.187.968.108",
+        "10.187.968.109",
+        "10.187.968.110",
+        "10.187.968.111",
+        "10.187.968.112",
+        "10.187.968.113",
+        "10.187.968.114",
+        "10.187.968.115",
+        "10.187.968.116",
+        "10.187.968.117",
+        "10.187.968.118",
+        "10.187.968.119",
+        "10.187.968.120",
+        "10.187.968.121",
+        "10.187.968.122",
+        "10.187.968.123",
+        "10.187.968.124",
+        "10.187.968.125"
+    ],
+    "latitude": 28.795,
+    "longitude": -96.048,
+    "nodes": [
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.97",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Firewall 968",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.795,
+            "Longitude": -96.048
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.98",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Router 968",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.1",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH.OT.Switch 1935",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.99",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH.Corporate.Switch 1936",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.3",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.4",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.5",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.6",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.7",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.2",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..RC 968",
+            "compromised": false,
+            "relayIPlist": [
+                "10.187.968.3",
+                "10.187.968.4",
+                "10.187.968.5",
+                "10.187.968.6",
+                "10.187.968.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.100",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Host 1935",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.100",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Host 1936",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.100",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..LocalDatabase 1935",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.100",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..LocalWebServer 1936",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.101",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..hmi 1935",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.100",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..outstation 1936",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 14.WADSWORTH..RC 968",
+            "destination": "Utility 14.WADSWORTH..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH..RC 968",
+            "destination": "Utility 14.WADSWORTH..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH..RC 968",
+            "destination": "Utility 14.WADSWORTH..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH..RC 968",
+            "destination": "Utility 14.WADSWORTH..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH..RC 968",
+            "destination": "Utility 14.WADSWORTH..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH..Router 968",
+            "destination": "Utility 14.WADSWORTH..Firewall 968",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH..Firewall 968",
+            "destination": "Utility 14.WADSWORTH.OT.Switch 1935",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH.OT.Switch 1935",
+            "destination": "Utility 14.WADSWORTH..RC 968",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH..Firewall 968",
+            "destination": "Utility 14.WADSWORTH.Corporate.Switch 1936",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH.Corporate.Switch 1936",
+            "destination": "Utility 14.WADSWORTH..Host 1935",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH.Corporate.Switch 1936",
+            "destination": "Utility 14.WADSWORTH..Host 1936",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH.Corporate.Switch 1936",
+            "destination": "Utility 14.WADSWORTH..LocalDatabase 1935",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 14.WADSWORTH.Corporate.Switch 1936",
+            "destination": "Utility 14.WADSWORTH..LocalWebServer 1936",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.1",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH.OT.Switch 1935",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.2",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..RC 968",
+            "compromised": false,
+            "relayIPlist": [
+                "10.187.968.3",
+                "10.187.968.4",
+                "10.187.968.5",
+                "10.187.968.6",
+                "10.187.968.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.97",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Firewall 968",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.795,
+            "Longitude": -96.048
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.98",
+            "ipAddress": "10.187.968.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..Router 968",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.1",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH.OT.Switch 1935",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 14",
+            "adminIP": "10.187.968.2",
+            "ipAddress": "10.187.968.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WADSWORTH",
+            "label": "Utility 14.WADSWORTH..RC 968",
+            "compromised": false,
+            "relayIPlist": [
+                "10.187.968.3",
+                "10.187.968.4",
+                "10.187.968.5",
+                "10.187.968.6",
+                "10.187.968.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 2591.18,
+    "genmvar": 205.12,
+    "connecting_TS_num": 1061
+}

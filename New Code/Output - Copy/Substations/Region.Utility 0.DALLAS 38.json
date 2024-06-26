@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.DALLAS 38",
+    "networkLan": "10.52.411.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "DALLAS 38",
+    "substationNumber": 411,
+    "OTAddress": "10.52.411.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.411.1",
+        "10.52.411.2",
+        "10.52.411.3",
+        "10.52.411.4",
+        "10.52.411.5",
+        "10.52.411.6",
+        "10.52.411.7",
+        "10.52.411.8",
+        "10.52.411.9",
+        "10.52.411.10",
+        "10.52.411.11",
+        "10.52.411.12",
+        "10.52.411.13",
+        "10.52.411.14",
+        "10.52.411.15",
+        "10.52.411.16",
+        "10.52.411.17",
+        "10.52.411.18",
+        "10.52.411.19",
+        "10.52.411.20",
+        "10.52.411.21",
+        "10.52.411.22",
+        "10.52.411.23",
+        "10.52.411.24",
+        "10.52.411.25",
+        "10.52.411.26",
+        "10.52.411.27",
+        "10.52.411.28",
+        "10.52.411.29",
+        "10.52.411.30",
+        "10.52.411.31",
+        "10.52.411.32",
+        "10.52.411.33",
+        "10.52.411.34",
+        "10.52.411.35",
+        "10.52.411.36",
+        "10.52.411.37",
+        "10.52.411.38",
+        "10.52.411.39",
+        "10.52.411.40",
+        "10.52.411.41",
+        "10.52.411.42",
+        "10.52.411.43",
+        "10.52.411.44",
+        "10.52.411.45",
+        "10.52.411.46",
+        "10.52.411.47",
+        "10.52.411.48",
+        "10.52.411.49",
+        "10.52.411.50",
+        "10.52.411.51",
+        "10.52.411.52",
+        "10.52.411.53",
+        "10.52.411.54",
+        "10.52.411.55",
+        "10.52.411.56",
+        "10.52.411.57",
+        "10.52.411.58",
+        "10.52.411.59",
+        "10.52.411.60",
+        "10.52.411.61",
+        "10.52.411.62"
+    ],
+    "routeAddress": "10.52.411.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.411.65",
+        "10.52.411.66",
+        "10.52.411.67",
+        "10.52.411.68",
+        "10.52.411.69",
+        "10.52.411.70",
+        "10.52.411.71",
+        "10.52.411.72",
+        "10.52.411.73",
+        "10.52.411.74",
+        "10.52.411.75",
+        "10.52.411.76",
+        "10.52.411.77",
+        "10.52.411.78",
+        "10.52.411.79",
+        "10.52.411.80",
+        "10.52.411.81",
+        "10.52.411.82",
+        "10.52.411.83",
+        "10.52.411.84",
+        "10.52.411.85",
+        "10.52.411.86",
+        "10.52.411.87",
+        "10.52.411.88",
+        "10.52.411.89",
+        "10.52.411.90",
+        "10.52.411.91",
+        "10.52.411.92",
+        "10.52.411.93",
+        "10.52.411.94"
+    ],
+    "corporateAddress": "10.52.411.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.411.97",
+        "10.52.411.98",
+        "10.52.411.99",
+        "10.52.411.100",
+        "10.52.411.101",
+        "10.52.411.102",
+        "10.52.411.103",
+        "10.52.411.104",
+        "10.52.411.105",
+        "10.52.411.106",
+        "10.52.411.107",
+        "10.52.411.108",
+        "10.52.411.109",
+        "10.52.411.110",
+        "10.52.411.111",
+        "10.52.411.112",
+        "10.52.411.113",
+        "10.52.411.114",
+        "10.52.411.115",
+        "10.52.411.116",
+        "10.52.411.117",
+        "10.52.411.118",
+        "10.52.411.119",
+        "10.52.411.120",
+        "10.52.411.121",
+        "10.52.411.122",
+        "10.52.411.123",
+        "10.52.411.124",
+        "10.52.411.125"
+    ],
+    "latitude": 32.666,
+    "longitude": -96.873,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.97",
+            "ipAddress": "10.52.411.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..Firewall 411",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.666,
+            "Longitude": -96.873
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.98",
+            "ipAddress": "10.52.411.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..Router 411",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.1",
+            "ipAddress": "10.52.411.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38.OT.Switch 821",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.99",
+            "ipAddress": "10.52.411.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38.Corporate.Switch 822",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.3",
+            "ipAddress": "10.52.411.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.2",
+            "ipAddress": "10.52.411.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..RC 411",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.411.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.100",
+            "ipAddress": "10.52.411.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..Host 821",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.100",
+            "ipAddress": "10.52.411.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..Host 822",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.100",
+            "ipAddress": "10.52.411.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..LocalDatabase 821",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.100",
+            "ipAddress": "10.52.411.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..LocalWebServer 822",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.DALLAS 38..RC 411",
+            "destination": "Utility 0.DALLAS 38..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DALLAS 38..Router 411",
+            "destination": "Utility 0.DALLAS 38..Firewall 411",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DALLAS 38..Firewall 411",
+            "destination": "Utility 0.DALLAS 38.OT.Switch 821",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DALLAS 38.OT.Switch 821",
+            "destination": "Utility 0.DALLAS 38..RC 411",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DALLAS 38..Firewall 411",
+            "destination": "Utility 0.DALLAS 38.Corporate.Switch 822",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DALLAS 38.Corporate.Switch 822",
+            "destination": "Utility 0.DALLAS 38..Host 821",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DALLAS 38.Corporate.Switch 822",
+            "destination": "Utility 0.DALLAS 38..Host 822",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DALLAS 38.Corporate.Switch 822",
+            "destination": "Utility 0.DALLAS 38..LocalDatabase 821",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DALLAS 38.Corporate.Switch 822",
+            "destination": "Utility 0.DALLAS 38..LocalWebServer 822",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.1",
+            "ipAddress": "10.52.411.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38.OT.Switch 821",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.2",
+            "ipAddress": "10.52.411.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..RC 411",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.411.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.97",
+            "ipAddress": "10.52.411.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..Firewall 411",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.666,
+            "Longitude": -96.873
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.98",
+            "ipAddress": "10.52.411.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..Router 411",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.1",
+            "ipAddress": "10.52.411.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38.OT.Switch 821",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.411.2",
+            "ipAddress": "10.52.411.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DALLAS 38",
+            "label": "Utility 0.DALLAS 38..RC 411",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.411.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

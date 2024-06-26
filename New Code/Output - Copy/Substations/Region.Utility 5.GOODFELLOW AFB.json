@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 5.GOODFELLOW AFB",
+    "networkLan": "10.53.229.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 5",
+    "utility_id": 53,
+    "substation": "GOODFELLOW AFB",
+    "substationNumber": 229,
+    "OTAddress": "10.53.229.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.229.1",
+        "10.53.229.2",
+        "10.53.229.3",
+        "10.53.229.4",
+        "10.53.229.5",
+        "10.53.229.6",
+        "10.53.229.7",
+        "10.53.229.8",
+        "10.53.229.9",
+        "10.53.229.10",
+        "10.53.229.11",
+        "10.53.229.12",
+        "10.53.229.13",
+        "10.53.229.14",
+        "10.53.229.15",
+        "10.53.229.16",
+        "10.53.229.17",
+        "10.53.229.18",
+        "10.53.229.19",
+        "10.53.229.20",
+        "10.53.229.21",
+        "10.53.229.22",
+        "10.53.229.23",
+        "10.53.229.24",
+        "10.53.229.25",
+        "10.53.229.26",
+        "10.53.229.27",
+        "10.53.229.28",
+        "10.53.229.29",
+        "10.53.229.30",
+        "10.53.229.31",
+        "10.53.229.32",
+        "10.53.229.33",
+        "10.53.229.34",
+        "10.53.229.35",
+        "10.53.229.36",
+        "10.53.229.37",
+        "10.53.229.38",
+        "10.53.229.39",
+        "10.53.229.40",
+        "10.53.229.41",
+        "10.53.229.42",
+        "10.53.229.43",
+        "10.53.229.44",
+        "10.53.229.45",
+        "10.53.229.46",
+        "10.53.229.47",
+        "10.53.229.48",
+        "10.53.229.49",
+        "10.53.229.50",
+        "10.53.229.51",
+        "10.53.229.52",
+        "10.53.229.53",
+        "10.53.229.54",
+        "10.53.229.55",
+        "10.53.229.56",
+        "10.53.229.57",
+        "10.53.229.58",
+        "10.53.229.59",
+        "10.53.229.60",
+        "10.53.229.61",
+        "10.53.229.62"
+    ],
+    "routeAddress": "10.53.229.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.229.65",
+        "10.53.229.66",
+        "10.53.229.67",
+        "10.53.229.68",
+        "10.53.229.69",
+        "10.53.229.70",
+        "10.53.229.71",
+        "10.53.229.72",
+        "10.53.229.73",
+        "10.53.229.74",
+        "10.53.229.75",
+        "10.53.229.76",
+        "10.53.229.77",
+        "10.53.229.78",
+        "10.53.229.79",
+        "10.53.229.80",
+        "10.53.229.81",
+        "10.53.229.82",
+        "10.53.229.83",
+        "10.53.229.84",
+        "10.53.229.85",
+        "10.53.229.86",
+        "10.53.229.87",
+        "10.53.229.88",
+        "10.53.229.89",
+        "10.53.229.90",
+        "10.53.229.91",
+        "10.53.229.92",
+        "10.53.229.93",
+        "10.53.229.94"
+    ],
+    "corporateAddress": "10.53.229.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.229.97",
+        "10.53.229.98",
+        "10.53.229.99",
+        "10.53.229.100",
+        "10.53.229.101",
+        "10.53.229.102",
+        "10.53.229.103",
+        "10.53.229.104",
+        "10.53.229.105",
+        "10.53.229.106",
+        "10.53.229.107",
+        "10.53.229.108",
+        "10.53.229.109",
+        "10.53.229.110",
+        "10.53.229.111",
+        "10.53.229.112",
+        "10.53.229.113",
+        "10.53.229.114",
+        "10.53.229.115",
+        "10.53.229.116",
+        "10.53.229.117",
+        "10.53.229.118",
+        "10.53.229.119",
+        "10.53.229.120",
+        "10.53.229.121",
+        "10.53.229.122",
+        "10.53.229.123",
+        "10.53.229.124",
+        "10.53.229.125"
+    ],
+    "latitude": 31.29,
+    "longitude": -100.153,
+    "nodes": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.97",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..Firewall 229",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.29,
+            "Longitude": -100.153
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.98",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..Router 229",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.1",
+            "ipAddress": "10.53.229.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB.OT.Switch 457",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.99",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB.Corporate.Switch 458",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.3",
+            "ipAddress": "10.53.229.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.2",
+            "ipAddress": "10.53.229.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..RC 229",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.229.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.100",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..Host 457",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.100",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..Host 458",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.100",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..LocalDatabase 457",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.100",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..LocalWebServer 458",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.101",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..hmi 457",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.100",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..outstation 458",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 5.GOODFELLOW AFB..RC 229",
+            "destination": "Utility 5.GOODFELLOW AFB..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.GOODFELLOW AFB..Router 229",
+            "destination": "Utility 5.GOODFELLOW AFB..Firewall 229",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.GOODFELLOW AFB..Firewall 229",
+            "destination": "Utility 5.GOODFELLOW AFB.OT.Switch 457",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.GOODFELLOW AFB.OT.Switch 457",
+            "destination": "Utility 5.GOODFELLOW AFB..RC 229",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.GOODFELLOW AFB..Firewall 229",
+            "destination": "Utility 5.GOODFELLOW AFB.Corporate.Switch 458",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.GOODFELLOW AFB.Corporate.Switch 458",
+            "destination": "Utility 5.GOODFELLOW AFB..Host 457",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.GOODFELLOW AFB.Corporate.Switch 458",
+            "destination": "Utility 5.GOODFELLOW AFB..Host 458",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.GOODFELLOW AFB.Corporate.Switch 458",
+            "destination": "Utility 5.GOODFELLOW AFB..LocalDatabase 457",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.GOODFELLOW AFB.Corporate.Switch 458",
+            "destination": "Utility 5.GOODFELLOW AFB..LocalWebServer 458",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.1",
+            "ipAddress": "10.53.229.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB.OT.Switch 457",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.2",
+            "ipAddress": "10.53.229.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..RC 229",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.229.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.97",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..Firewall 229",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.29,
+            "Longitude": -100.153
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.98",
+            "ipAddress": "10.53.229.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..Router 229",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.1",
+            "ipAddress": "10.53.229.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB.OT.Switch 457",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.229.2",
+            "ipAddress": "10.53.229.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GOODFELLOW AFB",
+            "label": "Utility 5.GOODFELLOW AFB..RC 229",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.229.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

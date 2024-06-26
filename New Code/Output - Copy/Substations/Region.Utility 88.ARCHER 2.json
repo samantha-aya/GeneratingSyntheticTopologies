@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 88.ARCHER 2",
+    "networkLan": "10.88.109.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 88",
+    "utility_id": 88,
+    "substation": "ARCHER 2",
+    "substationNumber": 109,
+    "OTAddress": "10.88.109.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.88.109.1",
+        "10.88.109.2",
+        "10.88.109.3",
+        "10.88.109.4",
+        "10.88.109.5",
+        "10.88.109.6",
+        "10.88.109.7",
+        "10.88.109.8",
+        "10.88.109.9",
+        "10.88.109.10",
+        "10.88.109.11",
+        "10.88.109.12",
+        "10.88.109.13",
+        "10.88.109.14",
+        "10.88.109.15",
+        "10.88.109.16",
+        "10.88.109.17",
+        "10.88.109.18",
+        "10.88.109.19",
+        "10.88.109.20",
+        "10.88.109.21",
+        "10.88.109.22",
+        "10.88.109.23",
+        "10.88.109.24",
+        "10.88.109.25",
+        "10.88.109.26",
+        "10.88.109.27",
+        "10.88.109.28",
+        "10.88.109.29",
+        "10.88.109.30",
+        "10.88.109.31",
+        "10.88.109.32",
+        "10.88.109.33",
+        "10.88.109.34",
+        "10.88.109.35",
+        "10.88.109.36",
+        "10.88.109.37",
+        "10.88.109.38",
+        "10.88.109.39",
+        "10.88.109.40",
+        "10.88.109.41",
+        "10.88.109.42",
+        "10.88.109.43",
+        "10.88.109.44",
+        "10.88.109.45",
+        "10.88.109.46",
+        "10.88.109.47",
+        "10.88.109.48",
+        "10.88.109.49",
+        "10.88.109.50",
+        "10.88.109.51",
+        "10.88.109.52",
+        "10.88.109.53",
+        "10.88.109.54",
+        "10.88.109.55",
+        "10.88.109.56",
+        "10.88.109.57",
+        "10.88.109.58",
+        "10.88.109.59",
+        "10.88.109.60",
+        "10.88.109.61",
+        "10.88.109.62"
+    ],
+    "routeAddress": "10.88.109.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.88.109.65",
+        "10.88.109.66",
+        "10.88.109.67",
+        "10.88.109.68",
+        "10.88.109.69",
+        "10.88.109.70",
+        "10.88.109.71",
+        "10.88.109.72",
+        "10.88.109.73",
+        "10.88.109.74",
+        "10.88.109.75",
+        "10.88.109.76",
+        "10.88.109.77",
+        "10.88.109.78",
+        "10.88.109.79",
+        "10.88.109.80",
+        "10.88.109.81",
+        "10.88.109.82",
+        "10.88.109.83",
+        "10.88.109.84",
+        "10.88.109.85",
+        "10.88.109.86",
+        "10.88.109.87",
+        "10.88.109.88",
+        "10.88.109.89",
+        "10.88.109.90",
+        "10.88.109.91",
+        "10.88.109.92",
+        "10.88.109.93",
+        "10.88.109.94"
+    ],
+    "corporateAddress": "10.88.109.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.88.109.97",
+        "10.88.109.98",
+        "10.88.109.99",
+        "10.88.109.100",
+        "10.88.109.101",
+        "10.88.109.102",
+        "10.88.109.103",
+        "10.88.109.104",
+        "10.88.109.105",
+        "10.88.109.106",
+        "10.88.109.107",
+        "10.88.109.108",
+        "10.88.109.109",
+        "10.88.109.110",
+        "10.88.109.111",
+        "10.88.109.112",
+        "10.88.109.113",
+        "10.88.109.114",
+        "10.88.109.115",
+        "10.88.109.116",
+        "10.88.109.117",
+        "10.88.109.118",
+        "10.88.109.119",
+        "10.88.109.120",
+        "10.88.109.121",
+        "10.88.109.122",
+        "10.88.109.123",
+        "10.88.109.124",
+        "10.88.109.125"
+    ],
+    "latitude": 33.493,
+    "longitude": -98.582,
+    "nodes": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.97",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..Firewall 109",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.493,
+            "Longitude": -98.582
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.98",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..Router 109",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.1",
+            "ipAddress": "10.88.109.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2.OT.Switch 217",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.99",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2.Corporate.Switch 218",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.3",
+            "ipAddress": "10.88.109.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.4",
+            "ipAddress": "10.88.109.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.2",
+            "ipAddress": "10.88.109.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..RC 109",
+            "compromised": false,
+            "relayIPlist": [
+                "10.88.109.3",
+                "10.88.109.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.100",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..Host 217",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.100",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..Host 218",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.100",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..LocalDatabase 217",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.100",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..LocalWebServer 218",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.101",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..hmi 217",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.100",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..outstation 218",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 88.ARCHER 2..RC 109",
+            "destination": "Utility 88.ARCHER 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.ARCHER 2..RC 109",
+            "destination": "Utility 88.ARCHER 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.ARCHER 2..Router 109",
+            "destination": "Utility 88.ARCHER 2..Firewall 109",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.ARCHER 2..Firewall 109",
+            "destination": "Utility 88.ARCHER 2.OT.Switch 217",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.ARCHER 2.OT.Switch 217",
+            "destination": "Utility 88.ARCHER 2..RC 109",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.ARCHER 2..Firewall 109",
+            "destination": "Utility 88.ARCHER 2.Corporate.Switch 218",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.ARCHER 2.Corporate.Switch 218",
+            "destination": "Utility 88.ARCHER 2..Host 217",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.ARCHER 2.Corporate.Switch 218",
+            "destination": "Utility 88.ARCHER 2..Host 218",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.ARCHER 2.Corporate.Switch 218",
+            "destination": "Utility 88.ARCHER 2..LocalDatabase 217",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.ARCHER 2.Corporate.Switch 218",
+            "destination": "Utility 88.ARCHER 2..LocalWebServer 218",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.1",
+            "ipAddress": "10.88.109.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2.OT.Switch 217",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.2",
+            "ipAddress": "10.88.109.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..RC 109",
+            "compromised": false,
+            "relayIPlist": [
+                "10.88.109.3",
+                "10.88.109.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.97",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..Firewall 109",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.493,
+            "Longitude": -98.582
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.98",
+            "ipAddress": "10.88.109.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..Router 109",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.1",
+            "ipAddress": "10.88.109.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2.OT.Switch 217",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.109.2",
+            "ipAddress": "10.88.109.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARCHER 2",
+            "label": "Utility 88.ARCHER 2..RC 109",
+            "compromised": false,
+            "relayIPlist": [
+                "10.88.109.3",
+                "10.88.109.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 112.5,
+    "genmvar": -0.82,
+    "connecting_TS_num": 119
+}

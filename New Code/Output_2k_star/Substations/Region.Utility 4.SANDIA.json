@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.SANDIA",
+    "networkLan": "10.57.320.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "SANDIA",
+    "substationNumber": 320,
+    "OTAddress": "10.57.320.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.320.1",
+        "10.57.320.2",
+        "10.57.320.3",
+        "10.57.320.4",
+        "10.57.320.5",
+        "10.57.320.6",
+        "10.57.320.7",
+        "10.57.320.8",
+        "10.57.320.9",
+        "10.57.320.10",
+        "10.57.320.11",
+        "10.57.320.12",
+        "10.57.320.13",
+        "10.57.320.14",
+        "10.57.320.15",
+        "10.57.320.16",
+        "10.57.320.17",
+        "10.57.320.18",
+        "10.57.320.19",
+        "10.57.320.20",
+        "10.57.320.21",
+        "10.57.320.22",
+        "10.57.320.23",
+        "10.57.320.24",
+        "10.57.320.25",
+        "10.57.320.26",
+        "10.57.320.27",
+        "10.57.320.28",
+        "10.57.320.29",
+        "10.57.320.30",
+        "10.57.320.31",
+        "10.57.320.32",
+        "10.57.320.33",
+        "10.57.320.34",
+        "10.57.320.35",
+        "10.57.320.36",
+        "10.57.320.37",
+        "10.57.320.38",
+        "10.57.320.39",
+        "10.57.320.40",
+        "10.57.320.41",
+        "10.57.320.42",
+        "10.57.320.43",
+        "10.57.320.44",
+        "10.57.320.45",
+        "10.57.320.46",
+        "10.57.320.47",
+        "10.57.320.48",
+        "10.57.320.49",
+        "10.57.320.50",
+        "10.57.320.51",
+        "10.57.320.52",
+        "10.57.320.53",
+        "10.57.320.54",
+        "10.57.320.55",
+        "10.57.320.56",
+        "10.57.320.57",
+        "10.57.320.58",
+        "10.57.320.59",
+        "10.57.320.60",
+        "10.57.320.61",
+        "10.57.320.62"
+    ],
+    "routeAddress": "10.57.320.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.320.65",
+        "10.57.320.66",
+        "10.57.320.67",
+        "10.57.320.68",
+        "10.57.320.69",
+        "10.57.320.70",
+        "10.57.320.71",
+        "10.57.320.72",
+        "10.57.320.73",
+        "10.57.320.74",
+        "10.57.320.75",
+        "10.57.320.76",
+        "10.57.320.77",
+        "10.57.320.78",
+        "10.57.320.79",
+        "10.57.320.80",
+        "10.57.320.81",
+        "10.57.320.82",
+        "10.57.320.83",
+        "10.57.320.84",
+        "10.57.320.85",
+        "10.57.320.86",
+        "10.57.320.87",
+        "10.57.320.88",
+        "10.57.320.89",
+        "10.57.320.90",
+        "10.57.320.91",
+        "10.57.320.92",
+        "10.57.320.93",
+        "10.57.320.94"
+    ],
+    "corporateAddress": "10.57.320.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.320.97",
+        "10.57.320.98",
+        "10.57.320.99",
+        "10.57.320.100",
+        "10.57.320.101",
+        "10.57.320.102",
+        "10.57.320.103",
+        "10.57.320.104",
+        "10.57.320.105",
+        "10.57.320.106",
+        "10.57.320.107",
+        "10.57.320.108",
+        "10.57.320.109",
+        "10.57.320.110",
+        "10.57.320.111",
+        "10.57.320.112",
+        "10.57.320.113",
+        "10.57.320.114",
+        "10.57.320.115",
+        "10.57.320.116",
+        "10.57.320.117",
+        "10.57.320.118",
+        "10.57.320.119",
+        "10.57.320.120",
+        "10.57.320.121",
+        "10.57.320.122",
+        "10.57.320.123",
+        "10.57.320.124",
+        "10.57.320.125"
+    ],
+    "latitude": 28.093,
+    "longitude": -97.963,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.97",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..Firewall 320",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.093,
+            "Longitude": -97.963
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.98",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..Router 320",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.1",
+            "ipAddress": "10.57.320.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA.OT.Switch 639",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.99",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA.Corporate.Switch 640",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.3",
+            "ipAddress": "10.57.320.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.2",
+            "ipAddress": "10.57.320.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..RC 320",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.320.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.100",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..Host 639",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.100",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..Host 640",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.100",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..LocalDatabase 639",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.100",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..LocalWebServer 640",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.101",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..hmi 639",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.100",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..outstation 640",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.SANDIA..RC 320",
+            "destination": "Utility 4.SANDIA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SANDIA..Router 320",
+            "destination": "Utility 4.SANDIA..Firewall 320",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SANDIA..Firewall 320",
+            "destination": "Utility 4.SANDIA.OT.Switch 639",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SANDIA.OT.Switch 639",
+            "destination": "Utility 4.SANDIA..RC 320",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SANDIA..Firewall 320",
+            "destination": "Utility 4.SANDIA.Corporate.Switch 640",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SANDIA.Corporate.Switch 640",
+            "destination": "Utility 4.SANDIA..Host 639",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SANDIA.Corporate.Switch 640",
+            "destination": "Utility 4.SANDIA..Host 640",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SANDIA.Corporate.Switch 640",
+            "destination": "Utility 4.SANDIA..LocalDatabase 639",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SANDIA.Corporate.Switch 640",
+            "destination": "Utility 4.SANDIA..LocalWebServer 640",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.1",
+            "ipAddress": "10.57.320.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA.OT.Switch 639",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.2",
+            "ipAddress": "10.57.320.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..RC 320",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.320.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.97",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..Firewall 320",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.093,
+            "Longitude": -97.963
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.98",
+            "ipAddress": "10.57.320.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..Router 320",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.1",
+            "ipAddress": "10.57.320.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA.OT.Switch 639",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.320.2",
+            "ipAddress": "10.57.320.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANDIA",
+            "label": "Utility 4.SANDIA..RC 320",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.320.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

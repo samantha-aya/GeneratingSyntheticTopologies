@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.SAN YGNACIO",
+    "networkLan": "10.53.257.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "SAN YGNACIO",
+    "substationNumber": 257,
+    "OTAddress": "10.53.257.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.257.1",
+        "10.53.257.2",
+        "10.53.257.3",
+        "10.53.257.4",
+        "10.53.257.5",
+        "10.53.257.6",
+        "10.53.257.7",
+        "10.53.257.8",
+        "10.53.257.9",
+        "10.53.257.10",
+        "10.53.257.11",
+        "10.53.257.12",
+        "10.53.257.13",
+        "10.53.257.14",
+        "10.53.257.15",
+        "10.53.257.16",
+        "10.53.257.17",
+        "10.53.257.18",
+        "10.53.257.19",
+        "10.53.257.20",
+        "10.53.257.21",
+        "10.53.257.22",
+        "10.53.257.23",
+        "10.53.257.24",
+        "10.53.257.25",
+        "10.53.257.26",
+        "10.53.257.27",
+        "10.53.257.28",
+        "10.53.257.29",
+        "10.53.257.30",
+        "10.53.257.31",
+        "10.53.257.32",
+        "10.53.257.33",
+        "10.53.257.34",
+        "10.53.257.35",
+        "10.53.257.36",
+        "10.53.257.37",
+        "10.53.257.38",
+        "10.53.257.39",
+        "10.53.257.40",
+        "10.53.257.41",
+        "10.53.257.42",
+        "10.53.257.43",
+        "10.53.257.44",
+        "10.53.257.45",
+        "10.53.257.46",
+        "10.53.257.47",
+        "10.53.257.48",
+        "10.53.257.49",
+        "10.53.257.50",
+        "10.53.257.51",
+        "10.53.257.52",
+        "10.53.257.53",
+        "10.53.257.54",
+        "10.53.257.55",
+        "10.53.257.56",
+        "10.53.257.57",
+        "10.53.257.58",
+        "10.53.257.59",
+        "10.53.257.60",
+        "10.53.257.61",
+        "10.53.257.62"
+    ],
+    "routeAddress": "10.53.257.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.257.65",
+        "10.53.257.66",
+        "10.53.257.67",
+        "10.53.257.68",
+        "10.53.257.69",
+        "10.53.257.70",
+        "10.53.257.71",
+        "10.53.257.72",
+        "10.53.257.73",
+        "10.53.257.74",
+        "10.53.257.75",
+        "10.53.257.76",
+        "10.53.257.77",
+        "10.53.257.78",
+        "10.53.257.79",
+        "10.53.257.80",
+        "10.53.257.81",
+        "10.53.257.82",
+        "10.53.257.83",
+        "10.53.257.84",
+        "10.53.257.85",
+        "10.53.257.86",
+        "10.53.257.87",
+        "10.53.257.88",
+        "10.53.257.89",
+        "10.53.257.90",
+        "10.53.257.91",
+        "10.53.257.92",
+        "10.53.257.93",
+        "10.53.257.94"
+    ],
+    "corporateAddress": "10.53.257.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.257.97",
+        "10.53.257.98",
+        "10.53.257.99",
+        "10.53.257.100",
+        "10.53.257.101",
+        "10.53.257.102",
+        "10.53.257.103",
+        "10.53.257.104",
+        "10.53.257.105",
+        "10.53.257.106",
+        "10.53.257.107",
+        "10.53.257.108",
+        "10.53.257.109",
+        "10.53.257.110",
+        "10.53.257.111",
+        "10.53.257.112",
+        "10.53.257.113",
+        "10.53.257.114",
+        "10.53.257.115",
+        "10.53.257.116",
+        "10.53.257.117",
+        "10.53.257.118",
+        "10.53.257.119",
+        "10.53.257.120",
+        "10.53.257.121",
+        "10.53.257.122",
+        "10.53.257.123",
+        "10.53.257.124",
+        "10.53.257.125"
+    ],
+    "latitude": 27.128,
+    "longitude": -99.331,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.97",
+            "ipAddress": "10.53.257.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..Firewall 257",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.128,
+            "Longitude": -99.331
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.98",
+            "ipAddress": "10.53.257.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..Router 257",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.1",
+            "ipAddress": "10.53.257.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO.OT.Switch 513",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.99",
+            "ipAddress": "10.53.257.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO.Corporate.Switch 514",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.3",
+            "ipAddress": "10.53.257.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.2",
+            "ipAddress": "10.53.257.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..RC 257",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.257.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.100",
+            "ipAddress": "10.53.257.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..Host 513",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.100",
+            "ipAddress": "10.53.257.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..Host 514",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.100",
+            "ipAddress": "10.53.257.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..LocalDatabase 513",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.100",
+            "ipAddress": "10.53.257.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..LocalWebServer 514",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.SAN YGNACIO..RC 257",
+            "destination": "Utility 1.SAN YGNACIO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN YGNACIO..Router 257",
+            "destination": "Utility 1.SAN YGNACIO..Firewall 257",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN YGNACIO..Firewall 257",
+            "destination": "Utility 1.SAN YGNACIO.OT.Switch 513",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN YGNACIO.OT.Switch 513",
+            "destination": "Utility 1.SAN YGNACIO..RC 257",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN YGNACIO..Firewall 257",
+            "destination": "Utility 1.SAN YGNACIO.Corporate.Switch 514",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN YGNACIO.Corporate.Switch 514",
+            "destination": "Utility 1.SAN YGNACIO..Host 513",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN YGNACIO.Corporate.Switch 514",
+            "destination": "Utility 1.SAN YGNACIO..Host 514",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN YGNACIO.Corporate.Switch 514",
+            "destination": "Utility 1.SAN YGNACIO..LocalDatabase 513",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN YGNACIO.Corporate.Switch 514",
+            "destination": "Utility 1.SAN YGNACIO..LocalWebServer 514",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.1",
+            "ipAddress": "10.53.257.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO.OT.Switch 513",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.2",
+            "ipAddress": "10.53.257.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..RC 257",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.257.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.97",
+            "ipAddress": "10.53.257.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..Firewall 257",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.128,
+            "Longitude": -99.331
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.98",
+            "ipAddress": "10.53.257.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..Router 257",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.1",
+            "ipAddress": "10.53.257.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO.OT.Switch 513",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.257.2",
+            "ipAddress": "10.53.257.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN YGNACIO",
+            "label": "Utility 1.SAN YGNACIO..RC 257",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.257.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 64.KEMP",
+    "networkLan": "10.134.663.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 64",
+    "utility_id": 134,
+    "substation": "KEMP",
+    "substationNumber": 663,
+    "OTAddress": "10.134.663.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.134.663.1",
+        "10.134.663.2",
+        "10.134.663.3",
+        "10.134.663.4",
+        "10.134.663.5",
+        "10.134.663.6",
+        "10.134.663.7",
+        "10.134.663.8",
+        "10.134.663.9",
+        "10.134.663.10",
+        "10.134.663.11",
+        "10.134.663.12",
+        "10.134.663.13",
+        "10.134.663.14",
+        "10.134.663.15",
+        "10.134.663.16",
+        "10.134.663.17",
+        "10.134.663.18",
+        "10.134.663.19",
+        "10.134.663.20",
+        "10.134.663.21",
+        "10.134.663.22",
+        "10.134.663.23",
+        "10.134.663.24",
+        "10.134.663.25",
+        "10.134.663.26",
+        "10.134.663.27",
+        "10.134.663.28",
+        "10.134.663.29",
+        "10.134.663.30",
+        "10.134.663.31",
+        "10.134.663.32",
+        "10.134.663.33",
+        "10.134.663.34",
+        "10.134.663.35",
+        "10.134.663.36",
+        "10.134.663.37",
+        "10.134.663.38",
+        "10.134.663.39",
+        "10.134.663.40",
+        "10.134.663.41",
+        "10.134.663.42",
+        "10.134.663.43",
+        "10.134.663.44",
+        "10.134.663.45",
+        "10.134.663.46",
+        "10.134.663.47",
+        "10.134.663.48",
+        "10.134.663.49",
+        "10.134.663.50",
+        "10.134.663.51",
+        "10.134.663.52",
+        "10.134.663.53",
+        "10.134.663.54",
+        "10.134.663.55",
+        "10.134.663.56",
+        "10.134.663.57",
+        "10.134.663.58",
+        "10.134.663.59",
+        "10.134.663.60",
+        "10.134.663.61",
+        "10.134.663.62"
+    ],
+    "routeAddress": "10.134.663.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.134.663.65",
+        "10.134.663.66",
+        "10.134.663.67",
+        "10.134.663.68",
+        "10.134.663.69",
+        "10.134.663.70",
+        "10.134.663.71",
+        "10.134.663.72",
+        "10.134.663.73",
+        "10.134.663.74",
+        "10.134.663.75",
+        "10.134.663.76",
+        "10.134.663.77",
+        "10.134.663.78",
+        "10.134.663.79",
+        "10.134.663.80",
+        "10.134.663.81",
+        "10.134.663.82",
+        "10.134.663.83",
+        "10.134.663.84",
+        "10.134.663.85",
+        "10.134.663.86",
+        "10.134.663.87",
+        "10.134.663.88",
+        "10.134.663.89",
+        "10.134.663.90",
+        "10.134.663.91",
+        "10.134.663.92",
+        "10.134.663.93",
+        "10.134.663.94"
+    ],
+    "corporateAddress": "10.134.663.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.134.663.97",
+        "10.134.663.98",
+        "10.134.663.99",
+        "10.134.663.100",
+        "10.134.663.101",
+        "10.134.663.102",
+        "10.134.663.103",
+        "10.134.663.104",
+        "10.134.663.105",
+        "10.134.663.106",
+        "10.134.663.107",
+        "10.134.663.108",
+        "10.134.663.109",
+        "10.134.663.110",
+        "10.134.663.111",
+        "10.134.663.112",
+        "10.134.663.113",
+        "10.134.663.114",
+        "10.134.663.115",
+        "10.134.663.116",
+        "10.134.663.117",
+        "10.134.663.118",
+        "10.134.663.119",
+        "10.134.663.120",
+        "10.134.663.121",
+        "10.134.663.122",
+        "10.134.663.123",
+        "10.134.663.124",
+        "10.134.663.125"
+    ],
+    "latitude": 32.367,
+    "longitude": -96.245,
+    "nodes": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.97",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..Firewall 663",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.367,
+            "Longitude": -96.245
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.98",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..Router 663",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.1",
+            "ipAddress": "10.134.663.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP.OT.Switch 1325",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.99",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP.Corporate.Switch 1326",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.3",
+            "ipAddress": "10.134.663.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.2",
+            "ipAddress": "10.134.663.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..RC 663",
+            "compromised": false,
+            "relayIPlist": [
+                "10.134.663.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.100",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..Host 1325",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.100",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..Host 1326",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.100",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..LocalDatabase 1325",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.100",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..LocalWebServer 1326",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.101",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..hmi 1325",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.100",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..outstation 1326",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 64.KEMP..RC 663",
+            "destination": "Utility 64.KEMP..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.KEMP..Router 663",
+            "destination": "Utility 64.KEMP..Firewall 663",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.KEMP..Firewall 663",
+            "destination": "Utility 64.KEMP.OT.Switch 1325",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.KEMP.OT.Switch 1325",
+            "destination": "Utility 64.KEMP..RC 663",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.KEMP..Firewall 663",
+            "destination": "Utility 64.KEMP.Corporate.Switch 1326",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.KEMP.Corporate.Switch 1326",
+            "destination": "Utility 64.KEMP..Host 1325",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.KEMP.Corporate.Switch 1326",
+            "destination": "Utility 64.KEMP..Host 1326",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.KEMP.Corporate.Switch 1326",
+            "destination": "Utility 64.KEMP..LocalDatabase 1325",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.KEMP.Corporate.Switch 1326",
+            "destination": "Utility 64.KEMP..LocalWebServer 1326",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.1",
+            "ipAddress": "10.134.663.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP.OT.Switch 1325",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.2",
+            "ipAddress": "10.134.663.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..RC 663",
+            "compromised": false,
+            "relayIPlist": [
+                "10.134.663.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.97",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..Firewall 663",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.367,
+            "Longitude": -96.245
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.98",
+            "ipAddress": "10.134.663.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..Router 663",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.1",
+            "ipAddress": "10.134.663.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP.OT.Switch 1325",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.663.2",
+            "ipAddress": "10.134.663.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KEMP",
+            "label": "Utility 64.KEMP..RC 663",
+            "compromised": false,
+            "relayIPlist": [
+                "10.134.663.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 58.WASHINGTON",
+    "networkLan": "10.173.802.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 58",
+    "utility_id": 173,
+    "substation": "WASHINGTON",
+    "substationNumber": 802,
+    "OTAddress": "10.173.802.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.173.802.1",
+        "10.173.802.2",
+        "10.173.802.3",
+        "10.173.802.4",
+        "10.173.802.5",
+        "10.173.802.6",
+        "10.173.802.7",
+        "10.173.802.8",
+        "10.173.802.9",
+        "10.173.802.10",
+        "10.173.802.11",
+        "10.173.802.12",
+        "10.173.802.13",
+        "10.173.802.14",
+        "10.173.802.15",
+        "10.173.802.16",
+        "10.173.802.17",
+        "10.173.802.18",
+        "10.173.802.19",
+        "10.173.802.20",
+        "10.173.802.21",
+        "10.173.802.22",
+        "10.173.802.23",
+        "10.173.802.24",
+        "10.173.802.25",
+        "10.173.802.26",
+        "10.173.802.27",
+        "10.173.802.28",
+        "10.173.802.29",
+        "10.173.802.30",
+        "10.173.802.31",
+        "10.173.802.32",
+        "10.173.802.33",
+        "10.173.802.34",
+        "10.173.802.35",
+        "10.173.802.36",
+        "10.173.802.37",
+        "10.173.802.38",
+        "10.173.802.39",
+        "10.173.802.40",
+        "10.173.802.41",
+        "10.173.802.42",
+        "10.173.802.43",
+        "10.173.802.44",
+        "10.173.802.45",
+        "10.173.802.46",
+        "10.173.802.47",
+        "10.173.802.48",
+        "10.173.802.49",
+        "10.173.802.50",
+        "10.173.802.51",
+        "10.173.802.52",
+        "10.173.802.53",
+        "10.173.802.54",
+        "10.173.802.55",
+        "10.173.802.56",
+        "10.173.802.57",
+        "10.173.802.58",
+        "10.173.802.59",
+        "10.173.802.60",
+        "10.173.802.61",
+        "10.173.802.62"
+    ],
+    "routeAddress": "10.173.802.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.173.802.65",
+        "10.173.802.66",
+        "10.173.802.67",
+        "10.173.802.68",
+        "10.173.802.69",
+        "10.173.802.70",
+        "10.173.802.71",
+        "10.173.802.72",
+        "10.173.802.73",
+        "10.173.802.74",
+        "10.173.802.75",
+        "10.173.802.76",
+        "10.173.802.77",
+        "10.173.802.78",
+        "10.173.802.79",
+        "10.173.802.80",
+        "10.173.802.81",
+        "10.173.802.82",
+        "10.173.802.83",
+        "10.173.802.84",
+        "10.173.802.85",
+        "10.173.802.86",
+        "10.173.802.87",
+        "10.173.802.88",
+        "10.173.802.89",
+        "10.173.802.90",
+        "10.173.802.91",
+        "10.173.802.92",
+        "10.173.802.93",
+        "10.173.802.94"
+    ],
+    "corporateAddress": "10.173.802.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.173.802.97",
+        "10.173.802.98",
+        "10.173.802.99",
+        "10.173.802.100",
+        "10.173.802.101",
+        "10.173.802.102",
+        "10.173.802.103",
+        "10.173.802.104",
+        "10.173.802.105",
+        "10.173.802.106",
+        "10.173.802.107",
+        "10.173.802.108",
+        "10.173.802.109",
+        "10.173.802.110",
+        "10.173.802.111",
+        "10.173.802.112",
+        "10.173.802.113",
+        "10.173.802.114",
+        "10.173.802.115",
+        "10.173.802.116",
+        "10.173.802.117",
+        "10.173.802.118",
+        "10.173.802.119",
+        "10.173.802.120",
+        "10.173.802.121",
+        "10.173.802.122",
+        "10.173.802.123",
+        "10.173.802.124",
+        "10.173.802.125"
+    ],
+    "latitude": 30.287,
+    "longitude": -96.189,
+    "nodes": [
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.97",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..Firewall 802",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.287,
+            "Longitude": -96.189
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.98",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..Router 802",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.1",
+            "ipAddress": "10.173.802.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON.OT.Switch 1603",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.99",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON.Corporate.Switch 1604",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.3",
+            "ipAddress": "10.173.802.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.2",
+            "ipAddress": "10.173.802.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..RC 802",
+            "compromised": false,
+            "relayIPlist": [
+                "10.173.802.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.100",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..Host 1603",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.100",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..Host 1604",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.100",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..LocalDatabase 1603",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.100",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..LocalWebServer 1604",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.101",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..hmi 1603",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.100",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..outstation 1604",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 58.WASHINGTON..RC 802",
+            "destination": "Utility 58.WASHINGTON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 58.WASHINGTON..Router 802",
+            "destination": "Utility 58.WASHINGTON..Firewall 802",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 58.WASHINGTON..Firewall 802",
+            "destination": "Utility 58.WASHINGTON.OT.Switch 1603",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 58.WASHINGTON.OT.Switch 1603",
+            "destination": "Utility 58.WASHINGTON..RC 802",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 58.WASHINGTON..Firewall 802",
+            "destination": "Utility 58.WASHINGTON.Corporate.Switch 1604",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 58.WASHINGTON.Corporate.Switch 1604",
+            "destination": "Utility 58.WASHINGTON..Host 1603",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 58.WASHINGTON.Corporate.Switch 1604",
+            "destination": "Utility 58.WASHINGTON..Host 1604",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 58.WASHINGTON.Corporate.Switch 1604",
+            "destination": "Utility 58.WASHINGTON..LocalDatabase 1603",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 58.WASHINGTON.Corporate.Switch 1604",
+            "destination": "Utility 58.WASHINGTON..LocalWebServer 1604",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.1",
+            "ipAddress": "10.173.802.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON.OT.Switch 1603",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.2",
+            "ipAddress": "10.173.802.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..RC 802",
+            "compromised": false,
+            "relayIPlist": [
+                "10.173.802.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.97",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..Firewall 802",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.287,
+            "Longitude": -96.189
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.98",
+            "ipAddress": "10.173.802.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..Router 802",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.1",
+            "ipAddress": "10.173.802.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON.OT.Switch 1603",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 58",
+            "adminIP": "10.173.802.2",
+            "ipAddress": "10.173.802.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WASHINGTON",
+            "label": "Utility 58.WASHINGTON..RC 802",
+            "compromised": false,
+            "relayIPlist": [
+                "10.173.802.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

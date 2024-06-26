@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.VENUS",
+    "networkLan": "10.155.499.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 155,
+    "substation": "VENUS",
+    "substationNumber": 499,
+    "OTAddress": "10.155.499.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.155.499.1",
+        "10.155.499.2",
+        "10.155.499.3",
+        "10.155.499.4",
+        "10.155.499.5",
+        "10.155.499.6",
+        "10.155.499.7",
+        "10.155.499.8",
+        "10.155.499.9",
+        "10.155.499.10",
+        "10.155.499.11",
+        "10.155.499.12",
+        "10.155.499.13",
+        "10.155.499.14",
+        "10.155.499.15",
+        "10.155.499.16",
+        "10.155.499.17",
+        "10.155.499.18",
+        "10.155.499.19",
+        "10.155.499.20",
+        "10.155.499.21",
+        "10.155.499.22",
+        "10.155.499.23",
+        "10.155.499.24",
+        "10.155.499.25",
+        "10.155.499.26",
+        "10.155.499.27",
+        "10.155.499.28",
+        "10.155.499.29",
+        "10.155.499.30",
+        "10.155.499.31",
+        "10.155.499.32",
+        "10.155.499.33",
+        "10.155.499.34",
+        "10.155.499.35",
+        "10.155.499.36",
+        "10.155.499.37",
+        "10.155.499.38",
+        "10.155.499.39",
+        "10.155.499.40",
+        "10.155.499.41",
+        "10.155.499.42",
+        "10.155.499.43",
+        "10.155.499.44",
+        "10.155.499.45",
+        "10.155.499.46",
+        "10.155.499.47",
+        "10.155.499.48",
+        "10.155.499.49",
+        "10.155.499.50",
+        "10.155.499.51",
+        "10.155.499.52",
+        "10.155.499.53",
+        "10.155.499.54",
+        "10.155.499.55",
+        "10.155.499.56",
+        "10.155.499.57",
+        "10.155.499.58",
+        "10.155.499.59",
+        "10.155.499.60",
+        "10.155.499.61",
+        "10.155.499.62"
+    ],
+    "routeAddress": "10.155.499.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.155.499.65",
+        "10.155.499.66",
+        "10.155.499.67",
+        "10.155.499.68",
+        "10.155.499.69",
+        "10.155.499.70",
+        "10.155.499.71",
+        "10.155.499.72",
+        "10.155.499.73",
+        "10.155.499.74",
+        "10.155.499.75",
+        "10.155.499.76",
+        "10.155.499.77",
+        "10.155.499.78",
+        "10.155.499.79",
+        "10.155.499.80",
+        "10.155.499.81",
+        "10.155.499.82",
+        "10.155.499.83",
+        "10.155.499.84",
+        "10.155.499.85",
+        "10.155.499.86",
+        "10.155.499.87",
+        "10.155.499.88",
+        "10.155.499.89",
+        "10.155.499.90",
+        "10.155.499.91",
+        "10.155.499.92",
+        "10.155.499.93",
+        "10.155.499.94"
+    ],
+    "corporateAddress": "10.155.499.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.155.499.97",
+        "10.155.499.98",
+        "10.155.499.99",
+        "10.155.499.100",
+        "10.155.499.101",
+        "10.155.499.102",
+        "10.155.499.103",
+        "10.155.499.104",
+        "10.155.499.105",
+        "10.155.499.106",
+        "10.155.499.107",
+        "10.155.499.108",
+        "10.155.499.109",
+        "10.155.499.110",
+        "10.155.499.111",
+        "10.155.499.112",
+        "10.155.499.113",
+        "10.155.499.114",
+        "10.155.499.115",
+        "10.155.499.116",
+        "10.155.499.117",
+        "10.155.499.118",
+        "10.155.499.119",
+        "10.155.499.120",
+        "10.155.499.121",
+        "10.155.499.122",
+        "10.155.499.123",
+        "10.155.499.124",
+        "10.155.499.125"
+    ],
+    "latitude": 32.426,
+    "longitude": -97.09,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.97",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..Firewall 499",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.426,
+            "Longitude": -97.09
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.98",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..Router 499",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.1",
+            "ipAddress": "10.155.499.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS.OT.Switch 997",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.99",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS.Corporate.Switch 998",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.3",
+            "ipAddress": "10.155.499.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.2",
+            "ipAddress": "10.155.499.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..RC 499",
+            "compromised": false,
+            "relayIPlist": [
+                "10.155.499.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.100",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..Host 997",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.100",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..Host 998",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.100",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..LocalDatabase 997",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.100",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..LocalWebServer 998",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.101",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..hmi 997",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.100",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..outstation 998",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.VENUS..RC 499",
+            "destination": "Utility 4.VENUS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.VENUS..Router 499",
+            "destination": "Utility 4.VENUS..Firewall 499",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.VENUS..Firewall 499",
+            "destination": "Utility 4.VENUS.OT.Switch 997",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.VENUS.OT.Switch 997",
+            "destination": "Utility 4.VENUS..RC 499",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.VENUS..Firewall 499",
+            "destination": "Utility 4.VENUS.Corporate.Switch 998",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.VENUS.Corporate.Switch 998",
+            "destination": "Utility 4.VENUS..Host 997",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.VENUS.Corporate.Switch 998",
+            "destination": "Utility 4.VENUS..Host 998",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.VENUS.Corporate.Switch 998",
+            "destination": "Utility 4.VENUS..LocalDatabase 997",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.VENUS.Corporate.Switch 998",
+            "destination": "Utility 4.VENUS..LocalWebServer 998",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.1",
+            "ipAddress": "10.155.499.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS.OT.Switch 997",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.2",
+            "ipAddress": "10.155.499.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..RC 499",
+            "compromised": false,
+            "relayIPlist": [
+                "10.155.499.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.97",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..Firewall 499",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.426,
+            "Longitude": -97.09
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.98",
+            "ipAddress": "10.155.499.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..Router 499",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.1",
+            "ipAddress": "10.155.499.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS.OT.Switch 997",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.499.2",
+            "ipAddress": "10.155.499.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VENUS",
+            "label": "Utility 4.VENUS..RC 499",
+            "compromised": false,
+            "relayIPlist": [
+                "10.155.499.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

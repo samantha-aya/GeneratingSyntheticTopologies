@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.BOYD",
+    "networkLan": "10.55.389.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "BOYD",
+    "substationNumber": 389,
+    "OTAddress": "10.55.389.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.389.1",
+        "10.55.389.2",
+        "10.55.389.3",
+        "10.55.389.4",
+        "10.55.389.5",
+        "10.55.389.6",
+        "10.55.389.7",
+        "10.55.389.8",
+        "10.55.389.9",
+        "10.55.389.10",
+        "10.55.389.11",
+        "10.55.389.12",
+        "10.55.389.13",
+        "10.55.389.14",
+        "10.55.389.15",
+        "10.55.389.16",
+        "10.55.389.17",
+        "10.55.389.18",
+        "10.55.389.19",
+        "10.55.389.20",
+        "10.55.389.21",
+        "10.55.389.22",
+        "10.55.389.23",
+        "10.55.389.24",
+        "10.55.389.25",
+        "10.55.389.26",
+        "10.55.389.27",
+        "10.55.389.28",
+        "10.55.389.29",
+        "10.55.389.30",
+        "10.55.389.31",
+        "10.55.389.32",
+        "10.55.389.33",
+        "10.55.389.34",
+        "10.55.389.35",
+        "10.55.389.36",
+        "10.55.389.37",
+        "10.55.389.38",
+        "10.55.389.39",
+        "10.55.389.40",
+        "10.55.389.41",
+        "10.55.389.42",
+        "10.55.389.43",
+        "10.55.389.44",
+        "10.55.389.45",
+        "10.55.389.46",
+        "10.55.389.47",
+        "10.55.389.48",
+        "10.55.389.49",
+        "10.55.389.50",
+        "10.55.389.51",
+        "10.55.389.52",
+        "10.55.389.53",
+        "10.55.389.54",
+        "10.55.389.55",
+        "10.55.389.56",
+        "10.55.389.57",
+        "10.55.389.58",
+        "10.55.389.59",
+        "10.55.389.60",
+        "10.55.389.61",
+        "10.55.389.62"
+    ],
+    "routeAddress": "10.55.389.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.389.65",
+        "10.55.389.66",
+        "10.55.389.67",
+        "10.55.389.68",
+        "10.55.389.69",
+        "10.55.389.70",
+        "10.55.389.71",
+        "10.55.389.72",
+        "10.55.389.73",
+        "10.55.389.74",
+        "10.55.389.75",
+        "10.55.389.76",
+        "10.55.389.77",
+        "10.55.389.78",
+        "10.55.389.79",
+        "10.55.389.80",
+        "10.55.389.81",
+        "10.55.389.82",
+        "10.55.389.83",
+        "10.55.389.84",
+        "10.55.389.85",
+        "10.55.389.86",
+        "10.55.389.87",
+        "10.55.389.88",
+        "10.55.389.89",
+        "10.55.389.90",
+        "10.55.389.91",
+        "10.55.389.92",
+        "10.55.389.93",
+        "10.55.389.94"
+    ],
+    "corporateAddress": "10.55.389.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.389.97",
+        "10.55.389.98",
+        "10.55.389.99",
+        "10.55.389.100",
+        "10.55.389.101",
+        "10.55.389.102",
+        "10.55.389.103",
+        "10.55.389.104",
+        "10.55.389.105",
+        "10.55.389.106",
+        "10.55.389.107",
+        "10.55.389.108",
+        "10.55.389.109",
+        "10.55.389.110",
+        "10.55.389.111",
+        "10.55.389.112",
+        "10.55.389.113",
+        "10.55.389.114",
+        "10.55.389.115",
+        "10.55.389.116",
+        "10.55.389.117",
+        "10.55.389.118",
+        "10.55.389.119",
+        "10.55.389.120",
+        "10.55.389.121",
+        "10.55.389.122",
+        "10.55.389.123",
+        "10.55.389.124",
+        "10.55.389.125"
+    ],
+    "latitude": 33.042,
+    "longitude": -97.597,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.97",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..Firewall 389",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.042,
+            "Longitude": -97.597
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.98",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..Router 389",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.1",
+            "ipAddress": "10.55.389.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD.OT.Switch 777",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.99",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD.Corporate.Switch 778",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.3",
+            "ipAddress": "10.55.389.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.2",
+            "ipAddress": "10.55.389.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..RC 389",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.389.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.100",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..Host 777",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.100",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..Host 778",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.100",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..LocalDatabase 777",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.100",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..LocalWebServer 778",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.101",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..hmi 777",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.100",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..outstation 778",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.BOYD..RC 389",
+            "destination": "Utility 2.BOYD..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BOYD..Router 389",
+            "destination": "Utility 2.BOYD..Firewall 389",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BOYD..Firewall 389",
+            "destination": "Utility 2.BOYD.OT.Switch 777",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BOYD.OT.Switch 777",
+            "destination": "Utility 2.BOYD..RC 389",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BOYD..Firewall 389",
+            "destination": "Utility 2.BOYD.Corporate.Switch 778",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BOYD.Corporate.Switch 778",
+            "destination": "Utility 2.BOYD..Host 777",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BOYD.Corporate.Switch 778",
+            "destination": "Utility 2.BOYD..Host 778",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BOYD.Corporate.Switch 778",
+            "destination": "Utility 2.BOYD..LocalDatabase 777",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BOYD.Corporate.Switch 778",
+            "destination": "Utility 2.BOYD..LocalWebServer 778",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.1",
+            "ipAddress": "10.55.389.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD.OT.Switch 777",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.2",
+            "ipAddress": "10.55.389.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..RC 389",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.389.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.97",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..Firewall 389",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.042,
+            "Longitude": -97.597
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.98",
+            "ipAddress": "10.55.389.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..Router 389",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.1",
+            "ipAddress": "10.55.389.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD.OT.Switch 777",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.389.2",
+            "ipAddress": "10.55.389.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOYD",
+            "label": "Utility 2.BOYD..RC 389",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.389.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

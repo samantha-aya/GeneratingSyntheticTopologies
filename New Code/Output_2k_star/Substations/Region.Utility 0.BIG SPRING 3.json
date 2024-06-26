@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 0.BIG SPRING 3",
+    "networkLan": "10.52.42.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "BIG SPRING 3",
+    "substationNumber": 42,
+    "OTAddress": "10.52.42.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.42.1",
+        "10.52.42.2",
+        "10.52.42.3",
+        "10.52.42.4",
+        "10.52.42.5",
+        "10.52.42.6",
+        "10.52.42.7",
+        "10.52.42.8",
+        "10.52.42.9",
+        "10.52.42.10",
+        "10.52.42.11",
+        "10.52.42.12",
+        "10.52.42.13",
+        "10.52.42.14",
+        "10.52.42.15",
+        "10.52.42.16",
+        "10.52.42.17",
+        "10.52.42.18",
+        "10.52.42.19",
+        "10.52.42.20",
+        "10.52.42.21",
+        "10.52.42.22",
+        "10.52.42.23",
+        "10.52.42.24",
+        "10.52.42.25",
+        "10.52.42.26",
+        "10.52.42.27",
+        "10.52.42.28",
+        "10.52.42.29",
+        "10.52.42.30",
+        "10.52.42.31",
+        "10.52.42.32",
+        "10.52.42.33",
+        "10.52.42.34",
+        "10.52.42.35",
+        "10.52.42.36",
+        "10.52.42.37",
+        "10.52.42.38",
+        "10.52.42.39",
+        "10.52.42.40",
+        "10.52.42.41",
+        "10.52.42.42",
+        "10.52.42.43",
+        "10.52.42.44",
+        "10.52.42.45",
+        "10.52.42.46",
+        "10.52.42.47",
+        "10.52.42.48",
+        "10.52.42.49",
+        "10.52.42.50",
+        "10.52.42.51",
+        "10.52.42.52",
+        "10.52.42.53",
+        "10.52.42.54",
+        "10.52.42.55",
+        "10.52.42.56",
+        "10.52.42.57",
+        "10.52.42.58",
+        "10.52.42.59",
+        "10.52.42.60",
+        "10.52.42.61",
+        "10.52.42.62"
+    ],
+    "routeAddress": "10.52.42.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.42.65",
+        "10.52.42.66",
+        "10.52.42.67",
+        "10.52.42.68",
+        "10.52.42.69",
+        "10.52.42.70",
+        "10.52.42.71",
+        "10.52.42.72",
+        "10.52.42.73",
+        "10.52.42.74",
+        "10.52.42.75",
+        "10.52.42.76",
+        "10.52.42.77",
+        "10.52.42.78",
+        "10.52.42.79",
+        "10.52.42.80",
+        "10.52.42.81",
+        "10.52.42.82",
+        "10.52.42.83",
+        "10.52.42.84",
+        "10.52.42.85",
+        "10.52.42.86",
+        "10.52.42.87",
+        "10.52.42.88",
+        "10.52.42.89",
+        "10.52.42.90",
+        "10.52.42.91",
+        "10.52.42.92",
+        "10.52.42.93",
+        "10.52.42.94"
+    ],
+    "corporateAddress": "10.52.42.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.42.97",
+        "10.52.42.98",
+        "10.52.42.99",
+        "10.52.42.100",
+        "10.52.42.101",
+        "10.52.42.102",
+        "10.52.42.103",
+        "10.52.42.104",
+        "10.52.42.105",
+        "10.52.42.106",
+        "10.52.42.107",
+        "10.52.42.108",
+        "10.52.42.109",
+        "10.52.42.110",
+        "10.52.42.111",
+        "10.52.42.112",
+        "10.52.42.113",
+        "10.52.42.114",
+        "10.52.42.115",
+        "10.52.42.116",
+        "10.52.42.117",
+        "10.52.42.118",
+        "10.52.42.119",
+        "10.52.42.120",
+        "10.52.42.121",
+        "10.52.42.122",
+        "10.52.42.123",
+        "10.52.42.124",
+        "10.52.42.125"
+    ],
+    "latitude": 32.101,
+    "longitude": -101.451,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.97",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..Firewall 42",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.101,
+            "Longitude": -101.451
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.98",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..Router 42",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.1",
+            "ipAddress": "10.52.42.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3.OT.Switch 83",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.99",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3.Corporate.Switch 84",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.3",
+            "ipAddress": "10.52.42.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.4",
+            "ipAddress": "10.52.42.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.2",
+            "ipAddress": "10.52.42.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..RC 42",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.42.3",
+                "10.52.42.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.100",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..Host 83",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.100",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..Host 84",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.100",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..LocalDatabase 83",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.100",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..LocalWebServer 84",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.101",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..hmi 83",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.100",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..outstation 84",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.BIG SPRING 3..RC 42",
+            "destination": "Utility 0.BIG SPRING 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BIG SPRING 3..RC 42",
+            "destination": "Utility 0.BIG SPRING 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BIG SPRING 3..Router 42",
+            "destination": "Utility 0.BIG SPRING 3..Firewall 42",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BIG SPRING 3..Firewall 42",
+            "destination": "Utility 0.BIG SPRING 3.OT.Switch 83",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BIG SPRING 3.OT.Switch 83",
+            "destination": "Utility 0.BIG SPRING 3..RC 42",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BIG SPRING 3..Firewall 42",
+            "destination": "Utility 0.BIG SPRING 3.Corporate.Switch 84",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BIG SPRING 3.Corporate.Switch 84",
+            "destination": "Utility 0.BIG SPRING 3..Host 83",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BIG SPRING 3.Corporate.Switch 84",
+            "destination": "Utility 0.BIG SPRING 3..Host 84",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BIG SPRING 3.Corporate.Switch 84",
+            "destination": "Utility 0.BIG SPRING 3..LocalDatabase 83",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BIG SPRING 3.Corporate.Switch 84",
+            "destination": "Utility 0.BIG SPRING 3..LocalWebServer 84",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.1",
+            "ipAddress": "10.52.42.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3.OT.Switch 83",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.2",
+            "ipAddress": "10.52.42.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..RC 42",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.42.3",
+                "10.52.42.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.97",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..Firewall 42",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.101,
+            "Longitude": -101.451
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.98",
+            "ipAddress": "10.52.42.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..Router 42",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.1",
+            "ipAddress": "10.52.42.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3.OT.Switch 83",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.42.2",
+            "ipAddress": "10.52.42.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BIG SPRING 3",
+            "label": "Utility 0.BIG SPRING 3..RC 42",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.42.3",
+                "10.52.42.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 106.88,
+    "genmvar": -0.83,
+    "connecting_TS_num": 31
+}

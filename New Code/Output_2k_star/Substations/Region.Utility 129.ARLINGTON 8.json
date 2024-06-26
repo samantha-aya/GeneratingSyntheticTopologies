@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 129.ARLINGTON 8",
+    "networkLan": "10.151.491.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 129",
+    "utility_id": 151,
+    "substation": "ARLINGTON 8",
+    "substationNumber": 491,
+    "OTAddress": "10.151.491.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.151.491.1",
+        "10.151.491.2",
+        "10.151.491.3",
+        "10.151.491.4",
+        "10.151.491.5",
+        "10.151.491.6",
+        "10.151.491.7",
+        "10.151.491.8",
+        "10.151.491.9",
+        "10.151.491.10",
+        "10.151.491.11",
+        "10.151.491.12",
+        "10.151.491.13",
+        "10.151.491.14",
+        "10.151.491.15",
+        "10.151.491.16",
+        "10.151.491.17",
+        "10.151.491.18",
+        "10.151.491.19",
+        "10.151.491.20",
+        "10.151.491.21",
+        "10.151.491.22",
+        "10.151.491.23",
+        "10.151.491.24",
+        "10.151.491.25",
+        "10.151.491.26",
+        "10.151.491.27",
+        "10.151.491.28",
+        "10.151.491.29",
+        "10.151.491.30",
+        "10.151.491.31",
+        "10.151.491.32",
+        "10.151.491.33",
+        "10.151.491.34",
+        "10.151.491.35",
+        "10.151.491.36",
+        "10.151.491.37",
+        "10.151.491.38",
+        "10.151.491.39",
+        "10.151.491.40",
+        "10.151.491.41",
+        "10.151.491.42",
+        "10.151.491.43",
+        "10.151.491.44",
+        "10.151.491.45",
+        "10.151.491.46",
+        "10.151.491.47",
+        "10.151.491.48",
+        "10.151.491.49",
+        "10.151.491.50",
+        "10.151.491.51",
+        "10.151.491.52",
+        "10.151.491.53",
+        "10.151.491.54",
+        "10.151.491.55",
+        "10.151.491.56",
+        "10.151.491.57",
+        "10.151.491.58",
+        "10.151.491.59",
+        "10.151.491.60",
+        "10.151.491.61",
+        "10.151.491.62"
+    ],
+    "routeAddress": "10.151.491.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.151.491.65",
+        "10.151.491.66",
+        "10.151.491.67",
+        "10.151.491.68",
+        "10.151.491.69",
+        "10.151.491.70",
+        "10.151.491.71",
+        "10.151.491.72",
+        "10.151.491.73",
+        "10.151.491.74",
+        "10.151.491.75",
+        "10.151.491.76",
+        "10.151.491.77",
+        "10.151.491.78",
+        "10.151.491.79",
+        "10.151.491.80",
+        "10.151.491.81",
+        "10.151.491.82",
+        "10.151.491.83",
+        "10.151.491.84",
+        "10.151.491.85",
+        "10.151.491.86",
+        "10.151.491.87",
+        "10.151.491.88",
+        "10.151.491.89",
+        "10.151.491.90",
+        "10.151.491.91",
+        "10.151.491.92",
+        "10.151.491.93",
+        "10.151.491.94"
+    ],
+    "corporateAddress": "10.151.491.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.151.491.97",
+        "10.151.491.98",
+        "10.151.491.99",
+        "10.151.491.100",
+        "10.151.491.101",
+        "10.151.491.102",
+        "10.151.491.103",
+        "10.151.491.104",
+        "10.151.491.105",
+        "10.151.491.106",
+        "10.151.491.107",
+        "10.151.491.108",
+        "10.151.491.109",
+        "10.151.491.110",
+        "10.151.491.111",
+        "10.151.491.112",
+        "10.151.491.113",
+        "10.151.491.114",
+        "10.151.491.115",
+        "10.151.491.116",
+        "10.151.491.117",
+        "10.151.491.118",
+        "10.151.491.119",
+        "10.151.491.120",
+        "10.151.491.121",
+        "10.151.491.122",
+        "10.151.491.123",
+        "10.151.491.124",
+        "10.151.491.125"
+    ],
+    "latitude": 32.636,
+    "longitude": -97.149,
+    "nodes": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.97",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..Firewall 491",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.636,
+            "Longitude": -97.149
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.98",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..Router 491",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.1",
+            "ipAddress": "10.151.491.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8.OT.Switch 981",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.99",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8.Corporate.Switch 982",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.3",
+            "ipAddress": "10.151.491.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.2",
+            "ipAddress": "10.151.491.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..RC 491",
+            "compromised": false,
+            "relayIPlist": [
+                "10.151.491.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.100",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..Host 981",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.100",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..Host 982",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.100",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..LocalDatabase 981",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.100",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..LocalWebServer 982",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.101",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..hmi 981",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.100",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..outstation 982",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 129.ARLINGTON 8..RC 491",
+            "destination": "Utility 129.ARLINGTON 8..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 8..Router 491",
+            "destination": "Utility 129.ARLINGTON 8..Firewall 491",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 8..Firewall 491",
+            "destination": "Utility 129.ARLINGTON 8.OT.Switch 981",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 8.OT.Switch 981",
+            "destination": "Utility 129.ARLINGTON 8..RC 491",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 8..Firewall 491",
+            "destination": "Utility 129.ARLINGTON 8.Corporate.Switch 982",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 8.Corporate.Switch 982",
+            "destination": "Utility 129.ARLINGTON 8..Host 981",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 8.Corporate.Switch 982",
+            "destination": "Utility 129.ARLINGTON 8..Host 982",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 8.Corporate.Switch 982",
+            "destination": "Utility 129.ARLINGTON 8..LocalDatabase 981",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 129.ARLINGTON 8.Corporate.Switch 982",
+            "destination": "Utility 129.ARLINGTON 8..LocalWebServer 982",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.1",
+            "ipAddress": "10.151.491.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8.OT.Switch 981",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.2",
+            "ipAddress": "10.151.491.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..RC 491",
+            "compromised": false,
+            "relayIPlist": [
+                "10.151.491.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.97",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..Firewall 491",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.636,
+            "Longitude": -97.149
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.98",
+            "ipAddress": "10.151.491.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..Router 491",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.1",
+            "ipAddress": "10.151.491.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8.OT.Switch 981",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 129",
+            "adminIP": "10.151.491.2",
+            "ipAddress": "10.151.491.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 8",
+            "label": "Utility 129.ARLINGTON 8..RC 491",
+            "compromised": false,
+            "relayIPlist": [
+                "10.151.491.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.HIDALGO",
+    "networkLan": "10.53.260.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "HIDALGO",
+    "substationNumber": 260,
+    "OTAddress": "10.53.260.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.260.1",
+        "10.53.260.2",
+        "10.53.260.3",
+        "10.53.260.4",
+        "10.53.260.5",
+        "10.53.260.6",
+        "10.53.260.7",
+        "10.53.260.8",
+        "10.53.260.9",
+        "10.53.260.10",
+        "10.53.260.11",
+        "10.53.260.12",
+        "10.53.260.13",
+        "10.53.260.14",
+        "10.53.260.15",
+        "10.53.260.16",
+        "10.53.260.17",
+        "10.53.260.18",
+        "10.53.260.19",
+        "10.53.260.20",
+        "10.53.260.21",
+        "10.53.260.22",
+        "10.53.260.23",
+        "10.53.260.24",
+        "10.53.260.25",
+        "10.53.260.26",
+        "10.53.260.27",
+        "10.53.260.28",
+        "10.53.260.29",
+        "10.53.260.30",
+        "10.53.260.31",
+        "10.53.260.32",
+        "10.53.260.33",
+        "10.53.260.34",
+        "10.53.260.35",
+        "10.53.260.36",
+        "10.53.260.37",
+        "10.53.260.38",
+        "10.53.260.39",
+        "10.53.260.40",
+        "10.53.260.41",
+        "10.53.260.42",
+        "10.53.260.43",
+        "10.53.260.44",
+        "10.53.260.45",
+        "10.53.260.46",
+        "10.53.260.47",
+        "10.53.260.48",
+        "10.53.260.49",
+        "10.53.260.50",
+        "10.53.260.51",
+        "10.53.260.52",
+        "10.53.260.53",
+        "10.53.260.54",
+        "10.53.260.55",
+        "10.53.260.56",
+        "10.53.260.57",
+        "10.53.260.58",
+        "10.53.260.59",
+        "10.53.260.60",
+        "10.53.260.61",
+        "10.53.260.62"
+    ],
+    "routeAddress": "10.53.260.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.260.65",
+        "10.53.260.66",
+        "10.53.260.67",
+        "10.53.260.68",
+        "10.53.260.69",
+        "10.53.260.70",
+        "10.53.260.71",
+        "10.53.260.72",
+        "10.53.260.73",
+        "10.53.260.74",
+        "10.53.260.75",
+        "10.53.260.76",
+        "10.53.260.77",
+        "10.53.260.78",
+        "10.53.260.79",
+        "10.53.260.80",
+        "10.53.260.81",
+        "10.53.260.82",
+        "10.53.260.83",
+        "10.53.260.84",
+        "10.53.260.85",
+        "10.53.260.86",
+        "10.53.260.87",
+        "10.53.260.88",
+        "10.53.260.89",
+        "10.53.260.90",
+        "10.53.260.91",
+        "10.53.260.92",
+        "10.53.260.93",
+        "10.53.260.94"
+    ],
+    "corporateAddress": "10.53.260.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.260.97",
+        "10.53.260.98",
+        "10.53.260.99",
+        "10.53.260.100",
+        "10.53.260.101",
+        "10.53.260.102",
+        "10.53.260.103",
+        "10.53.260.104",
+        "10.53.260.105",
+        "10.53.260.106",
+        "10.53.260.107",
+        "10.53.260.108",
+        "10.53.260.109",
+        "10.53.260.110",
+        "10.53.260.111",
+        "10.53.260.112",
+        "10.53.260.113",
+        "10.53.260.114",
+        "10.53.260.115",
+        "10.53.260.116",
+        "10.53.260.117",
+        "10.53.260.118",
+        "10.53.260.119",
+        "10.53.260.120",
+        "10.53.260.121",
+        "10.53.260.122",
+        "10.53.260.123",
+        "10.53.260.124",
+        "10.53.260.125"
+    ],
+    "latitude": 26.111,
+    "longitude": -98.242,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.97",
+            "ipAddress": "10.53.260.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..Firewall 260",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.111,
+            "Longitude": -98.242
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.98",
+            "ipAddress": "10.53.260.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..Router 260",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.1",
+            "ipAddress": "10.53.260.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO.OT.Switch 519",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.99",
+            "ipAddress": "10.53.260.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO.Corporate.Switch 520",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.3",
+            "ipAddress": "10.53.260.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.2",
+            "ipAddress": "10.53.260.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..RC 260",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.260.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.100",
+            "ipAddress": "10.53.260.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..Host 519",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.100",
+            "ipAddress": "10.53.260.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..Host 520",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.100",
+            "ipAddress": "10.53.260.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..LocalDatabase 519",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.100",
+            "ipAddress": "10.53.260.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..LocalWebServer 520",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.HIDALGO..RC 260",
+            "destination": "Utility 1.HIDALGO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HIDALGO..Router 260",
+            "destination": "Utility 1.HIDALGO..Firewall 260",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HIDALGO..Firewall 260",
+            "destination": "Utility 1.HIDALGO.OT.Switch 519",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HIDALGO.OT.Switch 519",
+            "destination": "Utility 1.HIDALGO..RC 260",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HIDALGO..Firewall 260",
+            "destination": "Utility 1.HIDALGO.Corporate.Switch 520",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HIDALGO.Corporate.Switch 520",
+            "destination": "Utility 1.HIDALGO..Host 519",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HIDALGO.Corporate.Switch 520",
+            "destination": "Utility 1.HIDALGO..Host 520",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HIDALGO.Corporate.Switch 520",
+            "destination": "Utility 1.HIDALGO..LocalDatabase 519",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HIDALGO.Corporate.Switch 520",
+            "destination": "Utility 1.HIDALGO..LocalWebServer 520",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.1",
+            "ipAddress": "10.53.260.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO.OT.Switch 519",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.2",
+            "ipAddress": "10.53.260.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..RC 260",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.260.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.97",
+            "ipAddress": "10.53.260.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..Firewall 260",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.111,
+            "Longitude": -98.242
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.98",
+            "ipAddress": "10.53.260.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..Router 260",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.1",
+            "ipAddress": "10.53.260.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO.OT.Switch 519",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.260.2",
+            "ipAddress": "10.53.260.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HIDALGO",
+            "label": "Utility 1.HIDALGO..RC 260",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.260.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

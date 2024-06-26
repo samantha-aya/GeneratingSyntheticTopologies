@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.ECTOR",
+    "networkLan": "10.55.83.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "ECTOR",
+    "substationNumber": 83,
+    "OTAddress": "10.55.83.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.83.1",
+        "10.55.83.2",
+        "10.55.83.3",
+        "10.55.83.4",
+        "10.55.83.5",
+        "10.55.83.6",
+        "10.55.83.7",
+        "10.55.83.8",
+        "10.55.83.9",
+        "10.55.83.10",
+        "10.55.83.11",
+        "10.55.83.12",
+        "10.55.83.13",
+        "10.55.83.14",
+        "10.55.83.15",
+        "10.55.83.16",
+        "10.55.83.17",
+        "10.55.83.18",
+        "10.55.83.19",
+        "10.55.83.20",
+        "10.55.83.21",
+        "10.55.83.22",
+        "10.55.83.23",
+        "10.55.83.24",
+        "10.55.83.25",
+        "10.55.83.26",
+        "10.55.83.27",
+        "10.55.83.28",
+        "10.55.83.29",
+        "10.55.83.30",
+        "10.55.83.31",
+        "10.55.83.32",
+        "10.55.83.33",
+        "10.55.83.34",
+        "10.55.83.35",
+        "10.55.83.36",
+        "10.55.83.37",
+        "10.55.83.38",
+        "10.55.83.39",
+        "10.55.83.40",
+        "10.55.83.41",
+        "10.55.83.42",
+        "10.55.83.43",
+        "10.55.83.44",
+        "10.55.83.45",
+        "10.55.83.46",
+        "10.55.83.47",
+        "10.55.83.48",
+        "10.55.83.49",
+        "10.55.83.50",
+        "10.55.83.51",
+        "10.55.83.52",
+        "10.55.83.53",
+        "10.55.83.54",
+        "10.55.83.55",
+        "10.55.83.56",
+        "10.55.83.57",
+        "10.55.83.58",
+        "10.55.83.59",
+        "10.55.83.60",
+        "10.55.83.61",
+        "10.55.83.62"
+    ],
+    "routeAddress": "10.55.83.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.83.65",
+        "10.55.83.66",
+        "10.55.83.67",
+        "10.55.83.68",
+        "10.55.83.69",
+        "10.55.83.70",
+        "10.55.83.71",
+        "10.55.83.72",
+        "10.55.83.73",
+        "10.55.83.74",
+        "10.55.83.75",
+        "10.55.83.76",
+        "10.55.83.77",
+        "10.55.83.78",
+        "10.55.83.79",
+        "10.55.83.80",
+        "10.55.83.81",
+        "10.55.83.82",
+        "10.55.83.83",
+        "10.55.83.84",
+        "10.55.83.85",
+        "10.55.83.86",
+        "10.55.83.87",
+        "10.55.83.88",
+        "10.55.83.89",
+        "10.55.83.90",
+        "10.55.83.91",
+        "10.55.83.92",
+        "10.55.83.93",
+        "10.55.83.94"
+    ],
+    "corporateAddress": "10.55.83.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.83.97",
+        "10.55.83.98",
+        "10.55.83.99",
+        "10.55.83.100",
+        "10.55.83.101",
+        "10.55.83.102",
+        "10.55.83.103",
+        "10.55.83.104",
+        "10.55.83.105",
+        "10.55.83.106",
+        "10.55.83.107",
+        "10.55.83.108",
+        "10.55.83.109",
+        "10.55.83.110",
+        "10.55.83.111",
+        "10.55.83.112",
+        "10.55.83.113",
+        "10.55.83.114",
+        "10.55.83.115",
+        "10.55.83.116",
+        "10.55.83.117",
+        "10.55.83.118",
+        "10.55.83.119",
+        "10.55.83.120",
+        "10.55.83.121",
+        "10.55.83.122",
+        "10.55.83.123",
+        "10.55.83.124",
+        "10.55.83.125"
+    ],
+    "latitude": 33.554,
+    "longitude": -96.283,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.97",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..Firewall 83",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.554,
+            "Longitude": -96.283
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.98",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..Router 83",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.1",
+            "ipAddress": "10.55.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR.OT.Switch 165",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.99",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR.Corporate.Switch 166",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.3",
+            "ipAddress": "10.55.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.2",
+            "ipAddress": "10.55.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..RC 83",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.83.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.100",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..Host 165",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.100",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..Host 166",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.100",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..LocalDatabase 165",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.100",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..LocalWebServer 166",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.101",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..hmi 165",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.100",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..outstation 166",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.ECTOR..RC 83",
+            "destination": "Utility 2.ECTOR..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.ECTOR..Router 83",
+            "destination": "Utility 2.ECTOR..Firewall 83",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.ECTOR..Firewall 83",
+            "destination": "Utility 2.ECTOR.OT.Switch 165",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.ECTOR.OT.Switch 165",
+            "destination": "Utility 2.ECTOR..RC 83",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.ECTOR..Firewall 83",
+            "destination": "Utility 2.ECTOR.Corporate.Switch 166",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.ECTOR.Corporate.Switch 166",
+            "destination": "Utility 2.ECTOR..Host 165",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.ECTOR.Corporate.Switch 166",
+            "destination": "Utility 2.ECTOR..Host 166",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.ECTOR.Corporate.Switch 166",
+            "destination": "Utility 2.ECTOR..LocalDatabase 165",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.ECTOR.Corporate.Switch 166",
+            "destination": "Utility 2.ECTOR..LocalWebServer 166",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.1",
+            "ipAddress": "10.55.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR.OT.Switch 165",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.2",
+            "ipAddress": "10.55.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..RC 83",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.83.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.97",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..Firewall 83",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.554,
+            "Longitude": -96.283
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.98",
+            "ipAddress": "10.55.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..Router 83",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.1",
+            "ipAddress": "10.55.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR.OT.Switch 165",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.83.2",
+            "ipAddress": "10.55.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ECTOR",
+            "label": "Utility 2.ECTOR..RC 83",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.83.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

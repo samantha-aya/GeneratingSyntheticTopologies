@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.EDINBURG 2",
+    "networkLan": "10.57.244.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "EDINBURG 2",
+    "substationNumber": 244,
+    "OTAddress": "10.57.244.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.244.1",
+        "10.57.244.2",
+        "10.57.244.3",
+        "10.57.244.4",
+        "10.57.244.5",
+        "10.57.244.6",
+        "10.57.244.7",
+        "10.57.244.8",
+        "10.57.244.9",
+        "10.57.244.10",
+        "10.57.244.11",
+        "10.57.244.12",
+        "10.57.244.13",
+        "10.57.244.14",
+        "10.57.244.15",
+        "10.57.244.16",
+        "10.57.244.17",
+        "10.57.244.18",
+        "10.57.244.19",
+        "10.57.244.20",
+        "10.57.244.21",
+        "10.57.244.22",
+        "10.57.244.23",
+        "10.57.244.24",
+        "10.57.244.25",
+        "10.57.244.26",
+        "10.57.244.27",
+        "10.57.244.28",
+        "10.57.244.29",
+        "10.57.244.30",
+        "10.57.244.31",
+        "10.57.244.32",
+        "10.57.244.33",
+        "10.57.244.34",
+        "10.57.244.35",
+        "10.57.244.36",
+        "10.57.244.37",
+        "10.57.244.38",
+        "10.57.244.39",
+        "10.57.244.40",
+        "10.57.244.41",
+        "10.57.244.42",
+        "10.57.244.43",
+        "10.57.244.44",
+        "10.57.244.45",
+        "10.57.244.46",
+        "10.57.244.47",
+        "10.57.244.48",
+        "10.57.244.49",
+        "10.57.244.50",
+        "10.57.244.51",
+        "10.57.244.52",
+        "10.57.244.53",
+        "10.57.244.54",
+        "10.57.244.55",
+        "10.57.244.56",
+        "10.57.244.57",
+        "10.57.244.58",
+        "10.57.244.59",
+        "10.57.244.60",
+        "10.57.244.61",
+        "10.57.244.62"
+    ],
+    "routeAddress": "10.57.244.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.244.65",
+        "10.57.244.66",
+        "10.57.244.67",
+        "10.57.244.68",
+        "10.57.244.69",
+        "10.57.244.70",
+        "10.57.244.71",
+        "10.57.244.72",
+        "10.57.244.73",
+        "10.57.244.74",
+        "10.57.244.75",
+        "10.57.244.76",
+        "10.57.244.77",
+        "10.57.244.78",
+        "10.57.244.79",
+        "10.57.244.80",
+        "10.57.244.81",
+        "10.57.244.82",
+        "10.57.244.83",
+        "10.57.244.84",
+        "10.57.244.85",
+        "10.57.244.86",
+        "10.57.244.87",
+        "10.57.244.88",
+        "10.57.244.89",
+        "10.57.244.90",
+        "10.57.244.91",
+        "10.57.244.92",
+        "10.57.244.93",
+        "10.57.244.94"
+    ],
+    "corporateAddress": "10.57.244.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.244.97",
+        "10.57.244.98",
+        "10.57.244.99",
+        "10.57.244.100",
+        "10.57.244.101",
+        "10.57.244.102",
+        "10.57.244.103",
+        "10.57.244.104",
+        "10.57.244.105",
+        "10.57.244.106",
+        "10.57.244.107",
+        "10.57.244.108",
+        "10.57.244.109",
+        "10.57.244.110",
+        "10.57.244.111",
+        "10.57.244.112",
+        "10.57.244.113",
+        "10.57.244.114",
+        "10.57.244.115",
+        "10.57.244.116",
+        "10.57.244.117",
+        "10.57.244.118",
+        "10.57.244.119",
+        "10.57.244.120",
+        "10.57.244.121",
+        "10.57.244.122",
+        "10.57.244.123",
+        "10.57.244.124",
+        "10.57.244.125"
+    ],
+    "latitude": 26.281,
+    "longitude": -98.183,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.97",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..Firewall 244",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.281,
+            "Longitude": -98.183
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.98",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..Router 244",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.1",
+            "ipAddress": "10.57.244.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2.OT.Switch 487",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.99",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2.Corporate.Switch 488",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.3",
+            "ipAddress": "10.57.244.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.2",
+            "ipAddress": "10.57.244.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..RC 244",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.244.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.100",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..Host 487",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.100",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..Host 488",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.100",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..LocalDatabase 487",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.100",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..LocalWebServer 488",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.101",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..hmi 487",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.100",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..outstation 488",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.EDINBURG 2..RC 244",
+            "destination": "Utility 4.EDINBURG 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.EDINBURG 2..Router 244",
+            "destination": "Utility 4.EDINBURG 2..Firewall 244",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.EDINBURG 2..Firewall 244",
+            "destination": "Utility 4.EDINBURG 2.OT.Switch 487",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.EDINBURG 2.OT.Switch 487",
+            "destination": "Utility 4.EDINBURG 2..RC 244",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.EDINBURG 2..Firewall 244",
+            "destination": "Utility 4.EDINBURG 2.Corporate.Switch 488",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.EDINBURG 2.Corporate.Switch 488",
+            "destination": "Utility 4.EDINBURG 2..Host 487",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.EDINBURG 2.Corporate.Switch 488",
+            "destination": "Utility 4.EDINBURG 2..Host 488",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.EDINBURG 2.Corporate.Switch 488",
+            "destination": "Utility 4.EDINBURG 2..LocalDatabase 487",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.EDINBURG 2.Corporate.Switch 488",
+            "destination": "Utility 4.EDINBURG 2..LocalWebServer 488",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.1",
+            "ipAddress": "10.57.244.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2.OT.Switch 487",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.2",
+            "ipAddress": "10.57.244.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..RC 244",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.244.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.97",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..Firewall 244",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.281,
+            "Longitude": -98.183
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.98",
+            "ipAddress": "10.57.244.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..Router 244",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.1",
+            "ipAddress": "10.57.244.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2.OT.Switch 487",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.244.2",
+            "ipAddress": "10.57.244.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 2",
+            "label": "Utility 4.EDINBURG 2..RC 244",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.244.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

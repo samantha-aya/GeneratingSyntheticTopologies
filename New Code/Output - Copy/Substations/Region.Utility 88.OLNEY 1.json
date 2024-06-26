@@ -1,0 +1,660 @@
+{
+    "relayCounter": 3,
+    "label": "Region.Utility 88.OLNEY 1",
+    "networkLan": "10.88.542.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 88",
+    "utility_id": 88,
+    "substation": "OLNEY 1",
+    "substationNumber": 542,
+    "OTAddress": "10.88.542.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.88.542.1",
+        "10.88.542.2",
+        "10.88.542.3",
+        "10.88.542.4",
+        "10.88.542.5",
+        "10.88.542.6",
+        "10.88.542.7",
+        "10.88.542.8",
+        "10.88.542.9",
+        "10.88.542.10",
+        "10.88.542.11",
+        "10.88.542.12",
+        "10.88.542.13",
+        "10.88.542.14",
+        "10.88.542.15",
+        "10.88.542.16",
+        "10.88.542.17",
+        "10.88.542.18",
+        "10.88.542.19",
+        "10.88.542.20",
+        "10.88.542.21",
+        "10.88.542.22",
+        "10.88.542.23",
+        "10.88.542.24",
+        "10.88.542.25",
+        "10.88.542.26",
+        "10.88.542.27",
+        "10.88.542.28",
+        "10.88.542.29",
+        "10.88.542.30",
+        "10.88.542.31",
+        "10.88.542.32",
+        "10.88.542.33",
+        "10.88.542.34",
+        "10.88.542.35",
+        "10.88.542.36",
+        "10.88.542.37",
+        "10.88.542.38",
+        "10.88.542.39",
+        "10.88.542.40",
+        "10.88.542.41",
+        "10.88.542.42",
+        "10.88.542.43",
+        "10.88.542.44",
+        "10.88.542.45",
+        "10.88.542.46",
+        "10.88.542.47",
+        "10.88.542.48",
+        "10.88.542.49",
+        "10.88.542.50",
+        "10.88.542.51",
+        "10.88.542.52",
+        "10.88.542.53",
+        "10.88.542.54",
+        "10.88.542.55",
+        "10.88.542.56",
+        "10.88.542.57",
+        "10.88.542.58",
+        "10.88.542.59",
+        "10.88.542.60",
+        "10.88.542.61",
+        "10.88.542.62"
+    ],
+    "routeAddress": "10.88.542.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.88.542.65",
+        "10.88.542.66",
+        "10.88.542.67",
+        "10.88.542.68",
+        "10.88.542.69",
+        "10.88.542.70",
+        "10.88.542.71",
+        "10.88.542.72",
+        "10.88.542.73",
+        "10.88.542.74",
+        "10.88.542.75",
+        "10.88.542.76",
+        "10.88.542.77",
+        "10.88.542.78",
+        "10.88.542.79",
+        "10.88.542.80",
+        "10.88.542.81",
+        "10.88.542.82",
+        "10.88.542.83",
+        "10.88.542.84",
+        "10.88.542.85",
+        "10.88.542.86",
+        "10.88.542.87",
+        "10.88.542.88",
+        "10.88.542.89",
+        "10.88.542.90",
+        "10.88.542.91",
+        "10.88.542.92",
+        "10.88.542.93",
+        "10.88.542.94"
+    ],
+    "corporateAddress": "10.88.542.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.88.542.97",
+        "10.88.542.98",
+        "10.88.542.99",
+        "10.88.542.100",
+        "10.88.542.101",
+        "10.88.542.102",
+        "10.88.542.103",
+        "10.88.542.104",
+        "10.88.542.105",
+        "10.88.542.106",
+        "10.88.542.107",
+        "10.88.542.108",
+        "10.88.542.109",
+        "10.88.542.110",
+        "10.88.542.111",
+        "10.88.542.112",
+        "10.88.542.113",
+        "10.88.542.114",
+        "10.88.542.115",
+        "10.88.542.116",
+        "10.88.542.117",
+        "10.88.542.118",
+        "10.88.542.119",
+        "10.88.542.120",
+        "10.88.542.121",
+        "10.88.542.122",
+        "10.88.542.123",
+        "10.88.542.124",
+        "10.88.542.125"
+    ],
+    "latitude": 33.384,
+    "longitude": -98.712,
+    "nodes": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.97",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..Firewall 542",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.384,
+            "Longitude": -98.712
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.98",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..Router 542",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.1",
+            "ipAddress": "10.88.542.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1.OT.Switch 1083",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.99",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1.Corporate.Switch 1084",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.3",
+            "ipAddress": "10.88.542.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.4",
+            "ipAddress": "10.88.542.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.5",
+            "ipAddress": "10.88.542.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.2",
+            "ipAddress": "10.88.542.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..RC 542",
+            "compromised": false,
+            "relayIPlist": [
+                "10.88.542.3",
+                "10.88.542.4",
+                "10.88.542.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.100",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..Host 1083",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.100",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..Host 1084",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.100",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..LocalDatabase 1083",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.100",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..LocalWebServer 1084",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.101",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..hmi 1083",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.100",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..outstation 1084",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 88.OLNEY 1..RC 542",
+            "destination": "Utility 88.OLNEY 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1..RC 542",
+            "destination": "Utility 88.OLNEY 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1..RC 542",
+            "destination": "Utility 88.OLNEY 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1..Router 542",
+            "destination": "Utility 88.OLNEY 1..Firewall 542",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1..Firewall 542",
+            "destination": "Utility 88.OLNEY 1.OT.Switch 1083",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1.OT.Switch 1083",
+            "destination": "Utility 88.OLNEY 1..RC 542",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1..Firewall 542",
+            "destination": "Utility 88.OLNEY 1.Corporate.Switch 1084",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1.Corporate.Switch 1084",
+            "destination": "Utility 88.OLNEY 1..Host 1083",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1.Corporate.Switch 1084",
+            "destination": "Utility 88.OLNEY 1..Host 1084",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1.Corporate.Switch 1084",
+            "destination": "Utility 88.OLNEY 1..LocalDatabase 1083",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 88.OLNEY 1.Corporate.Switch 1084",
+            "destination": "Utility 88.OLNEY 1..LocalWebServer 1084",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.1",
+            "ipAddress": "10.88.542.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1.OT.Switch 1083",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.2",
+            "ipAddress": "10.88.542.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..RC 542",
+            "compromised": false,
+            "relayIPlist": [
+                "10.88.542.3",
+                "10.88.542.4",
+                "10.88.542.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.97",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..Firewall 542",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.384,
+            "Longitude": -98.712
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.98",
+            "ipAddress": "10.88.542.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..Router 542",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.1",
+            "ipAddress": "10.88.542.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1.OT.Switch 1083",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 88",
+            "adminIP": "10.88.542.2",
+            "ipAddress": "10.88.542.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OLNEY 1",
+            "label": "Utility 88.OLNEY 1..RC 542",
+            "compromised": false,
+            "relayIPlist": [
+                "10.88.542.3",
+                "10.88.542.4",
+                "10.88.542.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 168.75,
+    "genmvar": -32.4,
+    "connecting_TS_num": 109
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 13.MICO",
+    "networkLan": "10.162.839.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 13",
+    "utility_id": 162,
+    "substation": "MICO",
+    "substationNumber": 839,
+    "OTAddress": "10.162.839.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.162.839.1",
+        "10.162.839.2",
+        "10.162.839.3",
+        "10.162.839.4",
+        "10.162.839.5",
+        "10.162.839.6",
+        "10.162.839.7",
+        "10.162.839.8",
+        "10.162.839.9",
+        "10.162.839.10",
+        "10.162.839.11",
+        "10.162.839.12",
+        "10.162.839.13",
+        "10.162.839.14",
+        "10.162.839.15",
+        "10.162.839.16",
+        "10.162.839.17",
+        "10.162.839.18",
+        "10.162.839.19",
+        "10.162.839.20",
+        "10.162.839.21",
+        "10.162.839.22",
+        "10.162.839.23",
+        "10.162.839.24",
+        "10.162.839.25",
+        "10.162.839.26",
+        "10.162.839.27",
+        "10.162.839.28",
+        "10.162.839.29",
+        "10.162.839.30",
+        "10.162.839.31",
+        "10.162.839.32",
+        "10.162.839.33",
+        "10.162.839.34",
+        "10.162.839.35",
+        "10.162.839.36",
+        "10.162.839.37",
+        "10.162.839.38",
+        "10.162.839.39",
+        "10.162.839.40",
+        "10.162.839.41",
+        "10.162.839.42",
+        "10.162.839.43",
+        "10.162.839.44",
+        "10.162.839.45",
+        "10.162.839.46",
+        "10.162.839.47",
+        "10.162.839.48",
+        "10.162.839.49",
+        "10.162.839.50",
+        "10.162.839.51",
+        "10.162.839.52",
+        "10.162.839.53",
+        "10.162.839.54",
+        "10.162.839.55",
+        "10.162.839.56",
+        "10.162.839.57",
+        "10.162.839.58",
+        "10.162.839.59",
+        "10.162.839.60",
+        "10.162.839.61",
+        "10.162.839.62"
+    ],
+    "routeAddress": "10.162.839.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.162.839.65",
+        "10.162.839.66",
+        "10.162.839.67",
+        "10.162.839.68",
+        "10.162.839.69",
+        "10.162.839.70",
+        "10.162.839.71",
+        "10.162.839.72",
+        "10.162.839.73",
+        "10.162.839.74",
+        "10.162.839.75",
+        "10.162.839.76",
+        "10.162.839.77",
+        "10.162.839.78",
+        "10.162.839.79",
+        "10.162.839.80",
+        "10.162.839.81",
+        "10.162.839.82",
+        "10.162.839.83",
+        "10.162.839.84",
+        "10.162.839.85",
+        "10.162.839.86",
+        "10.162.839.87",
+        "10.162.839.88",
+        "10.162.839.89",
+        "10.162.839.90",
+        "10.162.839.91",
+        "10.162.839.92",
+        "10.162.839.93",
+        "10.162.839.94"
+    ],
+    "corporateAddress": "10.162.839.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.162.839.97",
+        "10.162.839.98",
+        "10.162.839.99",
+        "10.162.839.100",
+        "10.162.839.101",
+        "10.162.839.102",
+        "10.162.839.103",
+        "10.162.839.104",
+        "10.162.839.105",
+        "10.162.839.106",
+        "10.162.839.107",
+        "10.162.839.108",
+        "10.162.839.109",
+        "10.162.839.110",
+        "10.162.839.111",
+        "10.162.839.112",
+        "10.162.839.113",
+        "10.162.839.114",
+        "10.162.839.115",
+        "10.162.839.116",
+        "10.162.839.117",
+        "10.162.839.118",
+        "10.162.839.119",
+        "10.162.839.120",
+        "10.162.839.121",
+        "10.162.839.122",
+        "10.162.839.123",
+        "10.162.839.124",
+        "10.162.839.125"
+    ],
+    "latitude": 29.501,
+    "longitude": -98.853,
+    "nodes": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.97",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..Firewall 839",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.501,
+            "Longitude": -98.853
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.98",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..Router 839",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.1",
+            "ipAddress": "10.162.839.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MICO",
+            "label": "Utility 13.MICO.OT.Switch 1677",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.99",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO.Corporate.Switch 1678",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.3",
+            "ipAddress": "10.162.839.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.2",
+            "ipAddress": "10.162.839.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..RC 839",
+            "compromised": false,
+            "relayIPlist": [
+                "10.162.839.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.100",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..Host 1677",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.100",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..Host 1678",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.100",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..LocalDatabase 1677",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.100",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..LocalWebServer 1678",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.101",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..hmi 1677",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.100",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..outstation 1678",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 13.MICO..RC 839",
+            "destination": "Utility 13.MICO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.MICO..Router 839",
+            "destination": "Utility 13.MICO..Firewall 839",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.MICO..Firewall 839",
+            "destination": "Utility 13.MICO.OT.Switch 1677",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.MICO.OT.Switch 1677",
+            "destination": "Utility 13.MICO..RC 839",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.MICO..Firewall 839",
+            "destination": "Utility 13.MICO.Corporate.Switch 1678",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.MICO.Corporate.Switch 1678",
+            "destination": "Utility 13.MICO..Host 1677",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.MICO.Corporate.Switch 1678",
+            "destination": "Utility 13.MICO..Host 1678",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.MICO.Corporate.Switch 1678",
+            "destination": "Utility 13.MICO..LocalDatabase 1677",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.MICO.Corporate.Switch 1678",
+            "destination": "Utility 13.MICO..LocalWebServer 1678",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.1",
+            "ipAddress": "10.162.839.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MICO",
+            "label": "Utility 13.MICO.OT.Switch 1677",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.2",
+            "ipAddress": "10.162.839.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..RC 839",
+            "compromised": false,
+            "relayIPlist": [
+                "10.162.839.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.97",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..Firewall 839",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.501,
+            "Longitude": -98.853
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.98",
+            "ipAddress": "10.162.839.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..Router 839",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.1",
+            "ipAddress": "10.162.839.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MICO",
+            "label": "Utility 13.MICO.OT.Switch 1677",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.839.2",
+            "ipAddress": "10.162.839.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MICO",
+            "label": "Utility 13.MICO..RC 839",
+            "compromised": false,
+            "relayIPlist": [
+                "10.162.839.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

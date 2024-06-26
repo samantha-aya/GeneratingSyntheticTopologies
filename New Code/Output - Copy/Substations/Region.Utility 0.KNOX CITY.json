@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.KNOX CITY",
+    "networkLan": "10.52.80.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "KNOX CITY",
+    "substationNumber": 80,
+    "OTAddress": "10.52.80.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.80.1",
+        "10.52.80.2",
+        "10.52.80.3",
+        "10.52.80.4",
+        "10.52.80.5",
+        "10.52.80.6",
+        "10.52.80.7",
+        "10.52.80.8",
+        "10.52.80.9",
+        "10.52.80.10",
+        "10.52.80.11",
+        "10.52.80.12",
+        "10.52.80.13",
+        "10.52.80.14",
+        "10.52.80.15",
+        "10.52.80.16",
+        "10.52.80.17",
+        "10.52.80.18",
+        "10.52.80.19",
+        "10.52.80.20",
+        "10.52.80.21",
+        "10.52.80.22",
+        "10.52.80.23",
+        "10.52.80.24",
+        "10.52.80.25",
+        "10.52.80.26",
+        "10.52.80.27",
+        "10.52.80.28",
+        "10.52.80.29",
+        "10.52.80.30",
+        "10.52.80.31",
+        "10.52.80.32",
+        "10.52.80.33",
+        "10.52.80.34",
+        "10.52.80.35",
+        "10.52.80.36",
+        "10.52.80.37",
+        "10.52.80.38",
+        "10.52.80.39",
+        "10.52.80.40",
+        "10.52.80.41",
+        "10.52.80.42",
+        "10.52.80.43",
+        "10.52.80.44",
+        "10.52.80.45",
+        "10.52.80.46",
+        "10.52.80.47",
+        "10.52.80.48",
+        "10.52.80.49",
+        "10.52.80.50",
+        "10.52.80.51",
+        "10.52.80.52",
+        "10.52.80.53",
+        "10.52.80.54",
+        "10.52.80.55",
+        "10.52.80.56",
+        "10.52.80.57",
+        "10.52.80.58",
+        "10.52.80.59",
+        "10.52.80.60",
+        "10.52.80.61",
+        "10.52.80.62"
+    ],
+    "routeAddress": "10.52.80.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.80.65",
+        "10.52.80.66",
+        "10.52.80.67",
+        "10.52.80.68",
+        "10.52.80.69",
+        "10.52.80.70",
+        "10.52.80.71",
+        "10.52.80.72",
+        "10.52.80.73",
+        "10.52.80.74",
+        "10.52.80.75",
+        "10.52.80.76",
+        "10.52.80.77",
+        "10.52.80.78",
+        "10.52.80.79",
+        "10.52.80.80",
+        "10.52.80.81",
+        "10.52.80.82",
+        "10.52.80.83",
+        "10.52.80.84",
+        "10.52.80.85",
+        "10.52.80.86",
+        "10.52.80.87",
+        "10.52.80.88",
+        "10.52.80.89",
+        "10.52.80.90",
+        "10.52.80.91",
+        "10.52.80.92",
+        "10.52.80.93",
+        "10.52.80.94"
+    ],
+    "corporateAddress": "10.52.80.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.80.97",
+        "10.52.80.98",
+        "10.52.80.99",
+        "10.52.80.100",
+        "10.52.80.101",
+        "10.52.80.102",
+        "10.52.80.103",
+        "10.52.80.104",
+        "10.52.80.105",
+        "10.52.80.106",
+        "10.52.80.107",
+        "10.52.80.108",
+        "10.52.80.109",
+        "10.52.80.110",
+        "10.52.80.111",
+        "10.52.80.112",
+        "10.52.80.113",
+        "10.52.80.114",
+        "10.52.80.115",
+        "10.52.80.116",
+        "10.52.80.117",
+        "10.52.80.118",
+        "10.52.80.119",
+        "10.52.80.120",
+        "10.52.80.121",
+        "10.52.80.122",
+        "10.52.80.123",
+        "10.52.80.124",
+        "10.52.80.125"
+    ],
+    "latitude": 33.432,
+    "longitude": -99.854,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.97",
+            "ipAddress": "10.52.80.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..Firewall 80",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.432,
+            "Longitude": -99.854
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.98",
+            "ipAddress": "10.52.80.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..Router 80",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.1",
+            "ipAddress": "10.52.80.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY.OT.Switch 159",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.99",
+            "ipAddress": "10.52.80.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY.Corporate.Switch 160",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.3",
+            "ipAddress": "10.52.80.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.2",
+            "ipAddress": "10.52.80.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..RC 80",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.80.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.100",
+            "ipAddress": "10.52.80.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..Host 159",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.100",
+            "ipAddress": "10.52.80.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..Host 160",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.100",
+            "ipAddress": "10.52.80.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..LocalDatabase 159",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.100",
+            "ipAddress": "10.52.80.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..LocalWebServer 160",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.KNOX CITY..RC 80",
+            "destination": "Utility 0.KNOX CITY..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KNOX CITY..Router 80",
+            "destination": "Utility 0.KNOX CITY..Firewall 80",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KNOX CITY..Firewall 80",
+            "destination": "Utility 0.KNOX CITY.OT.Switch 159",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KNOX CITY.OT.Switch 159",
+            "destination": "Utility 0.KNOX CITY..RC 80",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KNOX CITY..Firewall 80",
+            "destination": "Utility 0.KNOX CITY.Corporate.Switch 160",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KNOX CITY.Corporate.Switch 160",
+            "destination": "Utility 0.KNOX CITY..Host 159",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KNOX CITY.Corporate.Switch 160",
+            "destination": "Utility 0.KNOX CITY..Host 160",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KNOX CITY.Corporate.Switch 160",
+            "destination": "Utility 0.KNOX CITY..LocalDatabase 159",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KNOX CITY.Corporate.Switch 160",
+            "destination": "Utility 0.KNOX CITY..LocalWebServer 160",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.1",
+            "ipAddress": "10.52.80.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY.OT.Switch 159",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.2",
+            "ipAddress": "10.52.80.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..RC 80",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.80.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.97",
+            "ipAddress": "10.52.80.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..Firewall 80",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.432,
+            "Longitude": -99.854
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.98",
+            "ipAddress": "10.52.80.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..Router 80",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.1",
+            "ipAddress": "10.52.80.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY.OT.Switch 159",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.80.2",
+            "ipAddress": "10.52.80.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KNOX CITY",
+            "label": "Utility 0.KNOX CITY..RC 80",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.80.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

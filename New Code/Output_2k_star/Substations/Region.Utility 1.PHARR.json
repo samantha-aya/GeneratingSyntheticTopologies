@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.PHARR",
+    "networkLan": "10.53.289.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "PHARR",
+    "substationNumber": 289,
+    "OTAddress": "10.53.289.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.289.1",
+        "10.53.289.2",
+        "10.53.289.3",
+        "10.53.289.4",
+        "10.53.289.5",
+        "10.53.289.6",
+        "10.53.289.7",
+        "10.53.289.8",
+        "10.53.289.9",
+        "10.53.289.10",
+        "10.53.289.11",
+        "10.53.289.12",
+        "10.53.289.13",
+        "10.53.289.14",
+        "10.53.289.15",
+        "10.53.289.16",
+        "10.53.289.17",
+        "10.53.289.18",
+        "10.53.289.19",
+        "10.53.289.20",
+        "10.53.289.21",
+        "10.53.289.22",
+        "10.53.289.23",
+        "10.53.289.24",
+        "10.53.289.25",
+        "10.53.289.26",
+        "10.53.289.27",
+        "10.53.289.28",
+        "10.53.289.29",
+        "10.53.289.30",
+        "10.53.289.31",
+        "10.53.289.32",
+        "10.53.289.33",
+        "10.53.289.34",
+        "10.53.289.35",
+        "10.53.289.36",
+        "10.53.289.37",
+        "10.53.289.38",
+        "10.53.289.39",
+        "10.53.289.40",
+        "10.53.289.41",
+        "10.53.289.42",
+        "10.53.289.43",
+        "10.53.289.44",
+        "10.53.289.45",
+        "10.53.289.46",
+        "10.53.289.47",
+        "10.53.289.48",
+        "10.53.289.49",
+        "10.53.289.50",
+        "10.53.289.51",
+        "10.53.289.52",
+        "10.53.289.53",
+        "10.53.289.54",
+        "10.53.289.55",
+        "10.53.289.56",
+        "10.53.289.57",
+        "10.53.289.58",
+        "10.53.289.59",
+        "10.53.289.60",
+        "10.53.289.61",
+        "10.53.289.62"
+    ],
+    "routeAddress": "10.53.289.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.289.65",
+        "10.53.289.66",
+        "10.53.289.67",
+        "10.53.289.68",
+        "10.53.289.69",
+        "10.53.289.70",
+        "10.53.289.71",
+        "10.53.289.72",
+        "10.53.289.73",
+        "10.53.289.74",
+        "10.53.289.75",
+        "10.53.289.76",
+        "10.53.289.77",
+        "10.53.289.78",
+        "10.53.289.79",
+        "10.53.289.80",
+        "10.53.289.81",
+        "10.53.289.82",
+        "10.53.289.83",
+        "10.53.289.84",
+        "10.53.289.85",
+        "10.53.289.86",
+        "10.53.289.87",
+        "10.53.289.88",
+        "10.53.289.89",
+        "10.53.289.90",
+        "10.53.289.91",
+        "10.53.289.92",
+        "10.53.289.93",
+        "10.53.289.94"
+    ],
+    "corporateAddress": "10.53.289.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.289.97",
+        "10.53.289.98",
+        "10.53.289.99",
+        "10.53.289.100",
+        "10.53.289.101",
+        "10.53.289.102",
+        "10.53.289.103",
+        "10.53.289.104",
+        "10.53.289.105",
+        "10.53.289.106",
+        "10.53.289.107",
+        "10.53.289.108",
+        "10.53.289.109",
+        "10.53.289.110",
+        "10.53.289.111",
+        "10.53.289.112",
+        "10.53.289.113",
+        "10.53.289.114",
+        "10.53.289.115",
+        "10.53.289.116",
+        "10.53.289.117",
+        "10.53.289.118",
+        "10.53.289.119",
+        "10.53.289.120",
+        "10.53.289.121",
+        "10.53.289.122",
+        "10.53.289.123",
+        "10.53.289.124",
+        "10.53.289.125"
+    ],
+    "latitude": 26.15,
+    "longitude": -98.19,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.97",
+            "ipAddress": "10.53.289.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..Firewall 289",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.15,
+            "Longitude": -98.19
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.98",
+            "ipAddress": "10.53.289.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..Router 289",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.1",
+            "ipAddress": "10.53.289.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR.OT.Switch 577",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.99",
+            "ipAddress": "10.53.289.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR.Corporate.Switch 578",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.3",
+            "ipAddress": "10.53.289.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.2",
+            "ipAddress": "10.53.289.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..RC 289",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.289.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.100",
+            "ipAddress": "10.53.289.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..Host 577",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.100",
+            "ipAddress": "10.53.289.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..Host 578",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.100",
+            "ipAddress": "10.53.289.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..LocalDatabase 577",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.100",
+            "ipAddress": "10.53.289.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..LocalWebServer 578",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.PHARR..RC 289",
+            "destination": "Utility 1.PHARR..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PHARR..Router 289",
+            "destination": "Utility 1.PHARR..Firewall 289",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PHARR..Firewall 289",
+            "destination": "Utility 1.PHARR.OT.Switch 577",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PHARR.OT.Switch 577",
+            "destination": "Utility 1.PHARR..RC 289",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PHARR..Firewall 289",
+            "destination": "Utility 1.PHARR.Corporate.Switch 578",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PHARR.Corporate.Switch 578",
+            "destination": "Utility 1.PHARR..Host 577",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PHARR.Corporate.Switch 578",
+            "destination": "Utility 1.PHARR..Host 578",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PHARR.Corporate.Switch 578",
+            "destination": "Utility 1.PHARR..LocalDatabase 577",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PHARR.Corporate.Switch 578",
+            "destination": "Utility 1.PHARR..LocalWebServer 578",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.1",
+            "ipAddress": "10.53.289.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR.OT.Switch 577",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.2",
+            "ipAddress": "10.53.289.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..RC 289",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.289.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.97",
+            "ipAddress": "10.53.289.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..Firewall 289",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.15,
+            "Longitude": -98.19
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.98",
+            "ipAddress": "10.53.289.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..Router 289",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.1",
+            "ipAddress": "10.53.289.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR.OT.Switch 577",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.289.2",
+            "ipAddress": "10.53.289.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PHARR",
+            "label": "Utility 1.PHARR..RC 289",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.289.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

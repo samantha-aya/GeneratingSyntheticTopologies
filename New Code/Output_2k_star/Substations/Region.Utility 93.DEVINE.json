@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 93.DEVINE",
+    "networkLan": "10.108.919.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 93",
+    "utility_id": 108,
+    "substation": "DEVINE",
+    "substationNumber": 919,
+    "OTAddress": "10.108.919.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.108.919.1",
+        "10.108.919.2",
+        "10.108.919.3",
+        "10.108.919.4",
+        "10.108.919.5",
+        "10.108.919.6",
+        "10.108.919.7",
+        "10.108.919.8",
+        "10.108.919.9",
+        "10.108.919.10",
+        "10.108.919.11",
+        "10.108.919.12",
+        "10.108.919.13",
+        "10.108.919.14",
+        "10.108.919.15",
+        "10.108.919.16",
+        "10.108.919.17",
+        "10.108.919.18",
+        "10.108.919.19",
+        "10.108.919.20",
+        "10.108.919.21",
+        "10.108.919.22",
+        "10.108.919.23",
+        "10.108.919.24",
+        "10.108.919.25",
+        "10.108.919.26",
+        "10.108.919.27",
+        "10.108.919.28",
+        "10.108.919.29",
+        "10.108.919.30",
+        "10.108.919.31",
+        "10.108.919.32",
+        "10.108.919.33",
+        "10.108.919.34",
+        "10.108.919.35",
+        "10.108.919.36",
+        "10.108.919.37",
+        "10.108.919.38",
+        "10.108.919.39",
+        "10.108.919.40",
+        "10.108.919.41",
+        "10.108.919.42",
+        "10.108.919.43",
+        "10.108.919.44",
+        "10.108.919.45",
+        "10.108.919.46",
+        "10.108.919.47",
+        "10.108.919.48",
+        "10.108.919.49",
+        "10.108.919.50",
+        "10.108.919.51",
+        "10.108.919.52",
+        "10.108.919.53",
+        "10.108.919.54",
+        "10.108.919.55",
+        "10.108.919.56",
+        "10.108.919.57",
+        "10.108.919.58",
+        "10.108.919.59",
+        "10.108.919.60",
+        "10.108.919.61",
+        "10.108.919.62"
+    ],
+    "routeAddress": "10.108.919.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.108.919.65",
+        "10.108.919.66",
+        "10.108.919.67",
+        "10.108.919.68",
+        "10.108.919.69",
+        "10.108.919.70",
+        "10.108.919.71",
+        "10.108.919.72",
+        "10.108.919.73",
+        "10.108.919.74",
+        "10.108.919.75",
+        "10.108.919.76",
+        "10.108.919.77",
+        "10.108.919.78",
+        "10.108.919.79",
+        "10.108.919.80",
+        "10.108.919.81",
+        "10.108.919.82",
+        "10.108.919.83",
+        "10.108.919.84",
+        "10.108.919.85",
+        "10.108.919.86",
+        "10.108.919.87",
+        "10.108.919.88",
+        "10.108.919.89",
+        "10.108.919.90",
+        "10.108.919.91",
+        "10.108.919.92",
+        "10.108.919.93",
+        "10.108.919.94"
+    ],
+    "corporateAddress": "10.108.919.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.108.919.97",
+        "10.108.919.98",
+        "10.108.919.99",
+        "10.108.919.100",
+        "10.108.919.101",
+        "10.108.919.102",
+        "10.108.919.103",
+        "10.108.919.104",
+        "10.108.919.105",
+        "10.108.919.106",
+        "10.108.919.107",
+        "10.108.919.108",
+        "10.108.919.109",
+        "10.108.919.110",
+        "10.108.919.111",
+        "10.108.919.112",
+        "10.108.919.113",
+        "10.108.919.114",
+        "10.108.919.115",
+        "10.108.919.116",
+        "10.108.919.117",
+        "10.108.919.118",
+        "10.108.919.119",
+        "10.108.919.120",
+        "10.108.919.121",
+        "10.108.919.122",
+        "10.108.919.123",
+        "10.108.919.124",
+        "10.108.919.125"
+    ],
+    "latitude": 29.136,
+    "longitude": -99.169,
+    "nodes": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.97",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..Firewall 919",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.136,
+            "Longitude": -99.169
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.98",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..Router 919",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.1",
+            "ipAddress": "10.108.919.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE.OT.Switch 1837",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.99",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE.Corporate.Switch 1838",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.3",
+            "ipAddress": "10.108.919.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.2",
+            "ipAddress": "10.108.919.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..RC 919",
+            "compromised": false,
+            "relayIPlist": [
+                "10.108.919.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.100",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..Host 1837",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.100",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..Host 1838",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.100",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..LocalDatabase 1837",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.100",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..LocalWebServer 1838",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.101",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..hmi 1837",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.100",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..outstation 1838",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 93.DEVINE..RC 919",
+            "destination": "Utility 93.DEVINE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.DEVINE..Router 919",
+            "destination": "Utility 93.DEVINE..Firewall 919",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.DEVINE..Firewall 919",
+            "destination": "Utility 93.DEVINE.OT.Switch 1837",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.DEVINE.OT.Switch 1837",
+            "destination": "Utility 93.DEVINE..RC 919",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.DEVINE..Firewall 919",
+            "destination": "Utility 93.DEVINE.Corporate.Switch 1838",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.DEVINE.Corporate.Switch 1838",
+            "destination": "Utility 93.DEVINE..Host 1837",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.DEVINE.Corporate.Switch 1838",
+            "destination": "Utility 93.DEVINE..Host 1838",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.DEVINE.Corporate.Switch 1838",
+            "destination": "Utility 93.DEVINE..LocalDatabase 1837",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.DEVINE.Corporate.Switch 1838",
+            "destination": "Utility 93.DEVINE..LocalWebServer 1838",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.1",
+            "ipAddress": "10.108.919.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE.OT.Switch 1837",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.2",
+            "ipAddress": "10.108.919.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..RC 919",
+            "compromised": false,
+            "relayIPlist": [
+                "10.108.919.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.97",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..Firewall 919",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.136,
+            "Longitude": -99.169
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.98",
+            "ipAddress": "10.108.919.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..Router 919",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.1",
+            "ipAddress": "10.108.919.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE.OT.Switch 1837",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.919.2",
+            "ipAddress": "10.108.919.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEVINE",
+            "label": "Utility 93.DEVINE..RC 919",
+            "compromised": false,
+            "relayIPlist": [
+                "10.108.919.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

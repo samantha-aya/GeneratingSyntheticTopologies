@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 115.CIBOLO",
+    "networkLan": "10.161.725.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 115",
+    "utility_id": 161,
+    "substation": "CIBOLO",
+    "substationNumber": 725,
+    "OTAddress": "10.161.725.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.161.725.1",
+        "10.161.725.2",
+        "10.161.725.3",
+        "10.161.725.4",
+        "10.161.725.5",
+        "10.161.725.6",
+        "10.161.725.7",
+        "10.161.725.8",
+        "10.161.725.9",
+        "10.161.725.10",
+        "10.161.725.11",
+        "10.161.725.12",
+        "10.161.725.13",
+        "10.161.725.14",
+        "10.161.725.15",
+        "10.161.725.16",
+        "10.161.725.17",
+        "10.161.725.18",
+        "10.161.725.19",
+        "10.161.725.20",
+        "10.161.725.21",
+        "10.161.725.22",
+        "10.161.725.23",
+        "10.161.725.24",
+        "10.161.725.25",
+        "10.161.725.26",
+        "10.161.725.27",
+        "10.161.725.28",
+        "10.161.725.29",
+        "10.161.725.30",
+        "10.161.725.31",
+        "10.161.725.32",
+        "10.161.725.33",
+        "10.161.725.34",
+        "10.161.725.35",
+        "10.161.725.36",
+        "10.161.725.37",
+        "10.161.725.38",
+        "10.161.725.39",
+        "10.161.725.40",
+        "10.161.725.41",
+        "10.161.725.42",
+        "10.161.725.43",
+        "10.161.725.44",
+        "10.161.725.45",
+        "10.161.725.46",
+        "10.161.725.47",
+        "10.161.725.48",
+        "10.161.725.49",
+        "10.161.725.50",
+        "10.161.725.51",
+        "10.161.725.52",
+        "10.161.725.53",
+        "10.161.725.54",
+        "10.161.725.55",
+        "10.161.725.56",
+        "10.161.725.57",
+        "10.161.725.58",
+        "10.161.725.59",
+        "10.161.725.60",
+        "10.161.725.61",
+        "10.161.725.62"
+    ],
+    "routeAddress": "10.161.725.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.161.725.65",
+        "10.161.725.66",
+        "10.161.725.67",
+        "10.161.725.68",
+        "10.161.725.69",
+        "10.161.725.70",
+        "10.161.725.71",
+        "10.161.725.72",
+        "10.161.725.73",
+        "10.161.725.74",
+        "10.161.725.75",
+        "10.161.725.76",
+        "10.161.725.77",
+        "10.161.725.78",
+        "10.161.725.79",
+        "10.161.725.80",
+        "10.161.725.81",
+        "10.161.725.82",
+        "10.161.725.83",
+        "10.161.725.84",
+        "10.161.725.85",
+        "10.161.725.86",
+        "10.161.725.87",
+        "10.161.725.88",
+        "10.161.725.89",
+        "10.161.725.90",
+        "10.161.725.91",
+        "10.161.725.92",
+        "10.161.725.93",
+        "10.161.725.94"
+    ],
+    "corporateAddress": "10.161.725.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.161.725.97",
+        "10.161.725.98",
+        "10.161.725.99",
+        "10.161.725.100",
+        "10.161.725.101",
+        "10.161.725.102",
+        "10.161.725.103",
+        "10.161.725.104",
+        "10.161.725.105",
+        "10.161.725.106",
+        "10.161.725.107",
+        "10.161.725.108",
+        "10.161.725.109",
+        "10.161.725.110",
+        "10.161.725.111",
+        "10.161.725.112",
+        "10.161.725.113",
+        "10.161.725.114",
+        "10.161.725.115",
+        "10.161.725.116",
+        "10.161.725.117",
+        "10.161.725.118",
+        "10.161.725.119",
+        "10.161.725.120",
+        "10.161.725.121",
+        "10.161.725.122",
+        "10.161.725.123",
+        "10.161.725.124",
+        "10.161.725.125"
+    ],
+    "latitude": 29.575,
+    "longitude": -98.221,
+    "nodes": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.97",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..Firewall 725",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.575,
+            "Longitude": -98.221
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.98",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..Router 725",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.1",
+            "ipAddress": "10.161.725.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO.OT.Switch 1449",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.99",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO.Corporate.Switch 1450",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.3",
+            "ipAddress": "10.161.725.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.2",
+            "ipAddress": "10.161.725.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..RC 725",
+            "compromised": false,
+            "relayIPlist": [
+                "10.161.725.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.100",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..Host 1449",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.100",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..Host 1450",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.100",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..LocalDatabase 1449",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.100",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..LocalWebServer 1450",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.101",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..hmi 1449",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.100",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..outstation 1450",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 115.CIBOLO..RC 725",
+            "destination": "Utility 115.CIBOLO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CIBOLO..Router 725",
+            "destination": "Utility 115.CIBOLO..Firewall 725",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CIBOLO..Firewall 725",
+            "destination": "Utility 115.CIBOLO.OT.Switch 1449",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CIBOLO.OT.Switch 1449",
+            "destination": "Utility 115.CIBOLO..RC 725",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CIBOLO..Firewall 725",
+            "destination": "Utility 115.CIBOLO.Corporate.Switch 1450",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CIBOLO.Corporate.Switch 1450",
+            "destination": "Utility 115.CIBOLO..Host 1449",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CIBOLO.Corporate.Switch 1450",
+            "destination": "Utility 115.CIBOLO..Host 1450",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CIBOLO.Corporate.Switch 1450",
+            "destination": "Utility 115.CIBOLO..LocalDatabase 1449",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CIBOLO.Corporate.Switch 1450",
+            "destination": "Utility 115.CIBOLO..LocalWebServer 1450",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.1",
+            "ipAddress": "10.161.725.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO.OT.Switch 1449",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.2",
+            "ipAddress": "10.161.725.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..RC 725",
+            "compromised": false,
+            "relayIPlist": [
+                "10.161.725.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.97",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..Firewall 725",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.575,
+            "Longitude": -98.221
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.98",
+            "ipAddress": "10.161.725.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..Router 725",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.1",
+            "ipAddress": "10.161.725.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO.OT.Switch 1449",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.725.2",
+            "ipAddress": "10.161.725.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CIBOLO",
+            "label": "Utility 115.CIBOLO..RC 725",
+            "compromised": false,
+            "relayIPlist": [
+                "10.161.725.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

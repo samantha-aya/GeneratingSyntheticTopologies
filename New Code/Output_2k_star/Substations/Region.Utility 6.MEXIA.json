@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 6.MEXIA",
+    "networkLan": "10.54.529.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 6",
+    "utility_id": 54,
+    "substation": "MEXIA",
+    "substationNumber": 529,
+    "OTAddress": "10.54.529.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.54.529.1",
+        "10.54.529.2",
+        "10.54.529.3",
+        "10.54.529.4",
+        "10.54.529.5",
+        "10.54.529.6",
+        "10.54.529.7",
+        "10.54.529.8",
+        "10.54.529.9",
+        "10.54.529.10",
+        "10.54.529.11",
+        "10.54.529.12",
+        "10.54.529.13",
+        "10.54.529.14",
+        "10.54.529.15",
+        "10.54.529.16",
+        "10.54.529.17",
+        "10.54.529.18",
+        "10.54.529.19",
+        "10.54.529.20",
+        "10.54.529.21",
+        "10.54.529.22",
+        "10.54.529.23",
+        "10.54.529.24",
+        "10.54.529.25",
+        "10.54.529.26",
+        "10.54.529.27",
+        "10.54.529.28",
+        "10.54.529.29",
+        "10.54.529.30",
+        "10.54.529.31",
+        "10.54.529.32",
+        "10.54.529.33",
+        "10.54.529.34",
+        "10.54.529.35",
+        "10.54.529.36",
+        "10.54.529.37",
+        "10.54.529.38",
+        "10.54.529.39",
+        "10.54.529.40",
+        "10.54.529.41",
+        "10.54.529.42",
+        "10.54.529.43",
+        "10.54.529.44",
+        "10.54.529.45",
+        "10.54.529.46",
+        "10.54.529.47",
+        "10.54.529.48",
+        "10.54.529.49",
+        "10.54.529.50",
+        "10.54.529.51",
+        "10.54.529.52",
+        "10.54.529.53",
+        "10.54.529.54",
+        "10.54.529.55",
+        "10.54.529.56",
+        "10.54.529.57",
+        "10.54.529.58",
+        "10.54.529.59",
+        "10.54.529.60",
+        "10.54.529.61",
+        "10.54.529.62"
+    ],
+    "routeAddress": "10.54.529.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.54.529.65",
+        "10.54.529.66",
+        "10.54.529.67",
+        "10.54.529.68",
+        "10.54.529.69",
+        "10.54.529.70",
+        "10.54.529.71",
+        "10.54.529.72",
+        "10.54.529.73",
+        "10.54.529.74",
+        "10.54.529.75",
+        "10.54.529.76",
+        "10.54.529.77",
+        "10.54.529.78",
+        "10.54.529.79",
+        "10.54.529.80",
+        "10.54.529.81",
+        "10.54.529.82",
+        "10.54.529.83",
+        "10.54.529.84",
+        "10.54.529.85",
+        "10.54.529.86",
+        "10.54.529.87",
+        "10.54.529.88",
+        "10.54.529.89",
+        "10.54.529.90",
+        "10.54.529.91",
+        "10.54.529.92",
+        "10.54.529.93",
+        "10.54.529.94"
+    ],
+    "corporateAddress": "10.54.529.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.54.529.97",
+        "10.54.529.98",
+        "10.54.529.99",
+        "10.54.529.100",
+        "10.54.529.101",
+        "10.54.529.102",
+        "10.54.529.103",
+        "10.54.529.104",
+        "10.54.529.105",
+        "10.54.529.106",
+        "10.54.529.107",
+        "10.54.529.108",
+        "10.54.529.109",
+        "10.54.529.110",
+        "10.54.529.111",
+        "10.54.529.112",
+        "10.54.529.113",
+        "10.54.529.114",
+        "10.54.529.115",
+        "10.54.529.116",
+        "10.54.529.117",
+        "10.54.529.118",
+        "10.54.529.119",
+        "10.54.529.120",
+        "10.54.529.121",
+        "10.54.529.122",
+        "10.54.529.123",
+        "10.54.529.124",
+        "10.54.529.125"
+    ],
+    "latitude": 31.655,
+    "longitude": -96.468,
+    "nodes": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.97",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..Firewall 529",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.655,
+            "Longitude": -96.468
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.98",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..Router 529",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.1",
+            "ipAddress": "10.54.529.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA.OT.Switch 1057",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.99",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA.Corporate.Switch 1058",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.3",
+            "ipAddress": "10.54.529.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.2",
+            "ipAddress": "10.54.529.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..RC 529",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.529.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.100",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..Host 1057",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.100",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..Host 1058",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.100",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..LocalDatabase 1057",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.100",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..LocalWebServer 1058",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.101",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..hmi 1057",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.100",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..outstation 1058",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 6.MEXIA..RC 529",
+            "destination": "Utility 6.MEXIA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.MEXIA..Router 529",
+            "destination": "Utility 6.MEXIA..Firewall 529",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.MEXIA..Firewall 529",
+            "destination": "Utility 6.MEXIA.OT.Switch 1057",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.MEXIA.OT.Switch 1057",
+            "destination": "Utility 6.MEXIA..RC 529",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.MEXIA..Firewall 529",
+            "destination": "Utility 6.MEXIA.Corporate.Switch 1058",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.MEXIA.Corporate.Switch 1058",
+            "destination": "Utility 6.MEXIA..Host 1057",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.MEXIA.Corporate.Switch 1058",
+            "destination": "Utility 6.MEXIA..Host 1058",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.MEXIA.Corporate.Switch 1058",
+            "destination": "Utility 6.MEXIA..LocalDatabase 1057",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.MEXIA.Corporate.Switch 1058",
+            "destination": "Utility 6.MEXIA..LocalWebServer 1058",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.1",
+            "ipAddress": "10.54.529.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA.OT.Switch 1057",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.2",
+            "ipAddress": "10.54.529.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..RC 529",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.529.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.97",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..Firewall 529",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.655,
+            "Longitude": -96.468
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.98",
+            "ipAddress": "10.54.529.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..Router 529",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.1",
+            "ipAddress": "10.54.529.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA.OT.Switch 1057",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.529.2",
+            "ipAddress": "10.54.529.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEXIA",
+            "label": "Utility 6.MEXIA..RC 529",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.529.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

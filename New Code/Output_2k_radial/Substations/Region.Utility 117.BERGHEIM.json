@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 117.BERGHEIM",
+    "networkLan": "10.170.744.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 117",
+    "utility_id": 170,
+    "substation": "BERGHEIM",
+    "substationNumber": 744,
+    "OTAddress": "10.170.744.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.170.744.1",
+        "10.170.744.2",
+        "10.170.744.3",
+        "10.170.744.4",
+        "10.170.744.5",
+        "10.170.744.6",
+        "10.170.744.7",
+        "10.170.744.8",
+        "10.170.744.9",
+        "10.170.744.10",
+        "10.170.744.11",
+        "10.170.744.12",
+        "10.170.744.13",
+        "10.170.744.14",
+        "10.170.744.15",
+        "10.170.744.16",
+        "10.170.744.17",
+        "10.170.744.18",
+        "10.170.744.19",
+        "10.170.744.20",
+        "10.170.744.21",
+        "10.170.744.22",
+        "10.170.744.23",
+        "10.170.744.24",
+        "10.170.744.25",
+        "10.170.744.26",
+        "10.170.744.27",
+        "10.170.744.28",
+        "10.170.744.29",
+        "10.170.744.30",
+        "10.170.744.31",
+        "10.170.744.32",
+        "10.170.744.33",
+        "10.170.744.34",
+        "10.170.744.35",
+        "10.170.744.36",
+        "10.170.744.37",
+        "10.170.744.38",
+        "10.170.744.39",
+        "10.170.744.40",
+        "10.170.744.41",
+        "10.170.744.42",
+        "10.170.744.43",
+        "10.170.744.44",
+        "10.170.744.45",
+        "10.170.744.46",
+        "10.170.744.47",
+        "10.170.744.48",
+        "10.170.744.49",
+        "10.170.744.50",
+        "10.170.744.51",
+        "10.170.744.52",
+        "10.170.744.53",
+        "10.170.744.54",
+        "10.170.744.55",
+        "10.170.744.56",
+        "10.170.744.57",
+        "10.170.744.58",
+        "10.170.744.59",
+        "10.170.744.60",
+        "10.170.744.61",
+        "10.170.744.62"
+    ],
+    "routeAddress": "10.170.744.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.170.744.65",
+        "10.170.744.66",
+        "10.170.744.67",
+        "10.170.744.68",
+        "10.170.744.69",
+        "10.170.744.70",
+        "10.170.744.71",
+        "10.170.744.72",
+        "10.170.744.73",
+        "10.170.744.74",
+        "10.170.744.75",
+        "10.170.744.76",
+        "10.170.744.77",
+        "10.170.744.78",
+        "10.170.744.79",
+        "10.170.744.80",
+        "10.170.744.81",
+        "10.170.744.82",
+        "10.170.744.83",
+        "10.170.744.84",
+        "10.170.744.85",
+        "10.170.744.86",
+        "10.170.744.87",
+        "10.170.744.88",
+        "10.170.744.89",
+        "10.170.744.90",
+        "10.170.744.91",
+        "10.170.744.92",
+        "10.170.744.93",
+        "10.170.744.94"
+    ],
+    "corporateAddress": "10.170.744.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.170.744.97",
+        "10.170.744.98",
+        "10.170.744.99",
+        "10.170.744.100",
+        "10.170.744.101",
+        "10.170.744.102",
+        "10.170.744.103",
+        "10.170.744.104",
+        "10.170.744.105",
+        "10.170.744.106",
+        "10.170.744.107",
+        "10.170.744.108",
+        "10.170.744.109",
+        "10.170.744.110",
+        "10.170.744.111",
+        "10.170.744.112",
+        "10.170.744.113",
+        "10.170.744.114",
+        "10.170.744.115",
+        "10.170.744.116",
+        "10.170.744.117",
+        "10.170.744.118",
+        "10.170.744.119",
+        "10.170.744.120",
+        "10.170.744.121",
+        "10.170.744.122",
+        "10.170.744.123",
+        "10.170.744.124",
+        "10.170.744.125"
+    ],
+    "latitude": 29.903,
+    "longitude": -98.556,
+    "nodes": [
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.97",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..Firewall 744",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.903,
+            "Longitude": -98.556
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.98",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..Router 744",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.1",
+            "ipAddress": "10.170.744.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM.OT.Switch 1487",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.99",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM.Corporate.Switch 1488",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.3",
+            "ipAddress": "10.170.744.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.2",
+            "ipAddress": "10.170.744.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..RC 744",
+            "compromised": false,
+            "relayIPlist": [
+                "10.170.744.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.100",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..Host 1487",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.100",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..Host 1488",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.100",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..LocalDatabase 1487",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.100",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..LocalWebServer 1488",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.101",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..hmi 1487",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.100",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..outstation 1488",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 117.BERGHEIM..RC 744",
+            "destination": "Utility 117.BERGHEIM..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 117.BERGHEIM..Router 744",
+            "destination": "Utility 117.BERGHEIM..Firewall 744",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 117.BERGHEIM..Firewall 744",
+            "destination": "Utility 117.BERGHEIM.OT.Switch 1487",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 117.BERGHEIM.OT.Switch 1487",
+            "destination": "Utility 117.BERGHEIM..RC 744",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 117.BERGHEIM..Firewall 744",
+            "destination": "Utility 117.BERGHEIM.Corporate.Switch 1488",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 117.BERGHEIM.Corporate.Switch 1488",
+            "destination": "Utility 117.BERGHEIM..Host 1487",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 117.BERGHEIM.Corporate.Switch 1488",
+            "destination": "Utility 117.BERGHEIM..Host 1488",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 117.BERGHEIM.Corporate.Switch 1488",
+            "destination": "Utility 117.BERGHEIM..LocalDatabase 1487",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 117.BERGHEIM.Corporate.Switch 1488",
+            "destination": "Utility 117.BERGHEIM..LocalWebServer 1488",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.1",
+            "ipAddress": "10.170.744.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM.OT.Switch 1487",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.2",
+            "ipAddress": "10.170.744.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..RC 744",
+            "compromised": false,
+            "relayIPlist": [
+                "10.170.744.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.97",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..Firewall 744",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.903,
+            "Longitude": -98.556
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.98",
+            "ipAddress": "10.170.744.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..Router 744",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.1",
+            "ipAddress": "10.170.744.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM.OT.Switch 1487",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 117",
+            "adminIP": "10.170.744.2",
+            "ipAddress": "10.170.744.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BERGHEIM",
+            "label": "Utility 117.BERGHEIM..RC 744",
+            "compromised": false,
+            "relayIPlist": [
+                "10.170.744.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,712 @@
+{
+    "relayCounter": 5,
+    "label": "Region.Utility 3.TEMPLE 1",
+    "networkLan": "10.56.576.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "TEMPLE 1",
+    "substationNumber": 576,
+    "OTAddress": "10.56.576.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.576.1",
+        "10.56.576.2",
+        "10.56.576.3",
+        "10.56.576.4",
+        "10.56.576.5",
+        "10.56.576.6",
+        "10.56.576.7",
+        "10.56.576.8",
+        "10.56.576.9",
+        "10.56.576.10",
+        "10.56.576.11",
+        "10.56.576.12",
+        "10.56.576.13",
+        "10.56.576.14",
+        "10.56.576.15",
+        "10.56.576.16",
+        "10.56.576.17",
+        "10.56.576.18",
+        "10.56.576.19",
+        "10.56.576.20",
+        "10.56.576.21",
+        "10.56.576.22",
+        "10.56.576.23",
+        "10.56.576.24",
+        "10.56.576.25",
+        "10.56.576.26",
+        "10.56.576.27",
+        "10.56.576.28",
+        "10.56.576.29",
+        "10.56.576.30",
+        "10.56.576.31",
+        "10.56.576.32",
+        "10.56.576.33",
+        "10.56.576.34",
+        "10.56.576.35",
+        "10.56.576.36",
+        "10.56.576.37",
+        "10.56.576.38",
+        "10.56.576.39",
+        "10.56.576.40",
+        "10.56.576.41",
+        "10.56.576.42",
+        "10.56.576.43",
+        "10.56.576.44",
+        "10.56.576.45",
+        "10.56.576.46",
+        "10.56.576.47",
+        "10.56.576.48",
+        "10.56.576.49",
+        "10.56.576.50",
+        "10.56.576.51",
+        "10.56.576.52",
+        "10.56.576.53",
+        "10.56.576.54",
+        "10.56.576.55",
+        "10.56.576.56",
+        "10.56.576.57",
+        "10.56.576.58",
+        "10.56.576.59",
+        "10.56.576.60",
+        "10.56.576.61",
+        "10.56.576.62"
+    ],
+    "routeAddress": "10.56.576.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.576.65",
+        "10.56.576.66",
+        "10.56.576.67",
+        "10.56.576.68",
+        "10.56.576.69",
+        "10.56.576.70",
+        "10.56.576.71",
+        "10.56.576.72",
+        "10.56.576.73",
+        "10.56.576.74",
+        "10.56.576.75",
+        "10.56.576.76",
+        "10.56.576.77",
+        "10.56.576.78",
+        "10.56.576.79",
+        "10.56.576.80",
+        "10.56.576.81",
+        "10.56.576.82",
+        "10.56.576.83",
+        "10.56.576.84",
+        "10.56.576.85",
+        "10.56.576.86",
+        "10.56.576.87",
+        "10.56.576.88",
+        "10.56.576.89",
+        "10.56.576.90",
+        "10.56.576.91",
+        "10.56.576.92",
+        "10.56.576.93",
+        "10.56.576.94"
+    ],
+    "corporateAddress": "10.56.576.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.576.97",
+        "10.56.576.98",
+        "10.56.576.99",
+        "10.56.576.100",
+        "10.56.576.101",
+        "10.56.576.102",
+        "10.56.576.103",
+        "10.56.576.104",
+        "10.56.576.105",
+        "10.56.576.106",
+        "10.56.576.107",
+        "10.56.576.108",
+        "10.56.576.109",
+        "10.56.576.110",
+        "10.56.576.111",
+        "10.56.576.112",
+        "10.56.576.113",
+        "10.56.576.114",
+        "10.56.576.115",
+        "10.56.576.116",
+        "10.56.576.117",
+        "10.56.576.118",
+        "10.56.576.119",
+        "10.56.576.120",
+        "10.56.576.121",
+        "10.56.576.122",
+        "10.56.576.123",
+        "10.56.576.124",
+        "10.56.576.125"
+    ],
+    "latitude": 31.056,
+    "longitude": -97.317,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.97",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Firewall 576",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.056,
+            "Longitude": -97.317
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.98",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Router 576",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.1",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1.OT.Switch 1151",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.99",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1.Corporate.Switch 1152",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.3",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.4",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.5",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.6",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.7",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.2",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..RC 576",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.576.3",
+                "10.56.576.4",
+                "10.56.576.5",
+                "10.56.576.6",
+                "10.56.576.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.100",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Host 1151",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.100",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Host 1152",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.100",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..LocalDatabase 1151",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.100",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..LocalWebServer 1152",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.101",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..hmi 1151",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.100",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..outstation 1152",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.TEMPLE 1..RC 576",
+            "destination": "Utility 3.TEMPLE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1..RC 576",
+            "destination": "Utility 3.TEMPLE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1..RC 576",
+            "destination": "Utility 3.TEMPLE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1..RC 576",
+            "destination": "Utility 3.TEMPLE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1..RC 576",
+            "destination": "Utility 3.TEMPLE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1..Router 576",
+            "destination": "Utility 3.TEMPLE 1..Firewall 576",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1..Firewall 576",
+            "destination": "Utility 3.TEMPLE 1.OT.Switch 1151",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1.OT.Switch 1151",
+            "destination": "Utility 3.TEMPLE 1..RC 576",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1..Firewall 576",
+            "destination": "Utility 3.TEMPLE 1.Corporate.Switch 1152",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1.Corporate.Switch 1152",
+            "destination": "Utility 3.TEMPLE 1..Host 1151",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1.Corporate.Switch 1152",
+            "destination": "Utility 3.TEMPLE 1..Host 1152",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1.Corporate.Switch 1152",
+            "destination": "Utility 3.TEMPLE 1..LocalDatabase 1151",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.TEMPLE 1.Corporate.Switch 1152",
+            "destination": "Utility 3.TEMPLE 1..LocalWebServer 1152",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.1",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1.OT.Switch 1151",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.2",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..RC 576",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.576.3",
+                "10.56.576.4",
+                "10.56.576.5",
+                "10.56.576.6",
+                "10.56.576.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.97",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Firewall 576",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.056,
+            "Longitude": -97.317
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.98",
+            "ipAddress": "10.56.576.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..Router 576",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.1",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1.OT.Switch 1151",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.576.2",
+            "ipAddress": "10.56.576.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TEMPLE 1",
+            "label": "Utility 3.TEMPLE 1..RC 576",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.576.3",
+                "10.56.576.4",
+                "10.56.576.5",
+                "10.56.576.6",
+                "10.56.576.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 533.96,
+    "genmvar": -59.44,
+    "connecting_TS_num": 575
+}

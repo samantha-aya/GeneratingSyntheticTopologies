@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.SKIDMORE",
+    "networkLan": "10.57.273.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "SKIDMORE",
+    "substationNumber": 273,
+    "OTAddress": "10.57.273.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.273.1",
+        "10.57.273.2",
+        "10.57.273.3",
+        "10.57.273.4",
+        "10.57.273.5",
+        "10.57.273.6",
+        "10.57.273.7",
+        "10.57.273.8",
+        "10.57.273.9",
+        "10.57.273.10",
+        "10.57.273.11",
+        "10.57.273.12",
+        "10.57.273.13",
+        "10.57.273.14",
+        "10.57.273.15",
+        "10.57.273.16",
+        "10.57.273.17",
+        "10.57.273.18",
+        "10.57.273.19",
+        "10.57.273.20",
+        "10.57.273.21",
+        "10.57.273.22",
+        "10.57.273.23",
+        "10.57.273.24",
+        "10.57.273.25",
+        "10.57.273.26",
+        "10.57.273.27",
+        "10.57.273.28",
+        "10.57.273.29",
+        "10.57.273.30",
+        "10.57.273.31",
+        "10.57.273.32",
+        "10.57.273.33",
+        "10.57.273.34",
+        "10.57.273.35",
+        "10.57.273.36",
+        "10.57.273.37",
+        "10.57.273.38",
+        "10.57.273.39",
+        "10.57.273.40",
+        "10.57.273.41",
+        "10.57.273.42",
+        "10.57.273.43",
+        "10.57.273.44",
+        "10.57.273.45",
+        "10.57.273.46",
+        "10.57.273.47",
+        "10.57.273.48",
+        "10.57.273.49",
+        "10.57.273.50",
+        "10.57.273.51",
+        "10.57.273.52",
+        "10.57.273.53",
+        "10.57.273.54",
+        "10.57.273.55",
+        "10.57.273.56",
+        "10.57.273.57",
+        "10.57.273.58",
+        "10.57.273.59",
+        "10.57.273.60",
+        "10.57.273.61",
+        "10.57.273.62"
+    ],
+    "routeAddress": "10.57.273.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.273.65",
+        "10.57.273.66",
+        "10.57.273.67",
+        "10.57.273.68",
+        "10.57.273.69",
+        "10.57.273.70",
+        "10.57.273.71",
+        "10.57.273.72",
+        "10.57.273.73",
+        "10.57.273.74",
+        "10.57.273.75",
+        "10.57.273.76",
+        "10.57.273.77",
+        "10.57.273.78",
+        "10.57.273.79",
+        "10.57.273.80",
+        "10.57.273.81",
+        "10.57.273.82",
+        "10.57.273.83",
+        "10.57.273.84",
+        "10.57.273.85",
+        "10.57.273.86",
+        "10.57.273.87",
+        "10.57.273.88",
+        "10.57.273.89",
+        "10.57.273.90",
+        "10.57.273.91",
+        "10.57.273.92",
+        "10.57.273.93",
+        "10.57.273.94"
+    ],
+    "corporateAddress": "10.57.273.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.273.97",
+        "10.57.273.98",
+        "10.57.273.99",
+        "10.57.273.100",
+        "10.57.273.101",
+        "10.57.273.102",
+        "10.57.273.103",
+        "10.57.273.104",
+        "10.57.273.105",
+        "10.57.273.106",
+        "10.57.273.107",
+        "10.57.273.108",
+        "10.57.273.109",
+        "10.57.273.110",
+        "10.57.273.111",
+        "10.57.273.112",
+        "10.57.273.113",
+        "10.57.273.114",
+        "10.57.273.115",
+        "10.57.273.116",
+        "10.57.273.117",
+        "10.57.273.118",
+        "10.57.273.119",
+        "10.57.273.120",
+        "10.57.273.121",
+        "10.57.273.122",
+        "10.57.273.123",
+        "10.57.273.124",
+        "10.57.273.125"
+    ],
+    "latitude": 28.246,
+    "longitude": -97.651,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.97",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..Firewall 273",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.246,
+            "Longitude": -97.651
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.98",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..Router 273",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.1",
+            "ipAddress": "10.57.273.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE.OT.Switch 545",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.99",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE.Corporate.Switch 546",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.3",
+            "ipAddress": "10.57.273.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.2",
+            "ipAddress": "10.57.273.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..RC 273",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.273.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.100",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..Host 545",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.100",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..Host 546",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.100",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..LocalDatabase 545",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.100",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..LocalWebServer 546",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.101",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..hmi 545",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.100",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..outstation 546",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.SKIDMORE..RC 273",
+            "destination": "Utility 4.SKIDMORE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SKIDMORE..Router 273",
+            "destination": "Utility 4.SKIDMORE..Firewall 273",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SKIDMORE..Firewall 273",
+            "destination": "Utility 4.SKIDMORE.OT.Switch 545",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SKIDMORE.OT.Switch 545",
+            "destination": "Utility 4.SKIDMORE..RC 273",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SKIDMORE..Firewall 273",
+            "destination": "Utility 4.SKIDMORE.Corporate.Switch 546",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SKIDMORE.Corporate.Switch 546",
+            "destination": "Utility 4.SKIDMORE..Host 545",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SKIDMORE.Corporate.Switch 546",
+            "destination": "Utility 4.SKIDMORE..Host 546",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SKIDMORE.Corporate.Switch 546",
+            "destination": "Utility 4.SKIDMORE..LocalDatabase 545",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SKIDMORE.Corporate.Switch 546",
+            "destination": "Utility 4.SKIDMORE..LocalWebServer 546",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.1",
+            "ipAddress": "10.57.273.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE.OT.Switch 545",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.2",
+            "ipAddress": "10.57.273.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..RC 273",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.273.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.97",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..Firewall 273",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.246,
+            "Longitude": -97.651
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.98",
+            "ipAddress": "10.57.273.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..Router 273",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.1",
+            "ipAddress": "10.57.273.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE.OT.Switch 545",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.273.2",
+            "ipAddress": "10.57.273.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SKIDMORE",
+            "label": "Utility 4.SKIDMORE..RC 273",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.273.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

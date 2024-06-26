@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 127.INEZ",
+    "networkLan": "10.122.922.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 127",
+    "utility_id": 122,
+    "substation": "INEZ",
+    "substationNumber": 922,
+    "OTAddress": "10.122.922.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.122.922.1",
+        "10.122.922.2",
+        "10.122.922.3",
+        "10.122.922.4",
+        "10.122.922.5",
+        "10.122.922.6",
+        "10.122.922.7",
+        "10.122.922.8",
+        "10.122.922.9",
+        "10.122.922.10",
+        "10.122.922.11",
+        "10.122.922.12",
+        "10.122.922.13",
+        "10.122.922.14",
+        "10.122.922.15",
+        "10.122.922.16",
+        "10.122.922.17",
+        "10.122.922.18",
+        "10.122.922.19",
+        "10.122.922.20",
+        "10.122.922.21",
+        "10.122.922.22",
+        "10.122.922.23",
+        "10.122.922.24",
+        "10.122.922.25",
+        "10.122.922.26",
+        "10.122.922.27",
+        "10.122.922.28",
+        "10.122.922.29",
+        "10.122.922.30",
+        "10.122.922.31",
+        "10.122.922.32",
+        "10.122.922.33",
+        "10.122.922.34",
+        "10.122.922.35",
+        "10.122.922.36",
+        "10.122.922.37",
+        "10.122.922.38",
+        "10.122.922.39",
+        "10.122.922.40",
+        "10.122.922.41",
+        "10.122.922.42",
+        "10.122.922.43",
+        "10.122.922.44",
+        "10.122.922.45",
+        "10.122.922.46",
+        "10.122.922.47",
+        "10.122.922.48",
+        "10.122.922.49",
+        "10.122.922.50",
+        "10.122.922.51",
+        "10.122.922.52",
+        "10.122.922.53",
+        "10.122.922.54",
+        "10.122.922.55",
+        "10.122.922.56",
+        "10.122.922.57",
+        "10.122.922.58",
+        "10.122.922.59",
+        "10.122.922.60",
+        "10.122.922.61",
+        "10.122.922.62"
+    ],
+    "routeAddress": "10.122.922.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.122.922.65",
+        "10.122.922.66",
+        "10.122.922.67",
+        "10.122.922.68",
+        "10.122.922.69",
+        "10.122.922.70",
+        "10.122.922.71",
+        "10.122.922.72",
+        "10.122.922.73",
+        "10.122.922.74",
+        "10.122.922.75",
+        "10.122.922.76",
+        "10.122.922.77",
+        "10.122.922.78",
+        "10.122.922.79",
+        "10.122.922.80",
+        "10.122.922.81",
+        "10.122.922.82",
+        "10.122.922.83",
+        "10.122.922.84",
+        "10.122.922.85",
+        "10.122.922.86",
+        "10.122.922.87",
+        "10.122.922.88",
+        "10.122.922.89",
+        "10.122.922.90",
+        "10.122.922.91",
+        "10.122.922.92",
+        "10.122.922.93",
+        "10.122.922.94"
+    ],
+    "corporateAddress": "10.122.922.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.122.922.97",
+        "10.122.922.98",
+        "10.122.922.99",
+        "10.122.922.100",
+        "10.122.922.101",
+        "10.122.922.102",
+        "10.122.922.103",
+        "10.122.922.104",
+        "10.122.922.105",
+        "10.122.922.106",
+        "10.122.922.107",
+        "10.122.922.108",
+        "10.122.922.109",
+        "10.122.922.110",
+        "10.122.922.111",
+        "10.122.922.112",
+        "10.122.922.113",
+        "10.122.922.114",
+        "10.122.922.115",
+        "10.122.922.116",
+        "10.122.922.117",
+        "10.122.922.118",
+        "10.122.922.119",
+        "10.122.922.120",
+        "10.122.922.121",
+        "10.122.922.122",
+        "10.122.922.123",
+        "10.122.922.124",
+        "10.122.922.125"
+    ],
+    "latitude": 28.839,
+    "longitude": -96.89,
+    "nodes": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.97",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..Firewall 922",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.839,
+            "Longitude": -96.89
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.98",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..Router 922",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.1",
+            "ipAddress": "10.122.922.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ.OT.Switch 1843",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.99",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ.Corporate.Switch 1844",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.3",
+            "ipAddress": "10.122.922.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.2",
+            "ipAddress": "10.122.922.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..RC 922",
+            "compromised": false,
+            "relayIPlist": [
+                "10.122.922.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.100",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..Host 1843",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.100",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..Host 1844",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.100",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..LocalDatabase 1843",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.100",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..LocalWebServer 1844",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.101",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..hmi 1843",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.100",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..outstation 1844",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 127.INEZ..RC 922",
+            "destination": "Utility 127.INEZ..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.INEZ..Router 922",
+            "destination": "Utility 127.INEZ..Firewall 922",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.INEZ..Firewall 922",
+            "destination": "Utility 127.INEZ.OT.Switch 1843",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.INEZ.OT.Switch 1843",
+            "destination": "Utility 127.INEZ..RC 922",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.INEZ..Firewall 922",
+            "destination": "Utility 127.INEZ.Corporate.Switch 1844",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.INEZ.Corporate.Switch 1844",
+            "destination": "Utility 127.INEZ..Host 1843",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.INEZ.Corporate.Switch 1844",
+            "destination": "Utility 127.INEZ..Host 1844",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.INEZ.Corporate.Switch 1844",
+            "destination": "Utility 127.INEZ..LocalDatabase 1843",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.INEZ.Corporate.Switch 1844",
+            "destination": "Utility 127.INEZ..LocalWebServer 1844",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.1",
+            "ipAddress": "10.122.922.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ.OT.Switch 1843",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.2",
+            "ipAddress": "10.122.922.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..RC 922",
+            "compromised": false,
+            "relayIPlist": [
+                "10.122.922.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.97",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..Firewall 922",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.839,
+            "Longitude": -96.89
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.98",
+            "ipAddress": "10.122.922.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..Router 922",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.1",
+            "ipAddress": "10.122.922.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ.OT.Switch 1843",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.922.2",
+            "ipAddress": "10.122.922.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "INEZ",
+            "label": "Utility 127.INEZ..RC 922",
+            "compromised": false,
+            "relayIPlist": [
+                "10.122.922.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

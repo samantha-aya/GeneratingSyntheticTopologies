@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.ALVARADO",
+    "networkLan": "10.52.706.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "ALVARADO",
+    "substationNumber": 706,
+    "OTAddress": "10.52.706.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.706.1",
+        "10.52.706.2",
+        "10.52.706.3",
+        "10.52.706.4",
+        "10.52.706.5",
+        "10.52.706.6",
+        "10.52.706.7",
+        "10.52.706.8",
+        "10.52.706.9",
+        "10.52.706.10",
+        "10.52.706.11",
+        "10.52.706.12",
+        "10.52.706.13",
+        "10.52.706.14",
+        "10.52.706.15",
+        "10.52.706.16",
+        "10.52.706.17",
+        "10.52.706.18",
+        "10.52.706.19",
+        "10.52.706.20",
+        "10.52.706.21",
+        "10.52.706.22",
+        "10.52.706.23",
+        "10.52.706.24",
+        "10.52.706.25",
+        "10.52.706.26",
+        "10.52.706.27",
+        "10.52.706.28",
+        "10.52.706.29",
+        "10.52.706.30",
+        "10.52.706.31",
+        "10.52.706.32",
+        "10.52.706.33",
+        "10.52.706.34",
+        "10.52.706.35",
+        "10.52.706.36",
+        "10.52.706.37",
+        "10.52.706.38",
+        "10.52.706.39",
+        "10.52.706.40",
+        "10.52.706.41",
+        "10.52.706.42",
+        "10.52.706.43",
+        "10.52.706.44",
+        "10.52.706.45",
+        "10.52.706.46",
+        "10.52.706.47",
+        "10.52.706.48",
+        "10.52.706.49",
+        "10.52.706.50",
+        "10.52.706.51",
+        "10.52.706.52",
+        "10.52.706.53",
+        "10.52.706.54",
+        "10.52.706.55",
+        "10.52.706.56",
+        "10.52.706.57",
+        "10.52.706.58",
+        "10.52.706.59",
+        "10.52.706.60",
+        "10.52.706.61",
+        "10.52.706.62"
+    ],
+    "routeAddress": "10.52.706.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.706.65",
+        "10.52.706.66",
+        "10.52.706.67",
+        "10.52.706.68",
+        "10.52.706.69",
+        "10.52.706.70",
+        "10.52.706.71",
+        "10.52.706.72",
+        "10.52.706.73",
+        "10.52.706.74",
+        "10.52.706.75",
+        "10.52.706.76",
+        "10.52.706.77",
+        "10.52.706.78",
+        "10.52.706.79",
+        "10.52.706.80",
+        "10.52.706.81",
+        "10.52.706.82",
+        "10.52.706.83",
+        "10.52.706.84",
+        "10.52.706.85",
+        "10.52.706.86",
+        "10.52.706.87",
+        "10.52.706.88",
+        "10.52.706.89",
+        "10.52.706.90",
+        "10.52.706.91",
+        "10.52.706.92",
+        "10.52.706.93",
+        "10.52.706.94"
+    ],
+    "corporateAddress": "10.52.706.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.706.97",
+        "10.52.706.98",
+        "10.52.706.99",
+        "10.52.706.100",
+        "10.52.706.101",
+        "10.52.706.102",
+        "10.52.706.103",
+        "10.52.706.104",
+        "10.52.706.105",
+        "10.52.706.106",
+        "10.52.706.107",
+        "10.52.706.108",
+        "10.52.706.109",
+        "10.52.706.110",
+        "10.52.706.111",
+        "10.52.706.112",
+        "10.52.706.113",
+        "10.52.706.114",
+        "10.52.706.115",
+        "10.52.706.116",
+        "10.52.706.117",
+        "10.52.706.118",
+        "10.52.706.119",
+        "10.52.706.120",
+        "10.52.706.121",
+        "10.52.706.122",
+        "10.52.706.123",
+        "10.52.706.124",
+        "10.52.706.125"
+    ],
+    "latitude": 32.415,
+    "longitude": -97.196,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.97",
+            "ipAddress": "10.52.706.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..Firewall 706",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.415,
+            "Longitude": -97.196
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.98",
+            "ipAddress": "10.52.706.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..Router 706",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.1",
+            "ipAddress": "10.52.706.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO.OT.Switch 1411",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.99",
+            "ipAddress": "10.52.706.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO.Corporate.Switch 1412",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.3",
+            "ipAddress": "10.52.706.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.2",
+            "ipAddress": "10.52.706.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..RC 706",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.706.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.100",
+            "ipAddress": "10.52.706.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..Host 1411",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.100",
+            "ipAddress": "10.52.706.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..Host 1412",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.100",
+            "ipAddress": "10.52.706.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..LocalDatabase 1411",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.100",
+            "ipAddress": "10.52.706.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..LocalWebServer 1412",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.ALVARADO..RC 706",
+            "destination": "Utility 0.ALVARADO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ALVARADO..Router 706",
+            "destination": "Utility 0.ALVARADO..Firewall 706",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ALVARADO..Firewall 706",
+            "destination": "Utility 0.ALVARADO.OT.Switch 1411",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ALVARADO.OT.Switch 1411",
+            "destination": "Utility 0.ALVARADO..RC 706",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ALVARADO..Firewall 706",
+            "destination": "Utility 0.ALVARADO.Corporate.Switch 1412",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ALVARADO.Corporate.Switch 1412",
+            "destination": "Utility 0.ALVARADO..Host 1411",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ALVARADO.Corporate.Switch 1412",
+            "destination": "Utility 0.ALVARADO..Host 1412",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ALVARADO.Corporate.Switch 1412",
+            "destination": "Utility 0.ALVARADO..LocalDatabase 1411",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ALVARADO.Corporate.Switch 1412",
+            "destination": "Utility 0.ALVARADO..LocalWebServer 1412",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.1",
+            "ipAddress": "10.52.706.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO.OT.Switch 1411",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.2",
+            "ipAddress": "10.52.706.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..RC 706",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.706.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.97",
+            "ipAddress": "10.52.706.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..Firewall 706",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.415,
+            "Longitude": -97.196
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.98",
+            "ipAddress": "10.52.706.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..Router 706",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.1",
+            "ipAddress": "10.52.706.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO.OT.Switch 1411",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.706.2",
+            "ipAddress": "10.52.706.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALVARADO",
+            "label": "Utility 0.ALVARADO..RC 706",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.706.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

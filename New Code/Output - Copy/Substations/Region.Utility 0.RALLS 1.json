@@ -1,0 +1,670 @@
+{
+    "relayCounter": 5,
+    "label": "Region.Utility 0.RALLS 1",
+    "networkLan": "10.52.124.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "RALLS 1",
+    "substationNumber": 124,
+    "OTAddress": "10.52.124.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.124.1",
+        "10.52.124.2",
+        "10.52.124.3",
+        "10.52.124.4",
+        "10.52.124.5",
+        "10.52.124.6",
+        "10.52.124.7",
+        "10.52.124.8",
+        "10.52.124.9",
+        "10.52.124.10",
+        "10.52.124.11",
+        "10.52.124.12",
+        "10.52.124.13",
+        "10.52.124.14",
+        "10.52.124.15",
+        "10.52.124.16",
+        "10.52.124.17",
+        "10.52.124.18",
+        "10.52.124.19",
+        "10.52.124.20",
+        "10.52.124.21",
+        "10.52.124.22",
+        "10.52.124.23",
+        "10.52.124.24",
+        "10.52.124.25",
+        "10.52.124.26",
+        "10.52.124.27",
+        "10.52.124.28",
+        "10.52.124.29",
+        "10.52.124.30",
+        "10.52.124.31",
+        "10.52.124.32",
+        "10.52.124.33",
+        "10.52.124.34",
+        "10.52.124.35",
+        "10.52.124.36",
+        "10.52.124.37",
+        "10.52.124.38",
+        "10.52.124.39",
+        "10.52.124.40",
+        "10.52.124.41",
+        "10.52.124.42",
+        "10.52.124.43",
+        "10.52.124.44",
+        "10.52.124.45",
+        "10.52.124.46",
+        "10.52.124.47",
+        "10.52.124.48",
+        "10.52.124.49",
+        "10.52.124.50",
+        "10.52.124.51",
+        "10.52.124.52",
+        "10.52.124.53",
+        "10.52.124.54",
+        "10.52.124.55",
+        "10.52.124.56",
+        "10.52.124.57",
+        "10.52.124.58",
+        "10.52.124.59",
+        "10.52.124.60",
+        "10.52.124.61",
+        "10.52.124.62"
+    ],
+    "routeAddress": "10.52.124.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.124.65",
+        "10.52.124.66",
+        "10.52.124.67",
+        "10.52.124.68",
+        "10.52.124.69",
+        "10.52.124.70",
+        "10.52.124.71",
+        "10.52.124.72",
+        "10.52.124.73",
+        "10.52.124.74",
+        "10.52.124.75",
+        "10.52.124.76",
+        "10.52.124.77",
+        "10.52.124.78",
+        "10.52.124.79",
+        "10.52.124.80",
+        "10.52.124.81",
+        "10.52.124.82",
+        "10.52.124.83",
+        "10.52.124.84",
+        "10.52.124.85",
+        "10.52.124.86",
+        "10.52.124.87",
+        "10.52.124.88",
+        "10.52.124.89",
+        "10.52.124.90",
+        "10.52.124.91",
+        "10.52.124.92",
+        "10.52.124.93",
+        "10.52.124.94"
+    ],
+    "corporateAddress": "10.52.124.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.124.97",
+        "10.52.124.98",
+        "10.52.124.99",
+        "10.52.124.100",
+        "10.52.124.101",
+        "10.52.124.102",
+        "10.52.124.103",
+        "10.52.124.104",
+        "10.52.124.105",
+        "10.52.124.106",
+        "10.52.124.107",
+        "10.52.124.108",
+        "10.52.124.109",
+        "10.52.124.110",
+        "10.52.124.111",
+        "10.52.124.112",
+        "10.52.124.113",
+        "10.52.124.114",
+        "10.52.124.115",
+        "10.52.124.116",
+        "10.52.124.117",
+        "10.52.124.118",
+        "10.52.124.119",
+        "10.52.124.120",
+        "10.52.124.121",
+        "10.52.124.122",
+        "10.52.124.123",
+        "10.52.124.124",
+        "10.52.124.125"
+    ],
+    "latitude": 33.661,
+    "longitude": -101.39,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.97",
+            "ipAddress": "10.52.124.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Firewall 124",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.661,
+            "Longitude": -101.39
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.98",
+            "ipAddress": "10.52.124.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Router 124",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.1",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1.OT.Switch 247",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.99",
+            "ipAddress": "10.52.124.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1.Corporate.Switch 248",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.3",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.4",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.5",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.6",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.7",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.2",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..RC 124",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.124.3",
+                "10.52.124.4",
+                "10.52.124.5",
+                "10.52.124.6",
+                "10.52.124.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.100",
+            "ipAddress": "10.52.124.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Host 247",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.100",
+            "ipAddress": "10.52.124.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Host 248",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.100",
+            "ipAddress": "10.52.124.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..LocalDatabase 247",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.100",
+            "ipAddress": "10.52.124.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..LocalWebServer 248",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.RALLS 1..RC 124",
+            "destination": "Utility 0.RALLS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1..RC 124",
+            "destination": "Utility 0.RALLS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1..RC 124",
+            "destination": "Utility 0.RALLS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1..RC 124",
+            "destination": "Utility 0.RALLS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1..RC 124",
+            "destination": "Utility 0.RALLS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1..Router 124",
+            "destination": "Utility 0.RALLS 1..Firewall 124",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1..Firewall 124",
+            "destination": "Utility 0.RALLS 1.OT.Switch 247",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1.OT.Switch 247",
+            "destination": "Utility 0.RALLS 1..RC 124",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1..Firewall 124",
+            "destination": "Utility 0.RALLS 1.Corporate.Switch 248",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1.Corporate.Switch 248",
+            "destination": "Utility 0.RALLS 1..Host 247",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1.Corporate.Switch 248",
+            "destination": "Utility 0.RALLS 1..Host 248",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1.Corporate.Switch 248",
+            "destination": "Utility 0.RALLS 1..LocalDatabase 247",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RALLS 1.Corporate.Switch 248",
+            "destination": "Utility 0.RALLS 1..LocalWebServer 248",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.1",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1.OT.Switch 247",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.2",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..RC 124",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.124.3",
+                "10.52.124.4",
+                "10.52.124.5",
+                "10.52.124.6",
+                "10.52.124.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.97",
+            "ipAddress": "10.52.124.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Firewall 124",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.661,
+            "Longitude": -101.39
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.98",
+            "ipAddress": "10.52.124.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..Router 124",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.1",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1.OT.Switch 247",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.124.2",
+            "ipAddress": "10.52.124.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RALLS 1",
+            "label": "Utility 0.RALLS 1..RC 124",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.124.3",
+                "10.52.124.4",
+                "10.52.124.5",
+                "10.52.124.6",
+                "10.52.124.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 120.0,
+    "genmvar": 0.53,
+    "connecting_TS_num": 56
+}

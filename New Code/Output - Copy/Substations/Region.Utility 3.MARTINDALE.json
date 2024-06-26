@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.MARTINDALE",
+    "networkLan": "10.56.832.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "MARTINDALE",
+    "substationNumber": 832,
+    "OTAddress": "10.56.832.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.832.1",
+        "10.56.832.2",
+        "10.56.832.3",
+        "10.56.832.4",
+        "10.56.832.5",
+        "10.56.832.6",
+        "10.56.832.7",
+        "10.56.832.8",
+        "10.56.832.9",
+        "10.56.832.10",
+        "10.56.832.11",
+        "10.56.832.12",
+        "10.56.832.13",
+        "10.56.832.14",
+        "10.56.832.15",
+        "10.56.832.16",
+        "10.56.832.17",
+        "10.56.832.18",
+        "10.56.832.19",
+        "10.56.832.20",
+        "10.56.832.21",
+        "10.56.832.22",
+        "10.56.832.23",
+        "10.56.832.24",
+        "10.56.832.25",
+        "10.56.832.26",
+        "10.56.832.27",
+        "10.56.832.28",
+        "10.56.832.29",
+        "10.56.832.30",
+        "10.56.832.31",
+        "10.56.832.32",
+        "10.56.832.33",
+        "10.56.832.34",
+        "10.56.832.35",
+        "10.56.832.36",
+        "10.56.832.37",
+        "10.56.832.38",
+        "10.56.832.39",
+        "10.56.832.40",
+        "10.56.832.41",
+        "10.56.832.42",
+        "10.56.832.43",
+        "10.56.832.44",
+        "10.56.832.45",
+        "10.56.832.46",
+        "10.56.832.47",
+        "10.56.832.48",
+        "10.56.832.49",
+        "10.56.832.50",
+        "10.56.832.51",
+        "10.56.832.52",
+        "10.56.832.53",
+        "10.56.832.54",
+        "10.56.832.55",
+        "10.56.832.56",
+        "10.56.832.57",
+        "10.56.832.58",
+        "10.56.832.59",
+        "10.56.832.60",
+        "10.56.832.61",
+        "10.56.832.62"
+    ],
+    "routeAddress": "10.56.832.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.832.65",
+        "10.56.832.66",
+        "10.56.832.67",
+        "10.56.832.68",
+        "10.56.832.69",
+        "10.56.832.70",
+        "10.56.832.71",
+        "10.56.832.72",
+        "10.56.832.73",
+        "10.56.832.74",
+        "10.56.832.75",
+        "10.56.832.76",
+        "10.56.832.77",
+        "10.56.832.78",
+        "10.56.832.79",
+        "10.56.832.80",
+        "10.56.832.81",
+        "10.56.832.82",
+        "10.56.832.83",
+        "10.56.832.84",
+        "10.56.832.85",
+        "10.56.832.86",
+        "10.56.832.87",
+        "10.56.832.88",
+        "10.56.832.89",
+        "10.56.832.90",
+        "10.56.832.91",
+        "10.56.832.92",
+        "10.56.832.93",
+        "10.56.832.94"
+    ],
+    "corporateAddress": "10.56.832.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.832.97",
+        "10.56.832.98",
+        "10.56.832.99",
+        "10.56.832.100",
+        "10.56.832.101",
+        "10.56.832.102",
+        "10.56.832.103",
+        "10.56.832.104",
+        "10.56.832.105",
+        "10.56.832.106",
+        "10.56.832.107",
+        "10.56.832.108",
+        "10.56.832.109",
+        "10.56.832.110",
+        "10.56.832.111",
+        "10.56.832.112",
+        "10.56.832.113",
+        "10.56.832.114",
+        "10.56.832.115",
+        "10.56.832.116",
+        "10.56.832.117",
+        "10.56.832.118",
+        "10.56.832.119",
+        "10.56.832.120",
+        "10.56.832.121",
+        "10.56.832.122",
+        "10.56.832.123",
+        "10.56.832.124",
+        "10.56.832.125"
+    ],
+    "latitude": 29.66,
+    "longitude": -97.785,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.97",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..Firewall 832",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.66,
+            "Longitude": -97.785
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.98",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..Router 832",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.1",
+            "ipAddress": "10.56.832.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE.OT.Switch 1663",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.99",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE.Corporate.Switch 1664",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.3",
+            "ipAddress": "10.56.832.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.2",
+            "ipAddress": "10.56.832.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..RC 832",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.832.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.100",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..Host 1663",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.100",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..Host 1664",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.100",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..LocalDatabase 1663",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.100",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..LocalWebServer 1664",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.101",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..hmi 1663",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.100",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..outstation 1664",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.MARTINDALE..RC 832",
+            "destination": "Utility 3.MARTINDALE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.MARTINDALE..Router 832",
+            "destination": "Utility 3.MARTINDALE..Firewall 832",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.MARTINDALE..Firewall 832",
+            "destination": "Utility 3.MARTINDALE.OT.Switch 1663",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.MARTINDALE.OT.Switch 1663",
+            "destination": "Utility 3.MARTINDALE..RC 832",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.MARTINDALE..Firewall 832",
+            "destination": "Utility 3.MARTINDALE.Corporate.Switch 1664",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.MARTINDALE.Corporate.Switch 1664",
+            "destination": "Utility 3.MARTINDALE..Host 1663",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.MARTINDALE.Corporate.Switch 1664",
+            "destination": "Utility 3.MARTINDALE..Host 1664",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.MARTINDALE.Corporate.Switch 1664",
+            "destination": "Utility 3.MARTINDALE..LocalDatabase 1663",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.MARTINDALE.Corporate.Switch 1664",
+            "destination": "Utility 3.MARTINDALE..LocalWebServer 1664",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.1",
+            "ipAddress": "10.56.832.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE.OT.Switch 1663",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.2",
+            "ipAddress": "10.56.832.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..RC 832",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.832.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.97",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..Firewall 832",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.66,
+            "Longitude": -97.785
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.98",
+            "ipAddress": "10.56.832.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..Router 832",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.1",
+            "ipAddress": "10.56.832.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE.OT.Switch 1663",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.832.2",
+            "ipAddress": "10.56.832.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARTINDALE",
+            "label": "Utility 3.MARTINDALE..RC 832",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.832.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

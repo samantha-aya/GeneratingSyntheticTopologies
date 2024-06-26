@@ -1,0 +1,738 @@
+{
+    "relayCounter": 6,
+    "label": "Region.Utility 44.STERLING CITY 1",
+    "networkLan": "10.61.180.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 44",
+    "utility_id": 61,
+    "substation": "STERLING CITY 1",
+    "substationNumber": 180,
+    "OTAddress": "10.61.180.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.61.180.1",
+        "10.61.180.2",
+        "10.61.180.3",
+        "10.61.180.4",
+        "10.61.180.5",
+        "10.61.180.6",
+        "10.61.180.7",
+        "10.61.180.8",
+        "10.61.180.9",
+        "10.61.180.10",
+        "10.61.180.11",
+        "10.61.180.12",
+        "10.61.180.13",
+        "10.61.180.14",
+        "10.61.180.15",
+        "10.61.180.16",
+        "10.61.180.17",
+        "10.61.180.18",
+        "10.61.180.19",
+        "10.61.180.20",
+        "10.61.180.21",
+        "10.61.180.22",
+        "10.61.180.23",
+        "10.61.180.24",
+        "10.61.180.25",
+        "10.61.180.26",
+        "10.61.180.27",
+        "10.61.180.28",
+        "10.61.180.29",
+        "10.61.180.30",
+        "10.61.180.31",
+        "10.61.180.32",
+        "10.61.180.33",
+        "10.61.180.34",
+        "10.61.180.35",
+        "10.61.180.36",
+        "10.61.180.37",
+        "10.61.180.38",
+        "10.61.180.39",
+        "10.61.180.40",
+        "10.61.180.41",
+        "10.61.180.42",
+        "10.61.180.43",
+        "10.61.180.44",
+        "10.61.180.45",
+        "10.61.180.46",
+        "10.61.180.47",
+        "10.61.180.48",
+        "10.61.180.49",
+        "10.61.180.50",
+        "10.61.180.51",
+        "10.61.180.52",
+        "10.61.180.53",
+        "10.61.180.54",
+        "10.61.180.55",
+        "10.61.180.56",
+        "10.61.180.57",
+        "10.61.180.58",
+        "10.61.180.59",
+        "10.61.180.60",
+        "10.61.180.61",
+        "10.61.180.62"
+    ],
+    "routeAddress": "10.61.180.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.61.180.65",
+        "10.61.180.66",
+        "10.61.180.67",
+        "10.61.180.68",
+        "10.61.180.69",
+        "10.61.180.70",
+        "10.61.180.71",
+        "10.61.180.72",
+        "10.61.180.73",
+        "10.61.180.74",
+        "10.61.180.75",
+        "10.61.180.76",
+        "10.61.180.77",
+        "10.61.180.78",
+        "10.61.180.79",
+        "10.61.180.80",
+        "10.61.180.81",
+        "10.61.180.82",
+        "10.61.180.83",
+        "10.61.180.84",
+        "10.61.180.85",
+        "10.61.180.86",
+        "10.61.180.87",
+        "10.61.180.88",
+        "10.61.180.89",
+        "10.61.180.90",
+        "10.61.180.91",
+        "10.61.180.92",
+        "10.61.180.93",
+        "10.61.180.94"
+    ],
+    "corporateAddress": "10.61.180.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.61.180.97",
+        "10.61.180.98",
+        "10.61.180.99",
+        "10.61.180.100",
+        "10.61.180.101",
+        "10.61.180.102",
+        "10.61.180.103",
+        "10.61.180.104",
+        "10.61.180.105",
+        "10.61.180.106",
+        "10.61.180.107",
+        "10.61.180.108",
+        "10.61.180.109",
+        "10.61.180.110",
+        "10.61.180.111",
+        "10.61.180.112",
+        "10.61.180.113",
+        "10.61.180.114",
+        "10.61.180.115",
+        "10.61.180.116",
+        "10.61.180.117",
+        "10.61.180.118",
+        "10.61.180.119",
+        "10.61.180.120",
+        "10.61.180.121",
+        "10.61.180.122",
+        "10.61.180.123",
+        "10.61.180.124",
+        "10.61.180.125"
+    ],
+    "latitude": 31.926,
+    "longitude": -100.928,
+    "nodes": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.97",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Firewall 180",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.926,
+            "Longitude": -100.928
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.98",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Router 180",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.1",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1.OT.Switch 359",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.99",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1.Corporate.Switch 360",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.3",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.4",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.5",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.6",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.7",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.8",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.2",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..RC 180",
+            "compromised": false,
+            "relayIPlist": [
+                "10.61.180.3",
+                "10.61.180.4",
+                "10.61.180.5",
+                "10.61.180.6",
+                "10.61.180.7",
+                "10.61.180.8"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.100",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Host 359",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.100",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Host 360",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.100",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..LocalDatabase 359",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.100",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..LocalWebServer 360",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.101",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..hmi 359",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.100",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..outstation 360",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 44.STERLING CITY 1..RC 180",
+            "destination": "Utility 44.STERLING CITY 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1..RC 180",
+            "destination": "Utility 44.STERLING CITY 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1..RC 180",
+            "destination": "Utility 44.STERLING CITY 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1..RC 180",
+            "destination": "Utility 44.STERLING CITY 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1..RC 180",
+            "destination": "Utility 44.STERLING CITY 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1..RC 180",
+            "destination": "Utility 44.STERLING CITY 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1..Router 180",
+            "destination": "Utility 44.STERLING CITY 1..Firewall 180",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1..Firewall 180",
+            "destination": "Utility 44.STERLING CITY 1.OT.Switch 359",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1.OT.Switch 359",
+            "destination": "Utility 44.STERLING CITY 1..RC 180",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1..Firewall 180",
+            "destination": "Utility 44.STERLING CITY 1.Corporate.Switch 360",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1.Corporate.Switch 360",
+            "destination": "Utility 44.STERLING CITY 1..Host 359",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1.Corporate.Switch 360",
+            "destination": "Utility 44.STERLING CITY 1..Host 360",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1.Corporate.Switch 360",
+            "destination": "Utility 44.STERLING CITY 1..LocalDatabase 359",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.STERLING CITY 1.Corporate.Switch 360",
+            "destination": "Utility 44.STERLING CITY 1..LocalWebServer 360",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.1",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1.OT.Switch 359",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.2",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..RC 180",
+            "compromised": false,
+            "relayIPlist": [
+                "10.61.180.3",
+                "10.61.180.4",
+                "10.61.180.5",
+                "10.61.180.6",
+                "10.61.180.7",
+                "10.61.180.8"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.97",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Firewall 180",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.926,
+            "Longitude": -100.928
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.98",
+            "ipAddress": "10.61.180.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..Router 180",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.1",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1.OT.Switch 359",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.180.2",
+            "ipAddress": "10.61.180.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STERLING CITY 1",
+            "label": "Utility 44.STERLING CITY 1..RC 180",
+            "compromised": false,
+            "relayIPlist": [
+                "10.61.180.3",
+                "10.61.180.4",
+                "10.61.180.5",
+                "10.61.180.6",
+                "10.61.180.7",
+                "10.61.180.8"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 496.88,
+    "genmvar": 81.73,
+    "connecting_TS_num": 207
+}

@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 2.RICHARDSON 2",
+    "networkLan": "10.55.427.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "RICHARDSON 2",
+    "substationNumber": 427,
+    "OTAddress": "10.55.427.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.427.1",
+        "10.55.427.2",
+        "10.55.427.3",
+        "10.55.427.4",
+        "10.55.427.5",
+        "10.55.427.6",
+        "10.55.427.7",
+        "10.55.427.8",
+        "10.55.427.9",
+        "10.55.427.10",
+        "10.55.427.11",
+        "10.55.427.12",
+        "10.55.427.13",
+        "10.55.427.14",
+        "10.55.427.15",
+        "10.55.427.16",
+        "10.55.427.17",
+        "10.55.427.18",
+        "10.55.427.19",
+        "10.55.427.20",
+        "10.55.427.21",
+        "10.55.427.22",
+        "10.55.427.23",
+        "10.55.427.24",
+        "10.55.427.25",
+        "10.55.427.26",
+        "10.55.427.27",
+        "10.55.427.28",
+        "10.55.427.29",
+        "10.55.427.30",
+        "10.55.427.31",
+        "10.55.427.32",
+        "10.55.427.33",
+        "10.55.427.34",
+        "10.55.427.35",
+        "10.55.427.36",
+        "10.55.427.37",
+        "10.55.427.38",
+        "10.55.427.39",
+        "10.55.427.40",
+        "10.55.427.41",
+        "10.55.427.42",
+        "10.55.427.43",
+        "10.55.427.44",
+        "10.55.427.45",
+        "10.55.427.46",
+        "10.55.427.47",
+        "10.55.427.48",
+        "10.55.427.49",
+        "10.55.427.50",
+        "10.55.427.51",
+        "10.55.427.52",
+        "10.55.427.53",
+        "10.55.427.54",
+        "10.55.427.55",
+        "10.55.427.56",
+        "10.55.427.57",
+        "10.55.427.58",
+        "10.55.427.59",
+        "10.55.427.60",
+        "10.55.427.61",
+        "10.55.427.62"
+    ],
+    "routeAddress": "10.55.427.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.427.65",
+        "10.55.427.66",
+        "10.55.427.67",
+        "10.55.427.68",
+        "10.55.427.69",
+        "10.55.427.70",
+        "10.55.427.71",
+        "10.55.427.72",
+        "10.55.427.73",
+        "10.55.427.74",
+        "10.55.427.75",
+        "10.55.427.76",
+        "10.55.427.77",
+        "10.55.427.78",
+        "10.55.427.79",
+        "10.55.427.80",
+        "10.55.427.81",
+        "10.55.427.82",
+        "10.55.427.83",
+        "10.55.427.84",
+        "10.55.427.85",
+        "10.55.427.86",
+        "10.55.427.87",
+        "10.55.427.88",
+        "10.55.427.89",
+        "10.55.427.90",
+        "10.55.427.91",
+        "10.55.427.92",
+        "10.55.427.93",
+        "10.55.427.94"
+    ],
+    "corporateAddress": "10.55.427.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.427.97",
+        "10.55.427.98",
+        "10.55.427.99",
+        "10.55.427.100",
+        "10.55.427.101",
+        "10.55.427.102",
+        "10.55.427.103",
+        "10.55.427.104",
+        "10.55.427.105",
+        "10.55.427.106",
+        "10.55.427.107",
+        "10.55.427.108",
+        "10.55.427.109",
+        "10.55.427.110",
+        "10.55.427.111",
+        "10.55.427.112",
+        "10.55.427.113",
+        "10.55.427.114",
+        "10.55.427.115",
+        "10.55.427.116",
+        "10.55.427.117",
+        "10.55.427.118",
+        "10.55.427.119",
+        "10.55.427.120",
+        "10.55.427.121",
+        "10.55.427.122",
+        "10.55.427.123",
+        "10.55.427.124",
+        "10.55.427.125"
+    ],
+    "latitude": 32.976,
+    "longitude": -96.742,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.97",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..Firewall 427",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.976,
+            "Longitude": -96.742
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.98",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..Router 427",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.1",
+            "ipAddress": "10.55.427.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2.OT.Switch 853",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.99",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2.Corporate.Switch 854",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.3",
+            "ipAddress": "10.55.427.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.4",
+            "ipAddress": "10.55.427.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.2",
+            "ipAddress": "10.55.427.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..RC 427",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.427.3",
+                "10.55.427.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.100",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..Host 853",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.100",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..Host 854",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.100",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..LocalDatabase 853",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.100",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..LocalWebServer 854",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.101",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..hmi 853",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.100",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..outstation 854",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.RICHARDSON 2..RC 427",
+            "destination": "Utility 2.RICHARDSON 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.RICHARDSON 2..RC 427",
+            "destination": "Utility 2.RICHARDSON 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.RICHARDSON 2..Router 427",
+            "destination": "Utility 2.RICHARDSON 2..Firewall 427",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.RICHARDSON 2..Firewall 427",
+            "destination": "Utility 2.RICHARDSON 2.OT.Switch 853",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.RICHARDSON 2.OT.Switch 853",
+            "destination": "Utility 2.RICHARDSON 2..RC 427",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.RICHARDSON 2..Firewall 427",
+            "destination": "Utility 2.RICHARDSON 2.Corporate.Switch 854",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.RICHARDSON 2.Corporate.Switch 854",
+            "destination": "Utility 2.RICHARDSON 2..Host 853",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.RICHARDSON 2.Corporate.Switch 854",
+            "destination": "Utility 2.RICHARDSON 2..Host 854",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.RICHARDSON 2.Corporate.Switch 854",
+            "destination": "Utility 2.RICHARDSON 2..LocalDatabase 853",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.RICHARDSON 2.Corporate.Switch 854",
+            "destination": "Utility 2.RICHARDSON 2..LocalWebServer 854",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.1",
+            "ipAddress": "10.55.427.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2.OT.Switch 853",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.2",
+            "ipAddress": "10.55.427.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..RC 427",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.427.3",
+                "10.55.427.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.97",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..Firewall 427",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.976,
+            "Longitude": -96.742
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.98",
+            "ipAddress": "10.55.427.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..Router 427",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.1",
+            "ipAddress": "10.55.427.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2.OT.Switch 853",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.427.2",
+            "ipAddress": "10.55.427.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHARDSON 2",
+            "label": "Utility 2.RICHARDSON 2..RC 427",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.427.3",
+                "10.55.427.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 37.ANNA",
+    "networkLan": "10.70.459.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 37",
+    "utility_id": 70,
+    "substation": "ANNA",
+    "substationNumber": 459,
+    "OTAddress": "10.70.459.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.70.459.1",
+        "10.70.459.2",
+        "10.70.459.3",
+        "10.70.459.4",
+        "10.70.459.5",
+        "10.70.459.6",
+        "10.70.459.7",
+        "10.70.459.8",
+        "10.70.459.9",
+        "10.70.459.10",
+        "10.70.459.11",
+        "10.70.459.12",
+        "10.70.459.13",
+        "10.70.459.14",
+        "10.70.459.15",
+        "10.70.459.16",
+        "10.70.459.17",
+        "10.70.459.18",
+        "10.70.459.19",
+        "10.70.459.20",
+        "10.70.459.21",
+        "10.70.459.22",
+        "10.70.459.23",
+        "10.70.459.24",
+        "10.70.459.25",
+        "10.70.459.26",
+        "10.70.459.27",
+        "10.70.459.28",
+        "10.70.459.29",
+        "10.70.459.30",
+        "10.70.459.31",
+        "10.70.459.32",
+        "10.70.459.33",
+        "10.70.459.34",
+        "10.70.459.35",
+        "10.70.459.36",
+        "10.70.459.37",
+        "10.70.459.38",
+        "10.70.459.39",
+        "10.70.459.40",
+        "10.70.459.41",
+        "10.70.459.42",
+        "10.70.459.43",
+        "10.70.459.44",
+        "10.70.459.45",
+        "10.70.459.46",
+        "10.70.459.47",
+        "10.70.459.48",
+        "10.70.459.49",
+        "10.70.459.50",
+        "10.70.459.51",
+        "10.70.459.52",
+        "10.70.459.53",
+        "10.70.459.54",
+        "10.70.459.55",
+        "10.70.459.56",
+        "10.70.459.57",
+        "10.70.459.58",
+        "10.70.459.59",
+        "10.70.459.60",
+        "10.70.459.61",
+        "10.70.459.62"
+    ],
+    "routeAddress": "10.70.459.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.70.459.65",
+        "10.70.459.66",
+        "10.70.459.67",
+        "10.70.459.68",
+        "10.70.459.69",
+        "10.70.459.70",
+        "10.70.459.71",
+        "10.70.459.72",
+        "10.70.459.73",
+        "10.70.459.74",
+        "10.70.459.75",
+        "10.70.459.76",
+        "10.70.459.77",
+        "10.70.459.78",
+        "10.70.459.79",
+        "10.70.459.80",
+        "10.70.459.81",
+        "10.70.459.82",
+        "10.70.459.83",
+        "10.70.459.84",
+        "10.70.459.85",
+        "10.70.459.86",
+        "10.70.459.87",
+        "10.70.459.88",
+        "10.70.459.89",
+        "10.70.459.90",
+        "10.70.459.91",
+        "10.70.459.92",
+        "10.70.459.93",
+        "10.70.459.94"
+    ],
+    "corporateAddress": "10.70.459.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.70.459.97",
+        "10.70.459.98",
+        "10.70.459.99",
+        "10.70.459.100",
+        "10.70.459.101",
+        "10.70.459.102",
+        "10.70.459.103",
+        "10.70.459.104",
+        "10.70.459.105",
+        "10.70.459.106",
+        "10.70.459.107",
+        "10.70.459.108",
+        "10.70.459.109",
+        "10.70.459.110",
+        "10.70.459.111",
+        "10.70.459.112",
+        "10.70.459.113",
+        "10.70.459.114",
+        "10.70.459.115",
+        "10.70.459.116",
+        "10.70.459.117",
+        "10.70.459.118",
+        "10.70.459.119",
+        "10.70.459.120",
+        "10.70.459.121",
+        "10.70.459.122",
+        "10.70.459.123",
+        "10.70.459.124",
+        "10.70.459.125"
+    ],
+    "latitude": 33.322,
+    "longitude": -96.378,
+    "nodes": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.97",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..Firewall 459",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.322,
+            "Longitude": -96.378
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.98",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..Router 459",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.1",
+            "ipAddress": "10.70.459.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA.OT.Switch 917",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.99",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA.Corporate.Switch 918",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.3",
+            "ipAddress": "10.70.459.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.2",
+            "ipAddress": "10.70.459.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..RC 459",
+            "compromised": false,
+            "relayIPlist": [
+                "10.70.459.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.100",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..Host 917",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.100",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..Host 918",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.100",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..LocalDatabase 917",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.100",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..LocalWebServer 918",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.101",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..hmi 917",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.100",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..outstation 918",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 37.ANNA..RC 459",
+            "destination": "Utility 37.ANNA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.ANNA..Router 459",
+            "destination": "Utility 37.ANNA..Firewall 459",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.ANNA..Firewall 459",
+            "destination": "Utility 37.ANNA.OT.Switch 917",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.ANNA.OT.Switch 917",
+            "destination": "Utility 37.ANNA..RC 459",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.ANNA..Firewall 459",
+            "destination": "Utility 37.ANNA.Corporate.Switch 918",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.ANNA.Corporate.Switch 918",
+            "destination": "Utility 37.ANNA..Host 917",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.ANNA.Corporate.Switch 918",
+            "destination": "Utility 37.ANNA..Host 918",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.ANNA.Corporate.Switch 918",
+            "destination": "Utility 37.ANNA..LocalDatabase 917",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.ANNA.Corporate.Switch 918",
+            "destination": "Utility 37.ANNA..LocalWebServer 918",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.1",
+            "ipAddress": "10.70.459.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA.OT.Switch 917",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.2",
+            "ipAddress": "10.70.459.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..RC 459",
+            "compromised": false,
+            "relayIPlist": [
+                "10.70.459.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.97",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..Firewall 459",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.322,
+            "Longitude": -96.378
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.98",
+            "ipAddress": "10.70.459.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..Router 459",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.1",
+            "ipAddress": "10.70.459.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA.OT.Switch 917",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.459.2",
+            "ipAddress": "10.70.459.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNA",
+            "label": "Utility 37.ANNA..RC 459",
+            "compromised": false,
+            "relayIPlist": [
+                "10.70.459.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

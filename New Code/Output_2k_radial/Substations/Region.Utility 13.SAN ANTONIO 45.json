@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 13.SAN ANTONIO 45",
+    "networkLan": "10.162.806.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 13",
+    "utility_id": 162,
+    "substation": "SAN ANTONIO 45",
+    "substationNumber": 806,
+    "OTAddress": "10.162.806.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.162.806.1",
+        "10.162.806.2",
+        "10.162.806.3",
+        "10.162.806.4",
+        "10.162.806.5",
+        "10.162.806.6",
+        "10.162.806.7",
+        "10.162.806.8",
+        "10.162.806.9",
+        "10.162.806.10",
+        "10.162.806.11",
+        "10.162.806.12",
+        "10.162.806.13",
+        "10.162.806.14",
+        "10.162.806.15",
+        "10.162.806.16",
+        "10.162.806.17",
+        "10.162.806.18",
+        "10.162.806.19",
+        "10.162.806.20",
+        "10.162.806.21",
+        "10.162.806.22",
+        "10.162.806.23",
+        "10.162.806.24",
+        "10.162.806.25",
+        "10.162.806.26",
+        "10.162.806.27",
+        "10.162.806.28",
+        "10.162.806.29",
+        "10.162.806.30",
+        "10.162.806.31",
+        "10.162.806.32",
+        "10.162.806.33",
+        "10.162.806.34",
+        "10.162.806.35",
+        "10.162.806.36",
+        "10.162.806.37",
+        "10.162.806.38",
+        "10.162.806.39",
+        "10.162.806.40",
+        "10.162.806.41",
+        "10.162.806.42",
+        "10.162.806.43",
+        "10.162.806.44",
+        "10.162.806.45",
+        "10.162.806.46",
+        "10.162.806.47",
+        "10.162.806.48",
+        "10.162.806.49",
+        "10.162.806.50",
+        "10.162.806.51",
+        "10.162.806.52",
+        "10.162.806.53",
+        "10.162.806.54",
+        "10.162.806.55",
+        "10.162.806.56",
+        "10.162.806.57",
+        "10.162.806.58",
+        "10.162.806.59",
+        "10.162.806.60",
+        "10.162.806.61",
+        "10.162.806.62"
+    ],
+    "routeAddress": "10.162.806.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.162.806.65",
+        "10.162.806.66",
+        "10.162.806.67",
+        "10.162.806.68",
+        "10.162.806.69",
+        "10.162.806.70",
+        "10.162.806.71",
+        "10.162.806.72",
+        "10.162.806.73",
+        "10.162.806.74",
+        "10.162.806.75",
+        "10.162.806.76",
+        "10.162.806.77",
+        "10.162.806.78",
+        "10.162.806.79",
+        "10.162.806.80",
+        "10.162.806.81",
+        "10.162.806.82",
+        "10.162.806.83",
+        "10.162.806.84",
+        "10.162.806.85",
+        "10.162.806.86",
+        "10.162.806.87",
+        "10.162.806.88",
+        "10.162.806.89",
+        "10.162.806.90",
+        "10.162.806.91",
+        "10.162.806.92",
+        "10.162.806.93",
+        "10.162.806.94"
+    ],
+    "corporateAddress": "10.162.806.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.162.806.97",
+        "10.162.806.98",
+        "10.162.806.99",
+        "10.162.806.100",
+        "10.162.806.101",
+        "10.162.806.102",
+        "10.162.806.103",
+        "10.162.806.104",
+        "10.162.806.105",
+        "10.162.806.106",
+        "10.162.806.107",
+        "10.162.806.108",
+        "10.162.806.109",
+        "10.162.806.110",
+        "10.162.806.111",
+        "10.162.806.112",
+        "10.162.806.113",
+        "10.162.806.114",
+        "10.162.806.115",
+        "10.162.806.116",
+        "10.162.806.117",
+        "10.162.806.118",
+        "10.162.806.119",
+        "10.162.806.120",
+        "10.162.806.121",
+        "10.162.806.122",
+        "10.162.806.123",
+        "10.162.806.124",
+        "10.162.806.125"
+    ],
+    "latitude": 29.407,
+    "longitude": -98.63,
+    "nodes": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.97",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..Firewall 806",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.407,
+            "Longitude": -98.63
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.98",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..Router 806",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.1",
+            "ipAddress": "10.162.806.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45.OT.Switch 1611",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.99",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45.Corporate.Switch 1612",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.3",
+            "ipAddress": "10.162.806.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.2",
+            "ipAddress": "10.162.806.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..RC 806",
+            "compromised": false,
+            "relayIPlist": [
+                "10.162.806.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.100",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..Host 1611",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.100",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..Host 1612",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.100",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..LocalDatabase 1611",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.100",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..LocalWebServer 1612",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.101",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..hmi 1611",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.100",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..outstation 1612",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 13.SAN ANTONIO 45..RC 806",
+            "destination": "Utility 13.SAN ANTONIO 45..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.SAN ANTONIO 45..Router 806",
+            "destination": "Utility 13.SAN ANTONIO 45..Firewall 806",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.SAN ANTONIO 45..Firewall 806",
+            "destination": "Utility 13.SAN ANTONIO 45.OT.Switch 1611",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.SAN ANTONIO 45.OT.Switch 1611",
+            "destination": "Utility 13.SAN ANTONIO 45..RC 806",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.SAN ANTONIO 45..Firewall 806",
+            "destination": "Utility 13.SAN ANTONIO 45.Corporate.Switch 1612",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.SAN ANTONIO 45.Corporate.Switch 1612",
+            "destination": "Utility 13.SAN ANTONIO 45..Host 1611",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.SAN ANTONIO 45.Corporate.Switch 1612",
+            "destination": "Utility 13.SAN ANTONIO 45..Host 1612",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.SAN ANTONIO 45.Corporate.Switch 1612",
+            "destination": "Utility 13.SAN ANTONIO 45..LocalDatabase 1611",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.SAN ANTONIO 45.Corporate.Switch 1612",
+            "destination": "Utility 13.SAN ANTONIO 45..LocalWebServer 1612",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.1",
+            "ipAddress": "10.162.806.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45.OT.Switch 1611",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.2",
+            "ipAddress": "10.162.806.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..RC 806",
+            "compromised": false,
+            "relayIPlist": [
+                "10.162.806.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.97",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..Firewall 806",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.407,
+            "Longitude": -98.63
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.98",
+            "ipAddress": "10.162.806.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..Router 806",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.1",
+            "ipAddress": "10.162.806.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45.OT.Switch 1611",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.806.2",
+            "ipAddress": "10.162.806.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN ANTONIO 45",
+            "label": "Utility 13.SAN ANTONIO 45..RC 806",
+            "compromised": false,
+            "relayIPlist": [
+                "10.162.806.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

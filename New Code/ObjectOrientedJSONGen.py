@@ -524,6 +524,7 @@ class CyberPhysicalSystem:
         router_start = len(substations)+1
         ems_start = 2501
         utilities = []
+        itera = 0
         for key, val in utility_dict.items():
             # Constructing the base part of the ID
             util_label = f"Region.{key}"
@@ -577,7 +578,7 @@ class CyberPhysicalSystem:
                                 adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.0",
                                 label=f"{key}.{key}..Host {ems_start}",
-                                vlan='1')            
+                                vlan='1')
             iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.0",
@@ -634,8 +635,8 @@ class CyberPhysicalSystem:
             utilFirewall.add_acl_rule("acl1", "Allow HTTPS", "10.52.1.","10.52.1.", "443" ,"TCP", "allow") #between utilHMI and SubWebServer
             utilFirewall.add_acl_rule("acl2", "Allow ICCP", "10.52.1.","10.52.1.", "102" ,"TCP", "allow") #between utilICCPServer and regICCPClient
             utilFirewall.add_acl_rule("acl3", "Block SQL", "all","all", "3306" ,"TCP", "block") #SQL is not to be found in the utility
-            
-            #protocols added below 
+
+            #protocols added below
             utilEMS.set_protocol("DNP3", "20000", "TCP")
             iccpServer.set_protocol("ICCP", "102", "TCP")
             utilHMI.set_protocol("HTTPS", "443", "TCP")
@@ -685,7 +686,8 @@ class CyberPhysicalSystem:
                 logger.info(f"Utility id: {util.id}")
                 power_graph = power_nwk.subgraph(substation_numbers)
                 #mapping = network_match(statistics_based_graph, power_graph)
-                mapping = main(statistics_based_graph, power_graph)
+                itera += 1
+                mapping = main(statistics_based_graph, power_graph, itera)
                 util_node = mapping[max_deg_node]
                 logger.info(f"Mapping: {mapping}")
                 logger.info(f"Number of subs in mapping: {len(mapping)}")
@@ -843,8 +845,6 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object):
     # print(power_graph.nodes(data=True))
     # for node in power_graph.nodes():
     #     print("Node:", node, "Attributes:", power_graph.nodes[node])
-
-
 
     return unique_pairs, power_graph
 

@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 26.IRAAN 1",
+    "networkLan": "10.57.45.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 26",
+    "utility_id": 57,
+    "substation": "IRAAN 1",
+    "substationNumber": 45,
+    "OTAddress": "10.57.45.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.45.1",
+        "10.57.45.2",
+        "10.57.45.3",
+        "10.57.45.4",
+        "10.57.45.5",
+        "10.57.45.6",
+        "10.57.45.7",
+        "10.57.45.8",
+        "10.57.45.9",
+        "10.57.45.10",
+        "10.57.45.11",
+        "10.57.45.12",
+        "10.57.45.13",
+        "10.57.45.14",
+        "10.57.45.15",
+        "10.57.45.16",
+        "10.57.45.17",
+        "10.57.45.18",
+        "10.57.45.19",
+        "10.57.45.20",
+        "10.57.45.21",
+        "10.57.45.22",
+        "10.57.45.23",
+        "10.57.45.24",
+        "10.57.45.25",
+        "10.57.45.26",
+        "10.57.45.27",
+        "10.57.45.28",
+        "10.57.45.29",
+        "10.57.45.30",
+        "10.57.45.31",
+        "10.57.45.32",
+        "10.57.45.33",
+        "10.57.45.34",
+        "10.57.45.35",
+        "10.57.45.36",
+        "10.57.45.37",
+        "10.57.45.38",
+        "10.57.45.39",
+        "10.57.45.40",
+        "10.57.45.41",
+        "10.57.45.42",
+        "10.57.45.43",
+        "10.57.45.44",
+        "10.57.45.45",
+        "10.57.45.46",
+        "10.57.45.47",
+        "10.57.45.48",
+        "10.57.45.49",
+        "10.57.45.50",
+        "10.57.45.51",
+        "10.57.45.52",
+        "10.57.45.53",
+        "10.57.45.54",
+        "10.57.45.55",
+        "10.57.45.56",
+        "10.57.45.57",
+        "10.57.45.58",
+        "10.57.45.59",
+        "10.57.45.60",
+        "10.57.45.61",
+        "10.57.45.62"
+    ],
+    "routeAddress": "10.57.45.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.45.65",
+        "10.57.45.66",
+        "10.57.45.67",
+        "10.57.45.68",
+        "10.57.45.69",
+        "10.57.45.70",
+        "10.57.45.71",
+        "10.57.45.72",
+        "10.57.45.73",
+        "10.57.45.74",
+        "10.57.45.75",
+        "10.57.45.76",
+        "10.57.45.77",
+        "10.57.45.78",
+        "10.57.45.79",
+        "10.57.45.80",
+        "10.57.45.81",
+        "10.57.45.82",
+        "10.57.45.83",
+        "10.57.45.84",
+        "10.57.45.85",
+        "10.57.45.86",
+        "10.57.45.87",
+        "10.57.45.88",
+        "10.57.45.89",
+        "10.57.45.90",
+        "10.57.45.91",
+        "10.57.45.92",
+        "10.57.45.93",
+        "10.57.45.94"
+    ],
+    "corporateAddress": "10.57.45.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.45.97",
+        "10.57.45.98",
+        "10.57.45.99",
+        "10.57.45.100",
+        "10.57.45.101",
+        "10.57.45.102",
+        "10.57.45.103",
+        "10.57.45.104",
+        "10.57.45.105",
+        "10.57.45.106",
+        "10.57.45.107",
+        "10.57.45.108",
+        "10.57.45.109",
+        "10.57.45.110",
+        "10.57.45.111",
+        "10.57.45.112",
+        "10.57.45.113",
+        "10.57.45.114",
+        "10.57.45.115",
+        "10.57.45.116",
+        "10.57.45.117",
+        "10.57.45.118",
+        "10.57.45.119",
+        "10.57.45.120",
+        "10.57.45.121",
+        "10.57.45.122",
+        "10.57.45.123",
+        "10.57.45.124",
+        "10.57.45.125"
+    ],
+    "latitude": 30.918,
+    "longitude": -102.087,
+    "nodes": [
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.97",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..Firewall 45",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.918,
+            "Longitude": -102.087
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.98",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..Router 45",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.1",
+            "ipAddress": "10.57.45.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1.OT.Switch 89",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.99",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1.Corporate.Switch 90",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.3",
+            "ipAddress": "10.57.45.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.4",
+            "ipAddress": "10.57.45.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.2",
+            "ipAddress": "10.57.45.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..RC 45",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.45.3",
+                "10.57.45.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.100",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..Host 89",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.100",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..Host 90",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.100",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..LocalDatabase 89",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.100",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..LocalWebServer 90",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.101",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..hmi 89",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.100",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..outstation 90",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 26.IRAAN 1..RC 45",
+            "destination": "Utility 26.IRAAN 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 26.IRAAN 1..RC 45",
+            "destination": "Utility 26.IRAAN 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 26.IRAAN 1..Router 45",
+            "destination": "Utility 26.IRAAN 1..Firewall 45",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 26.IRAAN 1..Firewall 45",
+            "destination": "Utility 26.IRAAN 1.OT.Switch 89",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 26.IRAAN 1.OT.Switch 89",
+            "destination": "Utility 26.IRAAN 1..RC 45",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 26.IRAAN 1..Firewall 45",
+            "destination": "Utility 26.IRAAN 1.Corporate.Switch 90",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 26.IRAAN 1.Corporate.Switch 90",
+            "destination": "Utility 26.IRAAN 1..Host 89",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 26.IRAAN 1.Corporate.Switch 90",
+            "destination": "Utility 26.IRAAN 1..Host 90",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 26.IRAAN 1.Corporate.Switch 90",
+            "destination": "Utility 26.IRAAN 1..LocalDatabase 89",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 26.IRAAN 1.Corporate.Switch 90",
+            "destination": "Utility 26.IRAAN 1..LocalWebServer 90",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.1",
+            "ipAddress": "10.57.45.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1.OT.Switch 89",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.2",
+            "ipAddress": "10.57.45.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..RC 45",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.45.3",
+                "10.57.45.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.97",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..Firewall 45",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.918,
+            "Longitude": -102.087
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.98",
+            "ipAddress": "10.57.45.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..Router 45",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.1",
+            "ipAddress": "10.57.45.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1.OT.Switch 89",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 26",
+            "adminIP": "10.57.45.2",
+            "ipAddress": "10.57.45.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRAAN 1",
+            "label": "Utility 26.IRAAN 1..RC 45",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.45.3",
+                "10.57.45.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 120.38,
+    "genmvar": 25.49,
+    "connecting_TS_num": 6
+}

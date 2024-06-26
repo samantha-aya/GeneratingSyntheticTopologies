@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 5.ASPERMONT",
+    "networkLan": "10.53.105.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 5",
+    "utility_id": 53,
+    "substation": "ASPERMONT",
+    "substationNumber": 105,
+    "OTAddress": "10.53.105.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.105.1",
+        "10.53.105.2",
+        "10.53.105.3",
+        "10.53.105.4",
+        "10.53.105.5",
+        "10.53.105.6",
+        "10.53.105.7",
+        "10.53.105.8",
+        "10.53.105.9",
+        "10.53.105.10",
+        "10.53.105.11",
+        "10.53.105.12",
+        "10.53.105.13",
+        "10.53.105.14",
+        "10.53.105.15",
+        "10.53.105.16",
+        "10.53.105.17",
+        "10.53.105.18",
+        "10.53.105.19",
+        "10.53.105.20",
+        "10.53.105.21",
+        "10.53.105.22",
+        "10.53.105.23",
+        "10.53.105.24",
+        "10.53.105.25",
+        "10.53.105.26",
+        "10.53.105.27",
+        "10.53.105.28",
+        "10.53.105.29",
+        "10.53.105.30",
+        "10.53.105.31",
+        "10.53.105.32",
+        "10.53.105.33",
+        "10.53.105.34",
+        "10.53.105.35",
+        "10.53.105.36",
+        "10.53.105.37",
+        "10.53.105.38",
+        "10.53.105.39",
+        "10.53.105.40",
+        "10.53.105.41",
+        "10.53.105.42",
+        "10.53.105.43",
+        "10.53.105.44",
+        "10.53.105.45",
+        "10.53.105.46",
+        "10.53.105.47",
+        "10.53.105.48",
+        "10.53.105.49",
+        "10.53.105.50",
+        "10.53.105.51",
+        "10.53.105.52",
+        "10.53.105.53",
+        "10.53.105.54",
+        "10.53.105.55",
+        "10.53.105.56",
+        "10.53.105.57",
+        "10.53.105.58",
+        "10.53.105.59",
+        "10.53.105.60",
+        "10.53.105.61",
+        "10.53.105.62"
+    ],
+    "routeAddress": "10.53.105.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.105.65",
+        "10.53.105.66",
+        "10.53.105.67",
+        "10.53.105.68",
+        "10.53.105.69",
+        "10.53.105.70",
+        "10.53.105.71",
+        "10.53.105.72",
+        "10.53.105.73",
+        "10.53.105.74",
+        "10.53.105.75",
+        "10.53.105.76",
+        "10.53.105.77",
+        "10.53.105.78",
+        "10.53.105.79",
+        "10.53.105.80",
+        "10.53.105.81",
+        "10.53.105.82",
+        "10.53.105.83",
+        "10.53.105.84",
+        "10.53.105.85",
+        "10.53.105.86",
+        "10.53.105.87",
+        "10.53.105.88",
+        "10.53.105.89",
+        "10.53.105.90",
+        "10.53.105.91",
+        "10.53.105.92",
+        "10.53.105.93",
+        "10.53.105.94"
+    ],
+    "corporateAddress": "10.53.105.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.105.97",
+        "10.53.105.98",
+        "10.53.105.99",
+        "10.53.105.100",
+        "10.53.105.101",
+        "10.53.105.102",
+        "10.53.105.103",
+        "10.53.105.104",
+        "10.53.105.105",
+        "10.53.105.106",
+        "10.53.105.107",
+        "10.53.105.108",
+        "10.53.105.109",
+        "10.53.105.110",
+        "10.53.105.111",
+        "10.53.105.112",
+        "10.53.105.113",
+        "10.53.105.114",
+        "10.53.105.115",
+        "10.53.105.116",
+        "10.53.105.117",
+        "10.53.105.118",
+        "10.53.105.119",
+        "10.53.105.120",
+        "10.53.105.121",
+        "10.53.105.122",
+        "10.53.105.123",
+        "10.53.105.124",
+        "10.53.105.125"
+    ],
+    "latitude": 33.183,
+    "longitude": -100.245,
+    "nodes": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.97",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..Firewall 105",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.183,
+            "Longitude": -100.245
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.98",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..Router 105",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.1",
+            "ipAddress": "10.53.105.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT.OT.Switch 209",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.99",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT.Corporate.Switch 210",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.3",
+            "ipAddress": "10.53.105.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.2",
+            "ipAddress": "10.53.105.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..RC 105",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.105.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.100",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..Host 209",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.100",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..Host 210",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.100",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..LocalDatabase 209",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.100",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..LocalWebServer 210",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.101",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..hmi 209",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.100",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..outstation 210",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 5.ASPERMONT..RC 105",
+            "destination": "Utility 5.ASPERMONT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ASPERMONT..Router 105",
+            "destination": "Utility 5.ASPERMONT..Firewall 105",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ASPERMONT..Firewall 105",
+            "destination": "Utility 5.ASPERMONT.OT.Switch 209",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ASPERMONT.OT.Switch 209",
+            "destination": "Utility 5.ASPERMONT..RC 105",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ASPERMONT..Firewall 105",
+            "destination": "Utility 5.ASPERMONT.Corporate.Switch 210",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ASPERMONT.Corporate.Switch 210",
+            "destination": "Utility 5.ASPERMONT..Host 209",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ASPERMONT.Corporate.Switch 210",
+            "destination": "Utility 5.ASPERMONT..Host 210",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ASPERMONT.Corporate.Switch 210",
+            "destination": "Utility 5.ASPERMONT..LocalDatabase 209",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.ASPERMONT.Corporate.Switch 210",
+            "destination": "Utility 5.ASPERMONT..LocalWebServer 210",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.1",
+            "ipAddress": "10.53.105.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT.OT.Switch 209",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.2",
+            "ipAddress": "10.53.105.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..RC 105",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.105.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.97",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..Firewall 105",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.183,
+            "Longitude": -100.245
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.98",
+            "ipAddress": "10.53.105.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..Router 105",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.1",
+            "ipAddress": "10.53.105.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT.OT.Switch 209",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.105.2",
+            "ipAddress": "10.53.105.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ASPERMONT",
+            "label": "Utility 5.ASPERMONT..RC 105",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.105.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

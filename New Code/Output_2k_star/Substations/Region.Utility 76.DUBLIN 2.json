@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 76.DUBLIN 2",
+    "networkLan": "10.150.579.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 76",
+    "utility_id": 150,
+    "substation": "DUBLIN 2",
+    "substationNumber": 579,
+    "OTAddress": "10.150.579.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.150.579.1",
+        "10.150.579.2",
+        "10.150.579.3",
+        "10.150.579.4",
+        "10.150.579.5",
+        "10.150.579.6",
+        "10.150.579.7",
+        "10.150.579.8",
+        "10.150.579.9",
+        "10.150.579.10",
+        "10.150.579.11",
+        "10.150.579.12",
+        "10.150.579.13",
+        "10.150.579.14",
+        "10.150.579.15",
+        "10.150.579.16",
+        "10.150.579.17",
+        "10.150.579.18",
+        "10.150.579.19",
+        "10.150.579.20",
+        "10.150.579.21",
+        "10.150.579.22",
+        "10.150.579.23",
+        "10.150.579.24",
+        "10.150.579.25",
+        "10.150.579.26",
+        "10.150.579.27",
+        "10.150.579.28",
+        "10.150.579.29",
+        "10.150.579.30",
+        "10.150.579.31",
+        "10.150.579.32",
+        "10.150.579.33",
+        "10.150.579.34",
+        "10.150.579.35",
+        "10.150.579.36",
+        "10.150.579.37",
+        "10.150.579.38",
+        "10.150.579.39",
+        "10.150.579.40",
+        "10.150.579.41",
+        "10.150.579.42",
+        "10.150.579.43",
+        "10.150.579.44",
+        "10.150.579.45",
+        "10.150.579.46",
+        "10.150.579.47",
+        "10.150.579.48",
+        "10.150.579.49",
+        "10.150.579.50",
+        "10.150.579.51",
+        "10.150.579.52",
+        "10.150.579.53",
+        "10.150.579.54",
+        "10.150.579.55",
+        "10.150.579.56",
+        "10.150.579.57",
+        "10.150.579.58",
+        "10.150.579.59",
+        "10.150.579.60",
+        "10.150.579.61",
+        "10.150.579.62"
+    ],
+    "routeAddress": "10.150.579.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.150.579.65",
+        "10.150.579.66",
+        "10.150.579.67",
+        "10.150.579.68",
+        "10.150.579.69",
+        "10.150.579.70",
+        "10.150.579.71",
+        "10.150.579.72",
+        "10.150.579.73",
+        "10.150.579.74",
+        "10.150.579.75",
+        "10.150.579.76",
+        "10.150.579.77",
+        "10.150.579.78",
+        "10.150.579.79",
+        "10.150.579.80",
+        "10.150.579.81",
+        "10.150.579.82",
+        "10.150.579.83",
+        "10.150.579.84",
+        "10.150.579.85",
+        "10.150.579.86",
+        "10.150.579.87",
+        "10.150.579.88",
+        "10.150.579.89",
+        "10.150.579.90",
+        "10.150.579.91",
+        "10.150.579.92",
+        "10.150.579.93",
+        "10.150.579.94"
+    ],
+    "corporateAddress": "10.150.579.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.150.579.97",
+        "10.150.579.98",
+        "10.150.579.99",
+        "10.150.579.100",
+        "10.150.579.101",
+        "10.150.579.102",
+        "10.150.579.103",
+        "10.150.579.104",
+        "10.150.579.105",
+        "10.150.579.106",
+        "10.150.579.107",
+        "10.150.579.108",
+        "10.150.579.109",
+        "10.150.579.110",
+        "10.150.579.111",
+        "10.150.579.112",
+        "10.150.579.113",
+        "10.150.579.114",
+        "10.150.579.115",
+        "10.150.579.116",
+        "10.150.579.117",
+        "10.150.579.118",
+        "10.150.579.119",
+        "10.150.579.120",
+        "10.150.579.121",
+        "10.150.579.122",
+        "10.150.579.123",
+        "10.150.579.124",
+        "10.150.579.125"
+    ],
+    "latitude": 32.075,
+    "longitude": -98.349,
+    "nodes": [
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.97",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..Firewall 579",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.075,
+            "Longitude": -98.349
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.98",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..Router 579",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.1",
+            "ipAddress": "10.150.579.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2.OT.Switch 1157",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.99",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2.Corporate.Switch 1158",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.3",
+            "ipAddress": "10.150.579.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.2",
+            "ipAddress": "10.150.579.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..RC 579",
+            "compromised": false,
+            "relayIPlist": [
+                "10.150.579.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.100",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..Host 1157",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.100",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..Host 1158",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.100",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..LocalDatabase 1157",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.100",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..LocalWebServer 1158",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.101",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..hmi 1157",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.100",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..outstation 1158",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 76.DUBLIN 2..RC 579",
+            "destination": "Utility 76.DUBLIN 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 76.DUBLIN 2..Router 579",
+            "destination": "Utility 76.DUBLIN 2..Firewall 579",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 76.DUBLIN 2..Firewall 579",
+            "destination": "Utility 76.DUBLIN 2.OT.Switch 1157",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 76.DUBLIN 2.OT.Switch 1157",
+            "destination": "Utility 76.DUBLIN 2..RC 579",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 76.DUBLIN 2..Firewall 579",
+            "destination": "Utility 76.DUBLIN 2.Corporate.Switch 1158",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 76.DUBLIN 2.Corporate.Switch 1158",
+            "destination": "Utility 76.DUBLIN 2..Host 1157",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 76.DUBLIN 2.Corporate.Switch 1158",
+            "destination": "Utility 76.DUBLIN 2..Host 1158",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 76.DUBLIN 2.Corporate.Switch 1158",
+            "destination": "Utility 76.DUBLIN 2..LocalDatabase 1157",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 76.DUBLIN 2.Corporate.Switch 1158",
+            "destination": "Utility 76.DUBLIN 2..LocalWebServer 1158",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.1",
+            "ipAddress": "10.150.579.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2.OT.Switch 1157",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.2",
+            "ipAddress": "10.150.579.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..RC 579",
+            "compromised": false,
+            "relayIPlist": [
+                "10.150.579.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.97",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..Firewall 579",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.075,
+            "Longitude": -98.349
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.98",
+            "ipAddress": "10.150.579.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..Router 579",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.1",
+            "ipAddress": "10.150.579.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2.OT.Switch 1157",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 76",
+            "adminIP": "10.150.579.2",
+            "ipAddress": "10.150.579.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 2",
+            "label": "Utility 76.DUBLIN 2..RC 579",
+            "compromised": false,
+            "relayIPlist": [
+                "10.150.579.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 2.WACO 1",
+    "networkLan": "10.55.456.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "WACO 1",
+    "substationNumber": 456,
+    "OTAddress": "10.55.456.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.456.1",
+        "10.55.456.2",
+        "10.55.456.3",
+        "10.55.456.4",
+        "10.55.456.5",
+        "10.55.456.6",
+        "10.55.456.7",
+        "10.55.456.8",
+        "10.55.456.9",
+        "10.55.456.10",
+        "10.55.456.11",
+        "10.55.456.12",
+        "10.55.456.13",
+        "10.55.456.14",
+        "10.55.456.15",
+        "10.55.456.16",
+        "10.55.456.17",
+        "10.55.456.18",
+        "10.55.456.19",
+        "10.55.456.20",
+        "10.55.456.21",
+        "10.55.456.22",
+        "10.55.456.23",
+        "10.55.456.24",
+        "10.55.456.25",
+        "10.55.456.26",
+        "10.55.456.27",
+        "10.55.456.28",
+        "10.55.456.29",
+        "10.55.456.30",
+        "10.55.456.31",
+        "10.55.456.32",
+        "10.55.456.33",
+        "10.55.456.34",
+        "10.55.456.35",
+        "10.55.456.36",
+        "10.55.456.37",
+        "10.55.456.38",
+        "10.55.456.39",
+        "10.55.456.40",
+        "10.55.456.41",
+        "10.55.456.42",
+        "10.55.456.43",
+        "10.55.456.44",
+        "10.55.456.45",
+        "10.55.456.46",
+        "10.55.456.47",
+        "10.55.456.48",
+        "10.55.456.49",
+        "10.55.456.50",
+        "10.55.456.51",
+        "10.55.456.52",
+        "10.55.456.53",
+        "10.55.456.54",
+        "10.55.456.55",
+        "10.55.456.56",
+        "10.55.456.57",
+        "10.55.456.58",
+        "10.55.456.59",
+        "10.55.456.60",
+        "10.55.456.61",
+        "10.55.456.62"
+    ],
+    "routeAddress": "10.55.456.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.456.65",
+        "10.55.456.66",
+        "10.55.456.67",
+        "10.55.456.68",
+        "10.55.456.69",
+        "10.55.456.70",
+        "10.55.456.71",
+        "10.55.456.72",
+        "10.55.456.73",
+        "10.55.456.74",
+        "10.55.456.75",
+        "10.55.456.76",
+        "10.55.456.77",
+        "10.55.456.78",
+        "10.55.456.79",
+        "10.55.456.80",
+        "10.55.456.81",
+        "10.55.456.82",
+        "10.55.456.83",
+        "10.55.456.84",
+        "10.55.456.85",
+        "10.55.456.86",
+        "10.55.456.87",
+        "10.55.456.88",
+        "10.55.456.89",
+        "10.55.456.90",
+        "10.55.456.91",
+        "10.55.456.92",
+        "10.55.456.93",
+        "10.55.456.94"
+    ],
+    "corporateAddress": "10.55.456.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.456.97",
+        "10.55.456.98",
+        "10.55.456.99",
+        "10.55.456.100",
+        "10.55.456.101",
+        "10.55.456.102",
+        "10.55.456.103",
+        "10.55.456.104",
+        "10.55.456.105",
+        "10.55.456.106",
+        "10.55.456.107",
+        "10.55.456.108",
+        "10.55.456.109",
+        "10.55.456.110",
+        "10.55.456.111",
+        "10.55.456.112",
+        "10.55.456.113",
+        "10.55.456.114",
+        "10.55.456.115",
+        "10.55.456.116",
+        "10.55.456.117",
+        "10.55.456.118",
+        "10.55.456.119",
+        "10.55.456.120",
+        "10.55.456.121",
+        "10.55.456.122",
+        "10.55.456.123",
+        "10.55.456.124",
+        "10.55.456.125"
+    ],
+    "latitude": 31.476,
+    "longitude": -97.084,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.97",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..Firewall 456",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.476,
+            "Longitude": -97.084
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.98",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..Router 456",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.1",
+            "ipAddress": "10.55.456.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1.OT.Switch 911",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.99",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1.Corporate.Switch 912",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.3",
+            "ipAddress": "10.55.456.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.4",
+            "ipAddress": "10.55.456.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.2",
+            "ipAddress": "10.55.456.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..RC 456",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.456.3",
+                "10.55.456.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.100",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..Host 911",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.100",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..Host 912",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.100",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..LocalDatabase 911",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.100",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..LocalWebServer 912",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.101",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..hmi 911",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.100",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..outstation 912",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.WACO 1..RC 456",
+            "destination": "Utility 2.WACO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WACO 1..RC 456",
+            "destination": "Utility 2.WACO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WACO 1..Router 456",
+            "destination": "Utility 2.WACO 1..Firewall 456",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WACO 1..Firewall 456",
+            "destination": "Utility 2.WACO 1.OT.Switch 911",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WACO 1.OT.Switch 911",
+            "destination": "Utility 2.WACO 1..RC 456",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WACO 1..Firewall 456",
+            "destination": "Utility 2.WACO 1.Corporate.Switch 912",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WACO 1.Corporate.Switch 912",
+            "destination": "Utility 2.WACO 1..Host 911",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WACO 1.Corporate.Switch 912",
+            "destination": "Utility 2.WACO 1..Host 912",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WACO 1.Corporate.Switch 912",
+            "destination": "Utility 2.WACO 1..LocalDatabase 911",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WACO 1.Corporate.Switch 912",
+            "destination": "Utility 2.WACO 1..LocalWebServer 912",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.1",
+            "ipAddress": "10.55.456.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1.OT.Switch 911",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.2",
+            "ipAddress": "10.55.456.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..RC 456",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.456.3",
+                "10.55.456.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.97",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..Firewall 456",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.476,
+            "Longitude": -97.084
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.98",
+            "ipAddress": "10.55.456.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..Router 456",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.1",
+            "ipAddress": "10.55.456.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1.OT.Switch 911",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.456.2",
+            "ipAddress": "10.55.456.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WACO 1",
+            "label": "Utility 2.WACO 1..RC 456",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.456.3",
+                "10.55.456.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 77.STRAWN",
+    "networkLan": "10.136.473.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 77",
+    "utility_id": 136,
+    "substation": "STRAWN",
+    "substationNumber": 473,
+    "OTAddress": "10.136.473.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.136.473.1",
+        "10.136.473.2",
+        "10.136.473.3",
+        "10.136.473.4",
+        "10.136.473.5",
+        "10.136.473.6",
+        "10.136.473.7",
+        "10.136.473.8",
+        "10.136.473.9",
+        "10.136.473.10",
+        "10.136.473.11",
+        "10.136.473.12",
+        "10.136.473.13",
+        "10.136.473.14",
+        "10.136.473.15",
+        "10.136.473.16",
+        "10.136.473.17",
+        "10.136.473.18",
+        "10.136.473.19",
+        "10.136.473.20",
+        "10.136.473.21",
+        "10.136.473.22",
+        "10.136.473.23",
+        "10.136.473.24",
+        "10.136.473.25",
+        "10.136.473.26",
+        "10.136.473.27",
+        "10.136.473.28",
+        "10.136.473.29",
+        "10.136.473.30",
+        "10.136.473.31",
+        "10.136.473.32",
+        "10.136.473.33",
+        "10.136.473.34",
+        "10.136.473.35",
+        "10.136.473.36",
+        "10.136.473.37",
+        "10.136.473.38",
+        "10.136.473.39",
+        "10.136.473.40",
+        "10.136.473.41",
+        "10.136.473.42",
+        "10.136.473.43",
+        "10.136.473.44",
+        "10.136.473.45",
+        "10.136.473.46",
+        "10.136.473.47",
+        "10.136.473.48",
+        "10.136.473.49",
+        "10.136.473.50",
+        "10.136.473.51",
+        "10.136.473.52",
+        "10.136.473.53",
+        "10.136.473.54",
+        "10.136.473.55",
+        "10.136.473.56",
+        "10.136.473.57",
+        "10.136.473.58",
+        "10.136.473.59",
+        "10.136.473.60",
+        "10.136.473.61",
+        "10.136.473.62"
+    ],
+    "routeAddress": "10.136.473.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.136.473.65",
+        "10.136.473.66",
+        "10.136.473.67",
+        "10.136.473.68",
+        "10.136.473.69",
+        "10.136.473.70",
+        "10.136.473.71",
+        "10.136.473.72",
+        "10.136.473.73",
+        "10.136.473.74",
+        "10.136.473.75",
+        "10.136.473.76",
+        "10.136.473.77",
+        "10.136.473.78",
+        "10.136.473.79",
+        "10.136.473.80",
+        "10.136.473.81",
+        "10.136.473.82",
+        "10.136.473.83",
+        "10.136.473.84",
+        "10.136.473.85",
+        "10.136.473.86",
+        "10.136.473.87",
+        "10.136.473.88",
+        "10.136.473.89",
+        "10.136.473.90",
+        "10.136.473.91",
+        "10.136.473.92",
+        "10.136.473.93",
+        "10.136.473.94"
+    ],
+    "corporateAddress": "10.136.473.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.136.473.97",
+        "10.136.473.98",
+        "10.136.473.99",
+        "10.136.473.100",
+        "10.136.473.101",
+        "10.136.473.102",
+        "10.136.473.103",
+        "10.136.473.104",
+        "10.136.473.105",
+        "10.136.473.106",
+        "10.136.473.107",
+        "10.136.473.108",
+        "10.136.473.109",
+        "10.136.473.110",
+        "10.136.473.111",
+        "10.136.473.112",
+        "10.136.473.113",
+        "10.136.473.114",
+        "10.136.473.115",
+        "10.136.473.116",
+        "10.136.473.117",
+        "10.136.473.118",
+        "10.136.473.119",
+        "10.136.473.120",
+        "10.136.473.121",
+        "10.136.473.122",
+        "10.136.473.123",
+        "10.136.473.124",
+        "10.136.473.125"
+    ],
+    "latitude": 32.759,
+    "longitude": -98.666,
+    "nodes": [
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.97",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..Firewall 473",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.759,
+            "Longitude": -98.666
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.98",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..Router 473",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.1",
+            "ipAddress": "10.136.473.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN.OT.Switch 945",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.99",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN.Corporate.Switch 946",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.3",
+            "ipAddress": "10.136.473.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.2",
+            "ipAddress": "10.136.473.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..RC 473",
+            "compromised": false,
+            "relayIPlist": [
+                "10.136.473.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.100",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..Host 945",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.100",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..Host 946",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.100",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..LocalDatabase 945",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.100",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..LocalWebServer 946",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.101",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..hmi 945",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.100",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..outstation 946",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 77.STRAWN..RC 473",
+            "destination": "Utility 77.STRAWN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 77.STRAWN..Router 473",
+            "destination": "Utility 77.STRAWN..Firewall 473",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 77.STRAWN..Firewall 473",
+            "destination": "Utility 77.STRAWN.OT.Switch 945",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 77.STRAWN.OT.Switch 945",
+            "destination": "Utility 77.STRAWN..RC 473",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 77.STRAWN..Firewall 473",
+            "destination": "Utility 77.STRAWN.Corporate.Switch 946",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 77.STRAWN.Corporate.Switch 946",
+            "destination": "Utility 77.STRAWN..Host 945",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 77.STRAWN.Corporate.Switch 946",
+            "destination": "Utility 77.STRAWN..Host 946",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 77.STRAWN.Corporate.Switch 946",
+            "destination": "Utility 77.STRAWN..LocalDatabase 945",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 77.STRAWN.Corporate.Switch 946",
+            "destination": "Utility 77.STRAWN..LocalWebServer 946",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.1",
+            "ipAddress": "10.136.473.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN.OT.Switch 945",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.2",
+            "ipAddress": "10.136.473.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..RC 473",
+            "compromised": false,
+            "relayIPlist": [
+                "10.136.473.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.97",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..Firewall 473",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.759,
+            "Longitude": -98.666
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.98",
+            "ipAddress": "10.136.473.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..Router 473",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.1",
+            "ipAddress": "10.136.473.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN.OT.Switch 945",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 77",
+            "adminIP": "10.136.473.2",
+            "ipAddress": "10.136.473.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "STRAWN",
+            "label": "Utility 77.STRAWN..RC 473",
+            "compromised": false,
+            "relayIPlist": [
+                "10.136.473.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

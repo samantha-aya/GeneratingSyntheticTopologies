@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 98.DEL RIO",
+    "networkLan": "10.104.177.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 98",
+    "utility_id": 104,
+    "substation": "DEL RIO",
+    "substationNumber": 177,
+    "OTAddress": "10.104.177.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.104.177.1",
+        "10.104.177.2",
+        "10.104.177.3",
+        "10.104.177.4",
+        "10.104.177.5",
+        "10.104.177.6",
+        "10.104.177.7",
+        "10.104.177.8",
+        "10.104.177.9",
+        "10.104.177.10",
+        "10.104.177.11",
+        "10.104.177.12",
+        "10.104.177.13",
+        "10.104.177.14",
+        "10.104.177.15",
+        "10.104.177.16",
+        "10.104.177.17",
+        "10.104.177.18",
+        "10.104.177.19",
+        "10.104.177.20",
+        "10.104.177.21",
+        "10.104.177.22",
+        "10.104.177.23",
+        "10.104.177.24",
+        "10.104.177.25",
+        "10.104.177.26",
+        "10.104.177.27",
+        "10.104.177.28",
+        "10.104.177.29",
+        "10.104.177.30",
+        "10.104.177.31",
+        "10.104.177.32",
+        "10.104.177.33",
+        "10.104.177.34",
+        "10.104.177.35",
+        "10.104.177.36",
+        "10.104.177.37",
+        "10.104.177.38",
+        "10.104.177.39",
+        "10.104.177.40",
+        "10.104.177.41",
+        "10.104.177.42",
+        "10.104.177.43",
+        "10.104.177.44",
+        "10.104.177.45",
+        "10.104.177.46",
+        "10.104.177.47",
+        "10.104.177.48",
+        "10.104.177.49",
+        "10.104.177.50",
+        "10.104.177.51",
+        "10.104.177.52",
+        "10.104.177.53",
+        "10.104.177.54",
+        "10.104.177.55",
+        "10.104.177.56",
+        "10.104.177.57",
+        "10.104.177.58",
+        "10.104.177.59",
+        "10.104.177.60",
+        "10.104.177.61",
+        "10.104.177.62"
+    ],
+    "routeAddress": "10.104.177.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.104.177.65",
+        "10.104.177.66",
+        "10.104.177.67",
+        "10.104.177.68",
+        "10.104.177.69",
+        "10.104.177.70",
+        "10.104.177.71",
+        "10.104.177.72",
+        "10.104.177.73",
+        "10.104.177.74",
+        "10.104.177.75",
+        "10.104.177.76",
+        "10.104.177.77",
+        "10.104.177.78",
+        "10.104.177.79",
+        "10.104.177.80",
+        "10.104.177.81",
+        "10.104.177.82",
+        "10.104.177.83",
+        "10.104.177.84",
+        "10.104.177.85",
+        "10.104.177.86",
+        "10.104.177.87",
+        "10.104.177.88",
+        "10.104.177.89",
+        "10.104.177.90",
+        "10.104.177.91",
+        "10.104.177.92",
+        "10.104.177.93",
+        "10.104.177.94"
+    ],
+    "corporateAddress": "10.104.177.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.104.177.97",
+        "10.104.177.98",
+        "10.104.177.99",
+        "10.104.177.100",
+        "10.104.177.101",
+        "10.104.177.102",
+        "10.104.177.103",
+        "10.104.177.104",
+        "10.104.177.105",
+        "10.104.177.106",
+        "10.104.177.107",
+        "10.104.177.108",
+        "10.104.177.109",
+        "10.104.177.110",
+        "10.104.177.111",
+        "10.104.177.112",
+        "10.104.177.113",
+        "10.104.177.114",
+        "10.104.177.115",
+        "10.104.177.116",
+        "10.104.177.117",
+        "10.104.177.118",
+        "10.104.177.119",
+        "10.104.177.120",
+        "10.104.177.121",
+        "10.104.177.122",
+        "10.104.177.123",
+        "10.104.177.124",
+        "10.104.177.125"
+    ],
+    "latitude": 29.837,
+    "longitude": -101.212,
+    "nodes": [
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.97",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..Firewall 177",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.837,
+            "Longitude": -101.212
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.98",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..Router 177",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.1",
+            "ipAddress": "10.104.177.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO.OT.Switch 353",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.99",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO.Corporate.Switch 354",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.3",
+            "ipAddress": "10.104.177.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.4",
+            "ipAddress": "10.104.177.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.2",
+            "ipAddress": "10.104.177.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..RC 177",
+            "compromised": false,
+            "relayIPlist": [
+                "10.104.177.3",
+                "10.104.177.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.100",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..Host 353",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.100",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..Host 354",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.100",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..LocalDatabase 353",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.100",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..LocalWebServer 354",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.101",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..hmi 353",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.100",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..outstation 354",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 98.DEL RIO..RC 177",
+            "destination": "Utility 98.DEL RIO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 98.DEL RIO..RC 177",
+            "destination": "Utility 98.DEL RIO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 98.DEL RIO..Router 177",
+            "destination": "Utility 98.DEL RIO..Firewall 177",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 98.DEL RIO..Firewall 177",
+            "destination": "Utility 98.DEL RIO.OT.Switch 353",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 98.DEL RIO.OT.Switch 353",
+            "destination": "Utility 98.DEL RIO..RC 177",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 98.DEL RIO..Firewall 177",
+            "destination": "Utility 98.DEL RIO.Corporate.Switch 354",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 98.DEL RIO.Corporate.Switch 354",
+            "destination": "Utility 98.DEL RIO..Host 353",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 98.DEL RIO.Corporate.Switch 354",
+            "destination": "Utility 98.DEL RIO..Host 354",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 98.DEL RIO.Corporate.Switch 354",
+            "destination": "Utility 98.DEL RIO..LocalDatabase 353",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 98.DEL RIO.Corporate.Switch 354",
+            "destination": "Utility 98.DEL RIO..LocalWebServer 354",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.1",
+            "ipAddress": "10.104.177.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO.OT.Switch 353",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.2",
+            "ipAddress": "10.104.177.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..RC 177",
+            "compromised": false,
+            "relayIPlist": [
+                "10.104.177.3",
+                "10.104.177.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.97",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..Firewall 177",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.837,
+            "Longitude": -101.212
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.98",
+            "ipAddress": "10.104.177.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..Router 177",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.1",
+            "ipAddress": "10.104.177.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO.OT.Switch 353",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 98",
+            "adminIP": "10.104.177.2",
+            "ipAddress": "10.104.177.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DEL RIO",
+            "label": "Utility 98.DEL RIO..RC 177",
+            "compromised": false,
+            "relayIPlist": [
+                "10.104.177.3",
+                "10.104.177.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

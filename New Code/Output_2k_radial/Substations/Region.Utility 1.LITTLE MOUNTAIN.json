@@ -1,0 +1,549 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 1.LITTLE MOUNTAIN",
+    "networkLan": "10.52.83.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 52,
+    "substation": "LITTLE MOUNTAIN",
+    "substationNumber": 83,
+    "OTAddress": "10.52.83.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.83.1",
+        "10.52.83.2",
+        "10.52.83.3",
+        "10.52.83.4",
+        "10.52.83.5",
+        "10.52.83.6",
+        "10.52.83.7",
+        "10.52.83.8",
+        "10.52.83.9",
+        "10.52.83.10",
+        "10.52.83.11",
+        "10.52.83.12",
+        "10.52.83.13",
+        "10.52.83.14",
+        "10.52.83.15",
+        "10.52.83.16",
+        "10.52.83.17",
+        "10.52.83.18",
+        "10.52.83.19",
+        "10.52.83.20",
+        "10.52.83.21",
+        "10.52.83.22",
+        "10.52.83.23",
+        "10.52.83.24",
+        "10.52.83.25",
+        "10.52.83.26",
+        "10.52.83.27",
+        "10.52.83.28",
+        "10.52.83.29",
+        "10.52.83.30",
+        "10.52.83.31",
+        "10.52.83.32",
+        "10.52.83.33",
+        "10.52.83.34",
+        "10.52.83.35",
+        "10.52.83.36",
+        "10.52.83.37",
+        "10.52.83.38",
+        "10.52.83.39",
+        "10.52.83.40",
+        "10.52.83.41",
+        "10.52.83.42",
+        "10.52.83.43",
+        "10.52.83.44",
+        "10.52.83.45",
+        "10.52.83.46",
+        "10.52.83.47",
+        "10.52.83.48",
+        "10.52.83.49",
+        "10.52.83.50",
+        "10.52.83.51",
+        "10.52.83.52",
+        "10.52.83.53",
+        "10.52.83.54",
+        "10.52.83.55",
+        "10.52.83.56",
+        "10.52.83.57",
+        "10.52.83.58",
+        "10.52.83.59",
+        "10.52.83.60",
+        "10.52.83.61",
+        "10.52.83.62"
+    ],
+    "routeAddress": "10.52.83.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.83.65",
+        "10.52.83.66",
+        "10.52.83.67",
+        "10.52.83.68",
+        "10.52.83.69",
+        "10.52.83.70",
+        "10.52.83.71",
+        "10.52.83.72",
+        "10.52.83.73",
+        "10.52.83.74",
+        "10.52.83.75",
+        "10.52.83.76",
+        "10.52.83.77",
+        "10.52.83.78",
+        "10.52.83.79",
+        "10.52.83.80",
+        "10.52.83.81",
+        "10.52.83.82",
+        "10.52.83.83",
+        "10.52.83.84",
+        "10.52.83.85",
+        "10.52.83.86",
+        "10.52.83.87",
+        "10.52.83.88",
+        "10.52.83.89",
+        "10.52.83.90",
+        "10.52.83.91",
+        "10.52.83.92",
+        "10.52.83.93",
+        "10.52.83.94"
+    ],
+    "corporateAddress": "10.52.83.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.83.97",
+        "10.52.83.98",
+        "10.52.83.99",
+        "10.52.83.100",
+        "10.52.83.101",
+        "10.52.83.102",
+        "10.52.83.103",
+        "10.52.83.104",
+        "10.52.83.105",
+        "10.52.83.106",
+        "10.52.83.107",
+        "10.52.83.108",
+        "10.52.83.109",
+        "10.52.83.110",
+        "10.52.83.111",
+        "10.52.83.112",
+        "10.52.83.113",
+        "10.52.83.114",
+        "10.52.83.115",
+        "10.52.83.116",
+        "10.52.83.117",
+        "10.52.83.118",
+        "10.52.83.119",
+        "10.52.83.120",
+        "10.52.83.121",
+        "10.52.83.122",
+        "10.52.83.123",
+        "10.52.83.124",
+        "10.52.83.125"
+    ],
+    "latitude": 34.22,
+    "longitude": -81.3,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.97",
+            "ipAddress": "10.52.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..Firewall 83",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 34.22,
+            "Longitude": -81.3
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.98",
+            "ipAddress": "10.52.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..Router 83",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.1",
+            "ipAddress": "10.52.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN.OT.Switch 165",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.99",
+            "ipAddress": "10.52.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN.Corporate.Switch 166",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.3",
+            "ipAddress": "10.52.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.4",
+            "ipAddress": "10.52.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.2",
+            "ipAddress": "10.52.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..RC 83",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.83.3",
+                "10.52.83.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.100",
+            "ipAddress": "10.52.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..Host 165",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.100",
+            "ipAddress": "10.52.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..Host 166",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.100",
+            "ipAddress": "10.52.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..LocalDatabase 165",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.100",
+            "ipAddress": "10.52.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..LocalWebServer 166",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN..RC 83",
+            "destination": "Utility 1.LITTLE MOUNTAIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN..RC 83",
+            "destination": "Utility 1.LITTLE MOUNTAIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN..Router 83",
+            "destination": "Utility 1.LITTLE MOUNTAIN..Firewall 83",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN..Firewall 83",
+            "destination": "Utility 1.LITTLE MOUNTAIN.OT.Switch 165",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN.OT.Switch 165",
+            "destination": "Utility 1.LITTLE MOUNTAIN..RC 83",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN..Firewall 83",
+            "destination": "Utility 1.LITTLE MOUNTAIN.Corporate.Switch 166",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN.Corporate.Switch 166",
+            "destination": "Utility 1.LITTLE MOUNTAIN..Host 165",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN.Corporate.Switch 166",
+            "destination": "Utility 1.LITTLE MOUNTAIN..Host 166",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN.Corporate.Switch 166",
+            "destination": "Utility 1.LITTLE MOUNTAIN..LocalDatabase 165",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LITTLE MOUNTAIN.Corporate.Switch 166",
+            "destination": "Utility 1.LITTLE MOUNTAIN..LocalWebServer 166",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.1",
+            "ipAddress": "10.52.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN.OT.Switch 165",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.2",
+            "ipAddress": "10.52.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..RC 83",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.83.3",
+                "10.52.83.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.97",
+            "ipAddress": "10.52.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..Firewall 83",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 34.22,
+            "Longitude": -81.3
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.98",
+            "ipAddress": "10.52.83.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..Router 83",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.1",
+            "ipAddress": "10.52.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN.OT.Switch 165",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.83.2",
+            "ipAddress": "10.52.83.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LITTLE MOUNTAIN",
+            "label": "Utility 1.LITTLE MOUNTAIN..RC 83",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.83.3",
+                "10.52.83.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 130.RIO VISTA",
+    "networkLan": "10.145.472.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 130",
+    "utility_id": 145,
+    "substation": "RIO VISTA",
+    "substationNumber": 472,
+    "OTAddress": "10.145.472.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.145.472.1",
+        "10.145.472.2",
+        "10.145.472.3",
+        "10.145.472.4",
+        "10.145.472.5",
+        "10.145.472.6",
+        "10.145.472.7",
+        "10.145.472.8",
+        "10.145.472.9",
+        "10.145.472.10",
+        "10.145.472.11",
+        "10.145.472.12",
+        "10.145.472.13",
+        "10.145.472.14",
+        "10.145.472.15",
+        "10.145.472.16",
+        "10.145.472.17",
+        "10.145.472.18",
+        "10.145.472.19",
+        "10.145.472.20",
+        "10.145.472.21",
+        "10.145.472.22",
+        "10.145.472.23",
+        "10.145.472.24",
+        "10.145.472.25",
+        "10.145.472.26",
+        "10.145.472.27",
+        "10.145.472.28",
+        "10.145.472.29",
+        "10.145.472.30",
+        "10.145.472.31",
+        "10.145.472.32",
+        "10.145.472.33",
+        "10.145.472.34",
+        "10.145.472.35",
+        "10.145.472.36",
+        "10.145.472.37",
+        "10.145.472.38",
+        "10.145.472.39",
+        "10.145.472.40",
+        "10.145.472.41",
+        "10.145.472.42",
+        "10.145.472.43",
+        "10.145.472.44",
+        "10.145.472.45",
+        "10.145.472.46",
+        "10.145.472.47",
+        "10.145.472.48",
+        "10.145.472.49",
+        "10.145.472.50",
+        "10.145.472.51",
+        "10.145.472.52",
+        "10.145.472.53",
+        "10.145.472.54",
+        "10.145.472.55",
+        "10.145.472.56",
+        "10.145.472.57",
+        "10.145.472.58",
+        "10.145.472.59",
+        "10.145.472.60",
+        "10.145.472.61",
+        "10.145.472.62"
+    ],
+    "routeAddress": "10.145.472.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.145.472.65",
+        "10.145.472.66",
+        "10.145.472.67",
+        "10.145.472.68",
+        "10.145.472.69",
+        "10.145.472.70",
+        "10.145.472.71",
+        "10.145.472.72",
+        "10.145.472.73",
+        "10.145.472.74",
+        "10.145.472.75",
+        "10.145.472.76",
+        "10.145.472.77",
+        "10.145.472.78",
+        "10.145.472.79",
+        "10.145.472.80",
+        "10.145.472.81",
+        "10.145.472.82",
+        "10.145.472.83",
+        "10.145.472.84",
+        "10.145.472.85",
+        "10.145.472.86",
+        "10.145.472.87",
+        "10.145.472.88",
+        "10.145.472.89",
+        "10.145.472.90",
+        "10.145.472.91",
+        "10.145.472.92",
+        "10.145.472.93",
+        "10.145.472.94"
+    ],
+    "corporateAddress": "10.145.472.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.145.472.97",
+        "10.145.472.98",
+        "10.145.472.99",
+        "10.145.472.100",
+        "10.145.472.101",
+        "10.145.472.102",
+        "10.145.472.103",
+        "10.145.472.104",
+        "10.145.472.105",
+        "10.145.472.106",
+        "10.145.472.107",
+        "10.145.472.108",
+        "10.145.472.109",
+        "10.145.472.110",
+        "10.145.472.111",
+        "10.145.472.112",
+        "10.145.472.113",
+        "10.145.472.114",
+        "10.145.472.115",
+        "10.145.472.116",
+        "10.145.472.117",
+        "10.145.472.118",
+        "10.145.472.119",
+        "10.145.472.120",
+        "10.145.472.121",
+        "10.145.472.122",
+        "10.145.472.123",
+        "10.145.472.124",
+        "10.145.472.125"
+    ],
+    "latitude": 32.109,
+    "longitude": -97.396,
+    "nodes": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.97",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..Firewall 472",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.109,
+            "Longitude": -97.396
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.98",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..Router 472",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.1",
+            "ipAddress": "10.145.472.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA.OT.Switch 943",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.99",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA.Corporate.Switch 944",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.3",
+            "ipAddress": "10.145.472.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.2",
+            "ipAddress": "10.145.472.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..RC 472",
+            "compromised": false,
+            "relayIPlist": [
+                "10.145.472.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.100",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..Host 943",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.100",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..Host 944",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.100",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..LocalDatabase 943",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.100",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..LocalWebServer 944",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.101",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..hmi 943",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.100",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..outstation 944",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 130.RIO VISTA..RC 472",
+            "destination": "Utility 130.RIO VISTA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.RIO VISTA..Router 472",
+            "destination": "Utility 130.RIO VISTA..Firewall 472",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.RIO VISTA..Firewall 472",
+            "destination": "Utility 130.RIO VISTA.OT.Switch 943",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.RIO VISTA.OT.Switch 943",
+            "destination": "Utility 130.RIO VISTA..RC 472",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.RIO VISTA..Firewall 472",
+            "destination": "Utility 130.RIO VISTA.Corporate.Switch 944",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.RIO VISTA.Corporate.Switch 944",
+            "destination": "Utility 130.RIO VISTA..Host 943",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.RIO VISTA.Corporate.Switch 944",
+            "destination": "Utility 130.RIO VISTA..Host 944",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.RIO VISTA.Corporate.Switch 944",
+            "destination": "Utility 130.RIO VISTA..LocalDatabase 943",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.RIO VISTA.Corporate.Switch 944",
+            "destination": "Utility 130.RIO VISTA..LocalWebServer 944",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.1",
+            "ipAddress": "10.145.472.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA.OT.Switch 943",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.2",
+            "ipAddress": "10.145.472.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..RC 472",
+            "compromised": false,
+            "relayIPlist": [
+                "10.145.472.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.97",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..Firewall 472",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.109,
+            "Longitude": -97.396
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.98",
+            "ipAddress": "10.145.472.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..Router 472",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.1",
+            "ipAddress": "10.145.472.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA.OT.Switch 943",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.472.2",
+            "ipAddress": "10.145.472.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RIO VISTA",
+            "label": "Utility 130.RIO VISTA..RC 472",
+            "compromised": false,
+            "relayIPlist": [
+                "10.145.472.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

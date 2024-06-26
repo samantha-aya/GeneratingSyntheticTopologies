@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 37.WHITEWRIGHT",
+    "networkLan": "10.70.126.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 37",
+    "utility_id": 70,
+    "substation": "WHITEWRIGHT",
+    "substationNumber": 126,
+    "OTAddress": "10.70.126.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.70.126.1",
+        "10.70.126.2",
+        "10.70.126.3",
+        "10.70.126.4",
+        "10.70.126.5",
+        "10.70.126.6",
+        "10.70.126.7",
+        "10.70.126.8",
+        "10.70.126.9",
+        "10.70.126.10",
+        "10.70.126.11",
+        "10.70.126.12",
+        "10.70.126.13",
+        "10.70.126.14",
+        "10.70.126.15",
+        "10.70.126.16",
+        "10.70.126.17",
+        "10.70.126.18",
+        "10.70.126.19",
+        "10.70.126.20",
+        "10.70.126.21",
+        "10.70.126.22",
+        "10.70.126.23",
+        "10.70.126.24",
+        "10.70.126.25",
+        "10.70.126.26",
+        "10.70.126.27",
+        "10.70.126.28",
+        "10.70.126.29",
+        "10.70.126.30",
+        "10.70.126.31",
+        "10.70.126.32",
+        "10.70.126.33",
+        "10.70.126.34",
+        "10.70.126.35",
+        "10.70.126.36",
+        "10.70.126.37",
+        "10.70.126.38",
+        "10.70.126.39",
+        "10.70.126.40",
+        "10.70.126.41",
+        "10.70.126.42",
+        "10.70.126.43",
+        "10.70.126.44",
+        "10.70.126.45",
+        "10.70.126.46",
+        "10.70.126.47",
+        "10.70.126.48",
+        "10.70.126.49",
+        "10.70.126.50",
+        "10.70.126.51",
+        "10.70.126.52",
+        "10.70.126.53",
+        "10.70.126.54",
+        "10.70.126.55",
+        "10.70.126.56",
+        "10.70.126.57",
+        "10.70.126.58",
+        "10.70.126.59",
+        "10.70.126.60",
+        "10.70.126.61",
+        "10.70.126.62"
+    ],
+    "routeAddress": "10.70.126.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.70.126.65",
+        "10.70.126.66",
+        "10.70.126.67",
+        "10.70.126.68",
+        "10.70.126.69",
+        "10.70.126.70",
+        "10.70.126.71",
+        "10.70.126.72",
+        "10.70.126.73",
+        "10.70.126.74",
+        "10.70.126.75",
+        "10.70.126.76",
+        "10.70.126.77",
+        "10.70.126.78",
+        "10.70.126.79",
+        "10.70.126.80",
+        "10.70.126.81",
+        "10.70.126.82",
+        "10.70.126.83",
+        "10.70.126.84",
+        "10.70.126.85",
+        "10.70.126.86",
+        "10.70.126.87",
+        "10.70.126.88",
+        "10.70.126.89",
+        "10.70.126.90",
+        "10.70.126.91",
+        "10.70.126.92",
+        "10.70.126.93",
+        "10.70.126.94"
+    ],
+    "corporateAddress": "10.70.126.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.70.126.97",
+        "10.70.126.98",
+        "10.70.126.99",
+        "10.70.126.100",
+        "10.70.126.101",
+        "10.70.126.102",
+        "10.70.126.103",
+        "10.70.126.104",
+        "10.70.126.105",
+        "10.70.126.106",
+        "10.70.126.107",
+        "10.70.126.108",
+        "10.70.126.109",
+        "10.70.126.110",
+        "10.70.126.111",
+        "10.70.126.112",
+        "10.70.126.113",
+        "10.70.126.114",
+        "10.70.126.115",
+        "10.70.126.116",
+        "10.70.126.117",
+        "10.70.126.118",
+        "10.70.126.119",
+        "10.70.126.120",
+        "10.70.126.121",
+        "10.70.126.122",
+        "10.70.126.123",
+        "10.70.126.124",
+        "10.70.126.125"
+    ],
+    "latitude": 33.495,
+    "longitude": -96.396,
+    "nodes": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.97",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..Firewall 126",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.495,
+            "Longitude": -96.396
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.98",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..Router 126",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.1",
+            "ipAddress": "10.70.126.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT.OT.Switch 251",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.99",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT.Corporate.Switch 252",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.3",
+            "ipAddress": "10.70.126.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.2",
+            "ipAddress": "10.70.126.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..RC 126",
+            "compromised": false,
+            "relayIPlist": [
+                "10.70.126.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.100",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..Host 251",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.100",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..Host 252",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.100",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..LocalDatabase 251",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.100",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..LocalWebServer 252",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.101",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..hmi 251",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.100",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..outstation 252",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 37.WHITEWRIGHT..RC 126",
+            "destination": "Utility 37.WHITEWRIGHT..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.WHITEWRIGHT..Router 126",
+            "destination": "Utility 37.WHITEWRIGHT..Firewall 126",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.WHITEWRIGHT..Firewall 126",
+            "destination": "Utility 37.WHITEWRIGHT.OT.Switch 251",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.WHITEWRIGHT.OT.Switch 251",
+            "destination": "Utility 37.WHITEWRIGHT..RC 126",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.WHITEWRIGHT..Firewall 126",
+            "destination": "Utility 37.WHITEWRIGHT.Corporate.Switch 252",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.WHITEWRIGHT.Corporate.Switch 252",
+            "destination": "Utility 37.WHITEWRIGHT..Host 251",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.WHITEWRIGHT.Corporate.Switch 252",
+            "destination": "Utility 37.WHITEWRIGHT..Host 252",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.WHITEWRIGHT.Corporate.Switch 252",
+            "destination": "Utility 37.WHITEWRIGHT..LocalDatabase 251",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.WHITEWRIGHT.Corporate.Switch 252",
+            "destination": "Utility 37.WHITEWRIGHT..LocalWebServer 252",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.1",
+            "ipAddress": "10.70.126.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT.OT.Switch 251",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.2",
+            "ipAddress": "10.70.126.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..RC 126",
+            "compromised": false,
+            "relayIPlist": [
+                "10.70.126.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.97",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..Firewall 126",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.495,
+            "Longitude": -96.396
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.98",
+            "ipAddress": "10.70.126.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..Router 126",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.1",
+            "ipAddress": "10.70.126.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT.OT.Switch 251",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.126.2",
+            "ipAddress": "10.70.126.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WHITEWRIGHT",
+            "label": "Utility 37.WHITEWRIGHT..RC 126",
+            "compromised": false,
+            "relayIPlist": [
+                "10.70.126.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

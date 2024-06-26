@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 from scipy.optimize import linear_sum_assignment
+import logging
+logger = logging.getLogger('progress.log')
 
 
 def calculate_centroid(pos):
@@ -23,21 +25,37 @@ def rotate_positions(pos, angle, centroid):
         node: rot_matrix.dot(np.array([pos[node][0] - centroid[0], pos[node][1] - centroid[1]])).tolist() + np.array(
             centroid) for node in pos}
 
+# Function to find the closest node in pos1 for each node in pos2
+def find_closest(pos, reference):
+    closest = {}
+    for key, value in pos.items():
+        closest_node = None
+        min_dist = float('inf')
+        for ref_key, ref_value in reference.items():
+            dist = np.linalg.norm(np.array(value) - np.array(ref_value))
+            if dist < min_dist:
+                min_dist = dist
+                closest_node = ref_key
+        closest[key] = closest_node
+    return closest
 
 def optimize_alignment(pos1, pos2, centroid1, steps=360):
     best_score = float('inf')
     best_pos = {}
 
+    # Mapping pos2 nodes to pos1 based on spatial proximity
+    node_mapping = find_closest(pos2, pos1)
+
     for angle_deg in np.linspace(0, 360, steps, endpoint=False):
         angle_rad = np.radians(angle_deg)
         pos2_rotated = rotate_positions(pos2, angle_rad, centroid1)
 
-        # Calculate score only for common nodes
-        common_nodes = set(pos1.keys()).intersection(pos2_rotated.keys())
-        if not common_nodes:  # Check if there are any common nodes to avoid empty sum
-            continue
-
-        score = sum(np.linalg.norm(np.array(pos1[node]) - np.array(pos2_rotated[node])) for node in common_nodes)
+        score = 0
+        for node2, pos2_val in pos2_rotated.items():
+            if node2 in node_mapping:
+                node1 = node_mapping[node2]
+                # Calculate score using the mapped nodes
+                score += np.linalg.norm(np.array(pos1[node1]) - np.array(pos2_val))
 
         if score < best_score:
             best_score = score
@@ -57,7 +75,7 @@ def map_labels_and_geo(G1, pos1, G2, optimized_pos):
         G2.nodes[node2]['pos'] = pos1[closest_node1]
     return label_mapping
 
-def map_labels_and_geo_unique(G1, pos1, G2, optimized_pos):
+def map_labels_and_geo_unique(G1, pos1, G2, optimized_pos, itera):
     # Create a cost matrix based on distances between nodes in G1 and optimized_pos (G2's nodes)
     size_G1 = len(G1.nodes())
     size_G2 = len(G2.nodes())
@@ -65,6 +83,8 @@ def map_labels_and_geo_unique(G1, pos1, G2, optimized_pos):
 
     G1_nodes = list(G1.nodes())
     G2_nodes = list(G2.nodes())
+
+    logger.info('Optimized Positions: %s', optimized_pos)
 
     for i, node2 in enumerate(G2_nodes):
         for j, node1 in enumerate(G1_nodes):
@@ -85,7 +105,7 @@ def map_labels_and_geo_unique(G1, pos1, G2, optimized_pos):
 
     return label_mapping
 
-def main(cyber_nwk, power_nwk):
+def main(cyber_nwk, power_nwk, itera):
     # Assuming G1 and G2 are passed correctly and have node attributes 'Latitude' and 'Longitude'
     G1 = power_nwk
     G2 = cyber_nwk
@@ -104,9 +124,10 @@ def main(cyber_nwk, power_nwk):
     pos2_translated = translate_positions(pos2, translation)
 
     optimized_pos2, _ = optimize_alignment(pos1, pos2_translated, centroid1)
+    logging.info('Optimized positions for G2: %s', optimized_pos2)
 
     # Mapping labels and geographic information with unique assignment
-    mapping_test = map_labels_and_geo_unique(G1, pos1, G2, optimized_pos2)
+    mapping_test = map_labels_and_geo_unique(G1, pos1, G2, optimized_pos2, itera)
 
     # Plotting
     plt.figure(figsize=(14, 7))

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 143.MERTENS",
+    "networkLan": "10.157.485.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 143",
+    "utility_id": 157,
+    "substation": "MERTENS",
+    "substationNumber": 485,
+    "OTAddress": "10.157.485.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.157.485.1",
+        "10.157.485.2",
+        "10.157.485.3",
+        "10.157.485.4",
+        "10.157.485.5",
+        "10.157.485.6",
+        "10.157.485.7",
+        "10.157.485.8",
+        "10.157.485.9",
+        "10.157.485.10",
+        "10.157.485.11",
+        "10.157.485.12",
+        "10.157.485.13",
+        "10.157.485.14",
+        "10.157.485.15",
+        "10.157.485.16",
+        "10.157.485.17",
+        "10.157.485.18",
+        "10.157.485.19",
+        "10.157.485.20",
+        "10.157.485.21",
+        "10.157.485.22",
+        "10.157.485.23",
+        "10.157.485.24",
+        "10.157.485.25",
+        "10.157.485.26",
+        "10.157.485.27",
+        "10.157.485.28",
+        "10.157.485.29",
+        "10.157.485.30",
+        "10.157.485.31",
+        "10.157.485.32",
+        "10.157.485.33",
+        "10.157.485.34",
+        "10.157.485.35",
+        "10.157.485.36",
+        "10.157.485.37",
+        "10.157.485.38",
+        "10.157.485.39",
+        "10.157.485.40",
+        "10.157.485.41",
+        "10.157.485.42",
+        "10.157.485.43",
+        "10.157.485.44",
+        "10.157.485.45",
+        "10.157.485.46",
+        "10.157.485.47",
+        "10.157.485.48",
+        "10.157.485.49",
+        "10.157.485.50",
+        "10.157.485.51",
+        "10.157.485.52",
+        "10.157.485.53",
+        "10.157.485.54",
+        "10.157.485.55",
+        "10.157.485.56",
+        "10.157.485.57",
+        "10.157.485.58",
+        "10.157.485.59",
+        "10.157.485.60",
+        "10.157.485.61",
+        "10.157.485.62"
+    ],
+    "routeAddress": "10.157.485.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.157.485.65",
+        "10.157.485.66",
+        "10.157.485.67",
+        "10.157.485.68",
+        "10.157.485.69",
+        "10.157.485.70",
+        "10.157.485.71",
+        "10.157.485.72",
+        "10.157.485.73",
+        "10.157.485.74",
+        "10.157.485.75",
+        "10.157.485.76",
+        "10.157.485.77",
+        "10.157.485.78",
+        "10.157.485.79",
+        "10.157.485.80",
+        "10.157.485.81",
+        "10.157.485.82",
+        "10.157.485.83",
+        "10.157.485.84",
+        "10.157.485.85",
+        "10.157.485.86",
+        "10.157.485.87",
+        "10.157.485.88",
+        "10.157.485.89",
+        "10.157.485.90",
+        "10.157.485.91",
+        "10.157.485.92",
+        "10.157.485.93",
+        "10.157.485.94"
+    ],
+    "corporateAddress": "10.157.485.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.157.485.97",
+        "10.157.485.98",
+        "10.157.485.99",
+        "10.157.485.100",
+        "10.157.485.101",
+        "10.157.485.102",
+        "10.157.485.103",
+        "10.157.485.104",
+        "10.157.485.105",
+        "10.157.485.106",
+        "10.157.485.107",
+        "10.157.485.108",
+        "10.157.485.109",
+        "10.157.485.110",
+        "10.157.485.111",
+        "10.157.485.112",
+        "10.157.485.113",
+        "10.157.485.114",
+        "10.157.485.115",
+        "10.157.485.116",
+        "10.157.485.117",
+        "10.157.485.118",
+        "10.157.485.119",
+        "10.157.485.120",
+        "10.157.485.121",
+        "10.157.485.122",
+        "10.157.485.123",
+        "10.157.485.124",
+        "10.157.485.125"
+    ],
+    "latitude": 32.044,
+    "longitude": -96.915,
+    "nodes": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.97",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..Firewall 485",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.044,
+            "Longitude": -96.915
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.98",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..Router 485",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.1",
+            "ipAddress": "10.157.485.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS.OT.Switch 969",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.99",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS.Corporate.Switch 970",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.3",
+            "ipAddress": "10.157.485.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.2",
+            "ipAddress": "10.157.485.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..RC 485",
+            "compromised": false,
+            "relayIPlist": [
+                "10.157.485.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.100",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..Host 969",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.100",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..Host 970",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.100",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..LocalDatabase 969",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.100",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..LocalWebServer 970",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.101",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..hmi 969",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.100",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..outstation 970",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 143.MERTENS..RC 485",
+            "destination": "Utility 143.MERTENS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.MERTENS..Router 485",
+            "destination": "Utility 143.MERTENS..Firewall 485",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.MERTENS..Firewall 485",
+            "destination": "Utility 143.MERTENS.OT.Switch 969",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.MERTENS.OT.Switch 969",
+            "destination": "Utility 143.MERTENS..RC 485",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.MERTENS..Firewall 485",
+            "destination": "Utility 143.MERTENS.Corporate.Switch 970",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.MERTENS.Corporate.Switch 970",
+            "destination": "Utility 143.MERTENS..Host 969",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.MERTENS.Corporate.Switch 970",
+            "destination": "Utility 143.MERTENS..Host 970",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.MERTENS.Corporate.Switch 970",
+            "destination": "Utility 143.MERTENS..LocalDatabase 969",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.MERTENS.Corporate.Switch 970",
+            "destination": "Utility 143.MERTENS..LocalWebServer 970",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.1",
+            "ipAddress": "10.157.485.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS.OT.Switch 969",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.2",
+            "ipAddress": "10.157.485.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..RC 485",
+            "compromised": false,
+            "relayIPlist": [
+                "10.157.485.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.97",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..Firewall 485",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.044,
+            "Longitude": -96.915
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.98",
+            "ipAddress": "10.157.485.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..Router 485",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.1",
+            "ipAddress": "10.157.485.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS.OT.Switch 969",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.485.2",
+            "ipAddress": "10.157.485.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERTENS",
+            "label": "Utility 143.MERTENS..RC 485",
+            "compromised": false,
+            "relayIPlist": [
+                "10.157.485.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

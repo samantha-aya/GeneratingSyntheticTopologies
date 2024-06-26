@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.ELDORADO",
+    "networkLan": "10.100.162.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 100,
+    "substation": "ELDORADO",
+    "substationNumber": 162,
+    "OTAddress": "10.100.162.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.100.162.1",
+        "10.100.162.2",
+        "10.100.162.3",
+        "10.100.162.4",
+        "10.100.162.5",
+        "10.100.162.6",
+        "10.100.162.7",
+        "10.100.162.8",
+        "10.100.162.9",
+        "10.100.162.10",
+        "10.100.162.11",
+        "10.100.162.12",
+        "10.100.162.13",
+        "10.100.162.14",
+        "10.100.162.15",
+        "10.100.162.16",
+        "10.100.162.17",
+        "10.100.162.18",
+        "10.100.162.19",
+        "10.100.162.20",
+        "10.100.162.21",
+        "10.100.162.22",
+        "10.100.162.23",
+        "10.100.162.24",
+        "10.100.162.25",
+        "10.100.162.26",
+        "10.100.162.27",
+        "10.100.162.28",
+        "10.100.162.29",
+        "10.100.162.30",
+        "10.100.162.31",
+        "10.100.162.32",
+        "10.100.162.33",
+        "10.100.162.34",
+        "10.100.162.35",
+        "10.100.162.36",
+        "10.100.162.37",
+        "10.100.162.38",
+        "10.100.162.39",
+        "10.100.162.40",
+        "10.100.162.41",
+        "10.100.162.42",
+        "10.100.162.43",
+        "10.100.162.44",
+        "10.100.162.45",
+        "10.100.162.46",
+        "10.100.162.47",
+        "10.100.162.48",
+        "10.100.162.49",
+        "10.100.162.50",
+        "10.100.162.51",
+        "10.100.162.52",
+        "10.100.162.53",
+        "10.100.162.54",
+        "10.100.162.55",
+        "10.100.162.56",
+        "10.100.162.57",
+        "10.100.162.58",
+        "10.100.162.59",
+        "10.100.162.60",
+        "10.100.162.61",
+        "10.100.162.62"
+    ],
+    "routeAddress": "10.100.162.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.100.162.65",
+        "10.100.162.66",
+        "10.100.162.67",
+        "10.100.162.68",
+        "10.100.162.69",
+        "10.100.162.70",
+        "10.100.162.71",
+        "10.100.162.72",
+        "10.100.162.73",
+        "10.100.162.74",
+        "10.100.162.75",
+        "10.100.162.76",
+        "10.100.162.77",
+        "10.100.162.78",
+        "10.100.162.79",
+        "10.100.162.80",
+        "10.100.162.81",
+        "10.100.162.82",
+        "10.100.162.83",
+        "10.100.162.84",
+        "10.100.162.85",
+        "10.100.162.86",
+        "10.100.162.87",
+        "10.100.162.88",
+        "10.100.162.89",
+        "10.100.162.90",
+        "10.100.162.91",
+        "10.100.162.92",
+        "10.100.162.93",
+        "10.100.162.94"
+    ],
+    "corporateAddress": "10.100.162.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.100.162.97",
+        "10.100.162.98",
+        "10.100.162.99",
+        "10.100.162.100",
+        "10.100.162.101",
+        "10.100.162.102",
+        "10.100.162.103",
+        "10.100.162.104",
+        "10.100.162.105",
+        "10.100.162.106",
+        "10.100.162.107",
+        "10.100.162.108",
+        "10.100.162.109",
+        "10.100.162.110",
+        "10.100.162.111",
+        "10.100.162.112",
+        "10.100.162.113",
+        "10.100.162.114",
+        "10.100.162.115",
+        "10.100.162.116",
+        "10.100.162.117",
+        "10.100.162.118",
+        "10.100.162.119",
+        "10.100.162.120",
+        "10.100.162.121",
+        "10.100.162.122",
+        "10.100.162.123",
+        "10.100.162.124",
+        "10.100.162.125"
+    ],
+    "latitude": 30.884,
+    "longitude": -100.595,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.97",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..Firewall 162",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.884,
+            "Longitude": -100.595
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.98",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..Router 162",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.1",
+            "ipAddress": "10.100.162.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO.OT.Switch 323",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.99",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO.Corporate.Switch 324",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.3",
+            "ipAddress": "10.100.162.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.2",
+            "ipAddress": "10.100.162.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..RC 162",
+            "compromised": false,
+            "relayIPlist": [
+                "10.100.162.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.100",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..Host 323",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.100",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..Host 324",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.100",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..LocalDatabase 323",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.100",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..LocalWebServer 324",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.101",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..hmi 323",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.100",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..outstation 324",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.ELDORADO..RC 162",
+            "destination": "Utility 3.ELDORADO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.ELDORADO..Router 162",
+            "destination": "Utility 3.ELDORADO..Firewall 162",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.ELDORADO..Firewall 162",
+            "destination": "Utility 3.ELDORADO.OT.Switch 323",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.ELDORADO.OT.Switch 323",
+            "destination": "Utility 3.ELDORADO..RC 162",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.ELDORADO..Firewall 162",
+            "destination": "Utility 3.ELDORADO.Corporate.Switch 324",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.ELDORADO.Corporate.Switch 324",
+            "destination": "Utility 3.ELDORADO..Host 323",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.ELDORADO.Corporate.Switch 324",
+            "destination": "Utility 3.ELDORADO..Host 324",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.ELDORADO.Corporate.Switch 324",
+            "destination": "Utility 3.ELDORADO..LocalDatabase 323",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.ELDORADO.Corporate.Switch 324",
+            "destination": "Utility 3.ELDORADO..LocalWebServer 324",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.1",
+            "ipAddress": "10.100.162.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO.OT.Switch 323",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.2",
+            "ipAddress": "10.100.162.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..RC 162",
+            "compromised": false,
+            "relayIPlist": [
+                "10.100.162.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.97",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..Firewall 162",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.884,
+            "Longitude": -100.595
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.98",
+            "ipAddress": "10.100.162.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..Router 162",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.1",
+            "ipAddress": "10.100.162.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO.OT.Switch 323",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.100.162.2",
+            "ipAddress": "10.100.162.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ELDORADO",
+            "label": "Utility 3.ELDORADO..RC 162",
+            "compromised": false,
+            "relayIPlist": [
+                "10.100.162.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 53.ALEDO 2",
+    "networkLan": "10.147.590.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 53",
+    "utility_id": 147,
+    "substation": "ALEDO 2",
+    "substationNumber": 590,
+    "OTAddress": "10.147.590.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.147.590.1",
+        "10.147.590.2",
+        "10.147.590.3",
+        "10.147.590.4",
+        "10.147.590.5",
+        "10.147.590.6",
+        "10.147.590.7",
+        "10.147.590.8",
+        "10.147.590.9",
+        "10.147.590.10",
+        "10.147.590.11",
+        "10.147.590.12",
+        "10.147.590.13",
+        "10.147.590.14",
+        "10.147.590.15",
+        "10.147.590.16",
+        "10.147.590.17",
+        "10.147.590.18",
+        "10.147.590.19",
+        "10.147.590.20",
+        "10.147.590.21",
+        "10.147.590.22",
+        "10.147.590.23",
+        "10.147.590.24",
+        "10.147.590.25",
+        "10.147.590.26",
+        "10.147.590.27",
+        "10.147.590.28",
+        "10.147.590.29",
+        "10.147.590.30",
+        "10.147.590.31",
+        "10.147.590.32",
+        "10.147.590.33",
+        "10.147.590.34",
+        "10.147.590.35",
+        "10.147.590.36",
+        "10.147.590.37",
+        "10.147.590.38",
+        "10.147.590.39",
+        "10.147.590.40",
+        "10.147.590.41",
+        "10.147.590.42",
+        "10.147.590.43",
+        "10.147.590.44",
+        "10.147.590.45",
+        "10.147.590.46",
+        "10.147.590.47",
+        "10.147.590.48",
+        "10.147.590.49",
+        "10.147.590.50",
+        "10.147.590.51",
+        "10.147.590.52",
+        "10.147.590.53",
+        "10.147.590.54",
+        "10.147.590.55",
+        "10.147.590.56",
+        "10.147.590.57",
+        "10.147.590.58",
+        "10.147.590.59",
+        "10.147.590.60",
+        "10.147.590.61",
+        "10.147.590.62"
+    ],
+    "routeAddress": "10.147.590.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.147.590.65",
+        "10.147.590.66",
+        "10.147.590.67",
+        "10.147.590.68",
+        "10.147.590.69",
+        "10.147.590.70",
+        "10.147.590.71",
+        "10.147.590.72",
+        "10.147.590.73",
+        "10.147.590.74",
+        "10.147.590.75",
+        "10.147.590.76",
+        "10.147.590.77",
+        "10.147.590.78",
+        "10.147.590.79",
+        "10.147.590.80",
+        "10.147.590.81",
+        "10.147.590.82",
+        "10.147.590.83",
+        "10.147.590.84",
+        "10.147.590.85",
+        "10.147.590.86",
+        "10.147.590.87",
+        "10.147.590.88",
+        "10.147.590.89",
+        "10.147.590.90",
+        "10.147.590.91",
+        "10.147.590.92",
+        "10.147.590.93",
+        "10.147.590.94"
+    ],
+    "corporateAddress": "10.147.590.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.147.590.97",
+        "10.147.590.98",
+        "10.147.590.99",
+        "10.147.590.100",
+        "10.147.590.101",
+        "10.147.590.102",
+        "10.147.590.103",
+        "10.147.590.104",
+        "10.147.590.105",
+        "10.147.590.106",
+        "10.147.590.107",
+        "10.147.590.108",
+        "10.147.590.109",
+        "10.147.590.110",
+        "10.147.590.111",
+        "10.147.590.112",
+        "10.147.590.113",
+        "10.147.590.114",
+        "10.147.590.115",
+        "10.147.590.116",
+        "10.147.590.117",
+        "10.147.590.118",
+        "10.147.590.119",
+        "10.147.590.120",
+        "10.147.590.121",
+        "10.147.590.122",
+        "10.147.590.123",
+        "10.147.590.124",
+        "10.147.590.125"
+    ],
+    "latitude": 32.696,
+    "longitude": -97.631,
+    "nodes": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.97",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..Firewall 590",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.696,
+            "Longitude": -97.631
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.98",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..Router 590",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.1",
+            "ipAddress": "10.147.590.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2.OT.Switch 1179",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.99",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2.Corporate.Switch 1180",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.3",
+            "ipAddress": "10.147.590.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.2",
+            "ipAddress": "10.147.590.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..RC 590",
+            "compromised": false,
+            "relayIPlist": [
+                "10.147.590.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.100",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..Host 1179",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.100",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..Host 1180",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.100",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..LocalDatabase 1179",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.100",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..LocalWebServer 1180",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.101",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..hmi 1179",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.100",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..outstation 1180",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 53.ALEDO 2..RC 590",
+            "destination": "Utility 53.ALEDO 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.ALEDO 2..Router 590",
+            "destination": "Utility 53.ALEDO 2..Firewall 590",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.ALEDO 2..Firewall 590",
+            "destination": "Utility 53.ALEDO 2.OT.Switch 1179",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.ALEDO 2.OT.Switch 1179",
+            "destination": "Utility 53.ALEDO 2..RC 590",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.ALEDO 2..Firewall 590",
+            "destination": "Utility 53.ALEDO 2.Corporate.Switch 1180",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.ALEDO 2.Corporate.Switch 1180",
+            "destination": "Utility 53.ALEDO 2..Host 1179",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.ALEDO 2.Corporate.Switch 1180",
+            "destination": "Utility 53.ALEDO 2..Host 1180",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.ALEDO 2.Corporate.Switch 1180",
+            "destination": "Utility 53.ALEDO 2..LocalDatabase 1179",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.ALEDO 2.Corporate.Switch 1180",
+            "destination": "Utility 53.ALEDO 2..LocalWebServer 1180",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.1",
+            "ipAddress": "10.147.590.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2.OT.Switch 1179",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.2",
+            "ipAddress": "10.147.590.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..RC 590",
+            "compromised": false,
+            "relayIPlist": [
+                "10.147.590.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.97",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..Firewall 590",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.696,
+            "Longitude": -97.631
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.98",
+            "ipAddress": "10.147.590.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..Router 590",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.1",
+            "ipAddress": "10.147.590.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2.OT.Switch 1179",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.590.2",
+            "ipAddress": "10.147.590.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ALEDO 2",
+            "label": "Utility 53.ALEDO 2..RC 590",
+            "compromised": false,
+            "relayIPlist": [
+                "10.147.590.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

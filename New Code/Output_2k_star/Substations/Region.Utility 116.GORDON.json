@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 116.GORDON",
+    "networkLan": "10.135.503.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 116",
+    "utility_id": 135,
+    "substation": "GORDON",
+    "substationNumber": 503,
+    "OTAddress": "10.135.503.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.135.503.1",
+        "10.135.503.2",
+        "10.135.503.3",
+        "10.135.503.4",
+        "10.135.503.5",
+        "10.135.503.6",
+        "10.135.503.7",
+        "10.135.503.8",
+        "10.135.503.9",
+        "10.135.503.10",
+        "10.135.503.11",
+        "10.135.503.12",
+        "10.135.503.13",
+        "10.135.503.14",
+        "10.135.503.15",
+        "10.135.503.16",
+        "10.135.503.17",
+        "10.135.503.18",
+        "10.135.503.19",
+        "10.135.503.20",
+        "10.135.503.21",
+        "10.135.503.22",
+        "10.135.503.23",
+        "10.135.503.24",
+        "10.135.503.25",
+        "10.135.503.26",
+        "10.135.503.27",
+        "10.135.503.28",
+        "10.135.503.29",
+        "10.135.503.30",
+        "10.135.503.31",
+        "10.135.503.32",
+        "10.135.503.33",
+        "10.135.503.34",
+        "10.135.503.35",
+        "10.135.503.36",
+        "10.135.503.37",
+        "10.135.503.38",
+        "10.135.503.39",
+        "10.135.503.40",
+        "10.135.503.41",
+        "10.135.503.42",
+        "10.135.503.43",
+        "10.135.503.44",
+        "10.135.503.45",
+        "10.135.503.46",
+        "10.135.503.47",
+        "10.135.503.48",
+        "10.135.503.49",
+        "10.135.503.50",
+        "10.135.503.51",
+        "10.135.503.52",
+        "10.135.503.53",
+        "10.135.503.54",
+        "10.135.503.55",
+        "10.135.503.56",
+        "10.135.503.57",
+        "10.135.503.58",
+        "10.135.503.59",
+        "10.135.503.60",
+        "10.135.503.61",
+        "10.135.503.62"
+    ],
+    "routeAddress": "10.135.503.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.135.503.65",
+        "10.135.503.66",
+        "10.135.503.67",
+        "10.135.503.68",
+        "10.135.503.69",
+        "10.135.503.70",
+        "10.135.503.71",
+        "10.135.503.72",
+        "10.135.503.73",
+        "10.135.503.74",
+        "10.135.503.75",
+        "10.135.503.76",
+        "10.135.503.77",
+        "10.135.503.78",
+        "10.135.503.79",
+        "10.135.503.80",
+        "10.135.503.81",
+        "10.135.503.82",
+        "10.135.503.83",
+        "10.135.503.84",
+        "10.135.503.85",
+        "10.135.503.86",
+        "10.135.503.87",
+        "10.135.503.88",
+        "10.135.503.89",
+        "10.135.503.90",
+        "10.135.503.91",
+        "10.135.503.92",
+        "10.135.503.93",
+        "10.135.503.94"
+    ],
+    "corporateAddress": "10.135.503.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.135.503.97",
+        "10.135.503.98",
+        "10.135.503.99",
+        "10.135.503.100",
+        "10.135.503.101",
+        "10.135.503.102",
+        "10.135.503.103",
+        "10.135.503.104",
+        "10.135.503.105",
+        "10.135.503.106",
+        "10.135.503.107",
+        "10.135.503.108",
+        "10.135.503.109",
+        "10.135.503.110",
+        "10.135.503.111",
+        "10.135.503.112",
+        "10.135.503.113",
+        "10.135.503.114",
+        "10.135.503.115",
+        "10.135.503.116",
+        "10.135.503.117",
+        "10.135.503.118",
+        "10.135.503.119",
+        "10.135.503.120",
+        "10.135.503.121",
+        "10.135.503.122",
+        "10.135.503.123",
+        "10.135.503.124",
+        "10.135.503.125"
+    ],
+    "latitude": 32.588,
+    "longitude": -98.334,
+    "nodes": [
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.97",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..Firewall 503",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.588,
+            "Longitude": -98.334
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.98",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..Router 503",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.1",
+            "ipAddress": "10.135.503.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON.OT.Switch 1005",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.99",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON.Corporate.Switch 1006",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.3",
+            "ipAddress": "10.135.503.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.2",
+            "ipAddress": "10.135.503.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..RC 503",
+            "compromised": false,
+            "relayIPlist": [
+                "10.135.503.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.100",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..Host 1005",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.100",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..Host 1006",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.100",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..LocalDatabase 1005",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.100",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..LocalWebServer 1006",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.101",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..hmi 1005",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.100",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..outstation 1006",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 116.GORDON..RC 503",
+            "destination": "Utility 116.GORDON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 116.GORDON..Router 503",
+            "destination": "Utility 116.GORDON..Firewall 503",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 116.GORDON..Firewall 503",
+            "destination": "Utility 116.GORDON.OT.Switch 1005",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 116.GORDON.OT.Switch 1005",
+            "destination": "Utility 116.GORDON..RC 503",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 116.GORDON..Firewall 503",
+            "destination": "Utility 116.GORDON.Corporate.Switch 1006",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 116.GORDON.Corporate.Switch 1006",
+            "destination": "Utility 116.GORDON..Host 1005",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 116.GORDON.Corporate.Switch 1006",
+            "destination": "Utility 116.GORDON..Host 1006",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 116.GORDON.Corporate.Switch 1006",
+            "destination": "Utility 116.GORDON..LocalDatabase 1005",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 116.GORDON.Corporate.Switch 1006",
+            "destination": "Utility 116.GORDON..LocalWebServer 1006",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.1",
+            "ipAddress": "10.135.503.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON.OT.Switch 1005",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.2",
+            "ipAddress": "10.135.503.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..RC 503",
+            "compromised": false,
+            "relayIPlist": [
+                "10.135.503.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.97",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..Firewall 503",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.588,
+            "Longitude": -98.334
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.98",
+            "ipAddress": "10.135.503.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..Router 503",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.1",
+            "ipAddress": "10.135.503.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON.OT.Switch 1005",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 116",
+            "adminIP": "10.135.503.2",
+            "ipAddress": "10.135.503.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GORDON",
+            "label": "Utility 116.GORDON..RC 503",
+            "compromised": false,
+            "relayIPlist": [
+                "10.135.503.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

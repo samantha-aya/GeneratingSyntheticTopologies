@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 28.CHINA SPRING",
+    "networkLan": "10.156.649.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 28",
+    "utility_id": 156,
+    "substation": "CHINA SPRING",
+    "substationNumber": 649,
+    "OTAddress": "10.156.649.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.156.649.1",
+        "10.156.649.2",
+        "10.156.649.3",
+        "10.156.649.4",
+        "10.156.649.5",
+        "10.156.649.6",
+        "10.156.649.7",
+        "10.156.649.8",
+        "10.156.649.9",
+        "10.156.649.10",
+        "10.156.649.11",
+        "10.156.649.12",
+        "10.156.649.13",
+        "10.156.649.14",
+        "10.156.649.15",
+        "10.156.649.16",
+        "10.156.649.17",
+        "10.156.649.18",
+        "10.156.649.19",
+        "10.156.649.20",
+        "10.156.649.21",
+        "10.156.649.22",
+        "10.156.649.23",
+        "10.156.649.24",
+        "10.156.649.25",
+        "10.156.649.26",
+        "10.156.649.27",
+        "10.156.649.28",
+        "10.156.649.29",
+        "10.156.649.30",
+        "10.156.649.31",
+        "10.156.649.32",
+        "10.156.649.33",
+        "10.156.649.34",
+        "10.156.649.35",
+        "10.156.649.36",
+        "10.156.649.37",
+        "10.156.649.38",
+        "10.156.649.39",
+        "10.156.649.40",
+        "10.156.649.41",
+        "10.156.649.42",
+        "10.156.649.43",
+        "10.156.649.44",
+        "10.156.649.45",
+        "10.156.649.46",
+        "10.156.649.47",
+        "10.156.649.48",
+        "10.156.649.49",
+        "10.156.649.50",
+        "10.156.649.51",
+        "10.156.649.52",
+        "10.156.649.53",
+        "10.156.649.54",
+        "10.156.649.55",
+        "10.156.649.56",
+        "10.156.649.57",
+        "10.156.649.58",
+        "10.156.649.59",
+        "10.156.649.60",
+        "10.156.649.61",
+        "10.156.649.62"
+    ],
+    "routeAddress": "10.156.649.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.156.649.65",
+        "10.156.649.66",
+        "10.156.649.67",
+        "10.156.649.68",
+        "10.156.649.69",
+        "10.156.649.70",
+        "10.156.649.71",
+        "10.156.649.72",
+        "10.156.649.73",
+        "10.156.649.74",
+        "10.156.649.75",
+        "10.156.649.76",
+        "10.156.649.77",
+        "10.156.649.78",
+        "10.156.649.79",
+        "10.156.649.80",
+        "10.156.649.81",
+        "10.156.649.82",
+        "10.156.649.83",
+        "10.156.649.84",
+        "10.156.649.85",
+        "10.156.649.86",
+        "10.156.649.87",
+        "10.156.649.88",
+        "10.156.649.89",
+        "10.156.649.90",
+        "10.156.649.91",
+        "10.156.649.92",
+        "10.156.649.93",
+        "10.156.649.94"
+    ],
+    "corporateAddress": "10.156.649.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.156.649.97",
+        "10.156.649.98",
+        "10.156.649.99",
+        "10.156.649.100",
+        "10.156.649.101",
+        "10.156.649.102",
+        "10.156.649.103",
+        "10.156.649.104",
+        "10.156.649.105",
+        "10.156.649.106",
+        "10.156.649.107",
+        "10.156.649.108",
+        "10.156.649.109",
+        "10.156.649.110",
+        "10.156.649.111",
+        "10.156.649.112",
+        "10.156.649.113",
+        "10.156.649.114",
+        "10.156.649.115",
+        "10.156.649.116",
+        "10.156.649.117",
+        "10.156.649.118",
+        "10.156.649.119",
+        "10.156.649.120",
+        "10.156.649.121",
+        "10.156.649.122",
+        "10.156.649.123",
+        "10.156.649.124",
+        "10.156.649.125"
+    ],
+    "latitude": 31.694,
+    "longitude": -97.325,
+    "nodes": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.97",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..Firewall 649",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.694,
+            "Longitude": -97.325
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.98",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..Router 649",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.1",
+            "ipAddress": "10.156.649.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING.OT.Switch 1297",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.99",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING.Corporate.Switch 1298",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.3",
+            "ipAddress": "10.156.649.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.2",
+            "ipAddress": "10.156.649.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..RC 649",
+            "compromised": false,
+            "relayIPlist": [
+                "10.156.649.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.100",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..Host 1297",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.100",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..Host 1298",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.100",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..LocalDatabase 1297",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.100",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..LocalWebServer 1298",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.101",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..hmi 1297",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.100",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..outstation 1298",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 28.CHINA SPRING..RC 649",
+            "destination": "Utility 28.CHINA SPRING..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.CHINA SPRING..Router 649",
+            "destination": "Utility 28.CHINA SPRING..Firewall 649",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.CHINA SPRING..Firewall 649",
+            "destination": "Utility 28.CHINA SPRING.OT.Switch 1297",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.CHINA SPRING.OT.Switch 1297",
+            "destination": "Utility 28.CHINA SPRING..RC 649",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.CHINA SPRING..Firewall 649",
+            "destination": "Utility 28.CHINA SPRING.Corporate.Switch 1298",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.CHINA SPRING.Corporate.Switch 1298",
+            "destination": "Utility 28.CHINA SPRING..Host 1297",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.CHINA SPRING.Corporate.Switch 1298",
+            "destination": "Utility 28.CHINA SPRING..Host 1298",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.CHINA SPRING.Corporate.Switch 1298",
+            "destination": "Utility 28.CHINA SPRING..LocalDatabase 1297",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 28.CHINA SPRING.Corporate.Switch 1298",
+            "destination": "Utility 28.CHINA SPRING..LocalWebServer 1298",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.1",
+            "ipAddress": "10.156.649.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING.OT.Switch 1297",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.2",
+            "ipAddress": "10.156.649.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..RC 649",
+            "compromised": false,
+            "relayIPlist": [
+                "10.156.649.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.97",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..Firewall 649",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.694,
+            "Longitude": -97.325
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.98",
+            "ipAddress": "10.156.649.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..Router 649",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.1",
+            "ipAddress": "10.156.649.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING.OT.Switch 1297",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 28",
+            "adminIP": "10.156.649.2",
+            "ipAddress": "10.156.649.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHINA SPRING",
+            "label": "Utility 28.CHINA SPRING..RC 649",
+            "compromised": false,
+            "relayIPlist": [
+                "10.156.649.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

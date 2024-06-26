@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 24.SOMERVILLE",
+    "networkLan": "10.175.897.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 24",
+    "utility_id": 175,
+    "substation": "SOMERVILLE",
+    "substationNumber": 897,
+    "OTAddress": "10.175.897.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.175.897.1",
+        "10.175.897.2",
+        "10.175.897.3",
+        "10.175.897.4",
+        "10.175.897.5",
+        "10.175.897.6",
+        "10.175.897.7",
+        "10.175.897.8",
+        "10.175.897.9",
+        "10.175.897.10",
+        "10.175.897.11",
+        "10.175.897.12",
+        "10.175.897.13",
+        "10.175.897.14",
+        "10.175.897.15",
+        "10.175.897.16",
+        "10.175.897.17",
+        "10.175.897.18",
+        "10.175.897.19",
+        "10.175.897.20",
+        "10.175.897.21",
+        "10.175.897.22",
+        "10.175.897.23",
+        "10.175.897.24",
+        "10.175.897.25",
+        "10.175.897.26",
+        "10.175.897.27",
+        "10.175.897.28",
+        "10.175.897.29",
+        "10.175.897.30",
+        "10.175.897.31",
+        "10.175.897.32",
+        "10.175.897.33",
+        "10.175.897.34",
+        "10.175.897.35",
+        "10.175.897.36",
+        "10.175.897.37",
+        "10.175.897.38",
+        "10.175.897.39",
+        "10.175.897.40",
+        "10.175.897.41",
+        "10.175.897.42",
+        "10.175.897.43",
+        "10.175.897.44",
+        "10.175.897.45",
+        "10.175.897.46",
+        "10.175.897.47",
+        "10.175.897.48",
+        "10.175.897.49",
+        "10.175.897.50",
+        "10.175.897.51",
+        "10.175.897.52",
+        "10.175.897.53",
+        "10.175.897.54",
+        "10.175.897.55",
+        "10.175.897.56",
+        "10.175.897.57",
+        "10.175.897.58",
+        "10.175.897.59",
+        "10.175.897.60",
+        "10.175.897.61",
+        "10.175.897.62"
+    ],
+    "routeAddress": "10.175.897.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.175.897.65",
+        "10.175.897.66",
+        "10.175.897.67",
+        "10.175.897.68",
+        "10.175.897.69",
+        "10.175.897.70",
+        "10.175.897.71",
+        "10.175.897.72",
+        "10.175.897.73",
+        "10.175.897.74",
+        "10.175.897.75",
+        "10.175.897.76",
+        "10.175.897.77",
+        "10.175.897.78",
+        "10.175.897.79",
+        "10.175.897.80",
+        "10.175.897.81",
+        "10.175.897.82",
+        "10.175.897.83",
+        "10.175.897.84",
+        "10.175.897.85",
+        "10.175.897.86",
+        "10.175.897.87",
+        "10.175.897.88",
+        "10.175.897.89",
+        "10.175.897.90",
+        "10.175.897.91",
+        "10.175.897.92",
+        "10.175.897.93",
+        "10.175.897.94"
+    ],
+    "corporateAddress": "10.175.897.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.175.897.97",
+        "10.175.897.98",
+        "10.175.897.99",
+        "10.175.897.100",
+        "10.175.897.101",
+        "10.175.897.102",
+        "10.175.897.103",
+        "10.175.897.104",
+        "10.175.897.105",
+        "10.175.897.106",
+        "10.175.897.107",
+        "10.175.897.108",
+        "10.175.897.109",
+        "10.175.897.110",
+        "10.175.897.111",
+        "10.175.897.112",
+        "10.175.897.113",
+        "10.175.897.114",
+        "10.175.897.115",
+        "10.175.897.116",
+        "10.175.897.117",
+        "10.175.897.118",
+        "10.175.897.119",
+        "10.175.897.120",
+        "10.175.897.121",
+        "10.175.897.122",
+        "10.175.897.123",
+        "10.175.897.124",
+        "10.175.897.125"
+    ],
+    "latitude": 30.471,
+    "longitude": -96.438,
+    "nodes": [
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.97",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..Firewall 897",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.471,
+            "Longitude": -96.438
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.98",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..Router 897",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.1",
+            "ipAddress": "10.175.897.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE.OT.Switch 1793",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.99",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE.Corporate.Switch 1794",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.3",
+            "ipAddress": "10.175.897.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.2",
+            "ipAddress": "10.175.897.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..RC 897",
+            "compromised": false,
+            "relayIPlist": [
+                "10.175.897.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.100",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..Host 1793",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.100",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..Host 1794",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.100",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..LocalDatabase 1793",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.100",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..LocalWebServer 1794",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.101",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..hmi 1793",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.100",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..outstation 1794",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 24.SOMERVILLE..RC 897",
+            "destination": "Utility 24.SOMERVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 24.SOMERVILLE..Router 897",
+            "destination": "Utility 24.SOMERVILLE..Firewall 897",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 24.SOMERVILLE..Firewall 897",
+            "destination": "Utility 24.SOMERVILLE.OT.Switch 1793",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 24.SOMERVILLE.OT.Switch 1793",
+            "destination": "Utility 24.SOMERVILLE..RC 897",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 24.SOMERVILLE..Firewall 897",
+            "destination": "Utility 24.SOMERVILLE.Corporate.Switch 1794",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 24.SOMERVILLE.Corporate.Switch 1794",
+            "destination": "Utility 24.SOMERVILLE..Host 1793",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 24.SOMERVILLE.Corporate.Switch 1794",
+            "destination": "Utility 24.SOMERVILLE..Host 1794",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 24.SOMERVILLE.Corporate.Switch 1794",
+            "destination": "Utility 24.SOMERVILLE..LocalDatabase 1793",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 24.SOMERVILLE.Corporate.Switch 1794",
+            "destination": "Utility 24.SOMERVILLE..LocalWebServer 1794",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.1",
+            "ipAddress": "10.175.897.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE.OT.Switch 1793",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.2",
+            "ipAddress": "10.175.897.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..RC 897",
+            "compromised": false,
+            "relayIPlist": [
+                "10.175.897.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.97",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..Firewall 897",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.471,
+            "Longitude": -96.438
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.98",
+            "ipAddress": "10.175.897.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..Router 897",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.1",
+            "ipAddress": "10.175.897.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE.OT.Switch 1793",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 24",
+            "adminIP": "10.175.897.2",
+            "ipAddress": "10.175.897.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SOMERVILLE",
+            "label": "Utility 24.SOMERVILLE..RC 897",
+            "compromised": false,
+            "relayIPlist": [
+                "10.175.897.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

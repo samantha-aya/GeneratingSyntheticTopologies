@@ -1,0 +1,618 @@
+{
+    "relayCounter": 3,
+    "label": "Region.Utility 0.MERKEL 1",
+    "networkLan": "10.52.192.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "MERKEL 1",
+    "substationNumber": 192,
+    "OTAddress": "10.52.192.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.192.1",
+        "10.52.192.2",
+        "10.52.192.3",
+        "10.52.192.4",
+        "10.52.192.5",
+        "10.52.192.6",
+        "10.52.192.7",
+        "10.52.192.8",
+        "10.52.192.9",
+        "10.52.192.10",
+        "10.52.192.11",
+        "10.52.192.12",
+        "10.52.192.13",
+        "10.52.192.14",
+        "10.52.192.15",
+        "10.52.192.16",
+        "10.52.192.17",
+        "10.52.192.18",
+        "10.52.192.19",
+        "10.52.192.20",
+        "10.52.192.21",
+        "10.52.192.22",
+        "10.52.192.23",
+        "10.52.192.24",
+        "10.52.192.25",
+        "10.52.192.26",
+        "10.52.192.27",
+        "10.52.192.28",
+        "10.52.192.29",
+        "10.52.192.30",
+        "10.52.192.31",
+        "10.52.192.32",
+        "10.52.192.33",
+        "10.52.192.34",
+        "10.52.192.35",
+        "10.52.192.36",
+        "10.52.192.37",
+        "10.52.192.38",
+        "10.52.192.39",
+        "10.52.192.40",
+        "10.52.192.41",
+        "10.52.192.42",
+        "10.52.192.43",
+        "10.52.192.44",
+        "10.52.192.45",
+        "10.52.192.46",
+        "10.52.192.47",
+        "10.52.192.48",
+        "10.52.192.49",
+        "10.52.192.50",
+        "10.52.192.51",
+        "10.52.192.52",
+        "10.52.192.53",
+        "10.52.192.54",
+        "10.52.192.55",
+        "10.52.192.56",
+        "10.52.192.57",
+        "10.52.192.58",
+        "10.52.192.59",
+        "10.52.192.60",
+        "10.52.192.61",
+        "10.52.192.62"
+    ],
+    "routeAddress": "10.52.192.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.192.65",
+        "10.52.192.66",
+        "10.52.192.67",
+        "10.52.192.68",
+        "10.52.192.69",
+        "10.52.192.70",
+        "10.52.192.71",
+        "10.52.192.72",
+        "10.52.192.73",
+        "10.52.192.74",
+        "10.52.192.75",
+        "10.52.192.76",
+        "10.52.192.77",
+        "10.52.192.78",
+        "10.52.192.79",
+        "10.52.192.80",
+        "10.52.192.81",
+        "10.52.192.82",
+        "10.52.192.83",
+        "10.52.192.84",
+        "10.52.192.85",
+        "10.52.192.86",
+        "10.52.192.87",
+        "10.52.192.88",
+        "10.52.192.89",
+        "10.52.192.90",
+        "10.52.192.91",
+        "10.52.192.92",
+        "10.52.192.93",
+        "10.52.192.94"
+    ],
+    "corporateAddress": "10.52.192.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.192.97",
+        "10.52.192.98",
+        "10.52.192.99",
+        "10.52.192.100",
+        "10.52.192.101",
+        "10.52.192.102",
+        "10.52.192.103",
+        "10.52.192.104",
+        "10.52.192.105",
+        "10.52.192.106",
+        "10.52.192.107",
+        "10.52.192.108",
+        "10.52.192.109",
+        "10.52.192.110",
+        "10.52.192.111",
+        "10.52.192.112",
+        "10.52.192.113",
+        "10.52.192.114",
+        "10.52.192.115",
+        "10.52.192.116",
+        "10.52.192.117",
+        "10.52.192.118",
+        "10.52.192.119",
+        "10.52.192.120",
+        "10.52.192.121",
+        "10.52.192.122",
+        "10.52.192.123",
+        "10.52.192.124",
+        "10.52.192.125"
+    ],
+    "latitude": 32.318,
+    "longitude": -100.177,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.97",
+            "ipAddress": "10.52.192.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..Firewall 192",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.318,
+            "Longitude": -100.177
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.98",
+            "ipAddress": "10.52.192.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..Router 192",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.1",
+            "ipAddress": "10.52.192.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1.OT.Switch 383",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.99",
+            "ipAddress": "10.52.192.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1.Corporate.Switch 384",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.3",
+            "ipAddress": "10.52.192.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.4",
+            "ipAddress": "10.52.192.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.5",
+            "ipAddress": "10.52.192.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.2",
+            "ipAddress": "10.52.192.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..RC 192",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.192.3",
+                "10.52.192.4",
+                "10.52.192.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.100",
+            "ipAddress": "10.52.192.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..Host 383",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.100",
+            "ipAddress": "10.52.192.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..Host 384",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.100",
+            "ipAddress": "10.52.192.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..LocalDatabase 383",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.100",
+            "ipAddress": "10.52.192.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..LocalWebServer 384",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.MERKEL 1..RC 192",
+            "destination": "Utility 0.MERKEL 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1..RC 192",
+            "destination": "Utility 0.MERKEL 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1..RC 192",
+            "destination": "Utility 0.MERKEL 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1..Router 192",
+            "destination": "Utility 0.MERKEL 1..Firewall 192",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1..Firewall 192",
+            "destination": "Utility 0.MERKEL 1.OT.Switch 383",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1.OT.Switch 383",
+            "destination": "Utility 0.MERKEL 1..RC 192",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1..Firewall 192",
+            "destination": "Utility 0.MERKEL 1.Corporate.Switch 384",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1.Corporate.Switch 384",
+            "destination": "Utility 0.MERKEL 1..Host 383",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1.Corporate.Switch 384",
+            "destination": "Utility 0.MERKEL 1..Host 384",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1.Corporate.Switch 384",
+            "destination": "Utility 0.MERKEL 1..LocalDatabase 383",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.MERKEL 1.Corporate.Switch 384",
+            "destination": "Utility 0.MERKEL 1..LocalWebServer 384",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.1",
+            "ipAddress": "10.52.192.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1.OT.Switch 383",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.2",
+            "ipAddress": "10.52.192.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..RC 192",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.192.3",
+                "10.52.192.4",
+                "10.52.192.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.97",
+            "ipAddress": "10.52.192.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..Firewall 192",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.318,
+            "Longitude": -100.177
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.98",
+            "ipAddress": "10.52.192.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..Router 192",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.1",
+            "ipAddress": "10.52.192.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1.OT.Switch 383",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.192.2",
+            "ipAddress": "10.52.192.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MERKEL 1",
+            "label": "Utility 0.MERKEL 1..RC 192",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.192.3",
+                "10.52.192.4",
+                "10.52.192.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 174.37,
+    "genmvar": -5.29,
+    "connecting_TS_num": 224
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 90.ROTAN",
+    "networkLan": "10.87.209.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 90",
+    "utility_id": 87,
+    "substation": "ROTAN",
+    "substationNumber": 209,
+    "OTAddress": "10.87.209.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.87.209.1",
+        "10.87.209.2",
+        "10.87.209.3",
+        "10.87.209.4",
+        "10.87.209.5",
+        "10.87.209.6",
+        "10.87.209.7",
+        "10.87.209.8",
+        "10.87.209.9",
+        "10.87.209.10",
+        "10.87.209.11",
+        "10.87.209.12",
+        "10.87.209.13",
+        "10.87.209.14",
+        "10.87.209.15",
+        "10.87.209.16",
+        "10.87.209.17",
+        "10.87.209.18",
+        "10.87.209.19",
+        "10.87.209.20",
+        "10.87.209.21",
+        "10.87.209.22",
+        "10.87.209.23",
+        "10.87.209.24",
+        "10.87.209.25",
+        "10.87.209.26",
+        "10.87.209.27",
+        "10.87.209.28",
+        "10.87.209.29",
+        "10.87.209.30",
+        "10.87.209.31",
+        "10.87.209.32",
+        "10.87.209.33",
+        "10.87.209.34",
+        "10.87.209.35",
+        "10.87.209.36",
+        "10.87.209.37",
+        "10.87.209.38",
+        "10.87.209.39",
+        "10.87.209.40",
+        "10.87.209.41",
+        "10.87.209.42",
+        "10.87.209.43",
+        "10.87.209.44",
+        "10.87.209.45",
+        "10.87.209.46",
+        "10.87.209.47",
+        "10.87.209.48",
+        "10.87.209.49",
+        "10.87.209.50",
+        "10.87.209.51",
+        "10.87.209.52",
+        "10.87.209.53",
+        "10.87.209.54",
+        "10.87.209.55",
+        "10.87.209.56",
+        "10.87.209.57",
+        "10.87.209.58",
+        "10.87.209.59",
+        "10.87.209.60",
+        "10.87.209.61",
+        "10.87.209.62"
+    ],
+    "routeAddress": "10.87.209.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.87.209.65",
+        "10.87.209.66",
+        "10.87.209.67",
+        "10.87.209.68",
+        "10.87.209.69",
+        "10.87.209.70",
+        "10.87.209.71",
+        "10.87.209.72",
+        "10.87.209.73",
+        "10.87.209.74",
+        "10.87.209.75",
+        "10.87.209.76",
+        "10.87.209.77",
+        "10.87.209.78",
+        "10.87.209.79",
+        "10.87.209.80",
+        "10.87.209.81",
+        "10.87.209.82",
+        "10.87.209.83",
+        "10.87.209.84",
+        "10.87.209.85",
+        "10.87.209.86",
+        "10.87.209.87",
+        "10.87.209.88",
+        "10.87.209.89",
+        "10.87.209.90",
+        "10.87.209.91",
+        "10.87.209.92",
+        "10.87.209.93",
+        "10.87.209.94"
+    ],
+    "corporateAddress": "10.87.209.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.87.209.97",
+        "10.87.209.98",
+        "10.87.209.99",
+        "10.87.209.100",
+        "10.87.209.101",
+        "10.87.209.102",
+        "10.87.209.103",
+        "10.87.209.104",
+        "10.87.209.105",
+        "10.87.209.106",
+        "10.87.209.107",
+        "10.87.209.108",
+        "10.87.209.109",
+        "10.87.209.110",
+        "10.87.209.111",
+        "10.87.209.112",
+        "10.87.209.113",
+        "10.87.209.114",
+        "10.87.209.115",
+        "10.87.209.116",
+        "10.87.209.117",
+        "10.87.209.118",
+        "10.87.209.119",
+        "10.87.209.120",
+        "10.87.209.121",
+        "10.87.209.122",
+        "10.87.209.123",
+        "10.87.209.124",
+        "10.87.209.125"
+    ],
+    "latitude": 32.892,
+    "longitude": -100.498,
+    "nodes": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.97",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..Firewall 209",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.892,
+            "Longitude": -100.498
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.98",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..Router 209",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.1",
+            "ipAddress": "10.87.209.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN.OT.Switch 417",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.99",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN.Corporate.Switch 418",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.3",
+            "ipAddress": "10.87.209.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.2",
+            "ipAddress": "10.87.209.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..RC 209",
+            "compromised": false,
+            "relayIPlist": [
+                "10.87.209.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.100",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..Host 417",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.100",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..Host 418",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.100",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..LocalDatabase 417",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.100",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..LocalWebServer 418",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.101",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..hmi 417",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.100",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..outstation 418",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 90.ROTAN..RC 209",
+            "destination": "Utility 90.ROTAN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.ROTAN..Router 209",
+            "destination": "Utility 90.ROTAN..Firewall 209",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.ROTAN..Firewall 209",
+            "destination": "Utility 90.ROTAN.OT.Switch 417",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.ROTAN.OT.Switch 417",
+            "destination": "Utility 90.ROTAN..RC 209",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.ROTAN..Firewall 209",
+            "destination": "Utility 90.ROTAN.Corporate.Switch 418",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.ROTAN.Corporate.Switch 418",
+            "destination": "Utility 90.ROTAN..Host 417",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.ROTAN.Corporate.Switch 418",
+            "destination": "Utility 90.ROTAN..Host 418",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.ROTAN.Corporate.Switch 418",
+            "destination": "Utility 90.ROTAN..LocalDatabase 417",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 90.ROTAN.Corporate.Switch 418",
+            "destination": "Utility 90.ROTAN..LocalWebServer 418",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.1",
+            "ipAddress": "10.87.209.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN.OT.Switch 417",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.2",
+            "ipAddress": "10.87.209.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..RC 209",
+            "compromised": false,
+            "relayIPlist": [
+                "10.87.209.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.97",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..Firewall 209",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.892,
+            "Longitude": -100.498
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.98",
+            "ipAddress": "10.87.209.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..Router 209",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.1",
+            "ipAddress": "10.87.209.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN.OT.Switch 417",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 90",
+            "adminIP": "10.87.209.2",
+            "ipAddress": "10.87.209.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROTAN",
+            "label": "Utility 90.ROTAN..RC 209",
+            "compromised": false,
+            "relayIPlist": [
+                "10.87.209.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 68.VAN HORN",
+    "networkLan": "10.56.5.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 68",
+    "utility_id": 56,
+    "substation": "VAN HORN",
+    "substationNumber": 5,
+    "OTAddress": "10.56.5.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.5.1",
+        "10.56.5.2",
+        "10.56.5.3",
+        "10.56.5.4",
+        "10.56.5.5",
+        "10.56.5.6",
+        "10.56.5.7",
+        "10.56.5.8",
+        "10.56.5.9",
+        "10.56.5.10",
+        "10.56.5.11",
+        "10.56.5.12",
+        "10.56.5.13",
+        "10.56.5.14",
+        "10.56.5.15",
+        "10.56.5.16",
+        "10.56.5.17",
+        "10.56.5.18",
+        "10.56.5.19",
+        "10.56.5.20",
+        "10.56.5.21",
+        "10.56.5.22",
+        "10.56.5.23",
+        "10.56.5.24",
+        "10.56.5.25",
+        "10.56.5.26",
+        "10.56.5.27",
+        "10.56.5.28",
+        "10.56.5.29",
+        "10.56.5.30",
+        "10.56.5.31",
+        "10.56.5.32",
+        "10.56.5.33",
+        "10.56.5.34",
+        "10.56.5.35",
+        "10.56.5.36",
+        "10.56.5.37",
+        "10.56.5.38",
+        "10.56.5.39",
+        "10.56.5.40",
+        "10.56.5.41",
+        "10.56.5.42",
+        "10.56.5.43",
+        "10.56.5.44",
+        "10.56.5.45",
+        "10.56.5.46",
+        "10.56.5.47",
+        "10.56.5.48",
+        "10.56.5.49",
+        "10.56.5.50",
+        "10.56.5.51",
+        "10.56.5.52",
+        "10.56.5.53",
+        "10.56.5.54",
+        "10.56.5.55",
+        "10.56.5.56",
+        "10.56.5.57",
+        "10.56.5.58",
+        "10.56.5.59",
+        "10.56.5.60",
+        "10.56.5.61",
+        "10.56.5.62"
+    ],
+    "routeAddress": "10.56.5.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.5.65",
+        "10.56.5.66",
+        "10.56.5.67",
+        "10.56.5.68",
+        "10.56.5.69",
+        "10.56.5.70",
+        "10.56.5.71",
+        "10.56.5.72",
+        "10.56.5.73",
+        "10.56.5.74",
+        "10.56.5.75",
+        "10.56.5.76",
+        "10.56.5.77",
+        "10.56.5.78",
+        "10.56.5.79",
+        "10.56.5.80",
+        "10.56.5.81",
+        "10.56.5.82",
+        "10.56.5.83",
+        "10.56.5.84",
+        "10.56.5.85",
+        "10.56.5.86",
+        "10.56.5.87",
+        "10.56.5.88",
+        "10.56.5.89",
+        "10.56.5.90",
+        "10.56.5.91",
+        "10.56.5.92",
+        "10.56.5.93",
+        "10.56.5.94"
+    ],
+    "corporateAddress": "10.56.5.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.5.97",
+        "10.56.5.98",
+        "10.56.5.99",
+        "10.56.5.100",
+        "10.56.5.101",
+        "10.56.5.102",
+        "10.56.5.103",
+        "10.56.5.104",
+        "10.56.5.105",
+        "10.56.5.106",
+        "10.56.5.107",
+        "10.56.5.108",
+        "10.56.5.109",
+        "10.56.5.110",
+        "10.56.5.111",
+        "10.56.5.112",
+        "10.56.5.113",
+        "10.56.5.114",
+        "10.56.5.115",
+        "10.56.5.116",
+        "10.56.5.117",
+        "10.56.5.118",
+        "10.56.5.119",
+        "10.56.5.120",
+        "10.56.5.121",
+        "10.56.5.122",
+        "10.56.5.123",
+        "10.56.5.124",
+        "10.56.5.125"
+    ],
+    "latitude": 31.093,
+    "longitude": -104.625,
+    "nodes": [
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.97",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..Firewall 5",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.093,
+            "Longitude": -104.625
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.98",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..Router 5",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.1",
+            "ipAddress": "10.56.5.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN.OT.Switch 9",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.99",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN.Corporate.Switch 10",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.3",
+            "ipAddress": "10.56.5.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.2",
+            "ipAddress": "10.56.5.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..RC 5",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.5.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.100",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..Host 9",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.100",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..Host 10",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.100",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..LocalDatabase 9",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.100",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..LocalWebServer 10",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.101",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..hmi 9",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.100",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..outstation 10",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 68.VAN HORN..RC 5",
+            "destination": "Utility 68.VAN HORN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 68.VAN HORN..Router 5",
+            "destination": "Utility 68.VAN HORN..Firewall 5",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 68.VAN HORN..Firewall 5",
+            "destination": "Utility 68.VAN HORN.OT.Switch 9",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 68.VAN HORN.OT.Switch 9",
+            "destination": "Utility 68.VAN HORN..RC 5",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 68.VAN HORN..Firewall 5",
+            "destination": "Utility 68.VAN HORN.Corporate.Switch 10",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 68.VAN HORN.Corporate.Switch 10",
+            "destination": "Utility 68.VAN HORN..Host 9",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 68.VAN HORN.Corporate.Switch 10",
+            "destination": "Utility 68.VAN HORN..Host 10",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 68.VAN HORN.Corporate.Switch 10",
+            "destination": "Utility 68.VAN HORN..LocalDatabase 9",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 68.VAN HORN.Corporate.Switch 10",
+            "destination": "Utility 68.VAN HORN..LocalWebServer 10",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.1",
+            "ipAddress": "10.56.5.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN.OT.Switch 9",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.2",
+            "ipAddress": "10.56.5.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..RC 5",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.5.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.97",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..Firewall 5",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.093,
+            "Longitude": -104.625
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.98",
+            "ipAddress": "10.56.5.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..Router 5",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.1",
+            "ipAddress": "10.56.5.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN.OT.Switch 9",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 68",
+            "adminIP": "10.56.5.2",
+            "ipAddress": "10.56.5.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VAN HORN",
+            "label": "Utility 68.VAN HORN..RC 5",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.5.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

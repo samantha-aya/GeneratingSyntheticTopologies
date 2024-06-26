@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 60.SADLER",
+    "networkLan": "10.78.87.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 60",
+    "utility_id": 78,
+    "substation": "SADLER",
+    "substationNumber": 87,
+    "OTAddress": "10.78.87.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.78.87.1",
+        "10.78.87.2",
+        "10.78.87.3",
+        "10.78.87.4",
+        "10.78.87.5",
+        "10.78.87.6",
+        "10.78.87.7",
+        "10.78.87.8",
+        "10.78.87.9",
+        "10.78.87.10",
+        "10.78.87.11",
+        "10.78.87.12",
+        "10.78.87.13",
+        "10.78.87.14",
+        "10.78.87.15",
+        "10.78.87.16",
+        "10.78.87.17",
+        "10.78.87.18",
+        "10.78.87.19",
+        "10.78.87.20",
+        "10.78.87.21",
+        "10.78.87.22",
+        "10.78.87.23",
+        "10.78.87.24",
+        "10.78.87.25",
+        "10.78.87.26",
+        "10.78.87.27",
+        "10.78.87.28",
+        "10.78.87.29",
+        "10.78.87.30",
+        "10.78.87.31",
+        "10.78.87.32",
+        "10.78.87.33",
+        "10.78.87.34",
+        "10.78.87.35",
+        "10.78.87.36",
+        "10.78.87.37",
+        "10.78.87.38",
+        "10.78.87.39",
+        "10.78.87.40",
+        "10.78.87.41",
+        "10.78.87.42",
+        "10.78.87.43",
+        "10.78.87.44",
+        "10.78.87.45",
+        "10.78.87.46",
+        "10.78.87.47",
+        "10.78.87.48",
+        "10.78.87.49",
+        "10.78.87.50",
+        "10.78.87.51",
+        "10.78.87.52",
+        "10.78.87.53",
+        "10.78.87.54",
+        "10.78.87.55",
+        "10.78.87.56",
+        "10.78.87.57",
+        "10.78.87.58",
+        "10.78.87.59",
+        "10.78.87.60",
+        "10.78.87.61",
+        "10.78.87.62"
+    ],
+    "routeAddress": "10.78.87.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.78.87.65",
+        "10.78.87.66",
+        "10.78.87.67",
+        "10.78.87.68",
+        "10.78.87.69",
+        "10.78.87.70",
+        "10.78.87.71",
+        "10.78.87.72",
+        "10.78.87.73",
+        "10.78.87.74",
+        "10.78.87.75",
+        "10.78.87.76",
+        "10.78.87.77",
+        "10.78.87.78",
+        "10.78.87.79",
+        "10.78.87.80",
+        "10.78.87.81",
+        "10.78.87.82",
+        "10.78.87.83",
+        "10.78.87.84",
+        "10.78.87.85",
+        "10.78.87.86",
+        "10.78.87.87",
+        "10.78.87.88",
+        "10.78.87.89",
+        "10.78.87.90",
+        "10.78.87.91",
+        "10.78.87.92",
+        "10.78.87.93",
+        "10.78.87.94"
+    ],
+    "corporateAddress": "10.78.87.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.78.87.97",
+        "10.78.87.98",
+        "10.78.87.99",
+        "10.78.87.100",
+        "10.78.87.101",
+        "10.78.87.102",
+        "10.78.87.103",
+        "10.78.87.104",
+        "10.78.87.105",
+        "10.78.87.106",
+        "10.78.87.107",
+        "10.78.87.108",
+        "10.78.87.109",
+        "10.78.87.110",
+        "10.78.87.111",
+        "10.78.87.112",
+        "10.78.87.113",
+        "10.78.87.114",
+        "10.78.87.115",
+        "10.78.87.116",
+        "10.78.87.117",
+        "10.78.87.118",
+        "10.78.87.119",
+        "10.78.87.120",
+        "10.78.87.121",
+        "10.78.87.122",
+        "10.78.87.123",
+        "10.78.87.124",
+        "10.78.87.125"
+    ],
+    "latitude": 33.738,
+    "longitude": -96.84,
+    "nodes": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.97",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..Firewall 87",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.738,
+            "Longitude": -96.84
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.98",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..Router 87",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.1",
+            "ipAddress": "10.78.87.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER.OT.Switch 173",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.99",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER.Corporate.Switch 174",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.3",
+            "ipAddress": "10.78.87.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.2",
+            "ipAddress": "10.78.87.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..RC 87",
+            "compromised": false,
+            "relayIPlist": [
+                "10.78.87.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.100",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..Host 173",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.100",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..Host 174",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.100",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..LocalDatabase 173",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.100",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..LocalWebServer 174",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.101",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..hmi 173",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.100",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..outstation 174",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 60.SADLER..RC 87",
+            "destination": "Utility 60.SADLER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.SADLER..Router 87",
+            "destination": "Utility 60.SADLER..Firewall 87",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.SADLER..Firewall 87",
+            "destination": "Utility 60.SADLER.OT.Switch 173",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.SADLER.OT.Switch 173",
+            "destination": "Utility 60.SADLER..RC 87",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.SADLER..Firewall 87",
+            "destination": "Utility 60.SADLER.Corporate.Switch 174",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.SADLER.Corporate.Switch 174",
+            "destination": "Utility 60.SADLER..Host 173",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.SADLER.Corporate.Switch 174",
+            "destination": "Utility 60.SADLER..Host 174",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.SADLER.Corporate.Switch 174",
+            "destination": "Utility 60.SADLER..LocalDatabase 173",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 60.SADLER.Corporate.Switch 174",
+            "destination": "Utility 60.SADLER..LocalWebServer 174",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.1",
+            "ipAddress": "10.78.87.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER.OT.Switch 173",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.2",
+            "ipAddress": "10.78.87.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..RC 87",
+            "compromised": false,
+            "relayIPlist": [
+                "10.78.87.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.97",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..Firewall 87",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.738,
+            "Longitude": -96.84
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.98",
+            "ipAddress": "10.78.87.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..Router 87",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.1",
+            "ipAddress": "10.78.87.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER.OT.Switch 173",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 60",
+            "adminIP": "10.78.87.2",
+            "ipAddress": "10.78.87.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SADLER",
+            "label": "Utility 60.SADLER..RC 87",
+            "compromised": false,
+            "relayIPlist": [
+                "10.78.87.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

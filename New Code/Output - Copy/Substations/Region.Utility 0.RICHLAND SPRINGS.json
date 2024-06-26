@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.RICHLAND SPRINGS",
+    "networkLan": "10.52.171.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "RICHLAND SPRINGS",
+    "substationNumber": 171,
+    "OTAddress": "10.52.171.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.171.1",
+        "10.52.171.2",
+        "10.52.171.3",
+        "10.52.171.4",
+        "10.52.171.5",
+        "10.52.171.6",
+        "10.52.171.7",
+        "10.52.171.8",
+        "10.52.171.9",
+        "10.52.171.10",
+        "10.52.171.11",
+        "10.52.171.12",
+        "10.52.171.13",
+        "10.52.171.14",
+        "10.52.171.15",
+        "10.52.171.16",
+        "10.52.171.17",
+        "10.52.171.18",
+        "10.52.171.19",
+        "10.52.171.20",
+        "10.52.171.21",
+        "10.52.171.22",
+        "10.52.171.23",
+        "10.52.171.24",
+        "10.52.171.25",
+        "10.52.171.26",
+        "10.52.171.27",
+        "10.52.171.28",
+        "10.52.171.29",
+        "10.52.171.30",
+        "10.52.171.31",
+        "10.52.171.32",
+        "10.52.171.33",
+        "10.52.171.34",
+        "10.52.171.35",
+        "10.52.171.36",
+        "10.52.171.37",
+        "10.52.171.38",
+        "10.52.171.39",
+        "10.52.171.40",
+        "10.52.171.41",
+        "10.52.171.42",
+        "10.52.171.43",
+        "10.52.171.44",
+        "10.52.171.45",
+        "10.52.171.46",
+        "10.52.171.47",
+        "10.52.171.48",
+        "10.52.171.49",
+        "10.52.171.50",
+        "10.52.171.51",
+        "10.52.171.52",
+        "10.52.171.53",
+        "10.52.171.54",
+        "10.52.171.55",
+        "10.52.171.56",
+        "10.52.171.57",
+        "10.52.171.58",
+        "10.52.171.59",
+        "10.52.171.60",
+        "10.52.171.61",
+        "10.52.171.62"
+    ],
+    "routeAddress": "10.52.171.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.171.65",
+        "10.52.171.66",
+        "10.52.171.67",
+        "10.52.171.68",
+        "10.52.171.69",
+        "10.52.171.70",
+        "10.52.171.71",
+        "10.52.171.72",
+        "10.52.171.73",
+        "10.52.171.74",
+        "10.52.171.75",
+        "10.52.171.76",
+        "10.52.171.77",
+        "10.52.171.78",
+        "10.52.171.79",
+        "10.52.171.80",
+        "10.52.171.81",
+        "10.52.171.82",
+        "10.52.171.83",
+        "10.52.171.84",
+        "10.52.171.85",
+        "10.52.171.86",
+        "10.52.171.87",
+        "10.52.171.88",
+        "10.52.171.89",
+        "10.52.171.90",
+        "10.52.171.91",
+        "10.52.171.92",
+        "10.52.171.93",
+        "10.52.171.94"
+    ],
+    "corporateAddress": "10.52.171.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.171.97",
+        "10.52.171.98",
+        "10.52.171.99",
+        "10.52.171.100",
+        "10.52.171.101",
+        "10.52.171.102",
+        "10.52.171.103",
+        "10.52.171.104",
+        "10.52.171.105",
+        "10.52.171.106",
+        "10.52.171.107",
+        "10.52.171.108",
+        "10.52.171.109",
+        "10.52.171.110",
+        "10.52.171.111",
+        "10.52.171.112",
+        "10.52.171.113",
+        "10.52.171.114",
+        "10.52.171.115",
+        "10.52.171.116",
+        "10.52.171.117",
+        "10.52.171.118",
+        "10.52.171.119",
+        "10.52.171.120",
+        "10.52.171.121",
+        "10.52.171.122",
+        "10.52.171.123",
+        "10.52.171.124",
+        "10.52.171.125"
+    ],
+    "latitude": 31.518,
+    "longitude": -99.135,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.97",
+            "ipAddress": "10.52.171.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..Firewall 171",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.518,
+            "Longitude": -99.135
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.98",
+            "ipAddress": "10.52.171.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..Router 171",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.1",
+            "ipAddress": "10.52.171.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS.OT.Switch 341",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.99",
+            "ipAddress": "10.52.171.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS.Corporate.Switch 342",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.3",
+            "ipAddress": "10.52.171.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.2",
+            "ipAddress": "10.52.171.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..RC 171",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.171.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.100",
+            "ipAddress": "10.52.171.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..Host 341",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.100",
+            "ipAddress": "10.52.171.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..Host 342",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.100",
+            "ipAddress": "10.52.171.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..LocalDatabase 341",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.100",
+            "ipAddress": "10.52.171.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..LocalWebServer 342",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.RICHLAND SPRINGS..RC 171",
+            "destination": "Utility 0.RICHLAND SPRINGS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RICHLAND SPRINGS..Router 171",
+            "destination": "Utility 0.RICHLAND SPRINGS..Firewall 171",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RICHLAND SPRINGS..Firewall 171",
+            "destination": "Utility 0.RICHLAND SPRINGS.OT.Switch 341",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RICHLAND SPRINGS.OT.Switch 341",
+            "destination": "Utility 0.RICHLAND SPRINGS..RC 171",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RICHLAND SPRINGS..Firewall 171",
+            "destination": "Utility 0.RICHLAND SPRINGS.Corporate.Switch 342",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RICHLAND SPRINGS.Corporate.Switch 342",
+            "destination": "Utility 0.RICHLAND SPRINGS..Host 341",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RICHLAND SPRINGS.Corporate.Switch 342",
+            "destination": "Utility 0.RICHLAND SPRINGS..Host 342",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RICHLAND SPRINGS.Corporate.Switch 342",
+            "destination": "Utility 0.RICHLAND SPRINGS..LocalDatabase 341",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RICHLAND SPRINGS.Corporate.Switch 342",
+            "destination": "Utility 0.RICHLAND SPRINGS..LocalWebServer 342",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.1",
+            "ipAddress": "10.52.171.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS.OT.Switch 341",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.2",
+            "ipAddress": "10.52.171.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..RC 171",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.171.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.97",
+            "ipAddress": "10.52.171.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..Firewall 171",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.518,
+            "Longitude": -99.135
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.98",
+            "ipAddress": "10.52.171.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..Router 171",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.1",
+            "ipAddress": "10.52.171.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS.OT.Switch 341",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.171.2",
+            "ipAddress": "10.52.171.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHLAND SPRINGS",
+            "label": "Utility 0.RICHLAND SPRINGS..RC 171",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.171.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

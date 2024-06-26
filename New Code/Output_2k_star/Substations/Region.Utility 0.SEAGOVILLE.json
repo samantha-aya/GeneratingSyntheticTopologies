@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.SEAGOVILLE",
+    "networkLan": "10.52.634.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "SEAGOVILLE",
+    "substationNumber": 634,
+    "OTAddress": "10.52.634.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.634.1",
+        "10.52.634.2",
+        "10.52.634.3",
+        "10.52.634.4",
+        "10.52.634.5",
+        "10.52.634.6",
+        "10.52.634.7",
+        "10.52.634.8",
+        "10.52.634.9",
+        "10.52.634.10",
+        "10.52.634.11",
+        "10.52.634.12",
+        "10.52.634.13",
+        "10.52.634.14",
+        "10.52.634.15",
+        "10.52.634.16",
+        "10.52.634.17",
+        "10.52.634.18",
+        "10.52.634.19",
+        "10.52.634.20",
+        "10.52.634.21",
+        "10.52.634.22",
+        "10.52.634.23",
+        "10.52.634.24",
+        "10.52.634.25",
+        "10.52.634.26",
+        "10.52.634.27",
+        "10.52.634.28",
+        "10.52.634.29",
+        "10.52.634.30",
+        "10.52.634.31",
+        "10.52.634.32",
+        "10.52.634.33",
+        "10.52.634.34",
+        "10.52.634.35",
+        "10.52.634.36",
+        "10.52.634.37",
+        "10.52.634.38",
+        "10.52.634.39",
+        "10.52.634.40",
+        "10.52.634.41",
+        "10.52.634.42",
+        "10.52.634.43",
+        "10.52.634.44",
+        "10.52.634.45",
+        "10.52.634.46",
+        "10.52.634.47",
+        "10.52.634.48",
+        "10.52.634.49",
+        "10.52.634.50",
+        "10.52.634.51",
+        "10.52.634.52",
+        "10.52.634.53",
+        "10.52.634.54",
+        "10.52.634.55",
+        "10.52.634.56",
+        "10.52.634.57",
+        "10.52.634.58",
+        "10.52.634.59",
+        "10.52.634.60",
+        "10.52.634.61",
+        "10.52.634.62"
+    ],
+    "routeAddress": "10.52.634.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.634.65",
+        "10.52.634.66",
+        "10.52.634.67",
+        "10.52.634.68",
+        "10.52.634.69",
+        "10.52.634.70",
+        "10.52.634.71",
+        "10.52.634.72",
+        "10.52.634.73",
+        "10.52.634.74",
+        "10.52.634.75",
+        "10.52.634.76",
+        "10.52.634.77",
+        "10.52.634.78",
+        "10.52.634.79",
+        "10.52.634.80",
+        "10.52.634.81",
+        "10.52.634.82",
+        "10.52.634.83",
+        "10.52.634.84",
+        "10.52.634.85",
+        "10.52.634.86",
+        "10.52.634.87",
+        "10.52.634.88",
+        "10.52.634.89",
+        "10.52.634.90",
+        "10.52.634.91",
+        "10.52.634.92",
+        "10.52.634.93",
+        "10.52.634.94"
+    ],
+    "corporateAddress": "10.52.634.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.634.97",
+        "10.52.634.98",
+        "10.52.634.99",
+        "10.52.634.100",
+        "10.52.634.101",
+        "10.52.634.102",
+        "10.52.634.103",
+        "10.52.634.104",
+        "10.52.634.105",
+        "10.52.634.106",
+        "10.52.634.107",
+        "10.52.634.108",
+        "10.52.634.109",
+        "10.52.634.110",
+        "10.52.634.111",
+        "10.52.634.112",
+        "10.52.634.113",
+        "10.52.634.114",
+        "10.52.634.115",
+        "10.52.634.116",
+        "10.52.634.117",
+        "10.52.634.118",
+        "10.52.634.119",
+        "10.52.634.120",
+        "10.52.634.121",
+        "10.52.634.122",
+        "10.52.634.123",
+        "10.52.634.124",
+        "10.52.634.125"
+    ],
+    "latitude": 32.606,
+    "longitude": -96.542,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.97",
+            "ipAddress": "10.52.634.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..Firewall 634",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.606,
+            "Longitude": -96.542
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.98",
+            "ipAddress": "10.52.634.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..Router 634",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.1",
+            "ipAddress": "10.52.634.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE.OT.Switch 1267",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.99",
+            "ipAddress": "10.52.634.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE.Corporate.Switch 1268",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.3",
+            "ipAddress": "10.52.634.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.2",
+            "ipAddress": "10.52.634.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..RC 634",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.634.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.100",
+            "ipAddress": "10.52.634.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..Host 1267",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.100",
+            "ipAddress": "10.52.634.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..Host 1268",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.100",
+            "ipAddress": "10.52.634.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..LocalDatabase 1267",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.100",
+            "ipAddress": "10.52.634.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..LocalWebServer 1268",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.SEAGOVILLE..RC 634",
+            "destination": "Utility 0.SEAGOVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEAGOVILLE..Router 634",
+            "destination": "Utility 0.SEAGOVILLE..Firewall 634",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEAGOVILLE..Firewall 634",
+            "destination": "Utility 0.SEAGOVILLE.OT.Switch 1267",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEAGOVILLE.OT.Switch 1267",
+            "destination": "Utility 0.SEAGOVILLE..RC 634",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEAGOVILLE..Firewall 634",
+            "destination": "Utility 0.SEAGOVILLE.Corporate.Switch 1268",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEAGOVILLE.Corporate.Switch 1268",
+            "destination": "Utility 0.SEAGOVILLE..Host 1267",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEAGOVILLE.Corporate.Switch 1268",
+            "destination": "Utility 0.SEAGOVILLE..Host 1268",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEAGOVILLE.Corporate.Switch 1268",
+            "destination": "Utility 0.SEAGOVILLE..LocalDatabase 1267",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEAGOVILLE.Corporate.Switch 1268",
+            "destination": "Utility 0.SEAGOVILLE..LocalWebServer 1268",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.1",
+            "ipAddress": "10.52.634.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE.OT.Switch 1267",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.2",
+            "ipAddress": "10.52.634.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..RC 634",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.634.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.97",
+            "ipAddress": "10.52.634.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..Firewall 634",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.606,
+            "Longitude": -96.542
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.98",
+            "ipAddress": "10.52.634.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..Router 634",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.1",
+            "ipAddress": "10.52.634.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE.OT.Switch 1267",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.634.2",
+            "ipAddress": "10.52.634.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEAGOVILLE",
+            "label": "Utility 0.SEAGOVILLE..RC 634",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.634.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

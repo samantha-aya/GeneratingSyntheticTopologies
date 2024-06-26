@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.DUNCANVILLE 1",
+    "networkLan": "10.52.506.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "DUNCANVILLE 1",
+    "substationNumber": 506,
+    "OTAddress": "10.52.506.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.506.1",
+        "10.52.506.2",
+        "10.52.506.3",
+        "10.52.506.4",
+        "10.52.506.5",
+        "10.52.506.6",
+        "10.52.506.7",
+        "10.52.506.8",
+        "10.52.506.9",
+        "10.52.506.10",
+        "10.52.506.11",
+        "10.52.506.12",
+        "10.52.506.13",
+        "10.52.506.14",
+        "10.52.506.15",
+        "10.52.506.16",
+        "10.52.506.17",
+        "10.52.506.18",
+        "10.52.506.19",
+        "10.52.506.20",
+        "10.52.506.21",
+        "10.52.506.22",
+        "10.52.506.23",
+        "10.52.506.24",
+        "10.52.506.25",
+        "10.52.506.26",
+        "10.52.506.27",
+        "10.52.506.28",
+        "10.52.506.29",
+        "10.52.506.30",
+        "10.52.506.31",
+        "10.52.506.32",
+        "10.52.506.33",
+        "10.52.506.34",
+        "10.52.506.35",
+        "10.52.506.36",
+        "10.52.506.37",
+        "10.52.506.38",
+        "10.52.506.39",
+        "10.52.506.40",
+        "10.52.506.41",
+        "10.52.506.42",
+        "10.52.506.43",
+        "10.52.506.44",
+        "10.52.506.45",
+        "10.52.506.46",
+        "10.52.506.47",
+        "10.52.506.48",
+        "10.52.506.49",
+        "10.52.506.50",
+        "10.52.506.51",
+        "10.52.506.52",
+        "10.52.506.53",
+        "10.52.506.54",
+        "10.52.506.55",
+        "10.52.506.56",
+        "10.52.506.57",
+        "10.52.506.58",
+        "10.52.506.59",
+        "10.52.506.60",
+        "10.52.506.61",
+        "10.52.506.62"
+    ],
+    "routeAddress": "10.52.506.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.506.65",
+        "10.52.506.66",
+        "10.52.506.67",
+        "10.52.506.68",
+        "10.52.506.69",
+        "10.52.506.70",
+        "10.52.506.71",
+        "10.52.506.72",
+        "10.52.506.73",
+        "10.52.506.74",
+        "10.52.506.75",
+        "10.52.506.76",
+        "10.52.506.77",
+        "10.52.506.78",
+        "10.52.506.79",
+        "10.52.506.80",
+        "10.52.506.81",
+        "10.52.506.82",
+        "10.52.506.83",
+        "10.52.506.84",
+        "10.52.506.85",
+        "10.52.506.86",
+        "10.52.506.87",
+        "10.52.506.88",
+        "10.52.506.89",
+        "10.52.506.90",
+        "10.52.506.91",
+        "10.52.506.92",
+        "10.52.506.93",
+        "10.52.506.94"
+    ],
+    "corporateAddress": "10.52.506.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.506.97",
+        "10.52.506.98",
+        "10.52.506.99",
+        "10.52.506.100",
+        "10.52.506.101",
+        "10.52.506.102",
+        "10.52.506.103",
+        "10.52.506.104",
+        "10.52.506.105",
+        "10.52.506.106",
+        "10.52.506.107",
+        "10.52.506.108",
+        "10.52.506.109",
+        "10.52.506.110",
+        "10.52.506.111",
+        "10.52.506.112",
+        "10.52.506.113",
+        "10.52.506.114",
+        "10.52.506.115",
+        "10.52.506.116",
+        "10.52.506.117",
+        "10.52.506.118",
+        "10.52.506.119",
+        "10.52.506.120",
+        "10.52.506.121",
+        "10.52.506.122",
+        "10.52.506.123",
+        "10.52.506.124",
+        "10.52.506.125"
+    ],
+    "latitude": 32.661,
+    "longitude": -96.912,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.97",
+            "ipAddress": "10.52.506.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..Firewall 506",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.661,
+            "Longitude": -96.912
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.98",
+            "ipAddress": "10.52.506.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..Router 506",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.1",
+            "ipAddress": "10.52.506.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1.OT.Switch 1011",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.99",
+            "ipAddress": "10.52.506.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1.Corporate.Switch 1012",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.3",
+            "ipAddress": "10.52.506.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.2",
+            "ipAddress": "10.52.506.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..RC 506",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.506.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.100",
+            "ipAddress": "10.52.506.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..Host 1011",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.100",
+            "ipAddress": "10.52.506.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..Host 1012",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.100",
+            "ipAddress": "10.52.506.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..LocalDatabase 1011",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.100",
+            "ipAddress": "10.52.506.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..LocalWebServer 1012",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.DUNCANVILLE 1..RC 506",
+            "destination": "Utility 0.DUNCANVILLE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUNCANVILLE 1..Router 506",
+            "destination": "Utility 0.DUNCANVILLE 1..Firewall 506",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUNCANVILLE 1..Firewall 506",
+            "destination": "Utility 0.DUNCANVILLE 1.OT.Switch 1011",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUNCANVILLE 1.OT.Switch 1011",
+            "destination": "Utility 0.DUNCANVILLE 1..RC 506",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUNCANVILLE 1..Firewall 506",
+            "destination": "Utility 0.DUNCANVILLE 1.Corporate.Switch 1012",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUNCANVILLE 1.Corporate.Switch 1012",
+            "destination": "Utility 0.DUNCANVILLE 1..Host 1011",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUNCANVILLE 1.Corporate.Switch 1012",
+            "destination": "Utility 0.DUNCANVILLE 1..Host 1012",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUNCANVILLE 1.Corporate.Switch 1012",
+            "destination": "Utility 0.DUNCANVILLE 1..LocalDatabase 1011",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUNCANVILLE 1.Corporate.Switch 1012",
+            "destination": "Utility 0.DUNCANVILLE 1..LocalWebServer 1012",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.1",
+            "ipAddress": "10.52.506.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1.OT.Switch 1011",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.2",
+            "ipAddress": "10.52.506.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..RC 506",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.506.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.97",
+            "ipAddress": "10.52.506.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..Firewall 506",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.661,
+            "Longitude": -96.912
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.98",
+            "ipAddress": "10.52.506.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..Router 506",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.1",
+            "ipAddress": "10.52.506.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1.OT.Switch 1011",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.506.2",
+            "ipAddress": "10.52.506.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUNCANVILLE 1",
+            "label": "Utility 0.DUNCANVILLE 1..RC 506",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.506.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

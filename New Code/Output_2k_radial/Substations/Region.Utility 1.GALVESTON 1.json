@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 1.GALVESTON 1",
+    "networkLan": "10.58.954.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 58,
+    "substation": "GALVESTON 1",
+    "substationNumber": 954,
+    "OTAddress": "10.58.954.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.58.954.1",
+        "10.58.954.2",
+        "10.58.954.3",
+        "10.58.954.4",
+        "10.58.954.5",
+        "10.58.954.6",
+        "10.58.954.7",
+        "10.58.954.8",
+        "10.58.954.9",
+        "10.58.954.10",
+        "10.58.954.11",
+        "10.58.954.12",
+        "10.58.954.13",
+        "10.58.954.14",
+        "10.58.954.15",
+        "10.58.954.16",
+        "10.58.954.17",
+        "10.58.954.18",
+        "10.58.954.19",
+        "10.58.954.20",
+        "10.58.954.21",
+        "10.58.954.22",
+        "10.58.954.23",
+        "10.58.954.24",
+        "10.58.954.25",
+        "10.58.954.26",
+        "10.58.954.27",
+        "10.58.954.28",
+        "10.58.954.29",
+        "10.58.954.30",
+        "10.58.954.31",
+        "10.58.954.32",
+        "10.58.954.33",
+        "10.58.954.34",
+        "10.58.954.35",
+        "10.58.954.36",
+        "10.58.954.37",
+        "10.58.954.38",
+        "10.58.954.39",
+        "10.58.954.40",
+        "10.58.954.41",
+        "10.58.954.42",
+        "10.58.954.43",
+        "10.58.954.44",
+        "10.58.954.45",
+        "10.58.954.46",
+        "10.58.954.47",
+        "10.58.954.48",
+        "10.58.954.49",
+        "10.58.954.50",
+        "10.58.954.51",
+        "10.58.954.52",
+        "10.58.954.53",
+        "10.58.954.54",
+        "10.58.954.55",
+        "10.58.954.56",
+        "10.58.954.57",
+        "10.58.954.58",
+        "10.58.954.59",
+        "10.58.954.60",
+        "10.58.954.61",
+        "10.58.954.62"
+    ],
+    "routeAddress": "10.58.954.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.58.954.65",
+        "10.58.954.66",
+        "10.58.954.67",
+        "10.58.954.68",
+        "10.58.954.69",
+        "10.58.954.70",
+        "10.58.954.71",
+        "10.58.954.72",
+        "10.58.954.73",
+        "10.58.954.74",
+        "10.58.954.75",
+        "10.58.954.76",
+        "10.58.954.77",
+        "10.58.954.78",
+        "10.58.954.79",
+        "10.58.954.80",
+        "10.58.954.81",
+        "10.58.954.82",
+        "10.58.954.83",
+        "10.58.954.84",
+        "10.58.954.85",
+        "10.58.954.86",
+        "10.58.954.87",
+        "10.58.954.88",
+        "10.58.954.89",
+        "10.58.954.90",
+        "10.58.954.91",
+        "10.58.954.92",
+        "10.58.954.93",
+        "10.58.954.94"
+    ],
+    "corporateAddress": "10.58.954.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.58.954.97",
+        "10.58.954.98",
+        "10.58.954.99",
+        "10.58.954.100",
+        "10.58.954.101",
+        "10.58.954.102",
+        "10.58.954.103",
+        "10.58.954.104",
+        "10.58.954.105",
+        "10.58.954.106",
+        "10.58.954.107",
+        "10.58.954.108",
+        "10.58.954.109",
+        "10.58.954.110",
+        "10.58.954.111",
+        "10.58.954.112",
+        "10.58.954.113",
+        "10.58.954.114",
+        "10.58.954.115",
+        "10.58.954.116",
+        "10.58.954.117",
+        "10.58.954.118",
+        "10.58.954.119",
+        "10.58.954.120",
+        "10.58.954.121",
+        "10.58.954.122",
+        "10.58.954.123",
+        "10.58.954.124",
+        "10.58.954.125"
+    ],
+    "latitude": 29.311,
+    "longitude": -94.776,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.97",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..Firewall 954",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.311,
+            "Longitude": -94.776
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.98",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..Router 954",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.1",
+            "ipAddress": "10.58.954.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1.OT.Switch 1907",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.99",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1.Corporate.Switch 1908",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.3",
+            "ipAddress": "10.58.954.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.4",
+            "ipAddress": "10.58.954.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.2",
+            "ipAddress": "10.58.954.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..RC 954",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.954.3",
+                "10.58.954.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.100",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..Host 1907",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.100",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..Host 1908",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.100",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..LocalDatabase 1907",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.100",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..LocalWebServer 1908",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.101",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..hmi 1907",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.100",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..outstation 1908",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.GALVESTON 1..RC 954",
+            "destination": "Utility 1.GALVESTON 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GALVESTON 1..RC 954",
+            "destination": "Utility 1.GALVESTON 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GALVESTON 1..Router 954",
+            "destination": "Utility 1.GALVESTON 1..Firewall 954",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GALVESTON 1..Firewall 954",
+            "destination": "Utility 1.GALVESTON 1.OT.Switch 1907",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GALVESTON 1.OT.Switch 1907",
+            "destination": "Utility 1.GALVESTON 1..RC 954",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GALVESTON 1..Firewall 954",
+            "destination": "Utility 1.GALVESTON 1.Corporate.Switch 1908",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GALVESTON 1.Corporate.Switch 1908",
+            "destination": "Utility 1.GALVESTON 1..Host 1907",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GALVESTON 1.Corporate.Switch 1908",
+            "destination": "Utility 1.GALVESTON 1..Host 1908",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GALVESTON 1.Corporate.Switch 1908",
+            "destination": "Utility 1.GALVESTON 1..LocalDatabase 1907",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GALVESTON 1.Corporate.Switch 1908",
+            "destination": "Utility 1.GALVESTON 1..LocalWebServer 1908",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.1",
+            "ipAddress": "10.58.954.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1.OT.Switch 1907",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.2",
+            "ipAddress": "10.58.954.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..RC 954",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.954.3",
+                "10.58.954.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.97",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..Firewall 954",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.311,
+            "Longitude": -94.776
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.98",
+            "ipAddress": "10.58.954.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..Router 954",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.1",
+            "ipAddress": "10.58.954.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1.OT.Switch 1907",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.954.2",
+            "ipAddress": "10.58.954.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GALVESTON 1",
+            "label": "Utility 1.GALVESTON 1..RC 954",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.954.3",
+                "10.58.954.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

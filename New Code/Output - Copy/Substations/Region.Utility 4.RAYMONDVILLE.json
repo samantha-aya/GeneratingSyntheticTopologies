@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.RAYMONDVILLE",
+    "networkLan": "10.57.358.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "RAYMONDVILLE",
+    "substationNumber": 358,
+    "OTAddress": "10.57.358.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.358.1",
+        "10.57.358.2",
+        "10.57.358.3",
+        "10.57.358.4",
+        "10.57.358.5",
+        "10.57.358.6",
+        "10.57.358.7",
+        "10.57.358.8",
+        "10.57.358.9",
+        "10.57.358.10",
+        "10.57.358.11",
+        "10.57.358.12",
+        "10.57.358.13",
+        "10.57.358.14",
+        "10.57.358.15",
+        "10.57.358.16",
+        "10.57.358.17",
+        "10.57.358.18",
+        "10.57.358.19",
+        "10.57.358.20",
+        "10.57.358.21",
+        "10.57.358.22",
+        "10.57.358.23",
+        "10.57.358.24",
+        "10.57.358.25",
+        "10.57.358.26",
+        "10.57.358.27",
+        "10.57.358.28",
+        "10.57.358.29",
+        "10.57.358.30",
+        "10.57.358.31",
+        "10.57.358.32",
+        "10.57.358.33",
+        "10.57.358.34",
+        "10.57.358.35",
+        "10.57.358.36",
+        "10.57.358.37",
+        "10.57.358.38",
+        "10.57.358.39",
+        "10.57.358.40",
+        "10.57.358.41",
+        "10.57.358.42",
+        "10.57.358.43",
+        "10.57.358.44",
+        "10.57.358.45",
+        "10.57.358.46",
+        "10.57.358.47",
+        "10.57.358.48",
+        "10.57.358.49",
+        "10.57.358.50",
+        "10.57.358.51",
+        "10.57.358.52",
+        "10.57.358.53",
+        "10.57.358.54",
+        "10.57.358.55",
+        "10.57.358.56",
+        "10.57.358.57",
+        "10.57.358.58",
+        "10.57.358.59",
+        "10.57.358.60",
+        "10.57.358.61",
+        "10.57.358.62"
+    ],
+    "routeAddress": "10.57.358.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.358.65",
+        "10.57.358.66",
+        "10.57.358.67",
+        "10.57.358.68",
+        "10.57.358.69",
+        "10.57.358.70",
+        "10.57.358.71",
+        "10.57.358.72",
+        "10.57.358.73",
+        "10.57.358.74",
+        "10.57.358.75",
+        "10.57.358.76",
+        "10.57.358.77",
+        "10.57.358.78",
+        "10.57.358.79",
+        "10.57.358.80",
+        "10.57.358.81",
+        "10.57.358.82",
+        "10.57.358.83",
+        "10.57.358.84",
+        "10.57.358.85",
+        "10.57.358.86",
+        "10.57.358.87",
+        "10.57.358.88",
+        "10.57.358.89",
+        "10.57.358.90",
+        "10.57.358.91",
+        "10.57.358.92",
+        "10.57.358.93",
+        "10.57.358.94"
+    ],
+    "corporateAddress": "10.57.358.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.358.97",
+        "10.57.358.98",
+        "10.57.358.99",
+        "10.57.358.100",
+        "10.57.358.101",
+        "10.57.358.102",
+        "10.57.358.103",
+        "10.57.358.104",
+        "10.57.358.105",
+        "10.57.358.106",
+        "10.57.358.107",
+        "10.57.358.108",
+        "10.57.358.109",
+        "10.57.358.110",
+        "10.57.358.111",
+        "10.57.358.112",
+        "10.57.358.113",
+        "10.57.358.114",
+        "10.57.358.115",
+        "10.57.358.116",
+        "10.57.358.117",
+        "10.57.358.118",
+        "10.57.358.119",
+        "10.57.358.120",
+        "10.57.358.121",
+        "10.57.358.122",
+        "10.57.358.123",
+        "10.57.358.124",
+        "10.57.358.125"
+    ],
+    "latitude": 26.569,
+    "longitude": -97.442,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.97",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..Firewall 358",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.569,
+            "Longitude": -97.442
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.98",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..Router 358",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.1",
+            "ipAddress": "10.57.358.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE.OT.Switch 715",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.99",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE.Corporate.Switch 716",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.3",
+            "ipAddress": "10.57.358.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.2",
+            "ipAddress": "10.57.358.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..RC 358",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.358.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.100",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..Host 715",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.100",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..Host 716",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.100",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..LocalDatabase 715",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.100",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..LocalWebServer 716",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.101",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..hmi 715",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.100",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..outstation 716",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.RAYMONDVILLE..RC 358",
+            "destination": "Utility 4.RAYMONDVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.RAYMONDVILLE..Router 358",
+            "destination": "Utility 4.RAYMONDVILLE..Firewall 358",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.RAYMONDVILLE..Firewall 358",
+            "destination": "Utility 4.RAYMONDVILLE.OT.Switch 715",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.RAYMONDVILLE.OT.Switch 715",
+            "destination": "Utility 4.RAYMONDVILLE..RC 358",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.RAYMONDVILLE..Firewall 358",
+            "destination": "Utility 4.RAYMONDVILLE.Corporate.Switch 716",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.RAYMONDVILLE.Corporate.Switch 716",
+            "destination": "Utility 4.RAYMONDVILLE..Host 715",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.RAYMONDVILLE.Corporate.Switch 716",
+            "destination": "Utility 4.RAYMONDVILLE..Host 716",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.RAYMONDVILLE.Corporate.Switch 716",
+            "destination": "Utility 4.RAYMONDVILLE..LocalDatabase 715",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.RAYMONDVILLE.Corporate.Switch 716",
+            "destination": "Utility 4.RAYMONDVILLE..LocalWebServer 716",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.1",
+            "ipAddress": "10.57.358.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE.OT.Switch 715",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.2",
+            "ipAddress": "10.57.358.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..RC 358",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.358.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.97",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..Firewall 358",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.569,
+            "Longitude": -97.442
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.98",
+            "ipAddress": "10.57.358.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..Router 358",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.1",
+            "ipAddress": "10.57.358.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE.OT.Switch 715",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.358.2",
+            "ipAddress": "10.57.358.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RAYMONDVILLE",
+            "label": "Utility 4.RAYMONDVILLE..RC 358",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.358.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.GRAND PRAIRIE 1",
+    "networkLan": "10.55.463.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "GRAND PRAIRIE 1",
+    "substationNumber": 463,
+    "OTAddress": "10.55.463.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.463.1",
+        "10.55.463.2",
+        "10.55.463.3",
+        "10.55.463.4",
+        "10.55.463.5",
+        "10.55.463.6",
+        "10.55.463.7",
+        "10.55.463.8",
+        "10.55.463.9",
+        "10.55.463.10",
+        "10.55.463.11",
+        "10.55.463.12",
+        "10.55.463.13",
+        "10.55.463.14",
+        "10.55.463.15",
+        "10.55.463.16",
+        "10.55.463.17",
+        "10.55.463.18",
+        "10.55.463.19",
+        "10.55.463.20",
+        "10.55.463.21",
+        "10.55.463.22",
+        "10.55.463.23",
+        "10.55.463.24",
+        "10.55.463.25",
+        "10.55.463.26",
+        "10.55.463.27",
+        "10.55.463.28",
+        "10.55.463.29",
+        "10.55.463.30",
+        "10.55.463.31",
+        "10.55.463.32",
+        "10.55.463.33",
+        "10.55.463.34",
+        "10.55.463.35",
+        "10.55.463.36",
+        "10.55.463.37",
+        "10.55.463.38",
+        "10.55.463.39",
+        "10.55.463.40",
+        "10.55.463.41",
+        "10.55.463.42",
+        "10.55.463.43",
+        "10.55.463.44",
+        "10.55.463.45",
+        "10.55.463.46",
+        "10.55.463.47",
+        "10.55.463.48",
+        "10.55.463.49",
+        "10.55.463.50",
+        "10.55.463.51",
+        "10.55.463.52",
+        "10.55.463.53",
+        "10.55.463.54",
+        "10.55.463.55",
+        "10.55.463.56",
+        "10.55.463.57",
+        "10.55.463.58",
+        "10.55.463.59",
+        "10.55.463.60",
+        "10.55.463.61",
+        "10.55.463.62"
+    ],
+    "routeAddress": "10.55.463.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.463.65",
+        "10.55.463.66",
+        "10.55.463.67",
+        "10.55.463.68",
+        "10.55.463.69",
+        "10.55.463.70",
+        "10.55.463.71",
+        "10.55.463.72",
+        "10.55.463.73",
+        "10.55.463.74",
+        "10.55.463.75",
+        "10.55.463.76",
+        "10.55.463.77",
+        "10.55.463.78",
+        "10.55.463.79",
+        "10.55.463.80",
+        "10.55.463.81",
+        "10.55.463.82",
+        "10.55.463.83",
+        "10.55.463.84",
+        "10.55.463.85",
+        "10.55.463.86",
+        "10.55.463.87",
+        "10.55.463.88",
+        "10.55.463.89",
+        "10.55.463.90",
+        "10.55.463.91",
+        "10.55.463.92",
+        "10.55.463.93",
+        "10.55.463.94"
+    ],
+    "corporateAddress": "10.55.463.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.463.97",
+        "10.55.463.98",
+        "10.55.463.99",
+        "10.55.463.100",
+        "10.55.463.101",
+        "10.55.463.102",
+        "10.55.463.103",
+        "10.55.463.104",
+        "10.55.463.105",
+        "10.55.463.106",
+        "10.55.463.107",
+        "10.55.463.108",
+        "10.55.463.109",
+        "10.55.463.110",
+        "10.55.463.111",
+        "10.55.463.112",
+        "10.55.463.113",
+        "10.55.463.114",
+        "10.55.463.115",
+        "10.55.463.116",
+        "10.55.463.117",
+        "10.55.463.118",
+        "10.55.463.119",
+        "10.55.463.120",
+        "10.55.463.121",
+        "10.55.463.122",
+        "10.55.463.123",
+        "10.55.463.124",
+        "10.55.463.125"
+    ],
+    "latitude": 32.729,
+    "longitude": -96.996,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.97",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..Firewall 463",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.729,
+            "Longitude": -96.996
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.98",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..Router 463",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.1",
+            "ipAddress": "10.55.463.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1.OT.Switch 925",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.99",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1.Corporate.Switch 926",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.3",
+            "ipAddress": "10.55.463.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.2",
+            "ipAddress": "10.55.463.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..RC 463",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.463.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.100",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..Host 925",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.100",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..Host 926",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.100",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..LocalDatabase 925",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.100",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..LocalWebServer 926",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.101",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..hmi 925",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.100",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..outstation 926",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.GRAND PRAIRIE 1..RC 463",
+            "destination": "Utility 2.GRAND PRAIRIE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GRAND PRAIRIE 1..Router 463",
+            "destination": "Utility 2.GRAND PRAIRIE 1..Firewall 463",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GRAND PRAIRIE 1..Firewall 463",
+            "destination": "Utility 2.GRAND PRAIRIE 1.OT.Switch 925",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GRAND PRAIRIE 1.OT.Switch 925",
+            "destination": "Utility 2.GRAND PRAIRIE 1..RC 463",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GRAND PRAIRIE 1..Firewall 463",
+            "destination": "Utility 2.GRAND PRAIRIE 1.Corporate.Switch 926",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GRAND PRAIRIE 1.Corporate.Switch 926",
+            "destination": "Utility 2.GRAND PRAIRIE 1..Host 925",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GRAND PRAIRIE 1.Corporate.Switch 926",
+            "destination": "Utility 2.GRAND PRAIRIE 1..Host 926",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GRAND PRAIRIE 1.Corporate.Switch 926",
+            "destination": "Utility 2.GRAND PRAIRIE 1..LocalDatabase 925",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GRAND PRAIRIE 1.Corporate.Switch 926",
+            "destination": "Utility 2.GRAND PRAIRIE 1..LocalWebServer 926",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.1",
+            "ipAddress": "10.55.463.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1.OT.Switch 925",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.2",
+            "ipAddress": "10.55.463.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..RC 463",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.463.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.97",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..Firewall 463",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.729,
+            "Longitude": -96.996
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.98",
+            "ipAddress": "10.55.463.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..Router 463",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.1",
+            "ipAddress": "10.55.463.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1.OT.Switch 925",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.463.2",
+            "ipAddress": "10.55.463.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRAND PRAIRIE 1",
+            "label": "Utility 2.GRAND PRAIRIE 1..RC 463",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.463.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.HELOTES",
+    "networkLan": "10.56.903.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "HELOTES",
+    "substationNumber": 903,
+    "OTAddress": "10.56.903.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.903.1",
+        "10.56.903.2",
+        "10.56.903.3",
+        "10.56.903.4",
+        "10.56.903.5",
+        "10.56.903.6",
+        "10.56.903.7",
+        "10.56.903.8",
+        "10.56.903.9",
+        "10.56.903.10",
+        "10.56.903.11",
+        "10.56.903.12",
+        "10.56.903.13",
+        "10.56.903.14",
+        "10.56.903.15",
+        "10.56.903.16",
+        "10.56.903.17",
+        "10.56.903.18",
+        "10.56.903.19",
+        "10.56.903.20",
+        "10.56.903.21",
+        "10.56.903.22",
+        "10.56.903.23",
+        "10.56.903.24",
+        "10.56.903.25",
+        "10.56.903.26",
+        "10.56.903.27",
+        "10.56.903.28",
+        "10.56.903.29",
+        "10.56.903.30",
+        "10.56.903.31",
+        "10.56.903.32",
+        "10.56.903.33",
+        "10.56.903.34",
+        "10.56.903.35",
+        "10.56.903.36",
+        "10.56.903.37",
+        "10.56.903.38",
+        "10.56.903.39",
+        "10.56.903.40",
+        "10.56.903.41",
+        "10.56.903.42",
+        "10.56.903.43",
+        "10.56.903.44",
+        "10.56.903.45",
+        "10.56.903.46",
+        "10.56.903.47",
+        "10.56.903.48",
+        "10.56.903.49",
+        "10.56.903.50",
+        "10.56.903.51",
+        "10.56.903.52",
+        "10.56.903.53",
+        "10.56.903.54",
+        "10.56.903.55",
+        "10.56.903.56",
+        "10.56.903.57",
+        "10.56.903.58",
+        "10.56.903.59",
+        "10.56.903.60",
+        "10.56.903.61",
+        "10.56.903.62"
+    ],
+    "routeAddress": "10.56.903.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.903.65",
+        "10.56.903.66",
+        "10.56.903.67",
+        "10.56.903.68",
+        "10.56.903.69",
+        "10.56.903.70",
+        "10.56.903.71",
+        "10.56.903.72",
+        "10.56.903.73",
+        "10.56.903.74",
+        "10.56.903.75",
+        "10.56.903.76",
+        "10.56.903.77",
+        "10.56.903.78",
+        "10.56.903.79",
+        "10.56.903.80",
+        "10.56.903.81",
+        "10.56.903.82",
+        "10.56.903.83",
+        "10.56.903.84",
+        "10.56.903.85",
+        "10.56.903.86",
+        "10.56.903.87",
+        "10.56.903.88",
+        "10.56.903.89",
+        "10.56.903.90",
+        "10.56.903.91",
+        "10.56.903.92",
+        "10.56.903.93",
+        "10.56.903.94"
+    ],
+    "corporateAddress": "10.56.903.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.903.97",
+        "10.56.903.98",
+        "10.56.903.99",
+        "10.56.903.100",
+        "10.56.903.101",
+        "10.56.903.102",
+        "10.56.903.103",
+        "10.56.903.104",
+        "10.56.903.105",
+        "10.56.903.106",
+        "10.56.903.107",
+        "10.56.903.108",
+        "10.56.903.109",
+        "10.56.903.110",
+        "10.56.903.111",
+        "10.56.903.112",
+        "10.56.903.113",
+        "10.56.903.114",
+        "10.56.903.115",
+        "10.56.903.116",
+        "10.56.903.117",
+        "10.56.903.118",
+        "10.56.903.119",
+        "10.56.903.120",
+        "10.56.903.121",
+        "10.56.903.122",
+        "10.56.903.123",
+        "10.56.903.124",
+        "10.56.903.125"
+    ],
+    "latitude": 29.61,
+    "longitude": -98.747,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.97",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..Firewall 903",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.61,
+            "Longitude": -98.747
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.98",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..Router 903",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.1",
+            "ipAddress": "10.56.903.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES.OT.Switch 1805",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.99",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES.Corporate.Switch 1806",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.3",
+            "ipAddress": "10.56.903.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.2",
+            "ipAddress": "10.56.903.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..RC 903",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.903.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.100",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..Host 1805",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.100",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..Host 1806",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.100",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..LocalDatabase 1805",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.100",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..LocalWebServer 1806",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.101",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..hmi 1805",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.100",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..outstation 1806",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.HELOTES..RC 903",
+            "destination": "Utility 3.HELOTES..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HELOTES..Router 903",
+            "destination": "Utility 3.HELOTES..Firewall 903",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HELOTES..Firewall 903",
+            "destination": "Utility 3.HELOTES.OT.Switch 1805",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HELOTES.OT.Switch 1805",
+            "destination": "Utility 3.HELOTES..RC 903",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HELOTES..Firewall 903",
+            "destination": "Utility 3.HELOTES.Corporate.Switch 1806",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HELOTES.Corporate.Switch 1806",
+            "destination": "Utility 3.HELOTES..Host 1805",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HELOTES.Corporate.Switch 1806",
+            "destination": "Utility 3.HELOTES..Host 1806",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HELOTES.Corporate.Switch 1806",
+            "destination": "Utility 3.HELOTES..LocalDatabase 1805",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HELOTES.Corporate.Switch 1806",
+            "destination": "Utility 3.HELOTES..LocalWebServer 1806",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.1",
+            "ipAddress": "10.56.903.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES.OT.Switch 1805",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.2",
+            "ipAddress": "10.56.903.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..RC 903",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.903.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.97",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..Firewall 903",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.61,
+            "Longitude": -98.747
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.98",
+            "ipAddress": "10.56.903.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..Router 903",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.1",
+            "ipAddress": "10.56.903.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES.OT.Switch 1805",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.903.2",
+            "ipAddress": "10.56.903.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HELOTES",
+            "label": "Utility 3.HELOTES..RC 903",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.903.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

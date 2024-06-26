@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 78.PAIGE",
+    "networkLan": "10.163.720.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 78",
+    "utility_id": 163,
+    "substation": "PAIGE",
+    "substationNumber": 720,
+    "OTAddress": "10.163.720.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.163.720.1",
+        "10.163.720.2",
+        "10.163.720.3",
+        "10.163.720.4",
+        "10.163.720.5",
+        "10.163.720.6",
+        "10.163.720.7",
+        "10.163.720.8",
+        "10.163.720.9",
+        "10.163.720.10",
+        "10.163.720.11",
+        "10.163.720.12",
+        "10.163.720.13",
+        "10.163.720.14",
+        "10.163.720.15",
+        "10.163.720.16",
+        "10.163.720.17",
+        "10.163.720.18",
+        "10.163.720.19",
+        "10.163.720.20",
+        "10.163.720.21",
+        "10.163.720.22",
+        "10.163.720.23",
+        "10.163.720.24",
+        "10.163.720.25",
+        "10.163.720.26",
+        "10.163.720.27",
+        "10.163.720.28",
+        "10.163.720.29",
+        "10.163.720.30",
+        "10.163.720.31",
+        "10.163.720.32",
+        "10.163.720.33",
+        "10.163.720.34",
+        "10.163.720.35",
+        "10.163.720.36",
+        "10.163.720.37",
+        "10.163.720.38",
+        "10.163.720.39",
+        "10.163.720.40",
+        "10.163.720.41",
+        "10.163.720.42",
+        "10.163.720.43",
+        "10.163.720.44",
+        "10.163.720.45",
+        "10.163.720.46",
+        "10.163.720.47",
+        "10.163.720.48",
+        "10.163.720.49",
+        "10.163.720.50",
+        "10.163.720.51",
+        "10.163.720.52",
+        "10.163.720.53",
+        "10.163.720.54",
+        "10.163.720.55",
+        "10.163.720.56",
+        "10.163.720.57",
+        "10.163.720.58",
+        "10.163.720.59",
+        "10.163.720.60",
+        "10.163.720.61",
+        "10.163.720.62"
+    ],
+    "routeAddress": "10.163.720.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.163.720.65",
+        "10.163.720.66",
+        "10.163.720.67",
+        "10.163.720.68",
+        "10.163.720.69",
+        "10.163.720.70",
+        "10.163.720.71",
+        "10.163.720.72",
+        "10.163.720.73",
+        "10.163.720.74",
+        "10.163.720.75",
+        "10.163.720.76",
+        "10.163.720.77",
+        "10.163.720.78",
+        "10.163.720.79",
+        "10.163.720.80",
+        "10.163.720.81",
+        "10.163.720.82",
+        "10.163.720.83",
+        "10.163.720.84",
+        "10.163.720.85",
+        "10.163.720.86",
+        "10.163.720.87",
+        "10.163.720.88",
+        "10.163.720.89",
+        "10.163.720.90",
+        "10.163.720.91",
+        "10.163.720.92",
+        "10.163.720.93",
+        "10.163.720.94"
+    ],
+    "corporateAddress": "10.163.720.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.163.720.97",
+        "10.163.720.98",
+        "10.163.720.99",
+        "10.163.720.100",
+        "10.163.720.101",
+        "10.163.720.102",
+        "10.163.720.103",
+        "10.163.720.104",
+        "10.163.720.105",
+        "10.163.720.106",
+        "10.163.720.107",
+        "10.163.720.108",
+        "10.163.720.109",
+        "10.163.720.110",
+        "10.163.720.111",
+        "10.163.720.112",
+        "10.163.720.113",
+        "10.163.720.114",
+        "10.163.720.115",
+        "10.163.720.116",
+        "10.163.720.117",
+        "10.163.720.118",
+        "10.163.720.119",
+        "10.163.720.120",
+        "10.163.720.121",
+        "10.163.720.122",
+        "10.163.720.123",
+        "10.163.720.124",
+        "10.163.720.125"
+    ],
+    "latitude": 30.304,
+    "longitude": -97.219,
+    "nodes": [
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.97",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..Firewall 720",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.304,
+            "Longitude": -97.219
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.98",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..Router 720",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.1",
+            "ipAddress": "10.163.720.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE.OT.Switch 1439",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.99",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE.Corporate.Switch 1440",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.3",
+            "ipAddress": "10.163.720.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.2",
+            "ipAddress": "10.163.720.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..RC 720",
+            "compromised": false,
+            "relayIPlist": [
+                "10.163.720.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.100",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..Host 1439",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.100",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..Host 1440",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.100",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..LocalDatabase 1439",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.100",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..LocalWebServer 1440",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.101",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..hmi 1439",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.100",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..outstation 1440",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 78.PAIGE..RC 720",
+            "destination": "Utility 78.PAIGE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 78.PAIGE..Router 720",
+            "destination": "Utility 78.PAIGE..Firewall 720",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 78.PAIGE..Firewall 720",
+            "destination": "Utility 78.PAIGE.OT.Switch 1439",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 78.PAIGE.OT.Switch 1439",
+            "destination": "Utility 78.PAIGE..RC 720",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 78.PAIGE..Firewall 720",
+            "destination": "Utility 78.PAIGE.Corporate.Switch 1440",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 78.PAIGE.Corporate.Switch 1440",
+            "destination": "Utility 78.PAIGE..Host 1439",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 78.PAIGE.Corporate.Switch 1440",
+            "destination": "Utility 78.PAIGE..Host 1440",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 78.PAIGE.Corporate.Switch 1440",
+            "destination": "Utility 78.PAIGE..LocalDatabase 1439",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 78.PAIGE.Corporate.Switch 1440",
+            "destination": "Utility 78.PAIGE..LocalWebServer 1440",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.1",
+            "ipAddress": "10.163.720.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE.OT.Switch 1439",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.2",
+            "ipAddress": "10.163.720.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..RC 720",
+            "compromised": false,
+            "relayIPlist": [
+                "10.163.720.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.97",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..Firewall 720",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.304,
+            "Longitude": -97.219
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.98",
+            "ipAddress": "10.163.720.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..Router 720",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.1",
+            "ipAddress": "10.163.720.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE.OT.Switch 1439",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 78",
+            "adminIP": "10.163.720.2",
+            "ipAddress": "10.163.720.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PAIGE",
+            "label": "Utility 78.PAIGE..RC 720",
+            "compromised": false,
+            "relayIPlist": [
+                "10.163.720.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

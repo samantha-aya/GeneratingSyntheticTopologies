@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 95.COMMERCE",
+    "networkLan": "10.71.565.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 95",
+    "utility_id": 71,
+    "substation": "COMMERCE",
+    "substationNumber": 565,
+    "OTAddress": "10.71.565.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.71.565.1",
+        "10.71.565.2",
+        "10.71.565.3",
+        "10.71.565.4",
+        "10.71.565.5",
+        "10.71.565.6",
+        "10.71.565.7",
+        "10.71.565.8",
+        "10.71.565.9",
+        "10.71.565.10",
+        "10.71.565.11",
+        "10.71.565.12",
+        "10.71.565.13",
+        "10.71.565.14",
+        "10.71.565.15",
+        "10.71.565.16",
+        "10.71.565.17",
+        "10.71.565.18",
+        "10.71.565.19",
+        "10.71.565.20",
+        "10.71.565.21",
+        "10.71.565.22",
+        "10.71.565.23",
+        "10.71.565.24",
+        "10.71.565.25",
+        "10.71.565.26",
+        "10.71.565.27",
+        "10.71.565.28",
+        "10.71.565.29",
+        "10.71.565.30",
+        "10.71.565.31",
+        "10.71.565.32",
+        "10.71.565.33",
+        "10.71.565.34",
+        "10.71.565.35",
+        "10.71.565.36",
+        "10.71.565.37",
+        "10.71.565.38",
+        "10.71.565.39",
+        "10.71.565.40",
+        "10.71.565.41",
+        "10.71.565.42",
+        "10.71.565.43",
+        "10.71.565.44",
+        "10.71.565.45",
+        "10.71.565.46",
+        "10.71.565.47",
+        "10.71.565.48",
+        "10.71.565.49",
+        "10.71.565.50",
+        "10.71.565.51",
+        "10.71.565.52",
+        "10.71.565.53",
+        "10.71.565.54",
+        "10.71.565.55",
+        "10.71.565.56",
+        "10.71.565.57",
+        "10.71.565.58",
+        "10.71.565.59",
+        "10.71.565.60",
+        "10.71.565.61",
+        "10.71.565.62"
+    ],
+    "routeAddress": "10.71.565.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.71.565.65",
+        "10.71.565.66",
+        "10.71.565.67",
+        "10.71.565.68",
+        "10.71.565.69",
+        "10.71.565.70",
+        "10.71.565.71",
+        "10.71.565.72",
+        "10.71.565.73",
+        "10.71.565.74",
+        "10.71.565.75",
+        "10.71.565.76",
+        "10.71.565.77",
+        "10.71.565.78",
+        "10.71.565.79",
+        "10.71.565.80",
+        "10.71.565.81",
+        "10.71.565.82",
+        "10.71.565.83",
+        "10.71.565.84",
+        "10.71.565.85",
+        "10.71.565.86",
+        "10.71.565.87",
+        "10.71.565.88",
+        "10.71.565.89",
+        "10.71.565.90",
+        "10.71.565.91",
+        "10.71.565.92",
+        "10.71.565.93",
+        "10.71.565.94"
+    ],
+    "corporateAddress": "10.71.565.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.71.565.97",
+        "10.71.565.98",
+        "10.71.565.99",
+        "10.71.565.100",
+        "10.71.565.101",
+        "10.71.565.102",
+        "10.71.565.103",
+        "10.71.565.104",
+        "10.71.565.105",
+        "10.71.565.106",
+        "10.71.565.107",
+        "10.71.565.108",
+        "10.71.565.109",
+        "10.71.565.110",
+        "10.71.565.111",
+        "10.71.565.112",
+        "10.71.565.113",
+        "10.71.565.114",
+        "10.71.565.115",
+        "10.71.565.116",
+        "10.71.565.117",
+        "10.71.565.118",
+        "10.71.565.119",
+        "10.71.565.120",
+        "10.71.565.121",
+        "10.71.565.122",
+        "10.71.565.123",
+        "10.71.565.124",
+        "10.71.565.125"
+    ],
+    "latitude": 33.316,
+    "longitude": -95.789,
+    "nodes": [
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.97",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..Firewall 565",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.316,
+            "Longitude": -95.789
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.98",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..Router 565",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.1",
+            "ipAddress": "10.71.565.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE.OT.Switch 1129",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.99",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE.Corporate.Switch 1130",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.3",
+            "ipAddress": "10.71.565.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.2",
+            "ipAddress": "10.71.565.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..RC 565",
+            "compromised": false,
+            "relayIPlist": [
+                "10.71.565.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.100",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..Host 1129",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.100",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..Host 1130",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.100",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..LocalDatabase 1129",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.100",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..LocalWebServer 1130",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.101",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..hmi 1129",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.100",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..outstation 1130",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 95.COMMERCE..RC 565",
+            "destination": "Utility 95.COMMERCE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 95.COMMERCE..Router 565",
+            "destination": "Utility 95.COMMERCE..Firewall 565",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 95.COMMERCE..Firewall 565",
+            "destination": "Utility 95.COMMERCE.OT.Switch 1129",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 95.COMMERCE.OT.Switch 1129",
+            "destination": "Utility 95.COMMERCE..RC 565",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 95.COMMERCE..Firewall 565",
+            "destination": "Utility 95.COMMERCE.Corporate.Switch 1130",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 95.COMMERCE.Corporate.Switch 1130",
+            "destination": "Utility 95.COMMERCE..Host 1129",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 95.COMMERCE.Corporate.Switch 1130",
+            "destination": "Utility 95.COMMERCE..Host 1130",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 95.COMMERCE.Corporate.Switch 1130",
+            "destination": "Utility 95.COMMERCE..LocalDatabase 1129",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 95.COMMERCE.Corporate.Switch 1130",
+            "destination": "Utility 95.COMMERCE..LocalWebServer 1130",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.1",
+            "ipAddress": "10.71.565.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE.OT.Switch 1129",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.2",
+            "ipAddress": "10.71.565.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..RC 565",
+            "compromised": false,
+            "relayIPlist": [
+                "10.71.565.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.97",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..Firewall 565",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.316,
+            "Longitude": -95.789
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.98",
+            "ipAddress": "10.71.565.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..Router 565",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.1",
+            "ipAddress": "10.71.565.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE.OT.Switch 1129",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 95",
+            "adminIP": "10.71.565.2",
+            "ipAddress": "10.71.565.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COMMERCE",
+            "label": "Utility 95.COMMERCE..RC 565",
+            "compromised": false,
+            "relayIPlist": [
+                "10.71.565.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

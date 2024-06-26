@@ -1,0 +1,712 @@
+{
+    "relayCounter": 5,
+    "label": "Region.Utility 2.POOLVILLE",
+    "networkLan": "10.55.514.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "POOLVILLE",
+    "substationNumber": 514,
+    "OTAddress": "10.55.514.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.514.1",
+        "10.55.514.2",
+        "10.55.514.3",
+        "10.55.514.4",
+        "10.55.514.5",
+        "10.55.514.6",
+        "10.55.514.7",
+        "10.55.514.8",
+        "10.55.514.9",
+        "10.55.514.10",
+        "10.55.514.11",
+        "10.55.514.12",
+        "10.55.514.13",
+        "10.55.514.14",
+        "10.55.514.15",
+        "10.55.514.16",
+        "10.55.514.17",
+        "10.55.514.18",
+        "10.55.514.19",
+        "10.55.514.20",
+        "10.55.514.21",
+        "10.55.514.22",
+        "10.55.514.23",
+        "10.55.514.24",
+        "10.55.514.25",
+        "10.55.514.26",
+        "10.55.514.27",
+        "10.55.514.28",
+        "10.55.514.29",
+        "10.55.514.30",
+        "10.55.514.31",
+        "10.55.514.32",
+        "10.55.514.33",
+        "10.55.514.34",
+        "10.55.514.35",
+        "10.55.514.36",
+        "10.55.514.37",
+        "10.55.514.38",
+        "10.55.514.39",
+        "10.55.514.40",
+        "10.55.514.41",
+        "10.55.514.42",
+        "10.55.514.43",
+        "10.55.514.44",
+        "10.55.514.45",
+        "10.55.514.46",
+        "10.55.514.47",
+        "10.55.514.48",
+        "10.55.514.49",
+        "10.55.514.50",
+        "10.55.514.51",
+        "10.55.514.52",
+        "10.55.514.53",
+        "10.55.514.54",
+        "10.55.514.55",
+        "10.55.514.56",
+        "10.55.514.57",
+        "10.55.514.58",
+        "10.55.514.59",
+        "10.55.514.60",
+        "10.55.514.61",
+        "10.55.514.62"
+    ],
+    "routeAddress": "10.55.514.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.514.65",
+        "10.55.514.66",
+        "10.55.514.67",
+        "10.55.514.68",
+        "10.55.514.69",
+        "10.55.514.70",
+        "10.55.514.71",
+        "10.55.514.72",
+        "10.55.514.73",
+        "10.55.514.74",
+        "10.55.514.75",
+        "10.55.514.76",
+        "10.55.514.77",
+        "10.55.514.78",
+        "10.55.514.79",
+        "10.55.514.80",
+        "10.55.514.81",
+        "10.55.514.82",
+        "10.55.514.83",
+        "10.55.514.84",
+        "10.55.514.85",
+        "10.55.514.86",
+        "10.55.514.87",
+        "10.55.514.88",
+        "10.55.514.89",
+        "10.55.514.90",
+        "10.55.514.91",
+        "10.55.514.92",
+        "10.55.514.93",
+        "10.55.514.94"
+    ],
+    "corporateAddress": "10.55.514.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.514.97",
+        "10.55.514.98",
+        "10.55.514.99",
+        "10.55.514.100",
+        "10.55.514.101",
+        "10.55.514.102",
+        "10.55.514.103",
+        "10.55.514.104",
+        "10.55.514.105",
+        "10.55.514.106",
+        "10.55.514.107",
+        "10.55.514.108",
+        "10.55.514.109",
+        "10.55.514.110",
+        "10.55.514.111",
+        "10.55.514.112",
+        "10.55.514.113",
+        "10.55.514.114",
+        "10.55.514.115",
+        "10.55.514.116",
+        "10.55.514.117",
+        "10.55.514.118",
+        "10.55.514.119",
+        "10.55.514.120",
+        "10.55.514.121",
+        "10.55.514.122",
+        "10.55.514.123",
+        "10.55.514.124",
+        "10.55.514.125"
+    ],
+    "latitude": 33.058,
+    "longitude": -97.91,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.97",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Firewall 514",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.058,
+            "Longitude": -97.91
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.98",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Router 514",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.1",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE.OT.Switch 1027",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.99",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE.Corporate.Switch 1028",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.3",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.4",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.5",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.6",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.7",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.2",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..RC 514",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.514.3",
+                "10.55.514.4",
+                "10.55.514.5",
+                "10.55.514.6",
+                "10.55.514.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.100",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Host 1027",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.100",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Host 1028",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.100",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..LocalDatabase 1027",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.100",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..LocalWebServer 1028",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.101",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..hmi 1027",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.100",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..outstation 1028",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.POOLVILLE..RC 514",
+            "destination": "Utility 2.POOLVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE..RC 514",
+            "destination": "Utility 2.POOLVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE..RC 514",
+            "destination": "Utility 2.POOLVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE..RC 514",
+            "destination": "Utility 2.POOLVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE..RC 514",
+            "destination": "Utility 2.POOLVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE..Router 514",
+            "destination": "Utility 2.POOLVILLE..Firewall 514",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE..Firewall 514",
+            "destination": "Utility 2.POOLVILLE.OT.Switch 1027",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE.OT.Switch 1027",
+            "destination": "Utility 2.POOLVILLE..RC 514",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE..Firewall 514",
+            "destination": "Utility 2.POOLVILLE.Corporate.Switch 1028",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE.Corporate.Switch 1028",
+            "destination": "Utility 2.POOLVILLE..Host 1027",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE.Corporate.Switch 1028",
+            "destination": "Utility 2.POOLVILLE..Host 1028",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE.Corporate.Switch 1028",
+            "destination": "Utility 2.POOLVILLE..LocalDatabase 1027",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.POOLVILLE.Corporate.Switch 1028",
+            "destination": "Utility 2.POOLVILLE..LocalWebServer 1028",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.1",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE.OT.Switch 1027",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.2",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..RC 514",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.514.3",
+                "10.55.514.4",
+                "10.55.514.5",
+                "10.55.514.6",
+                "10.55.514.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.97",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Firewall 514",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.058,
+            "Longitude": -97.91
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.98",
+            "ipAddress": "10.55.514.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..Router 514",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.1",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE.OT.Switch 1027",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.514.2",
+            "ipAddress": "10.55.514.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "POOLVILLE",
+            "label": "Utility 2.POOLVILLE..RC 514",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.514.3",
+                "10.55.514.4",
+                "10.55.514.5",
+                "10.55.514.6",
+                "10.55.514.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 567.12,
+    "genmvar": 148.61,
+    "connecting_TS_num": 441
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 112.BALLINGER",
+    "networkLan": "10.103.173.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 112",
+    "utility_id": 103,
+    "substation": "BALLINGER",
+    "substationNumber": 173,
+    "OTAddress": "10.103.173.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.103.173.1",
+        "10.103.173.2",
+        "10.103.173.3",
+        "10.103.173.4",
+        "10.103.173.5",
+        "10.103.173.6",
+        "10.103.173.7",
+        "10.103.173.8",
+        "10.103.173.9",
+        "10.103.173.10",
+        "10.103.173.11",
+        "10.103.173.12",
+        "10.103.173.13",
+        "10.103.173.14",
+        "10.103.173.15",
+        "10.103.173.16",
+        "10.103.173.17",
+        "10.103.173.18",
+        "10.103.173.19",
+        "10.103.173.20",
+        "10.103.173.21",
+        "10.103.173.22",
+        "10.103.173.23",
+        "10.103.173.24",
+        "10.103.173.25",
+        "10.103.173.26",
+        "10.103.173.27",
+        "10.103.173.28",
+        "10.103.173.29",
+        "10.103.173.30",
+        "10.103.173.31",
+        "10.103.173.32",
+        "10.103.173.33",
+        "10.103.173.34",
+        "10.103.173.35",
+        "10.103.173.36",
+        "10.103.173.37",
+        "10.103.173.38",
+        "10.103.173.39",
+        "10.103.173.40",
+        "10.103.173.41",
+        "10.103.173.42",
+        "10.103.173.43",
+        "10.103.173.44",
+        "10.103.173.45",
+        "10.103.173.46",
+        "10.103.173.47",
+        "10.103.173.48",
+        "10.103.173.49",
+        "10.103.173.50",
+        "10.103.173.51",
+        "10.103.173.52",
+        "10.103.173.53",
+        "10.103.173.54",
+        "10.103.173.55",
+        "10.103.173.56",
+        "10.103.173.57",
+        "10.103.173.58",
+        "10.103.173.59",
+        "10.103.173.60",
+        "10.103.173.61",
+        "10.103.173.62"
+    ],
+    "routeAddress": "10.103.173.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.103.173.65",
+        "10.103.173.66",
+        "10.103.173.67",
+        "10.103.173.68",
+        "10.103.173.69",
+        "10.103.173.70",
+        "10.103.173.71",
+        "10.103.173.72",
+        "10.103.173.73",
+        "10.103.173.74",
+        "10.103.173.75",
+        "10.103.173.76",
+        "10.103.173.77",
+        "10.103.173.78",
+        "10.103.173.79",
+        "10.103.173.80",
+        "10.103.173.81",
+        "10.103.173.82",
+        "10.103.173.83",
+        "10.103.173.84",
+        "10.103.173.85",
+        "10.103.173.86",
+        "10.103.173.87",
+        "10.103.173.88",
+        "10.103.173.89",
+        "10.103.173.90",
+        "10.103.173.91",
+        "10.103.173.92",
+        "10.103.173.93",
+        "10.103.173.94"
+    ],
+    "corporateAddress": "10.103.173.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.103.173.97",
+        "10.103.173.98",
+        "10.103.173.99",
+        "10.103.173.100",
+        "10.103.173.101",
+        "10.103.173.102",
+        "10.103.173.103",
+        "10.103.173.104",
+        "10.103.173.105",
+        "10.103.173.106",
+        "10.103.173.107",
+        "10.103.173.108",
+        "10.103.173.109",
+        "10.103.173.110",
+        "10.103.173.111",
+        "10.103.173.112",
+        "10.103.173.113",
+        "10.103.173.114",
+        "10.103.173.115",
+        "10.103.173.116",
+        "10.103.173.117",
+        "10.103.173.118",
+        "10.103.173.119",
+        "10.103.173.120",
+        "10.103.173.121",
+        "10.103.173.122",
+        "10.103.173.123",
+        "10.103.173.124",
+        "10.103.173.125"
+    ],
+    "latitude": 31.739,
+    "longitude": -99.934,
+    "nodes": [
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.97",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..Firewall 173",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.739,
+            "Longitude": -99.934
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.98",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..Router 173",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.1",
+            "ipAddress": "10.103.173.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER.OT.Switch 345",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.99",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER.Corporate.Switch 346",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.3",
+            "ipAddress": "10.103.173.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.2",
+            "ipAddress": "10.103.173.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..RC 173",
+            "compromised": false,
+            "relayIPlist": [
+                "10.103.173.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.100",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..Host 345",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.100",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..Host 346",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.100",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..LocalDatabase 345",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.100",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..LocalWebServer 346",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.101",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..hmi 345",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.100",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..outstation 346",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 112.BALLINGER..RC 173",
+            "destination": "Utility 112.BALLINGER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 112.BALLINGER..Router 173",
+            "destination": "Utility 112.BALLINGER..Firewall 173",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 112.BALLINGER..Firewall 173",
+            "destination": "Utility 112.BALLINGER.OT.Switch 345",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 112.BALLINGER.OT.Switch 345",
+            "destination": "Utility 112.BALLINGER..RC 173",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 112.BALLINGER..Firewall 173",
+            "destination": "Utility 112.BALLINGER.Corporate.Switch 346",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 112.BALLINGER.Corporate.Switch 346",
+            "destination": "Utility 112.BALLINGER..Host 345",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 112.BALLINGER.Corporate.Switch 346",
+            "destination": "Utility 112.BALLINGER..Host 346",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 112.BALLINGER.Corporate.Switch 346",
+            "destination": "Utility 112.BALLINGER..LocalDatabase 345",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 112.BALLINGER.Corporate.Switch 346",
+            "destination": "Utility 112.BALLINGER..LocalWebServer 346",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.1",
+            "ipAddress": "10.103.173.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER.OT.Switch 345",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.2",
+            "ipAddress": "10.103.173.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..RC 173",
+            "compromised": false,
+            "relayIPlist": [
+                "10.103.173.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.97",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..Firewall 173",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.739,
+            "Longitude": -99.934
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.98",
+            "ipAddress": "10.103.173.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..Router 173",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.1",
+            "ipAddress": "10.103.173.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER.OT.Switch 345",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 112",
+            "adminIP": "10.103.173.2",
+            "ipAddress": "10.103.173.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BALLINGER",
+            "label": "Utility 112.BALLINGER..RC 173",
+            "compromised": false,
+            "relayIPlist": [
+                "10.103.173.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

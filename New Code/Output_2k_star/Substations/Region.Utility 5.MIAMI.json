@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 5.MIAMI",
+    "networkLan": "10.53.140.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 5",
+    "utility_id": 53,
+    "substation": "MIAMI",
+    "substationNumber": 140,
+    "OTAddress": "10.53.140.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.140.1",
+        "10.53.140.2",
+        "10.53.140.3",
+        "10.53.140.4",
+        "10.53.140.5",
+        "10.53.140.6",
+        "10.53.140.7",
+        "10.53.140.8",
+        "10.53.140.9",
+        "10.53.140.10",
+        "10.53.140.11",
+        "10.53.140.12",
+        "10.53.140.13",
+        "10.53.140.14",
+        "10.53.140.15",
+        "10.53.140.16",
+        "10.53.140.17",
+        "10.53.140.18",
+        "10.53.140.19",
+        "10.53.140.20",
+        "10.53.140.21",
+        "10.53.140.22",
+        "10.53.140.23",
+        "10.53.140.24",
+        "10.53.140.25",
+        "10.53.140.26",
+        "10.53.140.27",
+        "10.53.140.28",
+        "10.53.140.29",
+        "10.53.140.30",
+        "10.53.140.31",
+        "10.53.140.32",
+        "10.53.140.33",
+        "10.53.140.34",
+        "10.53.140.35",
+        "10.53.140.36",
+        "10.53.140.37",
+        "10.53.140.38",
+        "10.53.140.39",
+        "10.53.140.40",
+        "10.53.140.41",
+        "10.53.140.42",
+        "10.53.140.43",
+        "10.53.140.44",
+        "10.53.140.45",
+        "10.53.140.46",
+        "10.53.140.47",
+        "10.53.140.48",
+        "10.53.140.49",
+        "10.53.140.50",
+        "10.53.140.51",
+        "10.53.140.52",
+        "10.53.140.53",
+        "10.53.140.54",
+        "10.53.140.55",
+        "10.53.140.56",
+        "10.53.140.57",
+        "10.53.140.58",
+        "10.53.140.59",
+        "10.53.140.60",
+        "10.53.140.61",
+        "10.53.140.62"
+    ],
+    "routeAddress": "10.53.140.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.140.65",
+        "10.53.140.66",
+        "10.53.140.67",
+        "10.53.140.68",
+        "10.53.140.69",
+        "10.53.140.70",
+        "10.53.140.71",
+        "10.53.140.72",
+        "10.53.140.73",
+        "10.53.140.74",
+        "10.53.140.75",
+        "10.53.140.76",
+        "10.53.140.77",
+        "10.53.140.78",
+        "10.53.140.79",
+        "10.53.140.80",
+        "10.53.140.81",
+        "10.53.140.82",
+        "10.53.140.83",
+        "10.53.140.84",
+        "10.53.140.85",
+        "10.53.140.86",
+        "10.53.140.87",
+        "10.53.140.88",
+        "10.53.140.89",
+        "10.53.140.90",
+        "10.53.140.91",
+        "10.53.140.92",
+        "10.53.140.93",
+        "10.53.140.94"
+    ],
+    "corporateAddress": "10.53.140.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.140.97",
+        "10.53.140.98",
+        "10.53.140.99",
+        "10.53.140.100",
+        "10.53.140.101",
+        "10.53.140.102",
+        "10.53.140.103",
+        "10.53.140.104",
+        "10.53.140.105",
+        "10.53.140.106",
+        "10.53.140.107",
+        "10.53.140.108",
+        "10.53.140.109",
+        "10.53.140.110",
+        "10.53.140.111",
+        "10.53.140.112",
+        "10.53.140.113",
+        "10.53.140.114",
+        "10.53.140.115",
+        "10.53.140.116",
+        "10.53.140.117",
+        "10.53.140.118",
+        "10.53.140.119",
+        "10.53.140.120",
+        "10.53.140.121",
+        "10.53.140.122",
+        "10.53.140.123",
+        "10.53.140.124",
+        "10.53.140.125"
+    ],
+    "latitude": 35.654,
+    "longitude": -100.539,
+    "nodes": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.97",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..Firewall 140",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 35.654,
+            "Longitude": -100.539
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.98",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..Router 140",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.1",
+            "ipAddress": "10.53.140.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI.OT.Switch 279",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.99",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI.Corporate.Switch 280",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.3",
+            "ipAddress": "10.53.140.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.4",
+            "ipAddress": "10.53.140.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.2",
+            "ipAddress": "10.53.140.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..RC 140",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.140.3",
+                "10.53.140.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.100",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..Host 279",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.100",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..Host 280",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.100",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..LocalDatabase 279",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.100",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..LocalWebServer 280",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.101",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..hmi 279",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.100",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..outstation 280",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 5.MIAMI..RC 140",
+            "destination": "Utility 5.MIAMI..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.MIAMI..RC 140",
+            "destination": "Utility 5.MIAMI..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.MIAMI..Router 140",
+            "destination": "Utility 5.MIAMI..Firewall 140",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.MIAMI..Firewall 140",
+            "destination": "Utility 5.MIAMI.OT.Switch 279",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.MIAMI.OT.Switch 279",
+            "destination": "Utility 5.MIAMI..RC 140",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.MIAMI..Firewall 140",
+            "destination": "Utility 5.MIAMI.Corporate.Switch 280",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.MIAMI.Corporate.Switch 280",
+            "destination": "Utility 5.MIAMI..Host 279",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.MIAMI.Corporate.Switch 280",
+            "destination": "Utility 5.MIAMI..Host 280",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.MIAMI.Corporate.Switch 280",
+            "destination": "Utility 5.MIAMI..LocalDatabase 279",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.MIAMI.Corporate.Switch 280",
+            "destination": "Utility 5.MIAMI..LocalWebServer 280",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.1",
+            "ipAddress": "10.53.140.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI.OT.Switch 279",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.2",
+            "ipAddress": "10.53.140.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..RC 140",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.140.3",
+                "10.53.140.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.97",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..Firewall 140",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 35.654,
+            "Longitude": -100.539
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.98",
+            "ipAddress": "10.53.140.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..Router 140",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.1",
+            "ipAddress": "10.53.140.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI.OT.Switch 279",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.140.2",
+            "ipAddress": "10.53.140.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MIAMI",
+            "label": "Utility 5.MIAMI..RC 140",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.140.3",
+                "10.53.140.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 216.45,
+    "genmvar": -0.02,
+    "connecting_TS_num": 71
+}

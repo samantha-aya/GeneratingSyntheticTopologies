@@ -1,0 +1,660 @@
+{
+    "relayCounter": 3,
+    "label": "Region.Utility 2.IRVING 1",
+    "networkLan": "10.55.429.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "IRVING 1",
+    "substationNumber": 429,
+    "OTAddress": "10.55.429.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.429.1",
+        "10.55.429.2",
+        "10.55.429.3",
+        "10.55.429.4",
+        "10.55.429.5",
+        "10.55.429.6",
+        "10.55.429.7",
+        "10.55.429.8",
+        "10.55.429.9",
+        "10.55.429.10",
+        "10.55.429.11",
+        "10.55.429.12",
+        "10.55.429.13",
+        "10.55.429.14",
+        "10.55.429.15",
+        "10.55.429.16",
+        "10.55.429.17",
+        "10.55.429.18",
+        "10.55.429.19",
+        "10.55.429.20",
+        "10.55.429.21",
+        "10.55.429.22",
+        "10.55.429.23",
+        "10.55.429.24",
+        "10.55.429.25",
+        "10.55.429.26",
+        "10.55.429.27",
+        "10.55.429.28",
+        "10.55.429.29",
+        "10.55.429.30",
+        "10.55.429.31",
+        "10.55.429.32",
+        "10.55.429.33",
+        "10.55.429.34",
+        "10.55.429.35",
+        "10.55.429.36",
+        "10.55.429.37",
+        "10.55.429.38",
+        "10.55.429.39",
+        "10.55.429.40",
+        "10.55.429.41",
+        "10.55.429.42",
+        "10.55.429.43",
+        "10.55.429.44",
+        "10.55.429.45",
+        "10.55.429.46",
+        "10.55.429.47",
+        "10.55.429.48",
+        "10.55.429.49",
+        "10.55.429.50",
+        "10.55.429.51",
+        "10.55.429.52",
+        "10.55.429.53",
+        "10.55.429.54",
+        "10.55.429.55",
+        "10.55.429.56",
+        "10.55.429.57",
+        "10.55.429.58",
+        "10.55.429.59",
+        "10.55.429.60",
+        "10.55.429.61",
+        "10.55.429.62"
+    ],
+    "routeAddress": "10.55.429.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.429.65",
+        "10.55.429.66",
+        "10.55.429.67",
+        "10.55.429.68",
+        "10.55.429.69",
+        "10.55.429.70",
+        "10.55.429.71",
+        "10.55.429.72",
+        "10.55.429.73",
+        "10.55.429.74",
+        "10.55.429.75",
+        "10.55.429.76",
+        "10.55.429.77",
+        "10.55.429.78",
+        "10.55.429.79",
+        "10.55.429.80",
+        "10.55.429.81",
+        "10.55.429.82",
+        "10.55.429.83",
+        "10.55.429.84",
+        "10.55.429.85",
+        "10.55.429.86",
+        "10.55.429.87",
+        "10.55.429.88",
+        "10.55.429.89",
+        "10.55.429.90",
+        "10.55.429.91",
+        "10.55.429.92",
+        "10.55.429.93",
+        "10.55.429.94"
+    ],
+    "corporateAddress": "10.55.429.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.429.97",
+        "10.55.429.98",
+        "10.55.429.99",
+        "10.55.429.100",
+        "10.55.429.101",
+        "10.55.429.102",
+        "10.55.429.103",
+        "10.55.429.104",
+        "10.55.429.105",
+        "10.55.429.106",
+        "10.55.429.107",
+        "10.55.429.108",
+        "10.55.429.109",
+        "10.55.429.110",
+        "10.55.429.111",
+        "10.55.429.112",
+        "10.55.429.113",
+        "10.55.429.114",
+        "10.55.429.115",
+        "10.55.429.116",
+        "10.55.429.117",
+        "10.55.429.118",
+        "10.55.429.119",
+        "10.55.429.120",
+        "10.55.429.121",
+        "10.55.429.122",
+        "10.55.429.123",
+        "10.55.429.124",
+        "10.55.429.125"
+    ],
+    "latitude": 32.919,
+    "longitude": -96.989,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.97",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..Firewall 429",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.919,
+            "Longitude": -96.989
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.98",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..Router 429",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.1",
+            "ipAddress": "10.55.429.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1.OT.Switch 857",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.99",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1.Corporate.Switch 858",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.3",
+            "ipAddress": "10.55.429.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.4",
+            "ipAddress": "10.55.429.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.5",
+            "ipAddress": "10.55.429.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.2",
+            "ipAddress": "10.55.429.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..RC 429",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.429.3",
+                "10.55.429.4",
+                "10.55.429.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.100",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..Host 857",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.100",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..Host 858",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.100",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..LocalDatabase 857",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.100",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..LocalWebServer 858",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.101",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..hmi 857",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.100",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..outstation 858",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.IRVING 1..RC 429",
+            "destination": "Utility 2.IRVING 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1..RC 429",
+            "destination": "Utility 2.IRVING 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1..RC 429",
+            "destination": "Utility 2.IRVING 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1..Router 429",
+            "destination": "Utility 2.IRVING 1..Firewall 429",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1..Firewall 429",
+            "destination": "Utility 2.IRVING 1.OT.Switch 857",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1.OT.Switch 857",
+            "destination": "Utility 2.IRVING 1..RC 429",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1..Firewall 429",
+            "destination": "Utility 2.IRVING 1.Corporate.Switch 858",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1.Corporate.Switch 858",
+            "destination": "Utility 2.IRVING 1..Host 857",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1.Corporate.Switch 858",
+            "destination": "Utility 2.IRVING 1..Host 858",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1.Corporate.Switch 858",
+            "destination": "Utility 2.IRVING 1..LocalDatabase 857",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.IRVING 1.Corporate.Switch 858",
+            "destination": "Utility 2.IRVING 1..LocalWebServer 858",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.1",
+            "ipAddress": "10.55.429.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1.OT.Switch 857",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.2",
+            "ipAddress": "10.55.429.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..RC 429",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.429.3",
+                "10.55.429.4",
+                "10.55.429.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.97",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..Firewall 429",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.919,
+            "Longitude": -96.989
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.98",
+            "ipAddress": "10.55.429.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..Router 429",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.1",
+            "ipAddress": "10.55.429.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1.OT.Switch 857",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.429.2",
+            "ipAddress": "10.55.429.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IRVING 1",
+            "label": "Utility 2.IRVING 1..RC 429",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.429.3",
+                "10.55.429.4",
+                "10.55.429.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 0.0,
+    "genmvar": 0.0,
+    "connecting_TS_num": 466
+}

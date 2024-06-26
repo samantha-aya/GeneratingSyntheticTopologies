@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 35.LAUGHLIN A F B",
+    "networkLan": "10.110.235.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 35",
+    "utility_id": 110,
+    "substation": "LAUGHLIN A F B",
+    "substationNumber": 235,
+    "OTAddress": "10.110.235.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.110.235.1",
+        "10.110.235.2",
+        "10.110.235.3",
+        "10.110.235.4",
+        "10.110.235.5",
+        "10.110.235.6",
+        "10.110.235.7",
+        "10.110.235.8",
+        "10.110.235.9",
+        "10.110.235.10",
+        "10.110.235.11",
+        "10.110.235.12",
+        "10.110.235.13",
+        "10.110.235.14",
+        "10.110.235.15",
+        "10.110.235.16",
+        "10.110.235.17",
+        "10.110.235.18",
+        "10.110.235.19",
+        "10.110.235.20",
+        "10.110.235.21",
+        "10.110.235.22",
+        "10.110.235.23",
+        "10.110.235.24",
+        "10.110.235.25",
+        "10.110.235.26",
+        "10.110.235.27",
+        "10.110.235.28",
+        "10.110.235.29",
+        "10.110.235.30",
+        "10.110.235.31",
+        "10.110.235.32",
+        "10.110.235.33",
+        "10.110.235.34",
+        "10.110.235.35",
+        "10.110.235.36",
+        "10.110.235.37",
+        "10.110.235.38",
+        "10.110.235.39",
+        "10.110.235.40",
+        "10.110.235.41",
+        "10.110.235.42",
+        "10.110.235.43",
+        "10.110.235.44",
+        "10.110.235.45",
+        "10.110.235.46",
+        "10.110.235.47",
+        "10.110.235.48",
+        "10.110.235.49",
+        "10.110.235.50",
+        "10.110.235.51",
+        "10.110.235.52",
+        "10.110.235.53",
+        "10.110.235.54",
+        "10.110.235.55",
+        "10.110.235.56",
+        "10.110.235.57",
+        "10.110.235.58",
+        "10.110.235.59",
+        "10.110.235.60",
+        "10.110.235.61",
+        "10.110.235.62"
+    ],
+    "routeAddress": "10.110.235.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.110.235.65",
+        "10.110.235.66",
+        "10.110.235.67",
+        "10.110.235.68",
+        "10.110.235.69",
+        "10.110.235.70",
+        "10.110.235.71",
+        "10.110.235.72",
+        "10.110.235.73",
+        "10.110.235.74",
+        "10.110.235.75",
+        "10.110.235.76",
+        "10.110.235.77",
+        "10.110.235.78",
+        "10.110.235.79",
+        "10.110.235.80",
+        "10.110.235.81",
+        "10.110.235.82",
+        "10.110.235.83",
+        "10.110.235.84",
+        "10.110.235.85",
+        "10.110.235.86",
+        "10.110.235.87",
+        "10.110.235.88",
+        "10.110.235.89",
+        "10.110.235.90",
+        "10.110.235.91",
+        "10.110.235.92",
+        "10.110.235.93",
+        "10.110.235.94"
+    ],
+    "corporateAddress": "10.110.235.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.110.235.97",
+        "10.110.235.98",
+        "10.110.235.99",
+        "10.110.235.100",
+        "10.110.235.101",
+        "10.110.235.102",
+        "10.110.235.103",
+        "10.110.235.104",
+        "10.110.235.105",
+        "10.110.235.106",
+        "10.110.235.107",
+        "10.110.235.108",
+        "10.110.235.109",
+        "10.110.235.110",
+        "10.110.235.111",
+        "10.110.235.112",
+        "10.110.235.113",
+        "10.110.235.114",
+        "10.110.235.115",
+        "10.110.235.116",
+        "10.110.235.117",
+        "10.110.235.118",
+        "10.110.235.119",
+        "10.110.235.120",
+        "10.110.235.121",
+        "10.110.235.122",
+        "10.110.235.123",
+        "10.110.235.124",
+        "10.110.235.125"
+    ],
+    "latitude": 29.359,
+    "longitude": -100.777,
+    "nodes": [
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.97",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..Firewall 235",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.359,
+            "Longitude": -100.777
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.98",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..Router 235",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.1",
+            "ipAddress": "10.110.235.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B.OT.Switch 469",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.99",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B.Corporate.Switch 470",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.3",
+            "ipAddress": "10.110.235.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.2",
+            "ipAddress": "10.110.235.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..RC 235",
+            "compromised": false,
+            "relayIPlist": [
+                "10.110.235.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.100",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..Host 469",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.100",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..Host 470",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.100",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..LocalDatabase 469",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.100",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..LocalWebServer 470",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.101",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..hmi 469",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.100",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..outstation 470",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 35.LAUGHLIN A F B..RC 235",
+            "destination": "Utility 35.LAUGHLIN A F B..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 35.LAUGHLIN A F B..Router 235",
+            "destination": "Utility 35.LAUGHLIN A F B..Firewall 235",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 35.LAUGHLIN A F B..Firewall 235",
+            "destination": "Utility 35.LAUGHLIN A F B.OT.Switch 469",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 35.LAUGHLIN A F B.OT.Switch 469",
+            "destination": "Utility 35.LAUGHLIN A F B..RC 235",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 35.LAUGHLIN A F B..Firewall 235",
+            "destination": "Utility 35.LAUGHLIN A F B.Corporate.Switch 470",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 35.LAUGHLIN A F B.Corporate.Switch 470",
+            "destination": "Utility 35.LAUGHLIN A F B..Host 469",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 35.LAUGHLIN A F B.Corporate.Switch 470",
+            "destination": "Utility 35.LAUGHLIN A F B..Host 470",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 35.LAUGHLIN A F B.Corporate.Switch 470",
+            "destination": "Utility 35.LAUGHLIN A F B..LocalDatabase 469",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 35.LAUGHLIN A F B.Corporate.Switch 470",
+            "destination": "Utility 35.LAUGHLIN A F B..LocalWebServer 470",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.1",
+            "ipAddress": "10.110.235.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B.OT.Switch 469",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.2",
+            "ipAddress": "10.110.235.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..RC 235",
+            "compromised": false,
+            "relayIPlist": [
+                "10.110.235.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.97",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..Firewall 235",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.359,
+            "Longitude": -100.777
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.98",
+            "ipAddress": "10.110.235.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..Router 235",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.1",
+            "ipAddress": "10.110.235.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B.OT.Switch 469",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 35",
+            "adminIP": "10.110.235.2",
+            "ipAddress": "10.110.235.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LAUGHLIN A F B",
+            "label": "Utility 35.LAUGHLIN A F B..RC 235",
+            "compromised": false,
+            "relayIPlist": [
+                "10.110.235.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 38.CLEBURNE 1",
+    "networkLan": "10.143.687.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 38",
+    "utility_id": 143,
+    "substation": "CLEBURNE 1",
+    "substationNumber": 687,
+    "OTAddress": "10.143.687.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.143.687.1",
+        "10.143.687.2",
+        "10.143.687.3",
+        "10.143.687.4",
+        "10.143.687.5",
+        "10.143.687.6",
+        "10.143.687.7",
+        "10.143.687.8",
+        "10.143.687.9",
+        "10.143.687.10",
+        "10.143.687.11",
+        "10.143.687.12",
+        "10.143.687.13",
+        "10.143.687.14",
+        "10.143.687.15",
+        "10.143.687.16",
+        "10.143.687.17",
+        "10.143.687.18",
+        "10.143.687.19",
+        "10.143.687.20",
+        "10.143.687.21",
+        "10.143.687.22",
+        "10.143.687.23",
+        "10.143.687.24",
+        "10.143.687.25",
+        "10.143.687.26",
+        "10.143.687.27",
+        "10.143.687.28",
+        "10.143.687.29",
+        "10.143.687.30",
+        "10.143.687.31",
+        "10.143.687.32",
+        "10.143.687.33",
+        "10.143.687.34",
+        "10.143.687.35",
+        "10.143.687.36",
+        "10.143.687.37",
+        "10.143.687.38",
+        "10.143.687.39",
+        "10.143.687.40",
+        "10.143.687.41",
+        "10.143.687.42",
+        "10.143.687.43",
+        "10.143.687.44",
+        "10.143.687.45",
+        "10.143.687.46",
+        "10.143.687.47",
+        "10.143.687.48",
+        "10.143.687.49",
+        "10.143.687.50",
+        "10.143.687.51",
+        "10.143.687.52",
+        "10.143.687.53",
+        "10.143.687.54",
+        "10.143.687.55",
+        "10.143.687.56",
+        "10.143.687.57",
+        "10.143.687.58",
+        "10.143.687.59",
+        "10.143.687.60",
+        "10.143.687.61",
+        "10.143.687.62"
+    ],
+    "routeAddress": "10.143.687.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.143.687.65",
+        "10.143.687.66",
+        "10.143.687.67",
+        "10.143.687.68",
+        "10.143.687.69",
+        "10.143.687.70",
+        "10.143.687.71",
+        "10.143.687.72",
+        "10.143.687.73",
+        "10.143.687.74",
+        "10.143.687.75",
+        "10.143.687.76",
+        "10.143.687.77",
+        "10.143.687.78",
+        "10.143.687.79",
+        "10.143.687.80",
+        "10.143.687.81",
+        "10.143.687.82",
+        "10.143.687.83",
+        "10.143.687.84",
+        "10.143.687.85",
+        "10.143.687.86",
+        "10.143.687.87",
+        "10.143.687.88",
+        "10.143.687.89",
+        "10.143.687.90",
+        "10.143.687.91",
+        "10.143.687.92",
+        "10.143.687.93",
+        "10.143.687.94"
+    ],
+    "corporateAddress": "10.143.687.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.143.687.97",
+        "10.143.687.98",
+        "10.143.687.99",
+        "10.143.687.100",
+        "10.143.687.101",
+        "10.143.687.102",
+        "10.143.687.103",
+        "10.143.687.104",
+        "10.143.687.105",
+        "10.143.687.106",
+        "10.143.687.107",
+        "10.143.687.108",
+        "10.143.687.109",
+        "10.143.687.110",
+        "10.143.687.111",
+        "10.143.687.112",
+        "10.143.687.113",
+        "10.143.687.114",
+        "10.143.687.115",
+        "10.143.687.116",
+        "10.143.687.117",
+        "10.143.687.118",
+        "10.143.687.119",
+        "10.143.687.120",
+        "10.143.687.121",
+        "10.143.687.122",
+        "10.143.687.123",
+        "10.143.687.124",
+        "10.143.687.125"
+    ],
+    "latitude": 32.393,
+    "longitude": -97.328,
+    "nodes": [
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.97",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..Firewall 687",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.393,
+            "Longitude": -97.328
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.98",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..Router 687",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.1",
+            "ipAddress": "10.143.687.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1.OT.Switch 1373",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.99",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1.Corporate.Switch 1374",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.3",
+            "ipAddress": "10.143.687.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.2",
+            "ipAddress": "10.143.687.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..RC 687",
+            "compromised": false,
+            "relayIPlist": [
+                "10.143.687.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.100",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..Host 1373",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.100",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..Host 1374",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.100",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..LocalDatabase 1373",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.100",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..LocalWebServer 1374",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.101",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..hmi 1373",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.100",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..outstation 1374",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 38.CLEBURNE 1..RC 687",
+            "destination": "Utility 38.CLEBURNE 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 38.CLEBURNE 1..Router 687",
+            "destination": "Utility 38.CLEBURNE 1..Firewall 687",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 38.CLEBURNE 1..Firewall 687",
+            "destination": "Utility 38.CLEBURNE 1.OT.Switch 1373",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 38.CLEBURNE 1.OT.Switch 1373",
+            "destination": "Utility 38.CLEBURNE 1..RC 687",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 38.CLEBURNE 1..Firewall 687",
+            "destination": "Utility 38.CLEBURNE 1.Corporate.Switch 1374",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 38.CLEBURNE 1.Corporate.Switch 1374",
+            "destination": "Utility 38.CLEBURNE 1..Host 1373",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 38.CLEBURNE 1.Corporate.Switch 1374",
+            "destination": "Utility 38.CLEBURNE 1..Host 1374",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 38.CLEBURNE 1.Corporate.Switch 1374",
+            "destination": "Utility 38.CLEBURNE 1..LocalDatabase 1373",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 38.CLEBURNE 1.Corporate.Switch 1374",
+            "destination": "Utility 38.CLEBURNE 1..LocalWebServer 1374",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.1",
+            "ipAddress": "10.143.687.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1.OT.Switch 1373",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.2",
+            "ipAddress": "10.143.687.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..RC 687",
+            "compromised": false,
+            "relayIPlist": [
+                "10.143.687.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.97",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..Firewall 687",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.393,
+            "Longitude": -97.328
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.98",
+            "ipAddress": "10.143.687.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..Router 687",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.1",
+            "ipAddress": "10.143.687.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1.OT.Switch 1373",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 38",
+            "adminIP": "10.143.687.2",
+            "ipAddress": "10.143.687.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CLEBURNE 1",
+            "label": "Utility 38.CLEBURNE 1..RC 687",
+            "compromised": false,
+            "relayIPlist": [
+                "10.143.687.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

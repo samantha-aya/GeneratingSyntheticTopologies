@@ -1,0 +1,696 @@
+{
+    "relayCounter": 6,
+    "label": "Region.Utility 1.WINCHESTER",
+    "networkLan": "10.53.765.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "WINCHESTER",
+    "substationNumber": 765,
+    "OTAddress": "10.53.765.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.765.1",
+        "10.53.765.2",
+        "10.53.765.3",
+        "10.53.765.4",
+        "10.53.765.5",
+        "10.53.765.6",
+        "10.53.765.7",
+        "10.53.765.8",
+        "10.53.765.9",
+        "10.53.765.10",
+        "10.53.765.11",
+        "10.53.765.12",
+        "10.53.765.13",
+        "10.53.765.14",
+        "10.53.765.15",
+        "10.53.765.16",
+        "10.53.765.17",
+        "10.53.765.18",
+        "10.53.765.19",
+        "10.53.765.20",
+        "10.53.765.21",
+        "10.53.765.22",
+        "10.53.765.23",
+        "10.53.765.24",
+        "10.53.765.25",
+        "10.53.765.26",
+        "10.53.765.27",
+        "10.53.765.28",
+        "10.53.765.29",
+        "10.53.765.30",
+        "10.53.765.31",
+        "10.53.765.32",
+        "10.53.765.33",
+        "10.53.765.34",
+        "10.53.765.35",
+        "10.53.765.36",
+        "10.53.765.37",
+        "10.53.765.38",
+        "10.53.765.39",
+        "10.53.765.40",
+        "10.53.765.41",
+        "10.53.765.42",
+        "10.53.765.43",
+        "10.53.765.44",
+        "10.53.765.45",
+        "10.53.765.46",
+        "10.53.765.47",
+        "10.53.765.48",
+        "10.53.765.49",
+        "10.53.765.50",
+        "10.53.765.51",
+        "10.53.765.52",
+        "10.53.765.53",
+        "10.53.765.54",
+        "10.53.765.55",
+        "10.53.765.56",
+        "10.53.765.57",
+        "10.53.765.58",
+        "10.53.765.59",
+        "10.53.765.60",
+        "10.53.765.61",
+        "10.53.765.62"
+    ],
+    "routeAddress": "10.53.765.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.765.65",
+        "10.53.765.66",
+        "10.53.765.67",
+        "10.53.765.68",
+        "10.53.765.69",
+        "10.53.765.70",
+        "10.53.765.71",
+        "10.53.765.72",
+        "10.53.765.73",
+        "10.53.765.74",
+        "10.53.765.75",
+        "10.53.765.76",
+        "10.53.765.77",
+        "10.53.765.78",
+        "10.53.765.79",
+        "10.53.765.80",
+        "10.53.765.81",
+        "10.53.765.82",
+        "10.53.765.83",
+        "10.53.765.84",
+        "10.53.765.85",
+        "10.53.765.86",
+        "10.53.765.87",
+        "10.53.765.88",
+        "10.53.765.89",
+        "10.53.765.90",
+        "10.53.765.91",
+        "10.53.765.92",
+        "10.53.765.93",
+        "10.53.765.94"
+    ],
+    "corporateAddress": "10.53.765.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.765.97",
+        "10.53.765.98",
+        "10.53.765.99",
+        "10.53.765.100",
+        "10.53.765.101",
+        "10.53.765.102",
+        "10.53.765.103",
+        "10.53.765.104",
+        "10.53.765.105",
+        "10.53.765.106",
+        "10.53.765.107",
+        "10.53.765.108",
+        "10.53.765.109",
+        "10.53.765.110",
+        "10.53.765.111",
+        "10.53.765.112",
+        "10.53.765.113",
+        "10.53.765.114",
+        "10.53.765.115",
+        "10.53.765.116",
+        "10.53.765.117",
+        "10.53.765.118",
+        "10.53.765.119",
+        "10.53.765.120",
+        "10.53.765.121",
+        "10.53.765.122",
+        "10.53.765.123",
+        "10.53.765.124",
+        "10.53.765.125"
+    ],
+    "latitude": 30.038,
+    "longitude": -96.988,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.97",
+            "ipAddress": "10.53.765.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Firewall 765",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.038,
+            "Longitude": -96.988
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.98",
+            "ipAddress": "10.53.765.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Router 765",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.1",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER.OT.Switch 1529",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.99",
+            "ipAddress": "10.53.765.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER.Corporate.Switch 1530",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.3",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.4",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.5",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.6",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.7",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.8",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.2",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..RC 765",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.765.3",
+                "10.53.765.4",
+                "10.53.765.5",
+                "10.53.765.6",
+                "10.53.765.7",
+                "10.53.765.8"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.100",
+            "ipAddress": "10.53.765.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Host 1529",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.100",
+            "ipAddress": "10.53.765.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Host 1530",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.100",
+            "ipAddress": "10.53.765.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..LocalDatabase 1529",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.100",
+            "ipAddress": "10.53.765.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..LocalWebServer 1530",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.WINCHESTER..RC 765",
+            "destination": "Utility 1.WINCHESTER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER..RC 765",
+            "destination": "Utility 1.WINCHESTER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER..RC 765",
+            "destination": "Utility 1.WINCHESTER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER..RC 765",
+            "destination": "Utility 1.WINCHESTER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER..RC 765",
+            "destination": "Utility 1.WINCHESTER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER..RC 765",
+            "destination": "Utility 1.WINCHESTER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER..Router 765",
+            "destination": "Utility 1.WINCHESTER..Firewall 765",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER..Firewall 765",
+            "destination": "Utility 1.WINCHESTER.OT.Switch 1529",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER.OT.Switch 1529",
+            "destination": "Utility 1.WINCHESTER..RC 765",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER..Firewall 765",
+            "destination": "Utility 1.WINCHESTER.Corporate.Switch 1530",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER.Corporate.Switch 1530",
+            "destination": "Utility 1.WINCHESTER..Host 1529",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER.Corporate.Switch 1530",
+            "destination": "Utility 1.WINCHESTER..Host 1530",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER.Corporate.Switch 1530",
+            "destination": "Utility 1.WINCHESTER..LocalDatabase 1529",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.WINCHESTER.Corporate.Switch 1530",
+            "destination": "Utility 1.WINCHESTER..LocalWebServer 1530",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.1",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER.OT.Switch 1529",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.2",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..RC 765",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.765.3",
+                "10.53.765.4",
+                "10.53.765.5",
+                "10.53.765.6",
+                "10.53.765.7",
+                "10.53.765.8"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.97",
+            "ipAddress": "10.53.765.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Firewall 765",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.038,
+            "Longitude": -96.988
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.98",
+            "ipAddress": "10.53.765.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..Router 765",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.1",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER.OT.Switch 1529",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.765.2",
+            "ipAddress": "10.53.765.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WINCHESTER",
+            "label": "Utility 1.WINCHESTER..RC 765",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.765.3",
+                "10.53.765.4",
+                "10.53.765.5",
+                "10.53.765.6",
+                "10.53.765.7",
+                "10.53.765.8"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 241.32,
+    "genmvar": 123.17,
+    "connecting_TS_num": 817
+}

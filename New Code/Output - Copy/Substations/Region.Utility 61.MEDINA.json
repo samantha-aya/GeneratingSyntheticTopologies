@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 61.MEDINA",
+    "networkLan": "10.172.782.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 61",
+    "utility_id": 172,
+    "substation": "MEDINA",
+    "substationNumber": 782,
+    "OTAddress": "10.172.782.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.172.782.1",
+        "10.172.782.2",
+        "10.172.782.3",
+        "10.172.782.4",
+        "10.172.782.5",
+        "10.172.782.6",
+        "10.172.782.7",
+        "10.172.782.8",
+        "10.172.782.9",
+        "10.172.782.10",
+        "10.172.782.11",
+        "10.172.782.12",
+        "10.172.782.13",
+        "10.172.782.14",
+        "10.172.782.15",
+        "10.172.782.16",
+        "10.172.782.17",
+        "10.172.782.18",
+        "10.172.782.19",
+        "10.172.782.20",
+        "10.172.782.21",
+        "10.172.782.22",
+        "10.172.782.23",
+        "10.172.782.24",
+        "10.172.782.25",
+        "10.172.782.26",
+        "10.172.782.27",
+        "10.172.782.28",
+        "10.172.782.29",
+        "10.172.782.30",
+        "10.172.782.31",
+        "10.172.782.32",
+        "10.172.782.33",
+        "10.172.782.34",
+        "10.172.782.35",
+        "10.172.782.36",
+        "10.172.782.37",
+        "10.172.782.38",
+        "10.172.782.39",
+        "10.172.782.40",
+        "10.172.782.41",
+        "10.172.782.42",
+        "10.172.782.43",
+        "10.172.782.44",
+        "10.172.782.45",
+        "10.172.782.46",
+        "10.172.782.47",
+        "10.172.782.48",
+        "10.172.782.49",
+        "10.172.782.50",
+        "10.172.782.51",
+        "10.172.782.52",
+        "10.172.782.53",
+        "10.172.782.54",
+        "10.172.782.55",
+        "10.172.782.56",
+        "10.172.782.57",
+        "10.172.782.58",
+        "10.172.782.59",
+        "10.172.782.60",
+        "10.172.782.61",
+        "10.172.782.62"
+    ],
+    "routeAddress": "10.172.782.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.172.782.65",
+        "10.172.782.66",
+        "10.172.782.67",
+        "10.172.782.68",
+        "10.172.782.69",
+        "10.172.782.70",
+        "10.172.782.71",
+        "10.172.782.72",
+        "10.172.782.73",
+        "10.172.782.74",
+        "10.172.782.75",
+        "10.172.782.76",
+        "10.172.782.77",
+        "10.172.782.78",
+        "10.172.782.79",
+        "10.172.782.80",
+        "10.172.782.81",
+        "10.172.782.82",
+        "10.172.782.83",
+        "10.172.782.84",
+        "10.172.782.85",
+        "10.172.782.86",
+        "10.172.782.87",
+        "10.172.782.88",
+        "10.172.782.89",
+        "10.172.782.90",
+        "10.172.782.91",
+        "10.172.782.92",
+        "10.172.782.93",
+        "10.172.782.94"
+    ],
+    "corporateAddress": "10.172.782.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.172.782.97",
+        "10.172.782.98",
+        "10.172.782.99",
+        "10.172.782.100",
+        "10.172.782.101",
+        "10.172.782.102",
+        "10.172.782.103",
+        "10.172.782.104",
+        "10.172.782.105",
+        "10.172.782.106",
+        "10.172.782.107",
+        "10.172.782.108",
+        "10.172.782.109",
+        "10.172.782.110",
+        "10.172.782.111",
+        "10.172.782.112",
+        "10.172.782.113",
+        "10.172.782.114",
+        "10.172.782.115",
+        "10.172.782.116",
+        "10.172.782.117",
+        "10.172.782.118",
+        "10.172.782.119",
+        "10.172.782.120",
+        "10.172.782.121",
+        "10.172.782.122",
+        "10.172.782.123",
+        "10.172.782.124",
+        "10.172.782.125"
+    ],
+    "latitude": 29.678,
+    "longitude": -99.317,
+    "nodes": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.97",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..Firewall 782",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.678,
+            "Longitude": -99.317
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.98",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..Router 782",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.1",
+            "ipAddress": "10.172.782.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA.OT.Switch 1563",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.99",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA.Corporate.Switch 1564",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.3",
+            "ipAddress": "10.172.782.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.2",
+            "ipAddress": "10.172.782.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..RC 782",
+            "compromised": false,
+            "relayIPlist": [
+                "10.172.782.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.100",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..Host 1563",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.100",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..Host 1564",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.100",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..LocalDatabase 1563",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.100",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..LocalWebServer 1564",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.101",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..hmi 1563",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.100",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..outstation 1564",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 61.MEDINA..RC 782",
+            "destination": "Utility 61.MEDINA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.MEDINA..Router 782",
+            "destination": "Utility 61.MEDINA..Firewall 782",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.MEDINA..Firewall 782",
+            "destination": "Utility 61.MEDINA.OT.Switch 1563",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.MEDINA.OT.Switch 1563",
+            "destination": "Utility 61.MEDINA..RC 782",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.MEDINA..Firewall 782",
+            "destination": "Utility 61.MEDINA.Corporate.Switch 1564",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.MEDINA.Corporate.Switch 1564",
+            "destination": "Utility 61.MEDINA..Host 1563",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.MEDINA.Corporate.Switch 1564",
+            "destination": "Utility 61.MEDINA..Host 1564",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.MEDINA.Corporate.Switch 1564",
+            "destination": "Utility 61.MEDINA..LocalDatabase 1563",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.MEDINA.Corporate.Switch 1564",
+            "destination": "Utility 61.MEDINA..LocalWebServer 1564",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.1",
+            "ipAddress": "10.172.782.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA.OT.Switch 1563",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.2",
+            "ipAddress": "10.172.782.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..RC 782",
+            "compromised": false,
+            "relayIPlist": [
+                "10.172.782.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.97",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..Firewall 782",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.678,
+            "Longitude": -99.317
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.98",
+            "ipAddress": "10.172.782.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..Router 782",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.1",
+            "ipAddress": "10.172.782.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA.OT.Switch 1563",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.782.2",
+            "ipAddress": "10.172.782.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MEDINA",
+            "label": "Utility 61.MEDINA..RC 782",
+            "compromised": false,
+            "relayIPlist": [
+                "10.172.782.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.ROCKWALL 1",
+    "networkLan": "10.52.492.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "ROCKWALL 1",
+    "substationNumber": 492,
+    "OTAddress": "10.52.492.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.492.1",
+        "10.52.492.2",
+        "10.52.492.3",
+        "10.52.492.4",
+        "10.52.492.5",
+        "10.52.492.6",
+        "10.52.492.7",
+        "10.52.492.8",
+        "10.52.492.9",
+        "10.52.492.10",
+        "10.52.492.11",
+        "10.52.492.12",
+        "10.52.492.13",
+        "10.52.492.14",
+        "10.52.492.15",
+        "10.52.492.16",
+        "10.52.492.17",
+        "10.52.492.18",
+        "10.52.492.19",
+        "10.52.492.20",
+        "10.52.492.21",
+        "10.52.492.22",
+        "10.52.492.23",
+        "10.52.492.24",
+        "10.52.492.25",
+        "10.52.492.26",
+        "10.52.492.27",
+        "10.52.492.28",
+        "10.52.492.29",
+        "10.52.492.30",
+        "10.52.492.31",
+        "10.52.492.32",
+        "10.52.492.33",
+        "10.52.492.34",
+        "10.52.492.35",
+        "10.52.492.36",
+        "10.52.492.37",
+        "10.52.492.38",
+        "10.52.492.39",
+        "10.52.492.40",
+        "10.52.492.41",
+        "10.52.492.42",
+        "10.52.492.43",
+        "10.52.492.44",
+        "10.52.492.45",
+        "10.52.492.46",
+        "10.52.492.47",
+        "10.52.492.48",
+        "10.52.492.49",
+        "10.52.492.50",
+        "10.52.492.51",
+        "10.52.492.52",
+        "10.52.492.53",
+        "10.52.492.54",
+        "10.52.492.55",
+        "10.52.492.56",
+        "10.52.492.57",
+        "10.52.492.58",
+        "10.52.492.59",
+        "10.52.492.60",
+        "10.52.492.61",
+        "10.52.492.62"
+    ],
+    "routeAddress": "10.52.492.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.492.65",
+        "10.52.492.66",
+        "10.52.492.67",
+        "10.52.492.68",
+        "10.52.492.69",
+        "10.52.492.70",
+        "10.52.492.71",
+        "10.52.492.72",
+        "10.52.492.73",
+        "10.52.492.74",
+        "10.52.492.75",
+        "10.52.492.76",
+        "10.52.492.77",
+        "10.52.492.78",
+        "10.52.492.79",
+        "10.52.492.80",
+        "10.52.492.81",
+        "10.52.492.82",
+        "10.52.492.83",
+        "10.52.492.84",
+        "10.52.492.85",
+        "10.52.492.86",
+        "10.52.492.87",
+        "10.52.492.88",
+        "10.52.492.89",
+        "10.52.492.90",
+        "10.52.492.91",
+        "10.52.492.92",
+        "10.52.492.93",
+        "10.52.492.94"
+    ],
+    "corporateAddress": "10.52.492.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.492.97",
+        "10.52.492.98",
+        "10.52.492.99",
+        "10.52.492.100",
+        "10.52.492.101",
+        "10.52.492.102",
+        "10.52.492.103",
+        "10.52.492.104",
+        "10.52.492.105",
+        "10.52.492.106",
+        "10.52.492.107",
+        "10.52.492.108",
+        "10.52.492.109",
+        "10.52.492.110",
+        "10.52.492.111",
+        "10.52.492.112",
+        "10.52.492.113",
+        "10.52.492.114",
+        "10.52.492.115",
+        "10.52.492.116",
+        "10.52.492.117",
+        "10.52.492.118",
+        "10.52.492.119",
+        "10.52.492.120",
+        "10.52.492.121",
+        "10.52.492.122",
+        "10.52.492.123",
+        "10.52.492.124",
+        "10.52.492.125"
+    ],
+    "latitude": 32.852,
+    "longitude": -96.436,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.97",
+            "ipAddress": "10.52.492.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..Firewall 492",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.852,
+            "Longitude": -96.436
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.98",
+            "ipAddress": "10.52.492.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..Router 492",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.1",
+            "ipAddress": "10.52.492.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1.OT.Switch 983",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.99",
+            "ipAddress": "10.52.492.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1.Corporate.Switch 984",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.3",
+            "ipAddress": "10.52.492.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.2",
+            "ipAddress": "10.52.492.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..RC 492",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.492.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.100",
+            "ipAddress": "10.52.492.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..Host 983",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.100",
+            "ipAddress": "10.52.492.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..Host 984",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.100",
+            "ipAddress": "10.52.492.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..LocalDatabase 983",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.100",
+            "ipAddress": "10.52.492.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..LocalWebServer 984",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.ROCKWALL 1..RC 492",
+            "destination": "Utility 0.ROCKWALL 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROCKWALL 1..Router 492",
+            "destination": "Utility 0.ROCKWALL 1..Firewall 492",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROCKWALL 1..Firewall 492",
+            "destination": "Utility 0.ROCKWALL 1.OT.Switch 983",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROCKWALL 1.OT.Switch 983",
+            "destination": "Utility 0.ROCKWALL 1..RC 492",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROCKWALL 1..Firewall 492",
+            "destination": "Utility 0.ROCKWALL 1.Corporate.Switch 984",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROCKWALL 1.Corporate.Switch 984",
+            "destination": "Utility 0.ROCKWALL 1..Host 983",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROCKWALL 1.Corporate.Switch 984",
+            "destination": "Utility 0.ROCKWALL 1..Host 984",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROCKWALL 1.Corporate.Switch 984",
+            "destination": "Utility 0.ROCKWALL 1..LocalDatabase 983",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ROCKWALL 1.Corporate.Switch 984",
+            "destination": "Utility 0.ROCKWALL 1..LocalWebServer 984",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.1",
+            "ipAddress": "10.52.492.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1.OT.Switch 983",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.2",
+            "ipAddress": "10.52.492.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..RC 492",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.492.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.97",
+            "ipAddress": "10.52.492.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..Firewall 492",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.852,
+            "Longitude": -96.436
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.98",
+            "ipAddress": "10.52.492.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..Router 492",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.1",
+            "ipAddress": "10.52.492.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1.OT.Switch 983",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.492.2",
+            "ipAddress": "10.52.492.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ROCKWALL 1",
+            "label": "Utility 0.ROCKWALL 1..RC 492",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.492.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

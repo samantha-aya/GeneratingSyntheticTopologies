@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 30.PERRIN",
+    "networkLan": "10.142.441.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 30",
+    "utility_id": 142,
+    "substation": "PERRIN",
+    "substationNumber": 441,
+    "OTAddress": "10.142.441.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.142.441.1",
+        "10.142.441.2",
+        "10.142.441.3",
+        "10.142.441.4",
+        "10.142.441.5",
+        "10.142.441.6",
+        "10.142.441.7",
+        "10.142.441.8",
+        "10.142.441.9",
+        "10.142.441.10",
+        "10.142.441.11",
+        "10.142.441.12",
+        "10.142.441.13",
+        "10.142.441.14",
+        "10.142.441.15",
+        "10.142.441.16",
+        "10.142.441.17",
+        "10.142.441.18",
+        "10.142.441.19",
+        "10.142.441.20",
+        "10.142.441.21",
+        "10.142.441.22",
+        "10.142.441.23",
+        "10.142.441.24",
+        "10.142.441.25",
+        "10.142.441.26",
+        "10.142.441.27",
+        "10.142.441.28",
+        "10.142.441.29",
+        "10.142.441.30",
+        "10.142.441.31",
+        "10.142.441.32",
+        "10.142.441.33",
+        "10.142.441.34",
+        "10.142.441.35",
+        "10.142.441.36",
+        "10.142.441.37",
+        "10.142.441.38",
+        "10.142.441.39",
+        "10.142.441.40",
+        "10.142.441.41",
+        "10.142.441.42",
+        "10.142.441.43",
+        "10.142.441.44",
+        "10.142.441.45",
+        "10.142.441.46",
+        "10.142.441.47",
+        "10.142.441.48",
+        "10.142.441.49",
+        "10.142.441.50",
+        "10.142.441.51",
+        "10.142.441.52",
+        "10.142.441.53",
+        "10.142.441.54",
+        "10.142.441.55",
+        "10.142.441.56",
+        "10.142.441.57",
+        "10.142.441.58",
+        "10.142.441.59",
+        "10.142.441.60",
+        "10.142.441.61",
+        "10.142.441.62"
+    ],
+    "routeAddress": "10.142.441.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.142.441.65",
+        "10.142.441.66",
+        "10.142.441.67",
+        "10.142.441.68",
+        "10.142.441.69",
+        "10.142.441.70",
+        "10.142.441.71",
+        "10.142.441.72",
+        "10.142.441.73",
+        "10.142.441.74",
+        "10.142.441.75",
+        "10.142.441.76",
+        "10.142.441.77",
+        "10.142.441.78",
+        "10.142.441.79",
+        "10.142.441.80",
+        "10.142.441.81",
+        "10.142.441.82",
+        "10.142.441.83",
+        "10.142.441.84",
+        "10.142.441.85",
+        "10.142.441.86",
+        "10.142.441.87",
+        "10.142.441.88",
+        "10.142.441.89",
+        "10.142.441.90",
+        "10.142.441.91",
+        "10.142.441.92",
+        "10.142.441.93",
+        "10.142.441.94"
+    ],
+    "corporateAddress": "10.142.441.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.142.441.97",
+        "10.142.441.98",
+        "10.142.441.99",
+        "10.142.441.100",
+        "10.142.441.101",
+        "10.142.441.102",
+        "10.142.441.103",
+        "10.142.441.104",
+        "10.142.441.105",
+        "10.142.441.106",
+        "10.142.441.107",
+        "10.142.441.108",
+        "10.142.441.109",
+        "10.142.441.110",
+        "10.142.441.111",
+        "10.142.441.112",
+        "10.142.441.113",
+        "10.142.441.114",
+        "10.142.441.115",
+        "10.142.441.116",
+        "10.142.441.117",
+        "10.142.441.118",
+        "10.142.441.119",
+        "10.142.441.120",
+        "10.142.441.121",
+        "10.142.441.122",
+        "10.142.441.123",
+        "10.142.441.124",
+        "10.142.441.125"
+    ],
+    "latitude": 33.015,
+    "longitude": -98.054,
+    "nodes": [
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.97",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..Firewall 441",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.015,
+            "Longitude": -98.054
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.98",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..Router 441",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.1",
+            "ipAddress": "10.142.441.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN.OT.Switch 881",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.99",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN.Corporate.Switch 882",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.3",
+            "ipAddress": "10.142.441.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.2",
+            "ipAddress": "10.142.441.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..RC 441",
+            "compromised": false,
+            "relayIPlist": [
+                "10.142.441.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.100",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..Host 881",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.100",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..Host 882",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.100",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..LocalDatabase 881",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.100",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..LocalWebServer 882",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.101",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..hmi 881",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.100",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..outstation 882",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 30.PERRIN..RC 441",
+            "destination": "Utility 30.PERRIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 30.PERRIN..Router 441",
+            "destination": "Utility 30.PERRIN..Firewall 441",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 30.PERRIN..Firewall 441",
+            "destination": "Utility 30.PERRIN.OT.Switch 881",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 30.PERRIN.OT.Switch 881",
+            "destination": "Utility 30.PERRIN..RC 441",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 30.PERRIN..Firewall 441",
+            "destination": "Utility 30.PERRIN.Corporate.Switch 882",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 30.PERRIN.Corporate.Switch 882",
+            "destination": "Utility 30.PERRIN..Host 881",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 30.PERRIN.Corporate.Switch 882",
+            "destination": "Utility 30.PERRIN..Host 882",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 30.PERRIN.Corporate.Switch 882",
+            "destination": "Utility 30.PERRIN..LocalDatabase 881",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 30.PERRIN.Corporate.Switch 882",
+            "destination": "Utility 30.PERRIN..LocalWebServer 882",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.1",
+            "ipAddress": "10.142.441.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN.OT.Switch 881",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.2",
+            "ipAddress": "10.142.441.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..RC 441",
+            "compromised": false,
+            "relayIPlist": [
+                "10.142.441.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.97",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..Firewall 441",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.015,
+            "Longitude": -98.054
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.98",
+            "ipAddress": "10.142.441.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..Router 441",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.1",
+            "ipAddress": "10.142.441.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN.OT.Switch 881",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 30",
+            "adminIP": "10.142.441.2",
+            "ipAddress": "10.142.441.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PERRIN",
+            "label": "Utility 30.PERRIN..RC 441",
+            "compromised": false,
+            "relayIPlist": [
+                "10.142.441.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

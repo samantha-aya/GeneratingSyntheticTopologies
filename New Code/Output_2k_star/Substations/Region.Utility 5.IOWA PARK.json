@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 5.IOWA PARK",
+    "networkLan": "10.53.61.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 5",
+    "utility_id": 53,
+    "substation": "IOWA PARK",
+    "substationNumber": 61,
+    "OTAddress": "10.53.61.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.61.1",
+        "10.53.61.2",
+        "10.53.61.3",
+        "10.53.61.4",
+        "10.53.61.5",
+        "10.53.61.6",
+        "10.53.61.7",
+        "10.53.61.8",
+        "10.53.61.9",
+        "10.53.61.10",
+        "10.53.61.11",
+        "10.53.61.12",
+        "10.53.61.13",
+        "10.53.61.14",
+        "10.53.61.15",
+        "10.53.61.16",
+        "10.53.61.17",
+        "10.53.61.18",
+        "10.53.61.19",
+        "10.53.61.20",
+        "10.53.61.21",
+        "10.53.61.22",
+        "10.53.61.23",
+        "10.53.61.24",
+        "10.53.61.25",
+        "10.53.61.26",
+        "10.53.61.27",
+        "10.53.61.28",
+        "10.53.61.29",
+        "10.53.61.30",
+        "10.53.61.31",
+        "10.53.61.32",
+        "10.53.61.33",
+        "10.53.61.34",
+        "10.53.61.35",
+        "10.53.61.36",
+        "10.53.61.37",
+        "10.53.61.38",
+        "10.53.61.39",
+        "10.53.61.40",
+        "10.53.61.41",
+        "10.53.61.42",
+        "10.53.61.43",
+        "10.53.61.44",
+        "10.53.61.45",
+        "10.53.61.46",
+        "10.53.61.47",
+        "10.53.61.48",
+        "10.53.61.49",
+        "10.53.61.50",
+        "10.53.61.51",
+        "10.53.61.52",
+        "10.53.61.53",
+        "10.53.61.54",
+        "10.53.61.55",
+        "10.53.61.56",
+        "10.53.61.57",
+        "10.53.61.58",
+        "10.53.61.59",
+        "10.53.61.60",
+        "10.53.61.61",
+        "10.53.61.62"
+    ],
+    "routeAddress": "10.53.61.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.61.65",
+        "10.53.61.66",
+        "10.53.61.67",
+        "10.53.61.68",
+        "10.53.61.69",
+        "10.53.61.70",
+        "10.53.61.71",
+        "10.53.61.72",
+        "10.53.61.73",
+        "10.53.61.74",
+        "10.53.61.75",
+        "10.53.61.76",
+        "10.53.61.77",
+        "10.53.61.78",
+        "10.53.61.79",
+        "10.53.61.80",
+        "10.53.61.81",
+        "10.53.61.82",
+        "10.53.61.83",
+        "10.53.61.84",
+        "10.53.61.85",
+        "10.53.61.86",
+        "10.53.61.87",
+        "10.53.61.88",
+        "10.53.61.89",
+        "10.53.61.90",
+        "10.53.61.91",
+        "10.53.61.92",
+        "10.53.61.93",
+        "10.53.61.94"
+    ],
+    "corporateAddress": "10.53.61.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.61.97",
+        "10.53.61.98",
+        "10.53.61.99",
+        "10.53.61.100",
+        "10.53.61.101",
+        "10.53.61.102",
+        "10.53.61.103",
+        "10.53.61.104",
+        "10.53.61.105",
+        "10.53.61.106",
+        "10.53.61.107",
+        "10.53.61.108",
+        "10.53.61.109",
+        "10.53.61.110",
+        "10.53.61.111",
+        "10.53.61.112",
+        "10.53.61.113",
+        "10.53.61.114",
+        "10.53.61.115",
+        "10.53.61.116",
+        "10.53.61.117",
+        "10.53.61.118",
+        "10.53.61.119",
+        "10.53.61.120",
+        "10.53.61.121",
+        "10.53.61.122",
+        "10.53.61.123",
+        "10.53.61.124",
+        "10.53.61.125"
+    ],
+    "latitude": 33.973,
+    "longitude": -98.721,
+    "nodes": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.97",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..Firewall 61",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.973,
+            "Longitude": -98.721
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.98",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..Router 61",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.1",
+            "ipAddress": "10.53.61.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK.OT.Switch 121",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.99",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK.Corporate.Switch 122",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.3",
+            "ipAddress": "10.53.61.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.2",
+            "ipAddress": "10.53.61.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..RC 61",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.61.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.100",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..Host 121",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.100",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..Host 122",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.100",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..LocalDatabase 121",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.100",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..LocalWebServer 122",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.101",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..hmi 121",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.100",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..outstation 122",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 5.IOWA PARK..RC 61",
+            "destination": "Utility 5.IOWA PARK..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.IOWA PARK..Router 61",
+            "destination": "Utility 5.IOWA PARK..Firewall 61",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.IOWA PARK..Firewall 61",
+            "destination": "Utility 5.IOWA PARK.OT.Switch 121",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.IOWA PARK.OT.Switch 121",
+            "destination": "Utility 5.IOWA PARK..RC 61",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.IOWA PARK..Firewall 61",
+            "destination": "Utility 5.IOWA PARK.Corporate.Switch 122",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.IOWA PARK.Corporate.Switch 122",
+            "destination": "Utility 5.IOWA PARK..Host 121",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.IOWA PARK.Corporate.Switch 122",
+            "destination": "Utility 5.IOWA PARK..Host 122",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.IOWA PARK.Corporate.Switch 122",
+            "destination": "Utility 5.IOWA PARK..LocalDatabase 121",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.IOWA PARK.Corporate.Switch 122",
+            "destination": "Utility 5.IOWA PARK..LocalWebServer 122",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.1",
+            "ipAddress": "10.53.61.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK.OT.Switch 121",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.2",
+            "ipAddress": "10.53.61.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..RC 61",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.61.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.97",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..Firewall 61",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.973,
+            "Longitude": -98.721
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.98",
+            "ipAddress": "10.53.61.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..Router 61",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.1",
+            "ipAddress": "10.53.61.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK.OT.Switch 121",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.61.2",
+            "ipAddress": "10.53.61.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "IOWA PARK",
+            "label": "Utility 5.IOWA PARK..RC 61",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.61.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

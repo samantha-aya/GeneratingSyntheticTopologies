@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.MART",
+    "networkLan": "10.55.573.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "MART",
+    "substationNumber": 573,
+    "OTAddress": "10.55.573.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.573.1",
+        "10.55.573.2",
+        "10.55.573.3",
+        "10.55.573.4",
+        "10.55.573.5",
+        "10.55.573.6",
+        "10.55.573.7",
+        "10.55.573.8",
+        "10.55.573.9",
+        "10.55.573.10",
+        "10.55.573.11",
+        "10.55.573.12",
+        "10.55.573.13",
+        "10.55.573.14",
+        "10.55.573.15",
+        "10.55.573.16",
+        "10.55.573.17",
+        "10.55.573.18",
+        "10.55.573.19",
+        "10.55.573.20",
+        "10.55.573.21",
+        "10.55.573.22",
+        "10.55.573.23",
+        "10.55.573.24",
+        "10.55.573.25",
+        "10.55.573.26",
+        "10.55.573.27",
+        "10.55.573.28",
+        "10.55.573.29",
+        "10.55.573.30",
+        "10.55.573.31",
+        "10.55.573.32",
+        "10.55.573.33",
+        "10.55.573.34",
+        "10.55.573.35",
+        "10.55.573.36",
+        "10.55.573.37",
+        "10.55.573.38",
+        "10.55.573.39",
+        "10.55.573.40",
+        "10.55.573.41",
+        "10.55.573.42",
+        "10.55.573.43",
+        "10.55.573.44",
+        "10.55.573.45",
+        "10.55.573.46",
+        "10.55.573.47",
+        "10.55.573.48",
+        "10.55.573.49",
+        "10.55.573.50",
+        "10.55.573.51",
+        "10.55.573.52",
+        "10.55.573.53",
+        "10.55.573.54",
+        "10.55.573.55",
+        "10.55.573.56",
+        "10.55.573.57",
+        "10.55.573.58",
+        "10.55.573.59",
+        "10.55.573.60",
+        "10.55.573.61",
+        "10.55.573.62"
+    ],
+    "routeAddress": "10.55.573.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.573.65",
+        "10.55.573.66",
+        "10.55.573.67",
+        "10.55.573.68",
+        "10.55.573.69",
+        "10.55.573.70",
+        "10.55.573.71",
+        "10.55.573.72",
+        "10.55.573.73",
+        "10.55.573.74",
+        "10.55.573.75",
+        "10.55.573.76",
+        "10.55.573.77",
+        "10.55.573.78",
+        "10.55.573.79",
+        "10.55.573.80",
+        "10.55.573.81",
+        "10.55.573.82",
+        "10.55.573.83",
+        "10.55.573.84",
+        "10.55.573.85",
+        "10.55.573.86",
+        "10.55.573.87",
+        "10.55.573.88",
+        "10.55.573.89",
+        "10.55.573.90",
+        "10.55.573.91",
+        "10.55.573.92",
+        "10.55.573.93",
+        "10.55.573.94"
+    ],
+    "corporateAddress": "10.55.573.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.573.97",
+        "10.55.573.98",
+        "10.55.573.99",
+        "10.55.573.100",
+        "10.55.573.101",
+        "10.55.573.102",
+        "10.55.573.103",
+        "10.55.573.104",
+        "10.55.573.105",
+        "10.55.573.106",
+        "10.55.573.107",
+        "10.55.573.108",
+        "10.55.573.109",
+        "10.55.573.110",
+        "10.55.573.111",
+        "10.55.573.112",
+        "10.55.573.113",
+        "10.55.573.114",
+        "10.55.573.115",
+        "10.55.573.116",
+        "10.55.573.117",
+        "10.55.573.118",
+        "10.55.573.119",
+        "10.55.573.120",
+        "10.55.573.121",
+        "10.55.573.122",
+        "10.55.573.123",
+        "10.55.573.124",
+        "10.55.573.125"
+    ],
+    "latitude": 31.561,
+    "longitude": -96.802,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.97",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..Firewall 573",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.561,
+            "Longitude": -96.802
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.98",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..Router 573",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.1",
+            "ipAddress": "10.55.573.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MART",
+            "label": "Utility 2.MART.OT.Switch 1145",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.99",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART.Corporate.Switch 1146",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.3",
+            "ipAddress": "10.55.573.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MART",
+            "label": "Utility 2.MART..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.2",
+            "ipAddress": "10.55.573.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MART",
+            "label": "Utility 2.MART..RC 573",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.573.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.100",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..Host 1145",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.100",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..Host 1146",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.100",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..LocalDatabase 1145",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.100",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..LocalWebServer 1146",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.101",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..hmi 1145",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.100",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..outstation 1146",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.MART..RC 573",
+            "destination": "Utility 2.MART..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MART..Router 573",
+            "destination": "Utility 2.MART..Firewall 573",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MART..Firewall 573",
+            "destination": "Utility 2.MART.OT.Switch 1145",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MART.OT.Switch 1145",
+            "destination": "Utility 2.MART..RC 573",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MART..Firewall 573",
+            "destination": "Utility 2.MART.Corporate.Switch 1146",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MART.Corporate.Switch 1146",
+            "destination": "Utility 2.MART..Host 1145",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MART.Corporate.Switch 1146",
+            "destination": "Utility 2.MART..Host 1146",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MART.Corporate.Switch 1146",
+            "destination": "Utility 2.MART..LocalDatabase 1145",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MART.Corporate.Switch 1146",
+            "destination": "Utility 2.MART..LocalWebServer 1146",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.1",
+            "ipAddress": "10.55.573.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MART",
+            "label": "Utility 2.MART.OT.Switch 1145",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.2",
+            "ipAddress": "10.55.573.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MART",
+            "label": "Utility 2.MART..RC 573",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.573.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.97",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..Firewall 573",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.561,
+            "Longitude": -96.802
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.98",
+            "ipAddress": "10.55.573.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MART",
+            "label": "Utility 2.MART..Router 573",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.1",
+            "ipAddress": "10.55.573.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MART",
+            "label": "Utility 2.MART.OT.Switch 1145",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.573.2",
+            "ipAddress": "10.55.573.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MART",
+            "label": "Utility 2.MART..RC 573",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.573.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

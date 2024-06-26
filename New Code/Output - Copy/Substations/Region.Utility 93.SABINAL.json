@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 93.SABINAL",
+    "networkLan": "10.108.216.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 93",
+    "utility_id": 108,
+    "substation": "SABINAL",
+    "substationNumber": 216,
+    "OTAddress": "10.108.216.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.108.216.1",
+        "10.108.216.2",
+        "10.108.216.3",
+        "10.108.216.4",
+        "10.108.216.5",
+        "10.108.216.6",
+        "10.108.216.7",
+        "10.108.216.8",
+        "10.108.216.9",
+        "10.108.216.10",
+        "10.108.216.11",
+        "10.108.216.12",
+        "10.108.216.13",
+        "10.108.216.14",
+        "10.108.216.15",
+        "10.108.216.16",
+        "10.108.216.17",
+        "10.108.216.18",
+        "10.108.216.19",
+        "10.108.216.20",
+        "10.108.216.21",
+        "10.108.216.22",
+        "10.108.216.23",
+        "10.108.216.24",
+        "10.108.216.25",
+        "10.108.216.26",
+        "10.108.216.27",
+        "10.108.216.28",
+        "10.108.216.29",
+        "10.108.216.30",
+        "10.108.216.31",
+        "10.108.216.32",
+        "10.108.216.33",
+        "10.108.216.34",
+        "10.108.216.35",
+        "10.108.216.36",
+        "10.108.216.37",
+        "10.108.216.38",
+        "10.108.216.39",
+        "10.108.216.40",
+        "10.108.216.41",
+        "10.108.216.42",
+        "10.108.216.43",
+        "10.108.216.44",
+        "10.108.216.45",
+        "10.108.216.46",
+        "10.108.216.47",
+        "10.108.216.48",
+        "10.108.216.49",
+        "10.108.216.50",
+        "10.108.216.51",
+        "10.108.216.52",
+        "10.108.216.53",
+        "10.108.216.54",
+        "10.108.216.55",
+        "10.108.216.56",
+        "10.108.216.57",
+        "10.108.216.58",
+        "10.108.216.59",
+        "10.108.216.60",
+        "10.108.216.61",
+        "10.108.216.62"
+    ],
+    "routeAddress": "10.108.216.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.108.216.65",
+        "10.108.216.66",
+        "10.108.216.67",
+        "10.108.216.68",
+        "10.108.216.69",
+        "10.108.216.70",
+        "10.108.216.71",
+        "10.108.216.72",
+        "10.108.216.73",
+        "10.108.216.74",
+        "10.108.216.75",
+        "10.108.216.76",
+        "10.108.216.77",
+        "10.108.216.78",
+        "10.108.216.79",
+        "10.108.216.80",
+        "10.108.216.81",
+        "10.108.216.82",
+        "10.108.216.83",
+        "10.108.216.84",
+        "10.108.216.85",
+        "10.108.216.86",
+        "10.108.216.87",
+        "10.108.216.88",
+        "10.108.216.89",
+        "10.108.216.90",
+        "10.108.216.91",
+        "10.108.216.92",
+        "10.108.216.93",
+        "10.108.216.94"
+    ],
+    "corporateAddress": "10.108.216.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.108.216.97",
+        "10.108.216.98",
+        "10.108.216.99",
+        "10.108.216.100",
+        "10.108.216.101",
+        "10.108.216.102",
+        "10.108.216.103",
+        "10.108.216.104",
+        "10.108.216.105",
+        "10.108.216.106",
+        "10.108.216.107",
+        "10.108.216.108",
+        "10.108.216.109",
+        "10.108.216.110",
+        "10.108.216.111",
+        "10.108.216.112",
+        "10.108.216.113",
+        "10.108.216.114",
+        "10.108.216.115",
+        "10.108.216.116",
+        "10.108.216.117",
+        "10.108.216.118",
+        "10.108.216.119",
+        "10.108.216.120",
+        "10.108.216.121",
+        "10.108.216.122",
+        "10.108.216.123",
+        "10.108.216.124",
+        "10.108.216.125"
+    ],
+    "latitude": 29.304,
+    "longitude": -99.631,
+    "nodes": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.97",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..Firewall 216",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.304,
+            "Longitude": -99.631
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.98",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..Router 216",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.1",
+            "ipAddress": "10.108.216.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL.OT.Switch 431",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.99",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL.Corporate.Switch 432",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.3",
+            "ipAddress": "10.108.216.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.2",
+            "ipAddress": "10.108.216.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..RC 216",
+            "compromised": false,
+            "relayIPlist": [
+                "10.108.216.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.100",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..Host 431",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.100",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..Host 432",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.100",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..LocalDatabase 431",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.100",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..LocalWebServer 432",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.101",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..hmi 431",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.100",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..outstation 432",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 93.SABINAL..RC 216",
+            "destination": "Utility 93.SABINAL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.SABINAL..Router 216",
+            "destination": "Utility 93.SABINAL..Firewall 216",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.SABINAL..Firewall 216",
+            "destination": "Utility 93.SABINAL.OT.Switch 431",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.SABINAL.OT.Switch 431",
+            "destination": "Utility 93.SABINAL..RC 216",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.SABINAL..Firewall 216",
+            "destination": "Utility 93.SABINAL.Corporate.Switch 432",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.SABINAL.Corporate.Switch 432",
+            "destination": "Utility 93.SABINAL..Host 431",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.SABINAL.Corporate.Switch 432",
+            "destination": "Utility 93.SABINAL..Host 432",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.SABINAL.Corporate.Switch 432",
+            "destination": "Utility 93.SABINAL..LocalDatabase 431",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 93.SABINAL.Corporate.Switch 432",
+            "destination": "Utility 93.SABINAL..LocalWebServer 432",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.1",
+            "ipAddress": "10.108.216.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL.OT.Switch 431",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.2",
+            "ipAddress": "10.108.216.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..RC 216",
+            "compromised": false,
+            "relayIPlist": [
+                "10.108.216.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.97",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..Firewall 216",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.304,
+            "Longitude": -99.631
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.98",
+            "ipAddress": "10.108.216.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..Router 216",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.1",
+            "ipAddress": "10.108.216.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL.OT.Switch 431",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 93",
+            "adminIP": "10.108.216.2",
+            "ipAddress": "10.108.216.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SABINAL",
+            "label": "Utility 93.SABINAL..RC 216",
+            "compromised": false,
+            "relayIPlist": [
+                "10.108.216.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

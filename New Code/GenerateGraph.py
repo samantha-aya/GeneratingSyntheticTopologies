@@ -165,14 +165,14 @@ def create_utilities_graph_with_color(data, configuration):
             for substation in utility['substations']:
                 #if substation type is generation, color it green
                 if substation['type'] == 'generation':
-                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',color='green')
-                else:
-                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',color='lightblue')
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='green')
+                elif substation['type'] == 'transmission':
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='lightblue')
             #add edge only if there is a link between utility and substation
             #add edges between substations
             for link in utility['links']:
                 print(link['source'], link['destination'])
-                if f"{utility['label']}.{utility['utility']}" not in link['destination'] and f"{utility['label']}.{utility['utility']}" not in link['source']:
+                if f"{utility['label']}.{utility['utility']}" not in link['destination'] or f"{utility['label']}.{utility['utility']}" not in link['source']:
                     #get substation id from link
                     source_id = link['source'].split(".")[1]
                     print(source_id)
@@ -231,7 +231,7 @@ def main(code_to_run, data):
         colors = [utilities_graph_with_color.nodes[node]['color'] for node in utilities_graph_with_color.nodes]
 
         nx.draw(utilities_graph_with_color, pos, with_labels=False, labels=labels, node_size=small_node_size, node_color=colors, width=0.2,font_size=5)
-        plt.savefig('Output\\Regulatory\\Utilities_star.pdf')
+        plt.savefig('Output\\Regulatory\\Utilities_statistics.pdf')
         plt.show()
     elif code_to_run==3:
         # Select a specific utility to visualize

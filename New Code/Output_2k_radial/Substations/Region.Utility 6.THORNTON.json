@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 6.THORNTON",
+    "networkLan": "10.54.370.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 6",
+    "utility_id": 54,
+    "substation": "THORNTON",
+    "substationNumber": 370,
+    "OTAddress": "10.54.370.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.54.370.1",
+        "10.54.370.2",
+        "10.54.370.3",
+        "10.54.370.4",
+        "10.54.370.5",
+        "10.54.370.6",
+        "10.54.370.7",
+        "10.54.370.8",
+        "10.54.370.9",
+        "10.54.370.10",
+        "10.54.370.11",
+        "10.54.370.12",
+        "10.54.370.13",
+        "10.54.370.14",
+        "10.54.370.15",
+        "10.54.370.16",
+        "10.54.370.17",
+        "10.54.370.18",
+        "10.54.370.19",
+        "10.54.370.20",
+        "10.54.370.21",
+        "10.54.370.22",
+        "10.54.370.23",
+        "10.54.370.24",
+        "10.54.370.25",
+        "10.54.370.26",
+        "10.54.370.27",
+        "10.54.370.28",
+        "10.54.370.29",
+        "10.54.370.30",
+        "10.54.370.31",
+        "10.54.370.32",
+        "10.54.370.33",
+        "10.54.370.34",
+        "10.54.370.35",
+        "10.54.370.36",
+        "10.54.370.37",
+        "10.54.370.38",
+        "10.54.370.39",
+        "10.54.370.40",
+        "10.54.370.41",
+        "10.54.370.42",
+        "10.54.370.43",
+        "10.54.370.44",
+        "10.54.370.45",
+        "10.54.370.46",
+        "10.54.370.47",
+        "10.54.370.48",
+        "10.54.370.49",
+        "10.54.370.50",
+        "10.54.370.51",
+        "10.54.370.52",
+        "10.54.370.53",
+        "10.54.370.54",
+        "10.54.370.55",
+        "10.54.370.56",
+        "10.54.370.57",
+        "10.54.370.58",
+        "10.54.370.59",
+        "10.54.370.60",
+        "10.54.370.61",
+        "10.54.370.62"
+    ],
+    "routeAddress": "10.54.370.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.54.370.65",
+        "10.54.370.66",
+        "10.54.370.67",
+        "10.54.370.68",
+        "10.54.370.69",
+        "10.54.370.70",
+        "10.54.370.71",
+        "10.54.370.72",
+        "10.54.370.73",
+        "10.54.370.74",
+        "10.54.370.75",
+        "10.54.370.76",
+        "10.54.370.77",
+        "10.54.370.78",
+        "10.54.370.79",
+        "10.54.370.80",
+        "10.54.370.81",
+        "10.54.370.82",
+        "10.54.370.83",
+        "10.54.370.84",
+        "10.54.370.85",
+        "10.54.370.86",
+        "10.54.370.87",
+        "10.54.370.88",
+        "10.54.370.89",
+        "10.54.370.90",
+        "10.54.370.91",
+        "10.54.370.92",
+        "10.54.370.93",
+        "10.54.370.94"
+    ],
+    "corporateAddress": "10.54.370.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.54.370.97",
+        "10.54.370.98",
+        "10.54.370.99",
+        "10.54.370.100",
+        "10.54.370.101",
+        "10.54.370.102",
+        "10.54.370.103",
+        "10.54.370.104",
+        "10.54.370.105",
+        "10.54.370.106",
+        "10.54.370.107",
+        "10.54.370.108",
+        "10.54.370.109",
+        "10.54.370.110",
+        "10.54.370.111",
+        "10.54.370.112",
+        "10.54.370.113",
+        "10.54.370.114",
+        "10.54.370.115",
+        "10.54.370.116",
+        "10.54.370.117",
+        "10.54.370.118",
+        "10.54.370.119",
+        "10.54.370.120",
+        "10.54.370.121",
+        "10.54.370.122",
+        "10.54.370.123",
+        "10.54.370.124",
+        "10.54.370.125"
+    ],
+    "latitude": 31.3,
+    "longitude": -96.609,
+    "nodes": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.97",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..Firewall 370",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.3,
+            "Longitude": -96.609
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.98",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..Router 370",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.1",
+            "ipAddress": "10.54.370.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON.OT.Switch 739",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.99",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON.Corporate.Switch 740",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.3",
+            "ipAddress": "10.54.370.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.2",
+            "ipAddress": "10.54.370.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..RC 370",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.370.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.100",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..Host 739",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.100",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..Host 740",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.100",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..LocalDatabase 739",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.100",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..LocalWebServer 740",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.101",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..hmi 739",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.100",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..outstation 740",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 6.THORNTON..RC 370",
+            "destination": "Utility 6.THORNTON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.THORNTON..Router 370",
+            "destination": "Utility 6.THORNTON..Firewall 370",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.THORNTON..Firewall 370",
+            "destination": "Utility 6.THORNTON.OT.Switch 739",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.THORNTON.OT.Switch 739",
+            "destination": "Utility 6.THORNTON..RC 370",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.THORNTON..Firewall 370",
+            "destination": "Utility 6.THORNTON.Corporate.Switch 740",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.THORNTON.Corporate.Switch 740",
+            "destination": "Utility 6.THORNTON..Host 739",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.THORNTON.Corporate.Switch 740",
+            "destination": "Utility 6.THORNTON..Host 740",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.THORNTON.Corporate.Switch 740",
+            "destination": "Utility 6.THORNTON..LocalDatabase 739",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.THORNTON.Corporate.Switch 740",
+            "destination": "Utility 6.THORNTON..LocalWebServer 740",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.1",
+            "ipAddress": "10.54.370.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON.OT.Switch 739",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.2",
+            "ipAddress": "10.54.370.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..RC 370",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.370.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.97",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..Firewall 370",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.3,
+            "Longitude": -96.609
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.98",
+            "ipAddress": "10.54.370.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..Router 370",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.1",
+            "ipAddress": "10.54.370.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON.OT.Switch 739",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.370.2",
+            "ipAddress": "10.54.370.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THORNTON",
+            "label": "Utility 6.THORNTON..RC 370",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.370.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

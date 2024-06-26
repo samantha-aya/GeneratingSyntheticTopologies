@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.ARLINGTON 3",
+    "networkLan": "10.52.677.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "ARLINGTON 3",
+    "substationNumber": 677,
+    "OTAddress": "10.52.677.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.677.1",
+        "10.52.677.2",
+        "10.52.677.3",
+        "10.52.677.4",
+        "10.52.677.5",
+        "10.52.677.6",
+        "10.52.677.7",
+        "10.52.677.8",
+        "10.52.677.9",
+        "10.52.677.10",
+        "10.52.677.11",
+        "10.52.677.12",
+        "10.52.677.13",
+        "10.52.677.14",
+        "10.52.677.15",
+        "10.52.677.16",
+        "10.52.677.17",
+        "10.52.677.18",
+        "10.52.677.19",
+        "10.52.677.20",
+        "10.52.677.21",
+        "10.52.677.22",
+        "10.52.677.23",
+        "10.52.677.24",
+        "10.52.677.25",
+        "10.52.677.26",
+        "10.52.677.27",
+        "10.52.677.28",
+        "10.52.677.29",
+        "10.52.677.30",
+        "10.52.677.31",
+        "10.52.677.32",
+        "10.52.677.33",
+        "10.52.677.34",
+        "10.52.677.35",
+        "10.52.677.36",
+        "10.52.677.37",
+        "10.52.677.38",
+        "10.52.677.39",
+        "10.52.677.40",
+        "10.52.677.41",
+        "10.52.677.42",
+        "10.52.677.43",
+        "10.52.677.44",
+        "10.52.677.45",
+        "10.52.677.46",
+        "10.52.677.47",
+        "10.52.677.48",
+        "10.52.677.49",
+        "10.52.677.50",
+        "10.52.677.51",
+        "10.52.677.52",
+        "10.52.677.53",
+        "10.52.677.54",
+        "10.52.677.55",
+        "10.52.677.56",
+        "10.52.677.57",
+        "10.52.677.58",
+        "10.52.677.59",
+        "10.52.677.60",
+        "10.52.677.61",
+        "10.52.677.62"
+    ],
+    "routeAddress": "10.52.677.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.677.65",
+        "10.52.677.66",
+        "10.52.677.67",
+        "10.52.677.68",
+        "10.52.677.69",
+        "10.52.677.70",
+        "10.52.677.71",
+        "10.52.677.72",
+        "10.52.677.73",
+        "10.52.677.74",
+        "10.52.677.75",
+        "10.52.677.76",
+        "10.52.677.77",
+        "10.52.677.78",
+        "10.52.677.79",
+        "10.52.677.80",
+        "10.52.677.81",
+        "10.52.677.82",
+        "10.52.677.83",
+        "10.52.677.84",
+        "10.52.677.85",
+        "10.52.677.86",
+        "10.52.677.87",
+        "10.52.677.88",
+        "10.52.677.89",
+        "10.52.677.90",
+        "10.52.677.91",
+        "10.52.677.92",
+        "10.52.677.93",
+        "10.52.677.94"
+    ],
+    "corporateAddress": "10.52.677.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.677.97",
+        "10.52.677.98",
+        "10.52.677.99",
+        "10.52.677.100",
+        "10.52.677.101",
+        "10.52.677.102",
+        "10.52.677.103",
+        "10.52.677.104",
+        "10.52.677.105",
+        "10.52.677.106",
+        "10.52.677.107",
+        "10.52.677.108",
+        "10.52.677.109",
+        "10.52.677.110",
+        "10.52.677.111",
+        "10.52.677.112",
+        "10.52.677.113",
+        "10.52.677.114",
+        "10.52.677.115",
+        "10.52.677.116",
+        "10.52.677.117",
+        "10.52.677.118",
+        "10.52.677.119",
+        "10.52.677.120",
+        "10.52.677.121",
+        "10.52.677.122",
+        "10.52.677.123",
+        "10.52.677.124",
+        "10.52.677.125"
+    ],
+    "latitude": 32.723,
+    "longitude": -97.08,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.97",
+            "ipAddress": "10.52.677.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..Firewall 677",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.723,
+            "Longitude": -97.08
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.98",
+            "ipAddress": "10.52.677.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..Router 677",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.1",
+            "ipAddress": "10.52.677.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3.OT.Switch 1353",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.99",
+            "ipAddress": "10.52.677.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3.Corporate.Switch 1354",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.3",
+            "ipAddress": "10.52.677.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.2",
+            "ipAddress": "10.52.677.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..RC 677",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.677.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.100",
+            "ipAddress": "10.52.677.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..Host 1353",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.100",
+            "ipAddress": "10.52.677.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..Host 1354",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.100",
+            "ipAddress": "10.52.677.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..LocalDatabase 1353",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.100",
+            "ipAddress": "10.52.677.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..LocalWebServer 1354",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.ARLINGTON 3..RC 677",
+            "destination": "Utility 0.ARLINGTON 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ARLINGTON 3..Router 677",
+            "destination": "Utility 0.ARLINGTON 3..Firewall 677",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ARLINGTON 3..Firewall 677",
+            "destination": "Utility 0.ARLINGTON 3.OT.Switch 1353",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ARLINGTON 3.OT.Switch 1353",
+            "destination": "Utility 0.ARLINGTON 3..RC 677",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ARLINGTON 3..Firewall 677",
+            "destination": "Utility 0.ARLINGTON 3.Corporate.Switch 1354",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ARLINGTON 3.Corporate.Switch 1354",
+            "destination": "Utility 0.ARLINGTON 3..Host 1353",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ARLINGTON 3.Corporate.Switch 1354",
+            "destination": "Utility 0.ARLINGTON 3..Host 1354",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ARLINGTON 3.Corporate.Switch 1354",
+            "destination": "Utility 0.ARLINGTON 3..LocalDatabase 1353",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.ARLINGTON 3.Corporate.Switch 1354",
+            "destination": "Utility 0.ARLINGTON 3..LocalWebServer 1354",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.1",
+            "ipAddress": "10.52.677.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3.OT.Switch 1353",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.2",
+            "ipAddress": "10.52.677.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..RC 677",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.677.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.97",
+            "ipAddress": "10.52.677.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..Firewall 677",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.723,
+            "Longitude": -97.08
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.98",
+            "ipAddress": "10.52.677.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..Router 677",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.1",
+            "ipAddress": "10.52.677.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3.OT.Switch 1353",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.677.2",
+            "ipAddress": "10.52.677.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ARLINGTON 3",
+            "label": "Utility 0.ARLINGTON 3..RC 677",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.677.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

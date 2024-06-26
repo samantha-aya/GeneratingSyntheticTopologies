@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 51.AUSTIN 27",
+    "networkLan": "10.166.846.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 51",
+    "utility_id": 166,
+    "substation": "AUSTIN 27",
+    "substationNumber": 846,
+    "OTAddress": "10.166.846.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.166.846.1",
+        "10.166.846.2",
+        "10.166.846.3",
+        "10.166.846.4",
+        "10.166.846.5",
+        "10.166.846.6",
+        "10.166.846.7",
+        "10.166.846.8",
+        "10.166.846.9",
+        "10.166.846.10",
+        "10.166.846.11",
+        "10.166.846.12",
+        "10.166.846.13",
+        "10.166.846.14",
+        "10.166.846.15",
+        "10.166.846.16",
+        "10.166.846.17",
+        "10.166.846.18",
+        "10.166.846.19",
+        "10.166.846.20",
+        "10.166.846.21",
+        "10.166.846.22",
+        "10.166.846.23",
+        "10.166.846.24",
+        "10.166.846.25",
+        "10.166.846.26",
+        "10.166.846.27",
+        "10.166.846.28",
+        "10.166.846.29",
+        "10.166.846.30",
+        "10.166.846.31",
+        "10.166.846.32",
+        "10.166.846.33",
+        "10.166.846.34",
+        "10.166.846.35",
+        "10.166.846.36",
+        "10.166.846.37",
+        "10.166.846.38",
+        "10.166.846.39",
+        "10.166.846.40",
+        "10.166.846.41",
+        "10.166.846.42",
+        "10.166.846.43",
+        "10.166.846.44",
+        "10.166.846.45",
+        "10.166.846.46",
+        "10.166.846.47",
+        "10.166.846.48",
+        "10.166.846.49",
+        "10.166.846.50",
+        "10.166.846.51",
+        "10.166.846.52",
+        "10.166.846.53",
+        "10.166.846.54",
+        "10.166.846.55",
+        "10.166.846.56",
+        "10.166.846.57",
+        "10.166.846.58",
+        "10.166.846.59",
+        "10.166.846.60",
+        "10.166.846.61",
+        "10.166.846.62"
+    ],
+    "routeAddress": "10.166.846.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.166.846.65",
+        "10.166.846.66",
+        "10.166.846.67",
+        "10.166.846.68",
+        "10.166.846.69",
+        "10.166.846.70",
+        "10.166.846.71",
+        "10.166.846.72",
+        "10.166.846.73",
+        "10.166.846.74",
+        "10.166.846.75",
+        "10.166.846.76",
+        "10.166.846.77",
+        "10.166.846.78",
+        "10.166.846.79",
+        "10.166.846.80",
+        "10.166.846.81",
+        "10.166.846.82",
+        "10.166.846.83",
+        "10.166.846.84",
+        "10.166.846.85",
+        "10.166.846.86",
+        "10.166.846.87",
+        "10.166.846.88",
+        "10.166.846.89",
+        "10.166.846.90",
+        "10.166.846.91",
+        "10.166.846.92",
+        "10.166.846.93",
+        "10.166.846.94"
+    ],
+    "corporateAddress": "10.166.846.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.166.846.97",
+        "10.166.846.98",
+        "10.166.846.99",
+        "10.166.846.100",
+        "10.166.846.101",
+        "10.166.846.102",
+        "10.166.846.103",
+        "10.166.846.104",
+        "10.166.846.105",
+        "10.166.846.106",
+        "10.166.846.107",
+        "10.166.846.108",
+        "10.166.846.109",
+        "10.166.846.110",
+        "10.166.846.111",
+        "10.166.846.112",
+        "10.166.846.113",
+        "10.166.846.114",
+        "10.166.846.115",
+        "10.166.846.116",
+        "10.166.846.117",
+        "10.166.846.118",
+        "10.166.846.119",
+        "10.166.846.120",
+        "10.166.846.121",
+        "10.166.846.122",
+        "10.166.846.123",
+        "10.166.846.124",
+        "10.166.846.125"
+    ],
+    "latitude": 30.207,
+    "longitude": -97.797,
+    "nodes": [
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.97",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..Firewall 846",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.207,
+            "Longitude": -97.797
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.98",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..Router 846",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.1",
+            "ipAddress": "10.166.846.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27.OT.Switch 1691",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.99",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27.Corporate.Switch 1692",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.3",
+            "ipAddress": "10.166.846.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.4",
+            "ipAddress": "10.166.846.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.2",
+            "ipAddress": "10.166.846.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..RC 846",
+            "compromised": false,
+            "relayIPlist": [
+                "10.166.846.3",
+                "10.166.846.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.100",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..Host 1691",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.100",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..Host 1692",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.100",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..LocalDatabase 1691",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.100",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..LocalWebServer 1692",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.101",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..hmi 1691",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.100",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..outstation 1692",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 51.AUSTIN 27..RC 846",
+            "destination": "Utility 51.AUSTIN 27..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 51.AUSTIN 27..RC 846",
+            "destination": "Utility 51.AUSTIN 27..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 51.AUSTIN 27..Router 846",
+            "destination": "Utility 51.AUSTIN 27..Firewall 846",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 51.AUSTIN 27..Firewall 846",
+            "destination": "Utility 51.AUSTIN 27.OT.Switch 1691",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 51.AUSTIN 27.OT.Switch 1691",
+            "destination": "Utility 51.AUSTIN 27..RC 846",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 51.AUSTIN 27..Firewall 846",
+            "destination": "Utility 51.AUSTIN 27.Corporate.Switch 1692",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 51.AUSTIN 27.Corporate.Switch 1692",
+            "destination": "Utility 51.AUSTIN 27..Host 1691",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 51.AUSTIN 27.Corporate.Switch 1692",
+            "destination": "Utility 51.AUSTIN 27..Host 1692",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 51.AUSTIN 27.Corporate.Switch 1692",
+            "destination": "Utility 51.AUSTIN 27..LocalDatabase 1691",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 51.AUSTIN 27.Corporate.Switch 1692",
+            "destination": "Utility 51.AUSTIN 27..LocalWebServer 1692",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.1",
+            "ipAddress": "10.166.846.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27.OT.Switch 1691",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.2",
+            "ipAddress": "10.166.846.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..RC 846",
+            "compromised": false,
+            "relayIPlist": [
+                "10.166.846.3",
+                "10.166.846.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.97",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..Firewall 846",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.207,
+            "Longitude": -97.797
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.98",
+            "ipAddress": "10.166.846.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..Router 846",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.1",
+            "ipAddress": "10.166.846.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27.OT.Switch 1691",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 51",
+            "adminIP": "10.166.846.2",
+            "ipAddress": "10.166.846.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 27",
+            "label": "Utility 51.AUSTIN 27..RC 846",
+            "compromised": false,
+            "relayIPlist": [
+                "10.166.846.3",
+                "10.166.846.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

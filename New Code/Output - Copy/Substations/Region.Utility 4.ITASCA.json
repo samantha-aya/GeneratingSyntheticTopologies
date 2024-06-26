@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.ITASCA",
+    "networkLan": "10.155.622.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 155,
+    "substation": "ITASCA",
+    "substationNumber": 622,
+    "OTAddress": "10.155.622.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.155.622.1",
+        "10.155.622.2",
+        "10.155.622.3",
+        "10.155.622.4",
+        "10.155.622.5",
+        "10.155.622.6",
+        "10.155.622.7",
+        "10.155.622.8",
+        "10.155.622.9",
+        "10.155.622.10",
+        "10.155.622.11",
+        "10.155.622.12",
+        "10.155.622.13",
+        "10.155.622.14",
+        "10.155.622.15",
+        "10.155.622.16",
+        "10.155.622.17",
+        "10.155.622.18",
+        "10.155.622.19",
+        "10.155.622.20",
+        "10.155.622.21",
+        "10.155.622.22",
+        "10.155.622.23",
+        "10.155.622.24",
+        "10.155.622.25",
+        "10.155.622.26",
+        "10.155.622.27",
+        "10.155.622.28",
+        "10.155.622.29",
+        "10.155.622.30",
+        "10.155.622.31",
+        "10.155.622.32",
+        "10.155.622.33",
+        "10.155.622.34",
+        "10.155.622.35",
+        "10.155.622.36",
+        "10.155.622.37",
+        "10.155.622.38",
+        "10.155.622.39",
+        "10.155.622.40",
+        "10.155.622.41",
+        "10.155.622.42",
+        "10.155.622.43",
+        "10.155.622.44",
+        "10.155.622.45",
+        "10.155.622.46",
+        "10.155.622.47",
+        "10.155.622.48",
+        "10.155.622.49",
+        "10.155.622.50",
+        "10.155.622.51",
+        "10.155.622.52",
+        "10.155.622.53",
+        "10.155.622.54",
+        "10.155.622.55",
+        "10.155.622.56",
+        "10.155.622.57",
+        "10.155.622.58",
+        "10.155.622.59",
+        "10.155.622.60",
+        "10.155.622.61",
+        "10.155.622.62"
+    ],
+    "routeAddress": "10.155.622.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.155.622.65",
+        "10.155.622.66",
+        "10.155.622.67",
+        "10.155.622.68",
+        "10.155.622.69",
+        "10.155.622.70",
+        "10.155.622.71",
+        "10.155.622.72",
+        "10.155.622.73",
+        "10.155.622.74",
+        "10.155.622.75",
+        "10.155.622.76",
+        "10.155.622.77",
+        "10.155.622.78",
+        "10.155.622.79",
+        "10.155.622.80",
+        "10.155.622.81",
+        "10.155.622.82",
+        "10.155.622.83",
+        "10.155.622.84",
+        "10.155.622.85",
+        "10.155.622.86",
+        "10.155.622.87",
+        "10.155.622.88",
+        "10.155.622.89",
+        "10.155.622.90",
+        "10.155.622.91",
+        "10.155.622.92",
+        "10.155.622.93",
+        "10.155.622.94"
+    ],
+    "corporateAddress": "10.155.622.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.155.622.97",
+        "10.155.622.98",
+        "10.155.622.99",
+        "10.155.622.100",
+        "10.155.622.101",
+        "10.155.622.102",
+        "10.155.622.103",
+        "10.155.622.104",
+        "10.155.622.105",
+        "10.155.622.106",
+        "10.155.622.107",
+        "10.155.622.108",
+        "10.155.622.109",
+        "10.155.622.110",
+        "10.155.622.111",
+        "10.155.622.112",
+        "10.155.622.113",
+        "10.155.622.114",
+        "10.155.622.115",
+        "10.155.622.116",
+        "10.155.622.117",
+        "10.155.622.118",
+        "10.155.622.119",
+        "10.155.622.120",
+        "10.155.622.121",
+        "10.155.622.122",
+        "10.155.622.123",
+        "10.155.622.124",
+        "10.155.622.125"
+    ],
+    "latitude": 32.163,
+    "longitude": -97.155,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.97",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..Firewall 622",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.163,
+            "Longitude": -97.155
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.98",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..Router 622",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.1",
+            "ipAddress": "10.155.622.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA.OT.Switch 1243",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.99",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA.Corporate.Switch 1244",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.3",
+            "ipAddress": "10.155.622.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.2",
+            "ipAddress": "10.155.622.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..RC 622",
+            "compromised": false,
+            "relayIPlist": [
+                "10.155.622.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.100",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..Host 1243",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.100",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..Host 1244",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.100",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..LocalDatabase 1243",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.100",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..LocalWebServer 1244",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.101",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..hmi 1243",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.100",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..outstation 1244",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.ITASCA..RC 622",
+            "destination": "Utility 4.ITASCA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ITASCA..Router 622",
+            "destination": "Utility 4.ITASCA..Firewall 622",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ITASCA..Firewall 622",
+            "destination": "Utility 4.ITASCA.OT.Switch 1243",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ITASCA.OT.Switch 1243",
+            "destination": "Utility 4.ITASCA..RC 622",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ITASCA..Firewall 622",
+            "destination": "Utility 4.ITASCA.Corporate.Switch 1244",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ITASCA.Corporate.Switch 1244",
+            "destination": "Utility 4.ITASCA..Host 1243",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ITASCA.Corporate.Switch 1244",
+            "destination": "Utility 4.ITASCA..Host 1244",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ITASCA.Corporate.Switch 1244",
+            "destination": "Utility 4.ITASCA..LocalDatabase 1243",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ITASCA.Corporate.Switch 1244",
+            "destination": "Utility 4.ITASCA..LocalWebServer 1244",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.1",
+            "ipAddress": "10.155.622.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA.OT.Switch 1243",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.2",
+            "ipAddress": "10.155.622.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..RC 622",
+            "compromised": false,
+            "relayIPlist": [
+                "10.155.622.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.97",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..Firewall 622",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.163,
+            "Longitude": -97.155
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.98",
+            "ipAddress": "10.155.622.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..Router 622",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.1",
+            "ipAddress": "10.155.622.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA.OT.Switch 1243",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.622.2",
+            "ipAddress": "10.155.622.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ITASCA",
+            "label": "Utility 4.ITASCA..RC 622",
+            "compromised": false,
+            "relayIPlist": [
+                "10.155.622.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

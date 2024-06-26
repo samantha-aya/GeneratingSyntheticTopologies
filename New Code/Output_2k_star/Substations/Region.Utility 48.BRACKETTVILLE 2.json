@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 48.BRACKETTVILLE 2",
+    "networkLan": "10.93.187.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 48",
+    "utility_id": 93,
+    "substation": "BRACKETTVILLE 2",
+    "substationNumber": 187,
+    "OTAddress": "10.93.187.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.93.187.1",
+        "10.93.187.2",
+        "10.93.187.3",
+        "10.93.187.4",
+        "10.93.187.5",
+        "10.93.187.6",
+        "10.93.187.7",
+        "10.93.187.8",
+        "10.93.187.9",
+        "10.93.187.10",
+        "10.93.187.11",
+        "10.93.187.12",
+        "10.93.187.13",
+        "10.93.187.14",
+        "10.93.187.15",
+        "10.93.187.16",
+        "10.93.187.17",
+        "10.93.187.18",
+        "10.93.187.19",
+        "10.93.187.20",
+        "10.93.187.21",
+        "10.93.187.22",
+        "10.93.187.23",
+        "10.93.187.24",
+        "10.93.187.25",
+        "10.93.187.26",
+        "10.93.187.27",
+        "10.93.187.28",
+        "10.93.187.29",
+        "10.93.187.30",
+        "10.93.187.31",
+        "10.93.187.32",
+        "10.93.187.33",
+        "10.93.187.34",
+        "10.93.187.35",
+        "10.93.187.36",
+        "10.93.187.37",
+        "10.93.187.38",
+        "10.93.187.39",
+        "10.93.187.40",
+        "10.93.187.41",
+        "10.93.187.42",
+        "10.93.187.43",
+        "10.93.187.44",
+        "10.93.187.45",
+        "10.93.187.46",
+        "10.93.187.47",
+        "10.93.187.48",
+        "10.93.187.49",
+        "10.93.187.50",
+        "10.93.187.51",
+        "10.93.187.52",
+        "10.93.187.53",
+        "10.93.187.54",
+        "10.93.187.55",
+        "10.93.187.56",
+        "10.93.187.57",
+        "10.93.187.58",
+        "10.93.187.59",
+        "10.93.187.60",
+        "10.93.187.61",
+        "10.93.187.62"
+    ],
+    "routeAddress": "10.93.187.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.93.187.65",
+        "10.93.187.66",
+        "10.93.187.67",
+        "10.93.187.68",
+        "10.93.187.69",
+        "10.93.187.70",
+        "10.93.187.71",
+        "10.93.187.72",
+        "10.93.187.73",
+        "10.93.187.74",
+        "10.93.187.75",
+        "10.93.187.76",
+        "10.93.187.77",
+        "10.93.187.78",
+        "10.93.187.79",
+        "10.93.187.80",
+        "10.93.187.81",
+        "10.93.187.82",
+        "10.93.187.83",
+        "10.93.187.84",
+        "10.93.187.85",
+        "10.93.187.86",
+        "10.93.187.87",
+        "10.93.187.88",
+        "10.93.187.89",
+        "10.93.187.90",
+        "10.93.187.91",
+        "10.93.187.92",
+        "10.93.187.93",
+        "10.93.187.94"
+    ],
+    "corporateAddress": "10.93.187.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.93.187.97",
+        "10.93.187.98",
+        "10.93.187.99",
+        "10.93.187.100",
+        "10.93.187.101",
+        "10.93.187.102",
+        "10.93.187.103",
+        "10.93.187.104",
+        "10.93.187.105",
+        "10.93.187.106",
+        "10.93.187.107",
+        "10.93.187.108",
+        "10.93.187.109",
+        "10.93.187.110",
+        "10.93.187.111",
+        "10.93.187.112",
+        "10.93.187.113",
+        "10.93.187.114",
+        "10.93.187.115",
+        "10.93.187.116",
+        "10.93.187.117",
+        "10.93.187.118",
+        "10.93.187.119",
+        "10.93.187.120",
+        "10.93.187.121",
+        "10.93.187.122",
+        "10.93.187.123",
+        "10.93.187.124",
+        "10.93.187.125"
+    ],
+    "latitude": 29.235,
+    "longitude": -100.209,
+    "nodes": [
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.97",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..Firewall 187",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.235,
+            "Longitude": -100.209
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.98",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..Router 187",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.1",
+            "ipAddress": "10.93.187.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2.OT.Switch 373",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.99",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2.Corporate.Switch 374",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.3",
+            "ipAddress": "10.93.187.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.4",
+            "ipAddress": "10.93.187.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.2",
+            "ipAddress": "10.93.187.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..RC 187",
+            "compromised": false,
+            "relayIPlist": [
+                "10.93.187.3",
+                "10.93.187.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.100",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..Host 373",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.100",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..Host 374",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.100",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..LocalDatabase 373",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.100",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..LocalWebServer 374",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.101",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..hmi 373",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.100",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..outstation 374",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 48.BRACKETTVILLE 2..RC 187",
+            "destination": "Utility 48.BRACKETTVILLE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 48.BRACKETTVILLE 2..RC 187",
+            "destination": "Utility 48.BRACKETTVILLE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 48.BRACKETTVILLE 2..Router 187",
+            "destination": "Utility 48.BRACKETTVILLE 2..Firewall 187",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 48.BRACKETTVILLE 2..Firewall 187",
+            "destination": "Utility 48.BRACKETTVILLE 2.OT.Switch 373",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 48.BRACKETTVILLE 2.OT.Switch 373",
+            "destination": "Utility 48.BRACKETTVILLE 2..RC 187",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 48.BRACKETTVILLE 2..Firewall 187",
+            "destination": "Utility 48.BRACKETTVILLE 2.Corporate.Switch 374",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 48.BRACKETTVILLE 2.Corporate.Switch 374",
+            "destination": "Utility 48.BRACKETTVILLE 2..Host 373",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 48.BRACKETTVILLE 2.Corporate.Switch 374",
+            "destination": "Utility 48.BRACKETTVILLE 2..Host 374",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 48.BRACKETTVILLE 2.Corporate.Switch 374",
+            "destination": "Utility 48.BRACKETTVILLE 2..LocalDatabase 373",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 48.BRACKETTVILLE 2.Corporate.Switch 374",
+            "destination": "Utility 48.BRACKETTVILLE 2..LocalWebServer 374",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.1",
+            "ipAddress": "10.93.187.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2.OT.Switch 373",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.2",
+            "ipAddress": "10.93.187.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..RC 187",
+            "compromised": false,
+            "relayIPlist": [
+                "10.93.187.3",
+                "10.93.187.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.97",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..Firewall 187",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.235,
+            "Longitude": -100.209
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.98",
+            "ipAddress": "10.93.187.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..Router 187",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.1",
+            "ipAddress": "10.93.187.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2.OT.Switch 373",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 48",
+            "adminIP": "10.93.187.2",
+            "ipAddress": "10.93.187.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRACKETTVILLE 2",
+            "label": "Utility 48.BRACKETTVILLE 2..RC 187",
+            "compromised": false,
+            "relayIPlist": [
+                "10.93.187.3",
+                "10.93.187.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 74.85,
+    "genmvar": -1.88,
+    "connecting_TS_num": 213
+}

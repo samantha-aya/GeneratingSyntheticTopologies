@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 61.BANDERA",
+    "networkLan": "10.172.905.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 61",
+    "utility_id": 172,
+    "substation": "BANDERA",
+    "substationNumber": 905,
+    "OTAddress": "10.172.905.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.172.905.1",
+        "10.172.905.2",
+        "10.172.905.3",
+        "10.172.905.4",
+        "10.172.905.5",
+        "10.172.905.6",
+        "10.172.905.7",
+        "10.172.905.8",
+        "10.172.905.9",
+        "10.172.905.10",
+        "10.172.905.11",
+        "10.172.905.12",
+        "10.172.905.13",
+        "10.172.905.14",
+        "10.172.905.15",
+        "10.172.905.16",
+        "10.172.905.17",
+        "10.172.905.18",
+        "10.172.905.19",
+        "10.172.905.20",
+        "10.172.905.21",
+        "10.172.905.22",
+        "10.172.905.23",
+        "10.172.905.24",
+        "10.172.905.25",
+        "10.172.905.26",
+        "10.172.905.27",
+        "10.172.905.28",
+        "10.172.905.29",
+        "10.172.905.30",
+        "10.172.905.31",
+        "10.172.905.32",
+        "10.172.905.33",
+        "10.172.905.34",
+        "10.172.905.35",
+        "10.172.905.36",
+        "10.172.905.37",
+        "10.172.905.38",
+        "10.172.905.39",
+        "10.172.905.40",
+        "10.172.905.41",
+        "10.172.905.42",
+        "10.172.905.43",
+        "10.172.905.44",
+        "10.172.905.45",
+        "10.172.905.46",
+        "10.172.905.47",
+        "10.172.905.48",
+        "10.172.905.49",
+        "10.172.905.50",
+        "10.172.905.51",
+        "10.172.905.52",
+        "10.172.905.53",
+        "10.172.905.54",
+        "10.172.905.55",
+        "10.172.905.56",
+        "10.172.905.57",
+        "10.172.905.58",
+        "10.172.905.59",
+        "10.172.905.60",
+        "10.172.905.61",
+        "10.172.905.62"
+    ],
+    "routeAddress": "10.172.905.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.172.905.65",
+        "10.172.905.66",
+        "10.172.905.67",
+        "10.172.905.68",
+        "10.172.905.69",
+        "10.172.905.70",
+        "10.172.905.71",
+        "10.172.905.72",
+        "10.172.905.73",
+        "10.172.905.74",
+        "10.172.905.75",
+        "10.172.905.76",
+        "10.172.905.77",
+        "10.172.905.78",
+        "10.172.905.79",
+        "10.172.905.80",
+        "10.172.905.81",
+        "10.172.905.82",
+        "10.172.905.83",
+        "10.172.905.84",
+        "10.172.905.85",
+        "10.172.905.86",
+        "10.172.905.87",
+        "10.172.905.88",
+        "10.172.905.89",
+        "10.172.905.90",
+        "10.172.905.91",
+        "10.172.905.92",
+        "10.172.905.93",
+        "10.172.905.94"
+    ],
+    "corporateAddress": "10.172.905.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.172.905.97",
+        "10.172.905.98",
+        "10.172.905.99",
+        "10.172.905.100",
+        "10.172.905.101",
+        "10.172.905.102",
+        "10.172.905.103",
+        "10.172.905.104",
+        "10.172.905.105",
+        "10.172.905.106",
+        "10.172.905.107",
+        "10.172.905.108",
+        "10.172.905.109",
+        "10.172.905.110",
+        "10.172.905.111",
+        "10.172.905.112",
+        "10.172.905.113",
+        "10.172.905.114",
+        "10.172.905.115",
+        "10.172.905.116",
+        "10.172.905.117",
+        "10.172.905.118",
+        "10.172.905.119",
+        "10.172.905.120",
+        "10.172.905.121",
+        "10.172.905.122",
+        "10.172.905.123",
+        "10.172.905.124",
+        "10.172.905.125"
+    ],
+    "latitude": 29.707,
+    "longitude": -99.095,
+    "nodes": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.97",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..Firewall 905",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.707,
+            "Longitude": -99.095
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.98",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..Router 905",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.1",
+            "ipAddress": "10.172.905.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA.OT.Switch 1809",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.99",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA.Corporate.Switch 1810",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.3",
+            "ipAddress": "10.172.905.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.2",
+            "ipAddress": "10.172.905.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..RC 905",
+            "compromised": false,
+            "relayIPlist": [
+                "10.172.905.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.100",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..Host 1809",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.100",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..Host 1810",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.100",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..LocalDatabase 1809",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.100",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..LocalWebServer 1810",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.101",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..hmi 1809",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.100",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..outstation 1810",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 61.BANDERA..RC 905",
+            "destination": "Utility 61.BANDERA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.BANDERA..Router 905",
+            "destination": "Utility 61.BANDERA..Firewall 905",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.BANDERA..Firewall 905",
+            "destination": "Utility 61.BANDERA.OT.Switch 1809",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.BANDERA.OT.Switch 1809",
+            "destination": "Utility 61.BANDERA..RC 905",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.BANDERA..Firewall 905",
+            "destination": "Utility 61.BANDERA.Corporate.Switch 1810",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.BANDERA.Corporate.Switch 1810",
+            "destination": "Utility 61.BANDERA..Host 1809",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.BANDERA.Corporate.Switch 1810",
+            "destination": "Utility 61.BANDERA..Host 1810",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.BANDERA.Corporate.Switch 1810",
+            "destination": "Utility 61.BANDERA..LocalDatabase 1809",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 61.BANDERA.Corporate.Switch 1810",
+            "destination": "Utility 61.BANDERA..LocalWebServer 1810",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.1",
+            "ipAddress": "10.172.905.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA.OT.Switch 1809",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.2",
+            "ipAddress": "10.172.905.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..RC 905",
+            "compromised": false,
+            "relayIPlist": [
+                "10.172.905.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.97",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..Firewall 905",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.707,
+            "Longitude": -99.095
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.98",
+            "ipAddress": "10.172.905.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..Router 905",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.1",
+            "ipAddress": "10.172.905.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA.OT.Switch 1809",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 61",
+            "adminIP": "10.172.905.2",
+            "ipAddress": "10.172.905.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BANDERA",
+            "label": "Utility 61.BANDERA..RC 905",
+            "compromised": false,
+            "relayIPlist": [
+                "10.172.905.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

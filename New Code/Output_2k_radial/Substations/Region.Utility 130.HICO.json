@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 130.HICO",
+    "networkLan": "10.145.434.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 130",
+    "utility_id": 145,
+    "substation": "HICO",
+    "substationNumber": 434,
+    "OTAddress": "10.145.434.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.145.434.1",
+        "10.145.434.2",
+        "10.145.434.3",
+        "10.145.434.4",
+        "10.145.434.5",
+        "10.145.434.6",
+        "10.145.434.7",
+        "10.145.434.8",
+        "10.145.434.9",
+        "10.145.434.10",
+        "10.145.434.11",
+        "10.145.434.12",
+        "10.145.434.13",
+        "10.145.434.14",
+        "10.145.434.15",
+        "10.145.434.16",
+        "10.145.434.17",
+        "10.145.434.18",
+        "10.145.434.19",
+        "10.145.434.20",
+        "10.145.434.21",
+        "10.145.434.22",
+        "10.145.434.23",
+        "10.145.434.24",
+        "10.145.434.25",
+        "10.145.434.26",
+        "10.145.434.27",
+        "10.145.434.28",
+        "10.145.434.29",
+        "10.145.434.30",
+        "10.145.434.31",
+        "10.145.434.32",
+        "10.145.434.33",
+        "10.145.434.34",
+        "10.145.434.35",
+        "10.145.434.36",
+        "10.145.434.37",
+        "10.145.434.38",
+        "10.145.434.39",
+        "10.145.434.40",
+        "10.145.434.41",
+        "10.145.434.42",
+        "10.145.434.43",
+        "10.145.434.44",
+        "10.145.434.45",
+        "10.145.434.46",
+        "10.145.434.47",
+        "10.145.434.48",
+        "10.145.434.49",
+        "10.145.434.50",
+        "10.145.434.51",
+        "10.145.434.52",
+        "10.145.434.53",
+        "10.145.434.54",
+        "10.145.434.55",
+        "10.145.434.56",
+        "10.145.434.57",
+        "10.145.434.58",
+        "10.145.434.59",
+        "10.145.434.60",
+        "10.145.434.61",
+        "10.145.434.62"
+    ],
+    "routeAddress": "10.145.434.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.145.434.65",
+        "10.145.434.66",
+        "10.145.434.67",
+        "10.145.434.68",
+        "10.145.434.69",
+        "10.145.434.70",
+        "10.145.434.71",
+        "10.145.434.72",
+        "10.145.434.73",
+        "10.145.434.74",
+        "10.145.434.75",
+        "10.145.434.76",
+        "10.145.434.77",
+        "10.145.434.78",
+        "10.145.434.79",
+        "10.145.434.80",
+        "10.145.434.81",
+        "10.145.434.82",
+        "10.145.434.83",
+        "10.145.434.84",
+        "10.145.434.85",
+        "10.145.434.86",
+        "10.145.434.87",
+        "10.145.434.88",
+        "10.145.434.89",
+        "10.145.434.90",
+        "10.145.434.91",
+        "10.145.434.92",
+        "10.145.434.93",
+        "10.145.434.94"
+    ],
+    "corporateAddress": "10.145.434.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.145.434.97",
+        "10.145.434.98",
+        "10.145.434.99",
+        "10.145.434.100",
+        "10.145.434.101",
+        "10.145.434.102",
+        "10.145.434.103",
+        "10.145.434.104",
+        "10.145.434.105",
+        "10.145.434.106",
+        "10.145.434.107",
+        "10.145.434.108",
+        "10.145.434.109",
+        "10.145.434.110",
+        "10.145.434.111",
+        "10.145.434.112",
+        "10.145.434.113",
+        "10.145.434.114",
+        "10.145.434.115",
+        "10.145.434.116",
+        "10.145.434.117",
+        "10.145.434.118",
+        "10.145.434.119",
+        "10.145.434.120",
+        "10.145.434.121",
+        "10.145.434.122",
+        "10.145.434.123",
+        "10.145.434.124",
+        "10.145.434.125"
+    ],
+    "latitude": 32.001,
+    "longitude": -97.883,
+    "nodes": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.97",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..Firewall 434",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.001,
+            "Longitude": -97.883
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.98",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..Router 434",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.1",
+            "ipAddress": "10.145.434.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HICO",
+            "label": "Utility 130.HICO.OT.Switch 867",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.99",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO.Corporate.Switch 868",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.3",
+            "ipAddress": "10.145.434.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.2",
+            "ipAddress": "10.145.434.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..RC 434",
+            "compromised": false,
+            "relayIPlist": [
+                "10.145.434.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.100",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..Host 867",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.100",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..Host 868",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.100",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..LocalDatabase 867",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.100",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..LocalWebServer 868",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.101",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..hmi 867",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.100",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..outstation 868",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 130.HICO..RC 434",
+            "destination": "Utility 130.HICO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.HICO..Router 434",
+            "destination": "Utility 130.HICO..Firewall 434",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.HICO..Firewall 434",
+            "destination": "Utility 130.HICO.OT.Switch 867",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.HICO.OT.Switch 867",
+            "destination": "Utility 130.HICO..RC 434",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.HICO..Firewall 434",
+            "destination": "Utility 130.HICO.Corporate.Switch 868",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.HICO.Corporate.Switch 868",
+            "destination": "Utility 130.HICO..Host 867",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.HICO.Corporate.Switch 868",
+            "destination": "Utility 130.HICO..Host 868",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.HICO.Corporate.Switch 868",
+            "destination": "Utility 130.HICO..LocalDatabase 867",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 130.HICO.Corporate.Switch 868",
+            "destination": "Utility 130.HICO..LocalWebServer 868",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.1",
+            "ipAddress": "10.145.434.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HICO",
+            "label": "Utility 130.HICO.OT.Switch 867",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.2",
+            "ipAddress": "10.145.434.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..RC 434",
+            "compromised": false,
+            "relayIPlist": [
+                "10.145.434.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.97",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..Firewall 434",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.001,
+            "Longitude": -97.883
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.98",
+            "ipAddress": "10.145.434.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..Router 434",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.1",
+            "ipAddress": "10.145.434.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HICO",
+            "label": "Utility 130.HICO.OT.Switch 867",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 130",
+            "adminIP": "10.145.434.2",
+            "ipAddress": "10.145.434.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HICO",
+            "label": "Utility 130.HICO..RC 434",
+            "compromised": false,
+            "relayIPlist": [
+                "10.145.434.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

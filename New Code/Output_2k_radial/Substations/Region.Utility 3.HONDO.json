@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 3.HONDO",
+    "networkLan": "10.56.885.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "HONDO",
+    "substationNumber": 885,
+    "OTAddress": "10.56.885.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.885.1",
+        "10.56.885.2",
+        "10.56.885.3",
+        "10.56.885.4",
+        "10.56.885.5",
+        "10.56.885.6",
+        "10.56.885.7",
+        "10.56.885.8",
+        "10.56.885.9",
+        "10.56.885.10",
+        "10.56.885.11",
+        "10.56.885.12",
+        "10.56.885.13",
+        "10.56.885.14",
+        "10.56.885.15",
+        "10.56.885.16",
+        "10.56.885.17",
+        "10.56.885.18",
+        "10.56.885.19",
+        "10.56.885.20",
+        "10.56.885.21",
+        "10.56.885.22",
+        "10.56.885.23",
+        "10.56.885.24",
+        "10.56.885.25",
+        "10.56.885.26",
+        "10.56.885.27",
+        "10.56.885.28",
+        "10.56.885.29",
+        "10.56.885.30",
+        "10.56.885.31",
+        "10.56.885.32",
+        "10.56.885.33",
+        "10.56.885.34",
+        "10.56.885.35",
+        "10.56.885.36",
+        "10.56.885.37",
+        "10.56.885.38",
+        "10.56.885.39",
+        "10.56.885.40",
+        "10.56.885.41",
+        "10.56.885.42",
+        "10.56.885.43",
+        "10.56.885.44",
+        "10.56.885.45",
+        "10.56.885.46",
+        "10.56.885.47",
+        "10.56.885.48",
+        "10.56.885.49",
+        "10.56.885.50",
+        "10.56.885.51",
+        "10.56.885.52",
+        "10.56.885.53",
+        "10.56.885.54",
+        "10.56.885.55",
+        "10.56.885.56",
+        "10.56.885.57",
+        "10.56.885.58",
+        "10.56.885.59",
+        "10.56.885.60",
+        "10.56.885.61",
+        "10.56.885.62"
+    ],
+    "routeAddress": "10.56.885.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.885.65",
+        "10.56.885.66",
+        "10.56.885.67",
+        "10.56.885.68",
+        "10.56.885.69",
+        "10.56.885.70",
+        "10.56.885.71",
+        "10.56.885.72",
+        "10.56.885.73",
+        "10.56.885.74",
+        "10.56.885.75",
+        "10.56.885.76",
+        "10.56.885.77",
+        "10.56.885.78",
+        "10.56.885.79",
+        "10.56.885.80",
+        "10.56.885.81",
+        "10.56.885.82",
+        "10.56.885.83",
+        "10.56.885.84",
+        "10.56.885.85",
+        "10.56.885.86",
+        "10.56.885.87",
+        "10.56.885.88",
+        "10.56.885.89",
+        "10.56.885.90",
+        "10.56.885.91",
+        "10.56.885.92",
+        "10.56.885.93",
+        "10.56.885.94"
+    ],
+    "corporateAddress": "10.56.885.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.885.97",
+        "10.56.885.98",
+        "10.56.885.99",
+        "10.56.885.100",
+        "10.56.885.101",
+        "10.56.885.102",
+        "10.56.885.103",
+        "10.56.885.104",
+        "10.56.885.105",
+        "10.56.885.106",
+        "10.56.885.107",
+        "10.56.885.108",
+        "10.56.885.109",
+        "10.56.885.110",
+        "10.56.885.111",
+        "10.56.885.112",
+        "10.56.885.113",
+        "10.56.885.114",
+        "10.56.885.115",
+        "10.56.885.116",
+        "10.56.885.117",
+        "10.56.885.118",
+        "10.56.885.119",
+        "10.56.885.120",
+        "10.56.885.121",
+        "10.56.885.122",
+        "10.56.885.123",
+        "10.56.885.124",
+        "10.56.885.125"
+    ],
+    "latitude": 29.427,
+    "longitude": -99.141,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.97",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..Firewall 885",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.427,
+            "Longitude": -99.141
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.98",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..Router 885",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.1",
+            "ipAddress": "10.56.885.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO.OT.Switch 1769",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.99",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO.Corporate.Switch 1770",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.3",
+            "ipAddress": "10.56.885.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.4",
+            "ipAddress": "10.56.885.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.2",
+            "ipAddress": "10.56.885.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..RC 885",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.885.3",
+                "10.56.885.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.100",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..Host 1769",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.100",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..Host 1770",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.100",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..LocalDatabase 1769",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.100",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..LocalWebServer 1770",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.101",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..hmi 1769",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.100",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..outstation 1770",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.HONDO..RC 885",
+            "destination": "Utility 3.HONDO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HONDO..RC 885",
+            "destination": "Utility 3.HONDO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HONDO..Router 885",
+            "destination": "Utility 3.HONDO..Firewall 885",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HONDO..Firewall 885",
+            "destination": "Utility 3.HONDO.OT.Switch 1769",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HONDO.OT.Switch 1769",
+            "destination": "Utility 3.HONDO..RC 885",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HONDO..Firewall 885",
+            "destination": "Utility 3.HONDO.Corporate.Switch 1770",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HONDO.Corporate.Switch 1770",
+            "destination": "Utility 3.HONDO..Host 1769",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HONDO.Corporate.Switch 1770",
+            "destination": "Utility 3.HONDO..Host 1770",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HONDO.Corporate.Switch 1770",
+            "destination": "Utility 3.HONDO..LocalDatabase 1769",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.HONDO.Corporate.Switch 1770",
+            "destination": "Utility 3.HONDO..LocalWebServer 1770",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.1",
+            "ipAddress": "10.56.885.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO.OT.Switch 1769",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.2",
+            "ipAddress": "10.56.885.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..RC 885",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.885.3",
+                "10.56.885.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.97",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..Firewall 885",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.427,
+            "Longitude": -99.141
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.98",
+            "ipAddress": "10.56.885.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..Router 885",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.1",
+            "ipAddress": "10.56.885.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO.OT.Switch 1769",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.885.2",
+            "ipAddress": "10.56.885.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HONDO",
+            "label": "Utility 3.HONDO..RC 885",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.885.3",
+                "10.56.885.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

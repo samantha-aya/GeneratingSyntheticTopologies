@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.MCALLEN 3",
+    "networkLan": "10.57.255.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "MCALLEN 3",
+    "substationNumber": 255,
+    "OTAddress": "10.57.255.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.255.1",
+        "10.57.255.2",
+        "10.57.255.3",
+        "10.57.255.4",
+        "10.57.255.5",
+        "10.57.255.6",
+        "10.57.255.7",
+        "10.57.255.8",
+        "10.57.255.9",
+        "10.57.255.10",
+        "10.57.255.11",
+        "10.57.255.12",
+        "10.57.255.13",
+        "10.57.255.14",
+        "10.57.255.15",
+        "10.57.255.16",
+        "10.57.255.17",
+        "10.57.255.18",
+        "10.57.255.19",
+        "10.57.255.20",
+        "10.57.255.21",
+        "10.57.255.22",
+        "10.57.255.23",
+        "10.57.255.24",
+        "10.57.255.25",
+        "10.57.255.26",
+        "10.57.255.27",
+        "10.57.255.28",
+        "10.57.255.29",
+        "10.57.255.30",
+        "10.57.255.31",
+        "10.57.255.32",
+        "10.57.255.33",
+        "10.57.255.34",
+        "10.57.255.35",
+        "10.57.255.36",
+        "10.57.255.37",
+        "10.57.255.38",
+        "10.57.255.39",
+        "10.57.255.40",
+        "10.57.255.41",
+        "10.57.255.42",
+        "10.57.255.43",
+        "10.57.255.44",
+        "10.57.255.45",
+        "10.57.255.46",
+        "10.57.255.47",
+        "10.57.255.48",
+        "10.57.255.49",
+        "10.57.255.50",
+        "10.57.255.51",
+        "10.57.255.52",
+        "10.57.255.53",
+        "10.57.255.54",
+        "10.57.255.55",
+        "10.57.255.56",
+        "10.57.255.57",
+        "10.57.255.58",
+        "10.57.255.59",
+        "10.57.255.60",
+        "10.57.255.61",
+        "10.57.255.62"
+    ],
+    "routeAddress": "10.57.255.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.255.65",
+        "10.57.255.66",
+        "10.57.255.67",
+        "10.57.255.68",
+        "10.57.255.69",
+        "10.57.255.70",
+        "10.57.255.71",
+        "10.57.255.72",
+        "10.57.255.73",
+        "10.57.255.74",
+        "10.57.255.75",
+        "10.57.255.76",
+        "10.57.255.77",
+        "10.57.255.78",
+        "10.57.255.79",
+        "10.57.255.80",
+        "10.57.255.81",
+        "10.57.255.82",
+        "10.57.255.83",
+        "10.57.255.84",
+        "10.57.255.85",
+        "10.57.255.86",
+        "10.57.255.87",
+        "10.57.255.88",
+        "10.57.255.89",
+        "10.57.255.90",
+        "10.57.255.91",
+        "10.57.255.92",
+        "10.57.255.93",
+        "10.57.255.94"
+    ],
+    "corporateAddress": "10.57.255.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.255.97",
+        "10.57.255.98",
+        "10.57.255.99",
+        "10.57.255.100",
+        "10.57.255.101",
+        "10.57.255.102",
+        "10.57.255.103",
+        "10.57.255.104",
+        "10.57.255.105",
+        "10.57.255.106",
+        "10.57.255.107",
+        "10.57.255.108",
+        "10.57.255.109",
+        "10.57.255.110",
+        "10.57.255.111",
+        "10.57.255.112",
+        "10.57.255.113",
+        "10.57.255.114",
+        "10.57.255.115",
+        "10.57.255.116",
+        "10.57.255.117",
+        "10.57.255.118",
+        "10.57.255.119",
+        "10.57.255.120",
+        "10.57.255.121",
+        "10.57.255.122",
+        "10.57.255.123",
+        "10.57.255.124",
+        "10.57.255.125"
+    ],
+    "latitude": 26.162,
+    "longitude": -98.249,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.97",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..Firewall 255",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.162,
+            "Longitude": -98.249
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.98",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..Router 255",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.1",
+            "ipAddress": "10.57.255.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3.OT.Switch 509",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.99",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3.Corporate.Switch 510",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.3",
+            "ipAddress": "10.57.255.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.2",
+            "ipAddress": "10.57.255.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..RC 255",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.255.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.100",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..Host 509",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.100",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..Host 510",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.100",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..LocalDatabase 509",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.100",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..LocalWebServer 510",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.101",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..hmi 509",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.100",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..outstation 510",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.MCALLEN 3..RC 255",
+            "destination": "Utility 4.MCALLEN 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.MCALLEN 3..Router 255",
+            "destination": "Utility 4.MCALLEN 3..Firewall 255",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.MCALLEN 3..Firewall 255",
+            "destination": "Utility 4.MCALLEN 3.OT.Switch 509",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.MCALLEN 3.OT.Switch 509",
+            "destination": "Utility 4.MCALLEN 3..RC 255",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.MCALLEN 3..Firewall 255",
+            "destination": "Utility 4.MCALLEN 3.Corporate.Switch 510",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.MCALLEN 3.Corporate.Switch 510",
+            "destination": "Utility 4.MCALLEN 3..Host 509",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.MCALLEN 3.Corporate.Switch 510",
+            "destination": "Utility 4.MCALLEN 3..Host 510",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.MCALLEN 3.Corporate.Switch 510",
+            "destination": "Utility 4.MCALLEN 3..LocalDatabase 509",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.MCALLEN 3.Corporate.Switch 510",
+            "destination": "Utility 4.MCALLEN 3..LocalWebServer 510",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.1",
+            "ipAddress": "10.57.255.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3.OT.Switch 509",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.2",
+            "ipAddress": "10.57.255.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..RC 255",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.255.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.97",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..Firewall 255",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.162,
+            "Longitude": -98.249
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.98",
+            "ipAddress": "10.57.255.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..Router 255",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.1",
+            "ipAddress": "10.57.255.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3.OT.Switch 509",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.255.2",
+            "ipAddress": "10.57.255.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCALLEN 3",
+            "label": "Utility 4.MCALLEN 3..RC 255",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.255.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

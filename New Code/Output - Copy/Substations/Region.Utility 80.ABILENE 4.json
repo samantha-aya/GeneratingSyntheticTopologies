@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 80.ABILENE 4",
+    "networkLan": "10.94.154.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 80",
+    "utility_id": 94,
+    "substation": "ABILENE 4",
+    "substationNumber": 154,
+    "OTAddress": "10.94.154.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.94.154.1",
+        "10.94.154.2",
+        "10.94.154.3",
+        "10.94.154.4",
+        "10.94.154.5",
+        "10.94.154.6",
+        "10.94.154.7",
+        "10.94.154.8",
+        "10.94.154.9",
+        "10.94.154.10",
+        "10.94.154.11",
+        "10.94.154.12",
+        "10.94.154.13",
+        "10.94.154.14",
+        "10.94.154.15",
+        "10.94.154.16",
+        "10.94.154.17",
+        "10.94.154.18",
+        "10.94.154.19",
+        "10.94.154.20",
+        "10.94.154.21",
+        "10.94.154.22",
+        "10.94.154.23",
+        "10.94.154.24",
+        "10.94.154.25",
+        "10.94.154.26",
+        "10.94.154.27",
+        "10.94.154.28",
+        "10.94.154.29",
+        "10.94.154.30",
+        "10.94.154.31",
+        "10.94.154.32",
+        "10.94.154.33",
+        "10.94.154.34",
+        "10.94.154.35",
+        "10.94.154.36",
+        "10.94.154.37",
+        "10.94.154.38",
+        "10.94.154.39",
+        "10.94.154.40",
+        "10.94.154.41",
+        "10.94.154.42",
+        "10.94.154.43",
+        "10.94.154.44",
+        "10.94.154.45",
+        "10.94.154.46",
+        "10.94.154.47",
+        "10.94.154.48",
+        "10.94.154.49",
+        "10.94.154.50",
+        "10.94.154.51",
+        "10.94.154.52",
+        "10.94.154.53",
+        "10.94.154.54",
+        "10.94.154.55",
+        "10.94.154.56",
+        "10.94.154.57",
+        "10.94.154.58",
+        "10.94.154.59",
+        "10.94.154.60",
+        "10.94.154.61",
+        "10.94.154.62"
+    ],
+    "routeAddress": "10.94.154.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.94.154.65",
+        "10.94.154.66",
+        "10.94.154.67",
+        "10.94.154.68",
+        "10.94.154.69",
+        "10.94.154.70",
+        "10.94.154.71",
+        "10.94.154.72",
+        "10.94.154.73",
+        "10.94.154.74",
+        "10.94.154.75",
+        "10.94.154.76",
+        "10.94.154.77",
+        "10.94.154.78",
+        "10.94.154.79",
+        "10.94.154.80",
+        "10.94.154.81",
+        "10.94.154.82",
+        "10.94.154.83",
+        "10.94.154.84",
+        "10.94.154.85",
+        "10.94.154.86",
+        "10.94.154.87",
+        "10.94.154.88",
+        "10.94.154.89",
+        "10.94.154.90",
+        "10.94.154.91",
+        "10.94.154.92",
+        "10.94.154.93",
+        "10.94.154.94"
+    ],
+    "corporateAddress": "10.94.154.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.94.154.97",
+        "10.94.154.98",
+        "10.94.154.99",
+        "10.94.154.100",
+        "10.94.154.101",
+        "10.94.154.102",
+        "10.94.154.103",
+        "10.94.154.104",
+        "10.94.154.105",
+        "10.94.154.106",
+        "10.94.154.107",
+        "10.94.154.108",
+        "10.94.154.109",
+        "10.94.154.110",
+        "10.94.154.111",
+        "10.94.154.112",
+        "10.94.154.113",
+        "10.94.154.114",
+        "10.94.154.115",
+        "10.94.154.116",
+        "10.94.154.117",
+        "10.94.154.118",
+        "10.94.154.119",
+        "10.94.154.120",
+        "10.94.154.121",
+        "10.94.154.122",
+        "10.94.154.123",
+        "10.94.154.124",
+        "10.94.154.125"
+    ],
+    "latitude": 32.336,
+    "longitude": -99.667,
+    "nodes": [
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.97",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..Firewall 154",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.336,
+            "Longitude": -99.667
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.98",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..Router 154",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.1",
+            "ipAddress": "10.94.154.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4.OT.Switch 307",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.99",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4.Corporate.Switch 308",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.3",
+            "ipAddress": "10.94.154.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.2",
+            "ipAddress": "10.94.154.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..RC 154",
+            "compromised": false,
+            "relayIPlist": [
+                "10.94.154.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.100",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..Host 307",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.100",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..Host 308",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.100",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..LocalDatabase 307",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.100",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..LocalWebServer 308",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.101",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..hmi 307",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.100",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..outstation 308",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 80.ABILENE 4..RC 154",
+            "destination": "Utility 80.ABILENE 4..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 80.ABILENE 4..Router 154",
+            "destination": "Utility 80.ABILENE 4..Firewall 154",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 80.ABILENE 4..Firewall 154",
+            "destination": "Utility 80.ABILENE 4.OT.Switch 307",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 80.ABILENE 4.OT.Switch 307",
+            "destination": "Utility 80.ABILENE 4..RC 154",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 80.ABILENE 4..Firewall 154",
+            "destination": "Utility 80.ABILENE 4.Corporate.Switch 308",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 80.ABILENE 4.Corporate.Switch 308",
+            "destination": "Utility 80.ABILENE 4..Host 307",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 80.ABILENE 4.Corporate.Switch 308",
+            "destination": "Utility 80.ABILENE 4..Host 308",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 80.ABILENE 4.Corporate.Switch 308",
+            "destination": "Utility 80.ABILENE 4..LocalDatabase 307",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 80.ABILENE 4.Corporate.Switch 308",
+            "destination": "Utility 80.ABILENE 4..LocalWebServer 308",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.1",
+            "ipAddress": "10.94.154.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4.OT.Switch 307",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.2",
+            "ipAddress": "10.94.154.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..RC 154",
+            "compromised": false,
+            "relayIPlist": [
+                "10.94.154.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.97",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..Firewall 154",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.336,
+            "Longitude": -99.667
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.98",
+            "ipAddress": "10.94.154.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..Router 154",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.1",
+            "ipAddress": "10.94.154.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4.OT.Switch 307",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 80",
+            "adminIP": "10.94.154.2",
+            "ipAddress": "10.94.154.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ABILENE 4",
+            "label": "Utility 80.ABILENE 4..RC 154",
+            "compromised": false,
+            "relayIPlist": [
+                "10.94.154.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

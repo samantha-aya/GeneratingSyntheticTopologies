@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 5.SANTA ANNA",
+    "networkLan": "10.53.230.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 5",
+    "utility_id": 53,
+    "substation": "SANTA ANNA",
+    "substationNumber": 230,
+    "OTAddress": "10.53.230.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.230.1",
+        "10.53.230.2",
+        "10.53.230.3",
+        "10.53.230.4",
+        "10.53.230.5",
+        "10.53.230.6",
+        "10.53.230.7",
+        "10.53.230.8",
+        "10.53.230.9",
+        "10.53.230.10",
+        "10.53.230.11",
+        "10.53.230.12",
+        "10.53.230.13",
+        "10.53.230.14",
+        "10.53.230.15",
+        "10.53.230.16",
+        "10.53.230.17",
+        "10.53.230.18",
+        "10.53.230.19",
+        "10.53.230.20",
+        "10.53.230.21",
+        "10.53.230.22",
+        "10.53.230.23",
+        "10.53.230.24",
+        "10.53.230.25",
+        "10.53.230.26",
+        "10.53.230.27",
+        "10.53.230.28",
+        "10.53.230.29",
+        "10.53.230.30",
+        "10.53.230.31",
+        "10.53.230.32",
+        "10.53.230.33",
+        "10.53.230.34",
+        "10.53.230.35",
+        "10.53.230.36",
+        "10.53.230.37",
+        "10.53.230.38",
+        "10.53.230.39",
+        "10.53.230.40",
+        "10.53.230.41",
+        "10.53.230.42",
+        "10.53.230.43",
+        "10.53.230.44",
+        "10.53.230.45",
+        "10.53.230.46",
+        "10.53.230.47",
+        "10.53.230.48",
+        "10.53.230.49",
+        "10.53.230.50",
+        "10.53.230.51",
+        "10.53.230.52",
+        "10.53.230.53",
+        "10.53.230.54",
+        "10.53.230.55",
+        "10.53.230.56",
+        "10.53.230.57",
+        "10.53.230.58",
+        "10.53.230.59",
+        "10.53.230.60",
+        "10.53.230.61",
+        "10.53.230.62"
+    ],
+    "routeAddress": "10.53.230.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.230.65",
+        "10.53.230.66",
+        "10.53.230.67",
+        "10.53.230.68",
+        "10.53.230.69",
+        "10.53.230.70",
+        "10.53.230.71",
+        "10.53.230.72",
+        "10.53.230.73",
+        "10.53.230.74",
+        "10.53.230.75",
+        "10.53.230.76",
+        "10.53.230.77",
+        "10.53.230.78",
+        "10.53.230.79",
+        "10.53.230.80",
+        "10.53.230.81",
+        "10.53.230.82",
+        "10.53.230.83",
+        "10.53.230.84",
+        "10.53.230.85",
+        "10.53.230.86",
+        "10.53.230.87",
+        "10.53.230.88",
+        "10.53.230.89",
+        "10.53.230.90",
+        "10.53.230.91",
+        "10.53.230.92",
+        "10.53.230.93",
+        "10.53.230.94"
+    ],
+    "corporateAddress": "10.53.230.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.230.97",
+        "10.53.230.98",
+        "10.53.230.99",
+        "10.53.230.100",
+        "10.53.230.101",
+        "10.53.230.102",
+        "10.53.230.103",
+        "10.53.230.104",
+        "10.53.230.105",
+        "10.53.230.106",
+        "10.53.230.107",
+        "10.53.230.108",
+        "10.53.230.109",
+        "10.53.230.110",
+        "10.53.230.111",
+        "10.53.230.112",
+        "10.53.230.113",
+        "10.53.230.114",
+        "10.53.230.115",
+        "10.53.230.116",
+        "10.53.230.117",
+        "10.53.230.118",
+        "10.53.230.119",
+        "10.53.230.120",
+        "10.53.230.121",
+        "10.53.230.122",
+        "10.53.230.123",
+        "10.53.230.124",
+        "10.53.230.125"
+    ],
+    "latitude": 31.515,
+    "longitude": -99.381,
+    "nodes": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.97",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..Firewall 230",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.515,
+            "Longitude": -99.381
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.98",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..Router 230",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.1",
+            "ipAddress": "10.53.230.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA.OT.Switch 459",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.99",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA.Corporate.Switch 460",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.3",
+            "ipAddress": "10.53.230.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.2",
+            "ipAddress": "10.53.230.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..RC 230",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.230.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.100",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..Host 459",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.100",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..Host 460",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.100",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..LocalDatabase 459",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.100",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..LocalWebServer 460",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.101",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..hmi 459",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.100",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..outstation 460",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 5.SANTA ANNA..RC 230",
+            "destination": "Utility 5.SANTA ANNA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SANTA ANNA..Router 230",
+            "destination": "Utility 5.SANTA ANNA..Firewall 230",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SANTA ANNA..Firewall 230",
+            "destination": "Utility 5.SANTA ANNA.OT.Switch 459",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SANTA ANNA.OT.Switch 459",
+            "destination": "Utility 5.SANTA ANNA..RC 230",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SANTA ANNA..Firewall 230",
+            "destination": "Utility 5.SANTA ANNA.Corporate.Switch 460",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SANTA ANNA.Corporate.Switch 460",
+            "destination": "Utility 5.SANTA ANNA..Host 459",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SANTA ANNA.Corporate.Switch 460",
+            "destination": "Utility 5.SANTA ANNA..Host 460",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SANTA ANNA.Corporate.Switch 460",
+            "destination": "Utility 5.SANTA ANNA..LocalDatabase 459",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 5.SANTA ANNA.Corporate.Switch 460",
+            "destination": "Utility 5.SANTA ANNA..LocalWebServer 460",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.1",
+            "ipAddress": "10.53.230.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA.OT.Switch 459",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.2",
+            "ipAddress": "10.53.230.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..RC 230",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.230.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.97",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..Firewall 230",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.515,
+            "Longitude": -99.381
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.98",
+            "ipAddress": "10.53.230.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..Router 230",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.1",
+            "ipAddress": "10.53.230.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA.OT.Switch 459",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 5",
+            "adminIP": "10.53.230.2",
+            "ipAddress": "10.53.230.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SANTA ANNA",
+            "label": "Utility 5.SANTA ANNA..RC 230",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.230.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

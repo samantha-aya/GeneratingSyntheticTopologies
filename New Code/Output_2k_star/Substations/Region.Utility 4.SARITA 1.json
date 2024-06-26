@@ -1,0 +1,660 @@
+{
+    "relayCounter": 3,
+    "label": "Region.Utility 4.SARITA 1",
+    "networkLan": "10.57.321.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "SARITA 1",
+    "substationNumber": 321,
+    "OTAddress": "10.57.321.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.321.1",
+        "10.57.321.2",
+        "10.57.321.3",
+        "10.57.321.4",
+        "10.57.321.5",
+        "10.57.321.6",
+        "10.57.321.7",
+        "10.57.321.8",
+        "10.57.321.9",
+        "10.57.321.10",
+        "10.57.321.11",
+        "10.57.321.12",
+        "10.57.321.13",
+        "10.57.321.14",
+        "10.57.321.15",
+        "10.57.321.16",
+        "10.57.321.17",
+        "10.57.321.18",
+        "10.57.321.19",
+        "10.57.321.20",
+        "10.57.321.21",
+        "10.57.321.22",
+        "10.57.321.23",
+        "10.57.321.24",
+        "10.57.321.25",
+        "10.57.321.26",
+        "10.57.321.27",
+        "10.57.321.28",
+        "10.57.321.29",
+        "10.57.321.30",
+        "10.57.321.31",
+        "10.57.321.32",
+        "10.57.321.33",
+        "10.57.321.34",
+        "10.57.321.35",
+        "10.57.321.36",
+        "10.57.321.37",
+        "10.57.321.38",
+        "10.57.321.39",
+        "10.57.321.40",
+        "10.57.321.41",
+        "10.57.321.42",
+        "10.57.321.43",
+        "10.57.321.44",
+        "10.57.321.45",
+        "10.57.321.46",
+        "10.57.321.47",
+        "10.57.321.48",
+        "10.57.321.49",
+        "10.57.321.50",
+        "10.57.321.51",
+        "10.57.321.52",
+        "10.57.321.53",
+        "10.57.321.54",
+        "10.57.321.55",
+        "10.57.321.56",
+        "10.57.321.57",
+        "10.57.321.58",
+        "10.57.321.59",
+        "10.57.321.60",
+        "10.57.321.61",
+        "10.57.321.62"
+    ],
+    "routeAddress": "10.57.321.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.321.65",
+        "10.57.321.66",
+        "10.57.321.67",
+        "10.57.321.68",
+        "10.57.321.69",
+        "10.57.321.70",
+        "10.57.321.71",
+        "10.57.321.72",
+        "10.57.321.73",
+        "10.57.321.74",
+        "10.57.321.75",
+        "10.57.321.76",
+        "10.57.321.77",
+        "10.57.321.78",
+        "10.57.321.79",
+        "10.57.321.80",
+        "10.57.321.81",
+        "10.57.321.82",
+        "10.57.321.83",
+        "10.57.321.84",
+        "10.57.321.85",
+        "10.57.321.86",
+        "10.57.321.87",
+        "10.57.321.88",
+        "10.57.321.89",
+        "10.57.321.90",
+        "10.57.321.91",
+        "10.57.321.92",
+        "10.57.321.93",
+        "10.57.321.94"
+    ],
+    "corporateAddress": "10.57.321.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.321.97",
+        "10.57.321.98",
+        "10.57.321.99",
+        "10.57.321.100",
+        "10.57.321.101",
+        "10.57.321.102",
+        "10.57.321.103",
+        "10.57.321.104",
+        "10.57.321.105",
+        "10.57.321.106",
+        "10.57.321.107",
+        "10.57.321.108",
+        "10.57.321.109",
+        "10.57.321.110",
+        "10.57.321.111",
+        "10.57.321.112",
+        "10.57.321.113",
+        "10.57.321.114",
+        "10.57.321.115",
+        "10.57.321.116",
+        "10.57.321.117",
+        "10.57.321.118",
+        "10.57.321.119",
+        "10.57.321.120",
+        "10.57.321.121",
+        "10.57.321.122",
+        "10.57.321.123",
+        "10.57.321.124",
+        "10.57.321.125"
+    ],
+    "latitude": 27.223,
+    "longitude": -97.789,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.97",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..Firewall 321",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.223,
+            "Longitude": -97.789
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.98",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..Router 321",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.1",
+            "ipAddress": "10.57.321.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1.OT.Switch 641",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.99",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1.Corporate.Switch 642",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.3",
+            "ipAddress": "10.57.321.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.4",
+            "ipAddress": "10.57.321.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.5",
+            "ipAddress": "10.57.321.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.2",
+            "ipAddress": "10.57.321.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..RC 321",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.321.3",
+                "10.57.321.4",
+                "10.57.321.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.100",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..Host 641",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.100",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..Host 642",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.100",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..LocalDatabase 641",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.100",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..LocalWebServer 642",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.101",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..hmi 641",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.100",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..outstation 642",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.SARITA 1..RC 321",
+            "destination": "Utility 4.SARITA 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1..RC 321",
+            "destination": "Utility 4.SARITA 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1..RC 321",
+            "destination": "Utility 4.SARITA 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1..Router 321",
+            "destination": "Utility 4.SARITA 1..Firewall 321",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1..Firewall 321",
+            "destination": "Utility 4.SARITA 1.OT.Switch 641",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1.OT.Switch 641",
+            "destination": "Utility 4.SARITA 1..RC 321",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1..Firewall 321",
+            "destination": "Utility 4.SARITA 1.Corporate.Switch 642",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1.Corporate.Switch 642",
+            "destination": "Utility 4.SARITA 1..Host 641",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1.Corporate.Switch 642",
+            "destination": "Utility 4.SARITA 1..Host 642",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1.Corporate.Switch 642",
+            "destination": "Utility 4.SARITA 1..LocalDatabase 641",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.SARITA 1.Corporate.Switch 642",
+            "destination": "Utility 4.SARITA 1..LocalWebServer 642",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.1",
+            "ipAddress": "10.57.321.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1.OT.Switch 641",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.2",
+            "ipAddress": "10.57.321.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..RC 321",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.321.3",
+                "10.57.321.4",
+                "10.57.321.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.97",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..Firewall 321",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.223,
+            "Longitude": -97.789
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.98",
+            "ipAddress": "10.57.321.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..Router 321",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.1",
+            "ipAddress": "10.57.321.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1.OT.Switch 641",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.321.2",
+            "ipAddress": "10.57.321.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SARITA 1",
+            "label": "Utility 4.SARITA 1..RC 321",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.321.3",
+                "10.57.321.4",
+                "10.57.321.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 141.0,
+    "genmvar": 40.04,
+    "connecting_TS_num": 303
+}

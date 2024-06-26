@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.CHEROKEE",
+    "networkLan": "10.56.170.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "CHEROKEE",
+    "substationNumber": 170,
+    "OTAddress": "10.56.170.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.170.1",
+        "10.56.170.2",
+        "10.56.170.3",
+        "10.56.170.4",
+        "10.56.170.5",
+        "10.56.170.6",
+        "10.56.170.7",
+        "10.56.170.8",
+        "10.56.170.9",
+        "10.56.170.10",
+        "10.56.170.11",
+        "10.56.170.12",
+        "10.56.170.13",
+        "10.56.170.14",
+        "10.56.170.15",
+        "10.56.170.16",
+        "10.56.170.17",
+        "10.56.170.18",
+        "10.56.170.19",
+        "10.56.170.20",
+        "10.56.170.21",
+        "10.56.170.22",
+        "10.56.170.23",
+        "10.56.170.24",
+        "10.56.170.25",
+        "10.56.170.26",
+        "10.56.170.27",
+        "10.56.170.28",
+        "10.56.170.29",
+        "10.56.170.30",
+        "10.56.170.31",
+        "10.56.170.32",
+        "10.56.170.33",
+        "10.56.170.34",
+        "10.56.170.35",
+        "10.56.170.36",
+        "10.56.170.37",
+        "10.56.170.38",
+        "10.56.170.39",
+        "10.56.170.40",
+        "10.56.170.41",
+        "10.56.170.42",
+        "10.56.170.43",
+        "10.56.170.44",
+        "10.56.170.45",
+        "10.56.170.46",
+        "10.56.170.47",
+        "10.56.170.48",
+        "10.56.170.49",
+        "10.56.170.50",
+        "10.56.170.51",
+        "10.56.170.52",
+        "10.56.170.53",
+        "10.56.170.54",
+        "10.56.170.55",
+        "10.56.170.56",
+        "10.56.170.57",
+        "10.56.170.58",
+        "10.56.170.59",
+        "10.56.170.60",
+        "10.56.170.61",
+        "10.56.170.62"
+    ],
+    "routeAddress": "10.56.170.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.170.65",
+        "10.56.170.66",
+        "10.56.170.67",
+        "10.56.170.68",
+        "10.56.170.69",
+        "10.56.170.70",
+        "10.56.170.71",
+        "10.56.170.72",
+        "10.56.170.73",
+        "10.56.170.74",
+        "10.56.170.75",
+        "10.56.170.76",
+        "10.56.170.77",
+        "10.56.170.78",
+        "10.56.170.79",
+        "10.56.170.80",
+        "10.56.170.81",
+        "10.56.170.82",
+        "10.56.170.83",
+        "10.56.170.84",
+        "10.56.170.85",
+        "10.56.170.86",
+        "10.56.170.87",
+        "10.56.170.88",
+        "10.56.170.89",
+        "10.56.170.90",
+        "10.56.170.91",
+        "10.56.170.92",
+        "10.56.170.93",
+        "10.56.170.94"
+    ],
+    "corporateAddress": "10.56.170.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.170.97",
+        "10.56.170.98",
+        "10.56.170.99",
+        "10.56.170.100",
+        "10.56.170.101",
+        "10.56.170.102",
+        "10.56.170.103",
+        "10.56.170.104",
+        "10.56.170.105",
+        "10.56.170.106",
+        "10.56.170.107",
+        "10.56.170.108",
+        "10.56.170.109",
+        "10.56.170.110",
+        "10.56.170.111",
+        "10.56.170.112",
+        "10.56.170.113",
+        "10.56.170.114",
+        "10.56.170.115",
+        "10.56.170.116",
+        "10.56.170.117",
+        "10.56.170.118",
+        "10.56.170.119",
+        "10.56.170.120",
+        "10.56.170.121",
+        "10.56.170.122",
+        "10.56.170.123",
+        "10.56.170.124",
+        "10.56.170.125"
+    ],
+    "latitude": 30.94,
+    "longitude": -99.08,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.97",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..Firewall 170",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.94,
+            "Longitude": -99.08
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.98",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..Router 170",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.1",
+            "ipAddress": "10.56.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE.OT.Switch 339",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.99",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE.Corporate.Switch 340",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.3",
+            "ipAddress": "10.56.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.2",
+            "ipAddress": "10.56.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..RC 170",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.170.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.100",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..Host 339",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.100",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..Host 340",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.100",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..LocalDatabase 339",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.100",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..LocalWebServer 340",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.101",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..hmi 339",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.100",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..outstation 340",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.CHEROKEE..RC 170",
+            "destination": "Utility 3.CHEROKEE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHEROKEE..Router 170",
+            "destination": "Utility 3.CHEROKEE..Firewall 170",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHEROKEE..Firewall 170",
+            "destination": "Utility 3.CHEROKEE.OT.Switch 339",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHEROKEE.OT.Switch 339",
+            "destination": "Utility 3.CHEROKEE..RC 170",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHEROKEE..Firewall 170",
+            "destination": "Utility 3.CHEROKEE.Corporate.Switch 340",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHEROKEE.Corporate.Switch 340",
+            "destination": "Utility 3.CHEROKEE..Host 339",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHEROKEE.Corporate.Switch 340",
+            "destination": "Utility 3.CHEROKEE..Host 340",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHEROKEE.Corporate.Switch 340",
+            "destination": "Utility 3.CHEROKEE..LocalDatabase 339",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHEROKEE.Corporate.Switch 340",
+            "destination": "Utility 3.CHEROKEE..LocalWebServer 340",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.1",
+            "ipAddress": "10.56.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE.OT.Switch 339",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.2",
+            "ipAddress": "10.56.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..RC 170",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.170.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.97",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..Firewall 170",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.94,
+            "Longitude": -99.08
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.98",
+            "ipAddress": "10.56.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..Router 170",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.1",
+            "ipAddress": "10.56.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE.OT.Switch 339",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.170.2",
+            "ipAddress": "10.56.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHEROKEE",
+            "label": "Utility 3.CHEROKEE..RC 170",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.170.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

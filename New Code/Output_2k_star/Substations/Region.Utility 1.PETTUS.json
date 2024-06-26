@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.PETTUS",
+    "networkLan": "10.53.313.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "PETTUS",
+    "substationNumber": 313,
+    "OTAddress": "10.53.313.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.313.1",
+        "10.53.313.2",
+        "10.53.313.3",
+        "10.53.313.4",
+        "10.53.313.5",
+        "10.53.313.6",
+        "10.53.313.7",
+        "10.53.313.8",
+        "10.53.313.9",
+        "10.53.313.10",
+        "10.53.313.11",
+        "10.53.313.12",
+        "10.53.313.13",
+        "10.53.313.14",
+        "10.53.313.15",
+        "10.53.313.16",
+        "10.53.313.17",
+        "10.53.313.18",
+        "10.53.313.19",
+        "10.53.313.20",
+        "10.53.313.21",
+        "10.53.313.22",
+        "10.53.313.23",
+        "10.53.313.24",
+        "10.53.313.25",
+        "10.53.313.26",
+        "10.53.313.27",
+        "10.53.313.28",
+        "10.53.313.29",
+        "10.53.313.30",
+        "10.53.313.31",
+        "10.53.313.32",
+        "10.53.313.33",
+        "10.53.313.34",
+        "10.53.313.35",
+        "10.53.313.36",
+        "10.53.313.37",
+        "10.53.313.38",
+        "10.53.313.39",
+        "10.53.313.40",
+        "10.53.313.41",
+        "10.53.313.42",
+        "10.53.313.43",
+        "10.53.313.44",
+        "10.53.313.45",
+        "10.53.313.46",
+        "10.53.313.47",
+        "10.53.313.48",
+        "10.53.313.49",
+        "10.53.313.50",
+        "10.53.313.51",
+        "10.53.313.52",
+        "10.53.313.53",
+        "10.53.313.54",
+        "10.53.313.55",
+        "10.53.313.56",
+        "10.53.313.57",
+        "10.53.313.58",
+        "10.53.313.59",
+        "10.53.313.60",
+        "10.53.313.61",
+        "10.53.313.62"
+    ],
+    "routeAddress": "10.53.313.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.313.65",
+        "10.53.313.66",
+        "10.53.313.67",
+        "10.53.313.68",
+        "10.53.313.69",
+        "10.53.313.70",
+        "10.53.313.71",
+        "10.53.313.72",
+        "10.53.313.73",
+        "10.53.313.74",
+        "10.53.313.75",
+        "10.53.313.76",
+        "10.53.313.77",
+        "10.53.313.78",
+        "10.53.313.79",
+        "10.53.313.80",
+        "10.53.313.81",
+        "10.53.313.82",
+        "10.53.313.83",
+        "10.53.313.84",
+        "10.53.313.85",
+        "10.53.313.86",
+        "10.53.313.87",
+        "10.53.313.88",
+        "10.53.313.89",
+        "10.53.313.90",
+        "10.53.313.91",
+        "10.53.313.92",
+        "10.53.313.93",
+        "10.53.313.94"
+    ],
+    "corporateAddress": "10.53.313.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.313.97",
+        "10.53.313.98",
+        "10.53.313.99",
+        "10.53.313.100",
+        "10.53.313.101",
+        "10.53.313.102",
+        "10.53.313.103",
+        "10.53.313.104",
+        "10.53.313.105",
+        "10.53.313.106",
+        "10.53.313.107",
+        "10.53.313.108",
+        "10.53.313.109",
+        "10.53.313.110",
+        "10.53.313.111",
+        "10.53.313.112",
+        "10.53.313.113",
+        "10.53.313.114",
+        "10.53.313.115",
+        "10.53.313.116",
+        "10.53.313.117",
+        "10.53.313.118",
+        "10.53.313.119",
+        "10.53.313.120",
+        "10.53.313.121",
+        "10.53.313.122",
+        "10.53.313.123",
+        "10.53.313.124",
+        "10.53.313.125"
+    ],
+    "latitude": 28.541,
+    "longitude": -97.957,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.97",
+            "ipAddress": "10.53.313.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..Firewall 313",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.541,
+            "Longitude": -97.957
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.98",
+            "ipAddress": "10.53.313.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..Router 313",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.1",
+            "ipAddress": "10.53.313.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS.OT.Switch 625",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.99",
+            "ipAddress": "10.53.313.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS.Corporate.Switch 626",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.3",
+            "ipAddress": "10.53.313.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.2",
+            "ipAddress": "10.53.313.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..RC 313",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.313.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.100",
+            "ipAddress": "10.53.313.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..Host 625",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.100",
+            "ipAddress": "10.53.313.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..Host 626",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.100",
+            "ipAddress": "10.53.313.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..LocalDatabase 625",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.100",
+            "ipAddress": "10.53.313.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..LocalWebServer 626",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.PETTUS..RC 313",
+            "destination": "Utility 1.PETTUS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PETTUS..Router 313",
+            "destination": "Utility 1.PETTUS..Firewall 313",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PETTUS..Firewall 313",
+            "destination": "Utility 1.PETTUS.OT.Switch 625",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PETTUS.OT.Switch 625",
+            "destination": "Utility 1.PETTUS..RC 313",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PETTUS..Firewall 313",
+            "destination": "Utility 1.PETTUS.Corporate.Switch 626",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PETTUS.Corporate.Switch 626",
+            "destination": "Utility 1.PETTUS..Host 625",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PETTUS.Corporate.Switch 626",
+            "destination": "Utility 1.PETTUS..Host 626",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PETTUS.Corporate.Switch 626",
+            "destination": "Utility 1.PETTUS..LocalDatabase 625",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.PETTUS.Corporate.Switch 626",
+            "destination": "Utility 1.PETTUS..LocalWebServer 626",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.1",
+            "ipAddress": "10.53.313.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS.OT.Switch 625",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.2",
+            "ipAddress": "10.53.313.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..RC 313",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.313.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.97",
+            "ipAddress": "10.53.313.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..Firewall 313",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.541,
+            "Longitude": -97.957
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.98",
+            "ipAddress": "10.53.313.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..Router 313",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.1",
+            "ipAddress": "10.53.313.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS.OT.Switch 625",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.313.2",
+            "ipAddress": "10.53.313.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PETTUS",
+            "label": "Utility 1.PETTUS..RC 313",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.313.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

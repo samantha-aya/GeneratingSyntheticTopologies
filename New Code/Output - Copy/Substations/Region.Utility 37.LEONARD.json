@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 37.LEONARD",
+    "networkLan": "10.70.78.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 37",
+    "utility_id": 70,
+    "substation": "LEONARD",
+    "substationNumber": 78,
+    "OTAddress": "10.70.78.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.70.78.1",
+        "10.70.78.2",
+        "10.70.78.3",
+        "10.70.78.4",
+        "10.70.78.5",
+        "10.70.78.6",
+        "10.70.78.7",
+        "10.70.78.8",
+        "10.70.78.9",
+        "10.70.78.10",
+        "10.70.78.11",
+        "10.70.78.12",
+        "10.70.78.13",
+        "10.70.78.14",
+        "10.70.78.15",
+        "10.70.78.16",
+        "10.70.78.17",
+        "10.70.78.18",
+        "10.70.78.19",
+        "10.70.78.20",
+        "10.70.78.21",
+        "10.70.78.22",
+        "10.70.78.23",
+        "10.70.78.24",
+        "10.70.78.25",
+        "10.70.78.26",
+        "10.70.78.27",
+        "10.70.78.28",
+        "10.70.78.29",
+        "10.70.78.30",
+        "10.70.78.31",
+        "10.70.78.32",
+        "10.70.78.33",
+        "10.70.78.34",
+        "10.70.78.35",
+        "10.70.78.36",
+        "10.70.78.37",
+        "10.70.78.38",
+        "10.70.78.39",
+        "10.70.78.40",
+        "10.70.78.41",
+        "10.70.78.42",
+        "10.70.78.43",
+        "10.70.78.44",
+        "10.70.78.45",
+        "10.70.78.46",
+        "10.70.78.47",
+        "10.70.78.48",
+        "10.70.78.49",
+        "10.70.78.50",
+        "10.70.78.51",
+        "10.70.78.52",
+        "10.70.78.53",
+        "10.70.78.54",
+        "10.70.78.55",
+        "10.70.78.56",
+        "10.70.78.57",
+        "10.70.78.58",
+        "10.70.78.59",
+        "10.70.78.60",
+        "10.70.78.61",
+        "10.70.78.62"
+    ],
+    "routeAddress": "10.70.78.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.70.78.65",
+        "10.70.78.66",
+        "10.70.78.67",
+        "10.70.78.68",
+        "10.70.78.69",
+        "10.70.78.70",
+        "10.70.78.71",
+        "10.70.78.72",
+        "10.70.78.73",
+        "10.70.78.74",
+        "10.70.78.75",
+        "10.70.78.76",
+        "10.70.78.77",
+        "10.70.78.78",
+        "10.70.78.79",
+        "10.70.78.80",
+        "10.70.78.81",
+        "10.70.78.82",
+        "10.70.78.83",
+        "10.70.78.84",
+        "10.70.78.85",
+        "10.70.78.86",
+        "10.70.78.87",
+        "10.70.78.88",
+        "10.70.78.89",
+        "10.70.78.90",
+        "10.70.78.91",
+        "10.70.78.92",
+        "10.70.78.93",
+        "10.70.78.94"
+    ],
+    "corporateAddress": "10.70.78.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.70.78.97",
+        "10.70.78.98",
+        "10.70.78.99",
+        "10.70.78.100",
+        "10.70.78.101",
+        "10.70.78.102",
+        "10.70.78.103",
+        "10.70.78.104",
+        "10.70.78.105",
+        "10.70.78.106",
+        "10.70.78.107",
+        "10.70.78.108",
+        "10.70.78.109",
+        "10.70.78.110",
+        "10.70.78.111",
+        "10.70.78.112",
+        "10.70.78.113",
+        "10.70.78.114",
+        "10.70.78.115",
+        "10.70.78.116",
+        "10.70.78.117",
+        "10.70.78.118",
+        "10.70.78.119",
+        "10.70.78.120",
+        "10.70.78.121",
+        "10.70.78.122",
+        "10.70.78.123",
+        "10.70.78.124",
+        "10.70.78.125"
+    ],
+    "latitude": 33.441,
+    "longitude": -96.179,
+    "nodes": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.97",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..Firewall 78",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.441,
+            "Longitude": -96.179
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.98",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..Router 78",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.1",
+            "ipAddress": "10.70.78.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD.OT.Switch 155",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.99",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD.Corporate.Switch 156",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.3",
+            "ipAddress": "10.70.78.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.2",
+            "ipAddress": "10.70.78.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..RC 78",
+            "compromised": false,
+            "relayIPlist": [
+                "10.70.78.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.100",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..Host 155",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.100",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..Host 156",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.100",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..LocalDatabase 155",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.100",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..LocalWebServer 156",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.101",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..hmi 155",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.100",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..outstation 156",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 37.LEONARD..RC 78",
+            "destination": "Utility 37.LEONARD..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.LEONARD..Router 78",
+            "destination": "Utility 37.LEONARD..Firewall 78",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.LEONARD..Firewall 78",
+            "destination": "Utility 37.LEONARD.OT.Switch 155",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.LEONARD.OT.Switch 155",
+            "destination": "Utility 37.LEONARD..RC 78",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.LEONARD..Firewall 78",
+            "destination": "Utility 37.LEONARD.Corporate.Switch 156",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.LEONARD.Corporate.Switch 156",
+            "destination": "Utility 37.LEONARD..Host 155",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.LEONARD.Corporate.Switch 156",
+            "destination": "Utility 37.LEONARD..Host 156",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.LEONARD.Corporate.Switch 156",
+            "destination": "Utility 37.LEONARD..LocalDatabase 155",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 37.LEONARD.Corporate.Switch 156",
+            "destination": "Utility 37.LEONARD..LocalWebServer 156",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.1",
+            "ipAddress": "10.70.78.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD.OT.Switch 155",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.2",
+            "ipAddress": "10.70.78.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..RC 78",
+            "compromised": false,
+            "relayIPlist": [
+                "10.70.78.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.97",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..Firewall 78",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.441,
+            "Longitude": -96.179
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.98",
+            "ipAddress": "10.70.78.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..Router 78",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.1",
+            "ipAddress": "10.70.78.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD.OT.Switch 155",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 37",
+            "adminIP": "10.70.78.2",
+            "ipAddress": "10.70.78.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEONARD",
+            "label": "Utility 37.LEONARD..RC 78",
+            "compromised": false,
+            "relayIPlist": [
+                "10.70.78.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

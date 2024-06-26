@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.FORRESTON",
+    "networkLan": "10.155.556.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 155,
+    "substation": "FORRESTON",
+    "substationNumber": 556,
+    "OTAddress": "10.155.556.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.155.556.1",
+        "10.155.556.2",
+        "10.155.556.3",
+        "10.155.556.4",
+        "10.155.556.5",
+        "10.155.556.6",
+        "10.155.556.7",
+        "10.155.556.8",
+        "10.155.556.9",
+        "10.155.556.10",
+        "10.155.556.11",
+        "10.155.556.12",
+        "10.155.556.13",
+        "10.155.556.14",
+        "10.155.556.15",
+        "10.155.556.16",
+        "10.155.556.17",
+        "10.155.556.18",
+        "10.155.556.19",
+        "10.155.556.20",
+        "10.155.556.21",
+        "10.155.556.22",
+        "10.155.556.23",
+        "10.155.556.24",
+        "10.155.556.25",
+        "10.155.556.26",
+        "10.155.556.27",
+        "10.155.556.28",
+        "10.155.556.29",
+        "10.155.556.30",
+        "10.155.556.31",
+        "10.155.556.32",
+        "10.155.556.33",
+        "10.155.556.34",
+        "10.155.556.35",
+        "10.155.556.36",
+        "10.155.556.37",
+        "10.155.556.38",
+        "10.155.556.39",
+        "10.155.556.40",
+        "10.155.556.41",
+        "10.155.556.42",
+        "10.155.556.43",
+        "10.155.556.44",
+        "10.155.556.45",
+        "10.155.556.46",
+        "10.155.556.47",
+        "10.155.556.48",
+        "10.155.556.49",
+        "10.155.556.50",
+        "10.155.556.51",
+        "10.155.556.52",
+        "10.155.556.53",
+        "10.155.556.54",
+        "10.155.556.55",
+        "10.155.556.56",
+        "10.155.556.57",
+        "10.155.556.58",
+        "10.155.556.59",
+        "10.155.556.60",
+        "10.155.556.61",
+        "10.155.556.62"
+    ],
+    "routeAddress": "10.155.556.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.155.556.65",
+        "10.155.556.66",
+        "10.155.556.67",
+        "10.155.556.68",
+        "10.155.556.69",
+        "10.155.556.70",
+        "10.155.556.71",
+        "10.155.556.72",
+        "10.155.556.73",
+        "10.155.556.74",
+        "10.155.556.75",
+        "10.155.556.76",
+        "10.155.556.77",
+        "10.155.556.78",
+        "10.155.556.79",
+        "10.155.556.80",
+        "10.155.556.81",
+        "10.155.556.82",
+        "10.155.556.83",
+        "10.155.556.84",
+        "10.155.556.85",
+        "10.155.556.86",
+        "10.155.556.87",
+        "10.155.556.88",
+        "10.155.556.89",
+        "10.155.556.90",
+        "10.155.556.91",
+        "10.155.556.92",
+        "10.155.556.93",
+        "10.155.556.94"
+    ],
+    "corporateAddress": "10.155.556.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.155.556.97",
+        "10.155.556.98",
+        "10.155.556.99",
+        "10.155.556.100",
+        "10.155.556.101",
+        "10.155.556.102",
+        "10.155.556.103",
+        "10.155.556.104",
+        "10.155.556.105",
+        "10.155.556.106",
+        "10.155.556.107",
+        "10.155.556.108",
+        "10.155.556.109",
+        "10.155.556.110",
+        "10.155.556.111",
+        "10.155.556.112",
+        "10.155.556.113",
+        "10.155.556.114",
+        "10.155.556.115",
+        "10.155.556.116",
+        "10.155.556.117",
+        "10.155.556.118",
+        "10.155.556.119",
+        "10.155.556.120",
+        "10.155.556.121",
+        "10.155.556.122",
+        "10.155.556.123",
+        "10.155.556.124",
+        "10.155.556.125"
+    ],
+    "latitude": 32.238,
+    "longitude": -96.842,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.97",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..Firewall 556",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.238,
+            "Longitude": -96.842
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.98",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..Router 556",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.1",
+            "ipAddress": "10.155.556.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON.OT.Switch 1111",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.99",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON.Corporate.Switch 1112",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.3",
+            "ipAddress": "10.155.556.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.2",
+            "ipAddress": "10.155.556.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..RC 556",
+            "compromised": false,
+            "relayIPlist": [
+                "10.155.556.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.100",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..Host 1111",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.100",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..Host 1112",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.100",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..LocalDatabase 1111",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.100",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..LocalWebServer 1112",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.101",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..hmi 1111",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.100",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..outstation 1112",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.FORRESTON..RC 556",
+            "destination": "Utility 4.FORRESTON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.FORRESTON..Router 556",
+            "destination": "Utility 4.FORRESTON..Firewall 556",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.FORRESTON..Firewall 556",
+            "destination": "Utility 4.FORRESTON.OT.Switch 1111",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.FORRESTON.OT.Switch 1111",
+            "destination": "Utility 4.FORRESTON..RC 556",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.FORRESTON..Firewall 556",
+            "destination": "Utility 4.FORRESTON.Corporate.Switch 1112",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.FORRESTON.Corporate.Switch 1112",
+            "destination": "Utility 4.FORRESTON..Host 1111",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.FORRESTON.Corporate.Switch 1112",
+            "destination": "Utility 4.FORRESTON..Host 1112",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.FORRESTON.Corporate.Switch 1112",
+            "destination": "Utility 4.FORRESTON..LocalDatabase 1111",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.FORRESTON.Corporate.Switch 1112",
+            "destination": "Utility 4.FORRESTON..LocalWebServer 1112",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.1",
+            "ipAddress": "10.155.556.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON.OT.Switch 1111",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.2",
+            "ipAddress": "10.155.556.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..RC 556",
+            "compromised": false,
+            "relayIPlist": [
+                "10.155.556.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.97",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..Firewall 556",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.238,
+            "Longitude": -96.842
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.98",
+            "ipAddress": "10.155.556.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..Router 556",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.1",
+            "ipAddress": "10.155.556.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON.OT.Switch 1111",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.155.556.2",
+            "ipAddress": "10.155.556.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FORRESTON",
+            "label": "Utility 4.FORRESTON..RC 556",
+            "compromised": false,
+            "relayIPlist": [
+                "10.155.556.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

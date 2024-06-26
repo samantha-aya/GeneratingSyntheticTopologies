@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.GARLAND 5",
+    "networkLan": "10.55.362.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "GARLAND 5",
+    "substationNumber": 362,
+    "OTAddress": "10.55.362.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.362.1",
+        "10.55.362.2",
+        "10.55.362.3",
+        "10.55.362.4",
+        "10.55.362.5",
+        "10.55.362.6",
+        "10.55.362.7",
+        "10.55.362.8",
+        "10.55.362.9",
+        "10.55.362.10",
+        "10.55.362.11",
+        "10.55.362.12",
+        "10.55.362.13",
+        "10.55.362.14",
+        "10.55.362.15",
+        "10.55.362.16",
+        "10.55.362.17",
+        "10.55.362.18",
+        "10.55.362.19",
+        "10.55.362.20",
+        "10.55.362.21",
+        "10.55.362.22",
+        "10.55.362.23",
+        "10.55.362.24",
+        "10.55.362.25",
+        "10.55.362.26",
+        "10.55.362.27",
+        "10.55.362.28",
+        "10.55.362.29",
+        "10.55.362.30",
+        "10.55.362.31",
+        "10.55.362.32",
+        "10.55.362.33",
+        "10.55.362.34",
+        "10.55.362.35",
+        "10.55.362.36",
+        "10.55.362.37",
+        "10.55.362.38",
+        "10.55.362.39",
+        "10.55.362.40",
+        "10.55.362.41",
+        "10.55.362.42",
+        "10.55.362.43",
+        "10.55.362.44",
+        "10.55.362.45",
+        "10.55.362.46",
+        "10.55.362.47",
+        "10.55.362.48",
+        "10.55.362.49",
+        "10.55.362.50",
+        "10.55.362.51",
+        "10.55.362.52",
+        "10.55.362.53",
+        "10.55.362.54",
+        "10.55.362.55",
+        "10.55.362.56",
+        "10.55.362.57",
+        "10.55.362.58",
+        "10.55.362.59",
+        "10.55.362.60",
+        "10.55.362.61",
+        "10.55.362.62"
+    ],
+    "routeAddress": "10.55.362.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.362.65",
+        "10.55.362.66",
+        "10.55.362.67",
+        "10.55.362.68",
+        "10.55.362.69",
+        "10.55.362.70",
+        "10.55.362.71",
+        "10.55.362.72",
+        "10.55.362.73",
+        "10.55.362.74",
+        "10.55.362.75",
+        "10.55.362.76",
+        "10.55.362.77",
+        "10.55.362.78",
+        "10.55.362.79",
+        "10.55.362.80",
+        "10.55.362.81",
+        "10.55.362.82",
+        "10.55.362.83",
+        "10.55.362.84",
+        "10.55.362.85",
+        "10.55.362.86",
+        "10.55.362.87",
+        "10.55.362.88",
+        "10.55.362.89",
+        "10.55.362.90",
+        "10.55.362.91",
+        "10.55.362.92",
+        "10.55.362.93",
+        "10.55.362.94"
+    ],
+    "corporateAddress": "10.55.362.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.362.97",
+        "10.55.362.98",
+        "10.55.362.99",
+        "10.55.362.100",
+        "10.55.362.101",
+        "10.55.362.102",
+        "10.55.362.103",
+        "10.55.362.104",
+        "10.55.362.105",
+        "10.55.362.106",
+        "10.55.362.107",
+        "10.55.362.108",
+        "10.55.362.109",
+        "10.55.362.110",
+        "10.55.362.111",
+        "10.55.362.112",
+        "10.55.362.113",
+        "10.55.362.114",
+        "10.55.362.115",
+        "10.55.362.116",
+        "10.55.362.117",
+        "10.55.362.118",
+        "10.55.362.119",
+        "10.55.362.120",
+        "10.55.362.121",
+        "10.55.362.122",
+        "10.55.362.123",
+        "10.55.362.124",
+        "10.55.362.125"
+    ],
+    "latitude": 32.912,
+    "longitude": -96.675,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.97",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..Firewall 362",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.912,
+            "Longitude": -96.675
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.98",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..Router 362",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.1",
+            "ipAddress": "10.55.362.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5.OT.Switch 723",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.99",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5.Corporate.Switch 724",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.3",
+            "ipAddress": "10.55.362.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.2",
+            "ipAddress": "10.55.362.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..RC 362",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.362.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.100",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..Host 723",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.100",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..Host 724",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.100",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..LocalDatabase 723",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.100",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..LocalWebServer 724",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.101",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..hmi 723",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.100",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..outstation 724",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.GARLAND 5..RC 362",
+            "destination": "Utility 2.GARLAND 5..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GARLAND 5..Router 362",
+            "destination": "Utility 2.GARLAND 5..Firewall 362",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GARLAND 5..Firewall 362",
+            "destination": "Utility 2.GARLAND 5.OT.Switch 723",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GARLAND 5.OT.Switch 723",
+            "destination": "Utility 2.GARLAND 5..RC 362",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GARLAND 5..Firewall 362",
+            "destination": "Utility 2.GARLAND 5.Corporate.Switch 724",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GARLAND 5.Corporate.Switch 724",
+            "destination": "Utility 2.GARLAND 5..Host 723",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GARLAND 5.Corporate.Switch 724",
+            "destination": "Utility 2.GARLAND 5..Host 724",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GARLAND 5.Corporate.Switch 724",
+            "destination": "Utility 2.GARLAND 5..LocalDatabase 723",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.GARLAND 5.Corporate.Switch 724",
+            "destination": "Utility 2.GARLAND 5..LocalWebServer 724",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.1",
+            "ipAddress": "10.55.362.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5.OT.Switch 723",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.2",
+            "ipAddress": "10.55.362.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..RC 362",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.362.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.97",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..Firewall 362",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.912,
+            "Longitude": -96.675
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.98",
+            "ipAddress": "10.55.362.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..Router 362",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.1",
+            "ipAddress": "10.55.362.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5.OT.Switch 723",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.362.2",
+            "ipAddress": "10.55.362.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GARLAND 5",
+            "label": "Utility 2.GARLAND 5..RC 362",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.362.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

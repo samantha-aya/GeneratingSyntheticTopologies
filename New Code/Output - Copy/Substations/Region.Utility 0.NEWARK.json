@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.NEWARK",
+    "networkLan": "10.52.671.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "NEWARK",
+    "substationNumber": 671,
+    "OTAddress": "10.52.671.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.671.1",
+        "10.52.671.2",
+        "10.52.671.3",
+        "10.52.671.4",
+        "10.52.671.5",
+        "10.52.671.6",
+        "10.52.671.7",
+        "10.52.671.8",
+        "10.52.671.9",
+        "10.52.671.10",
+        "10.52.671.11",
+        "10.52.671.12",
+        "10.52.671.13",
+        "10.52.671.14",
+        "10.52.671.15",
+        "10.52.671.16",
+        "10.52.671.17",
+        "10.52.671.18",
+        "10.52.671.19",
+        "10.52.671.20",
+        "10.52.671.21",
+        "10.52.671.22",
+        "10.52.671.23",
+        "10.52.671.24",
+        "10.52.671.25",
+        "10.52.671.26",
+        "10.52.671.27",
+        "10.52.671.28",
+        "10.52.671.29",
+        "10.52.671.30",
+        "10.52.671.31",
+        "10.52.671.32",
+        "10.52.671.33",
+        "10.52.671.34",
+        "10.52.671.35",
+        "10.52.671.36",
+        "10.52.671.37",
+        "10.52.671.38",
+        "10.52.671.39",
+        "10.52.671.40",
+        "10.52.671.41",
+        "10.52.671.42",
+        "10.52.671.43",
+        "10.52.671.44",
+        "10.52.671.45",
+        "10.52.671.46",
+        "10.52.671.47",
+        "10.52.671.48",
+        "10.52.671.49",
+        "10.52.671.50",
+        "10.52.671.51",
+        "10.52.671.52",
+        "10.52.671.53",
+        "10.52.671.54",
+        "10.52.671.55",
+        "10.52.671.56",
+        "10.52.671.57",
+        "10.52.671.58",
+        "10.52.671.59",
+        "10.52.671.60",
+        "10.52.671.61",
+        "10.52.671.62"
+    ],
+    "routeAddress": "10.52.671.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.671.65",
+        "10.52.671.66",
+        "10.52.671.67",
+        "10.52.671.68",
+        "10.52.671.69",
+        "10.52.671.70",
+        "10.52.671.71",
+        "10.52.671.72",
+        "10.52.671.73",
+        "10.52.671.74",
+        "10.52.671.75",
+        "10.52.671.76",
+        "10.52.671.77",
+        "10.52.671.78",
+        "10.52.671.79",
+        "10.52.671.80",
+        "10.52.671.81",
+        "10.52.671.82",
+        "10.52.671.83",
+        "10.52.671.84",
+        "10.52.671.85",
+        "10.52.671.86",
+        "10.52.671.87",
+        "10.52.671.88",
+        "10.52.671.89",
+        "10.52.671.90",
+        "10.52.671.91",
+        "10.52.671.92",
+        "10.52.671.93",
+        "10.52.671.94"
+    ],
+    "corporateAddress": "10.52.671.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.671.97",
+        "10.52.671.98",
+        "10.52.671.99",
+        "10.52.671.100",
+        "10.52.671.101",
+        "10.52.671.102",
+        "10.52.671.103",
+        "10.52.671.104",
+        "10.52.671.105",
+        "10.52.671.106",
+        "10.52.671.107",
+        "10.52.671.108",
+        "10.52.671.109",
+        "10.52.671.110",
+        "10.52.671.111",
+        "10.52.671.112",
+        "10.52.671.113",
+        "10.52.671.114",
+        "10.52.671.115",
+        "10.52.671.116",
+        "10.52.671.117",
+        "10.52.671.118",
+        "10.52.671.119",
+        "10.52.671.120",
+        "10.52.671.121",
+        "10.52.671.122",
+        "10.52.671.123",
+        "10.52.671.124",
+        "10.52.671.125"
+    ],
+    "latitude": 33.001,
+    "longitude": -97.444,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.97",
+            "ipAddress": "10.52.671.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..Firewall 671",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.001,
+            "Longitude": -97.444
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.98",
+            "ipAddress": "10.52.671.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..Router 671",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.1",
+            "ipAddress": "10.52.671.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK.OT.Switch 1341",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.99",
+            "ipAddress": "10.52.671.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK.Corporate.Switch 1342",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.3",
+            "ipAddress": "10.52.671.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.2",
+            "ipAddress": "10.52.671.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..RC 671",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.671.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.100",
+            "ipAddress": "10.52.671.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..Host 1341",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.100",
+            "ipAddress": "10.52.671.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..Host 1342",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.100",
+            "ipAddress": "10.52.671.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..LocalDatabase 1341",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.100",
+            "ipAddress": "10.52.671.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..LocalWebServer 1342",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.NEWARK..RC 671",
+            "destination": "Utility 0.NEWARK..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.NEWARK..Router 671",
+            "destination": "Utility 0.NEWARK..Firewall 671",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.NEWARK..Firewall 671",
+            "destination": "Utility 0.NEWARK.OT.Switch 1341",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.NEWARK.OT.Switch 1341",
+            "destination": "Utility 0.NEWARK..RC 671",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.NEWARK..Firewall 671",
+            "destination": "Utility 0.NEWARK.Corporate.Switch 1342",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.NEWARK.Corporate.Switch 1342",
+            "destination": "Utility 0.NEWARK..Host 1341",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.NEWARK.Corporate.Switch 1342",
+            "destination": "Utility 0.NEWARK..Host 1342",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.NEWARK.Corporate.Switch 1342",
+            "destination": "Utility 0.NEWARK..LocalDatabase 1341",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.NEWARK.Corporate.Switch 1342",
+            "destination": "Utility 0.NEWARK..LocalWebServer 1342",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.1",
+            "ipAddress": "10.52.671.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK.OT.Switch 1341",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.2",
+            "ipAddress": "10.52.671.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..RC 671",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.671.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.97",
+            "ipAddress": "10.52.671.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..Firewall 671",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.001,
+            "Longitude": -97.444
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.98",
+            "ipAddress": "10.52.671.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..Router 671",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.1",
+            "ipAddress": "10.52.671.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK.OT.Switch 1341",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.671.2",
+            "ipAddress": "10.52.671.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "NEWARK",
+            "label": "Utility 0.NEWARK..RC 671",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.671.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

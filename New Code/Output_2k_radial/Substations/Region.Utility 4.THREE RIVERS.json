@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.THREE RIVERS",
+    "networkLan": "10.57.326.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "THREE RIVERS",
+    "substationNumber": 326,
+    "OTAddress": "10.57.326.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.326.1",
+        "10.57.326.2",
+        "10.57.326.3",
+        "10.57.326.4",
+        "10.57.326.5",
+        "10.57.326.6",
+        "10.57.326.7",
+        "10.57.326.8",
+        "10.57.326.9",
+        "10.57.326.10",
+        "10.57.326.11",
+        "10.57.326.12",
+        "10.57.326.13",
+        "10.57.326.14",
+        "10.57.326.15",
+        "10.57.326.16",
+        "10.57.326.17",
+        "10.57.326.18",
+        "10.57.326.19",
+        "10.57.326.20",
+        "10.57.326.21",
+        "10.57.326.22",
+        "10.57.326.23",
+        "10.57.326.24",
+        "10.57.326.25",
+        "10.57.326.26",
+        "10.57.326.27",
+        "10.57.326.28",
+        "10.57.326.29",
+        "10.57.326.30",
+        "10.57.326.31",
+        "10.57.326.32",
+        "10.57.326.33",
+        "10.57.326.34",
+        "10.57.326.35",
+        "10.57.326.36",
+        "10.57.326.37",
+        "10.57.326.38",
+        "10.57.326.39",
+        "10.57.326.40",
+        "10.57.326.41",
+        "10.57.326.42",
+        "10.57.326.43",
+        "10.57.326.44",
+        "10.57.326.45",
+        "10.57.326.46",
+        "10.57.326.47",
+        "10.57.326.48",
+        "10.57.326.49",
+        "10.57.326.50",
+        "10.57.326.51",
+        "10.57.326.52",
+        "10.57.326.53",
+        "10.57.326.54",
+        "10.57.326.55",
+        "10.57.326.56",
+        "10.57.326.57",
+        "10.57.326.58",
+        "10.57.326.59",
+        "10.57.326.60",
+        "10.57.326.61",
+        "10.57.326.62"
+    ],
+    "routeAddress": "10.57.326.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.326.65",
+        "10.57.326.66",
+        "10.57.326.67",
+        "10.57.326.68",
+        "10.57.326.69",
+        "10.57.326.70",
+        "10.57.326.71",
+        "10.57.326.72",
+        "10.57.326.73",
+        "10.57.326.74",
+        "10.57.326.75",
+        "10.57.326.76",
+        "10.57.326.77",
+        "10.57.326.78",
+        "10.57.326.79",
+        "10.57.326.80",
+        "10.57.326.81",
+        "10.57.326.82",
+        "10.57.326.83",
+        "10.57.326.84",
+        "10.57.326.85",
+        "10.57.326.86",
+        "10.57.326.87",
+        "10.57.326.88",
+        "10.57.326.89",
+        "10.57.326.90",
+        "10.57.326.91",
+        "10.57.326.92",
+        "10.57.326.93",
+        "10.57.326.94"
+    ],
+    "corporateAddress": "10.57.326.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.326.97",
+        "10.57.326.98",
+        "10.57.326.99",
+        "10.57.326.100",
+        "10.57.326.101",
+        "10.57.326.102",
+        "10.57.326.103",
+        "10.57.326.104",
+        "10.57.326.105",
+        "10.57.326.106",
+        "10.57.326.107",
+        "10.57.326.108",
+        "10.57.326.109",
+        "10.57.326.110",
+        "10.57.326.111",
+        "10.57.326.112",
+        "10.57.326.113",
+        "10.57.326.114",
+        "10.57.326.115",
+        "10.57.326.116",
+        "10.57.326.117",
+        "10.57.326.118",
+        "10.57.326.119",
+        "10.57.326.120",
+        "10.57.326.121",
+        "10.57.326.122",
+        "10.57.326.123",
+        "10.57.326.124",
+        "10.57.326.125"
+    ],
+    "latitude": 28.31,
+    "longitude": -98.573,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.97",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..Firewall 326",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.31,
+            "Longitude": -98.573
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.98",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..Router 326",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.1",
+            "ipAddress": "10.57.326.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS.OT.Switch 651",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.99",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS.Corporate.Switch 652",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.3",
+            "ipAddress": "10.57.326.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.2",
+            "ipAddress": "10.57.326.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..RC 326",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.326.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.100",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..Host 651",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.100",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..Host 652",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.100",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..LocalDatabase 651",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.100",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..LocalWebServer 652",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.101",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..hmi 651",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.100",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..outstation 652",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.THREE RIVERS..RC 326",
+            "destination": "Utility 4.THREE RIVERS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.THREE RIVERS..Router 326",
+            "destination": "Utility 4.THREE RIVERS..Firewall 326",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.THREE RIVERS..Firewall 326",
+            "destination": "Utility 4.THREE RIVERS.OT.Switch 651",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.THREE RIVERS.OT.Switch 651",
+            "destination": "Utility 4.THREE RIVERS..RC 326",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.THREE RIVERS..Firewall 326",
+            "destination": "Utility 4.THREE RIVERS.Corporate.Switch 652",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.THREE RIVERS.Corporate.Switch 652",
+            "destination": "Utility 4.THREE RIVERS..Host 651",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.THREE RIVERS.Corporate.Switch 652",
+            "destination": "Utility 4.THREE RIVERS..Host 652",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.THREE RIVERS.Corporate.Switch 652",
+            "destination": "Utility 4.THREE RIVERS..LocalDatabase 651",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.THREE RIVERS.Corporate.Switch 652",
+            "destination": "Utility 4.THREE RIVERS..LocalWebServer 652",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.1",
+            "ipAddress": "10.57.326.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS.OT.Switch 651",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.2",
+            "ipAddress": "10.57.326.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..RC 326",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.326.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.97",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..Firewall 326",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.31,
+            "Longitude": -98.573
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.98",
+            "ipAddress": "10.57.326.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..Router 326",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.1",
+            "ipAddress": "10.57.326.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS.OT.Switch 651",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.326.2",
+            "ipAddress": "10.57.326.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "THREE RIVERS",
+            "label": "Utility 4.THREE RIVERS..RC 326",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.326.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

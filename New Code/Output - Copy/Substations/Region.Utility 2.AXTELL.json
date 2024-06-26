@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.AXTELL",
+    "networkLan": "10.55.480.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "AXTELL",
+    "substationNumber": 480,
+    "OTAddress": "10.55.480.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.480.1",
+        "10.55.480.2",
+        "10.55.480.3",
+        "10.55.480.4",
+        "10.55.480.5",
+        "10.55.480.6",
+        "10.55.480.7",
+        "10.55.480.8",
+        "10.55.480.9",
+        "10.55.480.10",
+        "10.55.480.11",
+        "10.55.480.12",
+        "10.55.480.13",
+        "10.55.480.14",
+        "10.55.480.15",
+        "10.55.480.16",
+        "10.55.480.17",
+        "10.55.480.18",
+        "10.55.480.19",
+        "10.55.480.20",
+        "10.55.480.21",
+        "10.55.480.22",
+        "10.55.480.23",
+        "10.55.480.24",
+        "10.55.480.25",
+        "10.55.480.26",
+        "10.55.480.27",
+        "10.55.480.28",
+        "10.55.480.29",
+        "10.55.480.30",
+        "10.55.480.31",
+        "10.55.480.32",
+        "10.55.480.33",
+        "10.55.480.34",
+        "10.55.480.35",
+        "10.55.480.36",
+        "10.55.480.37",
+        "10.55.480.38",
+        "10.55.480.39",
+        "10.55.480.40",
+        "10.55.480.41",
+        "10.55.480.42",
+        "10.55.480.43",
+        "10.55.480.44",
+        "10.55.480.45",
+        "10.55.480.46",
+        "10.55.480.47",
+        "10.55.480.48",
+        "10.55.480.49",
+        "10.55.480.50",
+        "10.55.480.51",
+        "10.55.480.52",
+        "10.55.480.53",
+        "10.55.480.54",
+        "10.55.480.55",
+        "10.55.480.56",
+        "10.55.480.57",
+        "10.55.480.58",
+        "10.55.480.59",
+        "10.55.480.60",
+        "10.55.480.61",
+        "10.55.480.62"
+    ],
+    "routeAddress": "10.55.480.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.480.65",
+        "10.55.480.66",
+        "10.55.480.67",
+        "10.55.480.68",
+        "10.55.480.69",
+        "10.55.480.70",
+        "10.55.480.71",
+        "10.55.480.72",
+        "10.55.480.73",
+        "10.55.480.74",
+        "10.55.480.75",
+        "10.55.480.76",
+        "10.55.480.77",
+        "10.55.480.78",
+        "10.55.480.79",
+        "10.55.480.80",
+        "10.55.480.81",
+        "10.55.480.82",
+        "10.55.480.83",
+        "10.55.480.84",
+        "10.55.480.85",
+        "10.55.480.86",
+        "10.55.480.87",
+        "10.55.480.88",
+        "10.55.480.89",
+        "10.55.480.90",
+        "10.55.480.91",
+        "10.55.480.92",
+        "10.55.480.93",
+        "10.55.480.94"
+    ],
+    "corporateAddress": "10.55.480.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.480.97",
+        "10.55.480.98",
+        "10.55.480.99",
+        "10.55.480.100",
+        "10.55.480.101",
+        "10.55.480.102",
+        "10.55.480.103",
+        "10.55.480.104",
+        "10.55.480.105",
+        "10.55.480.106",
+        "10.55.480.107",
+        "10.55.480.108",
+        "10.55.480.109",
+        "10.55.480.110",
+        "10.55.480.111",
+        "10.55.480.112",
+        "10.55.480.113",
+        "10.55.480.114",
+        "10.55.480.115",
+        "10.55.480.116",
+        "10.55.480.117",
+        "10.55.480.118",
+        "10.55.480.119",
+        "10.55.480.120",
+        "10.55.480.121",
+        "10.55.480.122",
+        "10.55.480.123",
+        "10.55.480.124",
+        "10.55.480.125"
+    ],
+    "latitude": 31.661,
+    "longitude": -96.955,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.97",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..Firewall 480",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.661,
+            "Longitude": -96.955
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.98",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..Router 480",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.1",
+            "ipAddress": "10.55.480.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL.OT.Switch 959",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.99",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL.Corporate.Switch 960",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.3",
+            "ipAddress": "10.55.480.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.2",
+            "ipAddress": "10.55.480.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..RC 480",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.480.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.100",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..Host 959",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.100",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..Host 960",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.100",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..LocalDatabase 959",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.100",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..LocalWebServer 960",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.101",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..hmi 959",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.100",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..outstation 960",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.AXTELL..RC 480",
+            "destination": "Utility 2.AXTELL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.AXTELL..Router 480",
+            "destination": "Utility 2.AXTELL..Firewall 480",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.AXTELL..Firewall 480",
+            "destination": "Utility 2.AXTELL.OT.Switch 959",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.AXTELL.OT.Switch 959",
+            "destination": "Utility 2.AXTELL..RC 480",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.AXTELL..Firewall 480",
+            "destination": "Utility 2.AXTELL.Corporate.Switch 960",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.AXTELL.Corporate.Switch 960",
+            "destination": "Utility 2.AXTELL..Host 959",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.AXTELL.Corporate.Switch 960",
+            "destination": "Utility 2.AXTELL..Host 960",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.AXTELL.Corporate.Switch 960",
+            "destination": "Utility 2.AXTELL..LocalDatabase 959",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.AXTELL.Corporate.Switch 960",
+            "destination": "Utility 2.AXTELL..LocalWebServer 960",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.1",
+            "ipAddress": "10.55.480.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL.OT.Switch 959",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.2",
+            "ipAddress": "10.55.480.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..RC 480",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.480.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.97",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..Firewall 480",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.661,
+            "Longitude": -96.955
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.98",
+            "ipAddress": "10.55.480.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..Router 480",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.1",
+            "ipAddress": "10.55.480.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL.OT.Switch 959",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.480.2",
+            "ipAddress": "10.55.480.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AXTELL",
+            "label": "Utility 2.AXTELL..RC 480",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.480.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

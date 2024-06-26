@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.HOUSTON 18",
+    "networkLan": "10.58.969.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 58,
+    "substation": "HOUSTON 18",
+    "substationNumber": 969,
+    "OTAddress": "10.58.969.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.58.969.1",
+        "10.58.969.2",
+        "10.58.969.3",
+        "10.58.969.4",
+        "10.58.969.5",
+        "10.58.969.6",
+        "10.58.969.7",
+        "10.58.969.8",
+        "10.58.969.9",
+        "10.58.969.10",
+        "10.58.969.11",
+        "10.58.969.12",
+        "10.58.969.13",
+        "10.58.969.14",
+        "10.58.969.15",
+        "10.58.969.16",
+        "10.58.969.17",
+        "10.58.969.18",
+        "10.58.969.19",
+        "10.58.969.20",
+        "10.58.969.21",
+        "10.58.969.22",
+        "10.58.969.23",
+        "10.58.969.24",
+        "10.58.969.25",
+        "10.58.969.26",
+        "10.58.969.27",
+        "10.58.969.28",
+        "10.58.969.29",
+        "10.58.969.30",
+        "10.58.969.31",
+        "10.58.969.32",
+        "10.58.969.33",
+        "10.58.969.34",
+        "10.58.969.35",
+        "10.58.969.36",
+        "10.58.969.37",
+        "10.58.969.38",
+        "10.58.969.39",
+        "10.58.969.40",
+        "10.58.969.41",
+        "10.58.969.42",
+        "10.58.969.43",
+        "10.58.969.44",
+        "10.58.969.45",
+        "10.58.969.46",
+        "10.58.969.47",
+        "10.58.969.48",
+        "10.58.969.49",
+        "10.58.969.50",
+        "10.58.969.51",
+        "10.58.969.52",
+        "10.58.969.53",
+        "10.58.969.54",
+        "10.58.969.55",
+        "10.58.969.56",
+        "10.58.969.57",
+        "10.58.969.58",
+        "10.58.969.59",
+        "10.58.969.60",
+        "10.58.969.61",
+        "10.58.969.62"
+    ],
+    "routeAddress": "10.58.969.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.58.969.65",
+        "10.58.969.66",
+        "10.58.969.67",
+        "10.58.969.68",
+        "10.58.969.69",
+        "10.58.969.70",
+        "10.58.969.71",
+        "10.58.969.72",
+        "10.58.969.73",
+        "10.58.969.74",
+        "10.58.969.75",
+        "10.58.969.76",
+        "10.58.969.77",
+        "10.58.969.78",
+        "10.58.969.79",
+        "10.58.969.80",
+        "10.58.969.81",
+        "10.58.969.82",
+        "10.58.969.83",
+        "10.58.969.84",
+        "10.58.969.85",
+        "10.58.969.86",
+        "10.58.969.87",
+        "10.58.969.88",
+        "10.58.969.89",
+        "10.58.969.90",
+        "10.58.969.91",
+        "10.58.969.92",
+        "10.58.969.93",
+        "10.58.969.94"
+    ],
+    "corporateAddress": "10.58.969.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.58.969.97",
+        "10.58.969.98",
+        "10.58.969.99",
+        "10.58.969.100",
+        "10.58.969.101",
+        "10.58.969.102",
+        "10.58.969.103",
+        "10.58.969.104",
+        "10.58.969.105",
+        "10.58.969.106",
+        "10.58.969.107",
+        "10.58.969.108",
+        "10.58.969.109",
+        "10.58.969.110",
+        "10.58.969.111",
+        "10.58.969.112",
+        "10.58.969.113",
+        "10.58.969.114",
+        "10.58.969.115",
+        "10.58.969.116",
+        "10.58.969.117",
+        "10.58.969.118",
+        "10.58.969.119",
+        "10.58.969.120",
+        "10.58.969.121",
+        "10.58.969.122",
+        "10.58.969.123",
+        "10.58.969.124",
+        "10.58.969.125"
+    ],
+    "latitude": 29.719,
+    "longitude": -95.274,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.97",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..Firewall 969",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.719,
+            "Longitude": -95.274
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.98",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..Router 969",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.1",
+            "ipAddress": "10.58.969.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18.OT.Switch 1937",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.99",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18.Corporate.Switch 1938",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.3",
+            "ipAddress": "10.58.969.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.2",
+            "ipAddress": "10.58.969.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..RC 969",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.969.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.100",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..Host 1937",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.100",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..Host 1938",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.100",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..LocalDatabase 1937",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.100",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..LocalWebServer 1938",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.101",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..hmi 1937",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.100",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..outstation 1938",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.HOUSTON 18..RC 969",
+            "destination": "Utility 1.HOUSTON 18..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HOUSTON 18..Router 969",
+            "destination": "Utility 1.HOUSTON 18..Firewall 969",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HOUSTON 18..Firewall 969",
+            "destination": "Utility 1.HOUSTON 18.OT.Switch 1937",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HOUSTON 18.OT.Switch 1937",
+            "destination": "Utility 1.HOUSTON 18..RC 969",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HOUSTON 18..Firewall 969",
+            "destination": "Utility 1.HOUSTON 18.Corporate.Switch 1938",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HOUSTON 18.Corporate.Switch 1938",
+            "destination": "Utility 1.HOUSTON 18..Host 1937",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HOUSTON 18.Corporate.Switch 1938",
+            "destination": "Utility 1.HOUSTON 18..Host 1938",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HOUSTON 18.Corporate.Switch 1938",
+            "destination": "Utility 1.HOUSTON 18..LocalDatabase 1937",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HOUSTON 18.Corporate.Switch 1938",
+            "destination": "Utility 1.HOUSTON 18..LocalWebServer 1938",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.1",
+            "ipAddress": "10.58.969.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18.OT.Switch 1937",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.2",
+            "ipAddress": "10.58.969.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..RC 969",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.969.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.97",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..Firewall 969",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.719,
+            "Longitude": -95.274
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.98",
+            "ipAddress": "10.58.969.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..Router 969",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.1",
+            "ipAddress": "10.58.969.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18.OT.Switch 1937",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.969.2",
+            "ipAddress": "10.58.969.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 18",
+            "label": "Utility 1.HOUSTON 18..RC 969",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.969.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

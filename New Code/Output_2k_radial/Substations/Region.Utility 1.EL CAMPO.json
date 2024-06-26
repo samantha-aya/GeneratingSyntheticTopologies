@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 1.EL CAMPO",
+    "networkLan": "10.58.950.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 58,
+    "substation": "EL CAMPO",
+    "substationNumber": 950,
+    "OTAddress": "10.58.950.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.58.950.1",
+        "10.58.950.2",
+        "10.58.950.3",
+        "10.58.950.4",
+        "10.58.950.5",
+        "10.58.950.6",
+        "10.58.950.7",
+        "10.58.950.8",
+        "10.58.950.9",
+        "10.58.950.10",
+        "10.58.950.11",
+        "10.58.950.12",
+        "10.58.950.13",
+        "10.58.950.14",
+        "10.58.950.15",
+        "10.58.950.16",
+        "10.58.950.17",
+        "10.58.950.18",
+        "10.58.950.19",
+        "10.58.950.20",
+        "10.58.950.21",
+        "10.58.950.22",
+        "10.58.950.23",
+        "10.58.950.24",
+        "10.58.950.25",
+        "10.58.950.26",
+        "10.58.950.27",
+        "10.58.950.28",
+        "10.58.950.29",
+        "10.58.950.30",
+        "10.58.950.31",
+        "10.58.950.32",
+        "10.58.950.33",
+        "10.58.950.34",
+        "10.58.950.35",
+        "10.58.950.36",
+        "10.58.950.37",
+        "10.58.950.38",
+        "10.58.950.39",
+        "10.58.950.40",
+        "10.58.950.41",
+        "10.58.950.42",
+        "10.58.950.43",
+        "10.58.950.44",
+        "10.58.950.45",
+        "10.58.950.46",
+        "10.58.950.47",
+        "10.58.950.48",
+        "10.58.950.49",
+        "10.58.950.50",
+        "10.58.950.51",
+        "10.58.950.52",
+        "10.58.950.53",
+        "10.58.950.54",
+        "10.58.950.55",
+        "10.58.950.56",
+        "10.58.950.57",
+        "10.58.950.58",
+        "10.58.950.59",
+        "10.58.950.60",
+        "10.58.950.61",
+        "10.58.950.62"
+    ],
+    "routeAddress": "10.58.950.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.58.950.65",
+        "10.58.950.66",
+        "10.58.950.67",
+        "10.58.950.68",
+        "10.58.950.69",
+        "10.58.950.70",
+        "10.58.950.71",
+        "10.58.950.72",
+        "10.58.950.73",
+        "10.58.950.74",
+        "10.58.950.75",
+        "10.58.950.76",
+        "10.58.950.77",
+        "10.58.950.78",
+        "10.58.950.79",
+        "10.58.950.80",
+        "10.58.950.81",
+        "10.58.950.82",
+        "10.58.950.83",
+        "10.58.950.84",
+        "10.58.950.85",
+        "10.58.950.86",
+        "10.58.950.87",
+        "10.58.950.88",
+        "10.58.950.89",
+        "10.58.950.90",
+        "10.58.950.91",
+        "10.58.950.92",
+        "10.58.950.93",
+        "10.58.950.94"
+    ],
+    "corporateAddress": "10.58.950.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.58.950.97",
+        "10.58.950.98",
+        "10.58.950.99",
+        "10.58.950.100",
+        "10.58.950.101",
+        "10.58.950.102",
+        "10.58.950.103",
+        "10.58.950.104",
+        "10.58.950.105",
+        "10.58.950.106",
+        "10.58.950.107",
+        "10.58.950.108",
+        "10.58.950.109",
+        "10.58.950.110",
+        "10.58.950.111",
+        "10.58.950.112",
+        "10.58.950.113",
+        "10.58.950.114",
+        "10.58.950.115",
+        "10.58.950.116",
+        "10.58.950.117",
+        "10.58.950.118",
+        "10.58.950.119",
+        "10.58.950.120",
+        "10.58.950.121",
+        "10.58.950.122",
+        "10.58.950.123",
+        "10.58.950.124",
+        "10.58.950.125"
+    ],
+    "latitude": 29.212,
+    "longitude": -96.281,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.97",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..Firewall 950",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.212,
+            "Longitude": -96.281
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.98",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..Router 950",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.1",
+            "ipAddress": "10.58.950.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO.OT.Switch 1899",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.99",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO.Corporate.Switch 1900",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.3",
+            "ipAddress": "10.58.950.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.4",
+            "ipAddress": "10.58.950.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.2",
+            "ipAddress": "10.58.950.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..RC 950",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.950.3",
+                "10.58.950.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.100",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..Host 1899",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.100",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..Host 1900",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.100",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..LocalDatabase 1899",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.100",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..LocalWebServer 1900",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.101",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..hmi 1899",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.100",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..outstation 1900",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.EL CAMPO..RC 950",
+            "destination": "Utility 1.EL CAMPO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.EL CAMPO..RC 950",
+            "destination": "Utility 1.EL CAMPO..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.EL CAMPO..Router 950",
+            "destination": "Utility 1.EL CAMPO..Firewall 950",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.EL CAMPO..Firewall 950",
+            "destination": "Utility 1.EL CAMPO.OT.Switch 1899",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.EL CAMPO.OT.Switch 1899",
+            "destination": "Utility 1.EL CAMPO..RC 950",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.EL CAMPO..Firewall 950",
+            "destination": "Utility 1.EL CAMPO.Corporate.Switch 1900",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.EL CAMPO.Corporate.Switch 1900",
+            "destination": "Utility 1.EL CAMPO..Host 1899",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.EL CAMPO.Corporate.Switch 1900",
+            "destination": "Utility 1.EL CAMPO..Host 1900",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.EL CAMPO.Corporate.Switch 1900",
+            "destination": "Utility 1.EL CAMPO..LocalDatabase 1899",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.EL CAMPO.Corporate.Switch 1900",
+            "destination": "Utility 1.EL CAMPO..LocalWebServer 1900",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.1",
+            "ipAddress": "10.58.950.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO.OT.Switch 1899",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.2",
+            "ipAddress": "10.58.950.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..RC 950",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.950.3",
+                "10.58.950.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.97",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..Firewall 950",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.212,
+            "Longitude": -96.281
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.98",
+            "ipAddress": "10.58.950.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..Router 950",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.1",
+            "ipAddress": "10.58.950.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO.OT.Switch 1899",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.950.2",
+            "ipAddress": "10.58.950.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EL CAMPO",
+            "label": "Utility 1.EL CAMPO..RC 950",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.950.3",
+                "10.58.950.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,549 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 1.SAINT MATTHEWS",
+    "networkLan": "10.52.57.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 52,
+    "substation": "SAINT MATTHEWS",
+    "substationNumber": 57,
+    "OTAddress": "10.52.57.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.57.1",
+        "10.52.57.2",
+        "10.52.57.3",
+        "10.52.57.4",
+        "10.52.57.5",
+        "10.52.57.6",
+        "10.52.57.7",
+        "10.52.57.8",
+        "10.52.57.9",
+        "10.52.57.10",
+        "10.52.57.11",
+        "10.52.57.12",
+        "10.52.57.13",
+        "10.52.57.14",
+        "10.52.57.15",
+        "10.52.57.16",
+        "10.52.57.17",
+        "10.52.57.18",
+        "10.52.57.19",
+        "10.52.57.20",
+        "10.52.57.21",
+        "10.52.57.22",
+        "10.52.57.23",
+        "10.52.57.24",
+        "10.52.57.25",
+        "10.52.57.26",
+        "10.52.57.27",
+        "10.52.57.28",
+        "10.52.57.29",
+        "10.52.57.30",
+        "10.52.57.31",
+        "10.52.57.32",
+        "10.52.57.33",
+        "10.52.57.34",
+        "10.52.57.35",
+        "10.52.57.36",
+        "10.52.57.37",
+        "10.52.57.38",
+        "10.52.57.39",
+        "10.52.57.40",
+        "10.52.57.41",
+        "10.52.57.42",
+        "10.52.57.43",
+        "10.52.57.44",
+        "10.52.57.45",
+        "10.52.57.46",
+        "10.52.57.47",
+        "10.52.57.48",
+        "10.52.57.49",
+        "10.52.57.50",
+        "10.52.57.51",
+        "10.52.57.52",
+        "10.52.57.53",
+        "10.52.57.54",
+        "10.52.57.55",
+        "10.52.57.56",
+        "10.52.57.57",
+        "10.52.57.58",
+        "10.52.57.59",
+        "10.52.57.60",
+        "10.52.57.61",
+        "10.52.57.62"
+    ],
+    "routeAddress": "10.52.57.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.57.65",
+        "10.52.57.66",
+        "10.52.57.67",
+        "10.52.57.68",
+        "10.52.57.69",
+        "10.52.57.70",
+        "10.52.57.71",
+        "10.52.57.72",
+        "10.52.57.73",
+        "10.52.57.74",
+        "10.52.57.75",
+        "10.52.57.76",
+        "10.52.57.77",
+        "10.52.57.78",
+        "10.52.57.79",
+        "10.52.57.80",
+        "10.52.57.81",
+        "10.52.57.82",
+        "10.52.57.83",
+        "10.52.57.84",
+        "10.52.57.85",
+        "10.52.57.86",
+        "10.52.57.87",
+        "10.52.57.88",
+        "10.52.57.89",
+        "10.52.57.90",
+        "10.52.57.91",
+        "10.52.57.92",
+        "10.52.57.93",
+        "10.52.57.94"
+    ],
+    "corporateAddress": "10.52.57.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.57.97",
+        "10.52.57.98",
+        "10.52.57.99",
+        "10.52.57.100",
+        "10.52.57.101",
+        "10.52.57.102",
+        "10.52.57.103",
+        "10.52.57.104",
+        "10.52.57.105",
+        "10.52.57.106",
+        "10.52.57.107",
+        "10.52.57.108",
+        "10.52.57.109",
+        "10.52.57.110",
+        "10.52.57.111",
+        "10.52.57.112",
+        "10.52.57.113",
+        "10.52.57.114",
+        "10.52.57.115",
+        "10.52.57.116",
+        "10.52.57.117",
+        "10.52.57.118",
+        "10.52.57.119",
+        "10.52.57.120",
+        "10.52.57.121",
+        "10.52.57.122",
+        "10.52.57.123",
+        "10.52.57.124",
+        "10.52.57.125"
+    ],
+    "latitude": 33.69,
+    "longitude": -80.79,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.97",
+            "ipAddress": "10.52.57.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..Firewall 57",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.69,
+            "Longitude": -80.79
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.98",
+            "ipAddress": "10.52.57.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..Router 57",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.1",
+            "ipAddress": "10.52.57.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS.OT.Switch 113",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.99",
+            "ipAddress": "10.52.57.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS.Corporate.Switch 114",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.3",
+            "ipAddress": "10.52.57.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.4",
+            "ipAddress": "10.52.57.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.2",
+            "ipAddress": "10.52.57.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..RC 57",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.57.3",
+                "10.52.57.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.100",
+            "ipAddress": "10.52.57.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..Host 113",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.100",
+            "ipAddress": "10.52.57.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..Host 114",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.100",
+            "ipAddress": "10.52.57.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..LocalDatabase 113",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.100",
+            "ipAddress": "10.52.57.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..LocalWebServer 114",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.SAINT MATTHEWS..RC 57",
+            "destination": "Utility 1.SAINT MATTHEWS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAINT MATTHEWS..RC 57",
+            "destination": "Utility 1.SAINT MATTHEWS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAINT MATTHEWS..Router 57",
+            "destination": "Utility 1.SAINT MATTHEWS..Firewall 57",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAINT MATTHEWS..Firewall 57",
+            "destination": "Utility 1.SAINT MATTHEWS.OT.Switch 113",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAINT MATTHEWS.OT.Switch 113",
+            "destination": "Utility 1.SAINT MATTHEWS..RC 57",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAINT MATTHEWS..Firewall 57",
+            "destination": "Utility 1.SAINT MATTHEWS.Corporate.Switch 114",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAINT MATTHEWS.Corporate.Switch 114",
+            "destination": "Utility 1.SAINT MATTHEWS..Host 113",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAINT MATTHEWS.Corporate.Switch 114",
+            "destination": "Utility 1.SAINT MATTHEWS..Host 114",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAINT MATTHEWS.Corporate.Switch 114",
+            "destination": "Utility 1.SAINT MATTHEWS..LocalDatabase 113",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAINT MATTHEWS.Corporate.Switch 114",
+            "destination": "Utility 1.SAINT MATTHEWS..LocalWebServer 114",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.1",
+            "ipAddress": "10.52.57.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS.OT.Switch 113",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.2",
+            "ipAddress": "10.52.57.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..RC 57",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.57.3",
+                "10.52.57.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.97",
+            "ipAddress": "10.52.57.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..Firewall 57",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.69,
+            "Longitude": -80.79
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.98",
+            "ipAddress": "10.52.57.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..Router 57",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.1",
+            "ipAddress": "10.52.57.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS.OT.Switch 113",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.57.2",
+            "ipAddress": "10.52.57.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAINT MATTHEWS",
+            "label": "Utility 1.SAINT MATTHEWS..RC 57",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.57.3",
+                "10.52.57.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

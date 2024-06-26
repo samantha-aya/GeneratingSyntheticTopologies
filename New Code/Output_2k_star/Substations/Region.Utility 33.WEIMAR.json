@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 33.WEIMAR",
+    "networkLan": "10.168.898.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 33",
+    "utility_id": 168,
+    "substation": "WEIMAR",
+    "substationNumber": 898,
+    "OTAddress": "10.168.898.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.168.898.1",
+        "10.168.898.2",
+        "10.168.898.3",
+        "10.168.898.4",
+        "10.168.898.5",
+        "10.168.898.6",
+        "10.168.898.7",
+        "10.168.898.8",
+        "10.168.898.9",
+        "10.168.898.10",
+        "10.168.898.11",
+        "10.168.898.12",
+        "10.168.898.13",
+        "10.168.898.14",
+        "10.168.898.15",
+        "10.168.898.16",
+        "10.168.898.17",
+        "10.168.898.18",
+        "10.168.898.19",
+        "10.168.898.20",
+        "10.168.898.21",
+        "10.168.898.22",
+        "10.168.898.23",
+        "10.168.898.24",
+        "10.168.898.25",
+        "10.168.898.26",
+        "10.168.898.27",
+        "10.168.898.28",
+        "10.168.898.29",
+        "10.168.898.30",
+        "10.168.898.31",
+        "10.168.898.32",
+        "10.168.898.33",
+        "10.168.898.34",
+        "10.168.898.35",
+        "10.168.898.36",
+        "10.168.898.37",
+        "10.168.898.38",
+        "10.168.898.39",
+        "10.168.898.40",
+        "10.168.898.41",
+        "10.168.898.42",
+        "10.168.898.43",
+        "10.168.898.44",
+        "10.168.898.45",
+        "10.168.898.46",
+        "10.168.898.47",
+        "10.168.898.48",
+        "10.168.898.49",
+        "10.168.898.50",
+        "10.168.898.51",
+        "10.168.898.52",
+        "10.168.898.53",
+        "10.168.898.54",
+        "10.168.898.55",
+        "10.168.898.56",
+        "10.168.898.57",
+        "10.168.898.58",
+        "10.168.898.59",
+        "10.168.898.60",
+        "10.168.898.61",
+        "10.168.898.62"
+    ],
+    "routeAddress": "10.168.898.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.168.898.65",
+        "10.168.898.66",
+        "10.168.898.67",
+        "10.168.898.68",
+        "10.168.898.69",
+        "10.168.898.70",
+        "10.168.898.71",
+        "10.168.898.72",
+        "10.168.898.73",
+        "10.168.898.74",
+        "10.168.898.75",
+        "10.168.898.76",
+        "10.168.898.77",
+        "10.168.898.78",
+        "10.168.898.79",
+        "10.168.898.80",
+        "10.168.898.81",
+        "10.168.898.82",
+        "10.168.898.83",
+        "10.168.898.84",
+        "10.168.898.85",
+        "10.168.898.86",
+        "10.168.898.87",
+        "10.168.898.88",
+        "10.168.898.89",
+        "10.168.898.90",
+        "10.168.898.91",
+        "10.168.898.92",
+        "10.168.898.93",
+        "10.168.898.94"
+    ],
+    "corporateAddress": "10.168.898.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.168.898.97",
+        "10.168.898.98",
+        "10.168.898.99",
+        "10.168.898.100",
+        "10.168.898.101",
+        "10.168.898.102",
+        "10.168.898.103",
+        "10.168.898.104",
+        "10.168.898.105",
+        "10.168.898.106",
+        "10.168.898.107",
+        "10.168.898.108",
+        "10.168.898.109",
+        "10.168.898.110",
+        "10.168.898.111",
+        "10.168.898.112",
+        "10.168.898.113",
+        "10.168.898.114",
+        "10.168.898.115",
+        "10.168.898.116",
+        "10.168.898.117",
+        "10.168.898.118",
+        "10.168.898.119",
+        "10.168.898.120",
+        "10.168.898.121",
+        "10.168.898.122",
+        "10.168.898.123",
+        "10.168.898.124",
+        "10.168.898.125"
+    ],
+    "latitude": 29.489,
+    "longitude": -96.652,
+    "nodes": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.97",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..Firewall 898",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.489,
+            "Longitude": -96.652
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.98",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..Router 898",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.1",
+            "ipAddress": "10.168.898.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR.OT.Switch 1795",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.99",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR.Corporate.Switch 1796",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.3",
+            "ipAddress": "10.168.898.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.2",
+            "ipAddress": "10.168.898.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..RC 898",
+            "compromised": false,
+            "relayIPlist": [
+                "10.168.898.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.100",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..Host 1795",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.100",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..Host 1796",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.100",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..LocalDatabase 1795",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.100",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..LocalWebServer 1796",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.101",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..hmi 1795",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.100",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..outstation 1796",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 33.WEIMAR..RC 898",
+            "destination": "Utility 33.WEIMAR..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.WEIMAR..Router 898",
+            "destination": "Utility 33.WEIMAR..Firewall 898",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.WEIMAR..Firewall 898",
+            "destination": "Utility 33.WEIMAR.OT.Switch 1795",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.WEIMAR.OT.Switch 1795",
+            "destination": "Utility 33.WEIMAR..RC 898",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.WEIMAR..Firewall 898",
+            "destination": "Utility 33.WEIMAR.Corporate.Switch 1796",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.WEIMAR.Corporate.Switch 1796",
+            "destination": "Utility 33.WEIMAR..Host 1795",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.WEIMAR.Corporate.Switch 1796",
+            "destination": "Utility 33.WEIMAR..Host 1796",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.WEIMAR.Corporate.Switch 1796",
+            "destination": "Utility 33.WEIMAR..LocalDatabase 1795",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.WEIMAR.Corporate.Switch 1796",
+            "destination": "Utility 33.WEIMAR..LocalWebServer 1796",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.1",
+            "ipAddress": "10.168.898.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR.OT.Switch 1795",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.2",
+            "ipAddress": "10.168.898.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..RC 898",
+            "compromised": false,
+            "relayIPlist": [
+                "10.168.898.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.97",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..Firewall 898",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.489,
+            "Longitude": -96.652
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.98",
+            "ipAddress": "10.168.898.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..Router 898",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.1",
+            "ipAddress": "10.168.898.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR.OT.Switch 1795",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.898.2",
+            "ipAddress": "10.168.898.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WEIMAR",
+            "label": "Utility 33.WEIMAR..RC 898",
+            "compromised": false,
+            "relayIPlist": [
+                "10.168.898.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

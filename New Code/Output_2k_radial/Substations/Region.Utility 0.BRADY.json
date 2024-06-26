@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.BRADY",
+    "networkLan": "10.52.182.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "BRADY",
+    "substationNumber": 182,
+    "OTAddress": "10.52.182.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.182.1",
+        "10.52.182.2",
+        "10.52.182.3",
+        "10.52.182.4",
+        "10.52.182.5",
+        "10.52.182.6",
+        "10.52.182.7",
+        "10.52.182.8",
+        "10.52.182.9",
+        "10.52.182.10",
+        "10.52.182.11",
+        "10.52.182.12",
+        "10.52.182.13",
+        "10.52.182.14",
+        "10.52.182.15",
+        "10.52.182.16",
+        "10.52.182.17",
+        "10.52.182.18",
+        "10.52.182.19",
+        "10.52.182.20",
+        "10.52.182.21",
+        "10.52.182.22",
+        "10.52.182.23",
+        "10.52.182.24",
+        "10.52.182.25",
+        "10.52.182.26",
+        "10.52.182.27",
+        "10.52.182.28",
+        "10.52.182.29",
+        "10.52.182.30",
+        "10.52.182.31",
+        "10.52.182.32",
+        "10.52.182.33",
+        "10.52.182.34",
+        "10.52.182.35",
+        "10.52.182.36",
+        "10.52.182.37",
+        "10.52.182.38",
+        "10.52.182.39",
+        "10.52.182.40",
+        "10.52.182.41",
+        "10.52.182.42",
+        "10.52.182.43",
+        "10.52.182.44",
+        "10.52.182.45",
+        "10.52.182.46",
+        "10.52.182.47",
+        "10.52.182.48",
+        "10.52.182.49",
+        "10.52.182.50",
+        "10.52.182.51",
+        "10.52.182.52",
+        "10.52.182.53",
+        "10.52.182.54",
+        "10.52.182.55",
+        "10.52.182.56",
+        "10.52.182.57",
+        "10.52.182.58",
+        "10.52.182.59",
+        "10.52.182.60",
+        "10.52.182.61",
+        "10.52.182.62"
+    ],
+    "routeAddress": "10.52.182.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.182.65",
+        "10.52.182.66",
+        "10.52.182.67",
+        "10.52.182.68",
+        "10.52.182.69",
+        "10.52.182.70",
+        "10.52.182.71",
+        "10.52.182.72",
+        "10.52.182.73",
+        "10.52.182.74",
+        "10.52.182.75",
+        "10.52.182.76",
+        "10.52.182.77",
+        "10.52.182.78",
+        "10.52.182.79",
+        "10.52.182.80",
+        "10.52.182.81",
+        "10.52.182.82",
+        "10.52.182.83",
+        "10.52.182.84",
+        "10.52.182.85",
+        "10.52.182.86",
+        "10.52.182.87",
+        "10.52.182.88",
+        "10.52.182.89",
+        "10.52.182.90",
+        "10.52.182.91",
+        "10.52.182.92",
+        "10.52.182.93",
+        "10.52.182.94"
+    ],
+    "corporateAddress": "10.52.182.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.182.97",
+        "10.52.182.98",
+        "10.52.182.99",
+        "10.52.182.100",
+        "10.52.182.101",
+        "10.52.182.102",
+        "10.52.182.103",
+        "10.52.182.104",
+        "10.52.182.105",
+        "10.52.182.106",
+        "10.52.182.107",
+        "10.52.182.108",
+        "10.52.182.109",
+        "10.52.182.110",
+        "10.52.182.111",
+        "10.52.182.112",
+        "10.52.182.113",
+        "10.52.182.114",
+        "10.52.182.115",
+        "10.52.182.116",
+        "10.52.182.117",
+        "10.52.182.118",
+        "10.52.182.119",
+        "10.52.182.120",
+        "10.52.182.121",
+        "10.52.182.122",
+        "10.52.182.123",
+        "10.52.182.124",
+        "10.52.182.125"
+    ],
+    "latitude": 31.177,
+    "longitude": -99.616,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.97",
+            "ipAddress": "10.52.182.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..Firewall 182",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.177,
+            "Longitude": -99.616
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.98",
+            "ipAddress": "10.52.182.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..Router 182",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.1",
+            "ipAddress": "10.52.182.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY.OT.Switch 363",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.99",
+            "ipAddress": "10.52.182.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY.Corporate.Switch 364",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.3",
+            "ipAddress": "10.52.182.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.2",
+            "ipAddress": "10.52.182.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..RC 182",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.182.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.100",
+            "ipAddress": "10.52.182.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..Host 363",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.100",
+            "ipAddress": "10.52.182.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..Host 364",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.100",
+            "ipAddress": "10.52.182.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..LocalDatabase 363",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.100",
+            "ipAddress": "10.52.182.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..LocalWebServer 364",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.BRADY..RC 182",
+            "destination": "Utility 0.BRADY..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRADY..Router 182",
+            "destination": "Utility 0.BRADY..Firewall 182",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRADY..Firewall 182",
+            "destination": "Utility 0.BRADY.OT.Switch 363",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRADY.OT.Switch 363",
+            "destination": "Utility 0.BRADY..RC 182",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRADY..Firewall 182",
+            "destination": "Utility 0.BRADY.Corporate.Switch 364",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRADY.Corporate.Switch 364",
+            "destination": "Utility 0.BRADY..Host 363",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRADY.Corporate.Switch 364",
+            "destination": "Utility 0.BRADY..Host 364",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRADY.Corporate.Switch 364",
+            "destination": "Utility 0.BRADY..LocalDatabase 363",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRADY.Corporate.Switch 364",
+            "destination": "Utility 0.BRADY..LocalWebServer 364",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.1",
+            "ipAddress": "10.52.182.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY.OT.Switch 363",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.2",
+            "ipAddress": "10.52.182.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..RC 182",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.182.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.97",
+            "ipAddress": "10.52.182.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..Firewall 182",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.177,
+            "Longitude": -99.616
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.98",
+            "ipAddress": "10.52.182.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..Router 182",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.1",
+            "ipAddress": "10.52.182.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY.OT.Switch 363",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.182.2",
+            "ipAddress": "10.52.182.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRADY",
+            "label": "Utility 0.BRADY..RC 182",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.182.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.MINGUS",
+    "networkLan": "10.55.702.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "MINGUS",
+    "substationNumber": 702,
+    "OTAddress": "10.55.702.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.702.1",
+        "10.55.702.2",
+        "10.55.702.3",
+        "10.55.702.4",
+        "10.55.702.5",
+        "10.55.702.6",
+        "10.55.702.7",
+        "10.55.702.8",
+        "10.55.702.9",
+        "10.55.702.10",
+        "10.55.702.11",
+        "10.55.702.12",
+        "10.55.702.13",
+        "10.55.702.14",
+        "10.55.702.15",
+        "10.55.702.16",
+        "10.55.702.17",
+        "10.55.702.18",
+        "10.55.702.19",
+        "10.55.702.20",
+        "10.55.702.21",
+        "10.55.702.22",
+        "10.55.702.23",
+        "10.55.702.24",
+        "10.55.702.25",
+        "10.55.702.26",
+        "10.55.702.27",
+        "10.55.702.28",
+        "10.55.702.29",
+        "10.55.702.30",
+        "10.55.702.31",
+        "10.55.702.32",
+        "10.55.702.33",
+        "10.55.702.34",
+        "10.55.702.35",
+        "10.55.702.36",
+        "10.55.702.37",
+        "10.55.702.38",
+        "10.55.702.39",
+        "10.55.702.40",
+        "10.55.702.41",
+        "10.55.702.42",
+        "10.55.702.43",
+        "10.55.702.44",
+        "10.55.702.45",
+        "10.55.702.46",
+        "10.55.702.47",
+        "10.55.702.48",
+        "10.55.702.49",
+        "10.55.702.50",
+        "10.55.702.51",
+        "10.55.702.52",
+        "10.55.702.53",
+        "10.55.702.54",
+        "10.55.702.55",
+        "10.55.702.56",
+        "10.55.702.57",
+        "10.55.702.58",
+        "10.55.702.59",
+        "10.55.702.60",
+        "10.55.702.61",
+        "10.55.702.62"
+    ],
+    "routeAddress": "10.55.702.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.702.65",
+        "10.55.702.66",
+        "10.55.702.67",
+        "10.55.702.68",
+        "10.55.702.69",
+        "10.55.702.70",
+        "10.55.702.71",
+        "10.55.702.72",
+        "10.55.702.73",
+        "10.55.702.74",
+        "10.55.702.75",
+        "10.55.702.76",
+        "10.55.702.77",
+        "10.55.702.78",
+        "10.55.702.79",
+        "10.55.702.80",
+        "10.55.702.81",
+        "10.55.702.82",
+        "10.55.702.83",
+        "10.55.702.84",
+        "10.55.702.85",
+        "10.55.702.86",
+        "10.55.702.87",
+        "10.55.702.88",
+        "10.55.702.89",
+        "10.55.702.90",
+        "10.55.702.91",
+        "10.55.702.92",
+        "10.55.702.93",
+        "10.55.702.94"
+    ],
+    "corporateAddress": "10.55.702.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.702.97",
+        "10.55.702.98",
+        "10.55.702.99",
+        "10.55.702.100",
+        "10.55.702.101",
+        "10.55.702.102",
+        "10.55.702.103",
+        "10.55.702.104",
+        "10.55.702.105",
+        "10.55.702.106",
+        "10.55.702.107",
+        "10.55.702.108",
+        "10.55.702.109",
+        "10.55.702.110",
+        "10.55.702.111",
+        "10.55.702.112",
+        "10.55.702.113",
+        "10.55.702.114",
+        "10.55.702.115",
+        "10.55.702.116",
+        "10.55.702.117",
+        "10.55.702.118",
+        "10.55.702.119",
+        "10.55.702.120",
+        "10.55.702.121",
+        "10.55.702.122",
+        "10.55.702.123",
+        "10.55.702.124",
+        "10.55.702.125"
+    ],
+    "latitude": 32.455,
+    "longitude": -98.418,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.97",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..Firewall 702",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.455,
+            "Longitude": -98.418
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.98",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..Router 702",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.1",
+            "ipAddress": "10.55.702.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS.OT.Switch 1403",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.99",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS.Corporate.Switch 1404",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.3",
+            "ipAddress": "10.55.702.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.2",
+            "ipAddress": "10.55.702.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..RC 702",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.702.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.100",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..Host 1403",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.100",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..Host 1404",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.100",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..LocalDatabase 1403",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.100",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..LocalWebServer 1404",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.101",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..hmi 1403",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.100",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..outstation 1404",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.MINGUS..RC 702",
+            "destination": "Utility 2.MINGUS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MINGUS..Router 702",
+            "destination": "Utility 2.MINGUS..Firewall 702",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MINGUS..Firewall 702",
+            "destination": "Utility 2.MINGUS.OT.Switch 1403",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MINGUS.OT.Switch 1403",
+            "destination": "Utility 2.MINGUS..RC 702",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MINGUS..Firewall 702",
+            "destination": "Utility 2.MINGUS.Corporate.Switch 1404",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MINGUS.Corporate.Switch 1404",
+            "destination": "Utility 2.MINGUS..Host 1403",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MINGUS.Corporate.Switch 1404",
+            "destination": "Utility 2.MINGUS..Host 1404",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MINGUS.Corporate.Switch 1404",
+            "destination": "Utility 2.MINGUS..LocalDatabase 1403",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.MINGUS.Corporate.Switch 1404",
+            "destination": "Utility 2.MINGUS..LocalWebServer 1404",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.1",
+            "ipAddress": "10.55.702.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS.OT.Switch 1403",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.2",
+            "ipAddress": "10.55.702.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..RC 702",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.702.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.97",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..Firewall 702",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.455,
+            "Longitude": -98.418
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.98",
+            "ipAddress": "10.55.702.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..Router 702",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.1",
+            "ipAddress": "10.55.702.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS.OT.Switch 1403",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.702.2",
+            "ipAddress": "10.55.702.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MINGUS",
+            "label": "Utility 2.MINGUS..RC 702",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.702.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,523 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 3.SPARTANBURG 1",
+    "networkLan": "10.53.205.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 53,
+    "substation": "SPARTANBURG 1",
+    "substationNumber": 205,
+    "OTAddress": "10.53.205.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.205.1",
+        "10.53.205.2",
+        "10.53.205.3",
+        "10.53.205.4",
+        "10.53.205.5",
+        "10.53.205.6",
+        "10.53.205.7",
+        "10.53.205.8",
+        "10.53.205.9",
+        "10.53.205.10",
+        "10.53.205.11",
+        "10.53.205.12",
+        "10.53.205.13",
+        "10.53.205.14",
+        "10.53.205.15",
+        "10.53.205.16",
+        "10.53.205.17",
+        "10.53.205.18",
+        "10.53.205.19",
+        "10.53.205.20",
+        "10.53.205.21",
+        "10.53.205.22",
+        "10.53.205.23",
+        "10.53.205.24",
+        "10.53.205.25",
+        "10.53.205.26",
+        "10.53.205.27",
+        "10.53.205.28",
+        "10.53.205.29",
+        "10.53.205.30",
+        "10.53.205.31",
+        "10.53.205.32",
+        "10.53.205.33",
+        "10.53.205.34",
+        "10.53.205.35",
+        "10.53.205.36",
+        "10.53.205.37",
+        "10.53.205.38",
+        "10.53.205.39",
+        "10.53.205.40",
+        "10.53.205.41",
+        "10.53.205.42",
+        "10.53.205.43",
+        "10.53.205.44",
+        "10.53.205.45",
+        "10.53.205.46",
+        "10.53.205.47",
+        "10.53.205.48",
+        "10.53.205.49",
+        "10.53.205.50",
+        "10.53.205.51",
+        "10.53.205.52",
+        "10.53.205.53",
+        "10.53.205.54",
+        "10.53.205.55",
+        "10.53.205.56",
+        "10.53.205.57",
+        "10.53.205.58",
+        "10.53.205.59",
+        "10.53.205.60",
+        "10.53.205.61",
+        "10.53.205.62"
+    ],
+    "routeAddress": "10.53.205.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.205.65",
+        "10.53.205.66",
+        "10.53.205.67",
+        "10.53.205.68",
+        "10.53.205.69",
+        "10.53.205.70",
+        "10.53.205.71",
+        "10.53.205.72",
+        "10.53.205.73",
+        "10.53.205.74",
+        "10.53.205.75",
+        "10.53.205.76",
+        "10.53.205.77",
+        "10.53.205.78",
+        "10.53.205.79",
+        "10.53.205.80",
+        "10.53.205.81",
+        "10.53.205.82",
+        "10.53.205.83",
+        "10.53.205.84",
+        "10.53.205.85",
+        "10.53.205.86",
+        "10.53.205.87",
+        "10.53.205.88",
+        "10.53.205.89",
+        "10.53.205.90",
+        "10.53.205.91",
+        "10.53.205.92",
+        "10.53.205.93",
+        "10.53.205.94"
+    ],
+    "corporateAddress": "10.53.205.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.205.97",
+        "10.53.205.98",
+        "10.53.205.99",
+        "10.53.205.100",
+        "10.53.205.101",
+        "10.53.205.102",
+        "10.53.205.103",
+        "10.53.205.104",
+        "10.53.205.105",
+        "10.53.205.106",
+        "10.53.205.107",
+        "10.53.205.108",
+        "10.53.205.109",
+        "10.53.205.110",
+        "10.53.205.111",
+        "10.53.205.112",
+        "10.53.205.113",
+        "10.53.205.114",
+        "10.53.205.115",
+        "10.53.205.116",
+        "10.53.205.117",
+        "10.53.205.118",
+        "10.53.205.119",
+        "10.53.205.120",
+        "10.53.205.121",
+        "10.53.205.122",
+        "10.53.205.123",
+        "10.53.205.124",
+        "10.53.205.125"
+    ],
+    "latitude": 35.0,
+    "longitude": -81.96,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.97",
+            "ipAddress": "10.53.205.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..Firewall 205",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 35.0,
+            "Longitude": -81.96
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.98",
+            "ipAddress": "10.53.205.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..Router 205",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.1",
+            "ipAddress": "10.53.205.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1.OT.Switch 409",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.99",
+            "ipAddress": "10.53.205.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1.Corporate.Switch 410",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.3",
+            "ipAddress": "10.53.205.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.2",
+            "ipAddress": "10.53.205.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..RC 205",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.205.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.100",
+            "ipAddress": "10.53.205.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..Host 409",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.100",
+            "ipAddress": "10.53.205.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..Host 410",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.100",
+            "ipAddress": "10.53.205.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..LocalDatabase 409",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.100",
+            "ipAddress": "10.53.205.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..LocalWebServer 410",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.SPARTANBURG 1..RC 205",
+            "destination": "Utility 3.SPARTANBURG 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.SPARTANBURG 1..Router 205",
+            "destination": "Utility 3.SPARTANBURG 1..Firewall 205",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.SPARTANBURG 1..Firewall 205",
+            "destination": "Utility 3.SPARTANBURG 1.OT.Switch 409",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.SPARTANBURG 1.OT.Switch 409",
+            "destination": "Utility 3.SPARTANBURG 1..RC 205",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.SPARTANBURG 1..Firewall 205",
+            "destination": "Utility 3.SPARTANBURG 1.Corporate.Switch 410",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.SPARTANBURG 1.Corporate.Switch 410",
+            "destination": "Utility 3.SPARTANBURG 1..Host 409",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.SPARTANBURG 1.Corporate.Switch 410",
+            "destination": "Utility 3.SPARTANBURG 1..Host 410",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.SPARTANBURG 1.Corporate.Switch 410",
+            "destination": "Utility 3.SPARTANBURG 1..LocalDatabase 409",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.SPARTANBURG 1.Corporate.Switch 410",
+            "destination": "Utility 3.SPARTANBURG 1..LocalWebServer 410",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.1",
+            "ipAddress": "10.53.205.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1.OT.Switch 409",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.2",
+            "ipAddress": "10.53.205.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..RC 205",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.205.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.97",
+            "ipAddress": "10.53.205.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..Firewall 205",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 35.0,
+            "Longitude": -81.96
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.98",
+            "ipAddress": "10.53.205.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..Router 205",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.1",
+            "ipAddress": "10.53.205.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1.OT.Switch 409",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.205.2",
+            "ipAddress": "10.53.205.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SPARTANBURG 1",
+            "label": "Utility 3.SPARTANBURG 1..RC 205",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.205.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

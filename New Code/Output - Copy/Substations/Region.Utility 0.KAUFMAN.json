@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.KAUFMAN",
+    "networkLan": "10.52.436.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "KAUFMAN",
+    "substationNumber": 436,
+    "OTAddress": "10.52.436.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.436.1",
+        "10.52.436.2",
+        "10.52.436.3",
+        "10.52.436.4",
+        "10.52.436.5",
+        "10.52.436.6",
+        "10.52.436.7",
+        "10.52.436.8",
+        "10.52.436.9",
+        "10.52.436.10",
+        "10.52.436.11",
+        "10.52.436.12",
+        "10.52.436.13",
+        "10.52.436.14",
+        "10.52.436.15",
+        "10.52.436.16",
+        "10.52.436.17",
+        "10.52.436.18",
+        "10.52.436.19",
+        "10.52.436.20",
+        "10.52.436.21",
+        "10.52.436.22",
+        "10.52.436.23",
+        "10.52.436.24",
+        "10.52.436.25",
+        "10.52.436.26",
+        "10.52.436.27",
+        "10.52.436.28",
+        "10.52.436.29",
+        "10.52.436.30",
+        "10.52.436.31",
+        "10.52.436.32",
+        "10.52.436.33",
+        "10.52.436.34",
+        "10.52.436.35",
+        "10.52.436.36",
+        "10.52.436.37",
+        "10.52.436.38",
+        "10.52.436.39",
+        "10.52.436.40",
+        "10.52.436.41",
+        "10.52.436.42",
+        "10.52.436.43",
+        "10.52.436.44",
+        "10.52.436.45",
+        "10.52.436.46",
+        "10.52.436.47",
+        "10.52.436.48",
+        "10.52.436.49",
+        "10.52.436.50",
+        "10.52.436.51",
+        "10.52.436.52",
+        "10.52.436.53",
+        "10.52.436.54",
+        "10.52.436.55",
+        "10.52.436.56",
+        "10.52.436.57",
+        "10.52.436.58",
+        "10.52.436.59",
+        "10.52.436.60",
+        "10.52.436.61",
+        "10.52.436.62"
+    ],
+    "routeAddress": "10.52.436.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.436.65",
+        "10.52.436.66",
+        "10.52.436.67",
+        "10.52.436.68",
+        "10.52.436.69",
+        "10.52.436.70",
+        "10.52.436.71",
+        "10.52.436.72",
+        "10.52.436.73",
+        "10.52.436.74",
+        "10.52.436.75",
+        "10.52.436.76",
+        "10.52.436.77",
+        "10.52.436.78",
+        "10.52.436.79",
+        "10.52.436.80",
+        "10.52.436.81",
+        "10.52.436.82",
+        "10.52.436.83",
+        "10.52.436.84",
+        "10.52.436.85",
+        "10.52.436.86",
+        "10.52.436.87",
+        "10.52.436.88",
+        "10.52.436.89",
+        "10.52.436.90",
+        "10.52.436.91",
+        "10.52.436.92",
+        "10.52.436.93",
+        "10.52.436.94"
+    ],
+    "corporateAddress": "10.52.436.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.436.97",
+        "10.52.436.98",
+        "10.52.436.99",
+        "10.52.436.100",
+        "10.52.436.101",
+        "10.52.436.102",
+        "10.52.436.103",
+        "10.52.436.104",
+        "10.52.436.105",
+        "10.52.436.106",
+        "10.52.436.107",
+        "10.52.436.108",
+        "10.52.436.109",
+        "10.52.436.110",
+        "10.52.436.111",
+        "10.52.436.112",
+        "10.52.436.113",
+        "10.52.436.114",
+        "10.52.436.115",
+        "10.52.436.116",
+        "10.52.436.117",
+        "10.52.436.118",
+        "10.52.436.119",
+        "10.52.436.120",
+        "10.52.436.121",
+        "10.52.436.122",
+        "10.52.436.123",
+        "10.52.436.124",
+        "10.52.436.125"
+    ],
+    "latitude": 32.569,
+    "longitude": -96.255,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.97",
+            "ipAddress": "10.52.436.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..Firewall 436",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.569,
+            "Longitude": -96.255
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.98",
+            "ipAddress": "10.52.436.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..Router 436",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.1",
+            "ipAddress": "10.52.436.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN.OT.Switch 871",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.99",
+            "ipAddress": "10.52.436.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN.Corporate.Switch 872",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.3",
+            "ipAddress": "10.52.436.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.2",
+            "ipAddress": "10.52.436.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..RC 436",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.436.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.100",
+            "ipAddress": "10.52.436.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..Host 871",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.100",
+            "ipAddress": "10.52.436.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..Host 872",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.100",
+            "ipAddress": "10.52.436.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..LocalDatabase 871",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.100",
+            "ipAddress": "10.52.436.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..LocalWebServer 872",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.KAUFMAN..RC 436",
+            "destination": "Utility 0.KAUFMAN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KAUFMAN..Router 436",
+            "destination": "Utility 0.KAUFMAN..Firewall 436",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KAUFMAN..Firewall 436",
+            "destination": "Utility 0.KAUFMAN.OT.Switch 871",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KAUFMAN.OT.Switch 871",
+            "destination": "Utility 0.KAUFMAN..RC 436",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KAUFMAN..Firewall 436",
+            "destination": "Utility 0.KAUFMAN.Corporate.Switch 872",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KAUFMAN.Corporate.Switch 872",
+            "destination": "Utility 0.KAUFMAN..Host 871",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KAUFMAN.Corporate.Switch 872",
+            "destination": "Utility 0.KAUFMAN..Host 872",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KAUFMAN.Corporate.Switch 872",
+            "destination": "Utility 0.KAUFMAN..LocalDatabase 871",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KAUFMAN.Corporate.Switch 872",
+            "destination": "Utility 0.KAUFMAN..LocalWebServer 872",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.1",
+            "ipAddress": "10.52.436.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN.OT.Switch 871",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.2",
+            "ipAddress": "10.52.436.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..RC 436",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.436.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.97",
+            "ipAddress": "10.52.436.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..Firewall 436",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.569,
+            "Longitude": -96.255
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.98",
+            "ipAddress": "10.52.436.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..Router 436",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.1",
+            "ipAddress": "10.52.436.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN.OT.Switch 871",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.436.2",
+            "ipAddress": "10.52.436.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KAUFMAN",
+            "label": "Utility 0.KAUFMAN..RC 436",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.436.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

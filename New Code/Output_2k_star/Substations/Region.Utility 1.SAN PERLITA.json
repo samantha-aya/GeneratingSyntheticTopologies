@@ -1,0 +1,592 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 1.SAN PERLITA",
+    "networkLan": "10.53.351.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "SAN PERLITA",
+    "substationNumber": 351,
+    "OTAddress": "10.53.351.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.351.1",
+        "10.53.351.2",
+        "10.53.351.3",
+        "10.53.351.4",
+        "10.53.351.5",
+        "10.53.351.6",
+        "10.53.351.7",
+        "10.53.351.8",
+        "10.53.351.9",
+        "10.53.351.10",
+        "10.53.351.11",
+        "10.53.351.12",
+        "10.53.351.13",
+        "10.53.351.14",
+        "10.53.351.15",
+        "10.53.351.16",
+        "10.53.351.17",
+        "10.53.351.18",
+        "10.53.351.19",
+        "10.53.351.20",
+        "10.53.351.21",
+        "10.53.351.22",
+        "10.53.351.23",
+        "10.53.351.24",
+        "10.53.351.25",
+        "10.53.351.26",
+        "10.53.351.27",
+        "10.53.351.28",
+        "10.53.351.29",
+        "10.53.351.30",
+        "10.53.351.31",
+        "10.53.351.32",
+        "10.53.351.33",
+        "10.53.351.34",
+        "10.53.351.35",
+        "10.53.351.36",
+        "10.53.351.37",
+        "10.53.351.38",
+        "10.53.351.39",
+        "10.53.351.40",
+        "10.53.351.41",
+        "10.53.351.42",
+        "10.53.351.43",
+        "10.53.351.44",
+        "10.53.351.45",
+        "10.53.351.46",
+        "10.53.351.47",
+        "10.53.351.48",
+        "10.53.351.49",
+        "10.53.351.50",
+        "10.53.351.51",
+        "10.53.351.52",
+        "10.53.351.53",
+        "10.53.351.54",
+        "10.53.351.55",
+        "10.53.351.56",
+        "10.53.351.57",
+        "10.53.351.58",
+        "10.53.351.59",
+        "10.53.351.60",
+        "10.53.351.61",
+        "10.53.351.62"
+    ],
+    "routeAddress": "10.53.351.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.351.65",
+        "10.53.351.66",
+        "10.53.351.67",
+        "10.53.351.68",
+        "10.53.351.69",
+        "10.53.351.70",
+        "10.53.351.71",
+        "10.53.351.72",
+        "10.53.351.73",
+        "10.53.351.74",
+        "10.53.351.75",
+        "10.53.351.76",
+        "10.53.351.77",
+        "10.53.351.78",
+        "10.53.351.79",
+        "10.53.351.80",
+        "10.53.351.81",
+        "10.53.351.82",
+        "10.53.351.83",
+        "10.53.351.84",
+        "10.53.351.85",
+        "10.53.351.86",
+        "10.53.351.87",
+        "10.53.351.88",
+        "10.53.351.89",
+        "10.53.351.90",
+        "10.53.351.91",
+        "10.53.351.92",
+        "10.53.351.93",
+        "10.53.351.94"
+    ],
+    "corporateAddress": "10.53.351.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.351.97",
+        "10.53.351.98",
+        "10.53.351.99",
+        "10.53.351.100",
+        "10.53.351.101",
+        "10.53.351.102",
+        "10.53.351.103",
+        "10.53.351.104",
+        "10.53.351.105",
+        "10.53.351.106",
+        "10.53.351.107",
+        "10.53.351.108",
+        "10.53.351.109",
+        "10.53.351.110",
+        "10.53.351.111",
+        "10.53.351.112",
+        "10.53.351.113",
+        "10.53.351.114",
+        "10.53.351.115",
+        "10.53.351.116",
+        "10.53.351.117",
+        "10.53.351.118",
+        "10.53.351.119",
+        "10.53.351.120",
+        "10.53.351.121",
+        "10.53.351.122",
+        "10.53.351.123",
+        "10.53.351.124",
+        "10.53.351.125"
+    ],
+    "latitude": 26.475,
+    "longitude": -97.691,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.97",
+            "ipAddress": "10.53.351.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..Firewall 351",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.475,
+            "Longitude": -97.691
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.98",
+            "ipAddress": "10.53.351.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..Router 351",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.1",
+            "ipAddress": "10.53.351.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA.OT.Switch 701",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.99",
+            "ipAddress": "10.53.351.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA.Corporate.Switch 702",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.3",
+            "ipAddress": "10.53.351.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.4",
+            "ipAddress": "10.53.351.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.2",
+            "ipAddress": "10.53.351.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..RC 351",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.351.3",
+                "10.53.351.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.100",
+            "ipAddress": "10.53.351.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..Host 701",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.100",
+            "ipAddress": "10.53.351.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..Host 702",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.100",
+            "ipAddress": "10.53.351.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..LocalDatabase 701",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.100",
+            "ipAddress": "10.53.351.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..LocalWebServer 702",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.SAN PERLITA..RC 351",
+            "destination": "Utility 1.SAN PERLITA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN PERLITA..RC 351",
+            "destination": "Utility 1.SAN PERLITA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN PERLITA..Router 351",
+            "destination": "Utility 1.SAN PERLITA..Firewall 351",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN PERLITA..Firewall 351",
+            "destination": "Utility 1.SAN PERLITA.OT.Switch 701",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN PERLITA.OT.Switch 701",
+            "destination": "Utility 1.SAN PERLITA..RC 351",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN PERLITA..Firewall 351",
+            "destination": "Utility 1.SAN PERLITA.Corporate.Switch 702",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN PERLITA.Corporate.Switch 702",
+            "destination": "Utility 1.SAN PERLITA..Host 701",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN PERLITA.Corporate.Switch 702",
+            "destination": "Utility 1.SAN PERLITA..Host 702",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN PERLITA.Corporate.Switch 702",
+            "destination": "Utility 1.SAN PERLITA..LocalDatabase 701",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.SAN PERLITA.Corporate.Switch 702",
+            "destination": "Utility 1.SAN PERLITA..LocalWebServer 702",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.1",
+            "ipAddress": "10.53.351.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA.OT.Switch 701",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.2",
+            "ipAddress": "10.53.351.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..RC 351",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.351.3",
+                "10.53.351.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.97",
+            "ipAddress": "10.53.351.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..Firewall 351",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.475,
+            "Longitude": -97.691
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.98",
+            "ipAddress": "10.53.351.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..Router 351",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.1",
+            "ipAddress": "10.53.351.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA.OT.Switch 701",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.351.2",
+            "ipAddress": "10.53.351.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SAN PERLITA",
+            "label": "Utility 1.SAN PERLITA..RC 351",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.351.3",
+                "10.53.351.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 152.25,
+    "genmvar": 43.24,
+    "connecting_TS_num": 361
+}

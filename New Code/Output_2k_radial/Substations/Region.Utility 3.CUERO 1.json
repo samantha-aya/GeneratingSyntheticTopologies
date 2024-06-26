@@ -1,0 +1,842 @@
+{
+    "relayCounter": 10,
+    "label": "Region.Utility 3.CUERO 1",
+    "networkLan": "10.56.867.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "CUERO 1",
+    "substationNumber": 867,
+    "OTAddress": "10.56.867.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.867.1",
+        "10.56.867.2",
+        "10.56.867.3",
+        "10.56.867.4",
+        "10.56.867.5",
+        "10.56.867.6",
+        "10.56.867.7",
+        "10.56.867.8",
+        "10.56.867.9",
+        "10.56.867.10",
+        "10.56.867.11",
+        "10.56.867.12",
+        "10.56.867.13",
+        "10.56.867.14",
+        "10.56.867.15",
+        "10.56.867.16",
+        "10.56.867.17",
+        "10.56.867.18",
+        "10.56.867.19",
+        "10.56.867.20",
+        "10.56.867.21",
+        "10.56.867.22",
+        "10.56.867.23",
+        "10.56.867.24",
+        "10.56.867.25",
+        "10.56.867.26",
+        "10.56.867.27",
+        "10.56.867.28",
+        "10.56.867.29",
+        "10.56.867.30",
+        "10.56.867.31",
+        "10.56.867.32",
+        "10.56.867.33",
+        "10.56.867.34",
+        "10.56.867.35",
+        "10.56.867.36",
+        "10.56.867.37",
+        "10.56.867.38",
+        "10.56.867.39",
+        "10.56.867.40",
+        "10.56.867.41",
+        "10.56.867.42",
+        "10.56.867.43",
+        "10.56.867.44",
+        "10.56.867.45",
+        "10.56.867.46",
+        "10.56.867.47",
+        "10.56.867.48",
+        "10.56.867.49",
+        "10.56.867.50",
+        "10.56.867.51",
+        "10.56.867.52",
+        "10.56.867.53",
+        "10.56.867.54",
+        "10.56.867.55",
+        "10.56.867.56",
+        "10.56.867.57",
+        "10.56.867.58",
+        "10.56.867.59",
+        "10.56.867.60",
+        "10.56.867.61",
+        "10.56.867.62"
+    ],
+    "routeAddress": "10.56.867.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.867.65",
+        "10.56.867.66",
+        "10.56.867.67",
+        "10.56.867.68",
+        "10.56.867.69",
+        "10.56.867.70",
+        "10.56.867.71",
+        "10.56.867.72",
+        "10.56.867.73",
+        "10.56.867.74",
+        "10.56.867.75",
+        "10.56.867.76",
+        "10.56.867.77",
+        "10.56.867.78",
+        "10.56.867.79",
+        "10.56.867.80",
+        "10.56.867.81",
+        "10.56.867.82",
+        "10.56.867.83",
+        "10.56.867.84",
+        "10.56.867.85",
+        "10.56.867.86",
+        "10.56.867.87",
+        "10.56.867.88",
+        "10.56.867.89",
+        "10.56.867.90",
+        "10.56.867.91",
+        "10.56.867.92",
+        "10.56.867.93",
+        "10.56.867.94"
+    ],
+    "corporateAddress": "10.56.867.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.867.97",
+        "10.56.867.98",
+        "10.56.867.99",
+        "10.56.867.100",
+        "10.56.867.101",
+        "10.56.867.102",
+        "10.56.867.103",
+        "10.56.867.104",
+        "10.56.867.105",
+        "10.56.867.106",
+        "10.56.867.107",
+        "10.56.867.108",
+        "10.56.867.109",
+        "10.56.867.110",
+        "10.56.867.111",
+        "10.56.867.112",
+        "10.56.867.113",
+        "10.56.867.114",
+        "10.56.867.115",
+        "10.56.867.116",
+        "10.56.867.117",
+        "10.56.867.118",
+        "10.56.867.119",
+        "10.56.867.120",
+        "10.56.867.121",
+        "10.56.867.122",
+        "10.56.867.123",
+        "10.56.867.124",
+        "10.56.867.125"
+    ],
+    "latitude": 29.13,
+    "longitude": -97.311,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.97",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Firewall 867",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.13,
+            "Longitude": -97.311
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.98",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Router 867",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.1",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1.OT.Switch 1733",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.99",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1.Corporate.Switch 1734",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.3",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.4",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.5",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.6",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.7",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.8",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.9",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.10",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.11",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.12",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.2",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..RC 867",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.867.3",
+                "10.56.867.4",
+                "10.56.867.5",
+                "10.56.867.6",
+                "10.56.867.7",
+                "10.56.867.8",
+                "10.56.867.9",
+                "10.56.867.10",
+                "10.56.867.11",
+                "10.56.867.12"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.100",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Host 1733",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.100",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Host 1734",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.100",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..LocalDatabase 1733",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.100",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..LocalWebServer 1734",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.101",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..hmi 1733",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.100",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..outstation 1734",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..RC 867",
+            "destination": "Utility 3.CUERO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..Router 867",
+            "destination": "Utility 3.CUERO 1..Firewall 867",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..Firewall 867",
+            "destination": "Utility 3.CUERO 1.OT.Switch 1733",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1.OT.Switch 1733",
+            "destination": "Utility 3.CUERO 1..RC 867",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1..Firewall 867",
+            "destination": "Utility 3.CUERO 1.Corporate.Switch 1734",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1.Corporate.Switch 1734",
+            "destination": "Utility 3.CUERO 1..Host 1733",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1.Corporate.Switch 1734",
+            "destination": "Utility 3.CUERO 1..Host 1734",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1.Corporate.Switch 1734",
+            "destination": "Utility 3.CUERO 1..LocalDatabase 1733",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CUERO 1.Corporate.Switch 1734",
+            "destination": "Utility 3.CUERO 1..LocalWebServer 1734",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.1",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1.OT.Switch 1733",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.2",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..RC 867",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.867.3",
+                "10.56.867.4",
+                "10.56.867.5",
+                "10.56.867.6",
+                "10.56.867.7",
+                "10.56.867.8",
+                "10.56.867.9",
+                "10.56.867.10",
+                "10.56.867.11",
+                "10.56.867.12"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.97",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Firewall 867",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.13,
+            "Longitude": -97.311
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.98",
+            "ipAddress": "10.56.867.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..Router 867",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.1",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1.OT.Switch 1733",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.867.2",
+            "ipAddress": "10.56.867.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CUERO 1",
+            "label": "Utility 3.CUERO 1..RC 867",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.867.3",
+                "10.56.867.4",
+                "10.56.867.5",
+                "10.56.867.6",
+                "10.56.867.7",
+                "10.56.867.8",
+                "10.56.867.9",
+                "10.56.867.10",
+                "10.56.867.11",
+                "10.56.867.12"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 31.8,
+    "genmvar": 12.09,
+    "connecting_TS_num": 808
+}

@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 0.O DONNELL 2",
+    "networkLan": "10.52.17.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "O DONNELL 2",
+    "substationNumber": 17,
+    "OTAddress": "10.52.17.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.17.1",
+        "10.52.17.2",
+        "10.52.17.3",
+        "10.52.17.4",
+        "10.52.17.5",
+        "10.52.17.6",
+        "10.52.17.7",
+        "10.52.17.8",
+        "10.52.17.9",
+        "10.52.17.10",
+        "10.52.17.11",
+        "10.52.17.12",
+        "10.52.17.13",
+        "10.52.17.14",
+        "10.52.17.15",
+        "10.52.17.16",
+        "10.52.17.17",
+        "10.52.17.18",
+        "10.52.17.19",
+        "10.52.17.20",
+        "10.52.17.21",
+        "10.52.17.22",
+        "10.52.17.23",
+        "10.52.17.24",
+        "10.52.17.25",
+        "10.52.17.26",
+        "10.52.17.27",
+        "10.52.17.28",
+        "10.52.17.29",
+        "10.52.17.30",
+        "10.52.17.31",
+        "10.52.17.32",
+        "10.52.17.33",
+        "10.52.17.34",
+        "10.52.17.35",
+        "10.52.17.36",
+        "10.52.17.37",
+        "10.52.17.38",
+        "10.52.17.39",
+        "10.52.17.40",
+        "10.52.17.41",
+        "10.52.17.42",
+        "10.52.17.43",
+        "10.52.17.44",
+        "10.52.17.45",
+        "10.52.17.46",
+        "10.52.17.47",
+        "10.52.17.48",
+        "10.52.17.49",
+        "10.52.17.50",
+        "10.52.17.51",
+        "10.52.17.52",
+        "10.52.17.53",
+        "10.52.17.54",
+        "10.52.17.55",
+        "10.52.17.56",
+        "10.52.17.57",
+        "10.52.17.58",
+        "10.52.17.59",
+        "10.52.17.60",
+        "10.52.17.61",
+        "10.52.17.62"
+    ],
+    "routeAddress": "10.52.17.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.17.65",
+        "10.52.17.66",
+        "10.52.17.67",
+        "10.52.17.68",
+        "10.52.17.69",
+        "10.52.17.70",
+        "10.52.17.71",
+        "10.52.17.72",
+        "10.52.17.73",
+        "10.52.17.74",
+        "10.52.17.75",
+        "10.52.17.76",
+        "10.52.17.77",
+        "10.52.17.78",
+        "10.52.17.79",
+        "10.52.17.80",
+        "10.52.17.81",
+        "10.52.17.82",
+        "10.52.17.83",
+        "10.52.17.84",
+        "10.52.17.85",
+        "10.52.17.86",
+        "10.52.17.87",
+        "10.52.17.88",
+        "10.52.17.89",
+        "10.52.17.90",
+        "10.52.17.91",
+        "10.52.17.92",
+        "10.52.17.93",
+        "10.52.17.94"
+    ],
+    "corporateAddress": "10.52.17.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.17.97",
+        "10.52.17.98",
+        "10.52.17.99",
+        "10.52.17.100",
+        "10.52.17.101",
+        "10.52.17.102",
+        "10.52.17.103",
+        "10.52.17.104",
+        "10.52.17.105",
+        "10.52.17.106",
+        "10.52.17.107",
+        "10.52.17.108",
+        "10.52.17.109",
+        "10.52.17.110",
+        "10.52.17.111",
+        "10.52.17.112",
+        "10.52.17.113",
+        "10.52.17.114",
+        "10.52.17.115",
+        "10.52.17.116",
+        "10.52.17.117",
+        "10.52.17.118",
+        "10.52.17.119",
+        "10.52.17.120",
+        "10.52.17.121",
+        "10.52.17.122",
+        "10.52.17.123",
+        "10.52.17.124",
+        "10.52.17.125"
+    ],
+    "latitude": 32.929,
+    "longitude": -101.579,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.97",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..Firewall 17",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.929,
+            "Longitude": -101.579
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.98",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..Router 17",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.1",
+            "ipAddress": "10.52.17.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2.OT.Switch 33",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.99",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2.Corporate.Switch 34",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.3",
+            "ipAddress": "10.52.17.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.4",
+            "ipAddress": "10.52.17.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.2",
+            "ipAddress": "10.52.17.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..RC 17",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.17.3",
+                "10.52.17.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.100",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..Host 33",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.100",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..Host 34",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.100",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..LocalDatabase 33",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.100",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..LocalWebServer 34",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.101",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..hmi 33",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.100",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..outstation 34",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.O DONNELL 2..RC 17",
+            "destination": "Utility 0.O DONNELL 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.O DONNELL 2..RC 17",
+            "destination": "Utility 0.O DONNELL 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.O DONNELL 2..Router 17",
+            "destination": "Utility 0.O DONNELL 2..Firewall 17",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.O DONNELL 2..Firewall 17",
+            "destination": "Utility 0.O DONNELL 2.OT.Switch 33",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.O DONNELL 2.OT.Switch 33",
+            "destination": "Utility 0.O DONNELL 2..RC 17",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.O DONNELL 2..Firewall 17",
+            "destination": "Utility 0.O DONNELL 2.Corporate.Switch 34",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.O DONNELL 2.Corporate.Switch 34",
+            "destination": "Utility 0.O DONNELL 2..Host 33",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.O DONNELL 2.Corporate.Switch 34",
+            "destination": "Utility 0.O DONNELL 2..Host 34",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.O DONNELL 2.Corporate.Switch 34",
+            "destination": "Utility 0.O DONNELL 2..LocalDatabase 33",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.O DONNELL 2.Corporate.Switch 34",
+            "destination": "Utility 0.O DONNELL 2..LocalWebServer 34",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.1",
+            "ipAddress": "10.52.17.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2.OT.Switch 33",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.2",
+            "ipAddress": "10.52.17.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..RC 17",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.17.3",
+                "10.52.17.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.97",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..Firewall 17",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.929,
+            "Longitude": -101.579
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.98",
+            "ipAddress": "10.52.17.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..Router 17",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.1",
+            "ipAddress": "10.52.17.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2.OT.Switch 33",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.17.2",
+            "ipAddress": "10.52.17.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "O DONNELL 2",
+            "label": "Utility 0.O DONNELL 2..RC 17",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.17.3",
+                "10.52.17.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 135.0,
+    "genmvar": 2.26,
+    "connecting_TS_num": 3
+}

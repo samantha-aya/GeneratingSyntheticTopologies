@@ -1,0 +1,738 @@
+{
+    "relayCounter": 6,
+    "label": "Region.Utility 53.GRANBURY 2",
+    "networkLan": "10.147.652.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 53",
+    "utility_id": 147,
+    "substation": "GRANBURY 2",
+    "substationNumber": 652,
+    "OTAddress": "10.147.652.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.147.652.1",
+        "10.147.652.2",
+        "10.147.652.3",
+        "10.147.652.4",
+        "10.147.652.5",
+        "10.147.652.6",
+        "10.147.652.7",
+        "10.147.652.8",
+        "10.147.652.9",
+        "10.147.652.10",
+        "10.147.652.11",
+        "10.147.652.12",
+        "10.147.652.13",
+        "10.147.652.14",
+        "10.147.652.15",
+        "10.147.652.16",
+        "10.147.652.17",
+        "10.147.652.18",
+        "10.147.652.19",
+        "10.147.652.20",
+        "10.147.652.21",
+        "10.147.652.22",
+        "10.147.652.23",
+        "10.147.652.24",
+        "10.147.652.25",
+        "10.147.652.26",
+        "10.147.652.27",
+        "10.147.652.28",
+        "10.147.652.29",
+        "10.147.652.30",
+        "10.147.652.31",
+        "10.147.652.32",
+        "10.147.652.33",
+        "10.147.652.34",
+        "10.147.652.35",
+        "10.147.652.36",
+        "10.147.652.37",
+        "10.147.652.38",
+        "10.147.652.39",
+        "10.147.652.40",
+        "10.147.652.41",
+        "10.147.652.42",
+        "10.147.652.43",
+        "10.147.652.44",
+        "10.147.652.45",
+        "10.147.652.46",
+        "10.147.652.47",
+        "10.147.652.48",
+        "10.147.652.49",
+        "10.147.652.50",
+        "10.147.652.51",
+        "10.147.652.52",
+        "10.147.652.53",
+        "10.147.652.54",
+        "10.147.652.55",
+        "10.147.652.56",
+        "10.147.652.57",
+        "10.147.652.58",
+        "10.147.652.59",
+        "10.147.652.60",
+        "10.147.652.61",
+        "10.147.652.62"
+    ],
+    "routeAddress": "10.147.652.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.147.652.65",
+        "10.147.652.66",
+        "10.147.652.67",
+        "10.147.652.68",
+        "10.147.652.69",
+        "10.147.652.70",
+        "10.147.652.71",
+        "10.147.652.72",
+        "10.147.652.73",
+        "10.147.652.74",
+        "10.147.652.75",
+        "10.147.652.76",
+        "10.147.652.77",
+        "10.147.652.78",
+        "10.147.652.79",
+        "10.147.652.80",
+        "10.147.652.81",
+        "10.147.652.82",
+        "10.147.652.83",
+        "10.147.652.84",
+        "10.147.652.85",
+        "10.147.652.86",
+        "10.147.652.87",
+        "10.147.652.88",
+        "10.147.652.89",
+        "10.147.652.90",
+        "10.147.652.91",
+        "10.147.652.92",
+        "10.147.652.93",
+        "10.147.652.94"
+    ],
+    "corporateAddress": "10.147.652.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.147.652.97",
+        "10.147.652.98",
+        "10.147.652.99",
+        "10.147.652.100",
+        "10.147.652.101",
+        "10.147.652.102",
+        "10.147.652.103",
+        "10.147.652.104",
+        "10.147.652.105",
+        "10.147.652.106",
+        "10.147.652.107",
+        "10.147.652.108",
+        "10.147.652.109",
+        "10.147.652.110",
+        "10.147.652.111",
+        "10.147.652.112",
+        "10.147.652.113",
+        "10.147.652.114",
+        "10.147.652.115",
+        "10.147.652.116",
+        "10.147.652.117",
+        "10.147.652.118",
+        "10.147.652.119",
+        "10.147.652.120",
+        "10.147.652.121",
+        "10.147.652.122",
+        "10.147.652.123",
+        "10.147.652.124",
+        "10.147.652.125"
+    ],
+    "latitude": 32.403,
+    "longitude": -97.701,
+    "nodes": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.97",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Firewall 652",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.403,
+            "Longitude": -97.701
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.98",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Router 652",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.1",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2.OT.Switch 1303",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.99",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2.Corporate.Switch 1304",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.3",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.4",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.5",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.6",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.7",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.8",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.2",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..RC 652",
+            "compromised": false,
+            "relayIPlist": [
+                "10.147.652.3",
+                "10.147.652.4",
+                "10.147.652.5",
+                "10.147.652.6",
+                "10.147.652.7",
+                "10.147.652.8"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.100",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Host 1303",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.100",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Host 1304",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.100",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..LocalDatabase 1303",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.100",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..LocalWebServer 1304",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.101",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..hmi 1303",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.100",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..outstation 1304",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 53.GRANBURY 2..RC 652",
+            "destination": "Utility 53.GRANBURY 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2..RC 652",
+            "destination": "Utility 53.GRANBURY 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2..RC 652",
+            "destination": "Utility 53.GRANBURY 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2..RC 652",
+            "destination": "Utility 53.GRANBURY 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2..RC 652",
+            "destination": "Utility 53.GRANBURY 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2..RC 652",
+            "destination": "Utility 53.GRANBURY 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2..Router 652",
+            "destination": "Utility 53.GRANBURY 2..Firewall 652",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2..Firewall 652",
+            "destination": "Utility 53.GRANBURY 2.OT.Switch 1303",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2.OT.Switch 1303",
+            "destination": "Utility 53.GRANBURY 2..RC 652",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2..Firewall 652",
+            "destination": "Utility 53.GRANBURY 2.Corporate.Switch 1304",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2.Corporate.Switch 1304",
+            "destination": "Utility 53.GRANBURY 2..Host 1303",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2.Corporate.Switch 1304",
+            "destination": "Utility 53.GRANBURY 2..Host 1304",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2.Corporate.Switch 1304",
+            "destination": "Utility 53.GRANBURY 2..LocalDatabase 1303",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 53.GRANBURY 2.Corporate.Switch 1304",
+            "destination": "Utility 53.GRANBURY 2..LocalWebServer 1304",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.1",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2.OT.Switch 1303",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.2",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..RC 652",
+            "compromised": false,
+            "relayIPlist": [
+                "10.147.652.3",
+                "10.147.652.4",
+                "10.147.652.5",
+                "10.147.652.6",
+                "10.147.652.7",
+                "10.147.652.8"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.97",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Firewall 652",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.403,
+            "Longitude": -97.701
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.98",
+            "ipAddress": "10.147.652.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..Router 652",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.1",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2.OT.Switch 1303",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 53",
+            "adminIP": "10.147.652.2",
+            "ipAddress": "10.147.652.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GRANBURY 2",
+            "label": "Utility 53.GRANBURY 2..RC 652",
+            "compromised": false,
+            "relayIPlist": [
+                "10.147.652.3",
+                "10.147.652.4",
+                "10.147.652.5",
+                "10.147.652.6",
+                "10.147.652.7",
+                "10.147.652.8"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 340.3,
+    "genmvar": 182.0,
+    "connecting_TS_num": 601
+}

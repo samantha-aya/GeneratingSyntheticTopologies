@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 21.EDINBURG 1",
+    "networkLan": "10.111.295.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 21",
+    "utility_id": 111,
+    "substation": "EDINBURG 1",
+    "substationNumber": 295,
+    "OTAddress": "10.111.295.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.111.295.1",
+        "10.111.295.2",
+        "10.111.295.3",
+        "10.111.295.4",
+        "10.111.295.5",
+        "10.111.295.6",
+        "10.111.295.7",
+        "10.111.295.8",
+        "10.111.295.9",
+        "10.111.295.10",
+        "10.111.295.11",
+        "10.111.295.12",
+        "10.111.295.13",
+        "10.111.295.14",
+        "10.111.295.15",
+        "10.111.295.16",
+        "10.111.295.17",
+        "10.111.295.18",
+        "10.111.295.19",
+        "10.111.295.20",
+        "10.111.295.21",
+        "10.111.295.22",
+        "10.111.295.23",
+        "10.111.295.24",
+        "10.111.295.25",
+        "10.111.295.26",
+        "10.111.295.27",
+        "10.111.295.28",
+        "10.111.295.29",
+        "10.111.295.30",
+        "10.111.295.31",
+        "10.111.295.32",
+        "10.111.295.33",
+        "10.111.295.34",
+        "10.111.295.35",
+        "10.111.295.36",
+        "10.111.295.37",
+        "10.111.295.38",
+        "10.111.295.39",
+        "10.111.295.40",
+        "10.111.295.41",
+        "10.111.295.42",
+        "10.111.295.43",
+        "10.111.295.44",
+        "10.111.295.45",
+        "10.111.295.46",
+        "10.111.295.47",
+        "10.111.295.48",
+        "10.111.295.49",
+        "10.111.295.50",
+        "10.111.295.51",
+        "10.111.295.52",
+        "10.111.295.53",
+        "10.111.295.54",
+        "10.111.295.55",
+        "10.111.295.56",
+        "10.111.295.57",
+        "10.111.295.58",
+        "10.111.295.59",
+        "10.111.295.60",
+        "10.111.295.61",
+        "10.111.295.62"
+    ],
+    "routeAddress": "10.111.295.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.111.295.65",
+        "10.111.295.66",
+        "10.111.295.67",
+        "10.111.295.68",
+        "10.111.295.69",
+        "10.111.295.70",
+        "10.111.295.71",
+        "10.111.295.72",
+        "10.111.295.73",
+        "10.111.295.74",
+        "10.111.295.75",
+        "10.111.295.76",
+        "10.111.295.77",
+        "10.111.295.78",
+        "10.111.295.79",
+        "10.111.295.80",
+        "10.111.295.81",
+        "10.111.295.82",
+        "10.111.295.83",
+        "10.111.295.84",
+        "10.111.295.85",
+        "10.111.295.86",
+        "10.111.295.87",
+        "10.111.295.88",
+        "10.111.295.89",
+        "10.111.295.90",
+        "10.111.295.91",
+        "10.111.295.92",
+        "10.111.295.93",
+        "10.111.295.94"
+    ],
+    "corporateAddress": "10.111.295.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.111.295.97",
+        "10.111.295.98",
+        "10.111.295.99",
+        "10.111.295.100",
+        "10.111.295.101",
+        "10.111.295.102",
+        "10.111.295.103",
+        "10.111.295.104",
+        "10.111.295.105",
+        "10.111.295.106",
+        "10.111.295.107",
+        "10.111.295.108",
+        "10.111.295.109",
+        "10.111.295.110",
+        "10.111.295.111",
+        "10.111.295.112",
+        "10.111.295.113",
+        "10.111.295.114",
+        "10.111.295.115",
+        "10.111.295.116",
+        "10.111.295.117",
+        "10.111.295.118",
+        "10.111.295.119",
+        "10.111.295.120",
+        "10.111.295.121",
+        "10.111.295.122",
+        "10.111.295.123",
+        "10.111.295.124",
+        "10.111.295.125"
+    ],
+    "latitude": 26.451,
+    "longitude": -98.092,
+    "nodes": [
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.97",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..Firewall 295",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.451,
+            "Longitude": -98.092
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.98",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..Router 295",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.1",
+            "ipAddress": "10.111.295.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1.OT.Switch 589",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.99",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1.Corporate.Switch 590",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.3",
+            "ipAddress": "10.111.295.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.2",
+            "ipAddress": "10.111.295.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..RC 295",
+            "compromised": false,
+            "relayIPlist": [
+                "10.111.295.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.100",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..Host 589",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.100",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..Host 590",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.100",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..LocalDatabase 589",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.100",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..LocalWebServer 590",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.101",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..hmi 589",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.100",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..outstation 590",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 21.EDINBURG 1..RC 295",
+            "destination": "Utility 21.EDINBURG 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 21.EDINBURG 1..Router 295",
+            "destination": "Utility 21.EDINBURG 1..Firewall 295",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 21.EDINBURG 1..Firewall 295",
+            "destination": "Utility 21.EDINBURG 1.OT.Switch 589",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 21.EDINBURG 1.OT.Switch 589",
+            "destination": "Utility 21.EDINBURG 1..RC 295",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 21.EDINBURG 1..Firewall 295",
+            "destination": "Utility 21.EDINBURG 1.Corporate.Switch 590",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 21.EDINBURG 1.Corporate.Switch 590",
+            "destination": "Utility 21.EDINBURG 1..Host 589",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 21.EDINBURG 1.Corporate.Switch 590",
+            "destination": "Utility 21.EDINBURG 1..Host 590",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 21.EDINBURG 1.Corporate.Switch 590",
+            "destination": "Utility 21.EDINBURG 1..LocalDatabase 589",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 21.EDINBURG 1.Corporate.Switch 590",
+            "destination": "Utility 21.EDINBURG 1..LocalWebServer 590",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.1",
+            "ipAddress": "10.111.295.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1.OT.Switch 589",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.2",
+            "ipAddress": "10.111.295.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..RC 295",
+            "compromised": false,
+            "relayIPlist": [
+                "10.111.295.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.97",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..Firewall 295",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.451,
+            "Longitude": -98.092
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.98",
+            "ipAddress": "10.111.295.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..Router 295",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.1",
+            "ipAddress": "10.111.295.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1.OT.Switch 589",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 21",
+            "adminIP": "10.111.295.2",
+            "ipAddress": "10.111.295.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "EDINBURG 1",
+            "label": "Utility 21.EDINBURG 1..RC 295",
+            "compromised": false,
+            "relayIPlist": [
+                "10.111.295.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

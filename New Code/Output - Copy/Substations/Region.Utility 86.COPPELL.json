@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 86.COPPELL",
+    "networkLan": "10.133.570.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 86",
+    "utility_id": 133,
+    "substation": "COPPELL",
+    "substationNumber": 570,
+    "OTAddress": "10.133.570.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.133.570.1",
+        "10.133.570.2",
+        "10.133.570.3",
+        "10.133.570.4",
+        "10.133.570.5",
+        "10.133.570.6",
+        "10.133.570.7",
+        "10.133.570.8",
+        "10.133.570.9",
+        "10.133.570.10",
+        "10.133.570.11",
+        "10.133.570.12",
+        "10.133.570.13",
+        "10.133.570.14",
+        "10.133.570.15",
+        "10.133.570.16",
+        "10.133.570.17",
+        "10.133.570.18",
+        "10.133.570.19",
+        "10.133.570.20",
+        "10.133.570.21",
+        "10.133.570.22",
+        "10.133.570.23",
+        "10.133.570.24",
+        "10.133.570.25",
+        "10.133.570.26",
+        "10.133.570.27",
+        "10.133.570.28",
+        "10.133.570.29",
+        "10.133.570.30",
+        "10.133.570.31",
+        "10.133.570.32",
+        "10.133.570.33",
+        "10.133.570.34",
+        "10.133.570.35",
+        "10.133.570.36",
+        "10.133.570.37",
+        "10.133.570.38",
+        "10.133.570.39",
+        "10.133.570.40",
+        "10.133.570.41",
+        "10.133.570.42",
+        "10.133.570.43",
+        "10.133.570.44",
+        "10.133.570.45",
+        "10.133.570.46",
+        "10.133.570.47",
+        "10.133.570.48",
+        "10.133.570.49",
+        "10.133.570.50",
+        "10.133.570.51",
+        "10.133.570.52",
+        "10.133.570.53",
+        "10.133.570.54",
+        "10.133.570.55",
+        "10.133.570.56",
+        "10.133.570.57",
+        "10.133.570.58",
+        "10.133.570.59",
+        "10.133.570.60",
+        "10.133.570.61",
+        "10.133.570.62"
+    ],
+    "routeAddress": "10.133.570.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.133.570.65",
+        "10.133.570.66",
+        "10.133.570.67",
+        "10.133.570.68",
+        "10.133.570.69",
+        "10.133.570.70",
+        "10.133.570.71",
+        "10.133.570.72",
+        "10.133.570.73",
+        "10.133.570.74",
+        "10.133.570.75",
+        "10.133.570.76",
+        "10.133.570.77",
+        "10.133.570.78",
+        "10.133.570.79",
+        "10.133.570.80",
+        "10.133.570.81",
+        "10.133.570.82",
+        "10.133.570.83",
+        "10.133.570.84",
+        "10.133.570.85",
+        "10.133.570.86",
+        "10.133.570.87",
+        "10.133.570.88",
+        "10.133.570.89",
+        "10.133.570.90",
+        "10.133.570.91",
+        "10.133.570.92",
+        "10.133.570.93",
+        "10.133.570.94"
+    ],
+    "corporateAddress": "10.133.570.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.133.570.97",
+        "10.133.570.98",
+        "10.133.570.99",
+        "10.133.570.100",
+        "10.133.570.101",
+        "10.133.570.102",
+        "10.133.570.103",
+        "10.133.570.104",
+        "10.133.570.105",
+        "10.133.570.106",
+        "10.133.570.107",
+        "10.133.570.108",
+        "10.133.570.109",
+        "10.133.570.110",
+        "10.133.570.111",
+        "10.133.570.112",
+        "10.133.570.113",
+        "10.133.570.114",
+        "10.133.570.115",
+        "10.133.570.116",
+        "10.133.570.117",
+        "10.133.570.118",
+        "10.133.570.119",
+        "10.133.570.120",
+        "10.133.570.121",
+        "10.133.570.122",
+        "10.133.570.123",
+        "10.133.570.124",
+        "10.133.570.125"
+    ],
+    "latitude": 32.963,
+    "longitude": -96.985,
+    "nodes": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.97",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..Firewall 570",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.963,
+            "Longitude": -96.985
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.98",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..Router 570",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.1",
+            "ipAddress": "10.133.570.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL.OT.Switch 1139",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.99",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL.Corporate.Switch 1140",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.3",
+            "ipAddress": "10.133.570.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.2",
+            "ipAddress": "10.133.570.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..RC 570",
+            "compromised": false,
+            "relayIPlist": [
+                "10.133.570.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.100",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..Host 1139",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.100",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..Host 1140",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.100",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..LocalDatabase 1139",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.100",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..LocalWebServer 1140",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.101",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..hmi 1139",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.100",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..outstation 1140",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 86.COPPELL..RC 570",
+            "destination": "Utility 86.COPPELL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.COPPELL..Router 570",
+            "destination": "Utility 86.COPPELL..Firewall 570",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.COPPELL..Firewall 570",
+            "destination": "Utility 86.COPPELL.OT.Switch 1139",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.COPPELL.OT.Switch 1139",
+            "destination": "Utility 86.COPPELL..RC 570",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.COPPELL..Firewall 570",
+            "destination": "Utility 86.COPPELL.Corporate.Switch 1140",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.COPPELL.Corporate.Switch 1140",
+            "destination": "Utility 86.COPPELL..Host 1139",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.COPPELL.Corporate.Switch 1140",
+            "destination": "Utility 86.COPPELL..Host 1140",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.COPPELL.Corporate.Switch 1140",
+            "destination": "Utility 86.COPPELL..LocalDatabase 1139",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.COPPELL.Corporate.Switch 1140",
+            "destination": "Utility 86.COPPELL..LocalWebServer 1140",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.1",
+            "ipAddress": "10.133.570.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL.OT.Switch 1139",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.2",
+            "ipAddress": "10.133.570.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..RC 570",
+            "compromised": false,
+            "relayIPlist": [
+                "10.133.570.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.97",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..Firewall 570",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.963,
+            "Longitude": -96.985
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.98",
+            "ipAddress": "10.133.570.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..Router 570",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.1",
+            "ipAddress": "10.133.570.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL.OT.Switch 1139",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.570.2",
+            "ipAddress": "10.133.570.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "COPPELL",
+            "label": "Utility 86.COPPELL..RC 570",
+            "compromised": false,
+            "relayIPlist": [
+                "10.133.570.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

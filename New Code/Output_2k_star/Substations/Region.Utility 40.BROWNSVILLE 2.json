@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 40.BROWNSVILLE 2",
+    "networkLan": "10.129.281.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 40",
+    "utility_id": 129,
+    "substation": "BROWNSVILLE 2",
+    "substationNumber": 281,
+    "OTAddress": "10.129.281.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.129.281.1",
+        "10.129.281.2",
+        "10.129.281.3",
+        "10.129.281.4",
+        "10.129.281.5",
+        "10.129.281.6",
+        "10.129.281.7",
+        "10.129.281.8",
+        "10.129.281.9",
+        "10.129.281.10",
+        "10.129.281.11",
+        "10.129.281.12",
+        "10.129.281.13",
+        "10.129.281.14",
+        "10.129.281.15",
+        "10.129.281.16",
+        "10.129.281.17",
+        "10.129.281.18",
+        "10.129.281.19",
+        "10.129.281.20",
+        "10.129.281.21",
+        "10.129.281.22",
+        "10.129.281.23",
+        "10.129.281.24",
+        "10.129.281.25",
+        "10.129.281.26",
+        "10.129.281.27",
+        "10.129.281.28",
+        "10.129.281.29",
+        "10.129.281.30",
+        "10.129.281.31",
+        "10.129.281.32",
+        "10.129.281.33",
+        "10.129.281.34",
+        "10.129.281.35",
+        "10.129.281.36",
+        "10.129.281.37",
+        "10.129.281.38",
+        "10.129.281.39",
+        "10.129.281.40",
+        "10.129.281.41",
+        "10.129.281.42",
+        "10.129.281.43",
+        "10.129.281.44",
+        "10.129.281.45",
+        "10.129.281.46",
+        "10.129.281.47",
+        "10.129.281.48",
+        "10.129.281.49",
+        "10.129.281.50",
+        "10.129.281.51",
+        "10.129.281.52",
+        "10.129.281.53",
+        "10.129.281.54",
+        "10.129.281.55",
+        "10.129.281.56",
+        "10.129.281.57",
+        "10.129.281.58",
+        "10.129.281.59",
+        "10.129.281.60",
+        "10.129.281.61",
+        "10.129.281.62"
+    ],
+    "routeAddress": "10.129.281.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.129.281.65",
+        "10.129.281.66",
+        "10.129.281.67",
+        "10.129.281.68",
+        "10.129.281.69",
+        "10.129.281.70",
+        "10.129.281.71",
+        "10.129.281.72",
+        "10.129.281.73",
+        "10.129.281.74",
+        "10.129.281.75",
+        "10.129.281.76",
+        "10.129.281.77",
+        "10.129.281.78",
+        "10.129.281.79",
+        "10.129.281.80",
+        "10.129.281.81",
+        "10.129.281.82",
+        "10.129.281.83",
+        "10.129.281.84",
+        "10.129.281.85",
+        "10.129.281.86",
+        "10.129.281.87",
+        "10.129.281.88",
+        "10.129.281.89",
+        "10.129.281.90",
+        "10.129.281.91",
+        "10.129.281.92",
+        "10.129.281.93",
+        "10.129.281.94"
+    ],
+    "corporateAddress": "10.129.281.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.129.281.97",
+        "10.129.281.98",
+        "10.129.281.99",
+        "10.129.281.100",
+        "10.129.281.101",
+        "10.129.281.102",
+        "10.129.281.103",
+        "10.129.281.104",
+        "10.129.281.105",
+        "10.129.281.106",
+        "10.129.281.107",
+        "10.129.281.108",
+        "10.129.281.109",
+        "10.129.281.110",
+        "10.129.281.111",
+        "10.129.281.112",
+        "10.129.281.113",
+        "10.129.281.114",
+        "10.129.281.115",
+        "10.129.281.116",
+        "10.129.281.117",
+        "10.129.281.118",
+        "10.129.281.119",
+        "10.129.281.120",
+        "10.129.281.121",
+        "10.129.281.122",
+        "10.129.281.123",
+        "10.129.281.124",
+        "10.129.281.125"
+    ],
+    "latitude": 25.944,
+    "longitude": -97.318,
+    "nodes": [
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.97",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..Firewall 281",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 25.944,
+            "Longitude": -97.318
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.98",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..Router 281",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.1",
+            "ipAddress": "10.129.281.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2.OT.Switch 561",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.99",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2.Corporate.Switch 562",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.3",
+            "ipAddress": "10.129.281.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.4",
+            "ipAddress": "10.129.281.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.2",
+            "ipAddress": "10.129.281.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..RC 281",
+            "compromised": false,
+            "relayIPlist": [
+                "10.129.281.3",
+                "10.129.281.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.100",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..Host 561",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.100",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..Host 562",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.100",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..LocalDatabase 561",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.100",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..LocalWebServer 562",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.101",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..hmi 561",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.100",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..outstation 562",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 40.BROWNSVILLE 2..RC 281",
+            "destination": "Utility 40.BROWNSVILLE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 40.BROWNSVILLE 2..RC 281",
+            "destination": "Utility 40.BROWNSVILLE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 40.BROWNSVILLE 2..Router 281",
+            "destination": "Utility 40.BROWNSVILLE 2..Firewall 281",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 40.BROWNSVILLE 2..Firewall 281",
+            "destination": "Utility 40.BROWNSVILLE 2.OT.Switch 561",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 40.BROWNSVILLE 2.OT.Switch 561",
+            "destination": "Utility 40.BROWNSVILLE 2..RC 281",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 40.BROWNSVILLE 2..Firewall 281",
+            "destination": "Utility 40.BROWNSVILLE 2.Corporate.Switch 562",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 40.BROWNSVILLE 2.Corporate.Switch 562",
+            "destination": "Utility 40.BROWNSVILLE 2..Host 561",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 40.BROWNSVILLE 2.Corporate.Switch 562",
+            "destination": "Utility 40.BROWNSVILLE 2..Host 562",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 40.BROWNSVILLE 2.Corporate.Switch 562",
+            "destination": "Utility 40.BROWNSVILLE 2..LocalDatabase 561",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 40.BROWNSVILLE 2.Corporate.Switch 562",
+            "destination": "Utility 40.BROWNSVILLE 2..LocalWebServer 562",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.1",
+            "ipAddress": "10.129.281.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2.OT.Switch 561",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.2",
+            "ipAddress": "10.129.281.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..RC 281",
+            "compromised": false,
+            "relayIPlist": [
+                "10.129.281.3",
+                "10.129.281.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.97",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..Firewall 281",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 25.944,
+            "Longitude": -97.318
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.98",
+            "ipAddress": "10.129.281.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..Router 281",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.1",
+            "ipAddress": "10.129.281.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2.OT.Switch 561",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 40",
+            "adminIP": "10.129.281.2",
+            "ipAddress": "10.129.281.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BROWNSVILLE 2",
+            "label": "Utility 40.BROWNSVILLE 2..RC 281",
+            "compromised": false,
+            "relayIPlist": [
+                "10.129.281.3",
+                "10.129.281.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

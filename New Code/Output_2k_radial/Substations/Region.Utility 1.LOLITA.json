@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.LOLITA",
+    "networkLan": "10.58.983.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 58,
+    "substation": "LOLITA",
+    "substationNumber": 983,
+    "OTAddress": "10.58.983.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.58.983.1",
+        "10.58.983.2",
+        "10.58.983.3",
+        "10.58.983.4",
+        "10.58.983.5",
+        "10.58.983.6",
+        "10.58.983.7",
+        "10.58.983.8",
+        "10.58.983.9",
+        "10.58.983.10",
+        "10.58.983.11",
+        "10.58.983.12",
+        "10.58.983.13",
+        "10.58.983.14",
+        "10.58.983.15",
+        "10.58.983.16",
+        "10.58.983.17",
+        "10.58.983.18",
+        "10.58.983.19",
+        "10.58.983.20",
+        "10.58.983.21",
+        "10.58.983.22",
+        "10.58.983.23",
+        "10.58.983.24",
+        "10.58.983.25",
+        "10.58.983.26",
+        "10.58.983.27",
+        "10.58.983.28",
+        "10.58.983.29",
+        "10.58.983.30",
+        "10.58.983.31",
+        "10.58.983.32",
+        "10.58.983.33",
+        "10.58.983.34",
+        "10.58.983.35",
+        "10.58.983.36",
+        "10.58.983.37",
+        "10.58.983.38",
+        "10.58.983.39",
+        "10.58.983.40",
+        "10.58.983.41",
+        "10.58.983.42",
+        "10.58.983.43",
+        "10.58.983.44",
+        "10.58.983.45",
+        "10.58.983.46",
+        "10.58.983.47",
+        "10.58.983.48",
+        "10.58.983.49",
+        "10.58.983.50",
+        "10.58.983.51",
+        "10.58.983.52",
+        "10.58.983.53",
+        "10.58.983.54",
+        "10.58.983.55",
+        "10.58.983.56",
+        "10.58.983.57",
+        "10.58.983.58",
+        "10.58.983.59",
+        "10.58.983.60",
+        "10.58.983.61",
+        "10.58.983.62"
+    ],
+    "routeAddress": "10.58.983.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.58.983.65",
+        "10.58.983.66",
+        "10.58.983.67",
+        "10.58.983.68",
+        "10.58.983.69",
+        "10.58.983.70",
+        "10.58.983.71",
+        "10.58.983.72",
+        "10.58.983.73",
+        "10.58.983.74",
+        "10.58.983.75",
+        "10.58.983.76",
+        "10.58.983.77",
+        "10.58.983.78",
+        "10.58.983.79",
+        "10.58.983.80",
+        "10.58.983.81",
+        "10.58.983.82",
+        "10.58.983.83",
+        "10.58.983.84",
+        "10.58.983.85",
+        "10.58.983.86",
+        "10.58.983.87",
+        "10.58.983.88",
+        "10.58.983.89",
+        "10.58.983.90",
+        "10.58.983.91",
+        "10.58.983.92",
+        "10.58.983.93",
+        "10.58.983.94"
+    ],
+    "corporateAddress": "10.58.983.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.58.983.97",
+        "10.58.983.98",
+        "10.58.983.99",
+        "10.58.983.100",
+        "10.58.983.101",
+        "10.58.983.102",
+        "10.58.983.103",
+        "10.58.983.104",
+        "10.58.983.105",
+        "10.58.983.106",
+        "10.58.983.107",
+        "10.58.983.108",
+        "10.58.983.109",
+        "10.58.983.110",
+        "10.58.983.111",
+        "10.58.983.112",
+        "10.58.983.113",
+        "10.58.983.114",
+        "10.58.983.115",
+        "10.58.983.116",
+        "10.58.983.117",
+        "10.58.983.118",
+        "10.58.983.119",
+        "10.58.983.120",
+        "10.58.983.121",
+        "10.58.983.122",
+        "10.58.983.123",
+        "10.58.983.124",
+        "10.58.983.125"
+    ],
+    "latitude": 28.833,
+    "longitude": -96.522,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.97",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..Firewall 983",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.833,
+            "Longitude": -96.522
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.98",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..Router 983",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.1",
+            "ipAddress": "10.58.983.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA.OT.Switch 1965",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.99",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA.Corporate.Switch 1966",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.3",
+            "ipAddress": "10.58.983.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.2",
+            "ipAddress": "10.58.983.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..RC 983",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.983.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.100",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..Host 1965",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.100",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..Host 1966",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.100",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..LocalDatabase 1965",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.100",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..LocalWebServer 1966",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.101",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..hmi 1965",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.100",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..outstation 1966",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.LOLITA..RC 983",
+            "destination": "Utility 1.LOLITA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LOLITA..Router 983",
+            "destination": "Utility 1.LOLITA..Firewall 983",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LOLITA..Firewall 983",
+            "destination": "Utility 1.LOLITA.OT.Switch 1965",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LOLITA.OT.Switch 1965",
+            "destination": "Utility 1.LOLITA..RC 983",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LOLITA..Firewall 983",
+            "destination": "Utility 1.LOLITA.Corporate.Switch 1966",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LOLITA.Corporate.Switch 1966",
+            "destination": "Utility 1.LOLITA..Host 1965",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LOLITA.Corporate.Switch 1966",
+            "destination": "Utility 1.LOLITA..Host 1966",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LOLITA.Corporate.Switch 1966",
+            "destination": "Utility 1.LOLITA..LocalDatabase 1965",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LOLITA.Corporate.Switch 1966",
+            "destination": "Utility 1.LOLITA..LocalWebServer 1966",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.1",
+            "ipAddress": "10.58.983.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA.OT.Switch 1965",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.2",
+            "ipAddress": "10.58.983.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..RC 983",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.983.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.97",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..Firewall 983",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.833,
+            "Longitude": -96.522
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.98",
+            "ipAddress": "10.58.983.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..Router 983",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.1",
+            "ipAddress": "10.58.983.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA.OT.Switch 1965",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.983.2",
+            "ipAddress": "10.58.983.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LOLITA",
+            "label": "Utility 1.LOLITA..RC 983",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.983.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

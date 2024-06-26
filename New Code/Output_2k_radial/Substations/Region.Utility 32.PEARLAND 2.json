@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 32.PEARLAND 2",
+    "networkLan": "10.176.964.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 32",
+    "utility_id": 176,
+    "substation": "PEARLAND 2",
+    "substationNumber": 964,
+    "OTAddress": "10.176.964.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.176.964.1",
+        "10.176.964.2",
+        "10.176.964.3",
+        "10.176.964.4",
+        "10.176.964.5",
+        "10.176.964.6",
+        "10.176.964.7",
+        "10.176.964.8",
+        "10.176.964.9",
+        "10.176.964.10",
+        "10.176.964.11",
+        "10.176.964.12",
+        "10.176.964.13",
+        "10.176.964.14",
+        "10.176.964.15",
+        "10.176.964.16",
+        "10.176.964.17",
+        "10.176.964.18",
+        "10.176.964.19",
+        "10.176.964.20",
+        "10.176.964.21",
+        "10.176.964.22",
+        "10.176.964.23",
+        "10.176.964.24",
+        "10.176.964.25",
+        "10.176.964.26",
+        "10.176.964.27",
+        "10.176.964.28",
+        "10.176.964.29",
+        "10.176.964.30",
+        "10.176.964.31",
+        "10.176.964.32",
+        "10.176.964.33",
+        "10.176.964.34",
+        "10.176.964.35",
+        "10.176.964.36",
+        "10.176.964.37",
+        "10.176.964.38",
+        "10.176.964.39",
+        "10.176.964.40",
+        "10.176.964.41",
+        "10.176.964.42",
+        "10.176.964.43",
+        "10.176.964.44",
+        "10.176.964.45",
+        "10.176.964.46",
+        "10.176.964.47",
+        "10.176.964.48",
+        "10.176.964.49",
+        "10.176.964.50",
+        "10.176.964.51",
+        "10.176.964.52",
+        "10.176.964.53",
+        "10.176.964.54",
+        "10.176.964.55",
+        "10.176.964.56",
+        "10.176.964.57",
+        "10.176.964.58",
+        "10.176.964.59",
+        "10.176.964.60",
+        "10.176.964.61",
+        "10.176.964.62"
+    ],
+    "routeAddress": "10.176.964.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.176.964.65",
+        "10.176.964.66",
+        "10.176.964.67",
+        "10.176.964.68",
+        "10.176.964.69",
+        "10.176.964.70",
+        "10.176.964.71",
+        "10.176.964.72",
+        "10.176.964.73",
+        "10.176.964.74",
+        "10.176.964.75",
+        "10.176.964.76",
+        "10.176.964.77",
+        "10.176.964.78",
+        "10.176.964.79",
+        "10.176.964.80",
+        "10.176.964.81",
+        "10.176.964.82",
+        "10.176.964.83",
+        "10.176.964.84",
+        "10.176.964.85",
+        "10.176.964.86",
+        "10.176.964.87",
+        "10.176.964.88",
+        "10.176.964.89",
+        "10.176.964.90",
+        "10.176.964.91",
+        "10.176.964.92",
+        "10.176.964.93",
+        "10.176.964.94"
+    ],
+    "corporateAddress": "10.176.964.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.176.964.97",
+        "10.176.964.98",
+        "10.176.964.99",
+        "10.176.964.100",
+        "10.176.964.101",
+        "10.176.964.102",
+        "10.176.964.103",
+        "10.176.964.104",
+        "10.176.964.105",
+        "10.176.964.106",
+        "10.176.964.107",
+        "10.176.964.108",
+        "10.176.964.109",
+        "10.176.964.110",
+        "10.176.964.111",
+        "10.176.964.112",
+        "10.176.964.113",
+        "10.176.964.114",
+        "10.176.964.115",
+        "10.176.964.116",
+        "10.176.964.117",
+        "10.176.964.118",
+        "10.176.964.119",
+        "10.176.964.120",
+        "10.176.964.121",
+        "10.176.964.122",
+        "10.176.964.123",
+        "10.176.964.124",
+        "10.176.964.125"
+    ],
+    "latitude": 29.545,
+    "longitude": -95.35,
+    "nodes": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.97",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..Firewall 964",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.545,
+            "Longitude": -95.35
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.98",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..Router 964",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.1",
+            "ipAddress": "10.176.964.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2.OT.Switch 1927",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.99",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2.Corporate.Switch 1928",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.3",
+            "ipAddress": "10.176.964.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.2",
+            "ipAddress": "10.176.964.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..RC 964",
+            "compromised": false,
+            "relayIPlist": [
+                "10.176.964.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.100",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..Host 1927",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.100",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..Host 1928",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.100",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..LocalDatabase 1927",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.100",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..LocalWebServer 1928",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.101",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..hmi 1927",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.100",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..outstation 1928",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 32.PEARLAND 2..RC 964",
+            "destination": "Utility 32.PEARLAND 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.PEARLAND 2..Router 964",
+            "destination": "Utility 32.PEARLAND 2..Firewall 964",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.PEARLAND 2..Firewall 964",
+            "destination": "Utility 32.PEARLAND 2.OT.Switch 1927",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.PEARLAND 2.OT.Switch 1927",
+            "destination": "Utility 32.PEARLAND 2..RC 964",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.PEARLAND 2..Firewall 964",
+            "destination": "Utility 32.PEARLAND 2.Corporate.Switch 1928",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.PEARLAND 2.Corporate.Switch 1928",
+            "destination": "Utility 32.PEARLAND 2..Host 1927",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.PEARLAND 2.Corporate.Switch 1928",
+            "destination": "Utility 32.PEARLAND 2..Host 1928",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.PEARLAND 2.Corporate.Switch 1928",
+            "destination": "Utility 32.PEARLAND 2..LocalDatabase 1927",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.PEARLAND 2.Corporate.Switch 1928",
+            "destination": "Utility 32.PEARLAND 2..LocalWebServer 1928",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.1",
+            "ipAddress": "10.176.964.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2.OT.Switch 1927",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.2",
+            "ipAddress": "10.176.964.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..RC 964",
+            "compromised": false,
+            "relayIPlist": [
+                "10.176.964.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.97",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..Firewall 964",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.545,
+            "Longitude": -95.35
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.98",
+            "ipAddress": "10.176.964.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..Router 964",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.1",
+            "ipAddress": "10.176.964.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2.OT.Switch 1927",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.964.2",
+            "ipAddress": "10.176.964.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARLAND 2",
+            "label": "Utility 32.PEARLAND 2..RC 964",
+            "compromised": false,
+            "relayIPlist": [
+                "10.176.964.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

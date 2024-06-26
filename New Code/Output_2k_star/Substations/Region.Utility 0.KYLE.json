@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 0.KYLE",
+    "networkLan": "10.164.870.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 164,
+    "substation": "KYLE",
+    "substationNumber": 870,
+    "OTAddress": "10.164.870.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.164.870.1",
+        "10.164.870.2",
+        "10.164.870.3",
+        "10.164.870.4",
+        "10.164.870.5",
+        "10.164.870.6",
+        "10.164.870.7",
+        "10.164.870.8",
+        "10.164.870.9",
+        "10.164.870.10",
+        "10.164.870.11",
+        "10.164.870.12",
+        "10.164.870.13",
+        "10.164.870.14",
+        "10.164.870.15",
+        "10.164.870.16",
+        "10.164.870.17",
+        "10.164.870.18",
+        "10.164.870.19",
+        "10.164.870.20",
+        "10.164.870.21",
+        "10.164.870.22",
+        "10.164.870.23",
+        "10.164.870.24",
+        "10.164.870.25",
+        "10.164.870.26",
+        "10.164.870.27",
+        "10.164.870.28",
+        "10.164.870.29",
+        "10.164.870.30",
+        "10.164.870.31",
+        "10.164.870.32",
+        "10.164.870.33",
+        "10.164.870.34",
+        "10.164.870.35",
+        "10.164.870.36",
+        "10.164.870.37",
+        "10.164.870.38",
+        "10.164.870.39",
+        "10.164.870.40",
+        "10.164.870.41",
+        "10.164.870.42",
+        "10.164.870.43",
+        "10.164.870.44",
+        "10.164.870.45",
+        "10.164.870.46",
+        "10.164.870.47",
+        "10.164.870.48",
+        "10.164.870.49",
+        "10.164.870.50",
+        "10.164.870.51",
+        "10.164.870.52",
+        "10.164.870.53",
+        "10.164.870.54",
+        "10.164.870.55",
+        "10.164.870.56",
+        "10.164.870.57",
+        "10.164.870.58",
+        "10.164.870.59",
+        "10.164.870.60",
+        "10.164.870.61",
+        "10.164.870.62"
+    ],
+    "routeAddress": "10.164.870.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.164.870.65",
+        "10.164.870.66",
+        "10.164.870.67",
+        "10.164.870.68",
+        "10.164.870.69",
+        "10.164.870.70",
+        "10.164.870.71",
+        "10.164.870.72",
+        "10.164.870.73",
+        "10.164.870.74",
+        "10.164.870.75",
+        "10.164.870.76",
+        "10.164.870.77",
+        "10.164.870.78",
+        "10.164.870.79",
+        "10.164.870.80",
+        "10.164.870.81",
+        "10.164.870.82",
+        "10.164.870.83",
+        "10.164.870.84",
+        "10.164.870.85",
+        "10.164.870.86",
+        "10.164.870.87",
+        "10.164.870.88",
+        "10.164.870.89",
+        "10.164.870.90",
+        "10.164.870.91",
+        "10.164.870.92",
+        "10.164.870.93",
+        "10.164.870.94"
+    ],
+    "corporateAddress": "10.164.870.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.164.870.97",
+        "10.164.870.98",
+        "10.164.870.99",
+        "10.164.870.100",
+        "10.164.870.101",
+        "10.164.870.102",
+        "10.164.870.103",
+        "10.164.870.104",
+        "10.164.870.105",
+        "10.164.870.106",
+        "10.164.870.107",
+        "10.164.870.108",
+        "10.164.870.109",
+        "10.164.870.110",
+        "10.164.870.111",
+        "10.164.870.112",
+        "10.164.870.113",
+        "10.164.870.114",
+        "10.164.870.115",
+        "10.164.870.116",
+        "10.164.870.117",
+        "10.164.870.118",
+        "10.164.870.119",
+        "10.164.870.120",
+        "10.164.870.121",
+        "10.164.870.122",
+        "10.164.870.123",
+        "10.164.870.124",
+        "10.164.870.125"
+    ],
+    "latitude": 29.905,
+    "longitude": -97.807,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.97",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..Firewall 870",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.905,
+            "Longitude": -97.807
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.98",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..Router 870",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.1",
+            "ipAddress": "10.164.870.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE.OT.Switch 1739",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.99",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE.Corporate.Switch 1740",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.3",
+            "ipAddress": "10.164.870.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.4",
+            "ipAddress": "10.164.870.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.2",
+            "ipAddress": "10.164.870.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..RC 870",
+            "compromised": false,
+            "relayIPlist": [
+                "10.164.870.3",
+                "10.164.870.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.100",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..Host 1739",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.100",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..Host 1740",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.100",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..LocalDatabase 1739",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.100",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..LocalWebServer 1740",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.101",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..hmi 1739",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.100",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..outstation 1740",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.KYLE..RC 870",
+            "destination": "Utility 0.KYLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KYLE..RC 870",
+            "destination": "Utility 0.KYLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KYLE..Router 870",
+            "destination": "Utility 0.KYLE..Firewall 870",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KYLE..Firewall 870",
+            "destination": "Utility 0.KYLE.OT.Switch 1739",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KYLE.OT.Switch 1739",
+            "destination": "Utility 0.KYLE..RC 870",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KYLE..Firewall 870",
+            "destination": "Utility 0.KYLE.Corporate.Switch 1740",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KYLE.Corporate.Switch 1740",
+            "destination": "Utility 0.KYLE..Host 1739",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KYLE.Corporate.Switch 1740",
+            "destination": "Utility 0.KYLE..Host 1740",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KYLE.Corporate.Switch 1740",
+            "destination": "Utility 0.KYLE..LocalDatabase 1739",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.KYLE.Corporate.Switch 1740",
+            "destination": "Utility 0.KYLE..LocalWebServer 1740",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.1",
+            "ipAddress": "10.164.870.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE.OT.Switch 1739",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.2",
+            "ipAddress": "10.164.870.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..RC 870",
+            "compromised": false,
+            "relayIPlist": [
+                "10.164.870.3",
+                "10.164.870.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.97",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..Firewall 870",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.905,
+            "Longitude": -97.807
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.98",
+            "ipAddress": "10.164.870.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..Router 870",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.1",
+            "ipAddress": "10.164.870.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE.OT.Switch 1739",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.870.2",
+            "ipAddress": "10.164.870.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "KYLE",
+            "label": "Utility 0.KYLE..RC 870",
+            "compromised": false,
+            "relayIPlist": [
+                "10.164.870.3",
+                "10.164.870.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,790 @@
+{
+    "relayCounter": 8,
+    "label": "Region.Utility 3.BASTROP",
+    "networkLan": "10.56.718.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "BASTROP",
+    "substationNumber": 718,
+    "OTAddress": "10.56.718.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.718.1",
+        "10.56.718.2",
+        "10.56.718.3",
+        "10.56.718.4",
+        "10.56.718.5",
+        "10.56.718.6",
+        "10.56.718.7",
+        "10.56.718.8",
+        "10.56.718.9",
+        "10.56.718.10",
+        "10.56.718.11",
+        "10.56.718.12",
+        "10.56.718.13",
+        "10.56.718.14",
+        "10.56.718.15",
+        "10.56.718.16",
+        "10.56.718.17",
+        "10.56.718.18",
+        "10.56.718.19",
+        "10.56.718.20",
+        "10.56.718.21",
+        "10.56.718.22",
+        "10.56.718.23",
+        "10.56.718.24",
+        "10.56.718.25",
+        "10.56.718.26",
+        "10.56.718.27",
+        "10.56.718.28",
+        "10.56.718.29",
+        "10.56.718.30",
+        "10.56.718.31",
+        "10.56.718.32",
+        "10.56.718.33",
+        "10.56.718.34",
+        "10.56.718.35",
+        "10.56.718.36",
+        "10.56.718.37",
+        "10.56.718.38",
+        "10.56.718.39",
+        "10.56.718.40",
+        "10.56.718.41",
+        "10.56.718.42",
+        "10.56.718.43",
+        "10.56.718.44",
+        "10.56.718.45",
+        "10.56.718.46",
+        "10.56.718.47",
+        "10.56.718.48",
+        "10.56.718.49",
+        "10.56.718.50",
+        "10.56.718.51",
+        "10.56.718.52",
+        "10.56.718.53",
+        "10.56.718.54",
+        "10.56.718.55",
+        "10.56.718.56",
+        "10.56.718.57",
+        "10.56.718.58",
+        "10.56.718.59",
+        "10.56.718.60",
+        "10.56.718.61",
+        "10.56.718.62"
+    ],
+    "routeAddress": "10.56.718.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.718.65",
+        "10.56.718.66",
+        "10.56.718.67",
+        "10.56.718.68",
+        "10.56.718.69",
+        "10.56.718.70",
+        "10.56.718.71",
+        "10.56.718.72",
+        "10.56.718.73",
+        "10.56.718.74",
+        "10.56.718.75",
+        "10.56.718.76",
+        "10.56.718.77",
+        "10.56.718.78",
+        "10.56.718.79",
+        "10.56.718.80",
+        "10.56.718.81",
+        "10.56.718.82",
+        "10.56.718.83",
+        "10.56.718.84",
+        "10.56.718.85",
+        "10.56.718.86",
+        "10.56.718.87",
+        "10.56.718.88",
+        "10.56.718.89",
+        "10.56.718.90",
+        "10.56.718.91",
+        "10.56.718.92",
+        "10.56.718.93",
+        "10.56.718.94"
+    ],
+    "corporateAddress": "10.56.718.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.718.97",
+        "10.56.718.98",
+        "10.56.718.99",
+        "10.56.718.100",
+        "10.56.718.101",
+        "10.56.718.102",
+        "10.56.718.103",
+        "10.56.718.104",
+        "10.56.718.105",
+        "10.56.718.106",
+        "10.56.718.107",
+        "10.56.718.108",
+        "10.56.718.109",
+        "10.56.718.110",
+        "10.56.718.111",
+        "10.56.718.112",
+        "10.56.718.113",
+        "10.56.718.114",
+        "10.56.718.115",
+        "10.56.718.116",
+        "10.56.718.117",
+        "10.56.718.118",
+        "10.56.718.119",
+        "10.56.718.120",
+        "10.56.718.121",
+        "10.56.718.122",
+        "10.56.718.123",
+        "10.56.718.124",
+        "10.56.718.125"
+    ],
+    "latitude": 30.146,
+    "longitude": -97.271,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.97",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Firewall 718",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.146,
+            "Longitude": -97.271
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.98",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Router 718",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.1",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP.OT.Switch 1435",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.99",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP.Corporate.Switch 1436",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.3",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.4",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.5",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.6",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.7",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.8",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.9",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.10",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.2",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..RC 718",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.718.3",
+                "10.56.718.4",
+                "10.56.718.5",
+                "10.56.718.6",
+                "10.56.718.7",
+                "10.56.718.8",
+                "10.56.718.9",
+                "10.56.718.10"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.100",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Host 1435",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.100",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Host 1436",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.100",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..LocalDatabase 1435",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.100",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..LocalWebServer 1436",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.101",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..hmi 1435",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.100",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..outstation 1436",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.BASTROP..RC 718",
+            "destination": "Utility 3.BASTROP..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..RC 718",
+            "destination": "Utility 3.BASTROP..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..RC 718",
+            "destination": "Utility 3.BASTROP..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..RC 718",
+            "destination": "Utility 3.BASTROP..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..RC 718",
+            "destination": "Utility 3.BASTROP..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..RC 718",
+            "destination": "Utility 3.BASTROP..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..RC 718",
+            "destination": "Utility 3.BASTROP..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..RC 718",
+            "destination": "Utility 3.BASTROP..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..Router 718",
+            "destination": "Utility 3.BASTROP..Firewall 718",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..Firewall 718",
+            "destination": "Utility 3.BASTROP.OT.Switch 1435",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP.OT.Switch 1435",
+            "destination": "Utility 3.BASTROP..RC 718",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP..Firewall 718",
+            "destination": "Utility 3.BASTROP.Corporate.Switch 1436",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP.Corporate.Switch 1436",
+            "destination": "Utility 3.BASTROP..Host 1435",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP.Corporate.Switch 1436",
+            "destination": "Utility 3.BASTROP..Host 1436",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP.Corporate.Switch 1436",
+            "destination": "Utility 3.BASTROP..LocalDatabase 1435",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BASTROP.Corporate.Switch 1436",
+            "destination": "Utility 3.BASTROP..LocalWebServer 1436",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.1",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP.OT.Switch 1435",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.2",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..RC 718",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.718.3",
+                "10.56.718.4",
+                "10.56.718.5",
+                "10.56.718.6",
+                "10.56.718.7",
+                "10.56.718.8",
+                "10.56.718.9",
+                "10.56.718.10"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.97",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Firewall 718",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.146,
+            "Longitude": -97.271
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.98",
+            "ipAddress": "10.56.718.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..Router 718",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.1",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP.OT.Switch 1435",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.718.2",
+            "ipAddress": "10.56.718.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BASTROP",
+            "label": "Utility 3.BASTROP..RC 718",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.718.3",
+                "10.56.718.4",
+                "10.56.718.5",
+                "10.56.718.6",
+                "10.56.718.7",
+                "10.56.718.8",
+                "10.56.718.9",
+                "10.56.718.10"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 805.73,
+    "genmvar": 244.55,
+    "connecting_TS_num": 772
+}

@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 141.PENITAS",
+    "networkLan": "10.126.330.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 141",
+    "utility_id": 126,
+    "substation": "PENITAS",
+    "substationNumber": 330,
+    "OTAddress": "10.126.330.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.126.330.1",
+        "10.126.330.2",
+        "10.126.330.3",
+        "10.126.330.4",
+        "10.126.330.5",
+        "10.126.330.6",
+        "10.126.330.7",
+        "10.126.330.8",
+        "10.126.330.9",
+        "10.126.330.10",
+        "10.126.330.11",
+        "10.126.330.12",
+        "10.126.330.13",
+        "10.126.330.14",
+        "10.126.330.15",
+        "10.126.330.16",
+        "10.126.330.17",
+        "10.126.330.18",
+        "10.126.330.19",
+        "10.126.330.20",
+        "10.126.330.21",
+        "10.126.330.22",
+        "10.126.330.23",
+        "10.126.330.24",
+        "10.126.330.25",
+        "10.126.330.26",
+        "10.126.330.27",
+        "10.126.330.28",
+        "10.126.330.29",
+        "10.126.330.30",
+        "10.126.330.31",
+        "10.126.330.32",
+        "10.126.330.33",
+        "10.126.330.34",
+        "10.126.330.35",
+        "10.126.330.36",
+        "10.126.330.37",
+        "10.126.330.38",
+        "10.126.330.39",
+        "10.126.330.40",
+        "10.126.330.41",
+        "10.126.330.42",
+        "10.126.330.43",
+        "10.126.330.44",
+        "10.126.330.45",
+        "10.126.330.46",
+        "10.126.330.47",
+        "10.126.330.48",
+        "10.126.330.49",
+        "10.126.330.50",
+        "10.126.330.51",
+        "10.126.330.52",
+        "10.126.330.53",
+        "10.126.330.54",
+        "10.126.330.55",
+        "10.126.330.56",
+        "10.126.330.57",
+        "10.126.330.58",
+        "10.126.330.59",
+        "10.126.330.60",
+        "10.126.330.61",
+        "10.126.330.62"
+    ],
+    "routeAddress": "10.126.330.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.126.330.65",
+        "10.126.330.66",
+        "10.126.330.67",
+        "10.126.330.68",
+        "10.126.330.69",
+        "10.126.330.70",
+        "10.126.330.71",
+        "10.126.330.72",
+        "10.126.330.73",
+        "10.126.330.74",
+        "10.126.330.75",
+        "10.126.330.76",
+        "10.126.330.77",
+        "10.126.330.78",
+        "10.126.330.79",
+        "10.126.330.80",
+        "10.126.330.81",
+        "10.126.330.82",
+        "10.126.330.83",
+        "10.126.330.84",
+        "10.126.330.85",
+        "10.126.330.86",
+        "10.126.330.87",
+        "10.126.330.88",
+        "10.126.330.89",
+        "10.126.330.90",
+        "10.126.330.91",
+        "10.126.330.92",
+        "10.126.330.93",
+        "10.126.330.94"
+    ],
+    "corporateAddress": "10.126.330.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.126.330.97",
+        "10.126.330.98",
+        "10.126.330.99",
+        "10.126.330.100",
+        "10.126.330.101",
+        "10.126.330.102",
+        "10.126.330.103",
+        "10.126.330.104",
+        "10.126.330.105",
+        "10.126.330.106",
+        "10.126.330.107",
+        "10.126.330.108",
+        "10.126.330.109",
+        "10.126.330.110",
+        "10.126.330.111",
+        "10.126.330.112",
+        "10.126.330.113",
+        "10.126.330.114",
+        "10.126.330.115",
+        "10.126.330.116",
+        "10.126.330.117",
+        "10.126.330.118",
+        "10.126.330.119",
+        "10.126.330.120",
+        "10.126.330.121",
+        "10.126.330.122",
+        "10.126.330.123",
+        "10.126.330.124",
+        "10.126.330.125"
+    ],
+    "latitude": 26.322,
+    "longitude": -98.476,
+    "nodes": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.97",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..Firewall 330",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.322,
+            "Longitude": -98.476
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.98",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..Router 330",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.1",
+            "ipAddress": "10.126.330.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS.OT.Switch 659",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.99",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS.Corporate.Switch 660",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.3",
+            "ipAddress": "10.126.330.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.2",
+            "ipAddress": "10.126.330.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..RC 330",
+            "compromised": false,
+            "relayIPlist": [
+                "10.126.330.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.100",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..Host 659",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.100",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..Host 660",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.100",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..LocalDatabase 659",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.100",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..LocalWebServer 660",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.101",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..hmi 659",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.100",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..outstation 660",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 141.PENITAS..RC 330",
+            "destination": "Utility 141.PENITAS..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.PENITAS..Router 330",
+            "destination": "Utility 141.PENITAS..Firewall 330",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.PENITAS..Firewall 330",
+            "destination": "Utility 141.PENITAS.OT.Switch 659",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.PENITAS.OT.Switch 659",
+            "destination": "Utility 141.PENITAS..RC 330",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.PENITAS..Firewall 330",
+            "destination": "Utility 141.PENITAS.Corporate.Switch 660",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.PENITAS.Corporate.Switch 660",
+            "destination": "Utility 141.PENITAS..Host 659",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.PENITAS.Corporate.Switch 660",
+            "destination": "Utility 141.PENITAS..Host 660",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.PENITAS.Corporate.Switch 660",
+            "destination": "Utility 141.PENITAS..LocalDatabase 659",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 141.PENITAS.Corporate.Switch 660",
+            "destination": "Utility 141.PENITAS..LocalWebServer 660",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.1",
+            "ipAddress": "10.126.330.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS.OT.Switch 659",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.2",
+            "ipAddress": "10.126.330.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..RC 330",
+            "compromised": false,
+            "relayIPlist": [
+                "10.126.330.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.97",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..Firewall 330",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.322,
+            "Longitude": -98.476
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.98",
+            "ipAddress": "10.126.330.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..Router 330",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.1",
+            "ipAddress": "10.126.330.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS.OT.Switch 659",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 141",
+            "adminIP": "10.126.330.2",
+            "ipAddress": "10.126.330.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PENITAS",
+            "label": "Utility 141.PENITAS..RC 330",
+            "compromised": false,
+            "relayIPlist": [
+                "10.126.330.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

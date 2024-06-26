@@ -1,0 +1,667 @@
+{
+    "relayCounter": 5,
+    "label": "Region.Utility 1.GEORGETOWN 3",
+    "networkLan": "10.53.891.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "GEORGETOWN 3",
+    "substationNumber": 891,
+    "OTAddress": "10.53.891.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.891.1",
+        "10.53.891.2",
+        "10.53.891.3",
+        "10.53.891.4",
+        "10.53.891.5",
+        "10.53.891.6",
+        "10.53.891.7",
+        "10.53.891.8",
+        "10.53.891.9",
+        "10.53.891.10",
+        "10.53.891.11",
+        "10.53.891.12",
+        "10.53.891.13",
+        "10.53.891.14",
+        "10.53.891.15",
+        "10.53.891.16",
+        "10.53.891.17",
+        "10.53.891.18",
+        "10.53.891.19",
+        "10.53.891.20",
+        "10.53.891.21",
+        "10.53.891.22",
+        "10.53.891.23",
+        "10.53.891.24",
+        "10.53.891.25",
+        "10.53.891.26",
+        "10.53.891.27",
+        "10.53.891.28",
+        "10.53.891.29",
+        "10.53.891.30",
+        "10.53.891.31",
+        "10.53.891.32",
+        "10.53.891.33",
+        "10.53.891.34",
+        "10.53.891.35",
+        "10.53.891.36",
+        "10.53.891.37",
+        "10.53.891.38",
+        "10.53.891.39",
+        "10.53.891.40",
+        "10.53.891.41",
+        "10.53.891.42",
+        "10.53.891.43",
+        "10.53.891.44",
+        "10.53.891.45",
+        "10.53.891.46",
+        "10.53.891.47",
+        "10.53.891.48",
+        "10.53.891.49",
+        "10.53.891.50",
+        "10.53.891.51",
+        "10.53.891.52",
+        "10.53.891.53",
+        "10.53.891.54",
+        "10.53.891.55",
+        "10.53.891.56",
+        "10.53.891.57",
+        "10.53.891.58",
+        "10.53.891.59",
+        "10.53.891.60",
+        "10.53.891.61",
+        "10.53.891.62"
+    ],
+    "routeAddress": "10.53.891.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.891.65",
+        "10.53.891.66",
+        "10.53.891.67",
+        "10.53.891.68",
+        "10.53.891.69",
+        "10.53.891.70",
+        "10.53.891.71",
+        "10.53.891.72",
+        "10.53.891.73",
+        "10.53.891.74",
+        "10.53.891.75",
+        "10.53.891.76",
+        "10.53.891.77",
+        "10.53.891.78",
+        "10.53.891.79",
+        "10.53.891.80",
+        "10.53.891.81",
+        "10.53.891.82",
+        "10.53.891.83",
+        "10.53.891.84",
+        "10.53.891.85",
+        "10.53.891.86",
+        "10.53.891.87",
+        "10.53.891.88",
+        "10.53.891.89",
+        "10.53.891.90",
+        "10.53.891.91",
+        "10.53.891.92",
+        "10.53.891.93",
+        "10.53.891.94"
+    ],
+    "corporateAddress": "10.53.891.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.891.97",
+        "10.53.891.98",
+        "10.53.891.99",
+        "10.53.891.100",
+        "10.53.891.101",
+        "10.53.891.102",
+        "10.53.891.103",
+        "10.53.891.104",
+        "10.53.891.105",
+        "10.53.891.106",
+        "10.53.891.107",
+        "10.53.891.108",
+        "10.53.891.109",
+        "10.53.891.110",
+        "10.53.891.111",
+        "10.53.891.112",
+        "10.53.891.113",
+        "10.53.891.114",
+        "10.53.891.115",
+        "10.53.891.116",
+        "10.53.891.117",
+        "10.53.891.118",
+        "10.53.891.119",
+        "10.53.891.120",
+        "10.53.891.121",
+        "10.53.891.122",
+        "10.53.891.123",
+        "10.53.891.124",
+        "10.53.891.125"
+    ],
+    "latitude": 30.842,
+    "longitude": -97.81,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.97",
+            "ipAddress": "10.53.891.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Firewall 891",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.842,
+            "Longitude": -97.81
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.98",
+            "ipAddress": "10.53.891.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Router 891",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.1",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3.OT.Switch 1781",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.99",
+            "ipAddress": "10.53.891.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3.Corporate.Switch 1782",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.3",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.4",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.5",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.6",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.7",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.2",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..RC 891",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.891.3",
+                "10.53.891.4",
+                "10.53.891.5",
+                "10.53.891.6",
+                "10.53.891.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.100",
+            "ipAddress": "10.53.891.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Host 1781",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.100",
+            "ipAddress": "10.53.891.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Host 1782",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.100",
+            "ipAddress": "10.53.891.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..LocalDatabase 1781",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.100",
+            "ipAddress": "10.53.891.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..LocalWebServer 1782",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.GEORGETOWN 3..RC 891",
+            "destination": "Utility 1.GEORGETOWN 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3..RC 891",
+            "destination": "Utility 1.GEORGETOWN 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3..RC 891",
+            "destination": "Utility 1.GEORGETOWN 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3..RC 891",
+            "destination": "Utility 1.GEORGETOWN 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3..RC 891",
+            "destination": "Utility 1.GEORGETOWN 3..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3..Router 891",
+            "destination": "Utility 1.GEORGETOWN 3..Firewall 891",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3..Firewall 891",
+            "destination": "Utility 1.GEORGETOWN 3.OT.Switch 1781",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3.OT.Switch 1781",
+            "destination": "Utility 1.GEORGETOWN 3..RC 891",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3..Firewall 891",
+            "destination": "Utility 1.GEORGETOWN 3.Corporate.Switch 1782",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3.Corporate.Switch 1782",
+            "destination": "Utility 1.GEORGETOWN 3..Host 1781",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3.Corporate.Switch 1782",
+            "destination": "Utility 1.GEORGETOWN 3..Host 1782",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3.Corporate.Switch 1782",
+            "destination": "Utility 1.GEORGETOWN 3..LocalDatabase 1781",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.GEORGETOWN 3.Corporate.Switch 1782",
+            "destination": "Utility 1.GEORGETOWN 3..LocalWebServer 1782",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.1",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3.OT.Switch 1781",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.2",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..RC 891",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.891.3",
+                "10.53.891.4",
+                "10.53.891.5",
+                "10.53.891.6",
+                "10.53.891.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.97",
+            "ipAddress": "10.53.891.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Firewall 891",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.842,
+            "Longitude": -97.81
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.98",
+            "ipAddress": "10.53.891.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..Router 891",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.1",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3.OT.Switch 1781",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.891.2",
+            "ipAddress": "10.53.891.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GEORGETOWN 3",
+            "label": "Utility 1.GEORGETOWN 3..RC 891",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.891.3",
+                "10.53.891.4",
+                "10.53.891.5",
+                "10.53.891.6",
+                "10.53.891.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

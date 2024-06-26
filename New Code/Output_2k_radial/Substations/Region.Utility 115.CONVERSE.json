@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 115.CONVERSE",
+    "networkLan": "10.161.716.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 115",
+    "utility_id": 161,
+    "substation": "CONVERSE",
+    "substationNumber": 716,
+    "OTAddress": "10.161.716.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.161.716.1",
+        "10.161.716.2",
+        "10.161.716.3",
+        "10.161.716.4",
+        "10.161.716.5",
+        "10.161.716.6",
+        "10.161.716.7",
+        "10.161.716.8",
+        "10.161.716.9",
+        "10.161.716.10",
+        "10.161.716.11",
+        "10.161.716.12",
+        "10.161.716.13",
+        "10.161.716.14",
+        "10.161.716.15",
+        "10.161.716.16",
+        "10.161.716.17",
+        "10.161.716.18",
+        "10.161.716.19",
+        "10.161.716.20",
+        "10.161.716.21",
+        "10.161.716.22",
+        "10.161.716.23",
+        "10.161.716.24",
+        "10.161.716.25",
+        "10.161.716.26",
+        "10.161.716.27",
+        "10.161.716.28",
+        "10.161.716.29",
+        "10.161.716.30",
+        "10.161.716.31",
+        "10.161.716.32",
+        "10.161.716.33",
+        "10.161.716.34",
+        "10.161.716.35",
+        "10.161.716.36",
+        "10.161.716.37",
+        "10.161.716.38",
+        "10.161.716.39",
+        "10.161.716.40",
+        "10.161.716.41",
+        "10.161.716.42",
+        "10.161.716.43",
+        "10.161.716.44",
+        "10.161.716.45",
+        "10.161.716.46",
+        "10.161.716.47",
+        "10.161.716.48",
+        "10.161.716.49",
+        "10.161.716.50",
+        "10.161.716.51",
+        "10.161.716.52",
+        "10.161.716.53",
+        "10.161.716.54",
+        "10.161.716.55",
+        "10.161.716.56",
+        "10.161.716.57",
+        "10.161.716.58",
+        "10.161.716.59",
+        "10.161.716.60",
+        "10.161.716.61",
+        "10.161.716.62"
+    ],
+    "routeAddress": "10.161.716.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.161.716.65",
+        "10.161.716.66",
+        "10.161.716.67",
+        "10.161.716.68",
+        "10.161.716.69",
+        "10.161.716.70",
+        "10.161.716.71",
+        "10.161.716.72",
+        "10.161.716.73",
+        "10.161.716.74",
+        "10.161.716.75",
+        "10.161.716.76",
+        "10.161.716.77",
+        "10.161.716.78",
+        "10.161.716.79",
+        "10.161.716.80",
+        "10.161.716.81",
+        "10.161.716.82",
+        "10.161.716.83",
+        "10.161.716.84",
+        "10.161.716.85",
+        "10.161.716.86",
+        "10.161.716.87",
+        "10.161.716.88",
+        "10.161.716.89",
+        "10.161.716.90",
+        "10.161.716.91",
+        "10.161.716.92",
+        "10.161.716.93",
+        "10.161.716.94"
+    ],
+    "corporateAddress": "10.161.716.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.161.716.97",
+        "10.161.716.98",
+        "10.161.716.99",
+        "10.161.716.100",
+        "10.161.716.101",
+        "10.161.716.102",
+        "10.161.716.103",
+        "10.161.716.104",
+        "10.161.716.105",
+        "10.161.716.106",
+        "10.161.716.107",
+        "10.161.716.108",
+        "10.161.716.109",
+        "10.161.716.110",
+        "10.161.716.111",
+        "10.161.716.112",
+        "10.161.716.113",
+        "10.161.716.114",
+        "10.161.716.115",
+        "10.161.716.116",
+        "10.161.716.117",
+        "10.161.716.118",
+        "10.161.716.119",
+        "10.161.716.120",
+        "10.161.716.121",
+        "10.161.716.122",
+        "10.161.716.123",
+        "10.161.716.124",
+        "10.161.716.125"
+    ],
+    "latitude": 29.488,
+    "longitude": -98.291,
+    "nodes": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.97",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..Firewall 716",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.488,
+            "Longitude": -98.291
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.98",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..Router 716",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.1",
+            "ipAddress": "10.161.716.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE.OT.Switch 1431",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.99",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE.Corporate.Switch 1432",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.3",
+            "ipAddress": "10.161.716.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.2",
+            "ipAddress": "10.161.716.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..RC 716",
+            "compromised": false,
+            "relayIPlist": [
+                "10.161.716.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.100",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..Host 1431",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.100",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..Host 1432",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.100",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..LocalDatabase 1431",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.100",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..LocalWebServer 1432",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.101",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..hmi 1431",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.100",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..outstation 1432",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 115.CONVERSE..RC 716",
+            "destination": "Utility 115.CONVERSE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CONVERSE..Router 716",
+            "destination": "Utility 115.CONVERSE..Firewall 716",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CONVERSE..Firewall 716",
+            "destination": "Utility 115.CONVERSE.OT.Switch 1431",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CONVERSE.OT.Switch 1431",
+            "destination": "Utility 115.CONVERSE..RC 716",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CONVERSE..Firewall 716",
+            "destination": "Utility 115.CONVERSE.Corporate.Switch 1432",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CONVERSE.Corporate.Switch 1432",
+            "destination": "Utility 115.CONVERSE..Host 1431",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CONVERSE.Corporate.Switch 1432",
+            "destination": "Utility 115.CONVERSE..Host 1432",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CONVERSE.Corporate.Switch 1432",
+            "destination": "Utility 115.CONVERSE..LocalDatabase 1431",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 115.CONVERSE.Corporate.Switch 1432",
+            "destination": "Utility 115.CONVERSE..LocalWebServer 1432",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.1",
+            "ipAddress": "10.161.716.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE.OT.Switch 1431",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.2",
+            "ipAddress": "10.161.716.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..RC 716",
+            "compromised": false,
+            "relayIPlist": [
+                "10.161.716.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.97",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..Firewall 716",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.488,
+            "Longitude": -98.291
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.98",
+            "ipAddress": "10.161.716.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..Router 716",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.1",
+            "ipAddress": "10.161.716.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE.OT.Switch 1431",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 115",
+            "adminIP": "10.161.716.2",
+            "ipAddress": "10.161.716.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CONVERSE",
+            "label": "Utility 115.CONVERSE..RC 716",
+            "compromised": false,
+            "relayIPlist": [
+                "10.161.716.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

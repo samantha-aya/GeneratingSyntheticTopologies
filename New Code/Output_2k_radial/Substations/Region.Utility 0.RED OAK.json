@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.RED OAK",
+    "networkLan": "10.52.609.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "RED OAK",
+    "substationNumber": 609,
+    "OTAddress": "10.52.609.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.609.1",
+        "10.52.609.2",
+        "10.52.609.3",
+        "10.52.609.4",
+        "10.52.609.5",
+        "10.52.609.6",
+        "10.52.609.7",
+        "10.52.609.8",
+        "10.52.609.9",
+        "10.52.609.10",
+        "10.52.609.11",
+        "10.52.609.12",
+        "10.52.609.13",
+        "10.52.609.14",
+        "10.52.609.15",
+        "10.52.609.16",
+        "10.52.609.17",
+        "10.52.609.18",
+        "10.52.609.19",
+        "10.52.609.20",
+        "10.52.609.21",
+        "10.52.609.22",
+        "10.52.609.23",
+        "10.52.609.24",
+        "10.52.609.25",
+        "10.52.609.26",
+        "10.52.609.27",
+        "10.52.609.28",
+        "10.52.609.29",
+        "10.52.609.30",
+        "10.52.609.31",
+        "10.52.609.32",
+        "10.52.609.33",
+        "10.52.609.34",
+        "10.52.609.35",
+        "10.52.609.36",
+        "10.52.609.37",
+        "10.52.609.38",
+        "10.52.609.39",
+        "10.52.609.40",
+        "10.52.609.41",
+        "10.52.609.42",
+        "10.52.609.43",
+        "10.52.609.44",
+        "10.52.609.45",
+        "10.52.609.46",
+        "10.52.609.47",
+        "10.52.609.48",
+        "10.52.609.49",
+        "10.52.609.50",
+        "10.52.609.51",
+        "10.52.609.52",
+        "10.52.609.53",
+        "10.52.609.54",
+        "10.52.609.55",
+        "10.52.609.56",
+        "10.52.609.57",
+        "10.52.609.58",
+        "10.52.609.59",
+        "10.52.609.60",
+        "10.52.609.61",
+        "10.52.609.62"
+    ],
+    "routeAddress": "10.52.609.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.609.65",
+        "10.52.609.66",
+        "10.52.609.67",
+        "10.52.609.68",
+        "10.52.609.69",
+        "10.52.609.70",
+        "10.52.609.71",
+        "10.52.609.72",
+        "10.52.609.73",
+        "10.52.609.74",
+        "10.52.609.75",
+        "10.52.609.76",
+        "10.52.609.77",
+        "10.52.609.78",
+        "10.52.609.79",
+        "10.52.609.80",
+        "10.52.609.81",
+        "10.52.609.82",
+        "10.52.609.83",
+        "10.52.609.84",
+        "10.52.609.85",
+        "10.52.609.86",
+        "10.52.609.87",
+        "10.52.609.88",
+        "10.52.609.89",
+        "10.52.609.90",
+        "10.52.609.91",
+        "10.52.609.92",
+        "10.52.609.93",
+        "10.52.609.94"
+    ],
+    "corporateAddress": "10.52.609.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.609.97",
+        "10.52.609.98",
+        "10.52.609.99",
+        "10.52.609.100",
+        "10.52.609.101",
+        "10.52.609.102",
+        "10.52.609.103",
+        "10.52.609.104",
+        "10.52.609.105",
+        "10.52.609.106",
+        "10.52.609.107",
+        "10.52.609.108",
+        "10.52.609.109",
+        "10.52.609.110",
+        "10.52.609.111",
+        "10.52.609.112",
+        "10.52.609.113",
+        "10.52.609.114",
+        "10.52.609.115",
+        "10.52.609.116",
+        "10.52.609.117",
+        "10.52.609.118",
+        "10.52.609.119",
+        "10.52.609.120",
+        "10.52.609.121",
+        "10.52.609.122",
+        "10.52.609.123",
+        "10.52.609.124",
+        "10.52.609.125"
+    ],
+    "latitude": 32.522,
+    "longitude": -96.807,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.97",
+            "ipAddress": "10.52.609.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..Firewall 609",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.522,
+            "Longitude": -96.807
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.98",
+            "ipAddress": "10.52.609.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..Router 609",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.1",
+            "ipAddress": "10.52.609.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK.OT.Switch 1217",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.99",
+            "ipAddress": "10.52.609.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK.Corporate.Switch 1218",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.3",
+            "ipAddress": "10.52.609.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.2",
+            "ipAddress": "10.52.609.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..RC 609",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.609.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.100",
+            "ipAddress": "10.52.609.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..Host 1217",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.100",
+            "ipAddress": "10.52.609.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..Host 1218",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.100",
+            "ipAddress": "10.52.609.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..LocalDatabase 1217",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.100",
+            "ipAddress": "10.52.609.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..LocalWebServer 1218",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.RED OAK..RC 609",
+            "destination": "Utility 0.RED OAK..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RED OAK..Router 609",
+            "destination": "Utility 0.RED OAK..Firewall 609",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RED OAK..Firewall 609",
+            "destination": "Utility 0.RED OAK.OT.Switch 1217",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RED OAK.OT.Switch 1217",
+            "destination": "Utility 0.RED OAK..RC 609",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RED OAK..Firewall 609",
+            "destination": "Utility 0.RED OAK.Corporate.Switch 1218",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RED OAK.Corporate.Switch 1218",
+            "destination": "Utility 0.RED OAK..Host 1217",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RED OAK.Corporate.Switch 1218",
+            "destination": "Utility 0.RED OAK..Host 1218",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RED OAK.Corporate.Switch 1218",
+            "destination": "Utility 0.RED OAK..LocalDatabase 1217",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RED OAK.Corporate.Switch 1218",
+            "destination": "Utility 0.RED OAK..LocalWebServer 1218",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.1",
+            "ipAddress": "10.52.609.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK.OT.Switch 1217",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.2",
+            "ipAddress": "10.52.609.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..RC 609",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.609.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.97",
+            "ipAddress": "10.52.609.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..Firewall 609",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.522,
+            "Longitude": -96.807
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.98",
+            "ipAddress": "10.52.609.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..Router 609",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.1",
+            "ipAddress": "10.52.609.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK.OT.Switch 1217",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.609.2",
+            "ipAddress": "10.52.609.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RED OAK",
+            "label": "Utility 0.RED OAK..RC 609",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.609.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

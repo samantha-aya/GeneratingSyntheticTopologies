@@ -1,0 +1,790 @@
+{
+    "relayCounter": 8,
+    "label": "Region.Utility 3.PEARSALL",
+    "networkLan": "10.56.319.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "PEARSALL",
+    "substationNumber": 319,
+    "OTAddress": "10.56.319.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.319.1",
+        "10.56.319.2",
+        "10.56.319.3",
+        "10.56.319.4",
+        "10.56.319.5",
+        "10.56.319.6",
+        "10.56.319.7",
+        "10.56.319.8",
+        "10.56.319.9",
+        "10.56.319.10",
+        "10.56.319.11",
+        "10.56.319.12",
+        "10.56.319.13",
+        "10.56.319.14",
+        "10.56.319.15",
+        "10.56.319.16",
+        "10.56.319.17",
+        "10.56.319.18",
+        "10.56.319.19",
+        "10.56.319.20",
+        "10.56.319.21",
+        "10.56.319.22",
+        "10.56.319.23",
+        "10.56.319.24",
+        "10.56.319.25",
+        "10.56.319.26",
+        "10.56.319.27",
+        "10.56.319.28",
+        "10.56.319.29",
+        "10.56.319.30",
+        "10.56.319.31",
+        "10.56.319.32",
+        "10.56.319.33",
+        "10.56.319.34",
+        "10.56.319.35",
+        "10.56.319.36",
+        "10.56.319.37",
+        "10.56.319.38",
+        "10.56.319.39",
+        "10.56.319.40",
+        "10.56.319.41",
+        "10.56.319.42",
+        "10.56.319.43",
+        "10.56.319.44",
+        "10.56.319.45",
+        "10.56.319.46",
+        "10.56.319.47",
+        "10.56.319.48",
+        "10.56.319.49",
+        "10.56.319.50",
+        "10.56.319.51",
+        "10.56.319.52",
+        "10.56.319.53",
+        "10.56.319.54",
+        "10.56.319.55",
+        "10.56.319.56",
+        "10.56.319.57",
+        "10.56.319.58",
+        "10.56.319.59",
+        "10.56.319.60",
+        "10.56.319.61",
+        "10.56.319.62"
+    ],
+    "routeAddress": "10.56.319.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.319.65",
+        "10.56.319.66",
+        "10.56.319.67",
+        "10.56.319.68",
+        "10.56.319.69",
+        "10.56.319.70",
+        "10.56.319.71",
+        "10.56.319.72",
+        "10.56.319.73",
+        "10.56.319.74",
+        "10.56.319.75",
+        "10.56.319.76",
+        "10.56.319.77",
+        "10.56.319.78",
+        "10.56.319.79",
+        "10.56.319.80",
+        "10.56.319.81",
+        "10.56.319.82",
+        "10.56.319.83",
+        "10.56.319.84",
+        "10.56.319.85",
+        "10.56.319.86",
+        "10.56.319.87",
+        "10.56.319.88",
+        "10.56.319.89",
+        "10.56.319.90",
+        "10.56.319.91",
+        "10.56.319.92",
+        "10.56.319.93",
+        "10.56.319.94"
+    ],
+    "corporateAddress": "10.56.319.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.319.97",
+        "10.56.319.98",
+        "10.56.319.99",
+        "10.56.319.100",
+        "10.56.319.101",
+        "10.56.319.102",
+        "10.56.319.103",
+        "10.56.319.104",
+        "10.56.319.105",
+        "10.56.319.106",
+        "10.56.319.107",
+        "10.56.319.108",
+        "10.56.319.109",
+        "10.56.319.110",
+        "10.56.319.111",
+        "10.56.319.112",
+        "10.56.319.113",
+        "10.56.319.114",
+        "10.56.319.115",
+        "10.56.319.116",
+        "10.56.319.117",
+        "10.56.319.118",
+        "10.56.319.119",
+        "10.56.319.120",
+        "10.56.319.121",
+        "10.56.319.122",
+        "10.56.319.123",
+        "10.56.319.124",
+        "10.56.319.125"
+    ],
+    "latitude": 28.928,
+    "longitude": -99.092,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.97",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Firewall 319",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.928,
+            "Longitude": -99.092
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.98",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Router 319",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.1",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL.OT.Switch 637",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.99",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL.Corporate.Switch 638",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.3",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.4",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.5",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.6",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.7",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.8",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.9",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.10",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.2",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..RC 319",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.319.3",
+                "10.56.319.4",
+                "10.56.319.5",
+                "10.56.319.6",
+                "10.56.319.7",
+                "10.56.319.8",
+                "10.56.319.9",
+                "10.56.319.10"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.100",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Host 637",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.100",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Host 638",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.100",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..LocalDatabase 637",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.100",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..LocalWebServer 638",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.101",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..hmi 637",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.100",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..outstation 638",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.PEARSALL..RC 319",
+            "destination": "Utility 3.PEARSALL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..RC 319",
+            "destination": "Utility 3.PEARSALL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..RC 319",
+            "destination": "Utility 3.PEARSALL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..RC 319",
+            "destination": "Utility 3.PEARSALL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..RC 319",
+            "destination": "Utility 3.PEARSALL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..RC 319",
+            "destination": "Utility 3.PEARSALL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..RC 319",
+            "destination": "Utility 3.PEARSALL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..RC 319",
+            "destination": "Utility 3.PEARSALL..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..Router 319",
+            "destination": "Utility 3.PEARSALL..Firewall 319",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..Firewall 319",
+            "destination": "Utility 3.PEARSALL.OT.Switch 637",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL.OT.Switch 637",
+            "destination": "Utility 3.PEARSALL..RC 319",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL..Firewall 319",
+            "destination": "Utility 3.PEARSALL.Corporate.Switch 638",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL.Corporate.Switch 638",
+            "destination": "Utility 3.PEARSALL..Host 637",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL.Corporate.Switch 638",
+            "destination": "Utility 3.PEARSALL..Host 638",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL.Corporate.Switch 638",
+            "destination": "Utility 3.PEARSALL..LocalDatabase 637",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.PEARSALL.Corporate.Switch 638",
+            "destination": "Utility 3.PEARSALL..LocalWebServer 638",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.1",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL.OT.Switch 637",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.2",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..RC 319",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.319.3",
+                "10.56.319.4",
+                "10.56.319.5",
+                "10.56.319.6",
+                "10.56.319.7",
+                "10.56.319.8",
+                "10.56.319.9",
+                "10.56.319.10"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.97",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Firewall 319",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.928,
+            "Longitude": -99.092
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.98",
+            "ipAddress": "10.56.319.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..Router 319",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.1",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL.OT.Switch 637",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.319.2",
+            "ipAddress": "10.56.319.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PEARSALL",
+            "label": "Utility 3.PEARSALL..RC 319",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.319.3",
+                "10.56.319.4",
+                "10.56.319.5",
+                "10.56.319.6",
+                "10.56.319.7",
+                "10.56.319.8",
+                "10.56.319.9",
+                "10.56.319.10"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 30.63,
+    "genmvar": -11.19,
+    "connecting_TS_num": 919
+}

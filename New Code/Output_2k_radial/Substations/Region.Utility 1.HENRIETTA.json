@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.HENRIETTA",
+    "networkLan": "10.86.95.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 86,
+    "substation": "HENRIETTA",
+    "substationNumber": 95,
+    "OTAddress": "10.86.95.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.86.95.1",
+        "10.86.95.2",
+        "10.86.95.3",
+        "10.86.95.4",
+        "10.86.95.5",
+        "10.86.95.6",
+        "10.86.95.7",
+        "10.86.95.8",
+        "10.86.95.9",
+        "10.86.95.10",
+        "10.86.95.11",
+        "10.86.95.12",
+        "10.86.95.13",
+        "10.86.95.14",
+        "10.86.95.15",
+        "10.86.95.16",
+        "10.86.95.17",
+        "10.86.95.18",
+        "10.86.95.19",
+        "10.86.95.20",
+        "10.86.95.21",
+        "10.86.95.22",
+        "10.86.95.23",
+        "10.86.95.24",
+        "10.86.95.25",
+        "10.86.95.26",
+        "10.86.95.27",
+        "10.86.95.28",
+        "10.86.95.29",
+        "10.86.95.30",
+        "10.86.95.31",
+        "10.86.95.32",
+        "10.86.95.33",
+        "10.86.95.34",
+        "10.86.95.35",
+        "10.86.95.36",
+        "10.86.95.37",
+        "10.86.95.38",
+        "10.86.95.39",
+        "10.86.95.40",
+        "10.86.95.41",
+        "10.86.95.42",
+        "10.86.95.43",
+        "10.86.95.44",
+        "10.86.95.45",
+        "10.86.95.46",
+        "10.86.95.47",
+        "10.86.95.48",
+        "10.86.95.49",
+        "10.86.95.50",
+        "10.86.95.51",
+        "10.86.95.52",
+        "10.86.95.53",
+        "10.86.95.54",
+        "10.86.95.55",
+        "10.86.95.56",
+        "10.86.95.57",
+        "10.86.95.58",
+        "10.86.95.59",
+        "10.86.95.60",
+        "10.86.95.61",
+        "10.86.95.62"
+    ],
+    "routeAddress": "10.86.95.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.86.95.65",
+        "10.86.95.66",
+        "10.86.95.67",
+        "10.86.95.68",
+        "10.86.95.69",
+        "10.86.95.70",
+        "10.86.95.71",
+        "10.86.95.72",
+        "10.86.95.73",
+        "10.86.95.74",
+        "10.86.95.75",
+        "10.86.95.76",
+        "10.86.95.77",
+        "10.86.95.78",
+        "10.86.95.79",
+        "10.86.95.80",
+        "10.86.95.81",
+        "10.86.95.82",
+        "10.86.95.83",
+        "10.86.95.84",
+        "10.86.95.85",
+        "10.86.95.86",
+        "10.86.95.87",
+        "10.86.95.88",
+        "10.86.95.89",
+        "10.86.95.90",
+        "10.86.95.91",
+        "10.86.95.92",
+        "10.86.95.93",
+        "10.86.95.94"
+    ],
+    "corporateAddress": "10.86.95.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.86.95.97",
+        "10.86.95.98",
+        "10.86.95.99",
+        "10.86.95.100",
+        "10.86.95.101",
+        "10.86.95.102",
+        "10.86.95.103",
+        "10.86.95.104",
+        "10.86.95.105",
+        "10.86.95.106",
+        "10.86.95.107",
+        "10.86.95.108",
+        "10.86.95.109",
+        "10.86.95.110",
+        "10.86.95.111",
+        "10.86.95.112",
+        "10.86.95.113",
+        "10.86.95.114",
+        "10.86.95.115",
+        "10.86.95.116",
+        "10.86.95.117",
+        "10.86.95.118",
+        "10.86.95.119",
+        "10.86.95.120",
+        "10.86.95.121",
+        "10.86.95.122",
+        "10.86.95.123",
+        "10.86.95.124",
+        "10.86.95.125"
+    ],
+    "latitude": 33.758,
+    "longitude": -98.202,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.97",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..Firewall 95",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.758,
+            "Longitude": -98.202
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.98",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..Router 95",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.1",
+            "ipAddress": "10.86.95.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA.OT.Switch 189",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.99",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA.Corporate.Switch 190",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.3",
+            "ipAddress": "10.86.95.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.2",
+            "ipAddress": "10.86.95.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..RC 95",
+            "compromised": false,
+            "relayIPlist": [
+                "10.86.95.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.100",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..Host 189",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.100",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..Host 190",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.100",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..LocalDatabase 189",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.100",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..LocalWebServer 190",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.101",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..hmi 189",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.100",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..outstation 190",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.HENRIETTA..RC 95",
+            "destination": "Utility 1.HENRIETTA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HENRIETTA..Router 95",
+            "destination": "Utility 1.HENRIETTA..Firewall 95",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HENRIETTA..Firewall 95",
+            "destination": "Utility 1.HENRIETTA.OT.Switch 189",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HENRIETTA.OT.Switch 189",
+            "destination": "Utility 1.HENRIETTA..RC 95",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HENRIETTA..Firewall 95",
+            "destination": "Utility 1.HENRIETTA.Corporate.Switch 190",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HENRIETTA.Corporate.Switch 190",
+            "destination": "Utility 1.HENRIETTA..Host 189",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HENRIETTA.Corporate.Switch 190",
+            "destination": "Utility 1.HENRIETTA..Host 190",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HENRIETTA.Corporate.Switch 190",
+            "destination": "Utility 1.HENRIETTA..LocalDatabase 189",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.HENRIETTA.Corporate.Switch 190",
+            "destination": "Utility 1.HENRIETTA..LocalWebServer 190",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.1",
+            "ipAddress": "10.86.95.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA.OT.Switch 189",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.2",
+            "ipAddress": "10.86.95.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..RC 95",
+            "compromised": false,
+            "relayIPlist": [
+                "10.86.95.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.97",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..Firewall 95",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.758,
+            "Longitude": -98.202
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.98",
+            "ipAddress": "10.86.95.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..Router 95",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.1",
+            "ipAddress": "10.86.95.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA.OT.Switch 189",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.86.95.2",
+            "ipAddress": "10.86.95.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HENRIETTA",
+            "label": "Utility 1.HENRIETTA..RC 95",
+            "compromised": false,
+            "relayIPlist": [
+                "10.86.95.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

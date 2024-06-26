@@ -1,0 +1,660 @@
+{
+    "relayCounter": 3,
+    "label": "Region.Utility 12.PANHANDLE 2",
+    "networkLan": "10.75.63.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 12",
+    "utility_id": 75,
+    "substation": "PANHANDLE 2",
+    "substationNumber": 63,
+    "OTAddress": "10.75.63.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.75.63.1",
+        "10.75.63.2",
+        "10.75.63.3",
+        "10.75.63.4",
+        "10.75.63.5",
+        "10.75.63.6",
+        "10.75.63.7",
+        "10.75.63.8",
+        "10.75.63.9",
+        "10.75.63.10",
+        "10.75.63.11",
+        "10.75.63.12",
+        "10.75.63.13",
+        "10.75.63.14",
+        "10.75.63.15",
+        "10.75.63.16",
+        "10.75.63.17",
+        "10.75.63.18",
+        "10.75.63.19",
+        "10.75.63.20",
+        "10.75.63.21",
+        "10.75.63.22",
+        "10.75.63.23",
+        "10.75.63.24",
+        "10.75.63.25",
+        "10.75.63.26",
+        "10.75.63.27",
+        "10.75.63.28",
+        "10.75.63.29",
+        "10.75.63.30",
+        "10.75.63.31",
+        "10.75.63.32",
+        "10.75.63.33",
+        "10.75.63.34",
+        "10.75.63.35",
+        "10.75.63.36",
+        "10.75.63.37",
+        "10.75.63.38",
+        "10.75.63.39",
+        "10.75.63.40",
+        "10.75.63.41",
+        "10.75.63.42",
+        "10.75.63.43",
+        "10.75.63.44",
+        "10.75.63.45",
+        "10.75.63.46",
+        "10.75.63.47",
+        "10.75.63.48",
+        "10.75.63.49",
+        "10.75.63.50",
+        "10.75.63.51",
+        "10.75.63.52",
+        "10.75.63.53",
+        "10.75.63.54",
+        "10.75.63.55",
+        "10.75.63.56",
+        "10.75.63.57",
+        "10.75.63.58",
+        "10.75.63.59",
+        "10.75.63.60",
+        "10.75.63.61",
+        "10.75.63.62"
+    ],
+    "routeAddress": "10.75.63.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.75.63.65",
+        "10.75.63.66",
+        "10.75.63.67",
+        "10.75.63.68",
+        "10.75.63.69",
+        "10.75.63.70",
+        "10.75.63.71",
+        "10.75.63.72",
+        "10.75.63.73",
+        "10.75.63.74",
+        "10.75.63.75",
+        "10.75.63.76",
+        "10.75.63.77",
+        "10.75.63.78",
+        "10.75.63.79",
+        "10.75.63.80",
+        "10.75.63.81",
+        "10.75.63.82",
+        "10.75.63.83",
+        "10.75.63.84",
+        "10.75.63.85",
+        "10.75.63.86",
+        "10.75.63.87",
+        "10.75.63.88",
+        "10.75.63.89",
+        "10.75.63.90",
+        "10.75.63.91",
+        "10.75.63.92",
+        "10.75.63.93",
+        "10.75.63.94"
+    ],
+    "corporateAddress": "10.75.63.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.75.63.97",
+        "10.75.63.98",
+        "10.75.63.99",
+        "10.75.63.100",
+        "10.75.63.101",
+        "10.75.63.102",
+        "10.75.63.103",
+        "10.75.63.104",
+        "10.75.63.105",
+        "10.75.63.106",
+        "10.75.63.107",
+        "10.75.63.108",
+        "10.75.63.109",
+        "10.75.63.110",
+        "10.75.63.111",
+        "10.75.63.112",
+        "10.75.63.113",
+        "10.75.63.114",
+        "10.75.63.115",
+        "10.75.63.116",
+        "10.75.63.117",
+        "10.75.63.118",
+        "10.75.63.119",
+        "10.75.63.120",
+        "10.75.63.121",
+        "10.75.63.122",
+        "10.75.63.123",
+        "10.75.63.124",
+        "10.75.63.125"
+    ],
+    "latitude": 35.238,
+    "longitude": -101.311,
+    "nodes": [
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.97",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..Firewall 63",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 35.238,
+            "Longitude": -101.311
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.98",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..Router 63",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.1",
+            "ipAddress": "10.75.63.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2.OT.Switch 125",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.99",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2.Corporate.Switch 126",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.3",
+            "ipAddress": "10.75.63.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.4",
+            "ipAddress": "10.75.63.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.5",
+            "ipAddress": "10.75.63.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.2",
+            "ipAddress": "10.75.63.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..RC 63",
+            "compromised": false,
+            "relayIPlist": [
+                "10.75.63.3",
+                "10.75.63.4",
+                "10.75.63.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.100",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..Host 125",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.100",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..Host 126",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.100",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..LocalDatabase 125",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.100",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..LocalWebServer 126",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.101",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..hmi 125",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.100",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..outstation 126",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 12.PANHANDLE 2..RC 63",
+            "destination": "Utility 12.PANHANDLE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2..RC 63",
+            "destination": "Utility 12.PANHANDLE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2..RC 63",
+            "destination": "Utility 12.PANHANDLE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2..Router 63",
+            "destination": "Utility 12.PANHANDLE 2..Firewall 63",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2..Firewall 63",
+            "destination": "Utility 12.PANHANDLE 2.OT.Switch 125",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2.OT.Switch 125",
+            "destination": "Utility 12.PANHANDLE 2..RC 63",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2..Firewall 63",
+            "destination": "Utility 12.PANHANDLE 2.Corporate.Switch 126",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2.Corporate.Switch 126",
+            "destination": "Utility 12.PANHANDLE 2..Host 125",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2.Corporate.Switch 126",
+            "destination": "Utility 12.PANHANDLE 2..Host 126",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2.Corporate.Switch 126",
+            "destination": "Utility 12.PANHANDLE 2..LocalDatabase 125",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 12.PANHANDLE 2.Corporate.Switch 126",
+            "destination": "Utility 12.PANHANDLE 2..LocalWebServer 126",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.1",
+            "ipAddress": "10.75.63.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2.OT.Switch 125",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.2",
+            "ipAddress": "10.75.63.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..RC 63",
+            "compromised": false,
+            "relayIPlist": [
+                "10.75.63.3",
+                "10.75.63.4",
+                "10.75.63.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.97",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..Firewall 63",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 35.238,
+            "Longitude": -101.311
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.98",
+            "ipAddress": "10.75.63.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..Router 63",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.1",
+            "ipAddress": "10.75.63.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2.OT.Switch 125",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 12",
+            "adminIP": "10.75.63.2",
+            "ipAddress": "10.75.63.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PANHANDLE 2",
+            "label": "Utility 12.PANHANDLE 2..RC 63",
+            "compromised": false,
+            "relayIPlist": [
+                "10.75.63.3",
+                "10.75.63.4",
+                "10.75.63.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 150.45,
+    "genmvar": -28.89,
+    "connecting_TS_num": 136
+}

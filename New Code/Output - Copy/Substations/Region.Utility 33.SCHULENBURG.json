@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 33.SCHULENBURG",
+    "networkLan": "10.168.796.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 33",
+    "utility_id": 168,
+    "substation": "SCHULENBURG",
+    "substationNumber": 796,
+    "OTAddress": "10.168.796.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.168.796.1",
+        "10.168.796.2",
+        "10.168.796.3",
+        "10.168.796.4",
+        "10.168.796.5",
+        "10.168.796.6",
+        "10.168.796.7",
+        "10.168.796.8",
+        "10.168.796.9",
+        "10.168.796.10",
+        "10.168.796.11",
+        "10.168.796.12",
+        "10.168.796.13",
+        "10.168.796.14",
+        "10.168.796.15",
+        "10.168.796.16",
+        "10.168.796.17",
+        "10.168.796.18",
+        "10.168.796.19",
+        "10.168.796.20",
+        "10.168.796.21",
+        "10.168.796.22",
+        "10.168.796.23",
+        "10.168.796.24",
+        "10.168.796.25",
+        "10.168.796.26",
+        "10.168.796.27",
+        "10.168.796.28",
+        "10.168.796.29",
+        "10.168.796.30",
+        "10.168.796.31",
+        "10.168.796.32",
+        "10.168.796.33",
+        "10.168.796.34",
+        "10.168.796.35",
+        "10.168.796.36",
+        "10.168.796.37",
+        "10.168.796.38",
+        "10.168.796.39",
+        "10.168.796.40",
+        "10.168.796.41",
+        "10.168.796.42",
+        "10.168.796.43",
+        "10.168.796.44",
+        "10.168.796.45",
+        "10.168.796.46",
+        "10.168.796.47",
+        "10.168.796.48",
+        "10.168.796.49",
+        "10.168.796.50",
+        "10.168.796.51",
+        "10.168.796.52",
+        "10.168.796.53",
+        "10.168.796.54",
+        "10.168.796.55",
+        "10.168.796.56",
+        "10.168.796.57",
+        "10.168.796.58",
+        "10.168.796.59",
+        "10.168.796.60",
+        "10.168.796.61",
+        "10.168.796.62"
+    ],
+    "routeAddress": "10.168.796.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.168.796.65",
+        "10.168.796.66",
+        "10.168.796.67",
+        "10.168.796.68",
+        "10.168.796.69",
+        "10.168.796.70",
+        "10.168.796.71",
+        "10.168.796.72",
+        "10.168.796.73",
+        "10.168.796.74",
+        "10.168.796.75",
+        "10.168.796.76",
+        "10.168.796.77",
+        "10.168.796.78",
+        "10.168.796.79",
+        "10.168.796.80",
+        "10.168.796.81",
+        "10.168.796.82",
+        "10.168.796.83",
+        "10.168.796.84",
+        "10.168.796.85",
+        "10.168.796.86",
+        "10.168.796.87",
+        "10.168.796.88",
+        "10.168.796.89",
+        "10.168.796.90",
+        "10.168.796.91",
+        "10.168.796.92",
+        "10.168.796.93",
+        "10.168.796.94"
+    ],
+    "corporateAddress": "10.168.796.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.168.796.97",
+        "10.168.796.98",
+        "10.168.796.99",
+        "10.168.796.100",
+        "10.168.796.101",
+        "10.168.796.102",
+        "10.168.796.103",
+        "10.168.796.104",
+        "10.168.796.105",
+        "10.168.796.106",
+        "10.168.796.107",
+        "10.168.796.108",
+        "10.168.796.109",
+        "10.168.796.110",
+        "10.168.796.111",
+        "10.168.796.112",
+        "10.168.796.113",
+        "10.168.796.114",
+        "10.168.796.115",
+        "10.168.796.116",
+        "10.168.796.117",
+        "10.168.796.118",
+        "10.168.796.119",
+        "10.168.796.120",
+        "10.168.796.121",
+        "10.168.796.122",
+        "10.168.796.123",
+        "10.168.796.124",
+        "10.168.796.125"
+    ],
+    "latitude": 29.686,
+    "longitude": -96.934,
+    "nodes": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.97",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..Firewall 796",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.686,
+            "Longitude": -96.934
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.98",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..Router 796",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.1",
+            "ipAddress": "10.168.796.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG.OT.Switch 1591",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.99",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG.Corporate.Switch 1592",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.3",
+            "ipAddress": "10.168.796.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.2",
+            "ipAddress": "10.168.796.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..RC 796",
+            "compromised": false,
+            "relayIPlist": [
+                "10.168.796.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.100",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..Host 1591",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.100",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..Host 1592",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.100",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..LocalDatabase 1591",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.100",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..LocalWebServer 1592",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.101",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..hmi 1591",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.100",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..outstation 1592",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 33.SCHULENBURG..RC 796",
+            "destination": "Utility 33.SCHULENBURG..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.SCHULENBURG..Router 796",
+            "destination": "Utility 33.SCHULENBURG..Firewall 796",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.SCHULENBURG..Firewall 796",
+            "destination": "Utility 33.SCHULENBURG.OT.Switch 1591",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.SCHULENBURG.OT.Switch 1591",
+            "destination": "Utility 33.SCHULENBURG..RC 796",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.SCHULENBURG..Firewall 796",
+            "destination": "Utility 33.SCHULENBURG.Corporate.Switch 1592",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.SCHULENBURG.Corporate.Switch 1592",
+            "destination": "Utility 33.SCHULENBURG..Host 1591",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.SCHULENBURG.Corporate.Switch 1592",
+            "destination": "Utility 33.SCHULENBURG..Host 1592",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.SCHULENBURG.Corporate.Switch 1592",
+            "destination": "Utility 33.SCHULENBURG..LocalDatabase 1591",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 33.SCHULENBURG.Corporate.Switch 1592",
+            "destination": "Utility 33.SCHULENBURG..LocalWebServer 1592",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.1",
+            "ipAddress": "10.168.796.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG.OT.Switch 1591",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.2",
+            "ipAddress": "10.168.796.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..RC 796",
+            "compromised": false,
+            "relayIPlist": [
+                "10.168.796.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.97",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..Firewall 796",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.686,
+            "Longitude": -96.934
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.98",
+            "ipAddress": "10.168.796.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..Router 796",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.1",
+            "ipAddress": "10.168.796.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG.OT.Switch 1591",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 33",
+            "adminIP": "10.168.796.2",
+            "ipAddress": "10.168.796.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SCHULENBURG",
+            "label": "Utility 33.SCHULENBURG..RC 796",
+            "compromised": false,
+            "relayIPlist": [
+                "10.168.796.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

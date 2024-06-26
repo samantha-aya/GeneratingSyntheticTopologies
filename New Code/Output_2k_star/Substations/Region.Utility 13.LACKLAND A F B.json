@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 13.LACKLAND A F B",
+    "networkLan": "10.162.864.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 13",
+    "utility_id": 162,
+    "substation": "LACKLAND A F B",
+    "substationNumber": 864,
+    "OTAddress": "10.162.864.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.162.864.1",
+        "10.162.864.2",
+        "10.162.864.3",
+        "10.162.864.4",
+        "10.162.864.5",
+        "10.162.864.6",
+        "10.162.864.7",
+        "10.162.864.8",
+        "10.162.864.9",
+        "10.162.864.10",
+        "10.162.864.11",
+        "10.162.864.12",
+        "10.162.864.13",
+        "10.162.864.14",
+        "10.162.864.15",
+        "10.162.864.16",
+        "10.162.864.17",
+        "10.162.864.18",
+        "10.162.864.19",
+        "10.162.864.20",
+        "10.162.864.21",
+        "10.162.864.22",
+        "10.162.864.23",
+        "10.162.864.24",
+        "10.162.864.25",
+        "10.162.864.26",
+        "10.162.864.27",
+        "10.162.864.28",
+        "10.162.864.29",
+        "10.162.864.30",
+        "10.162.864.31",
+        "10.162.864.32",
+        "10.162.864.33",
+        "10.162.864.34",
+        "10.162.864.35",
+        "10.162.864.36",
+        "10.162.864.37",
+        "10.162.864.38",
+        "10.162.864.39",
+        "10.162.864.40",
+        "10.162.864.41",
+        "10.162.864.42",
+        "10.162.864.43",
+        "10.162.864.44",
+        "10.162.864.45",
+        "10.162.864.46",
+        "10.162.864.47",
+        "10.162.864.48",
+        "10.162.864.49",
+        "10.162.864.50",
+        "10.162.864.51",
+        "10.162.864.52",
+        "10.162.864.53",
+        "10.162.864.54",
+        "10.162.864.55",
+        "10.162.864.56",
+        "10.162.864.57",
+        "10.162.864.58",
+        "10.162.864.59",
+        "10.162.864.60",
+        "10.162.864.61",
+        "10.162.864.62"
+    ],
+    "routeAddress": "10.162.864.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.162.864.65",
+        "10.162.864.66",
+        "10.162.864.67",
+        "10.162.864.68",
+        "10.162.864.69",
+        "10.162.864.70",
+        "10.162.864.71",
+        "10.162.864.72",
+        "10.162.864.73",
+        "10.162.864.74",
+        "10.162.864.75",
+        "10.162.864.76",
+        "10.162.864.77",
+        "10.162.864.78",
+        "10.162.864.79",
+        "10.162.864.80",
+        "10.162.864.81",
+        "10.162.864.82",
+        "10.162.864.83",
+        "10.162.864.84",
+        "10.162.864.85",
+        "10.162.864.86",
+        "10.162.864.87",
+        "10.162.864.88",
+        "10.162.864.89",
+        "10.162.864.90",
+        "10.162.864.91",
+        "10.162.864.92",
+        "10.162.864.93",
+        "10.162.864.94"
+    ],
+    "corporateAddress": "10.162.864.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.162.864.97",
+        "10.162.864.98",
+        "10.162.864.99",
+        "10.162.864.100",
+        "10.162.864.101",
+        "10.162.864.102",
+        "10.162.864.103",
+        "10.162.864.104",
+        "10.162.864.105",
+        "10.162.864.106",
+        "10.162.864.107",
+        "10.162.864.108",
+        "10.162.864.109",
+        "10.162.864.110",
+        "10.162.864.111",
+        "10.162.864.112",
+        "10.162.864.113",
+        "10.162.864.114",
+        "10.162.864.115",
+        "10.162.864.116",
+        "10.162.864.117",
+        "10.162.864.118",
+        "10.162.864.119",
+        "10.162.864.120",
+        "10.162.864.121",
+        "10.162.864.122",
+        "10.162.864.123",
+        "10.162.864.124",
+        "10.162.864.125"
+    ],
+    "latitude": 29.391,
+    "longitude": -98.619,
+    "nodes": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.97",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..Firewall 864",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.391,
+            "Longitude": -98.619
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.98",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..Router 864",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.1",
+            "ipAddress": "10.162.864.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B.OT.Switch 1727",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.99",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B.Corporate.Switch 1728",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.3",
+            "ipAddress": "10.162.864.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.2",
+            "ipAddress": "10.162.864.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..RC 864",
+            "compromised": false,
+            "relayIPlist": [
+                "10.162.864.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.100",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..Host 1727",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.100",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..Host 1728",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.100",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..LocalDatabase 1727",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.100",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..LocalWebServer 1728",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.101",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..hmi 1727",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.100",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..outstation 1728",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 13.LACKLAND A F B..RC 864",
+            "destination": "Utility 13.LACKLAND A F B..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.LACKLAND A F B..Router 864",
+            "destination": "Utility 13.LACKLAND A F B..Firewall 864",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.LACKLAND A F B..Firewall 864",
+            "destination": "Utility 13.LACKLAND A F B.OT.Switch 1727",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.LACKLAND A F B.OT.Switch 1727",
+            "destination": "Utility 13.LACKLAND A F B..RC 864",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.LACKLAND A F B..Firewall 864",
+            "destination": "Utility 13.LACKLAND A F B.Corporate.Switch 1728",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.LACKLAND A F B.Corporate.Switch 1728",
+            "destination": "Utility 13.LACKLAND A F B..Host 1727",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.LACKLAND A F B.Corporate.Switch 1728",
+            "destination": "Utility 13.LACKLAND A F B..Host 1728",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.LACKLAND A F B.Corporate.Switch 1728",
+            "destination": "Utility 13.LACKLAND A F B..LocalDatabase 1727",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 13.LACKLAND A F B.Corporate.Switch 1728",
+            "destination": "Utility 13.LACKLAND A F B..LocalWebServer 1728",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.1",
+            "ipAddress": "10.162.864.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B.OT.Switch 1727",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.2",
+            "ipAddress": "10.162.864.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..RC 864",
+            "compromised": false,
+            "relayIPlist": [
+                "10.162.864.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.97",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..Firewall 864",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.391,
+            "Longitude": -98.619
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.98",
+            "ipAddress": "10.162.864.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..Router 864",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.1",
+            "ipAddress": "10.162.864.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B.OT.Switch 1727",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 13",
+            "adminIP": "10.162.864.2",
+            "ipAddress": "10.162.864.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LACKLAND A F B",
+            "label": "Utility 13.LACKLAND A F B..RC 864",
+            "compromised": false,
+            "relayIPlist": [
+                "10.162.864.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

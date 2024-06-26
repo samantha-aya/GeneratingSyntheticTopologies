@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 6.ANNONA",
+    "networkLan": "10.54.120.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 6",
+    "utility_id": 54,
+    "substation": "ANNONA",
+    "substationNumber": 120,
+    "OTAddress": "10.54.120.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.54.120.1",
+        "10.54.120.2",
+        "10.54.120.3",
+        "10.54.120.4",
+        "10.54.120.5",
+        "10.54.120.6",
+        "10.54.120.7",
+        "10.54.120.8",
+        "10.54.120.9",
+        "10.54.120.10",
+        "10.54.120.11",
+        "10.54.120.12",
+        "10.54.120.13",
+        "10.54.120.14",
+        "10.54.120.15",
+        "10.54.120.16",
+        "10.54.120.17",
+        "10.54.120.18",
+        "10.54.120.19",
+        "10.54.120.20",
+        "10.54.120.21",
+        "10.54.120.22",
+        "10.54.120.23",
+        "10.54.120.24",
+        "10.54.120.25",
+        "10.54.120.26",
+        "10.54.120.27",
+        "10.54.120.28",
+        "10.54.120.29",
+        "10.54.120.30",
+        "10.54.120.31",
+        "10.54.120.32",
+        "10.54.120.33",
+        "10.54.120.34",
+        "10.54.120.35",
+        "10.54.120.36",
+        "10.54.120.37",
+        "10.54.120.38",
+        "10.54.120.39",
+        "10.54.120.40",
+        "10.54.120.41",
+        "10.54.120.42",
+        "10.54.120.43",
+        "10.54.120.44",
+        "10.54.120.45",
+        "10.54.120.46",
+        "10.54.120.47",
+        "10.54.120.48",
+        "10.54.120.49",
+        "10.54.120.50",
+        "10.54.120.51",
+        "10.54.120.52",
+        "10.54.120.53",
+        "10.54.120.54",
+        "10.54.120.55",
+        "10.54.120.56",
+        "10.54.120.57",
+        "10.54.120.58",
+        "10.54.120.59",
+        "10.54.120.60",
+        "10.54.120.61",
+        "10.54.120.62"
+    ],
+    "routeAddress": "10.54.120.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.54.120.65",
+        "10.54.120.66",
+        "10.54.120.67",
+        "10.54.120.68",
+        "10.54.120.69",
+        "10.54.120.70",
+        "10.54.120.71",
+        "10.54.120.72",
+        "10.54.120.73",
+        "10.54.120.74",
+        "10.54.120.75",
+        "10.54.120.76",
+        "10.54.120.77",
+        "10.54.120.78",
+        "10.54.120.79",
+        "10.54.120.80",
+        "10.54.120.81",
+        "10.54.120.82",
+        "10.54.120.83",
+        "10.54.120.84",
+        "10.54.120.85",
+        "10.54.120.86",
+        "10.54.120.87",
+        "10.54.120.88",
+        "10.54.120.89",
+        "10.54.120.90",
+        "10.54.120.91",
+        "10.54.120.92",
+        "10.54.120.93",
+        "10.54.120.94"
+    ],
+    "corporateAddress": "10.54.120.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.54.120.97",
+        "10.54.120.98",
+        "10.54.120.99",
+        "10.54.120.100",
+        "10.54.120.101",
+        "10.54.120.102",
+        "10.54.120.103",
+        "10.54.120.104",
+        "10.54.120.105",
+        "10.54.120.106",
+        "10.54.120.107",
+        "10.54.120.108",
+        "10.54.120.109",
+        "10.54.120.110",
+        "10.54.120.111",
+        "10.54.120.112",
+        "10.54.120.113",
+        "10.54.120.114",
+        "10.54.120.115",
+        "10.54.120.116",
+        "10.54.120.117",
+        "10.54.120.118",
+        "10.54.120.119",
+        "10.54.120.120",
+        "10.54.120.121",
+        "10.54.120.122",
+        "10.54.120.123",
+        "10.54.120.124",
+        "10.54.120.125"
+    ],
+    "latitude": 33.498,
+    "longitude": -94.891,
+    "nodes": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.97",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..Firewall 120",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.498,
+            "Longitude": -94.891
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.98",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..Router 120",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.1",
+            "ipAddress": "10.54.120.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA.OT.Switch 239",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.99",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA.Corporate.Switch 240",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.3",
+            "ipAddress": "10.54.120.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.2",
+            "ipAddress": "10.54.120.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..RC 120",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.120.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.100",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..Host 239",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.100",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..Host 240",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.100",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..LocalDatabase 239",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.100",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..LocalWebServer 240",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.101",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..hmi 239",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.100",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..outstation 240",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 6.ANNONA..RC 120",
+            "destination": "Utility 6.ANNONA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.ANNONA..Router 120",
+            "destination": "Utility 6.ANNONA..Firewall 120",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.ANNONA..Firewall 120",
+            "destination": "Utility 6.ANNONA.OT.Switch 239",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.ANNONA.OT.Switch 239",
+            "destination": "Utility 6.ANNONA..RC 120",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.ANNONA..Firewall 120",
+            "destination": "Utility 6.ANNONA.Corporate.Switch 240",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.ANNONA.Corporate.Switch 240",
+            "destination": "Utility 6.ANNONA..Host 239",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.ANNONA.Corporate.Switch 240",
+            "destination": "Utility 6.ANNONA..Host 240",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.ANNONA.Corporate.Switch 240",
+            "destination": "Utility 6.ANNONA..LocalDatabase 239",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 6.ANNONA.Corporate.Switch 240",
+            "destination": "Utility 6.ANNONA..LocalWebServer 240",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.1",
+            "ipAddress": "10.54.120.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA.OT.Switch 239",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.2",
+            "ipAddress": "10.54.120.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..RC 120",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.120.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.97",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..Firewall 120",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.498,
+            "Longitude": -94.891
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.98",
+            "ipAddress": "10.54.120.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..Router 120",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.1",
+            "ipAddress": "10.54.120.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA.OT.Switch 239",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 6",
+            "adminIP": "10.54.120.2",
+            "ipAddress": "10.54.120.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ANNONA",
+            "label": "Utility 6.ANNONA..RC 120",
+            "compromised": false,
+            "relayIPlist": [
+                "10.54.120.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

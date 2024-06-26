@@ -1,0 +1,812 @@
+{
+    "relayCounter": 12,
+    "label": "Region.Utility 3.CHESNEE 2",
+    "networkLan": "10.53.170.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 53,
+    "substation": "CHESNEE 2",
+    "substationNumber": 170,
+    "OTAddress": "10.53.170.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.170.1",
+        "10.53.170.2",
+        "10.53.170.3",
+        "10.53.170.4",
+        "10.53.170.5",
+        "10.53.170.6",
+        "10.53.170.7",
+        "10.53.170.8",
+        "10.53.170.9",
+        "10.53.170.10",
+        "10.53.170.11",
+        "10.53.170.12",
+        "10.53.170.13",
+        "10.53.170.14",
+        "10.53.170.15",
+        "10.53.170.16",
+        "10.53.170.17",
+        "10.53.170.18",
+        "10.53.170.19",
+        "10.53.170.20",
+        "10.53.170.21",
+        "10.53.170.22",
+        "10.53.170.23",
+        "10.53.170.24",
+        "10.53.170.25",
+        "10.53.170.26",
+        "10.53.170.27",
+        "10.53.170.28",
+        "10.53.170.29",
+        "10.53.170.30",
+        "10.53.170.31",
+        "10.53.170.32",
+        "10.53.170.33",
+        "10.53.170.34",
+        "10.53.170.35",
+        "10.53.170.36",
+        "10.53.170.37",
+        "10.53.170.38",
+        "10.53.170.39",
+        "10.53.170.40",
+        "10.53.170.41",
+        "10.53.170.42",
+        "10.53.170.43",
+        "10.53.170.44",
+        "10.53.170.45",
+        "10.53.170.46",
+        "10.53.170.47",
+        "10.53.170.48",
+        "10.53.170.49",
+        "10.53.170.50",
+        "10.53.170.51",
+        "10.53.170.52",
+        "10.53.170.53",
+        "10.53.170.54",
+        "10.53.170.55",
+        "10.53.170.56",
+        "10.53.170.57",
+        "10.53.170.58",
+        "10.53.170.59",
+        "10.53.170.60",
+        "10.53.170.61",
+        "10.53.170.62"
+    ],
+    "routeAddress": "10.53.170.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.170.65",
+        "10.53.170.66",
+        "10.53.170.67",
+        "10.53.170.68",
+        "10.53.170.69",
+        "10.53.170.70",
+        "10.53.170.71",
+        "10.53.170.72",
+        "10.53.170.73",
+        "10.53.170.74",
+        "10.53.170.75",
+        "10.53.170.76",
+        "10.53.170.77",
+        "10.53.170.78",
+        "10.53.170.79",
+        "10.53.170.80",
+        "10.53.170.81",
+        "10.53.170.82",
+        "10.53.170.83",
+        "10.53.170.84",
+        "10.53.170.85",
+        "10.53.170.86",
+        "10.53.170.87",
+        "10.53.170.88",
+        "10.53.170.89",
+        "10.53.170.90",
+        "10.53.170.91",
+        "10.53.170.92",
+        "10.53.170.93",
+        "10.53.170.94"
+    ],
+    "corporateAddress": "10.53.170.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.170.97",
+        "10.53.170.98",
+        "10.53.170.99",
+        "10.53.170.100",
+        "10.53.170.101",
+        "10.53.170.102",
+        "10.53.170.103",
+        "10.53.170.104",
+        "10.53.170.105",
+        "10.53.170.106",
+        "10.53.170.107",
+        "10.53.170.108",
+        "10.53.170.109",
+        "10.53.170.110",
+        "10.53.170.111",
+        "10.53.170.112",
+        "10.53.170.113",
+        "10.53.170.114",
+        "10.53.170.115",
+        "10.53.170.116",
+        "10.53.170.117",
+        "10.53.170.118",
+        "10.53.170.119",
+        "10.53.170.120",
+        "10.53.170.121",
+        "10.53.170.122",
+        "10.53.170.123",
+        "10.53.170.124",
+        "10.53.170.125"
+    ],
+    "latitude": 35.11,
+    "longitude": -81.97,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.97",
+            "ipAddress": "10.53.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Firewall 170",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 35.11,
+            "Longitude": -81.97
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.98",
+            "ipAddress": "10.53.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Router 170",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.1",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2.OT.Switch 339",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.99",
+            "ipAddress": "10.53.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2.Corporate.Switch 340",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.3",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.4",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.5",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.6",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.7",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.8",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.9",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.10",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.11",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.12",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.13",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.14",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.2",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..RC 170",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.170.3",
+                "10.53.170.4",
+                "10.53.170.5",
+                "10.53.170.6",
+                "10.53.170.7",
+                "10.53.170.8",
+                "10.53.170.9",
+                "10.53.170.10",
+                "10.53.170.11",
+                "10.53.170.12",
+                "10.53.170.13",
+                "10.53.170.14"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.100",
+            "ipAddress": "10.53.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Host 339",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.100",
+            "ipAddress": "10.53.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Host 340",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.100",
+            "ipAddress": "10.53.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..LocalDatabase 339",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.100",
+            "ipAddress": "10.53.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..LocalWebServer 340",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..RC 170",
+            "destination": "Utility 3.CHESNEE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..Router 170",
+            "destination": "Utility 3.CHESNEE 2..Firewall 170",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..Firewall 170",
+            "destination": "Utility 3.CHESNEE 2.OT.Switch 339",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2.OT.Switch 339",
+            "destination": "Utility 3.CHESNEE 2..RC 170",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2..Firewall 170",
+            "destination": "Utility 3.CHESNEE 2.Corporate.Switch 340",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2.Corporate.Switch 340",
+            "destination": "Utility 3.CHESNEE 2..Host 339",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2.Corporate.Switch 340",
+            "destination": "Utility 3.CHESNEE 2..Host 340",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2.Corporate.Switch 340",
+            "destination": "Utility 3.CHESNEE 2..LocalDatabase 339",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.CHESNEE 2.Corporate.Switch 340",
+            "destination": "Utility 3.CHESNEE 2..LocalWebServer 340",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.1",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2.OT.Switch 339",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.2",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..RC 170",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.170.3",
+                "10.53.170.4",
+                "10.53.170.5",
+                "10.53.170.6",
+                "10.53.170.7",
+                "10.53.170.8",
+                "10.53.170.9",
+                "10.53.170.10",
+                "10.53.170.11",
+                "10.53.170.12",
+                "10.53.170.13",
+                "10.53.170.14"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.97",
+            "ipAddress": "10.53.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Firewall 170",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 35.11,
+            "Longitude": -81.97
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.98",
+            "ipAddress": "10.53.170.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..Router 170",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.1",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2.OT.Switch 339",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.53.170.2",
+            "ipAddress": "10.53.170.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHESNEE 2",
+            "label": "Utility 3.CHESNEE 2..RC 170",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.170.3",
+                "10.53.170.4",
+                "10.53.170.5",
+                "10.53.170.6",
+                "10.53.170.7",
+                "10.53.170.8",
+                "10.53.170.9",
+                "10.53.170.10",
+                "10.53.170.11",
+                "10.53.170.12",
+                "10.53.170.13",
+                "10.53.170.14"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 187.77,
+    "genmvar": 2.35,
+    "connecting_TS_num": 59
+}

@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 2.BURLESON",
+    "networkLan": "10.55.710.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "BURLESON",
+    "substationNumber": 710,
+    "OTAddress": "10.55.710.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.710.1",
+        "10.55.710.2",
+        "10.55.710.3",
+        "10.55.710.4",
+        "10.55.710.5",
+        "10.55.710.6",
+        "10.55.710.7",
+        "10.55.710.8",
+        "10.55.710.9",
+        "10.55.710.10",
+        "10.55.710.11",
+        "10.55.710.12",
+        "10.55.710.13",
+        "10.55.710.14",
+        "10.55.710.15",
+        "10.55.710.16",
+        "10.55.710.17",
+        "10.55.710.18",
+        "10.55.710.19",
+        "10.55.710.20",
+        "10.55.710.21",
+        "10.55.710.22",
+        "10.55.710.23",
+        "10.55.710.24",
+        "10.55.710.25",
+        "10.55.710.26",
+        "10.55.710.27",
+        "10.55.710.28",
+        "10.55.710.29",
+        "10.55.710.30",
+        "10.55.710.31",
+        "10.55.710.32",
+        "10.55.710.33",
+        "10.55.710.34",
+        "10.55.710.35",
+        "10.55.710.36",
+        "10.55.710.37",
+        "10.55.710.38",
+        "10.55.710.39",
+        "10.55.710.40",
+        "10.55.710.41",
+        "10.55.710.42",
+        "10.55.710.43",
+        "10.55.710.44",
+        "10.55.710.45",
+        "10.55.710.46",
+        "10.55.710.47",
+        "10.55.710.48",
+        "10.55.710.49",
+        "10.55.710.50",
+        "10.55.710.51",
+        "10.55.710.52",
+        "10.55.710.53",
+        "10.55.710.54",
+        "10.55.710.55",
+        "10.55.710.56",
+        "10.55.710.57",
+        "10.55.710.58",
+        "10.55.710.59",
+        "10.55.710.60",
+        "10.55.710.61",
+        "10.55.710.62"
+    ],
+    "routeAddress": "10.55.710.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.710.65",
+        "10.55.710.66",
+        "10.55.710.67",
+        "10.55.710.68",
+        "10.55.710.69",
+        "10.55.710.70",
+        "10.55.710.71",
+        "10.55.710.72",
+        "10.55.710.73",
+        "10.55.710.74",
+        "10.55.710.75",
+        "10.55.710.76",
+        "10.55.710.77",
+        "10.55.710.78",
+        "10.55.710.79",
+        "10.55.710.80",
+        "10.55.710.81",
+        "10.55.710.82",
+        "10.55.710.83",
+        "10.55.710.84",
+        "10.55.710.85",
+        "10.55.710.86",
+        "10.55.710.87",
+        "10.55.710.88",
+        "10.55.710.89",
+        "10.55.710.90",
+        "10.55.710.91",
+        "10.55.710.92",
+        "10.55.710.93",
+        "10.55.710.94"
+    ],
+    "corporateAddress": "10.55.710.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.710.97",
+        "10.55.710.98",
+        "10.55.710.99",
+        "10.55.710.100",
+        "10.55.710.101",
+        "10.55.710.102",
+        "10.55.710.103",
+        "10.55.710.104",
+        "10.55.710.105",
+        "10.55.710.106",
+        "10.55.710.107",
+        "10.55.710.108",
+        "10.55.710.109",
+        "10.55.710.110",
+        "10.55.710.111",
+        "10.55.710.112",
+        "10.55.710.113",
+        "10.55.710.114",
+        "10.55.710.115",
+        "10.55.710.116",
+        "10.55.710.117",
+        "10.55.710.118",
+        "10.55.710.119",
+        "10.55.710.120",
+        "10.55.710.121",
+        "10.55.710.122",
+        "10.55.710.123",
+        "10.55.710.124",
+        "10.55.710.125"
+    ],
+    "latitude": 32.533,
+    "longitude": -97.307,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.97",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..Firewall 710",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.533,
+            "Longitude": -97.307
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.98",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..Router 710",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.1",
+            "ipAddress": "10.55.710.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON.OT.Switch 1419",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.99",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON.Corporate.Switch 1420",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.3",
+            "ipAddress": "10.55.710.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.4",
+            "ipAddress": "10.55.710.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.2",
+            "ipAddress": "10.55.710.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..RC 710",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.710.3",
+                "10.55.710.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.100",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..Host 1419",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.100",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..Host 1420",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.100",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..LocalDatabase 1419",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.100",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..LocalWebServer 1420",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.101",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..hmi 1419",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.100",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..outstation 1420",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.BURLESON..RC 710",
+            "destination": "Utility 2.BURLESON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BURLESON..RC 710",
+            "destination": "Utility 2.BURLESON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BURLESON..Router 710",
+            "destination": "Utility 2.BURLESON..Firewall 710",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BURLESON..Firewall 710",
+            "destination": "Utility 2.BURLESON.OT.Switch 1419",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BURLESON.OT.Switch 1419",
+            "destination": "Utility 2.BURLESON..RC 710",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BURLESON..Firewall 710",
+            "destination": "Utility 2.BURLESON.Corporate.Switch 1420",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BURLESON.Corporate.Switch 1420",
+            "destination": "Utility 2.BURLESON..Host 1419",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BURLESON.Corporate.Switch 1420",
+            "destination": "Utility 2.BURLESON..Host 1420",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BURLESON.Corporate.Switch 1420",
+            "destination": "Utility 2.BURLESON..LocalDatabase 1419",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.BURLESON.Corporate.Switch 1420",
+            "destination": "Utility 2.BURLESON..LocalWebServer 1420",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.1",
+            "ipAddress": "10.55.710.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON.OT.Switch 1419",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.2",
+            "ipAddress": "10.55.710.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..RC 710",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.710.3",
+                "10.55.710.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.97",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..Firewall 710",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.533,
+            "Longitude": -97.307
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.98",
+            "ipAddress": "10.55.710.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..Router 710",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.1",
+            "ipAddress": "10.55.710.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON.OT.Switch 1419",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.710.2",
+            "ipAddress": "10.55.710.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURLESON",
+            "label": "Utility 2.BURLESON..RC 710",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.710.3",
+                "10.55.710.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

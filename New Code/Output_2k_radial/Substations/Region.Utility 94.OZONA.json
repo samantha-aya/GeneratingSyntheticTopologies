@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 94.OZONA",
+    "networkLan": "10.58.34.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 94",
+    "utility_id": 58,
+    "substation": "OZONA",
+    "substationNumber": 34,
+    "OTAddress": "10.58.34.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.58.34.1",
+        "10.58.34.2",
+        "10.58.34.3",
+        "10.58.34.4",
+        "10.58.34.5",
+        "10.58.34.6",
+        "10.58.34.7",
+        "10.58.34.8",
+        "10.58.34.9",
+        "10.58.34.10",
+        "10.58.34.11",
+        "10.58.34.12",
+        "10.58.34.13",
+        "10.58.34.14",
+        "10.58.34.15",
+        "10.58.34.16",
+        "10.58.34.17",
+        "10.58.34.18",
+        "10.58.34.19",
+        "10.58.34.20",
+        "10.58.34.21",
+        "10.58.34.22",
+        "10.58.34.23",
+        "10.58.34.24",
+        "10.58.34.25",
+        "10.58.34.26",
+        "10.58.34.27",
+        "10.58.34.28",
+        "10.58.34.29",
+        "10.58.34.30",
+        "10.58.34.31",
+        "10.58.34.32",
+        "10.58.34.33",
+        "10.58.34.34",
+        "10.58.34.35",
+        "10.58.34.36",
+        "10.58.34.37",
+        "10.58.34.38",
+        "10.58.34.39",
+        "10.58.34.40",
+        "10.58.34.41",
+        "10.58.34.42",
+        "10.58.34.43",
+        "10.58.34.44",
+        "10.58.34.45",
+        "10.58.34.46",
+        "10.58.34.47",
+        "10.58.34.48",
+        "10.58.34.49",
+        "10.58.34.50",
+        "10.58.34.51",
+        "10.58.34.52",
+        "10.58.34.53",
+        "10.58.34.54",
+        "10.58.34.55",
+        "10.58.34.56",
+        "10.58.34.57",
+        "10.58.34.58",
+        "10.58.34.59",
+        "10.58.34.60",
+        "10.58.34.61",
+        "10.58.34.62"
+    ],
+    "routeAddress": "10.58.34.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.58.34.65",
+        "10.58.34.66",
+        "10.58.34.67",
+        "10.58.34.68",
+        "10.58.34.69",
+        "10.58.34.70",
+        "10.58.34.71",
+        "10.58.34.72",
+        "10.58.34.73",
+        "10.58.34.74",
+        "10.58.34.75",
+        "10.58.34.76",
+        "10.58.34.77",
+        "10.58.34.78",
+        "10.58.34.79",
+        "10.58.34.80",
+        "10.58.34.81",
+        "10.58.34.82",
+        "10.58.34.83",
+        "10.58.34.84",
+        "10.58.34.85",
+        "10.58.34.86",
+        "10.58.34.87",
+        "10.58.34.88",
+        "10.58.34.89",
+        "10.58.34.90",
+        "10.58.34.91",
+        "10.58.34.92",
+        "10.58.34.93",
+        "10.58.34.94"
+    ],
+    "corporateAddress": "10.58.34.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.58.34.97",
+        "10.58.34.98",
+        "10.58.34.99",
+        "10.58.34.100",
+        "10.58.34.101",
+        "10.58.34.102",
+        "10.58.34.103",
+        "10.58.34.104",
+        "10.58.34.105",
+        "10.58.34.106",
+        "10.58.34.107",
+        "10.58.34.108",
+        "10.58.34.109",
+        "10.58.34.110",
+        "10.58.34.111",
+        "10.58.34.112",
+        "10.58.34.113",
+        "10.58.34.114",
+        "10.58.34.115",
+        "10.58.34.116",
+        "10.58.34.117",
+        "10.58.34.118",
+        "10.58.34.119",
+        "10.58.34.120",
+        "10.58.34.121",
+        "10.58.34.122",
+        "10.58.34.123",
+        "10.58.34.124",
+        "10.58.34.125"
+    ],
+    "latitude": 30.576,
+    "longitude": -101.331,
+    "nodes": [
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.97",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..Firewall 34",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.576,
+            "Longitude": -101.331
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.98",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..Router 34",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.1",
+            "ipAddress": "10.58.34.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA.OT.Switch 67",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.99",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA.Corporate.Switch 68",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.3",
+            "ipAddress": "10.58.34.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.2",
+            "ipAddress": "10.58.34.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..RC 34",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.34.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.100",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..Host 67",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.100",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..Host 68",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.100",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..LocalDatabase 67",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.100",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..LocalWebServer 68",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.101",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..hmi 67",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.100",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..outstation 68",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 94.OZONA..RC 34",
+            "destination": "Utility 94.OZONA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 94.OZONA..Router 34",
+            "destination": "Utility 94.OZONA..Firewall 34",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 94.OZONA..Firewall 34",
+            "destination": "Utility 94.OZONA.OT.Switch 67",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 94.OZONA.OT.Switch 67",
+            "destination": "Utility 94.OZONA..RC 34",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 94.OZONA..Firewall 34",
+            "destination": "Utility 94.OZONA.Corporate.Switch 68",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 94.OZONA.Corporate.Switch 68",
+            "destination": "Utility 94.OZONA..Host 67",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 94.OZONA.Corporate.Switch 68",
+            "destination": "Utility 94.OZONA..Host 68",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 94.OZONA.Corporate.Switch 68",
+            "destination": "Utility 94.OZONA..LocalDatabase 67",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 94.OZONA.Corporate.Switch 68",
+            "destination": "Utility 94.OZONA..LocalWebServer 68",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.1",
+            "ipAddress": "10.58.34.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA.OT.Switch 67",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.2",
+            "ipAddress": "10.58.34.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..RC 34",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.34.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.97",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..Firewall 34",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.576,
+            "Longitude": -101.331
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.98",
+            "ipAddress": "10.58.34.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..Router 34",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.1",
+            "ipAddress": "10.58.34.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA.OT.Switch 67",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 94",
+            "adminIP": "10.58.34.2",
+            "ipAddress": "10.58.34.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "OZONA",
+            "label": "Utility 94.OZONA..RC 34",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.34.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

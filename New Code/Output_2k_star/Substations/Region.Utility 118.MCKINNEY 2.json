@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 118.MCKINNEY 2",
+    "networkLan": "10.89.651.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 118",
+    "utility_id": 89,
+    "substation": "MCKINNEY 2",
+    "substationNumber": 651,
+    "OTAddress": "10.89.651.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.89.651.1",
+        "10.89.651.2",
+        "10.89.651.3",
+        "10.89.651.4",
+        "10.89.651.5",
+        "10.89.651.6",
+        "10.89.651.7",
+        "10.89.651.8",
+        "10.89.651.9",
+        "10.89.651.10",
+        "10.89.651.11",
+        "10.89.651.12",
+        "10.89.651.13",
+        "10.89.651.14",
+        "10.89.651.15",
+        "10.89.651.16",
+        "10.89.651.17",
+        "10.89.651.18",
+        "10.89.651.19",
+        "10.89.651.20",
+        "10.89.651.21",
+        "10.89.651.22",
+        "10.89.651.23",
+        "10.89.651.24",
+        "10.89.651.25",
+        "10.89.651.26",
+        "10.89.651.27",
+        "10.89.651.28",
+        "10.89.651.29",
+        "10.89.651.30",
+        "10.89.651.31",
+        "10.89.651.32",
+        "10.89.651.33",
+        "10.89.651.34",
+        "10.89.651.35",
+        "10.89.651.36",
+        "10.89.651.37",
+        "10.89.651.38",
+        "10.89.651.39",
+        "10.89.651.40",
+        "10.89.651.41",
+        "10.89.651.42",
+        "10.89.651.43",
+        "10.89.651.44",
+        "10.89.651.45",
+        "10.89.651.46",
+        "10.89.651.47",
+        "10.89.651.48",
+        "10.89.651.49",
+        "10.89.651.50",
+        "10.89.651.51",
+        "10.89.651.52",
+        "10.89.651.53",
+        "10.89.651.54",
+        "10.89.651.55",
+        "10.89.651.56",
+        "10.89.651.57",
+        "10.89.651.58",
+        "10.89.651.59",
+        "10.89.651.60",
+        "10.89.651.61",
+        "10.89.651.62"
+    ],
+    "routeAddress": "10.89.651.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.89.651.65",
+        "10.89.651.66",
+        "10.89.651.67",
+        "10.89.651.68",
+        "10.89.651.69",
+        "10.89.651.70",
+        "10.89.651.71",
+        "10.89.651.72",
+        "10.89.651.73",
+        "10.89.651.74",
+        "10.89.651.75",
+        "10.89.651.76",
+        "10.89.651.77",
+        "10.89.651.78",
+        "10.89.651.79",
+        "10.89.651.80",
+        "10.89.651.81",
+        "10.89.651.82",
+        "10.89.651.83",
+        "10.89.651.84",
+        "10.89.651.85",
+        "10.89.651.86",
+        "10.89.651.87",
+        "10.89.651.88",
+        "10.89.651.89",
+        "10.89.651.90",
+        "10.89.651.91",
+        "10.89.651.92",
+        "10.89.651.93",
+        "10.89.651.94"
+    ],
+    "corporateAddress": "10.89.651.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.89.651.97",
+        "10.89.651.98",
+        "10.89.651.99",
+        "10.89.651.100",
+        "10.89.651.101",
+        "10.89.651.102",
+        "10.89.651.103",
+        "10.89.651.104",
+        "10.89.651.105",
+        "10.89.651.106",
+        "10.89.651.107",
+        "10.89.651.108",
+        "10.89.651.109",
+        "10.89.651.110",
+        "10.89.651.111",
+        "10.89.651.112",
+        "10.89.651.113",
+        "10.89.651.114",
+        "10.89.651.115",
+        "10.89.651.116",
+        "10.89.651.117",
+        "10.89.651.118",
+        "10.89.651.119",
+        "10.89.651.120",
+        "10.89.651.121",
+        "10.89.651.122",
+        "10.89.651.123",
+        "10.89.651.124",
+        "10.89.651.125"
+    ],
+    "latitude": 33.246,
+    "longitude": -96.631,
+    "nodes": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.97",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..Firewall 651",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.246,
+            "Longitude": -96.631
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.98",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..Router 651",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.1",
+            "ipAddress": "10.89.651.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2.OT.Switch 1301",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.99",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2.Corporate.Switch 1302",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.3",
+            "ipAddress": "10.89.651.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.2",
+            "ipAddress": "10.89.651.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..RC 651",
+            "compromised": false,
+            "relayIPlist": [
+                "10.89.651.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.100",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..Host 1301",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.100",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..Host 1302",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.100",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..LocalDatabase 1301",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.100",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..LocalWebServer 1302",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.101",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..hmi 1301",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.100",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..outstation 1302",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 118.MCKINNEY 2..RC 651",
+            "destination": "Utility 118.MCKINNEY 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.MCKINNEY 2..Router 651",
+            "destination": "Utility 118.MCKINNEY 2..Firewall 651",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.MCKINNEY 2..Firewall 651",
+            "destination": "Utility 118.MCKINNEY 2.OT.Switch 1301",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.MCKINNEY 2.OT.Switch 1301",
+            "destination": "Utility 118.MCKINNEY 2..RC 651",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.MCKINNEY 2..Firewall 651",
+            "destination": "Utility 118.MCKINNEY 2.Corporate.Switch 1302",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.MCKINNEY 2.Corporate.Switch 1302",
+            "destination": "Utility 118.MCKINNEY 2..Host 1301",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.MCKINNEY 2.Corporate.Switch 1302",
+            "destination": "Utility 118.MCKINNEY 2..Host 1302",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.MCKINNEY 2.Corporate.Switch 1302",
+            "destination": "Utility 118.MCKINNEY 2..LocalDatabase 1301",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.MCKINNEY 2.Corporate.Switch 1302",
+            "destination": "Utility 118.MCKINNEY 2..LocalWebServer 1302",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.1",
+            "ipAddress": "10.89.651.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2.OT.Switch 1301",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.2",
+            "ipAddress": "10.89.651.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..RC 651",
+            "compromised": false,
+            "relayIPlist": [
+                "10.89.651.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.97",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..Firewall 651",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.246,
+            "Longitude": -96.631
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.98",
+            "ipAddress": "10.89.651.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..Router 651",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.1",
+            "ipAddress": "10.89.651.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2.OT.Switch 1301",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.651.2",
+            "ipAddress": "10.89.651.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MCKINNEY 2",
+            "label": "Utility 118.MCKINNEY 2..RC 651",
+            "compromised": false,
+            "relayIPlist": [
+                "10.89.651.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,712 @@
+{
+    "relayCounter": 5,
+    "label": "Region.Utility 44.SILVER",
+    "networkLan": "10.61.174.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 44",
+    "utility_id": 61,
+    "substation": "SILVER",
+    "substationNumber": 174,
+    "OTAddress": "10.61.174.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.61.174.1",
+        "10.61.174.2",
+        "10.61.174.3",
+        "10.61.174.4",
+        "10.61.174.5",
+        "10.61.174.6",
+        "10.61.174.7",
+        "10.61.174.8",
+        "10.61.174.9",
+        "10.61.174.10",
+        "10.61.174.11",
+        "10.61.174.12",
+        "10.61.174.13",
+        "10.61.174.14",
+        "10.61.174.15",
+        "10.61.174.16",
+        "10.61.174.17",
+        "10.61.174.18",
+        "10.61.174.19",
+        "10.61.174.20",
+        "10.61.174.21",
+        "10.61.174.22",
+        "10.61.174.23",
+        "10.61.174.24",
+        "10.61.174.25",
+        "10.61.174.26",
+        "10.61.174.27",
+        "10.61.174.28",
+        "10.61.174.29",
+        "10.61.174.30",
+        "10.61.174.31",
+        "10.61.174.32",
+        "10.61.174.33",
+        "10.61.174.34",
+        "10.61.174.35",
+        "10.61.174.36",
+        "10.61.174.37",
+        "10.61.174.38",
+        "10.61.174.39",
+        "10.61.174.40",
+        "10.61.174.41",
+        "10.61.174.42",
+        "10.61.174.43",
+        "10.61.174.44",
+        "10.61.174.45",
+        "10.61.174.46",
+        "10.61.174.47",
+        "10.61.174.48",
+        "10.61.174.49",
+        "10.61.174.50",
+        "10.61.174.51",
+        "10.61.174.52",
+        "10.61.174.53",
+        "10.61.174.54",
+        "10.61.174.55",
+        "10.61.174.56",
+        "10.61.174.57",
+        "10.61.174.58",
+        "10.61.174.59",
+        "10.61.174.60",
+        "10.61.174.61",
+        "10.61.174.62"
+    ],
+    "routeAddress": "10.61.174.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.61.174.65",
+        "10.61.174.66",
+        "10.61.174.67",
+        "10.61.174.68",
+        "10.61.174.69",
+        "10.61.174.70",
+        "10.61.174.71",
+        "10.61.174.72",
+        "10.61.174.73",
+        "10.61.174.74",
+        "10.61.174.75",
+        "10.61.174.76",
+        "10.61.174.77",
+        "10.61.174.78",
+        "10.61.174.79",
+        "10.61.174.80",
+        "10.61.174.81",
+        "10.61.174.82",
+        "10.61.174.83",
+        "10.61.174.84",
+        "10.61.174.85",
+        "10.61.174.86",
+        "10.61.174.87",
+        "10.61.174.88",
+        "10.61.174.89",
+        "10.61.174.90",
+        "10.61.174.91",
+        "10.61.174.92",
+        "10.61.174.93",
+        "10.61.174.94"
+    ],
+    "corporateAddress": "10.61.174.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.61.174.97",
+        "10.61.174.98",
+        "10.61.174.99",
+        "10.61.174.100",
+        "10.61.174.101",
+        "10.61.174.102",
+        "10.61.174.103",
+        "10.61.174.104",
+        "10.61.174.105",
+        "10.61.174.106",
+        "10.61.174.107",
+        "10.61.174.108",
+        "10.61.174.109",
+        "10.61.174.110",
+        "10.61.174.111",
+        "10.61.174.112",
+        "10.61.174.113",
+        "10.61.174.114",
+        "10.61.174.115",
+        "10.61.174.116",
+        "10.61.174.117",
+        "10.61.174.118",
+        "10.61.174.119",
+        "10.61.174.120",
+        "10.61.174.121",
+        "10.61.174.122",
+        "10.61.174.123",
+        "10.61.174.124",
+        "10.61.174.125"
+    ],
+    "latitude": 32.05,
+    "longitude": -100.692,
+    "nodes": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.97",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Firewall 174",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.05,
+            "Longitude": -100.692
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.98",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Router 174",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.1",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER.OT.Switch 347",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.99",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER.Corporate.Switch 348",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.3",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.4",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.5",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.6",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.7",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.2",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..RC 174",
+            "compromised": false,
+            "relayIPlist": [
+                "10.61.174.3",
+                "10.61.174.4",
+                "10.61.174.5",
+                "10.61.174.6",
+                "10.61.174.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.100",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Host 347",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.100",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Host 348",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.100",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..LocalDatabase 347",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.100",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..LocalWebServer 348",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.101",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..hmi 347",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.100",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..outstation 348",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 44.SILVER..RC 174",
+            "destination": "Utility 44.SILVER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER..RC 174",
+            "destination": "Utility 44.SILVER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER..RC 174",
+            "destination": "Utility 44.SILVER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER..RC 174",
+            "destination": "Utility 44.SILVER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER..RC 174",
+            "destination": "Utility 44.SILVER..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER..Router 174",
+            "destination": "Utility 44.SILVER..Firewall 174",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER..Firewall 174",
+            "destination": "Utility 44.SILVER.OT.Switch 347",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER.OT.Switch 347",
+            "destination": "Utility 44.SILVER..RC 174",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER..Firewall 174",
+            "destination": "Utility 44.SILVER.Corporate.Switch 348",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER.Corporate.Switch 348",
+            "destination": "Utility 44.SILVER..Host 347",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER.Corporate.Switch 348",
+            "destination": "Utility 44.SILVER..Host 348",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER.Corporate.Switch 348",
+            "destination": "Utility 44.SILVER..LocalDatabase 347",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 44.SILVER.Corporate.Switch 348",
+            "destination": "Utility 44.SILVER..LocalWebServer 348",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.1",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER.OT.Switch 347",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.2",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..RC 174",
+            "compromised": false,
+            "relayIPlist": [
+                "10.61.174.3",
+                "10.61.174.4",
+                "10.61.174.5",
+                "10.61.174.6",
+                "10.61.174.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.97",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Firewall 174",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.05,
+            "Longitude": -100.692
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.98",
+            "ipAddress": "10.61.174.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..Router 174",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.1",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER.OT.Switch 347",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 44",
+            "adminIP": "10.61.174.2",
+            "ipAddress": "10.61.174.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SILVER",
+            "label": "Utility 44.SILVER..RC 174",
+            "compromised": false,
+            "relayIPlist": [
+                "10.61.174.3",
+                "10.61.174.4",
+                "10.61.174.5",
+                "10.61.174.6",
+                "10.61.174.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 0.0,
+    "genmvar": 0.0,
+    "connecting_TS_num": 207
+}

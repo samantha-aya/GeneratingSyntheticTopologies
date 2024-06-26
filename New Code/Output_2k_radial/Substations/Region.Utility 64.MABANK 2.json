@@ -1,0 +1,683 @@
+{
+    "relayCounter": 4,
+    "label": "Region.Utility 64.MABANK 2",
+    "networkLan": "10.134.396.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 64",
+    "utility_id": 134,
+    "substation": "MABANK 2",
+    "substationNumber": 396,
+    "OTAddress": "10.134.396.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.134.396.1",
+        "10.134.396.2",
+        "10.134.396.3",
+        "10.134.396.4",
+        "10.134.396.5",
+        "10.134.396.6",
+        "10.134.396.7",
+        "10.134.396.8",
+        "10.134.396.9",
+        "10.134.396.10",
+        "10.134.396.11",
+        "10.134.396.12",
+        "10.134.396.13",
+        "10.134.396.14",
+        "10.134.396.15",
+        "10.134.396.16",
+        "10.134.396.17",
+        "10.134.396.18",
+        "10.134.396.19",
+        "10.134.396.20",
+        "10.134.396.21",
+        "10.134.396.22",
+        "10.134.396.23",
+        "10.134.396.24",
+        "10.134.396.25",
+        "10.134.396.26",
+        "10.134.396.27",
+        "10.134.396.28",
+        "10.134.396.29",
+        "10.134.396.30",
+        "10.134.396.31",
+        "10.134.396.32",
+        "10.134.396.33",
+        "10.134.396.34",
+        "10.134.396.35",
+        "10.134.396.36",
+        "10.134.396.37",
+        "10.134.396.38",
+        "10.134.396.39",
+        "10.134.396.40",
+        "10.134.396.41",
+        "10.134.396.42",
+        "10.134.396.43",
+        "10.134.396.44",
+        "10.134.396.45",
+        "10.134.396.46",
+        "10.134.396.47",
+        "10.134.396.48",
+        "10.134.396.49",
+        "10.134.396.50",
+        "10.134.396.51",
+        "10.134.396.52",
+        "10.134.396.53",
+        "10.134.396.54",
+        "10.134.396.55",
+        "10.134.396.56",
+        "10.134.396.57",
+        "10.134.396.58",
+        "10.134.396.59",
+        "10.134.396.60",
+        "10.134.396.61",
+        "10.134.396.62"
+    ],
+    "routeAddress": "10.134.396.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.134.396.65",
+        "10.134.396.66",
+        "10.134.396.67",
+        "10.134.396.68",
+        "10.134.396.69",
+        "10.134.396.70",
+        "10.134.396.71",
+        "10.134.396.72",
+        "10.134.396.73",
+        "10.134.396.74",
+        "10.134.396.75",
+        "10.134.396.76",
+        "10.134.396.77",
+        "10.134.396.78",
+        "10.134.396.79",
+        "10.134.396.80",
+        "10.134.396.81",
+        "10.134.396.82",
+        "10.134.396.83",
+        "10.134.396.84",
+        "10.134.396.85",
+        "10.134.396.86",
+        "10.134.396.87",
+        "10.134.396.88",
+        "10.134.396.89",
+        "10.134.396.90",
+        "10.134.396.91",
+        "10.134.396.92",
+        "10.134.396.93",
+        "10.134.396.94"
+    ],
+    "corporateAddress": "10.134.396.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.134.396.97",
+        "10.134.396.98",
+        "10.134.396.99",
+        "10.134.396.100",
+        "10.134.396.101",
+        "10.134.396.102",
+        "10.134.396.103",
+        "10.134.396.104",
+        "10.134.396.105",
+        "10.134.396.106",
+        "10.134.396.107",
+        "10.134.396.108",
+        "10.134.396.109",
+        "10.134.396.110",
+        "10.134.396.111",
+        "10.134.396.112",
+        "10.134.396.113",
+        "10.134.396.114",
+        "10.134.396.115",
+        "10.134.396.116",
+        "10.134.396.117",
+        "10.134.396.118",
+        "10.134.396.119",
+        "10.134.396.120",
+        "10.134.396.121",
+        "10.134.396.122",
+        "10.134.396.123",
+        "10.134.396.124",
+        "10.134.396.125"
+    ],
+    "latitude": 32.278,
+    "longitude": -96.105,
+    "nodes": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.97",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Firewall 396",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.278,
+            "Longitude": -96.105
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.98",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Router 396",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.1",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2.OT.Switch 791",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.99",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2.Corporate.Switch 792",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.3",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.4",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.5",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.6",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.2",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..RC 396",
+            "compromised": false,
+            "relayIPlist": [
+                "10.134.396.3",
+                "10.134.396.4",
+                "10.134.396.5",
+                "10.134.396.6"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.100",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Host 791",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.100",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Host 792",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.100",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..LocalDatabase 791",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.100",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..LocalWebServer 792",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.101",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..hmi 791",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.100",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..outstation 792",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 64.MABANK 2..RC 396",
+            "destination": "Utility 64.MABANK 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2..RC 396",
+            "destination": "Utility 64.MABANK 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2..RC 396",
+            "destination": "Utility 64.MABANK 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2..RC 396",
+            "destination": "Utility 64.MABANK 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2..Router 396",
+            "destination": "Utility 64.MABANK 2..Firewall 396",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2..Firewall 396",
+            "destination": "Utility 64.MABANK 2.OT.Switch 791",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2.OT.Switch 791",
+            "destination": "Utility 64.MABANK 2..RC 396",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2..Firewall 396",
+            "destination": "Utility 64.MABANK 2.Corporate.Switch 792",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2.Corporate.Switch 792",
+            "destination": "Utility 64.MABANK 2..Host 791",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2.Corporate.Switch 792",
+            "destination": "Utility 64.MABANK 2..Host 792",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2.Corporate.Switch 792",
+            "destination": "Utility 64.MABANK 2..LocalDatabase 791",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 64.MABANK 2.Corporate.Switch 792",
+            "destination": "Utility 64.MABANK 2..LocalWebServer 792",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.1",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2.OT.Switch 791",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.2",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..RC 396",
+            "compromised": false,
+            "relayIPlist": [
+                "10.134.396.3",
+                "10.134.396.4",
+                "10.134.396.5",
+                "10.134.396.6"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.97",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Firewall 396",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.278,
+            "Longitude": -96.105
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.98",
+            "ipAddress": "10.134.396.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..Router 396",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.1",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2.OT.Switch 791",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 64",
+            "adminIP": "10.134.396.2",
+            "ipAddress": "10.134.396.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MABANK 2",
+            "label": "Utility 64.MABANK 2..RC 396",
+            "compromised": false,
+            "relayIPlist": [
+                "10.134.396.3",
+                "10.134.396.4",
+                "10.134.396.5",
+                "10.134.396.6"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

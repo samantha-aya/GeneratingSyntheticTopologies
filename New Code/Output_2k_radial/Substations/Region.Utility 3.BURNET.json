@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 3.BURNET",
+    "networkLan": "10.56.921.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "BURNET",
+    "substationNumber": 921,
+    "OTAddress": "10.56.921.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.921.1",
+        "10.56.921.2",
+        "10.56.921.3",
+        "10.56.921.4",
+        "10.56.921.5",
+        "10.56.921.6",
+        "10.56.921.7",
+        "10.56.921.8",
+        "10.56.921.9",
+        "10.56.921.10",
+        "10.56.921.11",
+        "10.56.921.12",
+        "10.56.921.13",
+        "10.56.921.14",
+        "10.56.921.15",
+        "10.56.921.16",
+        "10.56.921.17",
+        "10.56.921.18",
+        "10.56.921.19",
+        "10.56.921.20",
+        "10.56.921.21",
+        "10.56.921.22",
+        "10.56.921.23",
+        "10.56.921.24",
+        "10.56.921.25",
+        "10.56.921.26",
+        "10.56.921.27",
+        "10.56.921.28",
+        "10.56.921.29",
+        "10.56.921.30",
+        "10.56.921.31",
+        "10.56.921.32",
+        "10.56.921.33",
+        "10.56.921.34",
+        "10.56.921.35",
+        "10.56.921.36",
+        "10.56.921.37",
+        "10.56.921.38",
+        "10.56.921.39",
+        "10.56.921.40",
+        "10.56.921.41",
+        "10.56.921.42",
+        "10.56.921.43",
+        "10.56.921.44",
+        "10.56.921.45",
+        "10.56.921.46",
+        "10.56.921.47",
+        "10.56.921.48",
+        "10.56.921.49",
+        "10.56.921.50",
+        "10.56.921.51",
+        "10.56.921.52",
+        "10.56.921.53",
+        "10.56.921.54",
+        "10.56.921.55",
+        "10.56.921.56",
+        "10.56.921.57",
+        "10.56.921.58",
+        "10.56.921.59",
+        "10.56.921.60",
+        "10.56.921.61",
+        "10.56.921.62"
+    ],
+    "routeAddress": "10.56.921.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.921.65",
+        "10.56.921.66",
+        "10.56.921.67",
+        "10.56.921.68",
+        "10.56.921.69",
+        "10.56.921.70",
+        "10.56.921.71",
+        "10.56.921.72",
+        "10.56.921.73",
+        "10.56.921.74",
+        "10.56.921.75",
+        "10.56.921.76",
+        "10.56.921.77",
+        "10.56.921.78",
+        "10.56.921.79",
+        "10.56.921.80",
+        "10.56.921.81",
+        "10.56.921.82",
+        "10.56.921.83",
+        "10.56.921.84",
+        "10.56.921.85",
+        "10.56.921.86",
+        "10.56.921.87",
+        "10.56.921.88",
+        "10.56.921.89",
+        "10.56.921.90",
+        "10.56.921.91",
+        "10.56.921.92",
+        "10.56.921.93",
+        "10.56.921.94"
+    ],
+    "corporateAddress": "10.56.921.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.921.97",
+        "10.56.921.98",
+        "10.56.921.99",
+        "10.56.921.100",
+        "10.56.921.101",
+        "10.56.921.102",
+        "10.56.921.103",
+        "10.56.921.104",
+        "10.56.921.105",
+        "10.56.921.106",
+        "10.56.921.107",
+        "10.56.921.108",
+        "10.56.921.109",
+        "10.56.921.110",
+        "10.56.921.111",
+        "10.56.921.112",
+        "10.56.921.113",
+        "10.56.921.114",
+        "10.56.921.115",
+        "10.56.921.116",
+        "10.56.921.117",
+        "10.56.921.118",
+        "10.56.921.119",
+        "10.56.921.120",
+        "10.56.921.121",
+        "10.56.921.122",
+        "10.56.921.123",
+        "10.56.921.124",
+        "10.56.921.125"
+    ],
+    "latitude": 30.801,
+    "longitude": -98.283,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.97",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..Firewall 921",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.801,
+            "Longitude": -98.283
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.98",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..Router 921",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.1",
+            "ipAddress": "10.56.921.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET.OT.Switch 1841",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.99",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET.Corporate.Switch 1842",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.3",
+            "ipAddress": "10.56.921.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.4",
+            "ipAddress": "10.56.921.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.2",
+            "ipAddress": "10.56.921.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..RC 921",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.921.3",
+                "10.56.921.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.100",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..Host 1841",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.100",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..Host 1842",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.100",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..LocalDatabase 1841",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.100",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..LocalWebServer 1842",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.101",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..hmi 1841",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.100",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..outstation 1842",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.BURNET..RC 921",
+            "destination": "Utility 3.BURNET..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BURNET..RC 921",
+            "destination": "Utility 3.BURNET..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BURNET..Router 921",
+            "destination": "Utility 3.BURNET..Firewall 921",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BURNET..Firewall 921",
+            "destination": "Utility 3.BURNET.OT.Switch 1841",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BURNET.OT.Switch 1841",
+            "destination": "Utility 3.BURNET..RC 921",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BURNET..Firewall 921",
+            "destination": "Utility 3.BURNET.Corporate.Switch 1842",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BURNET.Corporate.Switch 1842",
+            "destination": "Utility 3.BURNET..Host 1841",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BURNET.Corporate.Switch 1842",
+            "destination": "Utility 3.BURNET..Host 1842",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BURNET.Corporate.Switch 1842",
+            "destination": "Utility 3.BURNET..LocalDatabase 1841",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BURNET.Corporate.Switch 1842",
+            "destination": "Utility 3.BURNET..LocalWebServer 1842",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.1",
+            "ipAddress": "10.56.921.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET.OT.Switch 1841",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.2",
+            "ipAddress": "10.56.921.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..RC 921",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.921.3",
+                "10.56.921.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.97",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..Firewall 921",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.801,
+            "Longitude": -98.283
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.98",
+            "ipAddress": "10.56.921.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..Router 921",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.1",
+            "ipAddress": "10.56.921.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET.OT.Switch 1841",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.921.2",
+            "ipAddress": "10.56.921.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BURNET",
+            "label": "Utility 3.BURNET..RC 921",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.921.3",
+                "10.56.921.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

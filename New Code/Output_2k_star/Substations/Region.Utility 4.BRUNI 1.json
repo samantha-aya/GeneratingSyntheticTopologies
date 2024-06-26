@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 4.BRUNI 1",
+    "networkLan": "10.57.346.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "BRUNI 1",
+    "substationNumber": 346,
+    "OTAddress": "10.57.346.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.346.1",
+        "10.57.346.2",
+        "10.57.346.3",
+        "10.57.346.4",
+        "10.57.346.5",
+        "10.57.346.6",
+        "10.57.346.7",
+        "10.57.346.8",
+        "10.57.346.9",
+        "10.57.346.10",
+        "10.57.346.11",
+        "10.57.346.12",
+        "10.57.346.13",
+        "10.57.346.14",
+        "10.57.346.15",
+        "10.57.346.16",
+        "10.57.346.17",
+        "10.57.346.18",
+        "10.57.346.19",
+        "10.57.346.20",
+        "10.57.346.21",
+        "10.57.346.22",
+        "10.57.346.23",
+        "10.57.346.24",
+        "10.57.346.25",
+        "10.57.346.26",
+        "10.57.346.27",
+        "10.57.346.28",
+        "10.57.346.29",
+        "10.57.346.30",
+        "10.57.346.31",
+        "10.57.346.32",
+        "10.57.346.33",
+        "10.57.346.34",
+        "10.57.346.35",
+        "10.57.346.36",
+        "10.57.346.37",
+        "10.57.346.38",
+        "10.57.346.39",
+        "10.57.346.40",
+        "10.57.346.41",
+        "10.57.346.42",
+        "10.57.346.43",
+        "10.57.346.44",
+        "10.57.346.45",
+        "10.57.346.46",
+        "10.57.346.47",
+        "10.57.346.48",
+        "10.57.346.49",
+        "10.57.346.50",
+        "10.57.346.51",
+        "10.57.346.52",
+        "10.57.346.53",
+        "10.57.346.54",
+        "10.57.346.55",
+        "10.57.346.56",
+        "10.57.346.57",
+        "10.57.346.58",
+        "10.57.346.59",
+        "10.57.346.60",
+        "10.57.346.61",
+        "10.57.346.62"
+    ],
+    "routeAddress": "10.57.346.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.346.65",
+        "10.57.346.66",
+        "10.57.346.67",
+        "10.57.346.68",
+        "10.57.346.69",
+        "10.57.346.70",
+        "10.57.346.71",
+        "10.57.346.72",
+        "10.57.346.73",
+        "10.57.346.74",
+        "10.57.346.75",
+        "10.57.346.76",
+        "10.57.346.77",
+        "10.57.346.78",
+        "10.57.346.79",
+        "10.57.346.80",
+        "10.57.346.81",
+        "10.57.346.82",
+        "10.57.346.83",
+        "10.57.346.84",
+        "10.57.346.85",
+        "10.57.346.86",
+        "10.57.346.87",
+        "10.57.346.88",
+        "10.57.346.89",
+        "10.57.346.90",
+        "10.57.346.91",
+        "10.57.346.92",
+        "10.57.346.93",
+        "10.57.346.94"
+    ],
+    "corporateAddress": "10.57.346.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.346.97",
+        "10.57.346.98",
+        "10.57.346.99",
+        "10.57.346.100",
+        "10.57.346.101",
+        "10.57.346.102",
+        "10.57.346.103",
+        "10.57.346.104",
+        "10.57.346.105",
+        "10.57.346.106",
+        "10.57.346.107",
+        "10.57.346.108",
+        "10.57.346.109",
+        "10.57.346.110",
+        "10.57.346.111",
+        "10.57.346.112",
+        "10.57.346.113",
+        "10.57.346.114",
+        "10.57.346.115",
+        "10.57.346.116",
+        "10.57.346.117",
+        "10.57.346.118",
+        "10.57.346.119",
+        "10.57.346.120",
+        "10.57.346.121",
+        "10.57.346.122",
+        "10.57.346.123",
+        "10.57.346.124",
+        "10.57.346.125"
+    ],
+    "latitude": 27.576,
+    "longitude": -98.905,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.97",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..Firewall 346",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.576,
+            "Longitude": -98.905
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.98",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..Router 346",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.1",
+            "ipAddress": "10.57.346.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1.OT.Switch 691",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.99",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1.Corporate.Switch 692",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.3",
+            "ipAddress": "10.57.346.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.4",
+            "ipAddress": "10.57.346.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.2",
+            "ipAddress": "10.57.346.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..RC 346",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.346.3",
+                "10.57.346.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.100",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..Host 691",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.100",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..Host 692",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.100",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..LocalDatabase 691",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.100",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..LocalWebServer 692",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.101",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..hmi 691",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.100",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..outstation 692",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.BRUNI 1..RC 346",
+            "destination": "Utility 4.BRUNI 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.BRUNI 1..RC 346",
+            "destination": "Utility 4.BRUNI 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.BRUNI 1..Router 346",
+            "destination": "Utility 4.BRUNI 1..Firewall 346",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.BRUNI 1..Firewall 346",
+            "destination": "Utility 4.BRUNI 1.OT.Switch 691",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.BRUNI 1.OT.Switch 691",
+            "destination": "Utility 4.BRUNI 1..RC 346",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.BRUNI 1..Firewall 346",
+            "destination": "Utility 4.BRUNI 1.Corporate.Switch 692",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.BRUNI 1.Corporate.Switch 692",
+            "destination": "Utility 4.BRUNI 1..Host 691",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.BRUNI 1.Corporate.Switch 692",
+            "destination": "Utility 4.BRUNI 1..Host 692",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.BRUNI 1.Corporate.Switch 692",
+            "destination": "Utility 4.BRUNI 1..LocalDatabase 691",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.BRUNI 1.Corporate.Switch 692",
+            "destination": "Utility 4.BRUNI 1..LocalWebServer 692",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.1",
+            "ipAddress": "10.57.346.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1.OT.Switch 691",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.2",
+            "ipAddress": "10.57.346.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..RC 346",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.346.3",
+                "10.57.346.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.97",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..Firewall 346",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 27.576,
+            "Longitude": -98.905
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.98",
+            "ipAddress": "10.57.346.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..Router 346",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.1",
+            "ipAddress": "10.57.346.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1.OT.Switch 691",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.346.2",
+            "ipAddress": "10.57.346.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRUNI 1",
+            "label": "Utility 4.BRUNI 1..RC 346",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.346.3",
+                "10.57.346.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 112.5,
+    "genmvar": 8.16,
+    "connecting_TS_num": 345
+}

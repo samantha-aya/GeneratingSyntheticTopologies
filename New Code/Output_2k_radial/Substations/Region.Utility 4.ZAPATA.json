@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.ZAPATA",
+    "networkLan": "10.57.352.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "ZAPATA",
+    "substationNumber": 352,
+    "OTAddress": "10.57.352.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.352.1",
+        "10.57.352.2",
+        "10.57.352.3",
+        "10.57.352.4",
+        "10.57.352.5",
+        "10.57.352.6",
+        "10.57.352.7",
+        "10.57.352.8",
+        "10.57.352.9",
+        "10.57.352.10",
+        "10.57.352.11",
+        "10.57.352.12",
+        "10.57.352.13",
+        "10.57.352.14",
+        "10.57.352.15",
+        "10.57.352.16",
+        "10.57.352.17",
+        "10.57.352.18",
+        "10.57.352.19",
+        "10.57.352.20",
+        "10.57.352.21",
+        "10.57.352.22",
+        "10.57.352.23",
+        "10.57.352.24",
+        "10.57.352.25",
+        "10.57.352.26",
+        "10.57.352.27",
+        "10.57.352.28",
+        "10.57.352.29",
+        "10.57.352.30",
+        "10.57.352.31",
+        "10.57.352.32",
+        "10.57.352.33",
+        "10.57.352.34",
+        "10.57.352.35",
+        "10.57.352.36",
+        "10.57.352.37",
+        "10.57.352.38",
+        "10.57.352.39",
+        "10.57.352.40",
+        "10.57.352.41",
+        "10.57.352.42",
+        "10.57.352.43",
+        "10.57.352.44",
+        "10.57.352.45",
+        "10.57.352.46",
+        "10.57.352.47",
+        "10.57.352.48",
+        "10.57.352.49",
+        "10.57.352.50",
+        "10.57.352.51",
+        "10.57.352.52",
+        "10.57.352.53",
+        "10.57.352.54",
+        "10.57.352.55",
+        "10.57.352.56",
+        "10.57.352.57",
+        "10.57.352.58",
+        "10.57.352.59",
+        "10.57.352.60",
+        "10.57.352.61",
+        "10.57.352.62"
+    ],
+    "routeAddress": "10.57.352.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.352.65",
+        "10.57.352.66",
+        "10.57.352.67",
+        "10.57.352.68",
+        "10.57.352.69",
+        "10.57.352.70",
+        "10.57.352.71",
+        "10.57.352.72",
+        "10.57.352.73",
+        "10.57.352.74",
+        "10.57.352.75",
+        "10.57.352.76",
+        "10.57.352.77",
+        "10.57.352.78",
+        "10.57.352.79",
+        "10.57.352.80",
+        "10.57.352.81",
+        "10.57.352.82",
+        "10.57.352.83",
+        "10.57.352.84",
+        "10.57.352.85",
+        "10.57.352.86",
+        "10.57.352.87",
+        "10.57.352.88",
+        "10.57.352.89",
+        "10.57.352.90",
+        "10.57.352.91",
+        "10.57.352.92",
+        "10.57.352.93",
+        "10.57.352.94"
+    ],
+    "corporateAddress": "10.57.352.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.352.97",
+        "10.57.352.98",
+        "10.57.352.99",
+        "10.57.352.100",
+        "10.57.352.101",
+        "10.57.352.102",
+        "10.57.352.103",
+        "10.57.352.104",
+        "10.57.352.105",
+        "10.57.352.106",
+        "10.57.352.107",
+        "10.57.352.108",
+        "10.57.352.109",
+        "10.57.352.110",
+        "10.57.352.111",
+        "10.57.352.112",
+        "10.57.352.113",
+        "10.57.352.114",
+        "10.57.352.115",
+        "10.57.352.116",
+        "10.57.352.117",
+        "10.57.352.118",
+        "10.57.352.119",
+        "10.57.352.120",
+        "10.57.352.121",
+        "10.57.352.122",
+        "10.57.352.123",
+        "10.57.352.124",
+        "10.57.352.125"
+    ],
+    "latitude": 26.931,
+    "longitude": -99.163,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.97",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..Firewall 352",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.931,
+            "Longitude": -99.163
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.98",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..Router 352",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.1",
+            "ipAddress": "10.57.352.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA.OT.Switch 703",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.99",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA.Corporate.Switch 704",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.3",
+            "ipAddress": "10.57.352.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.2",
+            "ipAddress": "10.57.352.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..RC 352",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.352.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.100",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..Host 703",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.100",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..Host 704",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.100",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..LocalDatabase 703",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.100",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..LocalWebServer 704",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.101",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..hmi 703",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.100",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..outstation 704",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.ZAPATA..RC 352",
+            "destination": "Utility 4.ZAPATA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ZAPATA..Router 352",
+            "destination": "Utility 4.ZAPATA..Firewall 352",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ZAPATA..Firewall 352",
+            "destination": "Utility 4.ZAPATA.OT.Switch 703",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ZAPATA.OT.Switch 703",
+            "destination": "Utility 4.ZAPATA..RC 352",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ZAPATA..Firewall 352",
+            "destination": "Utility 4.ZAPATA.Corporate.Switch 704",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ZAPATA.Corporate.Switch 704",
+            "destination": "Utility 4.ZAPATA..Host 703",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ZAPATA.Corporate.Switch 704",
+            "destination": "Utility 4.ZAPATA..Host 704",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ZAPATA.Corporate.Switch 704",
+            "destination": "Utility 4.ZAPATA..LocalDatabase 703",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.ZAPATA.Corporate.Switch 704",
+            "destination": "Utility 4.ZAPATA..LocalWebServer 704",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.1",
+            "ipAddress": "10.57.352.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA.OT.Switch 703",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.2",
+            "ipAddress": "10.57.352.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..RC 352",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.352.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.97",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..Firewall 352",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.931,
+            "Longitude": -99.163
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.98",
+            "ipAddress": "10.57.352.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..Router 352",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.1",
+            "ipAddress": "10.57.352.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA.OT.Switch 703",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.352.2",
+            "ipAddress": "10.57.352.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "ZAPATA",
+            "label": "Utility 4.ZAPATA..RC 352",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.352.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

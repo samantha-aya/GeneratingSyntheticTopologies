@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 120.SEYMOUR",
+    "networkLan": "10.81.121.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 120",
+    "utility_id": 81,
+    "substation": "SEYMOUR",
+    "substationNumber": 121,
+    "OTAddress": "10.81.121.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.81.121.1",
+        "10.81.121.2",
+        "10.81.121.3",
+        "10.81.121.4",
+        "10.81.121.5",
+        "10.81.121.6",
+        "10.81.121.7",
+        "10.81.121.8",
+        "10.81.121.9",
+        "10.81.121.10",
+        "10.81.121.11",
+        "10.81.121.12",
+        "10.81.121.13",
+        "10.81.121.14",
+        "10.81.121.15",
+        "10.81.121.16",
+        "10.81.121.17",
+        "10.81.121.18",
+        "10.81.121.19",
+        "10.81.121.20",
+        "10.81.121.21",
+        "10.81.121.22",
+        "10.81.121.23",
+        "10.81.121.24",
+        "10.81.121.25",
+        "10.81.121.26",
+        "10.81.121.27",
+        "10.81.121.28",
+        "10.81.121.29",
+        "10.81.121.30",
+        "10.81.121.31",
+        "10.81.121.32",
+        "10.81.121.33",
+        "10.81.121.34",
+        "10.81.121.35",
+        "10.81.121.36",
+        "10.81.121.37",
+        "10.81.121.38",
+        "10.81.121.39",
+        "10.81.121.40",
+        "10.81.121.41",
+        "10.81.121.42",
+        "10.81.121.43",
+        "10.81.121.44",
+        "10.81.121.45",
+        "10.81.121.46",
+        "10.81.121.47",
+        "10.81.121.48",
+        "10.81.121.49",
+        "10.81.121.50",
+        "10.81.121.51",
+        "10.81.121.52",
+        "10.81.121.53",
+        "10.81.121.54",
+        "10.81.121.55",
+        "10.81.121.56",
+        "10.81.121.57",
+        "10.81.121.58",
+        "10.81.121.59",
+        "10.81.121.60",
+        "10.81.121.61",
+        "10.81.121.62"
+    ],
+    "routeAddress": "10.81.121.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.81.121.65",
+        "10.81.121.66",
+        "10.81.121.67",
+        "10.81.121.68",
+        "10.81.121.69",
+        "10.81.121.70",
+        "10.81.121.71",
+        "10.81.121.72",
+        "10.81.121.73",
+        "10.81.121.74",
+        "10.81.121.75",
+        "10.81.121.76",
+        "10.81.121.77",
+        "10.81.121.78",
+        "10.81.121.79",
+        "10.81.121.80",
+        "10.81.121.81",
+        "10.81.121.82",
+        "10.81.121.83",
+        "10.81.121.84",
+        "10.81.121.85",
+        "10.81.121.86",
+        "10.81.121.87",
+        "10.81.121.88",
+        "10.81.121.89",
+        "10.81.121.90",
+        "10.81.121.91",
+        "10.81.121.92",
+        "10.81.121.93",
+        "10.81.121.94"
+    ],
+    "corporateAddress": "10.81.121.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.81.121.97",
+        "10.81.121.98",
+        "10.81.121.99",
+        "10.81.121.100",
+        "10.81.121.101",
+        "10.81.121.102",
+        "10.81.121.103",
+        "10.81.121.104",
+        "10.81.121.105",
+        "10.81.121.106",
+        "10.81.121.107",
+        "10.81.121.108",
+        "10.81.121.109",
+        "10.81.121.110",
+        "10.81.121.111",
+        "10.81.121.112",
+        "10.81.121.113",
+        "10.81.121.114",
+        "10.81.121.115",
+        "10.81.121.116",
+        "10.81.121.117",
+        "10.81.121.118",
+        "10.81.121.119",
+        "10.81.121.120",
+        "10.81.121.121",
+        "10.81.121.122",
+        "10.81.121.123",
+        "10.81.121.124",
+        "10.81.121.125"
+    ],
+    "latitude": 33.621,
+    "longitude": -99.244,
+    "nodes": [
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.97",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..Firewall 121",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.621,
+            "Longitude": -99.244
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.98",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..Router 121",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.1",
+            "ipAddress": "10.81.121.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR.OT.Switch 241",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.99",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR.Corporate.Switch 242",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.3",
+            "ipAddress": "10.81.121.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.2",
+            "ipAddress": "10.81.121.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..RC 121",
+            "compromised": false,
+            "relayIPlist": [
+                "10.81.121.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.100",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..Host 241",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.100",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..Host 242",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.100",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..LocalDatabase 241",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.100",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..LocalWebServer 242",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.101",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..hmi 241",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.100",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..outstation 242",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 120.SEYMOUR..RC 121",
+            "destination": "Utility 120.SEYMOUR..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 120.SEYMOUR..Router 121",
+            "destination": "Utility 120.SEYMOUR..Firewall 121",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 120.SEYMOUR..Firewall 121",
+            "destination": "Utility 120.SEYMOUR.OT.Switch 241",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 120.SEYMOUR.OT.Switch 241",
+            "destination": "Utility 120.SEYMOUR..RC 121",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 120.SEYMOUR..Firewall 121",
+            "destination": "Utility 120.SEYMOUR.Corporate.Switch 242",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 120.SEYMOUR.Corporate.Switch 242",
+            "destination": "Utility 120.SEYMOUR..Host 241",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 120.SEYMOUR.Corporate.Switch 242",
+            "destination": "Utility 120.SEYMOUR..Host 242",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 120.SEYMOUR.Corporate.Switch 242",
+            "destination": "Utility 120.SEYMOUR..LocalDatabase 241",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 120.SEYMOUR.Corporate.Switch 242",
+            "destination": "Utility 120.SEYMOUR..LocalWebServer 242",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.1",
+            "ipAddress": "10.81.121.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR.OT.Switch 241",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.2",
+            "ipAddress": "10.81.121.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..RC 121",
+            "compromised": false,
+            "relayIPlist": [
+                "10.81.121.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.97",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..Firewall 121",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.621,
+            "Longitude": -99.244
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.98",
+            "ipAddress": "10.81.121.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..Router 121",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.1",
+            "ipAddress": "10.81.121.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR.OT.Switch 241",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 120",
+            "adminIP": "10.81.121.2",
+            "ipAddress": "10.81.121.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEYMOUR",
+            "label": "Utility 120.SEYMOUR..RC 121",
+            "compromised": false,
+            "relayIPlist": [
+                "10.81.121.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

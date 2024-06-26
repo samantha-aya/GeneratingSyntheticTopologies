@@ -1,0 +1,589 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 1.FLORESVILLE",
+    "networkLan": "10.53.893.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "FLORESVILLE",
+    "substationNumber": 893,
+    "OTAddress": "10.53.893.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.893.1",
+        "10.53.893.2",
+        "10.53.893.3",
+        "10.53.893.4",
+        "10.53.893.5",
+        "10.53.893.6",
+        "10.53.893.7",
+        "10.53.893.8",
+        "10.53.893.9",
+        "10.53.893.10",
+        "10.53.893.11",
+        "10.53.893.12",
+        "10.53.893.13",
+        "10.53.893.14",
+        "10.53.893.15",
+        "10.53.893.16",
+        "10.53.893.17",
+        "10.53.893.18",
+        "10.53.893.19",
+        "10.53.893.20",
+        "10.53.893.21",
+        "10.53.893.22",
+        "10.53.893.23",
+        "10.53.893.24",
+        "10.53.893.25",
+        "10.53.893.26",
+        "10.53.893.27",
+        "10.53.893.28",
+        "10.53.893.29",
+        "10.53.893.30",
+        "10.53.893.31",
+        "10.53.893.32",
+        "10.53.893.33",
+        "10.53.893.34",
+        "10.53.893.35",
+        "10.53.893.36",
+        "10.53.893.37",
+        "10.53.893.38",
+        "10.53.893.39",
+        "10.53.893.40",
+        "10.53.893.41",
+        "10.53.893.42",
+        "10.53.893.43",
+        "10.53.893.44",
+        "10.53.893.45",
+        "10.53.893.46",
+        "10.53.893.47",
+        "10.53.893.48",
+        "10.53.893.49",
+        "10.53.893.50",
+        "10.53.893.51",
+        "10.53.893.52",
+        "10.53.893.53",
+        "10.53.893.54",
+        "10.53.893.55",
+        "10.53.893.56",
+        "10.53.893.57",
+        "10.53.893.58",
+        "10.53.893.59",
+        "10.53.893.60",
+        "10.53.893.61",
+        "10.53.893.62"
+    ],
+    "routeAddress": "10.53.893.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.893.65",
+        "10.53.893.66",
+        "10.53.893.67",
+        "10.53.893.68",
+        "10.53.893.69",
+        "10.53.893.70",
+        "10.53.893.71",
+        "10.53.893.72",
+        "10.53.893.73",
+        "10.53.893.74",
+        "10.53.893.75",
+        "10.53.893.76",
+        "10.53.893.77",
+        "10.53.893.78",
+        "10.53.893.79",
+        "10.53.893.80",
+        "10.53.893.81",
+        "10.53.893.82",
+        "10.53.893.83",
+        "10.53.893.84",
+        "10.53.893.85",
+        "10.53.893.86",
+        "10.53.893.87",
+        "10.53.893.88",
+        "10.53.893.89",
+        "10.53.893.90",
+        "10.53.893.91",
+        "10.53.893.92",
+        "10.53.893.93",
+        "10.53.893.94"
+    ],
+    "corporateAddress": "10.53.893.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.893.97",
+        "10.53.893.98",
+        "10.53.893.99",
+        "10.53.893.100",
+        "10.53.893.101",
+        "10.53.893.102",
+        "10.53.893.103",
+        "10.53.893.104",
+        "10.53.893.105",
+        "10.53.893.106",
+        "10.53.893.107",
+        "10.53.893.108",
+        "10.53.893.109",
+        "10.53.893.110",
+        "10.53.893.111",
+        "10.53.893.112",
+        "10.53.893.113",
+        "10.53.893.114",
+        "10.53.893.115",
+        "10.53.893.116",
+        "10.53.893.117",
+        "10.53.893.118",
+        "10.53.893.119",
+        "10.53.893.120",
+        "10.53.893.121",
+        "10.53.893.122",
+        "10.53.893.123",
+        "10.53.893.124",
+        "10.53.893.125"
+    ],
+    "latitude": 29.073,
+    "longitude": -98.08,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.97",
+            "ipAddress": "10.53.893.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..Firewall 893",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.073,
+            "Longitude": -98.08
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.98",
+            "ipAddress": "10.53.893.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..Router 893",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.1",
+            "ipAddress": "10.53.893.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE.OT.Switch 1785",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.99",
+            "ipAddress": "10.53.893.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE.Corporate.Switch 1786",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.3",
+            "ipAddress": "10.53.893.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.4",
+            "ipAddress": "10.53.893.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.2",
+            "ipAddress": "10.53.893.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..RC 893",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.893.3",
+                "10.53.893.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.100",
+            "ipAddress": "10.53.893.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..Host 1785",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.100",
+            "ipAddress": "10.53.893.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..Host 1786",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.100",
+            "ipAddress": "10.53.893.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..LocalDatabase 1785",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.100",
+            "ipAddress": "10.53.893.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..LocalWebServer 1786",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.FLORESVILLE..RC 893",
+            "destination": "Utility 1.FLORESVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.FLORESVILLE..RC 893",
+            "destination": "Utility 1.FLORESVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.FLORESVILLE..Router 893",
+            "destination": "Utility 1.FLORESVILLE..Firewall 893",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.FLORESVILLE..Firewall 893",
+            "destination": "Utility 1.FLORESVILLE.OT.Switch 1785",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.FLORESVILLE.OT.Switch 1785",
+            "destination": "Utility 1.FLORESVILLE..RC 893",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.FLORESVILLE..Firewall 893",
+            "destination": "Utility 1.FLORESVILLE.Corporate.Switch 1786",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.FLORESVILLE.Corporate.Switch 1786",
+            "destination": "Utility 1.FLORESVILLE..Host 1785",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.FLORESVILLE.Corporate.Switch 1786",
+            "destination": "Utility 1.FLORESVILLE..Host 1786",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.FLORESVILLE.Corporate.Switch 1786",
+            "destination": "Utility 1.FLORESVILLE..LocalDatabase 1785",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.FLORESVILLE.Corporate.Switch 1786",
+            "destination": "Utility 1.FLORESVILLE..LocalWebServer 1786",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.1",
+            "ipAddress": "10.53.893.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE.OT.Switch 1785",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.2",
+            "ipAddress": "10.53.893.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..RC 893",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.893.3",
+                "10.53.893.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.97",
+            "ipAddress": "10.53.893.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..Firewall 893",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.073,
+            "Longitude": -98.08
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.98",
+            "ipAddress": "10.53.893.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..Router 893",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.1",
+            "ipAddress": "10.53.893.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE.OT.Switch 1785",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.893.2",
+            "ipAddress": "10.53.893.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FLORESVILLE",
+            "label": "Utility 1.FLORESVILLE..RC 893",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.893.3",
+                "10.53.893.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

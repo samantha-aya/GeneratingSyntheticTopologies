@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 2.WYLIE",
+    "networkLan": "10.55.657.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 2",
+    "utility_id": 55,
+    "substation": "WYLIE",
+    "substationNumber": 657,
+    "OTAddress": "10.55.657.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.55.657.1",
+        "10.55.657.2",
+        "10.55.657.3",
+        "10.55.657.4",
+        "10.55.657.5",
+        "10.55.657.6",
+        "10.55.657.7",
+        "10.55.657.8",
+        "10.55.657.9",
+        "10.55.657.10",
+        "10.55.657.11",
+        "10.55.657.12",
+        "10.55.657.13",
+        "10.55.657.14",
+        "10.55.657.15",
+        "10.55.657.16",
+        "10.55.657.17",
+        "10.55.657.18",
+        "10.55.657.19",
+        "10.55.657.20",
+        "10.55.657.21",
+        "10.55.657.22",
+        "10.55.657.23",
+        "10.55.657.24",
+        "10.55.657.25",
+        "10.55.657.26",
+        "10.55.657.27",
+        "10.55.657.28",
+        "10.55.657.29",
+        "10.55.657.30",
+        "10.55.657.31",
+        "10.55.657.32",
+        "10.55.657.33",
+        "10.55.657.34",
+        "10.55.657.35",
+        "10.55.657.36",
+        "10.55.657.37",
+        "10.55.657.38",
+        "10.55.657.39",
+        "10.55.657.40",
+        "10.55.657.41",
+        "10.55.657.42",
+        "10.55.657.43",
+        "10.55.657.44",
+        "10.55.657.45",
+        "10.55.657.46",
+        "10.55.657.47",
+        "10.55.657.48",
+        "10.55.657.49",
+        "10.55.657.50",
+        "10.55.657.51",
+        "10.55.657.52",
+        "10.55.657.53",
+        "10.55.657.54",
+        "10.55.657.55",
+        "10.55.657.56",
+        "10.55.657.57",
+        "10.55.657.58",
+        "10.55.657.59",
+        "10.55.657.60",
+        "10.55.657.61",
+        "10.55.657.62"
+    ],
+    "routeAddress": "10.55.657.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.55.657.65",
+        "10.55.657.66",
+        "10.55.657.67",
+        "10.55.657.68",
+        "10.55.657.69",
+        "10.55.657.70",
+        "10.55.657.71",
+        "10.55.657.72",
+        "10.55.657.73",
+        "10.55.657.74",
+        "10.55.657.75",
+        "10.55.657.76",
+        "10.55.657.77",
+        "10.55.657.78",
+        "10.55.657.79",
+        "10.55.657.80",
+        "10.55.657.81",
+        "10.55.657.82",
+        "10.55.657.83",
+        "10.55.657.84",
+        "10.55.657.85",
+        "10.55.657.86",
+        "10.55.657.87",
+        "10.55.657.88",
+        "10.55.657.89",
+        "10.55.657.90",
+        "10.55.657.91",
+        "10.55.657.92",
+        "10.55.657.93",
+        "10.55.657.94"
+    ],
+    "corporateAddress": "10.55.657.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.55.657.97",
+        "10.55.657.98",
+        "10.55.657.99",
+        "10.55.657.100",
+        "10.55.657.101",
+        "10.55.657.102",
+        "10.55.657.103",
+        "10.55.657.104",
+        "10.55.657.105",
+        "10.55.657.106",
+        "10.55.657.107",
+        "10.55.657.108",
+        "10.55.657.109",
+        "10.55.657.110",
+        "10.55.657.111",
+        "10.55.657.112",
+        "10.55.657.113",
+        "10.55.657.114",
+        "10.55.657.115",
+        "10.55.657.116",
+        "10.55.657.117",
+        "10.55.657.118",
+        "10.55.657.119",
+        "10.55.657.120",
+        "10.55.657.121",
+        "10.55.657.122",
+        "10.55.657.123",
+        "10.55.657.124",
+        "10.55.657.125"
+    ],
+    "latitude": 33.012,
+    "longitude": -96.535,
+    "nodes": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.97",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..Firewall 657",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.012,
+            "Longitude": -96.535
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.98",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..Router 657",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.1",
+            "ipAddress": "10.55.657.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE.OT.Switch 1313",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.99",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE.Corporate.Switch 1314",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.3",
+            "ipAddress": "10.55.657.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.2",
+            "ipAddress": "10.55.657.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..RC 657",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.657.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.100",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..Host 1313",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.100",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..Host 1314",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.100",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..LocalDatabase 1313",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.100",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..LocalWebServer 1314",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.101",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..hmi 1313",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.100",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..outstation 1314",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 2.WYLIE..RC 657",
+            "destination": "Utility 2.WYLIE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WYLIE..Router 657",
+            "destination": "Utility 2.WYLIE..Firewall 657",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WYLIE..Firewall 657",
+            "destination": "Utility 2.WYLIE.OT.Switch 1313",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WYLIE.OT.Switch 1313",
+            "destination": "Utility 2.WYLIE..RC 657",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WYLIE..Firewall 657",
+            "destination": "Utility 2.WYLIE.Corporate.Switch 1314",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WYLIE.Corporate.Switch 1314",
+            "destination": "Utility 2.WYLIE..Host 1313",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WYLIE.Corporate.Switch 1314",
+            "destination": "Utility 2.WYLIE..Host 1314",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WYLIE.Corporate.Switch 1314",
+            "destination": "Utility 2.WYLIE..LocalDatabase 1313",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 2.WYLIE.Corporate.Switch 1314",
+            "destination": "Utility 2.WYLIE..LocalWebServer 1314",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.1",
+            "ipAddress": "10.55.657.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE.OT.Switch 1313",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.2",
+            "ipAddress": "10.55.657.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..RC 657",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.657.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.97",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..Firewall 657",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.012,
+            "Longitude": -96.535
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.98",
+            "ipAddress": "10.55.657.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..Router 657",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.1",
+            "ipAddress": "10.55.657.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE.OT.Switch 1313",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 2",
+            "adminIP": "10.55.657.2",
+            "ipAddress": "10.55.657.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "WYLIE",
+            "label": "Utility 2.WYLIE..RC 657",
+            "compromised": false,
+            "relayIPlist": [
+                "10.55.657.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

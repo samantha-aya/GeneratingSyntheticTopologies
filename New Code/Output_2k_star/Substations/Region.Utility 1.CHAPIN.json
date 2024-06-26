@@ -1,0 +1,575 @@
+{
+    "relayCounter": 3,
+    "label": "Region.Utility 1.CHAPIN",
+    "networkLan": "10.52.62.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 52,
+    "substation": "CHAPIN",
+    "substationNumber": 62,
+    "OTAddress": "10.52.62.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.62.1",
+        "10.52.62.2",
+        "10.52.62.3",
+        "10.52.62.4",
+        "10.52.62.5",
+        "10.52.62.6",
+        "10.52.62.7",
+        "10.52.62.8",
+        "10.52.62.9",
+        "10.52.62.10",
+        "10.52.62.11",
+        "10.52.62.12",
+        "10.52.62.13",
+        "10.52.62.14",
+        "10.52.62.15",
+        "10.52.62.16",
+        "10.52.62.17",
+        "10.52.62.18",
+        "10.52.62.19",
+        "10.52.62.20",
+        "10.52.62.21",
+        "10.52.62.22",
+        "10.52.62.23",
+        "10.52.62.24",
+        "10.52.62.25",
+        "10.52.62.26",
+        "10.52.62.27",
+        "10.52.62.28",
+        "10.52.62.29",
+        "10.52.62.30",
+        "10.52.62.31",
+        "10.52.62.32",
+        "10.52.62.33",
+        "10.52.62.34",
+        "10.52.62.35",
+        "10.52.62.36",
+        "10.52.62.37",
+        "10.52.62.38",
+        "10.52.62.39",
+        "10.52.62.40",
+        "10.52.62.41",
+        "10.52.62.42",
+        "10.52.62.43",
+        "10.52.62.44",
+        "10.52.62.45",
+        "10.52.62.46",
+        "10.52.62.47",
+        "10.52.62.48",
+        "10.52.62.49",
+        "10.52.62.50",
+        "10.52.62.51",
+        "10.52.62.52",
+        "10.52.62.53",
+        "10.52.62.54",
+        "10.52.62.55",
+        "10.52.62.56",
+        "10.52.62.57",
+        "10.52.62.58",
+        "10.52.62.59",
+        "10.52.62.60",
+        "10.52.62.61",
+        "10.52.62.62"
+    ],
+    "routeAddress": "10.52.62.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.62.65",
+        "10.52.62.66",
+        "10.52.62.67",
+        "10.52.62.68",
+        "10.52.62.69",
+        "10.52.62.70",
+        "10.52.62.71",
+        "10.52.62.72",
+        "10.52.62.73",
+        "10.52.62.74",
+        "10.52.62.75",
+        "10.52.62.76",
+        "10.52.62.77",
+        "10.52.62.78",
+        "10.52.62.79",
+        "10.52.62.80",
+        "10.52.62.81",
+        "10.52.62.82",
+        "10.52.62.83",
+        "10.52.62.84",
+        "10.52.62.85",
+        "10.52.62.86",
+        "10.52.62.87",
+        "10.52.62.88",
+        "10.52.62.89",
+        "10.52.62.90",
+        "10.52.62.91",
+        "10.52.62.92",
+        "10.52.62.93",
+        "10.52.62.94"
+    ],
+    "corporateAddress": "10.52.62.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.62.97",
+        "10.52.62.98",
+        "10.52.62.99",
+        "10.52.62.100",
+        "10.52.62.101",
+        "10.52.62.102",
+        "10.52.62.103",
+        "10.52.62.104",
+        "10.52.62.105",
+        "10.52.62.106",
+        "10.52.62.107",
+        "10.52.62.108",
+        "10.52.62.109",
+        "10.52.62.110",
+        "10.52.62.111",
+        "10.52.62.112",
+        "10.52.62.113",
+        "10.52.62.114",
+        "10.52.62.115",
+        "10.52.62.116",
+        "10.52.62.117",
+        "10.52.62.118",
+        "10.52.62.119",
+        "10.52.62.120",
+        "10.52.62.121",
+        "10.52.62.122",
+        "10.52.62.123",
+        "10.52.62.124",
+        "10.52.62.125"
+    ],
+    "latitude": 34.13,
+    "longitude": -81.34,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.97",
+            "ipAddress": "10.52.62.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..Firewall 62",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 34.13,
+            "Longitude": -81.34
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.98",
+            "ipAddress": "10.52.62.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..Router 62",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.1",
+            "ipAddress": "10.52.62.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN.OT.Switch 123",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.99",
+            "ipAddress": "10.52.62.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN.Corporate.Switch 124",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.3",
+            "ipAddress": "10.52.62.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.4",
+            "ipAddress": "10.52.62.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.5",
+            "ipAddress": "10.52.62.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.2",
+            "ipAddress": "10.52.62.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..RC 62",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.62.3",
+                "10.52.62.4",
+                "10.52.62.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.100",
+            "ipAddress": "10.52.62.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..Host 123",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.100",
+            "ipAddress": "10.52.62.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..Host 124",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.100",
+            "ipAddress": "10.52.62.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..LocalDatabase 123",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.100",
+            "ipAddress": "10.52.62.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..LocalWebServer 124",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.CHAPIN..RC 62",
+            "destination": "Utility 1.CHAPIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN..RC 62",
+            "destination": "Utility 1.CHAPIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN..RC 62",
+            "destination": "Utility 1.CHAPIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN..Router 62",
+            "destination": "Utility 1.CHAPIN..Firewall 62",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN..Firewall 62",
+            "destination": "Utility 1.CHAPIN.OT.Switch 123",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN.OT.Switch 123",
+            "destination": "Utility 1.CHAPIN..RC 62",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN..Firewall 62",
+            "destination": "Utility 1.CHAPIN.Corporate.Switch 124",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN.Corporate.Switch 124",
+            "destination": "Utility 1.CHAPIN..Host 123",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN.Corporate.Switch 124",
+            "destination": "Utility 1.CHAPIN..Host 124",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN.Corporate.Switch 124",
+            "destination": "Utility 1.CHAPIN..LocalDatabase 123",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.CHAPIN.Corporate.Switch 124",
+            "destination": "Utility 1.CHAPIN..LocalWebServer 124",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.1",
+            "ipAddress": "10.52.62.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN.OT.Switch 123",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.2",
+            "ipAddress": "10.52.62.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..RC 62",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.62.3",
+                "10.52.62.4",
+                "10.52.62.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.97",
+            "ipAddress": "10.52.62.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..Firewall 62",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Block DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow ICCP",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 34.13,
+            "Longitude": -81.34
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.98",
+            "ipAddress": "10.52.62.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..Router 62",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.1",
+            "ipAddress": "10.52.62.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN.OT.Switch 123",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.52.62.2",
+            "ipAddress": "10.52.62.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "CHAPIN",
+            "label": "Utility 1.CHAPIN..RC 62",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.62.3",
+                "10.52.62.4",
+                "10.52.62.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

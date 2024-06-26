@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.HAMLIN",
+    "networkLan": "10.52.147.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "HAMLIN",
+    "substationNumber": 147,
+    "OTAddress": "10.52.147.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.147.1",
+        "10.52.147.2",
+        "10.52.147.3",
+        "10.52.147.4",
+        "10.52.147.5",
+        "10.52.147.6",
+        "10.52.147.7",
+        "10.52.147.8",
+        "10.52.147.9",
+        "10.52.147.10",
+        "10.52.147.11",
+        "10.52.147.12",
+        "10.52.147.13",
+        "10.52.147.14",
+        "10.52.147.15",
+        "10.52.147.16",
+        "10.52.147.17",
+        "10.52.147.18",
+        "10.52.147.19",
+        "10.52.147.20",
+        "10.52.147.21",
+        "10.52.147.22",
+        "10.52.147.23",
+        "10.52.147.24",
+        "10.52.147.25",
+        "10.52.147.26",
+        "10.52.147.27",
+        "10.52.147.28",
+        "10.52.147.29",
+        "10.52.147.30",
+        "10.52.147.31",
+        "10.52.147.32",
+        "10.52.147.33",
+        "10.52.147.34",
+        "10.52.147.35",
+        "10.52.147.36",
+        "10.52.147.37",
+        "10.52.147.38",
+        "10.52.147.39",
+        "10.52.147.40",
+        "10.52.147.41",
+        "10.52.147.42",
+        "10.52.147.43",
+        "10.52.147.44",
+        "10.52.147.45",
+        "10.52.147.46",
+        "10.52.147.47",
+        "10.52.147.48",
+        "10.52.147.49",
+        "10.52.147.50",
+        "10.52.147.51",
+        "10.52.147.52",
+        "10.52.147.53",
+        "10.52.147.54",
+        "10.52.147.55",
+        "10.52.147.56",
+        "10.52.147.57",
+        "10.52.147.58",
+        "10.52.147.59",
+        "10.52.147.60",
+        "10.52.147.61",
+        "10.52.147.62"
+    ],
+    "routeAddress": "10.52.147.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.147.65",
+        "10.52.147.66",
+        "10.52.147.67",
+        "10.52.147.68",
+        "10.52.147.69",
+        "10.52.147.70",
+        "10.52.147.71",
+        "10.52.147.72",
+        "10.52.147.73",
+        "10.52.147.74",
+        "10.52.147.75",
+        "10.52.147.76",
+        "10.52.147.77",
+        "10.52.147.78",
+        "10.52.147.79",
+        "10.52.147.80",
+        "10.52.147.81",
+        "10.52.147.82",
+        "10.52.147.83",
+        "10.52.147.84",
+        "10.52.147.85",
+        "10.52.147.86",
+        "10.52.147.87",
+        "10.52.147.88",
+        "10.52.147.89",
+        "10.52.147.90",
+        "10.52.147.91",
+        "10.52.147.92",
+        "10.52.147.93",
+        "10.52.147.94"
+    ],
+    "corporateAddress": "10.52.147.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.147.97",
+        "10.52.147.98",
+        "10.52.147.99",
+        "10.52.147.100",
+        "10.52.147.101",
+        "10.52.147.102",
+        "10.52.147.103",
+        "10.52.147.104",
+        "10.52.147.105",
+        "10.52.147.106",
+        "10.52.147.107",
+        "10.52.147.108",
+        "10.52.147.109",
+        "10.52.147.110",
+        "10.52.147.111",
+        "10.52.147.112",
+        "10.52.147.113",
+        "10.52.147.114",
+        "10.52.147.115",
+        "10.52.147.116",
+        "10.52.147.117",
+        "10.52.147.118",
+        "10.52.147.119",
+        "10.52.147.120",
+        "10.52.147.121",
+        "10.52.147.122",
+        "10.52.147.123",
+        "10.52.147.124",
+        "10.52.147.125"
+    ],
+    "latitude": 32.857,
+    "longitude": -100.124,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.97",
+            "ipAddress": "10.52.147.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..Firewall 147",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.857,
+            "Longitude": -100.124
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.98",
+            "ipAddress": "10.52.147.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..Router 147",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.1",
+            "ipAddress": "10.52.147.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN.OT.Switch 293",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.99",
+            "ipAddress": "10.52.147.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN.Corporate.Switch 294",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.3",
+            "ipAddress": "10.52.147.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.2",
+            "ipAddress": "10.52.147.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..RC 147",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.147.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.100",
+            "ipAddress": "10.52.147.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..Host 293",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.100",
+            "ipAddress": "10.52.147.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..Host 294",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.100",
+            "ipAddress": "10.52.147.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..LocalDatabase 293",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.100",
+            "ipAddress": "10.52.147.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..LocalWebServer 294",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.HAMLIN..RC 147",
+            "destination": "Utility 0.HAMLIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HAMLIN..Router 147",
+            "destination": "Utility 0.HAMLIN..Firewall 147",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HAMLIN..Firewall 147",
+            "destination": "Utility 0.HAMLIN.OT.Switch 293",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HAMLIN.OT.Switch 293",
+            "destination": "Utility 0.HAMLIN..RC 147",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HAMLIN..Firewall 147",
+            "destination": "Utility 0.HAMLIN.Corporate.Switch 294",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HAMLIN.Corporate.Switch 294",
+            "destination": "Utility 0.HAMLIN..Host 293",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HAMLIN.Corporate.Switch 294",
+            "destination": "Utility 0.HAMLIN..Host 294",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HAMLIN.Corporate.Switch 294",
+            "destination": "Utility 0.HAMLIN..LocalDatabase 293",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.HAMLIN.Corporate.Switch 294",
+            "destination": "Utility 0.HAMLIN..LocalWebServer 294",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.1",
+            "ipAddress": "10.52.147.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN.OT.Switch 293",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.2",
+            "ipAddress": "10.52.147.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..RC 147",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.147.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.97",
+            "ipAddress": "10.52.147.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..Firewall 147",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.857,
+            "Longitude": -100.124
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.98",
+            "ipAddress": "10.52.147.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..Router 147",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.1",
+            "ipAddress": "10.52.147.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN.OT.Switch 293",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.147.2",
+            "ipAddress": "10.52.147.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HAMLIN",
+            "label": "Utility 0.HAMLIN..RC 147",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.147.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

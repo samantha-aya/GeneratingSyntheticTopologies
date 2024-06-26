@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 32.HOUSTON 14",
+    "networkLan": "10.176.986.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 32",
+    "utility_id": 176,
+    "substation": "HOUSTON 14",
+    "substationNumber": 986,
+    "OTAddress": "10.176.986.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.176.986.1",
+        "10.176.986.2",
+        "10.176.986.3",
+        "10.176.986.4",
+        "10.176.986.5",
+        "10.176.986.6",
+        "10.176.986.7",
+        "10.176.986.8",
+        "10.176.986.9",
+        "10.176.986.10",
+        "10.176.986.11",
+        "10.176.986.12",
+        "10.176.986.13",
+        "10.176.986.14",
+        "10.176.986.15",
+        "10.176.986.16",
+        "10.176.986.17",
+        "10.176.986.18",
+        "10.176.986.19",
+        "10.176.986.20",
+        "10.176.986.21",
+        "10.176.986.22",
+        "10.176.986.23",
+        "10.176.986.24",
+        "10.176.986.25",
+        "10.176.986.26",
+        "10.176.986.27",
+        "10.176.986.28",
+        "10.176.986.29",
+        "10.176.986.30",
+        "10.176.986.31",
+        "10.176.986.32",
+        "10.176.986.33",
+        "10.176.986.34",
+        "10.176.986.35",
+        "10.176.986.36",
+        "10.176.986.37",
+        "10.176.986.38",
+        "10.176.986.39",
+        "10.176.986.40",
+        "10.176.986.41",
+        "10.176.986.42",
+        "10.176.986.43",
+        "10.176.986.44",
+        "10.176.986.45",
+        "10.176.986.46",
+        "10.176.986.47",
+        "10.176.986.48",
+        "10.176.986.49",
+        "10.176.986.50",
+        "10.176.986.51",
+        "10.176.986.52",
+        "10.176.986.53",
+        "10.176.986.54",
+        "10.176.986.55",
+        "10.176.986.56",
+        "10.176.986.57",
+        "10.176.986.58",
+        "10.176.986.59",
+        "10.176.986.60",
+        "10.176.986.61",
+        "10.176.986.62"
+    ],
+    "routeAddress": "10.176.986.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.176.986.65",
+        "10.176.986.66",
+        "10.176.986.67",
+        "10.176.986.68",
+        "10.176.986.69",
+        "10.176.986.70",
+        "10.176.986.71",
+        "10.176.986.72",
+        "10.176.986.73",
+        "10.176.986.74",
+        "10.176.986.75",
+        "10.176.986.76",
+        "10.176.986.77",
+        "10.176.986.78",
+        "10.176.986.79",
+        "10.176.986.80",
+        "10.176.986.81",
+        "10.176.986.82",
+        "10.176.986.83",
+        "10.176.986.84",
+        "10.176.986.85",
+        "10.176.986.86",
+        "10.176.986.87",
+        "10.176.986.88",
+        "10.176.986.89",
+        "10.176.986.90",
+        "10.176.986.91",
+        "10.176.986.92",
+        "10.176.986.93",
+        "10.176.986.94"
+    ],
+    "corporateAddress": "10.176.986.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.176.986.97",
+        "10.176.986.98",
+        "10.176.986.99",
+        "10.176.986.100",
+        "10.176.986.101",
+        "10.176.986.102",
+        "10.176.986.103",
+        "10.176.986.104",
+        "10.176.986.105",
+        "10.176.986.106",
+        "10.176.986.107",
+        "10.176.986.108",
+        "10.176.986.109",
+        "10.176.986.110",
+        "10.176.986.111",
+        "10.176.986.112",
+        "10.176.986.113",
+        "10.176.986.114",
+        "10.176.986.115",
+        "10.176.986.116",
+        "10.176.986.117",
+        "10.176.986.118",
+        "10.176.986.119",
+        "10.176.986.120",
+        "10.176.986.121",
+        "10.176.986.122",
+        "10.176.986.123",
+        "10.176.986.124",
+        "10.176.986.125"
+    ],
+    "latitude": 29.69,
+    "longitude": -95.252,
+    "nodes": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.97",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..Firewall 986",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.69,
+            "Longitude": -95.252
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.98",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..Router 986",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.1",
+            "ipAddress": "10.176.986.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14.OT.Switch 1971",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.99",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14.Corporate.Switch 1972",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.3",
+            "ipAddress": "10.176.986.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.2",
+            "ipAddress": "10.176.986.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..RC 986",
+            "compromised": false,
+            "relayIPlist": [
+                "10.176.986.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.100",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..Host 1971",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.100",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..Host 1972",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.100",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..LocalDatabase 1971",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.100",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..LocalWebServer 1972",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.101",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..hmi 1971",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.100",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..outstation 1972",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 32.HOUSTON 14..RC 986",
+            "destination": "Utility 32.HOUSTON 14..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.HOUSTON 14..Router 986",
+            "destination": "Utility 32.HOUSTON 14..Firewall 986",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.HOUSTON 14..Firewall 986",
+            "destination": "Utility 32.HOUSTON 14.OT.Switch 1971",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.HOUSTON 14.OT.Switch 1971",
+            "destination": "Utility 32.HOUSTON 14..RC 986",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.HOUSTON 14..Firewall 986",
+            "destination": "Utility 32.HOUSTON 14.Corporate.Switch 1972",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.HOUSTON 14.Corporate.Switch 1972",
+            "destination": "Utility 32.HOUSTON 14..Host 1971",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.HOUSTON 14.Corporate.Switch 1972",
+            "destination": "Utility 32.HOUSTON 14..Host 1972",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.HOUSTON 14.Corporate.Switch 1972",
+            "destination": "Utility 32.HOUSTON 14..LocalDatabase 1971",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 32.HOUSTON 14.Corporate.Switch 1972",
+            "destination": "Utility 32.HOUSTON 14..LocalWebServer 1972",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.1",
+            "ipAddress": "10.176.986.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14.OT.Switch 1971",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.2",
+            "ipAddress": "10.176.986.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..RC 986",
+            "compromised": false,
+            "relayIPlist": [
+                "10.176.986.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.97",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..Firewall 986",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.69,
+            "Longitude": -95.252
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.98",
+            "ipAddress": "10.176.986.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..Router 986",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.1",
+            "ipAddress": "10.176.986.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14.OT.Switch 1971",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 32",
+            "adminIP": "10.176.986.2",
+            "ipAddress": "10.176.986.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HOUSTON 14",
+            "label": "Utility 32.HOUSTON 14..RC 986",
+            "compromised": false,
+            "relayIPlist": [
+                "10.176.986.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

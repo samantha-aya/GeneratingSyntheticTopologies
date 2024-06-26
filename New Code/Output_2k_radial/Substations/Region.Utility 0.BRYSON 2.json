@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.BRYSON 2",
+    "networkLan": "10.52.468.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "BRYSON 2",
+    "substationNumber": 468,
+    "OTAddress": "10.52.468.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.468.1",
+        "10.52.468.2",
+        "10.52.468.3",
+        "10.52.468.4",
+        "10.52.468.5",
+        "10.52.468.6",
+        "10.52.468.7",
+        "10.52.468.8",
+        "10.52.468.9",
+        "10.52.468.10",
+        "10.52.468.11",
+        "10.52.468.12",
+        "10.52.468.13",
+        "10.52.468.14",
+        "10.52.468.15",
+        "10.52.468.16",
+        "10.52.468.17",
+        "10.52.468.18",
+        "10.52.468.19",
+        "10.52.468.20",
+        "10.52.468.21",
+        "10.52.468.22",
+        "10.52.468.23",
+        "10.52.468.24",
+        "10.52.468.25",
+        "10.52.468.26",
+        "10.52.468.27",
+        "10.52.468.28",
+        "10.52.468.29",
+        "10.52.468.30",
+        "10.52.468.31",
+        "10.52.468.32",
+        "10.52.468.33",
+        "10.52.468.34",
+        "10.52.468.35",
+        "10.52.468.36",
+        "10.52.468.37",
+        "10.52.468.38",
+        "10.52.468.39",
+        "10.52.468.40",
+        "10.52.468.41",
+        "10.52.468.42",
+        "10.52.468.43",
+        "10.52.468.44",
+        "10.52.468.45",
+        "10.52.468.46",
+        "10.52.468.47",
+        "10.52.468.48",
+        "10.52.468.49",
+        "10.52.468.50",
+        "10.52.468.51",
+        "10.52.468.52",
+        "10.52.468.53",
+        "10.52.468.54",
+        "10.52.468.55",
+        "10.52.468.56",
+        "10.52.468.57",
+        "10.52.468.58",
+        "10.52.468.59",
+        "10.52.468.60",
+        "10.52.468.61",
+        "10.52.468.62"
+    ],
+    "routeAddress": "10.52.468.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.468.65",
+        "10.52.468.66",
+        "10.52.468.67",
+        "10.52.468.68",
+        "10.52.468.69",
+        "10.52.468.70",
+        "10.52.468.71",
+        "10.52.468.72",
+        "10.52.468.73",
+        "10.52.468.74",
+        "10.52.468.75",
+        "10.52.468.76",
+        "10.52.468.77",
+        "10.52.468.78",
+        "10.52.468.79",
+        "10.52.468.80",
+        "10.52.468.81",
+        "10.52.468.82",
+        "10.52.468.83",
+        "10.52.468.84",
+        "10.52.468.85",
+        "10.52.468.86",
+        "10.52.468.87",
+        "10.52.468.88",
+        "10.52.468.89",
+        "10.52.468.90",
+        "10.52.468.91",
+        "10.52.468.92",
+        "10.52.468.93",
+        "10.52.468.94"
+    ],
+    "corporateAddress": "10.52.468.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.468.97",
+        "10.52.468.98",
+        "10.52.468.99",
+        "10.52.468.100",
+        "10.52.468.101",
+        "10.52.468.102",
+        "10.52.468.103",
+        "10.52.468.104",
+        "10.52.468.105",
+        "10.52.468.106",
+        "10.52.468.107",
+        "10.52.468.108",
+        "10.52.468.109",
+        "10.52.468.110",
+        "10.52.468.111",
+        "10.52.468.112",
+        "10.52.468.113",
+        "10.52.468.114",
+        "10.52.468.115",
+        "10.52.468.116",
+        "10.52.468.117",
+        "10.52.468.118",
+        "10.52.468.119",
+        "10.52.468.120",
+        "10.52.468.121",
+        "10.52.468.122",
+        "10.52.468.123",
+        "10.52.468.124",
+        "10.52.468.125"
+    ],
+    "latitude": 33.276,
+    "longitude": -98.382,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.97",
+            "ipAddress": "10.52.468.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..Firewall 468",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.276,
+            "Longitude": -98.382
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.98",
+            "ipAddress": "10.52.468.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..Router 468",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.1",
+            "ipAddress": "10.52.468.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2.OT.Switch 935",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.99",
+            "ipAddress": "10.52.468.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2.Corporate.Switch 936",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.3",
+            "ipAddress": "10.52.468.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.2",
+            "ipAddress": "10.52.468.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..RC 468",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.468.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.100",
+            "ipAddress": "10.52.468.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..Host 935",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.100",
+            "ipAddress": "10.52.468.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..Host 936",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.100",
+            "ipAddress": "10.52.468.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..LocalDatabase 935",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.100",
+            "ipAddress": "10.52.468.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..LocalWebServer 936",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.BRYSON 2..RC 468",
+            "destination": "Utility 0.BRYSON 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRYSON 2..Router 468",
+            "destination": "Utility 0.BRYSON 2..Firewall 468",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRYSON 2..Firewall 468",
+            "destination": "Utility 0.BRYSON 2.OT.Switch 935",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRYSON 2.OT.Switch 935",
+            "destination": "Utility 0.BRYSON 2..RC 468",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRYSON 2..Firewall 468",
+            "destination": "Utility 0.BRYSON 2.Corporate.Switch 936",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRYSON 2.Corporate.Switch 936",
+            "destination": "Utility 0.BRYSON 2..Host 935",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRYSON 2.Corporate.Switch 936",
+            "destination": "Utility 0.BRYSON 2..Host 936",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRYSON 2.Corporate.Switch 936",
+            "destination": "Utility 0.BRYSON 2..LocalDatabase 935",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.BRYSON 2.Corporate.Switch 936",
+            "destination": "Utility 0.BRYSON 2..LocalWebServer 936",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.1",
+            "ipAddress": "10.52.468.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2.OT.Switch 935",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.2",
+            "ipAddress": "10.52.468.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..RC 468",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.468.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.97",
+            "ipAddress": "10.52.468.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..Firewall 468",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.276,
+            "Longitude": -98.382
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.98",
+            "ipAddress": "10.52.468.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..Router 468",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.1",
+            "ipAddress": "10.52.468.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2.OT.Switch 935",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.468.2",
+            "ipAddress": "10.52.468.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BRYSON 2",
+            "label": "Utility 0.BRYSON 2..RC 468",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.468.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

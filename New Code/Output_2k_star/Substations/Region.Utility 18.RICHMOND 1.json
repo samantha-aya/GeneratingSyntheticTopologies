@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 18.RICHMOND 1",
+    "networkLan": "10.184.944.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 18",
+    "utility_id": 184,
+    "substation": "RICHMOND 1",
+    "substationNumber": 944,
+    "OTAddress": "10.184.944.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.184.944.1",
+        "10.184.944.2",
+        "10.184.944.3",
+        "10.184.944.4",
+        "10.184.944.5",
+        "10.184.944.6",
+        "10.184.944.7",
+        "10.184.944.8",
+        "10.184.944.9",
+        "10.184.944.10",
+        "10.184.944.11",
+        "10.184.944.12",
+        "10.184.944.13",
+        "10.184.944.14",
+        "10.184.944.15",
+        "10.184.944.16",
+        "10.184.944.17",
+        "10.184.944.18",
+        "10.184.944.19",
+        "10.184.944.20",
+        "10.184.944.21",
+        "10.184.944.22",
+        "10.184.944.23",
+        "10.184.944.24",
+        "10.184.944.25",
+        "10.184.944.26",
+        "10.184.944.27",
+        "10.184.944.28",
+        "10.184.944.29",
+        "10.184.944.30",
+        "10.184.944.31",
+        "10.184.944.32",
+        "10.184.944.33",
+        "10.184.944.34",
+        "10.184.944.35",
+        "10.184.944.36",
+        "10.184.944.37",
+        "10.184.944.38",
+        "10.184.944.39",
+        "10.184.944.40",
+        "10.184.944.41",
+        "10.184.944.42",
+        "10.184.944.43",
+        "10.184.944.44",
+        "10.184.944.45",
+        "10.184.944.46",
+        "10.184.944.47",
+        "10.184.944.48",
+        "10.184.944.49",
+        "10.184.944.50",
+        "10.184.944.51",
+        "10.184.944.52",
+        "10.184.944.53",
+        "10.184.944.54",
+        "10.184.944.55",
+        "10.184.944.56",
+        "10.184.944.57",
+        "10.184.944.58",
+        "10.184.944.59",
+        "10.184.944.60",
+        "10.184.944.61",
+        "10.184.944.62"
+    ],
+    "routeAddress": "10.184.944.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.184.944.65",
+        "10.184.944.66",
+        "10.184.944.67",
+        "10.184.944.68",
+        "10.184.944.69",
+        "10.184.944.70",
+        "10.184.944.71",
+        "10.184.944.72",
+        "10.184.944.73",
+        "10.184.944.74",
+        "10.184.944.75",
+        "10.184.944.76",
+        "10.184.944.77",
+        "10.184.944.78",
+        "10.184.944.79",
+        "10.184.944.80",
+        "10.184.944.81",
+        "10.184.944.82",
+        "10.184.944.83",
+        "10.184.944.84",
+        "10.184.944.85",
+        "10.184.944.86",
+        "10.184.944.87",
+        "10.184.944.88",
+        "10.184.944.89",
+        "10.184.944.90",
+        "10.184.944.91",
+        "10.184.944.92",
+        "10.184.944.93",
+        "10.184.944.94"
+    ],
+    "corporateAddress": "10.184.944.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.184.944.97",
+        "10.184.944.98",
+        "10.184.944.99",
+        "10.184.944.100",
+        "10.184.944.101",
+        "10.184.944.102",
+        "10.184.944.103",
+        "10.184.944.104",
+        "10.184.944.105",
+        "10.184.944.106",
+        "10.184.944.107",
+        "10.184.944.108",
+        "10.184.944.109",
+        "10.184.944.110",
+        "10.184.944.111",
+        "10.184.944.112",
+        "10.184.944.113",
+        "10.184.944.114",
+        "10.184.944.115",
+        "10.184.944.116",
+        "10.184.944.117",
+        "10.184.944.118",
+        "10.184.944.119",
+        "10.184.944.120",
+        "10.184.944.121",
+        "10.184.944.122",
+        "10.184.944.123",
+        "10.184.944.124",
+        "10.184.944.125"
+    ],
+    "latitude": 29.483,
+    "longitude": -95.68,
+    "nodes": [
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.97",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..Firewall 944",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.483,
+            "Longitude": -95.68
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.98",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..Router 944",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.1",
+            "ipAddress": "10.184.944.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1.OT.Switch 1887",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.99",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1.Corporate.Switch 1888",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.3",
+            "ipAddress": "10.184.944.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.2",
+            "ipAddress": "10.184.944.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..RC 944",
+            "compromised": false,
+            "relayIPlist": [
+                "10.184.944.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.100",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..Host 1887",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.100",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..Host 1888",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.100",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..LocalDatabase 1887",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.100",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..LocalWebServer 1888",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.101",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..hmi 1887",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.100",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..outstation 1888",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 18.RICHMOND 1..RC 944",
+            "destination": "Utility 18.RICHMOND 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 18.RICHMOND 1..Router 944",
+            "destination": "Utility 18.RICHMOND 1..Firewall 944",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 18.RICHMOND 1..Firewall 944",
+            "destination": "Utility 18.RICHMOND 1.OT.Switch 1887",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 18.RICHMOND 1.OT.Switch 1887",
+            "destination": "Utility 18.RICHMOND 1..RC 944",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 18.RICHMOND 1..Firewall 944",
+            "destination": "Utility 18.RICHMOND 1.Corporate.Switch 1888",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 18.RICHMOND 1.Corporate.Switch 1888",
+            "destination": "Utility 18.RICHMOND 1..Host 1887",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 18.RICHMOND 1.Corporate.Switch 1888",
+            "destination": "Utility 18.RICHMOND 1..Host 1888",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 18.RICHMOND 1.Corporate.Switch 1888",
+            "destination": "Utility 18.RICHMOND 1..LocalDatabase 1887",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 18.RICHMOND 1.Corporate.Switch 1888",
+            "destination": "Utility 18.RICHMOND 1..LocalWebServer 1888",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.1",
+            "ipAddress": "10.184.944.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1.OT.Switch 1887",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.2",
+            "ipAddress": "10.184.944.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..RC 944",
+            "compromised": false,
+            "relayIPlist": [
+                "10.184.944.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.97",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..Firewall 944",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.483,
+            "Longitude": -95.68
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.98",
+            "ipAddress": "10.184.944.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..Router 944",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.1",
+            "ipAddress": "10.184.944.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1.OT.Switch 1887",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 18",
+            "adminIP": "10.184.944.2",
+            "ipAddress": "10.184.944.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RICHMOND 1",
+            "label": "Utility 18.RICHMOND 1..RC 944",
+            "compromised": false,
+            "relayIPlist": [
+                "10.184.944.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

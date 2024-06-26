@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 86.PLANO 5",
+    "networkLan": "10.133.450.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 86",
+    "utility_id": 133,
+    "substation": "PLANO 5",
+    "substationNumber": 450,
+    "OTAddress": "10.133.450.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.133.450.1",
+        "10.133.450.2",
+        "10.133.450.3",
+        "10.133.450.4",
+        "10.133.450.5",
+        "10.133.450.6",
+        "10.133.450.7",
+        "10.133.450.8",
+        "10.133.450.9",
+        "10.133.450.10",
+        "10.133.450.11",
+        "10.133.450.12",
+        "10.133.450.13",
+        "10.133.450.14",
+        "10.133.450.15",
+        "10.133.450.16",
+        "10.133.450.17",
+        "10.133.450.18",
+        "10.133.450.19",
+        "10.133.450.20",
+        "10.133.450.21",
+        "10.133.450.22",
+        "10.133.450.23",
+        "10.133.450.24",
+        "10.133.450.25",
+        "10.133.450.26",
+        "10.133.450.27",
+        "10.133.450.28",
+        "10.133.450.29",
+        "10.133.450.30",
+        "10.133.450.31",
+        "10.133.450.32",
+        "10.133.450.33",
+        "10.133.450.34",
+        "10.133.450.35",
+        "10.133.450.36",
+        "10.133.450.37",
+        "10.133.450.38",
+        "10.133.450.39",
+        "10.133.450.40",
+        "10.133.450.41",
+        "10.133.450.42",
+        "10.133.450.43",
+        "10.133.450.44",
+        "10.133.450.45",
+        "10.133.450.46",
+        "10.133.450.47",
+        "10.133.450.48",
+        "10.133.450.49",
+        "10.133.450.50",
+        "10.133.450.51",
+        "10.133.450.52",
+        "10.133.450.53",
+        "10.133.450.54",
+        "10.133.450.55",
+        "10.133.450.56",
+        "10.133.450.57",
+        "10.133.450.58",
+        "10.133.450.59",
+        "10.133.450.60",
+        "10.133.450.61",
+        "10.133.450.62"
+    ],
+    "routeAddress": "10.133.450.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.133.450.65",
+        "10.133.450.66",
+        "10.133.450.67",
+        "10.133.450.68",
+        "10.133.450.69",
+        "10.133.450.70",
+        "10.133.450.71",
+        "10.133.450.72",
+        "10.133.450.73",
+        "10.133.450.74",
+        "10.133.450.75",
+        "10.133.450.76",
+        "10.133.450.77",
+        "10.133.450.78",
+        "10.133.450.79",
+        "10.133.450.80",
+        "10.133.450.81",
+        "10.133.450.82",
+        "10.133.450.83",
+        "10.133.450.84",
+        "10.133.450.85",
+        "10.133.450.86",
+        "10.133.450.87",
+        "10.133.450.88",
+        "10.133.450.89",
+        "10.133.450.90",
+        "10.133.450.91",
+        "10.133.450.92",
+        "10.133.450.93",
+        "10.133.450.94"
+    ],
+    "corporateAddress": "10.133.450.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.133.450.97",
+        "10.133.450.98",
+        "10.133.450.99",
+        "10.133.450.100",
+        "10.133.450.101",
+        "10.133.450.102",
+        "10.133.450.103",
+        "10.133.450.104",
+        "10.133.450.105",
+        "10.133.450.106",
+        "10.133.450.107",
+        "10.133.450.108",
+        "10.133.450.109",
+        "10.133.450.110",
+        "10.133.450.111",
+        "10.133.450.112",
+        "10.133.450.113",
+        "10.133.450.114",
+        "10.133.450.115",
+        "10.133.450.116",
+        "10.133.450.117",
+        "10.133.450.118",
+        "10.133.450.119",
+        "10.133.450.120",
+        "10.133.450.121",
+        "10.133.450.122",
+        "10.133.450.123",
+        "10.133.450.124",
+        "10.133.450.125"
+    ],
+    "latitude": 33.021,
+    "longitude": -96.742,
+    "nodes": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.97",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..Firewall 450",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.021,
+            "Longitude": -96.742
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.98",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..Router 450",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.1",
+            "ipAddress": "10.133.450.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5.OT.Switch 899",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.99",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5.Corporate.Switch 900",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.3",
+            "ipAddress": "10.133.450.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.2",
+            "ipAddress": "10.133.450.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..RC 450",
+            "compromised": false,
+            "relayIPlist": [
+                "10.133.450.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.100",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..Host 899",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.100",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..Host 900",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.100",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..LocalDatabase 899",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.100",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..LocalWebServer 900",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.101",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..hmi 899",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.100",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..outstation 900",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 86.PLANO 5..RC 450",
+            "destination": "Utility 86.PLANO 5..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.PLANO 5..Router 450",
+            "destination": "Utility 86.PLANO 5..Firewall 450",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.PLANO 5..Firewall 450",
+            "destination": "Utility 86.PLANO 5.OT.Switch 899",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.PLANO 5.OT.Switch 899",
+            "destination": "Utility 86.PLANO 5..RC 450",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.PLANO 5..Firewall 450",
+            "destination": "Utility 86.PLANO 5.Corporate.Switch 900",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.PLANO 5.Corporate.Switch 900",
+            "destination": "Utility 86.PLANO 5..Host 899",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.PLANO 5.Corporate.Switch 900",
+            "destination": "Utility 86.PLANO 5..Host 900",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.PLANO 5.Corporate.Switch 900",
+            "destination": "Utility 86.PLANO 5..LocalDatabase 899",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 86.PLANO 5.Corporate.Switch 900",
+            "destination": "Utility 86.PLANO 5..LocalWebServer 900",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.1",
+            "ipAddress": "10.133.450.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5.OT.Switch 899",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.2",
+            "ipAddress": "10.133.450.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..RC 450",
+            "compromised": false,
+            "relayIPlist": [
+                "10.133.450.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.97",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..Firewall 450",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.021,
+            "Longitude": -96.742
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.98",
+            "ipAddress": "10.133.450.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..Router 450",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.1",
+            "ipAddress": "10.133.450.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5.OT.Switch 899",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 86",
+            "adminIP": "10.133.450.2",
+            "ipAddress": "10.133.450.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "PLANO 5",
+            "label": "Utility 86.PLANO 5..RC 450",
+            "compromised": false,
+            "relayIPlist": [
+                "10.133.450.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

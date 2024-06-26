@@ -1,0 +1,764 @@
+{
+    "relayCounter": 7,
+    "label": "Region.Utility 8.MONAHANS 1",
+    "networkLan": "10.59.35.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 8",
+    "utility_id": 59,
+    "substation": "MONAHANS 1",
+    "substationNumber": 35,
+    "OTAddress": "10.59.35.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.59.35.1",
+        "10.59.35.2",
+        "10.59.35.3",
+        "10.59.35.4",
+        "10.59.35.5",
+        "10.59.35.6",
+        "10.59.35.7",
+        "10.59.35.8",
+        "10.59.35.9",
+        "10.59.35.10",
+        "10.59.35.11",
+        "10.59.35.12",
+        "10.59.35.13",
+        "10.59.35.14",
+        "10.59.35.15",
+        "10.59.35.16",
+        "10.59.35.17",
+        "10.59.35.18",
+        "10.59.35.19",
+        "10.59.35.20",
+        "10.59.35.21",
+        "10.59.35.22",
+        "10.59.35.23",
+        "10.59.35.24",
+        "10.59.35.25",
+        "10.59.35.26",
+        "10.59.35.27",
+        "10.59.35.28",
+        "10.59.35.29",
+        "10.59.35.30",
+        "10.59.35.31",
+        "10.59.35.32",
+        "10.59.35.33",
+        "10.59.35.34",
+        "10.59.35.35",
+        "10.59.35.36",
+        "10.59.35.37",
+        "10.59.35.38",
+        "10.59.35.39",
+        "10.59.35.40",
+        "10.59.35.41",
+        "10.59.35.42",
+        "10.59.35.43",
+        "10.59.35.44",
+        "10.59.35.45",
+        "10.59.35.46",
+        "10.59.35.47",
+        "10.59.35.48",
+        "10.59.35.49",
+        "10.59.35.50",
+        "10.59.35.51",
+        "10.59.35.52",
+        "10.59.35.53",
+        "10.59.35.54",
+        "10.59.35.55",
+        "10.59.35.56",
+        "10.59.35.57",
+        "10.59.35.58",
+        "10.59.35.59",
+        "10.59.35.60",
+        "10.59.35.61",
+        "10.59.35.62"
+    ],
+    "routeAddress": "10.59.35.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.59.35.65",
+        "10.59.35.66",
+        "10.59.35.67",
+        "10.59.35.68",
+        "10.59.35.69",
+        "10.59.35.70",
+        "10.59.35.71",
+        "10.59.35.72",
+        "10.59.35.73",
+        "10.59.35.74",
+        "10.59.35.75",
+        "10.59.35.76",
+        "10.59.35.77",
+        "10.59.35.78",
+        "10.59.35.79",
+        "10.59.35.80",
+        "10.59.35.81",
+        "10.59.35.82",
+        "10.59.35.83",
+        "10.59.35.84",
+        "10.59.35.85",
+        "10.59.35.86",
+        "10.59.35.87",
+        "10.59.35.88",
+        "10.59.35.89",
+        "10.59.35.90",
+        "10.59.35.91",
+        "10.59.35.92",
+        "10.59.35.93",
+        "10.59.35.94"
+    ],
+    "corporateAddress": "10.59.35.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.59.35.97",
+        "10.59.35.98",
+        "10.59.35.99",
+        "10.59.35.100",
+        "10.59.35.101",
+        "10.59.35.102",
+        "10.59.35.103",
+        "10.59.35.104",
+        "10.59.35.105",
+        "10.59.35.106",
+        "10.59.35.107",
+        "10.59.35.108",
+        "10.59.35.109",
+        "10.59.35.110",
+        "10.59.35.111",
+        "10.59.35.112",
+        "10.59.35.113",
+        "10.59.35.114",
+        "10.59.35.115",
+        "10.59.35.116",
+        "10.59.35.117",
+        "10.59.35.118",
+        "10.59.35.119",
+        "10.59.35.120",
+        "10.59.35.121",
+        "10.59.35.122",
+        "10.59.35.123",
+        "10.59.35.124",
+        "10.59.35.125"
+    ],
+    "latitude": 31.584,
+    "longitude": -102.963,
+    "nodes": [
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.97",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Firewall 35",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.584,
+            "Longitude": -102.963
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.98",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Router 35",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.1",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1.OT.Switch 69",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.99",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1.Corporate.Switch 70",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.3",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.4",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.5",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.6",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.7",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.8",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.9",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.2",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..RC 35",
+            "compromised": false,
+            "relayIPlist": [
+                "10.59.35.3",
+                "10.59.35.4",
+                "10.59.35.5",
+                "10.59.35.6",
+                "10.59.35.7",
+                "10.59.35.8",
+                "10.59.35.9"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.100",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Host 69",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.100",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Host 70",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.100",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..LocalDatabase 69",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.100",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..LocalWebServer 70",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.101",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..hmi 69",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.100",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..outstation 70",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 8.MONAHANS 1..RC 35",
+            "destination": "Utility 8.MONAHANS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1..RC 35",
+            "destination": "Utility 8.MONAHANS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1..RC 35",
+            "destination": "Utility 8.MONAHANS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1..RC 35",
+            "destination": "Utility 8.MONAHANS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1..RC 35",
+            "destination": "Utility 8.MONAHANS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1..RC 35",
+            "destination": "Utility 8.MONAHANS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1..RC 35",
+            "destination": "Utility 8.MONAHANS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1..Router 35",
+            "destination": "Utility 8.MONAHANS 1..Firewall 35",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1..Firewall 35",
+            "destination": "Utility 8.MONAHANS 1.OT.Switch 69",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1.OT.Switch 69",
+            "destination": "Utility 8.MONAHANS 1..RC 35",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1..Firewall 35",
+            "destination": "Utility 8.MONAHANS 1.Corporate.Switch 70",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1.Corporate.Switch 70",
+            "destination": "Utility 8.MONAHANS 1..Host 69",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1.Corporate.Switch 70",
+            "destination": "Utility 8.MONAHANS 1..Host 70",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1.Corporate.Switch 70",
+            "destination": "Utility 8.MONAHANS 1..LocalDatabase 69",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 8.MONAHANS 1.Corporate.Switch 70",
+            "destination": "Utility 8.MONAHANS 1..LocalWebServer 70",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.1",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1.OT.Switch 69",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.2",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..RC 35",
+            "compromised": false,
+            "relayIPlist": [
+                "10.59.35.3",
+                "10.59.35.4",
+                "10.59.35.5",
+                "10.59.35.6",
+                "10.59.35.7",
+                "10.59.35.8",
+                "10.59.35.9"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.97",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Firewall 35",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.584,
+            "Longitude": -102.963
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.98",
+            "ipAddress": "10.59.35.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..Router 35",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.1",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1.OT.Switch 69",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 8",
+            "adminIP": "10.59.35.2",
+            "ipAddress": "10.59.35.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MONAHANS 1",
+            "label": "Utility 8.MONAHANS 1..RC 35",
+            "compromised": false,
+            "relayIPlist": [
+                "10.59.35.3",
+                "10.59.35.4",
+                "10.59.35.5",
+                "10.59.35.6",
+                "10.59.35.7",
+                "10.59.35.8",
+                "10.59.35.9"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 267.45,
+    "genmvar": -14.06,
+    "connecting_TS_num": 50
+}

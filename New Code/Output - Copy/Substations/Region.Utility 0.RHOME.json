@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.RHOME",
+    "networkLan": "10.52.498.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "RHOME",
+    "substationNumber": 498,
+    "OTAddress": "10.52.498.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.498.1",
+        "10.52.498.2",
+        "10.52.498.3",
+        "10.52.498.4",
+        "10.52.498.5",
+        "10.52.498.6",
+        "10.52.498.7",
+        "10.52.498.8",
+        "10.52.498.9",
+        "10.52.498.10",
+        "10.52.498.11",
+        "10.52.498.12",
+        "10.52.498.13",
+        "10.52.498.14",
+        "10.52.498.15",
+        "10.52.498.16",
+        "10.52.498.17",
+        "10.52.498.18",
+        "10.52.498.19",
+        "10.52.498.20",
+        "10.52.498.21",
+        "10.52.498.22",
+        "10.52.498.23",
+        "10.52.498.24",
+        "10.52.498.25",
+        "10.52.498.26",
+        "10.52.498.27",
+        "10.52.498.28",
+        "10.52.498.29",
+        "10.52.498.30",
+        "10.52.498.31",
+        "10.52.498.32",
+        "10.52.498.33",
+        "10.52.498.34",
+        "10.52.498.35",
+        "10.52.498.36",
+        "10.52.498.37",
+        "10.52.498.38",
+        "10.52.498.39",
+        "10.52.498.40",
+        "10.52.498.41",
+        "10.52.498.42",
+        "10.52.498.43",
+        "10.52.498.44",
+        "10.52.498.45",
+        "10.52.498.46",
+        "10.52.498.47",
+        "10.52.498.48",
+        "10.52.498.49",
+        "10.52.498.50",
+        "10.52.498.51",
+        "10.52.498.52",
+        "10.52.498.53",
+        "10.52.498.54",
+        "10.52.498.55",
+        "10.52.498.56",
+        "10.52.498.57",
+        "10.52.498.58",
+        "10.52.498.59",
+        "10.52.498.60",
+        "10.52.498.61",
+        "10.52.498.62"
+    ],
+    "routeAddress": "10.52.498.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.498.65",
+        "10.52.498.66",
+        "10.52.498.67",
+        "10.52.498.68",
+        "10.52.498.69",
+        "10.52.498.70",
+        "10.52.498.71",
+        "10.52.498.72",
+        "10.52.498.73",
+        "10.52.498.74",
+        "10.52.498.75",
+        "10.52.498.76",
+        "10.52.498.77",
+        "10.52.498.78",
+        "10.52.498.79",
+        "10.52.498.80",
+        "10.52.498.81",
+        "10.52.498.82",
+        "10.52.498.83",
+        "10.52.498.84",
+        "10.52.498.85",
+        "10.52.498.86",
+        "10.52.498.87",
+        "10.52.498.88",
+        "10.52.498.89",
+        "10.52.498.90",
+        "10.52.498.91",
+        "10.52.498.92",
+        "10.52.498.93",
+        "10.52.498.94"
+    ],
+    "corporateAddress": "10.52.498.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.498.97",
+        "10.52.498.98",
+        "10.52.498.99",
+        "10.52.498.100",
+        "10.52.498.101",
+        "10.52.498.102",
+        "10.52.498.103",
+        "10.52.498.104",
+        "10.52.498.105",
+        "10.52.498.106",
+        "10.52.498.107",
+        "10.52.498.108",
+        "10.52.498.109",
+        "10.52.498.110",
+        "10.52.498.111",
+        "10.52.498.112",
+        "10.52.498.113",
+        "10.52.498.114",
+        "10.52.498.115",
+        "10.52.498.116",
+        "10.52.498.117",
+        "10.52.498.118",
+        "10.52.498.119",
+        "10.52.498.120",
+        "10.52.498.121",
+        "10.52.498.122",
+        "10.52.498.123",
+        "10.52.498.124",
+        "10.52.498.125"
+    ],
+    "latitude": 33.093,
+    "longitude": -97.463,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.97",
+            "ipAddress": "10.52.498.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..Firewall 498",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.093,
+            "Longitude": -97.463
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.98",
+            "ipAddress": "10.52.498.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..Router 498",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.1",
+            "ipAddress": "10.52.498.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME.OT.Switch 995",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.99",
+            "ipAddress": "10.52.498.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME.Corporate.Switch 996",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.3",
+            "ipAddress": "10.52.498.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.2",
+            "ipAddress": "10.52.498.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..RC 498",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.498.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.100",
+            "ipAddress": "10.52.498.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..Host 995",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.100",
+            "ipAddress": "10.52.498.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..Host 996",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.100",
+            "ipAddress": "10.52.498.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..LocalDatabase 995",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.100",
+            "ipAddress": "10.52.498.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..LocalWebServer 996",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.RHOME..RC 498",
+            "destination": "Utility 0.RHOME..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RHOME..Router 498",
+            "destination": "Utility 0.RHOME..Firewall 498",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RHOME..Firewall 498",
+            "destination": "Utility 0.RHOME.OT.Switch 995",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RHOME.OT.Switch 995",
+            "destination": "Utility 0.RHOME..RC 498",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RHOME..Firewall 498",
+            "destination": "Utility 0.RHOME.Corporate.Switch 996",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RHOME.Corporate.Switch 996",
+            "destination": "Utility 0.RHOME..Host 995",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RHOME.Corporate.Switch 996",
+            "destination": "Utility 0.RHOME..Host 996",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RHOME.Corporate.Switch 996",
+            "destination": "Utility 0.RHOME..LocalDatabase 995",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.RHOME.Corporate.Switch 996",
+            "destination": "Utility 0.RHOME..LocalWebServer 996",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.1",
+            "ipAddress": "10.52.498.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME.OT.Switch 995",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.2",
+            "ipAddress": "10.52.498.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..RC 498",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.498.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.97",
+            "ipAddress": "10.52.498.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..Firewall 498",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.093,
+            "Longitude": -97.463
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.98",
+            "ipAddress": "10.52.498.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..Router 498",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.1",
+            "ipAddress": "10.52.498.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME.OT.Switch 995",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.498.2",
+            "ipAddress": "10.52.498.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "RHOME",
+            "label": "Utility 0.RHOME..RC 498",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.498.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

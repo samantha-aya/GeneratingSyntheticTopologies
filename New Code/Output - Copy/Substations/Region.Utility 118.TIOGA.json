@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 118.TIOGA",
+    "networkLan": "10.89.138.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 118",
+    "utility_id": 89,
+    "substation": "TIOGA",
+    "substationNumber": 138,
+    "OTAddress": "10.89.138.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.89.138.1",
+        "10.89.138.2",
+        "10.89.138.3",
+        "10.89.138.4",
+        "10.89.138.5",
+        "10.89.138.6",
+        "10.89.138.7",
+        "10.89.138.8",
+        "10.89.138.9",
+        "10.89.138.10",
+        "10.89.138.11",
+        "10.89.138.12",
+        "10.89.138.13",
+        "10.89.138.14",
+        "10.89.138.15",
+        "10.89.138.16",
+        "10.89.138.17",
+        "10.89.138.18",
+        "10.89.138.19",
+        "10.89.138.20",
+        "10.89.138.21",
+        "10.89.138.22",
+        "10.89.138.23",
+        "10.89.138.24",
+        "10.89.138.25",
+        "10.89.138.26",
+        "10.89.138.27",
+        "10.89.138.28",
+        "10.89.138.29",
+        "10.89.138.30",
+        "10.89.138.31",
+        "10.89.138.32",
+        "10.89.138.33",
+        "10.89.138.34",
+        "10.89.138.35",
+        "10.89.138.36",
+        "10.89.138.37",
+        "10.89.138.38",
+        "10.89.138.39",
+        "10.89.138.40",
+        "10.89.138.41",
+        "10.89.138.42",
+        "10.89.138.43",
+        "10.89.138.44",
+        "10.89.138.45",
+        "10.89.138.46",
+        "10.89.138.47",
+        "10.89.138.48",
+        "10.89.138.49",
+        "10.89.138.50",
+        "10.89.138.51",
+        "10.89.138.52",
+        "10.89.138.53",
+        "10.89.138.54",
+        "10.89.138.55",
+        "10.89.138.56",
+        "10.89.138.57",
+        "10.89.138.58",
+        "10.89.138.59",
+        "10.89.138.60",
+        "10.89.138.61",
+        "10.89.138.62"
+    ],
+    "routeAddress": "10.89.138.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.89.138.65",
+        "10.89.138.66",
+        "10.89.138.67",
+        "10.89.138.68",
+        "10.89.138.69",
+        "10.89.138.70",
+        "10.89.138.71",
+        "10.89.138.72",
+        "10.89.138.73",
+        "10.89.138.74",
+        "10.89.138.75",
+        "10.89.138.76",
+        "10.89.138.77",
+        "10.89.138.78",
+        "10.89.138.79",
+        "10.89.138.80",
+        "10.89.138.81",
+        "10.89.138.82",
+        "10.89.138.83",
+        "10.89.138.84",
+        "10.89.138.85",
+        "10.89.138.86",
+        "10.89.138.87",
+        "10.89.138.88",
+        "10.89.138.89",
+        "10.89.138.90",
+        "10.89.138.91",
+        "10.89.138.92",
+        "10.89.138.93",
+        "10.89.138.94"
+    ],
+    "corporateAddress": "10.89.138.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.89.138.97",
+        "10.89.138.98",
+        "10.89.138.99",
+        "10.89.138.100",
+        "10.89.138.101",
+        "10.89.138.102",
+        "10.89.138.103",
+        "10.89.138.104",
+        "10.89.138.105",
+        "10.89.138.106",
+        "10.89.138.107",
+        "10.89.138.108",
+        "10.89.138.109",
+        "10.89.138.110",
+        "10.89.138.111",
+        "10.89.138.112",
+        "10.89.138.113",
+        "10.89.138.114",
+        "10.89.138.115",
+        "10.89.138.116",
+        "10.89.138.117",
+        "10.89.138.118",
+        "10.89.138.119",
+        "10.89.138.120",
+        "10.89.138.121",
+        "10.89.138.122",
+        "10.89.138.123",
+        "10.89.138.124",
+        "10.89.138.125"
+    ],
+    "latitude": 33.465,
+    "longitude": -96.893,
+    "nodes": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.97",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..Firewall 138",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.465,
+            "Longitude": -96.893
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.98",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..Router 138",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.1",
+            "ipAddress": "10.89.138.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA.OT.Switch 275",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.99",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA.Corporate.Switch 276",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.3",
+            "ipAddress": "10.89.138.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.2",
+            "ipAddress": "10.89.138.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..RC 138",
+            "compromised": false,
+            "relayIPlist": [
+                "10.89.138.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.100",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..Host 275",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.100",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..Host 276",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.100",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..LocalDatabase 275",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.100",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..LocalWebServer 276",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.101",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..hmi 275",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.100",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..outstation 276",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 118.TIOGA..RC 138",
+            "destination": "Utility 118.TIOGA..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.TIOGA..Router 138",
+            "destination": "Utility 118.TIOGA..Firewall 138",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.TIOGA..Firewall 138",
+            "destination": "Utility 118.TIOGA.OT.Switch 275",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.TIOGA.OT.Switch 275",
+            "destination": "Utility 118.TIOGA..RC 138",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.TIOGA..Firewall 138",
+            "destination": "Utility 118.TIOGA.Corporate.Switch 276",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.TIOGA.Corporate.Switch 276",
+            "destination": "Utility 118.TIOGA..Host 275",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.TIOGA.Corporate.Switch 276",
+            "destination": "Utility 118.TIOGA..Host 276",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.TIOGA.Corporate.Switch 276",
+            "destination": "Utility 118.TIOGA..LocalDatabase 275",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 118.TIOGA.Corporate.Switch 276",
+            "destination": "Utility 118.TIOGA..LocalWebServer 276",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.1",
+            "ipAddress": "10.89.138.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA.OT.Switch 275",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.2",
+            "ipAddress": "10.89.138.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..RC 138",
+            "compromised": false,
+            "relayIPlist": [
+                "10.89.138.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.97",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..Firewall 138",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.465,
+            "Longitude": -96.893
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.98",
+            "ipAddress": "10.89.138.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..Router 138",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.1",
+            "ipAddress": "10.89.138.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA.OT.Switch 275",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 118",
+            "adminIP": "10.89.138.2",
+            "ipAddress": "10.89.138.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TIOGA",
+            "label": "Utility 118.TIOGA..RC 138",
+            "compromised": false,
+            "relayIPlist": [
+                "10.89.138.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

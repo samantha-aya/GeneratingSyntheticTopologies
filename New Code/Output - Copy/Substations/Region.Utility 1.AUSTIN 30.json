@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.AUSTIN 30",
+    "networkLan": "10.53.820.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "AUSTIN 30",
+    "substationNumber": 820,
+    "OTAddress": "10.53.820.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.820.1",
+        "10.53.820.2",
+        "10.53.820.3",
+        "10.53.820.4",
+        "10.53.820.5",
+        "10.53.820.6",
+        "10.53.820.7",
+        "10.53.820.8",
+        "10.53.820.9",
+        "10.53.820.10",
+        "10.53.820.11",
+        "10.53.820.12",
+        "10.53.820.13",
+        "10.53.820.14",
+        "10.53.820.15",
+        "10.53.820.16",
+        "10.53.820.17",
+        "10.53.820.18",
+        "10.53.820.19",
+        "10.53.820.20",
+        "10.53.820.21",
+        "10.53.820.22",
+        "10.53.820.23",
+        "10.53.820.24",
+        "10.53.820.25",
+        "10.53.820.26",
+        "10.53.820.27",
+        "10.53.820.28",
+        "10.53.820.29",
+        "10.53.820.30",
+        "10.53.820.31",
+        "10.53.820.32",
+        "10.53.820.33",
+        "10.53.820.34",
+        "10.53.820.35",
+        "10.53.820.36",
+        "10.53.820.37",
+        "10.53.820.38",
+        "10.53.820.39",
+        "10.53.820.40",
+        "10.53.820.41",
+        "10.53.820.42",
+        "10.53.820.43",
+        "10.53.820.44",
+        "10.53.820.45",
+        "10.53.820.46",
+        "10.53.820.47",
+        "10.53.820.48",
+        "10.53.820.49",
+        "10.53.820.50",
+        "10.53.820.51",
+        "10.53.820.52",
+        "10.53.820.53",
+        "10.53.820.54",
+        "10.53.820.55",
+        "10.53.820.56",
+        "10.53.820.57",
+        "10.53.820.58",
+        "10.53.820.59",
+        "10.53.820.60",
+        "10.53.820.61",
+        "10.53.820.62"
+    ],
+    "routeAddress": "10.53.820.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.820.65",
+        "10.53.820.66",
+        "10.53.820.67",
+        "10.53.820.68",
+        "10.53.820.69",
+        "10.53.820.70",
+        "10.53.820.71",
+        "10.53.820.72",
+        "10.53.820.73",
+        "10.53.820.74",
+        "10.53.820.75",
+        "10.53.820.76",
+        "10.53.820.77",
+        "10.53.820.78",
+        "10.53.820.79",
+        "10.53.820.80",
+        "10.53.820.81",
+        "10.53.820.82",
+        "10.53.820.83",
+        "10.53.820.84",
+        "10.53.820.85",
+        "10.53.820.86",
+        "10.53.820.87",
+        "10.53.820.88",
+        "10.53.820.89",
+        "10.53.820.90",
+        "10.53.820.91",
+        "10.53.820.92",
+        "10.53.820.93",
+        "10.53.820.94"
+    ],
+    "corporateAddress": "10.53.820.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.820.97",
+        "10.53.820.98",
+        "10.53.820.99",
+        "10.53.820.100",
+        "10.53.820.101",
+        "10.53.820.102",
+        "10.53.820.103",
+        "10.53.820.104",
+        "10.53.820.105",
+        "10.53.820.106",
+        "10.53.820.107",
+        "10.53.820.108",
+        "10.53.820.109",
+        "10.53.820.110",
+        "10.53.820.111",
+        "10.53.820.112",
+        "10.53.820.113",
+        "10.53.820.114",
+        "10.53.820.115",
+        "10.53.820.116",
+        "10.53.820.117",
+        "10.53.820.118",
+        "10.53.820.119",
+        "10.53.820.120",
+        "10.53.820.121",
+        "10.53.820.122",
+        "10.53.820.123",
+        "10.53.820.124",
+        "10.53.820.125"
+    ],
+    "latitude": 30.431,
+    "longitude": -97.84,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.97",
+            "ipAddress": "10.53.820.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..Firewall 820",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.431,
+            "Longitude": -97.84
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.98",
+            "ipAddress": "10.53.820.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..Router 820",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.1",
+            "ipAddress": "10.53.820.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30.OT.Switch 1639",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.99",
+            "ipAddress": "10.53.820.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30.Corporate.Switch 1640",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.3",
+            "ipAddress": "10.53.820.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.2",
+            "ipAddress": "10.53.820.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..RC 820",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.820.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.100",
+            "ipAddress": "10.53.820.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..Host 1639",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.100",
+            "ipAddress": "10.53.820.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..Host 1640",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.100",
+            "ipAddress": "10.53.820.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..LocalDatabase 1639",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.100",
+            "ipAddress": "10.53.820.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..LocalWebServer 1640",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.AUSTIN 30..RC 820",
+            "destination": "Utility 1.AUSTIN 30..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.AUSTIN 30..Router 820",
+            "destination": "Utility 1.AUSTIN 30..Firewall 820",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.AUSTIN 30..Firewall 820",
+            "destination": "Utility 1.AUSTIN 30.OT.Switch 1639",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.AUSTIN 30.OT.Switch 1639",
+            "destination": "Utility 1.AUSTIN 30..RC 820",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.AUSTIN 30..Firewall 820",
+            "destination": "Utility 1.AUSTIN 30.Corporate.Switch 1640",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.AUSTIN 30.Corporate.Switch 1640",
+            "destination": "Utility 1.AUSTIN 30..Host 1639",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.AUSTIN 30.Corporate.Switch 1640",
+            "destination": "Utility 1.AUSTIN 30..Host 1640",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.AUSTIN 30.Corporate.Switch 1640",
+            "destination": "Utility 1.AUSTIN 30..LocalDatabase 1639",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.AUSTIN 30.Corporate.Switch 1640",
+            "destination": "Utility 1.AUSTIN 30..LocalWebServer 1640",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.1",
+            "ipAddress": "10.53.820.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30.OT.Switch 1639",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.2",
+            "ipAddress": "10.53.820.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..RC 820",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.820.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.97",
+            "ipAddress": "10.53.820.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..Firewall 820",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.431,
+            "Longitude": -97.84
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.98",
+            "ipAddress": "10.53.820.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..Router 820",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.1",
+            "ipAddress": "10.53.820.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30.OT.Switch 1639",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.820.2",
+            "ipAddress": "10.53.820.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "AUSTIN 30",
+            "label": "Utility 1.AUSTIN 30..RC 820",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.820.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

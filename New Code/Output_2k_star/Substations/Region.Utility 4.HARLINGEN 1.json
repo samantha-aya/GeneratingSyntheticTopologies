@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 4.HARLINGEN 1",
+    "networkLan": "10.57.278.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 4",
+    "utility_id": 57,
+    "substation": "HARLINGEN 1",
+    "substationNumber": 278,
+    "OTAddress": "10.57.278.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.57.278.1",
+        "10.57.278.2",
+        "10.57.278.3",
+        "10.57.278.4",
+        "10.57.278.5",
+        "10.57.278.6",
+        "10.57.278.7",
+        "10.57.278.8",
+        "10.57.278.9",
+        "10.57.278.10",
+        "10.57.278.11",
+        "10.57.278.12",
+        "10.57.278.13",
+        "10.57.278.14",
+        "10.57.278.15",
+        "10.57.278.16",
+        "10.57.278.17",
+        "10.57.278.18",
+        "10.57.278.19",
+        "10.57.278.20",
+        "10.57.278.21",
+        "10.57.278.22",
+        "10.57.278.23",
+        "10.57.278.24",
+        "10.57.278.25",
+        "10.57.278.26",
+        "10.57.278.27",
+        "10.57.278.28",
+        "10.57.278.29",
+        "10.57.278.30",
+        "10.57.278.31",
+        "10.57.278.32",
+        "10.57.278.33",
+        "10.57.278.34",
+        "10.57.278.35",
+        "10.57.278.36",
+        "10.57.278.37",
+        "10.57.278.38",
+        "10.57.278.39",
+        "10.57.278.40",
+        "10.57.278.41",
+        "10.57.278.42",
+        "10.57.278.43",
+        "10.57.278.44",
+        "10.57.278.45",
+        "10.57.278.46",
+        "10.57.278.47",
+        "10.57.278.48",
+        "10.57.278.49",
+        "10.57.278.50",
+        "10.57.278.51",
+        "10.57.278.52",
+        "10.57.278.53",
+        "10.57.278.54",
+        "10.57.278.55",
+        "10.57.278.56",
+        "10.57.278.57",
+        "10.57.278.58",
+        "10.57.278.59",
+        "10.57.278.60",
+        "10.57.278.61",
+        "10.57.278.62"
+    ],
+    "routeAddress": "10.57.278.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.57.278.65",
+        "10.57.278.66",
+        "10.57.278.67",
+        "10.57.278.68",
+        "10.57.278.69",
+        "10.57.278.70",
+        "10.57.278.71",
+        "10.57.278.72",
+        "10.57.278.73",
+        "10.57.278.74",
+        "10.57.278.75",
+        "10.57.278.76",
+        "10.57.278.77",
+        "10.57.278.78",
+        "10.57.278.79",
+        "10.57.278.80",
+        "10.57.278.81",
+        "10.57.278.82",
+        "10.57.278.83",
+        "10.57.278.84",
+        "10.57.278.85",
+        "10.57.278.86",
+        "10.57.278.87",
+        "10.57.278.88",
+        "10.57.278.89",
+        "10.57.278.90",
+        "10.57.278.91",
+        "10.57.278.92",
+        "10.57.278.93",
+        "10.57.278.94"
+    ],
+    "corporateAddress": "10.57.278.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.57.278.97",
+        "10.57.278.98",
+        "10.57.278.99",
+        "10.57.278.100",
+        "10.57.278.101",
+        "10.57.278.102",
+        "10.57.278.103",
+        "10.57.278.104",
+        "10.57.278.105",
+        "10.57.278.106",
+        "10.57.278.107",
+        "10.57.278.108",
+        "10.57.278.109",
+        "10.57.278.110",
+        "10.57.278.111",
+        "10.57.278.112",
+        "10.57.278.113",
+        "10.57.278.114",
+        "10.57.278.115",
+        "10.57.278.116",
+        "10.57.278.117",
+        "10.57.278.118",
+        "10.57.278.119",
+        "10.57.278.120",
+        "10.57.278.121",
+        "10.57.278.122",
+        "10.57.278.123",
+        "10.57.278.124",
+        "10.57.278.125"
+    ],
+    "latitude": 26.256,
+    "longitude": -97.668,
+    "nodes": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.97",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..Firewall 278",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.256,
+            "Longitude": -97.668
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.98",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..Router 278",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.1",
+            "ipAddress": "10.57.278.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1.OT.Switch 555",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.99",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1.Corporate.Switch 556",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.3",
+            "ipAddress": "10.57.278.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.2",
+            "ipAddress": "10.57.278.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..RC 278",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.278.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.100",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..Host 555",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.100",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..Host 556",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.100",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..LocalDatabase 555",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.100",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..LocalWebServer 556",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.101",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..hmi 555",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.100",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..outstation 556",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 4.HARLINGEN 1..RC 278",
+            "destination": "Utility 4.HARLINGEN 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.HARLINGEN 1..Router 278",
+            "destination": "Utility 4.HARLINGEN 1..Firewall 278",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.HARLINGEN 1..Firewall 278",
+            "destination": "Utility 4.HARLINGEN 1.OT.Switch 555",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.HARLINGEN 1.OT.Switch 555",
+            "destination": "Utility 4.HARLINGEN 1..RC 278",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.HARLINGEN 1..Firewall 278",
+            "destination": "Utility 4.HARLINGEN 1.Corporate.Switch 556",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.HARLINGEN 1.Corporate.Switch 556",
+            "destination": "Utility 4.HARLINGEN 1..Host 555",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.HARLINGEN 1.Corporate.Switch 556",
+            "destination": "Utility 4.HARLINGEN 1..Host 556",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.HARLINGEN 1.Corporate.Switch 556",
+            "destination": "Utility 4.HARLINGEN 1..LocalDatabase 555",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 4.HARLINGEN 1.Corporate.Switch 556",
+            "destination": "Utility 4.HARLINGEN 1..LocalWebServer 556",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.1",
+            "ipAddress": "10.57.278.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1.OT.Switch 555",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.2",
+            "ipAddress": "10.57.278.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..RC 278",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.278.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.97",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..Firewall 278",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.256,
+            "Longitude": -97.668
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.98",
+            "ipAddress": "10.57.278.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..Router 278",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.1",
+            "ipAddress": "10.57.278.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1.OT.Switch 555",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 4",
+            "adminIP": "10.57.278.2",
+            "ipAddress": "10.57.278.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "HARLINGEN 1",
+            "label": "Utility 4.HARLINGEN 1..RC 278",
+            "compromised": false,
+            "relayIPlist": [
+                "10.57.278.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

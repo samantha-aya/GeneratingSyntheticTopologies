@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 3.BOERNE 2",
+    "networkLan": "10.56.876.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 3",
+    "utility_id": 56,
+    "substation": "BOERNE 2",
+    "substationNumber": 876,
+    "OTAddress": "10.56.876.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.56.876.1",
+        "10.56.876.2",
+        "10.56.876.3",
+        "10.56.876.4",
+        "10.56.876.5",
+        "10.56.876.6",
+        "10.56.876.7",
+        "10.56.876.8",
+        "10.56.876.9",
+        "10.56.876.10",
+        "10.56.876.11",
+        "10.56.876.12",
+        "10.56.876.13",
+        "10.56.876.14",
+        "10.56.876.15",
+        "10.56.876.16",
+        "10.56.876.17",
+        "10.56.876.18",
+        "10.56.876.19",
+        "10.56.876.20",
+        "10.56.876.21",
+        "10.56.876.22",
+        "10.56.876.23",
+        "10.56.876.24",
+        "10.56.876.25",
+        "10.56.876.26",
+        "10.56.876.27",
+        "10.56.876.28",
+        "10.56.876.29",
+        "10.56.876.30",
+        "10.56.876.31",
+        "10.56.876.32",
+        "10.56.876.33",
+        "10.56.876.34",
+        "10.56.876.35",
+        "10.56.876.36",
+        "10.56.876.37",
+        "10.56.876.38",
+        "10.56.876.39",
+        "10.56.876.40",
+        "10.56.876.41",
+        "10.56.876.42",
+        "10.56.876.43",
+        "10.56.876.44",
+        "10.56.876.45",
+        "10.56.876.46",
+        "10.56.876.47",
+        "10.56.876.48",
+        "10.56.876.49",
+        "10.56.876.50",
+        "10.56.876.51",
+        "10.56.876.52",
+        "10.56.876.53",
+        "10.56.876.54",
+        "10.56.876.55",
+        "10.56.876.56",
+        "10.56.876.57",
+        "10.56.876.58",
+        "10.56.876.59",
+        "10.56.876.60",
+        "10.56.876.61",
+        "10.56.876.62"
+    ],
+    "routeAddress": "10.56.876.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.56.876.65",
+        "10.56.876.66",
+        "10.56.876.67",
+        "10.56.876.68",
+        "10.56.876.69",
+        "10.56.876.70",
+        "10.56.876.71",
+        "10.56.876.72",
+        "10.56.876.73",
+        "10.56.876.74",
+        "10.56.876.75",
+        "10.56.876.76",
+        "10.56.876.77",
+        "10.56.876.78",
+        "10.56.876.79",
+        "10.56.876.80",
+        "10.56.876.81",
+        "10.56.876.82",
+        "10.56.876.83",
+        "10.56.876.84",
+        "10.56.876.85",
+        "10.56.876.86",
+        "10.56.876.87",
+        "10.56.876.88",
+        "10.56.876.89",
+        "10.56.876.90",
+        "10.56.876.91",
+        "10.56.876.92",
+        "10.56.876.93",
+        "10.56.876.94"
+    ],
+    "corporateAddress": "10.56.876.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.56.876.97",
+        "10.56.876.98",
+        "10.56.876.99",
+        "10.56.876.100",
+        "10.56.876.101",
+        "10.56.876.102",
+        "10.56.876.103",
+        "10.56.876.104",
+        "10.56.876.105",
+        "10.56.876.106",
+        "10.56.876.107",
+        "10.56.876.108",
+        "10.56.876.109",
+        "10.56.876.110",
+        "10.56.876.111",
+        "10.56.876.112",
+        "10.56.876.113",
+        "10.56.876.114",
+        "10.56.876.115",
+        "10.56.876.116",
+        "10.56.876.117",
+        "10.56.876.118",
+        "10.56.876.119",
+        "10.56.876.120",
+        "10.56.876.121",
+        "10.56.876.122",
+        "10.56.876.123",
+        "10.56.876.124",
+        "10.56.876.125"
+    ],
+    "latitude": 29.859,
+    "longitude": -98.706,
+    "nodes": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.97",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..Firewall 876",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.859,
+            "Longitude": -98.706
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.98",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..Router 876",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.1",
+            "ipAddress": "10.56.876.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2.OT.Switch 1751",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.99",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2.Corporate.Switch 1752",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.3",
+            "ipAddress": "10.56.876.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.4",
+            "ipAddress": "10.56.876.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.2",
+            "ipAddress": "10.56.876.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..RC 876",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.876.3",
+                "10.56.876.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.100",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..Host 1751",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.100",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..Host 1752",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.100",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..LocalDatabase 1751",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.100",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..LocalWebServer 1752",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.101",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..hmi 1751",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.100",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..outstation 1752",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 3.BOERNE 2..RC 876",
+            "destination": "Utility 3.BOERNE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BOERNE 2..RC 876",
+            "destination": "Utility 3.BOERNE 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BOERNE 2..Router 876",
+            "destination": "Utility 3.BOERNE 2..Firewall 876",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BOERNE 2..Firewall 876",
+            "destination": "Utility 3.BOERNE 2.OT.Switch 1751",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BOERNE 2.OT.Switch 1751",
+            "destination": "Utility 3.BOERNE 2..RC 876",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BOERNE 2..Firewall 876",
+            "destination": "Utility 3.BOERNE 2.Corporate.Switch 1752",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BOERNE 2.Corporate.Switch 1752",
+            "destination": "Utility 3.BOERNE 2..Host 1751",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BOERNE 2.Corporate.Switch 1752",
+            "destination": "Utility 3.BOERNE 2..Host 1752",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BOERNE 2.Corporate.Switch 1752",
+            "destination": "Utility 3.BOERNE 2..LocalDatabase 1751",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 3.BOERNE 2.Corporate.Switch 1752",
+            "destination": "Utility 3.BOERNE 2..LocalWebServer 1752",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.1",
+            "ipAddress": "10.56.876.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2.OT.Switch 1751",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.2",
+            "ipAddress": "10.56.876.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..RC 876",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.876.3",
+                "10.56.876.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.97",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..Firewall 876",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.859,
+            "Longitude": -98.706
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.98",
+            "ipAddress": "10.56.876.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..Router 876",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.1",
+            "ipAddress": "10.56.876.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2.OT.Switch 1751",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 3",
+            "adminIP": "10.56.876.2",
+            "ipAddress": "10.56.876.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "BOERNE 2",
+            "label": "Utility 3.BOERNE 2..RC 876",
+            "compromised": false,
+            "relayIPlist": [
+                "10.56.876.3",
+                "10.56.876.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

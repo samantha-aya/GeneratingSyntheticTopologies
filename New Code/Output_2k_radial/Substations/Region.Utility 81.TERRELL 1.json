@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 81.TERRELL 1",
+    "networkLan": "10.152.404.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 81",
+    "utility_id": 152,
+    "substation": "TERRELL 1",
+    "substationNumber": 404,
+    "OTAddress": "10.152.404.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.152.404.1",
+        "10.152.404.2",
+        "10.152.404.3",
+        "10.152.404.4",
+        "10.152.404.5",
+        "10.152.404.6",
+        "10.152.404.7",
+        "10.152.404.8",
+        "10.152.404.9",
+        "10.152.404.10",
+        "10.152.404.11",
+        "10.152.404.12",
+        "10.152.404.13",
+        "10.152.404.14",
+        "10.152.404.15",
+        "10.152.404.16",
+        "10.152.404.17",
+        "10.152.404.18",
+        "10.152.404.19",
+        "10.152.404.20",
+        "10.152.404.21",
+        "10.152.404.22",
+        "10.152.404.23",
+        "10.152.404.24",
+        "10.152.404.25",
+        "10.152.404.26",
+        "10.152.404.27",
+        "10.152.404.28",
+        "10.152.404.29",
+        "10.152.404.30",
+        "10.152.404.31",
+        "10.152.404.32",
+        "10.152.404.33",
+        "10.152.404.34",
+        "10.152.404.35",
+        "10.152.404.36",
+        "10.152.404.37",
+        "10.152.404.38",
+        "10.152.404.39",
+        "10.152.404.40",
+        "10.152.404.41",
+        "10.152.404.42",
+        "10.152.404.43",
+        "10.152.404.44",
+        "10.152.404.45",
+        "10.152.404.46",
+        "10.152.404.47",
+        "10.152.404.48",
+        "10.152.404.49",
+        "10.152.404.50",
+        "10.152.404.51",
+        "10.152.404.52",
+        "10.152.404.53",
+        "10.152.404.54",
+        "10.152.404.55",
+        "10.152.404.56",
+        "10.152.404.57",
+        "10.152.404.58",
+        "10.152.404.59",
+        "10.152.404.60",
+        "10.152.404.61",
+        "10.152.404.62"
+    ],
+    "routeAddress": "10.152.404.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.152.404.65",
+        "10.152.404.66",
+        "10.152.404.67",
+        "10.152.404.68",
+        "10.152.404.69",
+        "10.152.404.70",
+        "10.152.404.71",
+        "10.152.404.72",
+        "10.152.404.73",
+        "10.152.404.74",
+        "10.152.404.75",
+        "10.152.404.76",
+        "10.152.404.77",
+        "10.152.404.78",
+        "10.152.404.79",
+        "10.152.404.80",
+        "10.152.404.81",
+        "10.152.404.82",
+        "10.152.404.83",
+        "10.152.404.84",
+        "10.152.404.85",
+        "10.152.404.86",
+        "10.152.404.87",
+        "10.152.404.88",
+        "10.152.404.89",
+        "10.152.404.90",
+        "10.152.404.91",
+        "10.152.404.92",
+        "10.152.404.93",
+        "10.152.404.94"
+    ],
+    "corporateAddress": "10.152.404.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.152.404.97",
+        "10.152.404.98",
+        "10.152.404.99",
+        "10.152.404.100",
+        "10.152.404.101",
+        "10.152.404.102",
+        "10.152.404.103",
+        "10.152.404.104",
+        "10.152.404.105",
+        "10.152.404.106",
+        "10.152.404.107",
+        "10.152.404.108",
+        "10.152.404.109",
+        "10.152.404.110",
+        "10.152.404.111",
+        "10.152.404.112",
+        "10.152.404.113",
+        "10.152.404.114",
+        "10.152.404.115",
+        "10.152.404.116",
+        "10.152.404.117",
+        "10.152.404.118",
+        "10.152.404.119",
+        "10.152.404.120",
+        "10.152.404.121",
+        "10.152.404.122",
+        "10.152.404.123",
+        "10.152.404.124",
+        "10.152.404.125"
+    ],
+    "latitude": 32.738,
+    "longitude": -96.169,
+    "nodes": [
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.97",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..Firewall 404",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.738,
+            "Longitude": -96.169
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.98",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..Router 404",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.1",
+            "ipAddress": "10.152.404.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1.OT.Switch 807",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.99",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1.Corporate.Switch 808",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.3",
+            "ipAddress": "10.152.404.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.4",
+            "ipAddress": "10.152.404.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.2",
+            "ipAddress": "10.152.404.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..RC 404",
+            "compromised": false,
+            "relayIPlist": [
+                "10.152.404.3",
+                "10.152.404.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.100",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..Host 807",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.100",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..Host 808",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.100",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..LocalDatabase 807",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.100",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..LocalWebServer 808",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.101",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..hmi 807",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.100",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..outstation 808",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 81.TERRELL 1..RC 404",
+            "destination": "Utility 81.TERRELL 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 81.TERRELL 1..RC 404",
+            "destination": "Utility 81.TERRELL 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 81.TERRELL 1..Router 404",
+            "destination": "Utility 81.TERRELL 1..Firewall 404",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 81.TERRELL 1..Firewall 404",
+            "destination": "Utility 81.TERRELL 1.OT.Switch 807",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 81.TERRELL 1.OT.Switch 807",
+            "destination": "Utility 81.TERRELL 1..RC 404",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 81.TERRELL 1..Firewall 404",
+            "destination": "Utility 81.TERRELL 1.Corporate.Switch 808",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 81.TERRELL 1.Corporate.Switch 808",
+            "destination": "Utility 81.TERRELL 1..Host 807",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 81.TERRELL 1.Corporate.Switch 808",
+            "destination": "Utility 81.TERRELL 1..Host 808",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 81.TERRELL 1.Corporate.Switch 808",
+            "destination": "Utility 81.TERRELL 1..LocalDatabase 807",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 81.TERRELL 1.Corporate.Switch 808",
+            "destination": "Utility 81.TERRELL 1..LocalWebServer 808",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.1",
+            "ipAddress": "10.152.404.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1.OT.Switch 807",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.2",
+            "ipAddress": "10.152.404.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..RC 404",
+            "compromised": false,
+            "relayIPlist": [
+                "10.152.404.3",
+                "10.152.404.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.97",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..Firewall 404",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.738,
+            "Longitude": -96.169
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.98",
+            "ipAddress": "10.152.404.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..Router 404",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.1",
+            "ipAddress": "10.152.404.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1.OT.Switch 807",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 81",
+            "adminIP": "10.152.404.2",
+            "ipAddress": "10.152.404.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "TERRELL 1",
+            "label": "Utility 81.TERRELL 1..RC 404",
+            "compromised": false,
+            "relayIPlist": [
+                "10.152.404.3",
+                "10.152.404.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

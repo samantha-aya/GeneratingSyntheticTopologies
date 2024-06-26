@@ -1,0 +1,712 @@
+{
+    "relayCounter": 5,
+    "label": "Region.Utility 127.VICTORIA 2",
+    "networkLan": "10.122.939.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 127",
+    "utility_id": 122,
+    "substation": "VICTORIA 2",
+    "substationNumber": 939,
+    "OTAddress": "10.122.939.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.122.939.1",
+        "10.122.939.2",
+        "10.122.939.3",
+        "10.122.939.4",
+        "10.122.939.5",
+        "10.122.939.6",
+        "10.122.939.7",
+        "10.122.939.8",
+        "10.122.939.9",
+        "10.122.939.10",
+        "10.122.939.11",
+        "10.122.939.12",
+        "10.122.939.13",
+        "10.122.939.14",
+        "10.122.939.15",
+        "10.122.939.16",
+        "10.122.939.17",
+        "10.122.939.18",
+        "10.122.939.19",
+        "10.122.939.20",
+        "10.122.939.21",
+        "10.122.939.22",
+        "10.122.939.23",
+        "10.122.939.24",
+        "10.122.939.25",
+        "10.122.939.26",
+        "10.122.939.27",
+        "10.122.939.28",
+        "10.122.939.29",
+        "10.122.939.30",
+        "10.122.939.31",
+        "10.122.939.32",
+        "10.122.939.33",
+        "10.122.939.34",
+        "10.122.939.35",
+        "10.122.939.36",
+        "10.122.939.37",
+        "10.122.939.38",
+        "10.122.939.39",
+        "10.122.939.40",
+        "10.122.939.41",
+        "10.122.939.42",
+        "10.122.939.43",
+        "10.122.939.44",
+        "10.122.939.45",
+        "10.122.939.46",
+        "10.122.939.47",
+        "10.122.939.48",
+        "10.122.939.49",
+        "10.122.939.50",
+        "10.122.939.51",
+        "10.122.939.52",
+        "10.122.939.53",
+        "10.122.939.54",
+        "10.122.939.55",
+        "10.122.939.56",
+        "10.122.939.57",
+        "10.122.939.58",
+        "10.122.939.59",
+        "10.122.939.60",
+        "10.122.939.61",
+        "10.122.939.62"
+    ],
+    "routeAddress": "10.122.939.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.122.939.65",
+        "10.122.939.66",
+        "10.122.939.67",
+        "10.122.939.68",
+        "10.122.939.69",
+        "10.122.939.70",
+        "10.122.939.71",
+        "10.122.939.72",
+        "10.122.939.73",
+        "10.122.939.74",
+        "10.122.939.75",
+        "10.122.939.76",
+        "10.122.939.77",
+        "10.122.939.78",
+        "10.122.939.79",
+        "10.122.939.80",
+        "10.122.939.81",
+        "10.122.939.82",
+        "10.122.939.83",
+        "10.122.939.84",
+        "10.122.939.85",
+        "10.122.939.86",
+        "10.122.939.87",
+        "10.122.939.88",
+        "10.122.939.89",
+        "10.122.939.90",
+        "10.122.939.91",
+        "10.122.939.92",
+        "10.122.939.93",
+        "10.122.939.94"
+    ],
+    "corporateAddress": "10.122.939.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.122.939.97",
+        "10.122.939.98",
+        "10.122.939.99",
+        "10.122.939.100",
+        "10.122.939.101",
+        "10.122.939.102",
+        "10.122.939.103",
+        "10.122.939.104",
+        "10.122.939.105",
+        "10.122.939.106",
+        "10.122.939.107",
+        "10.122.939.108",
+        "10.122.939.109",
+        "10.122.939.110",
+        "10.122.939.111",
+        "10.122.939.112",
+        "10.122.939.113",
+        "10.122.939.114",
+        "10.122.939.115",
+        "10.122.939.116",
+        "10.122.939.117",
+        "10.122.939.118",
+        "10.122.939.119",
+        "10.122.939.120",
+        "10.122.939.121",
+        "10.122.939.122",
+        "10.122.939.123",
+        "10.122.939.124",
+        "10.122.939.125"
+    ],
+    "latitude": 28.788,
+    "longitude": -97.01,
+    "nodes": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.97",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Firewall 939",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.788,
+            "Longitude": -97.01
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.98",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Router 939",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.1",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2.OT.Switch 1877",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.99",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2.Corporate.Switch 1878",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.3",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.4",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.5",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.6",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.7",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.2",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..RC 939",
+            "compromised": false,
+            "relayIPlist": [
+                "10.122.939.3",
+                "10.122.939.4",
+                "10.122.939.5",
+                "10.122.939.6",
+                "10.122.939.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.100",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Host 1877",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.100",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Host 1878",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.100",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..LocalDatabase 1877",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.100",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..LocalWebServer 1878",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.101",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..hmi 1877",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.100",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..outstation 1878",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 127.VICTORIA 2..RC 939",
+            "destination": "Utility 127.VICTORIA 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2..RC 939",
+            "destination": "Utility 127.VICTORIA 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2..RC 939",
+            "destination": "Utility 127.VICTORIA 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2..RC 939",
+            "destination": "Utility 127.VICTORIA 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2..RC 939",
+            "destination": "Utility 127.VICTORIA 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2..Router 939",
+            "destination": "Utility 127.VICTORIA 2..Firewall 939",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2..Firewall 939",
+            "destination": "Utility 127.VICTORIA 2.OT.Switch 1877",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2.OT.Switch 1877",
+            "destination": "Utility 127.VICTORIA 2..RC 939",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2..Firewall 939",
+            "destination": "Utility 127.VICTORIA 2.Corporate.Switch 1878",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2.Corporate.Switch 1878",
+            "destination": "Utility 127.VICTORIA 2..Host 1877",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2.Corporate.Switch 1878",
+            "destination": "Utility 127.VICTORIA 2..Host 1878",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2.Corporate.Switch 1878",
+            "destination": "Utility 127.VICTORIA 2..LocalDatabase 1877",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 127.VICTORIA 2.Corporate.Switch 1878",
+            "destination": "Utility 127.VICTORIA 2..LocalWebServer 1878",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.1",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2.OT.Switch 1877",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.2",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..RC 939",
+            "compromised": false,
+            "relayIPlist": [
+                "10.122.939.3",
+                "10.122.939.4",
+                "10.122.939.5",
+                "10.122.939.6",
+                "10.122.939.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.97",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Firewall 939",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 28.788,
+            "Longitude": -97.01
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.98",
+            "ipAddress": "10.122.939.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..Router 939",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.1",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2.OT.Switch 1877",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 127",
+            "adminIP": "10.122.939.2",
+            "ipAddress": "10.122.939.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VICTORIA 2",
+            "label": "Utility 127.VICTORIA 2..RC 939",
+            "compromised": false,
+            "relayIPlist": [
+                "10.122.939.3",
+                "10.122.939.4",
+                "10.122.939.5",
+                "10.122.939.6",
+                "10.122.939.7"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 375.85,
+    "genmvar": 115.32,
+    "connecting_TS_num": 922
+}

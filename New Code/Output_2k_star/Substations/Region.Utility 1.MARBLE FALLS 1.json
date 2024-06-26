@@ -1,0 +1,618 @@
+{
+    "relayCounter": 3,
+    "label": "Region.Utility 1.MARBLE FALLS 1",
+    "networkLan": "10.53.753.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 53,
+    "substation": "MARBLE FALLS 1",
+    "substationNumber": 753,
+    "OTAddress": "10.53.753.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.53.753.1",
+        "10.53.753.2",
+        "10.53.753.3",
+        "10.53.753.4",
+        "10.53.753.5",
+        "10.53.753.6",
+        "10.53.753.7",
+        "10.53.753.8",
+        "10.53.753.9",
+        "10.53.753.10",
+        "10.53.753.11",
+        "10.53.753.12",
+        "10.53.753.13",
+        "10.53.753.14",
+        "10.53.753.15",
+        "10.53.753.16",
+        "10.53.753.17",
+        "10.53.753.18",
+        "10.53.753.19",
+        "10.53.753.20",
+        "10.53.753.21",
+        "10.53.753.22",
+        "10.53.753.23",
+        "10.53.753.24",
+        "10.53.753.25",
+        "10.53.753.26",
+        "10.53.753.27",
+        "10.53.753.28",
+        "10.53.753.29",
+        "10.53.753.30",
+        "10.53.753.31",
+        "10.53.753.32",
+        "10.53.753.33",
+        "10.53.753.34",
+        "10.53.753.35",
+        "10.53.753.36",
+        "10.53.753.37",
+        "10.53.753.38",
+        "10.53.753.39",
+        "10.53.753.40",
+        "10.53.753.41",
+        "10.53.753.42",
+        "10.53.753.43",
+        "10.53.753.44",
+        "10.53.753.45",
+        "10.53.753.46",
+        "10.53.753.47",
+        "10.53.753.48",
+        "10.53.753.49",
+        "10.53.753.50",
+        "10.53.753.51",
+        "10.53.753.52",
+        "10.53.753.53",
+        "10.53.753.54",
+        "10.53.753.55",
+        "10.53.753.56",
+        "10.53.753.57",
+        "10.53.753.58",
+        "10.53.753.59",
+        "10.53.753.60",
+        "10.53.753.61",
+        "10.53.753.62"
+    ],
+    "routeAddress": "10.53.753.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.53.753.65",
+        "10.53.753.66",
+        "10.53.753.67",
+        "10.53.753.68",
+        "10.53.753.69",
+        "10.53.753.70",
+        "10.53.753.71",
+        "10.53.753.72",
+        "10.53.753.73",
+        "10.53.753.74",
+        "10.53.753.75",
+        "10.53.753.76",
+        "10.53.753.77",
+        "10.53.753.78",
+        "10.53.753.79",
+        "10.53.753.80",
+        "10.53.753.81",
+        "10.53.753.82",
+        "10.53.753.83",
+        "10.53.753.84",
+        "10.53.753.85",
+        "10.53.753.86",
+        "10.53.753.87",
+        "10.53.753.88",
+        "10.53.753.89",
+        "10.53.753.90",
+        "10.53.753.91",
+        "10.53.753.92",
+        "10.53.753.93",
+        "10.53.753.94"
+    ],
+    "corporateAddress": "10.53.753.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.53.753.97",
+        "10.53.753.98",
+        "10.53.753.99",
+        "10.53.753.100",
+        "10.53.753.101",
+        "10.53.753.102",
+        "10.53.753.103",
+        "10.53.753.104",
+        "10.53.753.105",
+        "10.53.753.106",
+        "10.53.753.107",
+        "10.53.753.108",
+        "10.53.753.109",
+        "10.53.753.110",
+        "10.53.753.111",
+        "10.53.753.112",
+        "10.53.753.113",
+        "10.53.753.114",
+        "10.53.753.115",
+        "10.53.753.116",
+        "10.53.753.117",
+        "10.53.753.118",
+        "10.53.753.119",
+        "10.53.753.120",
+        "10.53.753.121",
+        "10.53.753.122",
+        "10.53.753.123",
+        "10.53.753.124",
+        "10.53.753.125"
+    ],
+    "latitude": 30.555,
+    "longitude": -98.258,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.97",
+            "ipAddress": "10.53.753.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..Firewall 753",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.555,
+            "Longitude": -98.258
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.98",
+            "ipAddress": "10.53.753.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..Router 753",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.1",
+            "ipAddress": "10.53.753.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1.OT.Switch 1505",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.99",
+            "ipAddress": "10.53.753.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1.Corporate.Switch 1506",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.3",
+            "ipAddress": "10.53.753.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.4",
+            "ipAddress": "10.53.753.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.5",
+            "ipAddress": "10.53.753.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.2",
+            "ipAddress": "10.53.753.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..RC 753",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.753.3",
+                "10.53.753.4",
+                "10.53.753.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.100",
+            "ipAddress": "10.53.753.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..Host 1505",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.100",
+            "ipAddress": "10.53.753.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..Host 1506",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.100",
+            "ipAddress": "10.53.753.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..LocalDatabase 1505",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.100",
+            "ipAddress": "10.53.753.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..LocalWebServer 1506",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.MARBLE FALLS 1..RC 753",
+            "destination": "Utility 1.MARBLE FALLS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1..RC 753",
+            "destination": "Utility 1.MARBLE FALLS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1..RC 753",
+            "destination": "Utility 1.MARBLE FALLS 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1..Router 753",
+            "destination": "Utility 1.MARBLE FALLS 1..Firewall 753",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1..Firewall 753",
+            "destination": "Utility 1.MARBLE FALLS 1.OT.Switch 1505",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1.OT.Switch 1505",
+            "destination": "Utility 1.MARBLE FALLS 1..RC 753",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1..Firewall 753",
+            "destination": "Utility 1.MARBLE FALLS 1.Corporate.Switch 1506",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1.Corporate.Switch 1506",
+            "destination": "Utility 1.MARBLE FALLS 1..Host 1505",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1.Corporate.Switch 1506",
+            "destination": "Utility 1.MARBLE FALLS 1..Host 1506",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1.Corporate.Switch 1506",
+            "destination": "Utility 1.MARBLE FALLS 1..LocalDatabase 1505",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.MARBLE FALLS 1.Corporate.Switch 1506",
+            "destination": "Utility 1.MARBLE FALLS 1..LocalWebServer 1506",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.1",
+            "ipAddress": "10.53.753.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1.OT.Switch 1505",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.2",
+            "ipAddress": "10.53.753.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..RC 753",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.753.3",
+                "10.53.753.4",
+                "10.53.753.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.97",
+            "ipAddress": "10.53.753.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..Firewall 753",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.555,
+            "Longitude": -98.258
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.98",
+            "ipAddress": "10.53.753.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..Router 753",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.1",
+            "ipAddress": "10.53.753.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1.OT.Switch 1505",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.53.753.2",
+            "ipAddress": "10.53.753.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARBLE FALLS 1",
+            "label": "Utility 1.MARBLE FALLS 1..RC 753",
+            "compromised": false,
+            "relayIPlist": [
+                "10.53.753.3",
+                "10.53.753.4",
+                "10.53.753.5"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 106.67,
+    "genmvar": 29.26,
+    "connecting_TS_num": 800
+}

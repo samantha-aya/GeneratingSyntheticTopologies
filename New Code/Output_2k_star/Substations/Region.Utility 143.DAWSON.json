@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 143.DAWSON",
+    "networkLan": "10.157.572.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 143",
+    "utility_id": 157,
+    "substation": "DAWSON",
+    "substationNumber": 572,
+    "OTAddress": "10.157.572.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.157.572.1",
+        "10.157.572.2",
+        "10.157.572.3",
+        "10.157.572.4",
+        "10.157.572.5",
+        "10.157.572.6",
+        "10.157.572.7",
+        "10.157.572.8",
+        "10.157.572.9",
+        "10.157.572.10",
+        "10.157.572.11",
+        "10.157.572.12",
+        "10.157.572.13",
+        "10.157.572.14",
+        "10.157.572.15",
+        "10.157.572.16",
+        "10.157.572.17",
+        "10.157.572.18",
+        "10.157.572.19",
+        "10.157.572.20",
+        "10.157.572.21",
+        "10.157.572.22",
+        "10.157.572.23",
+        "10.157.572.24",
+        "10.157.572.25",
+        "10.157.572.26",
+        "10.157.572.27",
+        "10.157.572.28",
+        "10.157.572.29",
+        "10.157.572.30",
+        "10.157.572.31",
+        "10.157.572.32",
+        "10.157.572.33",
+        "10.157.572.34",
+        "10.157.572.35",
+        "10.157.572.36",
+        "10.157.572.37",
+        "10.157.572.38",
+        "10.157.572.39",
+        "10.157.572.40",
+        "10.157.572.41",
+        "10.157.572.42",
+        "10.157.572.43",
+        "10.157.572.44",
+        "10.157.572.45",
+        "10.157.572.46",
+        "10.157.572.47",
+        "10.157.572.48",
+        "10.157.572.49",
+        "10.157.572.50",
+        "10.157.572.51",
+        "10.157.572.52",
+        "10.157.572.53",
+        "10.157.572.54",
+        "10.157.572.55",
+        "10.157.572.56",
+        "10.157.572.57",
+        "10.157.572.58",
+        "10.157.572.59",
+        "10.157.572.60",
+        "10.157.572.61",
+        "10.157.572.62"
+    ],
+    "routeAddress": "10.157.572.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.157.572.65",
+        "10.157.572.66",
+        "10.157.572.67",
+        "10.157.572.68",
+        "10.157.572.69",
+        "10.157.572.70",
+        "10.157.572.71",
+        "10.157.572.72",
+        "10.157.572.73",
+        "10.157.572.74",
+        "10.157.572.75",
+        "10.157.572.76",
+        "10.157.572.77",
+        "10.157.572.78",
+        "10.157.572.79",
+        "10.157.572.80",
+        "10.157.572.81",
+        "10.157.572.82",
+        "10.157.572.83",
+        "10.157.572.84",
+        "10.157.572.85",
+        "10.157.572.86",
+        "10.157.572.87",
+        "10.157.572.88",
+        "10.157.572.89",
+        "10.157.572.90",
+        "10.157.572.91",
+        "10.157.572.92",
+        "10.157.572.93",
+        "10.157.572.94"
+    ],
+    "corporateAddress": "10.157.572.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.157.572.97",
+        "10.157.572.98",
+        "10.157.572.99",
+        "10.157.572.100",
+        "10.157.572.101",
+        "10.157.572.102",
+        "10.157.572.103",
+        "10.157.572.104",
+        "10.157.572.105",
+        "10.157.572.106",
+        "10.157.572.107",
+        "10.157.572.108",
+        "10.157.572.109",
+        "10.157.572.110",
+        "10.157.572.111",
+        "10.157.572.112",
+        "10.157.572.113",
+        "10.157.572.114",
+        "10.157.572.115",
+        "10.157.572.116",
+        "10.157.572.117",
+        "10.157.572.118",
+        "10.157.572.119",
+        "10.157.572.120",
+        "10.157.572.121",
+        "10.157.572.122",
+        "10.157.572.123",
+        "10.157.572.124",
+        "10.157.572.125"
+    ],
+    "latitude": 31.867,
+    "longitude": -96.656,
+    "nodes": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.97",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..Firewall 572",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.867,
+            "Longitude": -96.656
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.98",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..Router 572",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.1",
+            "ipAddress": "10.157.572.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON.OT.Switch 1143",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.99",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON.Corporate.Switch 1144",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.3",
+            "ipAddress": "10.157.572.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.2",
+            "ipAddress": "10.157.572.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..RC 572",
+            "compromised": false,
+            "relayIPlist": [
+                "10.157.572.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.100",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..Host 1143",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.100",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..Host 1144",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.100",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..LocalDatabase 1143",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.100",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..LocalWebServer 1144",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.101",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..hmi 1143",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.100",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..outstation 1144",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 143.DAWSON..RC 572",
+            "destination": "Utility 143.DAWSON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.DAWSON..Router 572",
+            "destination": "Utility 143.DAWSON..Firewall 572",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.DAWSON..Firewall 572",
+            "destination": "Utility 143.DAWSON.OT.Switch 1143",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.DAWSON.OT.Switch 1143",
+            "destination": "Utility 143.DAWSON..RC 572",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.DAWSON..Firewall 572",
+            "destination": "Utility 143.DAWSON.Corporate.Switch 1144",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.DAWSON.Corporate.Switch 1144",
+            "destination": "Utility 143.DAWSON..Host 1143",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.DAWSON.Corporate.Switch 1144",
+            "destination": "Utility 143.DAWSON..Host 1144",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.DAWSON.Corporate.Switch 1144",
+            "destination": "Utility 143.DAWSON..LocalDatabase 1143",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 143.DAWSON.Corporate.Switch 1144",
+            "destination": "Utility 143.DAWSON..LocalWebServer 1144",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.1",
+            "ipAddress": "10.157.572.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON.OT.Switch 1143",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.2",
+            "ipAddress": "10.157.572.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..RC 572",
+            "compromised": false,
+            "relayIPlist": [
+                "10.157.572.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.97",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..Firewall 572",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.867,
+            "Longitude": -96.656
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.98",
+            "ipAddress": "10.157.572.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..Router 572",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.1",
+            "ipAddress": "10.157.572.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON.OT.Switch 1143",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 143",
+            "adminIP": "10.157.572.2",
+            "ipAddress": "10.157.572.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DAWSON",
+            "label": "Utility 143.DAWSON..RC 572",
+            "compromised": false,
+            "relayIPlist": [
+                "10.157.572.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

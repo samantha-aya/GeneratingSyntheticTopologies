@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 15.VALLEY VIEW",
+    "networkLan": "10.90.139.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 15",
+    "utility_id": 90,
+    "substation": "VALLEY VIEW",
+    "substationNumber": 139,
+    "OTAddress": "10.90.139.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.90.139.1",
+        "10.90.139.2",
+        "10.90.139.3",
+        "10.90.139.4",
+        "10.90.139.5",
+        "10.90.139.6",
+        "10.90.139.7",
+        "10.90.139.8",
+        "10.90.139.9",
+        "10.90.139.10",
+        "10.90.139.11",
+        "10.90.139.12",
+        "10.90.139.13",
+        "10.90.139.14",
+        "10.90.139.15",
+        "10.90.139.16",
+        "10.90.139.17",
+        "10.90.139.18",
+        "10.90.139.19",
+        "10.90.139.20",
+        "10.90.139.21",
+        "10.90.139.22",
+        "10.90.139.23",
+        "10.90.139.24",
+        "10.90.139.25",
+        "10.90.139.26",
+        "10.90.139.27",
+        "10.90.139.28",
+        "10.90.139.29",
+        "10.90.139.30",
+        "10.90.139.31",
+        "10.90.139.32",
+        "10.90.139.33",
+        "10.90.139.34",
+        "10.90.139.35",
+        "10.90.139.36",
+        "10.90.139.37",
+        "10.90.139.38",
+        "10.90.139.39",
+        "10.90.139.40",
+        "10.90.139.41",
+        "10.90.139.42",
+        "10.90.139.43",
+        "10.90.139.44",
+        "10.90.139.45",
+        "10.90.139.46",
+        "10.90.139.47",
+        "10.90.139.48",
+        "10.90.139.49",
+        "10.90.139.50",
+        "10.90.139.51",
+        "10.90.139.52",
+        "10.90.139.53",
+        "10.90.139.54",
+        "10.90.139.55",
+        "10.90.139.56",
+        "10.90.139.57",
+        "10.90.139.58",
+        "10.90.139.59",
+        "10.90.139.60",
+        "10.90.139.61",
+        "10.90.139.62"
+    ],
+    "routeAddress": "10.90.139.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.90.139.65",
+        "10.90.139.66",
+        "10.90.139.67",
+        "10.90.139.68",
+        "10.90.139.69",
+        "10.90.139.70",
+        "10.90.139.71",
+        "10.90.139.72",
+        "10.90.139.73",
+        "10.90.139.74",
+        "10.90.139.75",
+        "10.90.139.76",
+        "10.90.139.77",
+        "10.90.139.78",
+        "10.90.139.79",
+        "10.90.139.80",
+        "10.90.139.81",
+        "10.90.139.82",
+        "10.90.139.83",
+        "10.90.139.84",
+        "10.90.139.85",
+        "10.90.139.86",
+        "10.90.139.87",
+        "10.90.139.88",
+        "10.90.139.89",
+        "10.90.139.90",
+        "10.90.139.91",
+        "10.90.139.92",
+        "10.90.139.93",
+        "10.90.139.94"
+    ],
+    "corporateAddress": "10.90.139.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.90.139.97",
+        "10.90.139.98",
+        "10.90.139.99",
+        "10.90.139.100",
+        "10.90.139.101",
+        "10.90.139.102",
+        "10.90.139.103",
+        "10.90.139.104",
+        "10.90.139.105",
+        "10.90.139.106",
+        "10.90.139.107",
+        "10.90.139.108",
+        "10.90.139.109",
+        "10.90.139.110",
+        "10.90.139.111",
+        "10.90.139.112",
+        "10.90.139.113",
+        "10.90.139.114",
+        "10.90.139.115",
+        "10.90.139.116",
+        "10.90.139.117",
+        "10.90.139.118",
+        "10.90.139.119",
+        "10.90.139.120",
+        "10.90.139.121",
+        "10.90.139.122",
+        "10.90.139.123",
+        "10.90.139.124",
+        "10.90.139.125"
+    ],
+    "latitude": 33.458,
+    "longitude": -97.129,
+    "nodes": [
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.97",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..Firewall 139",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.458,
+            "Longitude": -97.129
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.98",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..Router 139",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.1",
+            "ipAddress": "10.90.139.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW.OT.Switch 277",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.99",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW.Corporate.Switch 278",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.3",
+            "ipAddress": "10.90.139.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.2",
+            "ipAddress": "10.90.139.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..RC 139",
+            "compromised": false,
+            "relayIPlist": [
+                "10.90.139.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.100",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..Host 277",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.100",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..Host 278",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.100",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..LocalDatabase 277",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.100",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..LocalWebServer 278",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.101",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..hmi 277",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.100",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..outstation 278",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 15.VALLEY VIEW..RC 139",
+            "destination": "Utility 15.VALLEY VIEW..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 15.VALLEY VIEW..Router 139",
+            "destination": "Utility 15.VALLEY VIEW..Firewall 139",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 15.VALLEY VIEW..Firewall 139",
+            "destination": "Utility 15.VALLEY VIEW.OT.Switch 277",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 15.VALLEY VIEW.OT.Switch 277",
+            "destination": "Utility 15.VALLEY VIEW..RC 139",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 15.VALLEY VIEW..Firewall 139",
+            "destination": "Utility 15.VALLEY VIEW.Corporate.Switch 278",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 15.VALLEY VIEW.Corporate.Switch 278",
+            "destination": "Utility 15.VALLEY VIEW..Host 277",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 15.VALLEY VIEW.Corporate.Switch 278",
+            "destination": "Utility 15.VALLEY VIEW..Host 278",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 15.VALLEY VIEW.Corporate.Switch 278",
+            "destination": "Utility 15.VALLEY VIEW..LocalDatabase 277",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 15.VALLEY VIEW.Corporate.Switch 278",
+            "destination": "Utility 15.VALLEY VIEW..LocalWebServer 278",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.1",
+            "ipAddress": "10.90.139.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW.OT.Switch 277",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.2",
+            "ipAddress": "10.90.139.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..RC 139",
+            "compromised": false,
+            "relayIPlist": [
+                "10.90.139.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.97",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..Firewall 139",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.458,
+            "Longitude": -97.129
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.98",
+            "ipAddress": "10.90.139.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..Router 139",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.1",
+            "ipAddress": "10.90.139.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW.OT.Switch 277",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 15",
+            "adminIP": "10.90.139.2",
+            "ipAddress": "10.90.139.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "VALLEY VIEW",
+            "label": "Utility 15.VALLEY VIEW..RC 139",
+            "compromised": false,
+            "relayIPlist": [
+                "10.90.139.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

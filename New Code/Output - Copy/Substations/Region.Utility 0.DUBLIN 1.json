@@ -1,0 +1,592 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 0.DUBLIN 1",
+    "networkLan": "10.52.484.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "DUBLIN 1",
+    "substationNumber": 484,
+    "OTAddress": "10.52.484.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.484.1",
+        "10.52.484.2",
+        "10.52.484.3",
+        "10.52.484.4",
+        "10.52.484.5",
+        "10.52.484.6",
+        "10.52.484.7",
+        "10.52.484.8",
+        "10.52.484.9",
+        "10.52.484.10",
+        "10.52.484.11",
+        "10.52.484.12",
+        "10.52.484.13",
+        "10.52.484.14",
+        "10.52.484.15",
+        "10.52.484.16",
+        "10.52.484.17",
+        "10.52.484.18",
+        "10.52.484.19",
+        "10.52.484.20",
+        "10.52.484.21",
+        "10.52.484.22",
+        "10.52.484.23",
+        "10.52.484.24",
+        "10.52.484.25",
+        "10.52.484.26",
+        "10.52.484.27",
+        "10.52.484.28",
+        "10.52.484.29",
+        "10.52.484.30",
+        "10.52.484.31",
+        "10.52.484.32",
+        "10.52.484.33",
+        "10.52.484.34",
+        "10.52.484.35",
+        "10.52.484.36",
+        "10.52.484.37",
+        "10.52.484.38",
+        "10.52.484.39",
+        "10.52.484.40",
+        "10.52.484.41",
+        "10.52.484.42",
+        "10.52.484.43",
+        "10.52.484.44",
+        "10.52.484.45",
+        "10.52.484.46",
+        "10.52.484.47",
+        "10.52.484.48",
+        "10.52.484.49",
+        "10.52.484.50",
+        "10.52.484.51",
+        "10.52.484.52",
+        "10.52.484.53",
+        "10.52.484.54",
+        "10.52.484.55",
+        "10.52.484.56",
+        "10.52.484.57",
+        "10.52.484.58",
+        "10.52.484.59",
+        "10.52.484.60",
+        "10.52.484.61",
+        "10.52.484.62"
+    ],
+    "routeAddress": "10.52.484.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.484.65",
+        "10.52.484.66",
+        "10.52.484.67",
+        "10.52.484.68",
+        "10.52.484.69",
+        "10.52.484.70",
+        "10.52.484.71",
+        "10.52.484.72",
+        "10.52.484.73",
+        "10.52.484.74",
+        "10.52.484.75",
+        "10.52.484.76",
+        "10.52.484.77",
+        "10.52.484.78",
+        "10.52.484.79",
+        "10.52.484.80",
+        "10.52.484.81",
+        "10.52.484.82",
+        "10.52.484.83",
+        "10.52.484.84",
+        "10.52.484.85",
+        "10.52.484.86",
+        "10.52.484.87",
+        "10.52.484.88",
+        "10.52.484.89",
+        "10.52.484.90",
+        "10.52.484.91",
+        "10.52.484.92",
+        "10.52.484.93",
+        "10.52.484.94"
+    ],
+    "corporateAddress": "10.52.484.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.484.97",
+        "10.52.484.98",
+        "10.52.484.99",
+        "10.52.484.100",
+        "10.52.484.101",
+        "10.52.484.102",
+        "10.52.484.103",
+        "10.52.484.104",
+        "10.52.484.105",
+        "10.52.484.106",
+        "10.52.484.107",
+        "10.52.484.108",
+        "10.52.484.109",
+        "10.52.484.110",
+        "10.52.484.111",
+        "10.52.484.112",
+        "10.52.484.113",
+        "10.52.484.114",
+        "10.52.484.115",
+        "10.52.484.116",
+        "10.52.484.117",
+        "10.52.484.118",
+        "10.52.484.119",
+        "10.52.484.120",
+        "10.52.484.121",
+        "10.52.484.122",
+        "10.52.484.123",
+        "10.52.484.124",
+        "10.52.484.125"
+    ],
+    "latitude": 32.339,
+    "longitude": -98.476,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.97",
+            "ipAddress": "10.52.484.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..Firewall 484",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.339,
+            "Longitude": -98.476
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.98",
+            "ipAddress": "10.52.484.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..Router 484",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.1",
+            "ipAddress": "10.52.484.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1.OT.Switch 967",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.99",
+            "ipAddress": "10.52.484.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1.Corporate.Switch 968",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.3",
+            "ipAddress": "10.52.484.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.4",
+            "ipAddress": "10.52.484.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.2",
+            "ipAddress": "10.52.484.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..RC 484",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.484.3",
+                "10.52.484.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.100",
+            "ipAddress": "10.52.484.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..Host 967",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.100",
+            "ipAddress": "10.52.484.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..Host 968",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.100",
+            "ipAddress": "10.52.484.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..LocalDatabase 967",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.100",
+            "ipAddress": "10.52.484.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..LocalWebServer 968",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.DUBLIN 1..RC 484",
+            "destination": "Utility 0.DUBLIN 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUBLIN 1..RC 484",
+            "destination": "Utility 0.DUBLIN 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUBLIN 1..Router 484",
+            "destination": "Utility 0.DUBLIN 1..Firewall 484",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUBLIN 1..Firewall 484",
+            "destination": "Utility 0.DUBLIN 1.OT.Switch 967",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUBLIN 1.OT.Switch 967",
+            "destination": "Utility 0.DUBLIN 1..RC 484",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUBLIN 1..Firewall 484",
+            "destination": "Utility 0.DUBLIN 1.Corporate.Switch 968",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUBLIN 1.Corporate.Switch 968",
+            "destination": "Utility 0.DUBLIN 1..Host 967",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUBLIN 1.Corporate.Switch 968",
+            "destination": "Utility 0.DUBLIN 1..Host 968",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUBLIN 1.Corporate.Switch 968",
+            "destination": "Utility 0.DUBLIN 1..LocalDatabase 967",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.DUBLIN 1.Corporate.Switch 968",
+            "destination": "Utility 0.DUBLIN 1..LocalWebServer 968",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.1",
+            "ipAddress": "10.52.484.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1.OT.Switch 967",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.2",
+            "ipAddress": "10.52.484.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..RC 484",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.484.3",
+                "10.52.484.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.97",
+            "ipAddress": "10.52.484.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..Firewall 484",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 32.339,
+            "Longitude": -98.476
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.98",
+            "ipAddress": "10.52.484.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..Router 484",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.1",
+            "ipAddress": "10.52.484.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1.OT.Switch 967",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.484.2",
+            "ipAddress": "10.52.484.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "DUBLIN 1",
+            "label": "Utility 0.DUBLIN 1..RC 484",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.484.3",
+                "10.52.484.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 45.0,
+    "genmvar": -8.64,
+    "connecting_TS_num": 702
+}

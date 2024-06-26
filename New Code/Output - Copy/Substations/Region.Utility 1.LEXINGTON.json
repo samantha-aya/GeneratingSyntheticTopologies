@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 1.LEXINGTON",
+    "networkLan": "10.58.836.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 1",
+    "utility_id": 58,
+    "substation": "LEXINGTON",
+    "substationNumber": 836,
+    "OTAddress": "10.58.836.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.58.836.1",
+        "10.58.836.2",
+        "10.58.836.3",
+        "10.58.836.4",
+        "10.58.836.5",
+        "10.58.836.6",
+        "10.58.836.7",
+        "10.58.836.8",
+        "10.58.836.9",
+        "10.58.836.10",
+        "10.58.836.11",
+        "10.58.836.12",
+        "10.58.836.13",
+        "10.58.836.14",
+        "10.58.836.15",
+        "10.58.836.16",
+        "10.58.836.17",
+        "10.58.836.18",
+        "10.58.836.19",
+        "10.58.836.20",
+        "10.58.836.21",
+        "10.58.836.22",
+        "10.58.836.23",
+        "10.58.836.24",
+        "10.58.836.25",
+        "10.58.836.26",
+        "10.58.836.27",
+        "10.58.836.28",
+        "10.58.836.29",
+        "10.58.836.30",
+        "10.58.836.31",
+        "10.58.836.32",
+        "10.58.836.33",
+        "10.58.836.34",
+        "10.58.836.35",
+        "10.58.836.36",
+        "10.58.836.37",
+        "10.58.836.38",
+        "10.58.836.39",
+        "10.58.836.40",
+        "10.58.836.41",
+        "10.58.836.42",
+        "10.58.836.43",
+        "10.58.836.44",
+        "10.58.836.45",
+        "10.58.836.46",
+        "10.58.836.47",
+        "10.58.836.48",
+        "10.58.836.49",
+        "10.58.836.50",
+        "10.58.836.51",
+        "10.58.836.52",
+        "10.58.836.53",
+        "10.58.836.54",
+        "10.58.836.55",
+        "10.58.836.56",
+        "10.58.836.57",
+        "10.58.836.58",
+        "10.58.836.59",
+        "10.58.836.60",
+        "10.58.836.61",
+        "10.58.836.62"
+    ],
+    "routeAddress": "10.58.836.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.58.836.65",
+        "10.58.836.66",
+        "10.58.836.67",
+        "10.58.836.68",
+        "10.58.836.69",
+        "10.58.836.70",
+        "10.58.836.71",
+        "10.58.836.72",
+        "10.58.836.73",
+        "10.58.836.74",
+        "10.58.836.75",
+        "10.58.836.76",
+        "10.58.836.77",
+        "10.58.836.78",
+        "10.58.836.79",
+        "10.58.836.80",
+        "10.58.836.81",
+        "10.58.836.82",
+        "10.58.836.83",
+        "10.58.836.84",
+        "10.58.836.85",
+        "10.58.836.86",
+        "10.58.836.87",
+        "10.58.836.88",
+        "10.58.836.89",
+        "10.58.836.90",
+        "10.58.836.91",
+        "10.58.836.92",
+        "10.58.836.93",
+        "10.58.836.94"
+    ],
+    "corporateAddress": "10.58.836.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.58.836.97",
+        "10.58.836.98",
+        "10.58.836.99",
+        "10.58.836.100",
+        "10.58.836.101",
+        "10.58.836.102",
+        "10.58.836.103",
+        "10.58.836.104",
+        "10.58.836.105",
+        "10.58.836.106",
+        "10.58.836.107",
+        "10.58.836.108",
+        "10.58.836.109",
+        "10.58.836.110",
+        "10.58.836.111",
+        "10.58.836.112",
+        "10.58.836.113",
+        "10.58.836.114",
+        "10.58.836.115",
+        "10.58.836.116",
+        "10.58.836.117",
+        "10.58.836.118",
+        "10.58.836.119",
+        "10.58.836.120",
+        "10.58.836.121",
+        "10.58.836.122",
+        "10.58.836.123",
+        "10.58.836.124",
+        "10.58.836.125"
+    ],
+    "latitude": 30.355,
+    "longitude": -96.84,
+    "nodes": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.97",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..Firewall 836",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.355,
+            "Longitude": -96.84
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.98",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..Router 836",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.1",
+            "ipAddress": "10.58.836.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON.OT.Switch 1671",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.99",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON.Corporate.Switch 1672",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.3",
+            "ipAddress": "10.58.836.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.2",
+            "ipAddress": "10.58.836.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..RC 836",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.836.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.100",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..Host 1671",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.100",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..Host 1672",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.100",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..LocalDatabase 1671",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.100",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..LocalWebServer 1672",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.101",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..hmi 1671",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.100",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..outstation 1672",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 1.LEXINGTON..RC 836",
+            "destination": "Utility 1.LEXINGTON..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LEXINGTON..Router 836",
+            "destination": "Utility 1.LEXINGTON..Firewall 836",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LEXINGTON..Firewall 836",
+            "destination": "Utility 1.LEXINGTON.OT.Switch 1671",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LEXINGTON.OT.Switch 1671",
+            "destination": "Utility 1.LEXINGTON..RC 836",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LEXINGTON..Firewall 836",
+            "destination": "Utility 1.LEXINGTON.Corporate.Switch 1672",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LEXINGTON.Corporate.Switch 1672",
+            "destination": "Utility 1.LEXINGTON..Host 1671",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LEXINGTON.Corporate.Switch 1672",
+            "destination": "Utility 1.LEXINGTON..Host 1672",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LEXINGTON.Corporate.Switch 1672",
+            "destination": "Utility 1.LEXINGTON..LocalDatabase 1671",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 1.LEXINGTON.Corporate.Switch 1672",
+            "destination": "Utility 1.LEXINGTON..LocalWebServer 1672",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.1",
+            "ipAddress": "10.58.836.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON.OT.Switch 1671",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.2",
+            "ipAddress": "10.58.836.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..RC 836",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.836.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.97",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..Firewall 836",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 30.355,
+            "Longitude": -96.84
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.98",
+            "ipAddress": "10.58.836.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..Router 836",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.1",
+            "ipAddress": "10.58.836.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON.OT.Switch 1671",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 1",
+            "adminIP": "10.58.836.2",
+            "ipAddress": "10.58.836.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "LEXINGTON",
+            "label": "Utility 1.LEXINGTON..RC 836",
+            "compromised": false,
+            "relayIPlist": [
+                "10.58.836.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 0.SEGUIN 2",
+    "networkLan": "10.164.871.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 164,
+    "substation": "SEGUIN 2",
+    "substationNumber": 871,
+    "OTAddress": "10.164.871.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.164.871.1",
+        "10.164.871.2",
+        "10.164.871.3",
+        "10.164.871.4",
+        "10.164.871.5",
+        "10.164.871.6",
+        "10.164.871.7",
+        "10.164.871.8",
+        "10.164.871.9",
+        "10.164.871.10",
+        "10.164.871.11",
+        "10.164.871.12",
+        "10.164.871.13",
+        "10.164.871.14",
+        "10.164.871.15",
+        "10.164.871.16",
+        "10.164.871.17",
+        "10.164.871.18",
+        "10.164.871.19",
+        "10.164.871.20",
+        "10.164.871.21",
+        "10.164.871.22",
+        "10.164.871.23",
+        "10.164.871.24",
+        "10.164.871.25",
+        "10.164.871.26",
+        "10.164.871.27",
+        "10.164.871.28",
+        "10.164.871.29",
+        "10.164.871.30",
+        "10.164.871.31",
+        "10.164.871.32",
+        "10.164.871.33",
+        "10.164.871.34",
+        "10.164.871.35",
+        "10.164.871.36",
+        "10.164.871.37",
+        "10.164.871.38",
+        "10.164.871.39",
+        "10.164.871.40",
+        "10.164.871.41",
+        "10.164.871.42",
+        "10.164.871.43",
+        "10.164.871.44",
+        "10.164.871.45",
+        "10.164.871.46",
+        "10.164.871.47",
+        "10.164.871.48",
+        "10.164.871.49",
+        "10.164.871.50",
+        "10.164.871.51",
+        "10.164.871.52",
+        "10.164.871.53",
+        "10.164.871.54",
+        "10.164.871.55",
+        "10.164.871.56",
+        "10.164.871.57",
+        "10.164.871.58",
+        "10.164.871.59",
+        "10.164.871.60",
+        "10.164.871.61",
+        "10.164.871.62"
+    ],
+    "routeAddress": "10.164.871.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.164.871.65",
+        "10.164.871.66",
+        "10.164.871.67",
+        "10.164.871.68",
+        "10.164.871.69",
+        "10.164.871.70",
+        "10.164.871.71",
+        "10.164.871.72",
+        "10.164.871.73",
+        "10.164.871.74",
+        "10.164.871.75",
+        "10.164.871.76",
+        "10.164.871.77",
+        "10.164.871.78",
+        "10.164.871.79",
+        "10.164.871.80",
+        "10.164.871.81",
+        "10.164.871.82",
+        "10.164.871.83",
+        "10.164.871.84",
+        "10.164.871.85",
+        "10.164.871.86",
+        "10.164.871.87",
+        "10.164.871.88",
+        "10.164.871.89",
+        "10.164.871.90",
+        "10.164.871.91",
+        "10.164.871.92",
+        "10.164.871.93",
+        "10.164.871.94"
+    ],
+    "corporateAddress": "10.164.871.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.164.871.97",
+        "10.164.871.98",
+        "10.164.871.99",
+        "10.164.871.100",
+        "10.164.871.101",
+        "10.164.871.102",
+        "10.164.871.103",
+        "10.164.871.104",
+        "10.164.871.105",
+        "10.164.871.106",
+        "10.164.871.107",
+        "10.164.871.108",
+        "10.164.871.109",
+        "10.164.871.110",
+        "10.164.871.111",
+        "10.164.871.112",
+        "10.164.871.113",
+        "10.164.871.114",
+        "10.164.871.115",
+        "10.164.871.116",
+        "10.164.871.117",
+        "10.164.871.118",
+        "10.164.871.119",
+        "10.164.871.120",
+        "10.164.871.121",
+        "10.164.871.122",
+        "10.164.871.123",
+        "10.164.871.124",
+        "10.164.871.125"
+    ],
+    "latitude": 29.543,
+    "longitude": -97.937,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.97",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..Firewall 871",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.543,
+            "Longitude": -97.937
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.98",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..Router 871",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.1",
+            "ipAddress": "10.164.871.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2.OT.Switch 1741",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.99",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2.Corporate.Switch 1742",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.3",
+            "ipAddress": "10.164.871.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.4",
+            "ipAddress": "10.164.871.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.2",
+            "ipAddress": "10.164.871.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..RC 871",
+            "compromised": false,
+            "relayIPlist": [
+                "10.164.871.3",
+                "10.164.871.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.100",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..Host 1741",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.100",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..Host 1742",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.100",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..LocalDatabase 1741",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.100",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..LocalWebServer 1742",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.101",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..hmi 1741",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.100",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..outstation 1742",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.SEGUIN 2..RC 871",
+            "destination": "Utility 0.SEGUIN 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEGUIN 2..RC 871",
+            "destination": "Utility 0.SEGUIN 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEGUIN 2..Router 871",
+            "destination": "Utility 0.SEGUIN 2..Firewall 871",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEGUIN 2..Firewall 871",
+            "destination": "Utility 0.SEGUIN 2.OT.Switch 1741",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEGUIN 2.OT.Switch 1741",
+            "destination": "Utility 0.SEGUIN 2..RC 871",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEGUIN 2..Firewall 871",
+            "destination": "Utility 0.SEGUIN 2.Corporate.Switch 1742",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEGUIN 2.Corporate.Switch 1742",
+            "destination": "Utility 0.SEGUIN 2..Host 1741",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEGUIN 2.Corporate.Switch 1742",
+            "destination": "Utility 0.SEGUIN 2..Host 1742",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEGUIN 2.Corporate.Switch 1742",
+            "destination": "Utility 0.SEGUIN 2..LocalDatabase 1741",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.SEGUIN 2.Corporate.Switch 1742",
+            "destination": "Utility 0.SEGUIN 2..LocalWebServer 1742",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.1",
+            "ipAddress": "10.164.871.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2.OT.Switch 1741",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.2",
+            "ipAddress": "10.164.871.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..RC 871",
+            "compromised": false,
+            "relayIPlist": [
+                "10.164.871.3",
+                "10.164.871.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.97",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..Firewall 871",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 29.543,
+            "Longitude": -97.937
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.98",
+            "ipAddress": "10.164.871.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..Router 871",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.1",
+            "ipAddress": "10.164.871.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2.OT.Switch 1741",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.164.871.2",
+            "ipAddress": "10.164.871.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEGUIN 2",
+            "label": "Utility 0.SEGUIN 2..RC 871",
+            "compromised": false,
+            "relayIPlist": [
+                "10.164.871.3",
+                "10.164.871.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

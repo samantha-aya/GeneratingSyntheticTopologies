@@ -1,0 +1,605 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 104.GAINESVILLE",
+    "networkLan": "10.77.104.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 104",
+    "utility_id": 77,
+    "substation": "GAINESVILLE",
+    "substationNumber": 104,
+    "OTAddress": "10.77.104.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.77.104.1",
+        "10.77.104.2",
+        "10.77.104.3",
+        "10.77.104.4",
+        "10.77.104.5",
+        "10.77.104.6",
+        "10.77.104.7",
+        "10.77.104.8",
+        "10.77.104.9",
+        "10.77.104.10",
+        "10.77.104.11",
+        "10.77.104.12",
+        "10.77.104.13",
+        "10.77.104.14",
+        "10.77.104.15",
+        "10.77.104.16",
+        "10.77.104.17",
+        "10.77.104.18",
+        "10.77.104.19",
+        "10.77.104.20",
+        "10.77.104.21",
+        "10.77.104.22",
+        "10.77.104.23",
+        "10.77.104.24",
+        "10.77.104.25",
+        "10.77.104.26",
+        "10.77.104.27",
+        "10.77.104.28",
+        "10.77.104.29",
+        "10.77.104.30",
+        "10.77.104.31",
+        "10.77.104.32",
+        "10.77.104.33",
+        "10.77.104.34",
+        "10.77.104.35",
+        "10.77.104.36",
+        "10.77.104.37",
+        "10.77.104.38",
+        "10.77.104.39",
+        "10.77.104.40",
+        "10.77.104.41",
+        "10.77.104.42",
+        "10.77.104.43",
+        "10.77.104.44",
+        "10.77.104.45",
+        "10.77.104.46",
+        "10.77.104.47",
+        "10.77.104.48",
+        "10.77.104.49",
+        "10.77.104.50",
+        "10.77.104.51",
+        "10.77.104.52",
+        "10.77.104.53",
+        "10.77.104.54",
+        "10.77.104.55",
+        "10.77.104.56",
+        "10.77.104.57",
+        "10.77.104.58",
+        "10.77.104.59",
+        "10.77.104.60",
+        "10.77.104.61",
+        "10.77.104.62"
+    ],
+    "routeAddress": "10.77.104.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.77.104.65",
+        "10.77.104.66",
+        "10.77.104.67",
+        "10.77.104.68",
+        "10.77.104.69",
+        "10.77.104.70",
+        "10.77.104.71",
+        "10.77.104.72",
+        "10.77.104.73",
+        "10.77.104.74",
+        "10.77.104.75",
+        "10.77.104.76",
+        "10.77.104.77",
+        "10.77.104.78",
+        "10.77.104.79",
+        "10.77.104.80",
+        "10.77.104.81",
+        "10.77.104.82",
+        "10.77.104.83",
+        "10.77.104.84",
+        "10.77.104.85",
+        "10.77.104.86",
+        "10.77.104.87",
+        "10.77.104.88",
+        "10.77.104.89",
+        "10.77.104.90",
+        "10.77.104.91",
+        "10.77.104.92",
+        "10.77.104.93",
+        "10.77.104.94"
+    ],
+    "corporateAddress": "10.77.104.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.77.104.97",
+        "10.77.104.98",
+        "10.77.104.99",
+        "10.77.104.100",
+        "10.77.104.101",
+        "10.77.104.102",
+        "10.77.104.103",
+        "10.77.104.104",
+        "10.77.104.105",
+        "10.77.104.106",
+        "10.77.104.107",
+        "10.77.104.108",
+        "10.77.104.109",
+        "10.77.104.110",
+        "10.77.104.111",
+        "10.77.104.112",
+        "10.77.104.113",
+        "10.77.104.114",
+        "10.77.104.115",
+        "10.77.104.116",
+        "10.77.104.117",
+        "10.77.104.118",
+        "10.77.104.119",
+        "10.77.104.120",
+        "10.77.104.121",
+        "10.77.104.122",
+        "10.77.104.123",
+        "10.77.104.124",
+        "10.77.104.125"
+    ],
+    "latitude": 33.662,
+    "longitude": -97.176,
+    "nodes": [
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.97",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..Firewall 104",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.662,
+            "Longitude": -97.176
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.98",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..Router 104",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.1",
+            "ipAddress": "10.77.104.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE.OT.Switch 207",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.99",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE.Corporate.Switch 208",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.3",
+            "ipAddress": "10.77.104.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.2",
+            "ipAddress": "10.77.104.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..RC 104",
+            "compromised": false,
+            "relayIPlist": [
+                "10.77.104.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.100",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..Host 207",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.100",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..Host 208",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.100",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..LocalDatabase 207",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.100",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..LocalWebServer 208",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.101",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..hmi 207",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.100",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..outstation 208",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 104.GAINESVILLE..RC 104",
+            "destination": "Utility 104.GAINESVILLE..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 104.GAINESVILLE..Router 104",
+            "destination": "Utility 104.GAINESVILLE..Firewall 104",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 104.GAINESVILLE..Firewall 104",
+            "destination": "Utility 104.GAINESVILLE.OT.Switch 207",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 104.GAINESVILLE.OT.Switch 207",
+            "destination": "Utility 104.GAINESVILLE..RC 104",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 104.GAINESVILLE..Firewall 104",
+            "destination": "Utility 104.GAINESVILLE.Corporate.Switch 208",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 104.GAINESVILLE.Corporate.Switch 208",
+            "destination": "Utility 104.GAINESVILLE..Host 207",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 104.GAINESVILLE.Corporate.Switch 208",
+            "destination": "Utility 104.GAINESVILLE..Host 208",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 104.GAINESVILLE.Corporate.Switch 208",
+            "destination": "Utility 104.GAINESVILLE..LocalDatabase 207",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 104.GAINESVILLE.Corporate.Switch 208",
+            "destination": "Utility 104.GAINESVILLE..LocalWebServer 208",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.1",
+            "ipAddress": "10.77.104.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE.OT.Switch 207",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.2",
+            "ipAddress": "10.77.104.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..RC 104",
+            "compromised": false,
+            "relayIPlist": [
+                "10.77.104.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.97",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..Firewall 104",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.662,
+            "Longitude": -97.176
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.98",
+            "ipAddress": "10.77.104.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..Router 104",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.1",
+            "ipAddress": "10.77.104.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE.OT.Switch 207",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 104",
+            "adminIP": "10.77.104.2",
+            "ipAddress": "10.77.104.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "GAINESVILLE",
+            "label": "Utility 104.GAINESVILLE..RC 104",
+            "compromised": false,
+            "relayIPlist": [
+                "10.77.104.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

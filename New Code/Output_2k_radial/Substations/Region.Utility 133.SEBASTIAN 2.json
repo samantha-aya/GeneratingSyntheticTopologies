@@ -1,0 +1,634 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 133.SEBASTIAN 2",
+    "networkLan": "10.121.270.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 133",
+    "utility_id": 121,
+    "substation": "SEBASTIAN 2",
+    "substationNumber": 270,
+    "OTAddress": "10.121.270.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.121.270.1",
+        "10.121.270.2",
+        "10.121.270.3",
+        "10.121.270.4",
+        "10.121.270.5",
+        "10.121.270.6",
+        "10.121.270.7",
+        "10.121.270.8",
+        "10.121.270.9",
+        "10.121.270.10",
+        "10.121.270.11",
+        "10.121.270.12",
+        "10.121.270.13",
+        "10.121.270.14",
+        "10.121.270.15",
+        "10.121.270.16",
+        "10.121.270.17",
+        "10.121.270.18",
+        "10.121.270.19",
+        "10.121.270.20",
+        "10.121.270.21",
+        "10.121.270.22",
+        "10.121.270.23",
+        "10.121.270.24",
+        "10.121.270.25",
+        "10.121.270.26",
+        "10.121.270.27",
+        "10.121.270.28",
+        "10.121.270.29",
+        "10.121.270.30",
+        "10.121.270.31",
+        "10.121.270.32",
+        "10.121.270.33",
+        "10.121.270.34",
+        "10.121.270.35",
+        "10.121.270.36",
+        "10.121.270.37",
+        "10.121.270.38",
+        "10.121.270.39",
+        "10.121.270.40",
+        "10.121.270.41",
+        "10.121.270.42",
+        "10.121.270.43",
+        "10.121.270.44",
+        "10.121.270.45",
+        "10.121.270.46",
+        "10.121.270.47",
+        "10.121.270.48",
+        "10.121.270.49",
+        "10.121.270.50",
+        "10.121.270.51",
+        "10.121.270.52",
+        "10.121.270.53",
+        "10.121.270.54",
+        "10.121.270.55",
+        "10.121.270.56",
+        "10.121.270.57",
+        "10.121.270.58",
+        "10.121.270.59",
+        "10.121.270.60",
+        "10.121.270.61",
+        "10.121.270.62"
+    ],
+    "routeAddress": "10.121.270.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.121.270.65",
+        "10.121.270.66",
+        "10.121.270.67",
+        "10.121.270.68",
+        "10.121.270.69",
+        "10.121.270.70",
+        "10.121.270.71",
+        "10.121.270.72",
+        "10.121.270.73",
+        "10.121.270.74",
+        "10.121.270.75",
+        "10.121.270.76",
+        "10.121.270.77",
+        "10.121.270.78",
+        "10.121.270.79",
+        "10.121.270.80",
+        "10.121.270.81",
+        "10.121.270.82",
+        "10.121.270.83",
+        "10.121.270.84",
+        "10.121.270.85",
+        "10.121.270.86",
+        "10.121.270.87",
+        "10.121.270.88",
+        "10.121.270.89",
+        "10.121.270.90",
+        "10.121.270.91",
+        "10.121.270.92",
+        "10.121.270.93",
+        "10.121.270.94"
+    ],
+    "corporateAddress": "10.121.270.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.121.270.97",
+        "10.121.270.98",
+        "10.121.270.99",
+        "10.121.270.100",
+        "10.121.270.101",
+        "10.121.270.102",
+        "10.121.270.103",
+        "10.121.270.104",
+        "10.121.270.105",
+        "10.121.270.106",
+        "10.121.270.107",
+        "10.121.270.108",
+        "10.121.270.109",
+        "10.121.270.110",
+        "10.121.270.111",
+        "10.121.270.112",
+        "10.121.270.113",
+        "10.121.270.114",
+        "10.121.270.115",
+        "10.121.270.116",
+        "10.121.270.117",
+        "10.121.270.118",
+        "10.121.270.119",
+        "10.121.270.120",
+        "10.121.270.121",
+        "10.121.270.122",
+        "10.121.270.123",
+        "10.121.270.124",
+        "10.121.270.125"
+    ],
+    "latitude": 26.331,
+    "longitude": -97.586,
+    "nodes": [
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.97",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..Firewall 270",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.331,
+            "Longitude": -97.586
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.98",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..Router 270",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.1",
+            "ipAddress": "10.121.270.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2.OT.Switch 539",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.99",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2.Corporate.Switch 540",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.3",
+            "ipAddress": "10.121.270.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.4",
+            "ipAddress": "10.121.270.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.2",
+            "ipAddress": "10.121.270.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..RC 270",
+            "compromised": false,
+            "relayIPlist": [
+                "10.121.270.3",
+                "10.121.270.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.100",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..Host 539",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.100",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..Host 540",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.100",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..LocalDatabase 539",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.100",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..LocalWebServer 540",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.101",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..hmi 539",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.100",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..outstation 540",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 133.SEBASTIAN 2..RC 270",
+            "destination": "Utility 133.SEBASTIAN 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 133.SEBASTIAN 2..RC 270",
+            "destination": "Utility 133.SEBASTIAN 2..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 133.SEBASTIAN 2..Router 270",
+            "destination": "Utility 133.SEBASTIAN 2..Firewall 270",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 133.SEBASTIAN 2..Firewall 270",
+            "destination": "Utility 133.SEBASTIAN 2.OT.Switch 539",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 133.SEBASTIAN 2.OT.Switch 539",
+            "destination": "Utility 133.SEBASTIAN 2..RC 270",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 133.SEBASTIAN 2..Firewall 270",
+            "destination": "Utility 133.SEBASTIAN 2.Corporate.Switch 540",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 133.SEBASTIAN 2.Corporate.Switch 540",
+            "destination": "Utility 133.SEBASTIAN 2..Host 539",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 133.SEBASTIAN 2.Corporate.Switch 540",
+            "destination": "Utility 133.SEBASTIAN 2..Host 540",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 133.SEBASTIAN 2.Corporate.Switch 540",
+            "destination": "Utility 133.SEBASTIAN 2..LocalDatabase 539",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 133.SEBASTIAN 2.Corporate.Switch 540",
+            "destination": "Utility 133.SEBASTIAN 2..LocalWebServer 540",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.1",
+            "ipAddress": "10.121.270.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2.OT.Switch 539",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.2",
+            "ipAddress": "10.121.270.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..RC 270",
+            "compromised": false,
+            "relayIPlist": [
+                "10.121.270.3",
+                "10.121.270.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.97",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..Firewall 270",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 26.331,
+            "Longitude": -97.586
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.98",
+            "ipAddress": "10.121.270.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..Router 270",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.1",
+            "ipAddress": "10.121.270.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2.OT.Switch 539",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 133",
+            "adminIP": "10.121.270.2",
+            "ipAddress": "10.121.270.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "SEBASTIAN 2",
+            "label": "Utility 133.SEBASTIAN 2..RC 270",
+            "compromised": false,
+            "relayIPlist": [
+                "10.121.270.3",
+                "10.121.270.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "generation",
+    "genmw": 150.0,
+    "genmvar": -14.05,
+    "connecting_TS_num": 361
+}

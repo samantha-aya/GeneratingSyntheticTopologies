@@ -1,0 +1,563 @@
+{
+    "relayCounter": 1,
+    "label": "Region.Utility 0.FRISCO 1",
+    "networkLan": "10.52.540.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 0",
+    "utility_id": 52,
+    "substation": "FRISCO 1",
+    "substationNumber": 540,
+    "OTAddress": "10.52.540.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.52.540.1",
+        "10.52.540.2",
+        "10.52.540.3",
+        "10.52.540.4",
+        "10.52.540.5",
+        "10.52.540.6",
+        "10.52.540.7",
+        "10.52.540.8",
+        "10.52.540.9",
+        "10.52.540.10",
+        "10.52.540.11",
+        "10.52.540.12",
+        "10.52.540.13",
+        "10.52.540.14",
+        "10.52.540.15",
+        "10.52.540.16",
+        "10.52.540.17",
+        "10.52.540.18",
+        "10.52.540.19",
+        "10.52.540.20",
+        "10.52.540.21",
+        "10.52.540.22",
+        "10.52.540.23",
+        "10.52.540.24",
+        "10.52.540.25",
+        "10.52.540.26",
+        "10.52.540.27",
+        "10.52.540.28",
+        "10.52.540.29",
+        "10.52.540.30",
+        "10.52.540.31",
+        "10.52.540.32",
+        "10.52.540.33",
+        "10.52.540.34",
+        "10.52.540.35",
+        "10.52.540.36",
+        "10.52.540.37",
+        "10.52.540.38",
+        "10.52.540.39",
+        "10.52.540.40",
+        "10.52.540.41",
+        "10.52.540.42",
+        "10.52.540.43",
+        "10.52.540.44",
+        "10.52.540.45",
+        "10.52.540.46",
+        "10.52.540.47",
+        "10.52.540.48",
+        "10.52.540.49",
+        "10.52.540.50",
+        "10.52.540.51",
+        "10.52.540.52",
+        "10.52.540.53",
+        "10.52.540.54",
+        "10.52.540.55",
+        "10.52.540.56",
+        "10.52.540.57",
+        "10.52.540.58",
+        "10.52.540.59",
+        "10.52.540.60",
+        "10.52.540.61",
+        "10.52.540.62"
+    ],
+    "routeAddress": "10.52.540.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.52.540.65",
+        "10.52.540.66",
+        "10.52.540.67",
+        "10.52.540.68",
+        "10.52.540.69",
+        "10.52.540.70",
+        "10.52.540.71",
+        "10.52.540.72",
+        "10.52.540.73",
+        "10.52.540.74",
+        "10.52.540.75",
+        "10.52.540.76",
+        "10.52.540.77",
+        "10.52.540.78",
+        "10.52.540.79",
+        "10.52.540.80",
+        "10.52.540.81",
+        "10.52.540.82",
+        "10.52.540.83",
+        "10.52.540.84",
+        "10.52.540.85",
+        "10.52.540.86",
+        "10.52.540.87",
+        "10.52.540.88",
+        "10.52.540.89",
+        "10.52.540.90",
+        "10.52.540.91",
+        "10.52.540.92",
+        "10.52.540.93",
+        "10.52.540.94"
+    ],
+    "corporateAddress": "10.52.540.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.52.540.97",
+        "10.52.540.98",
+        "10.52.540.99",
+        "10.52.540.100",
+        "10.52.540.101",
+        "10.52.540.102",
+        "10.52.540.103",
+        "10.52.540.104",
+        "10.52.540.105",
+        "10.52.540.106",
+        "10.52.540.107",
+        "10.52.540.108",
+        "10.52.540.109",
+        "10.52.540.110",
+        "10.52.540.111",
+        "10.52.540.112",
+        "10.52.540.113",
+        "10.52.540.114",
+        "10.52.540.115",
+        "10.52.540.116",
+        "10.52.540.117",
+        "10.52.540.118",
+        "10.52.540.119",
+        "10.52.540.120",
+        "10.52.540.121",
+        "10.52.540.122",
+        "10.52.540.123",
+        "10.52.540.124",
+        "10.52.540.125"
+    ],
+    "latitude": 33.163,
+    "longitude": -96.79,
+    "nodes": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.97",
+            "ipAddress": "10.52.540.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..Firewall 540",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.163,
+            "Longitude": -96.79
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.98",
+            "ipAddress": "10.52.540.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..Router 540",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.1",
+            "ipAddress": "10.52.540.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1.OT.Switch 1079",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.99",
+            "ipAddress": "10.52.540.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1.Corporate.Switch 1080",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.3",
+            "ipAddress": "10.52.540.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.2",
+            "ipAddress": "10.52.540.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..RC 540",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.540.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.100",
+            "ipAddress": "10.52.540.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..Host 1079",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.100",
+            "ipAddress": "10.52.540.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..Host 1080",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.100",
+            "ipAddress": "10.52.540.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..LocalDatabase 1079",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.100",
+            "ipAddress": "10.52.540.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..LocalWebServer 1080",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 0.FRISCO 1..RC 540",
+            "destination": "Utility 0.FRISCO 1..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FRISCO 1..Router 540",
+            "destination": "Utility 0.FRISCO 1..Firewall 540",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FRISCO 1..Firewall 540",
+            "destination": "Utility 0.FRISCO 1.OT.Switch 1079",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FRISCO 1.OT.Switch 1079",
+            "destination": "Utility 0.FRISCO 1..RC 540",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FRISCO 1..Firewall 540",
+            "destination": "Utility 0.FRISCO 1.Corporate.Switch 1080",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FRISCO 1.Corporate.Switch 1080",
+            "destination": "Utility 0.FRISCO 1..Host 1079",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FRISCO 1.Corporate.Switch 1080",
+            "destination": "Utility 0.FRISCO 1..Host 1080",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FRISCO 1.Corporate.Switch 1080",
+            "destination": "Utility 0.FRISCO 1..LocalDatabase 1079",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 0.FRISCO 1.Corporate.Switch 1080",
+            "destination": "Utility 0.FRISCO 1..LocalWebServer 1080",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.1",
+            "ipAddress": "10.52.540.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1.OT.Switch 1079",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.2",
+            "ipAddress": "10.52.540.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..RC 540",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.540.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.97",
+            "ipAddress": "10.52.540.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..Firewall 540",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 33.163,
+            "Longitude": -96.79
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.98",
+            "ipAddress": "10.52.540.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..Router 540",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.1",
+            "ipAddress": "10.52.540.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1.OT.Switch 1079",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 0",
+            "adminIP": "10.52.540.2",
+            "ipAddress": "10.52.540.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "FRISCO 1",
+            "label": "Utility 0.FRISCO 1..RC 540",
+            "compromised": false,
+            "relayIPlist": [
+                "10.52.540.3"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}

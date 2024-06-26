@@ -1,0 +1,631 @@
+{
+    "relayCounter": 2,
+    "label": "Region.Utility 123.MARLIN",
+    "networkLan": "10.159.444.0",
+    "supernetMask": "255.255.255.128",
+    "utility": "Utility 123",
+    "utility_id": 159,
+    "substation": "MARLIN",
+    "substationNumber": 444,
+    "OTAddress": "10.159.444.0",
+    "OTSubnetMask": "255.255.255.192",
+    "OTHosts": [
+        "10.159.444.1",
+        "10.159.444.2",
+        "10.159.444.3",
+        "10.159.444.4",
+        "10.159.444.5",
+        "10.159.444.6",
+        "10.159.444.7",
+        "10.159.444.8",
+        "10.159.444.9",
+        "10.159.444.10",
+        "10.159.444.11",
+        "10.159.444.12",
+        "10.159.444.13",
+        "10.159.444.14",
+        "10.159.444.15",
+        "10.159.444.16",
+        "10.159.444.17",
+        "10.159.444.18",
+        "10.159.444.19",
+        "10.159.444.20",
+        "10.159.444.21",
+        "10.159.444.22",
+        "10.159.444.23",
+        "10.159.444.24",
+        "10.159.444.25",
+        "10.159.444.26",
+        "10.159.444.27",
+        "10.159.444.28",
+        "10.159.444.29",
+        "10.159.444.30",
+        "10.159.444.31",
+        "10.159.444.32",
+        "10.159.444.33",
+        "10.159.444.34",
+        "10.159.444.35",
+        "10.159.444.36",
+        "10.159.444.37",
+        "10.159.444.38",
+        "10.159.444.39",
+        "10.159.444.40",
+        "10.159.444.41",
+        "10.159.444.42",
+        "10.159.444.43",
+        "10.159.444.44",
+        "10.159.444.45",
+        "10.159.444.46",
+        "10.159.444.47",
+        "10.159.444.48",
+        "10.159.444.49",
+        "10.159.444.50",
+        "10.159.444.51",
+        "10.159.444.52",
+        "10.159.444.53",
+        "10.159.444.54",
+        "10.159.444.55",
+        "10.159.444.56",
+        "10.159.444.57",
+        "10.159.444.58",
+        "10.159.444.59",
+        "10.159.444.60",
+        "10.159.444.61",
+        "10.159.444.62"
+    ],
+    "routeAddress": "10.159.444.64",
+    "routeSubnetMask": "255.255.255.224",
+    "routingHosts": [
+        "10.159.444.65",
+        "10.159.444.66",
+        "10.159.444.67",
+        "10.159.444.68",
+        "10.159.444.69",
+        "10.159.444.70",
+        "10.159.444.71",
+        "10.159.444.72",
+        "10.159.444.73",
+        "10.159.444.74",
+        "10.159.444.75",
+        "10.159.444.76",
+        "10.159.444.77",
+        "10.159.444.78",
+        "10.159.444.79",
+        "10.159.444.80",
+        "10.159.444.81",
+        "10.159.444.82",
+        "10.159.444.83",
+        "10.159.444.84",
+        "10.159.444.85",
+        "10.159.444.86",
+        "10.159.444.87",
+        "10.159.444.88",
+        "10.159.444.89",
+        "10.159.444.90",
+        "10.159.444.91",
+        "10.159.444.92",
+        "10.159.444.93",
+        "10.159.444.94"
+    ],
+    "corporateAddress": "10.159.444.96",
+    "corporateSubnetMask": "255.255.255.224",
+    "corporateHosts": [
+        "10.159.444.97",
+        "10.159.444.98",
+        "10.159.444.99",
+        "10.159.444.100",
+        "10.159.444.101",
+        "10.159.444.102",
+        "10.159.444.103",
+        "10.159.444.104",
+        "10.159.444.105",
+        "10.159.444.106",
+        "10.159.444.107",
+        "10.159.444.108",
+        "10.159.444.109",
+        "10.159.444.110",
+        "10.159.444.111",
+        "10.159.444.112",
+        "10.159.444.113",
+        "10.159.444.114",
+        "10.159.444.115",
+        "10.159.444.116",
+        "10.159.444.117",
+        "10.159.444.118",
+        "10.159.444.119",
+        "10.159.444.120",
+        "10.159.444.121",
+        "10.159.444.122",
+        "10.159.444.123",
+        "10.159.444.124",
+        "10.159.444.125"
+    ],
+    "latitude": 31.202,
+    "longitude": -96.814,
+    "nodes": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.97",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..Firewall 444",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.202,
+            "Longitude": -96.814
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.98",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..Router 444",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.1",
+            "ipAddress": "10.159.444.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN.OT.Switch 887",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.99",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN.Corporate.Switch 888",
+            "compromised": false,
+            "arpTable": []
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.3",
+            "ipAddress": "10.159.444.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.4",
+            "ipAddress": "10.159.444.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..Relay 101",
+            "compromised": false,
+            "breakers": [],
+            "busNumber": "",
+            "relayType": "Line",
+            "relaySubType": "OC",
+            "protocol": {}
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.2",
+            "ipAddress": "10.159.444.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..RC 444",
+            "compromised": false,
+            "relayIPlist": [
+                "10.159.444.3",
+                "10.159.444.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.100",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..Host 887",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.100",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..Host 888",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.100",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..LocalDatabase 887",
+            "compromised": false,
+            "protocol": {
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.100",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..LocalWebServer 888",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.101",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..hmi 887",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.100",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..outstation 888",
+            "compromised": false,
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": "Utility 123.MARLIN..RC 444",
+            "destination": "Utility 123.MARLIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.MARLIN..RC 444",
+            "destination": "Utility 123.MARLIN..Relay 101",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.MARLIN..Router 444",
+            "destination": "Utility 123.MARLIN..Firewall 444",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.MARLIN..Firewall 444",
+            "destination": "Utility 123.MARLIN.OT.Switch 887",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.MARLIN.OT.Switch 887",
+            "destination": "Utility 123.MARLIN..RC 444",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.MARLIN..Firewall 444",
+            "destination": "Utility 123.MARLIN.Corporate.Switch 888",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.MARLIN.Corporate.Switch 888",
+            "destination": "Utility 123.MARLIN..Host 887",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.MARLIN.Corporate.Switch 888",
+            "destination": "Utility 123.MARLIN..Host 888",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.MARLIN.Corporate.Switch 888",
+            "destination": "Utility 123.MARLIN..LocalDatabase 887",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        },
+        {
+            "source": "Utility 123.MARLIN.Corporate.Switch 888",
+            "destination": "Utility 123.MARLIN..LocalWebServer 888",
+            "link_type": "Ethernet",
+            "bandwidth": 10.0,
+            "distance": 10.0,
+            "compromised": false
+        }
+    ],
+    "switches": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.1",
+            "ipAddress": "10.159.444.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN.OT.Switch 887",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "rcs": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.2",
+            "ipAddress": "10.159.444.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..RC 444",
+            "compromised": false,
+            "relayIPlist": [
+                "10.159.444.3",
+                "10.159.444.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "substationFirewall": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.97",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..Firewall 444",
+            "compromised": false,
+            "acls": {
+                "acl0": [
+                    {
+                        "description": "Allow DNP3",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "20000",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl1": [
+                    {
+                        "description": "Allow HTTPS",
+                        "source": "10.52.1.",
+                        "destination": "10.52.1.",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Block ICCP",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "102",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ],
+                "acl3": [
+                    {
+                        "description": "Block SQL",
+                        "source": "all",
+                        "destination": "all",
+                        "port": "3306",
+                        "transportLayer": "TCP",
+                        "action": "block"
+                    }
+                ]
+            },
+            "interfaces": [],
+            "Latitude": 31.202,
+            "Longitude": -96.814
+        }
+    ],
+    "substationRouter": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.98",
+            "ipAddress": "10.159.444.96",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..Router 444",
+            "compromised": false,
+            "interfaces": [],
+            "routingTable": {}
+        }
+    ],
+    "substationSwitch": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.1",
+            "ipAddress": "10.159.444.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN.OT.Switch 887",
+            "compromised": false,
+            "arpTable": []
+        }
+    ],
+    "substationrelayController": [
+        {
+            "utility": "Utility 123",
+            "adminIP": "10.159.444.2",
+            "ipAddress": "10.159.444.0",
+            "subnetMask": "255.255.255.192",
+            "vlan": "OT",
+            "substation": "MARLIN",
+            "label": "Utility 123.MARLIN..RC 444",
+            "compromised": false,
+            "relayIPlist": [
+                "10.159.444.3",
+                "10.159.444.4"
+            ],
+            "protocol": {
+                "DNP3": [
+                    {
+                        "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        }
+    ],
+    "compromised": false,
+    "type": "transmission"
+}
