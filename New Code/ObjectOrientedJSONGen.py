@@ -813,7 +813,6 @@ class CyberPhysicalSystem:
             reg.add_regFirewall(regFirewall)
             reg.add_iccpClient(iccpClient)
 
-
             #protocols added below to the router based on the ports
             iccpClient.set_protocol("ICCP", "102", "TCP")
 
@@ -915,10 +914,10 @@ if selected_case == '2k':
     filepath = os.path.join(cwd, 'ACTIVSg2000.pwb')
     sub_file = "Substation_2k.csv"
     branch_file = "Branches_2k.csv"
-elif selected_case == '500':
+elif '500' in selected_case:
     filepath = os.path.join(cwd, 'ACTIVSg500.pwb')
     sub_file = "Substation_500bus.csv"
-    branch_file = "Branches_500bus.csv"
+    branch_file = "Branches_500.csv"
 elif '10k' in selected_case:
     filepath = os.path.join(cwd, 'ACTIVSg10k.pwb')
     sub_file = "Substation_10k.csv"
