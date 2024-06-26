@@ -804,14 +804,14 @@ class CyberPhysicalSystem:
             reg.add_node(iccpClient)
             for u in utilities:
                 reg.add_node(u.utilityFirewall[0])
+                # firewall command to add the firewalls
+                regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.0.6", f"10.{u.id}.0.3", "102", "TCP",
+                                         "allow")  # between utilICCPServer and regICCPClient
 
             # Add the non-node objects to the Utility
             reg.add_regRouter(regRouter)
             reg.add_regFirewall(regFirewall)
             reg.add_iccpClient(iccpClient)
-
-            #firewall command to add the firewalls
-            regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.0.6",f"10.{utl_ID}.0.3", "102" ,"TCP", "allow") #between utilICCPServer and regICCPClient
 
             #protocols added below to the router based on the ports
             iccpClient.set_protocol("ICCP", "102", "TCP")
@@ -914,10 +914,10 @@ if selected_case == '2k':
     filepath = os.path.join(cwd, 'ACTIVSg2000.pwb')
     sub_file = "Substation_2k.csv"
     branch_file = "Branches_2k.csv"
-elif selected_case == '500':
+elif '500' in selected_case:
     filepath = os.path.join(cwd, 'ACTIVSg500.pwb')
     sub_file = "Substation_500bus.csv"
-    branch_file = "Branches_500bus.csv"
+    branch_file = "Branches_500.csv"
 elif '10k' in selected_case:
     filepath = os.path.join(cwd, 'ACTIVSg10k.pwb')
     sub_file = "Substation_10k.csv"
