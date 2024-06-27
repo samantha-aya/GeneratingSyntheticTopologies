@@ -24,9 +24,9 @@ config.read('settings.ini')
 topology = config['DEFAULT']['topology_configuration']
 
 class Node:
-    def __init__(self, utility, substation, adminIP, ipaddress, label, vlan):
+    def __init__(self, utility, substation, ipaddress, label, vlan):
         self.utility = utility
-        self.adminIP = adminIP
+        #self.adminIP = adminIP
         self.ipAddress = ipaddress
         if vlan == 'Corporate':
             self.subnetMask = '255.255.255.224'
@@ -67,15 +67,17 @@ class Firewall(Node):
 ##            if not self.acls[acl_name]:
 ##                del self.acls[acl_name]
 class Router(Node):
-    def __init__(self, interfaces, routingTable, *args, **kwargs):
+    def __init__(self, interfaces, adminIP, routingTable, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.interfaces = interfaces
+        self.adminIP = adminIP
         self.routingTable = {}
         
 class Switch(Node):
-    def __init__(self, arpTable, *args, **kwargs):
+    def __init__(self, arpTable, adminIP, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.arpTable = arpTable
+        self.adminIP = adminIP
 class RelayController(Node):
     def __init__(self, relayIPlist, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -380,73 +382,72 @@ class CyberPhysicalSystem:
                     genmvar=row["Gen Mvar"],
                     connecting_TS_num=TS_num)
 
-            #change adminIPs for all
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.X", (not using admin IP
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.1", # interface to OT network 
                                 #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.97", # interface to corporate network 
                                 #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.65", # interface to routing network
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Firewall {row['Sub Num']}",
                                 vlan='Corporate')
-            router = Router([], [], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+            router = Router([], adminIP={}, routingTable={}, utility=row["Utility Name"], substation=row["Sub Name"],
+            #                    adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.98",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", # routing subnet (internal)
                                 #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", # routing (external)
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Router {row['Sub Num']}",
                                 vlan='Corporate')
-            switch=Switch([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+            switch=Switch([], adminIP={}, utility=row["Utility Name"], substation=row["Sub Name"],
+            #                    adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.1",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0", #remove IP addresses, only admin ip
                                 label=f"{row['Utility Name']}.{row['Sub Name']}.OT.Switch {(2*int(row['Sub Num'])-1)}",
                                 vlan='OT')
-            corp_switch=Switch([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+            corp_switch=Switch([], adminIP={}, utility=row["Utility Name"], substation=row["Sub Name"],
+             #                   adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.99",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #remove IP addresses, only admin ip
                                 label=f"{row['Utility Name']}.{row['Sub Name']}.Corporate.Switch {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             localDatabase = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.99", #corp host IP: 99
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalDatabase {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             localWebServer = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.100", #corp host IP: 100
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalWebServer {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             hmi = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.101",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.101", #corp host IP: 101
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..hmi {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             host1 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.102", #corp host IP: 102
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             host2 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.103", #corp host IP: 103
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             RC = RelayController(relayIPlist=["192.168.1.1", "192.168.1.2"], utility=row["Utility Name"], substation=row["Sub Name"],
-                                 adminIP = "",
+                                 #adminIP = "",
                                  #adminIP=f"10.{utl_ID}.{row['Sub Num']}.2",
                                  ipaddress=f"10.{utl_ID}.{row['Sub Num']}.2", #OT host IP: 2
                                  label=f"{row['Utility Name']}.{row['Sub Name']}..RC {row['Sub Num']}",
                                  vlan='OT')
             outstation = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.3", #OT host IP: 3
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..outstation {(2*int(row['Sub Num']))}",
@@ -467,7 +468,7 @@ class CyberPhysicalSystem:
                 relayiplist.append(ip)
                 relay = Relay("", [], 'Line', 'OC',
                               utility=row['Utility Name'], substation=row['Sub Name'],
-                              adminIP=ip,
+                              #adminIP=ip,
                               ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0",
                               vlan='OT',
                               label=f"{row['Utility Name']}.{row['Sub Name']}..Relay {relay_num+1}")
@@ -567,45 +568,45 @@ class CyberPhysicalSystem:
 
             utilFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.0.1",
                                 ipaddress=f"10.{utl_ID}.0.21", #interface to router (to BA Firewall)
                                 #ipaddress=f"10.{utl_ID}.0.9", #interface to EMS/HMI subnet
                                 label=f"{key}.{key}..Firewall {firewall_start}",
                                 vlan='1')
-            utilRouter=Router(interfaces=["eth0", "eth1"], routingTable={}, utility=key, substation="",
-                                adminIP = "",
+            utilRouter=Router(interfaces=["eth0", "eth1"], adminIP={}, routingTable={}, utility=key, substation="",
+            #                   adminIP = "",
                                 #adminIP=f"10.{utl_ID}.0.2",
                                 ipaddress=f"10.{utl_ID}.0.0", #1
                                 label=f"{key}.{key}..Router {router_start}",
                                 vlan='1')
-            utilSwitch=Switch([], utility=key, substation="",
-                                adminIP = "",
+            utilSwitch=Switch([], adminIP={}, utility=key, substation="",
+            #                    adminIP = "",
                                 #adminIP=f"10.{utl_ID}.0.8",
                                 ipaddress=f"10.{utl_ID}.0.0", #remove IP addresses, keep admin ip
                                 label=f"{key}.{key}..Switch {ems_start}",
                                 vlan='OT')
             utilEMS=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.11",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1')
             utilHMI=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.12",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1')
             iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.3",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1') #need to fix this information or see what needs to be changed
             router_start = router_start + 1
-            substationsRouter=Router([], [], utility=key, substation="",
-                                adminIP = "",
+            substationsRouter=Router([], adminIP={}, routingTable={}, utility=key, substation="",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.0.4",
                                 ipaddress=f"10.{utl_ID}.0.18", 
                                      # we will need one other interface (and IP) for each substation link 
@@ -614,7 +615,7 @@ class CyberPhysicalSystem:
             firewall_start = firewall_start+1
             substationsFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.0.5",
                                 ipaddress=f"10.{utl_ID}.0.17", #interfact to substation router
                                 #ipaddress=f"10.{utl_ID}.0.10", #interface to EMS/HMI subnet
@@ -623,7 +624,7 @@ class CyberPhysicalSystem:
             firewall_start = firewall_start + 1
             DMZFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                adminIP = "",
+                                #adminIP = "",
                                 #adminIP=f"10.{utl_ID}.0.7",
                                 ipaddress=f"10.{utl_ID}.0.26", #interface to router (to BA firewall)
                                 #ipaddress=f"10.{utl_ID}.0.2", #interface to ICCP server
@@ -776,22 +777,22 @@ class CyberPhysicalSystem:
 
             regFirewall = Firewall([], [], reg.latitude, reg.longitude,
                                     utility="balancing_authority", substation="ba",
-                                    adminIP = "",
+                                    #adminIP = "",
                                     #adminIP=f"172.30.0.2",
                                     ipaddress=f"172.30.0.2", #interface to router
                                     #ipaddress=f"172.30.0.5", #interface to ICCP server
                                     label=f"balancing_authority.ba..Firewall 1701",
                                     vlan='1')
-            regRouter = Router(interfaces=["eth0", "eth1"], routingTable={},
+            regRouter = Router(interfaces=["eth0", "eth1"], adminIP={}, routingTable={},
                                     utility="balancing_authority", substation="ba",
-                                    adminIP = "",
+            #                        adminIP = "",
                                     #adminIP=f"172.30.0.3",
                                     ipaddress=f"172.30.0.1", #interface to firewall
                                     label=f"balancing_authority.ba..Router 1551",
                                     vlan='1')
             iccpClient = Host([],
                                     utility="balancing_authority", substation="ba",
-                                    adminIP = "",
+                                    #adminIP = "",
                                     #adminIP=f"172.30.0.1",
                                     ipaddress=f"172.30.0.6", #interface to firewall
                                     #subnetMask = 255.255.255.252 #ideally every host, and router interface, and firewall interface should have a subnet mask attribute
