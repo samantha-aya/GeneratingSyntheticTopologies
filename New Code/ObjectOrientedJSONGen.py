@@ -40,9 +40,21 @@ class Firewall(Node):
     def __init__(self, acls, interfaces, Latitude, Longitude, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.acls = {}
-        self.interfaces = interfaces
+        self.interfaces = {}
         self.Latitude = Latitude
         self.Longitude = Longitude
+
+    def add_interfaces(self, interfaceLabel, interfaceIP):
+        #this allows for an interface to be added with an ip address
+        #multiple interfaces can be added
+        firewallInterface = {
+            "label": interfaceLabel, #or type? for example: eth0
+            "ipaddress": interfaceIP,
+        }
+        if interfaceLabel in self.interfaces:
+            self.interfaces[interfaceLabel].append(firewallInterface)
+        else:
+            self.interfaces[interfaceLabel] = [firewallInterface]
 
     def add_acl_rule(self, acl_name, description, source, destination, port, transportLayer, action):
         #this allows for an acl to be added
@@ -69,9 +81,21 @@ class Firewall(Node):
 class Router(Node):
     def __init__(self, interfaces, adminIP, routingTable, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.interfaces = interfaces
+        self.interfaces = {}
         self.adminIP = adminIP
         self.routingTable = {}
+
+    def add_interfaces(self, interfaceLabel, interfaceIP):
+        #this allows for an interface to be added with an ip address
+        #multiple interfaces can be added
+        routerInterface = {
+            "label": interfaceLabel, #or type? for example: eth0
+            "ipaddress": interfaceIP,
+        }
+        if interfaceLabel in self.interfaces:
+            self.interfaces[interfaceLabel].append(routerInterface)
+        else:
+            self.interfaces[interfaceLabel] = [routerInterface]
         
 class Switch(Node):
     def __init__(self, arpTable, adminIP, *args, **kwargs):
@@ -494,6 +518,13 @@ class CyberPhysicalSystem:
             sub.add_subSwitch(switch)
             sub.add_subRC(RC)
 
+            # commands to add interfaces to routers and firewalls
+            firewall.add_interfaces("eth0", f"10.{utl_ID}.{row['Sub Num']}.1") # interface to OT network
+            firewall.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.65") # interface to routing network
+            firewall.add_interfaces("eth2", f"10.{utl_ID}.{row['Sub Num']}.97") # interface to corporate network
+            router.add_interfaces("eth0", f"10.{utl_ID}.{row['Sub Num']}.66") # routing subnet (internal)
+            router.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.66") # routing subnet (external) ***this one will be changed
+
             #firewall command to add the firewalls
             firewall.add_acl_rule("acl0", "Allow DNP3", f"10.{utl_ID}.0.11",f"10.{utl_ID}.{row['Sub Num']}.3", "20000" ,"TCP", "allow") #from EMS to outstation
             firewall.add_acl_rule("acl1", "Allow HTTPS", f"10.{utl_ID}.0.12",f"10.{utl_ID}.{row['Sub Num']}.100", "443" ,"TCP", "allow") #HMI to web server
@@ -656,8 +687,20 @@ class CyberPhysicalSystem:
             util.add_substationsFirewall(substationsFirewall)
             util.add_DMZFirewall(DMZFirewall)
 
-            #firewall command to add the firewalls
+            # commands to add interfaces to firewalls and routers
+            substationsFirewall.add_interfaces("eth0", f"10.{utl_ID}.0.17") #interfact to substation router
+            substationsFirewall.add_interfaces("eth1", f"10.{utl_ID}.0.XXX") #interface to EMS/HMI subnet
+            utilFirewall.add_interfaces("eth0", f"10.{utl_ID}.0.9") #interface to EMS/HMI subnet
+            utilFirewall.add_interfaces("eth1", f"10.{utl_ID}.0.21") #interface to router (to BA Firewall)
+            DMZFirewall.add_interfaces("eth0", f"10.{utl_ID}.0.2") #interface to ICCP server
+            DMZFirewall.add_interfaces("eth1", f"10.{utl_ID}.0.26") #interface to router (to BA firewall)
+            substationsRouter.add_interfaces("eth0", f"10.{utl_ID}.0.18") #interface to internal UCC
+            substationsRouter.add_interfaces("eth1", f"10.{utl_ID}.0.XXX") #this one will be changed based on substation subnet (interface to substation)
+            utilRouter.add_interfaces("eth0", f"10.{utl_ID}.0.22") #interface towards EMS/HMI subnet
+            utilRouter.add_interfaces("eth1", f"10.{utl_ID}.0.25") #interface towards DMZ
+            utilRouter.add_interfaces("eth2", f"10.{utl_ID}.0.233") #interface towards BA
 
+            #firewall command to add the firewall acls
             utilFirewall.add_acl_rule("acl0", "Allow DNP3", "10.52.1.","10.52.1.", "20000" ,"TCP", "allow") #between utilEMS and SubRC
             utilFirewall.add_acl_rule("acl1", "Allow HTTPS", "10.52.1.","10.52.1.", "443" ,"TCP", "allow") #between utilHMI and SubWebServer
             utilFirewall.add_acl_rule("acl2", "Allow ICCP", "10.52.1.","10.52.1.", "102" ,"TCP", "allow") #between utilICCPServer and regICCPClient
@@ -813,6 +856,12 @@ class CyberPhysicalSystem:
             reg.add_regRouter(regRouter)
             reg.add_regFirewall(regFirewall)
             reg.add_iccpClient(iccpClient)
+
+            # commands to add interfaces to firewalls and routers
+            regFirewall.add_interfaces("eth0", f"172.30.0.2") #interface to router
+            regFirewall.add_interfaces("eth1", f"172.30.0.5") #interface to ICCP server
+            regRouter.add_interfaces("eth0", f"172.30.0.1") #interface to firewall
+            regRouter.add_interfaces("eth1", f"172.30.0.XXX") #interface to UCC #this one will be changed based on UCC subnet (interface towards UCC)
 
             #protocols added below to the router based on the ports
             iccpClient.set_protocol("ICCP", "102", "TCP")
