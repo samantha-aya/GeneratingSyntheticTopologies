@@ -158,30 +158,29 @@ def create_utilities_graph_with_color(data, configuration):
                 # print(substation['substation'])
                 G.add_edge(utility_id, substation['substation'])
     elif 'radial' in configuration or 'statistics' in configuration:
-        for utility in data['utilities']:
+        for reg in data['region']:
+            for utility in data['utilities']:
+                #add substation nodes
+                for substation in utility['substations']:
+                    #if substation type is generation, color it green
+                    if substation['type'] == 'generation':
+                        G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='green')
+                    elif substation['type'] == 'transmission':
+                        G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='lightblue')
+                #add edge only if there is a link between utility and substation
+                #add edges between substations
+                for link in utility['links']:
+                    print(link['source'], link['destination'])
+                    if f"{utility['label']}.{utility['utility']}" not in link['destination'] or f"{utility['label']}.{utility['utility']}" not in link['source']:
+                        #get substation id from link
+                        source_id = link['source'].split(".")[1]
+                        print(source_id)
+                        dest_id = link['destination'].split(".")[1]
+                        print(dest_id)
+                        G.add_edge(source_id, dest_id)
 
-
-            #add substation nodes
-            for substation in utility['substations']:
-                #if substation type is generation, color it green
-                if substation['type'] == 'generation':
-                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='green')
-                elif substation['type'] == 'transmission':
-                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='lightblue')
-            #add edge only if there is a link between utility and substation
-            #add edges between substations
-            for link in utility['links']:
-                print(link['source'], link['destination'])
-                if f"{utility['label']}.{utility['utility']}" not in link['destination'] or f"{utility['label']}.{utility['utility']}" not in link['source']:
-                    #get substation id from link
-                    source_id = link['source'].split(".")[1]
-                    print(source_id)
-                    dest_id = link['destination'].split(".")[1]
-                    print(dest_id)
-                    G.add_edge(source_id, dest_id)
-
-            utility_id = utility['label']
-            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color="red")
+                utility_id = utility['label']
+                G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color="red")
 
     else:
         print("Configuration is neither radial, statistics based nor star.")
@@ -214,6 +213,8 @@ def main(code_to_run, data):
             gdf = gpd.read_file('Nc.shp')
         elif '2k' in case:
             gdf = gpd.read_file('Tx.shp')
+        elif '10k' in case:
+            gdf = gpd.read_file('WECC.shp')
 
         # Create the utilities graph
         utilities_graph_with_color = create_utilities_graph_with_color(data, configuration)

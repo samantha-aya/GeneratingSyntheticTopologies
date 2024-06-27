@@ -8,6 +8,7 @@ import configparser
 from statistics_based import generate_nwk#import zeyu's function
 from esa import SAW
 from match import main
+import matplotlib.pyplot as plt
 
 import logging
 
@@ -536,7 +537,6 @@ class CyberPhysicalSystem:
         router_start = len(substations)+1
         ems_start = 2501
         utilities = []
-        itera = 0
         for key, val in utility_dict.items():
             # Constructing the base part of the ID
             util_label = f"Region.{key}"
@@ -719,8 +719,7 @@ class CyberPhysicalSystem:
                 logger.info(f"Utility id: {util.id}")
                 power_graph = power_nwk.subgraph(substation_numbers)
                 #mapping = network_match(statistics_based_graph, power_graph)
-                itera += 1
-                mapping = main(statistics_based_graph, power_graph, itera)
+                mapping = main(statistics_based_graph, power_graph, util.id)
                 util_node = mapping[max_deg_node]
                 logger.info(f"Mapping: {mapping}")
                 logger.info(f"Number of subs in mapping: {len(mapping)}")
@@ -761,10 +760,86 @@ class CyberPhysicalSystem:
             output_to_json_file(util, filename=os.path.join(cwd, "Output\\Utilities", name_json))
         return utilities
 
-    def generate_BA(self, substations, utilities):
-            regulatory = []
+    def generate_BA(self, substations, utilities, case):
+        regulatory = []
+        reg = None #initialize reg
+        if '10k' in case:
+            num_regs = 30
+            # cluster utilities into 30 clusters
+            kmeans = KMeans(n_clusters=num_regs, random_state=0).fit([[u.latitude, u.longitude] for u in utilities])
+            # Extracting the centroids
+            centroids = kmeans.cluster_centers_
+            # Adding the cluster labels (regulatory names) to the original DataFrame
+            for i, u in enumerate(utilities):
+                u.regulatory_name = f"Regulatory {kmeans.labels_[i]}"
+            # Create a dictionary with keys as the unique values and values as a sequence starting from 1
+            starting_reg_number = 1
+            unique_dict = {
+                name: {
+                    'id': starting_reg_number + i,
+                    'latitude': centroids[i][0],
+                    'longitude': centroids[i][1],
+                    'num_of_utils': len([u for u in utilities if u.regulatory_name == name])
+                }
+                for i, name in enumerate([f"Regulatory {i}" for i in range(num_regs)])
+            }
+            for key, val in unique_dict.items():
+                reg = Regulatory(
+                    label=key,
+                    networklan=f"172.{val.get('id')}.0.0",
+                    utils=[u for u in utilities if u.regulatory_name == key],
+                    utilFirewalls=[u.utilityFirewall for u in utilities if u.regulatory_name == key],
+                    latitude=val.get('latitude'),
+                    longitude=val.get('longitude')
+                )
+                regFirewall = Firewall([], [], reg.latitude, reg.longitude,
+                                       utility="balancing_authority", substation="ba",
+                                       adminIP="",
+                                       # adminIP=f"172.30.0.2",
+                                       ipaddress=f"172.{val.get('id')}.0.2",  # interface to router
+                                       # ipaddress=f"172.30.0.5", #interface to ICCP server
+                                       label=f"balancing_authority.ba..Firewall 1701",
+                                       vlan='1')
+                regRouter = Router(interfaces=["eth0", "eth1"], routingTable={},
+                                   utility="balancing_authority", substation="ba",
+                                   adminIP="",
+                                   # adminIP=f"172.30.0.3",
+                                   ipaddress=f"172.{val.get('id')}.0.1",  # interface to firewall
+                                   label=f"balancing_authority.ba..Router 1551",
+                                   vlan='1')
+                iccpClient = Host([],
+                                  utility="balancing_authority", substation="ba",
+                                  adminIP="",
+                                  # adminIP=f"172.30.0.1",
+                                  ipaddress=f"172.{val.get('id')}.0.6",  # interface to firewall
+                                  # subnetMask = 255.255.255.252 #ideally every host, and router interface, and firewall interface should have a subnet mask attribute
+                                  label=f"balancing_authority.ba..Host 2801",
+                                  vlan='1')
 
+                # Add node objects
+                reg.add_node(regFirewall)
+                reg.add_node(regRouter)
+                reg.add_node(iccpClient)
 
+                # Add the non-node objects to the Utility
+                reg.add_regRouter(regRouter)
+                reg.add_regFirewall(regFirewall)
+                reg.add_iccpClient(iccpClient)
+
+                # protocols added below to the router based on the ports
+                iccpClient.set_protocol("ICCP", "102", "TCP")
+
+                # Add links
+                reg.add_link(iccpClient.label, regFirewall.label, "Ethernet", 10.0, 10.0)
+                reg.add_link(regFirewall.label, regRouter.label, "Ethernet", 10.0, 10.0)
+
+            for u in utilities:
+                reg.add_node(u.utilityFirewall[0])
+                # firewall command to add the firewalls
+                regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.0.6", f"10.{u.id}.0.3", "102", "TCP",
+                                         "allow")  # between utilICCPServer and regICCPClient
+                reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
+        else:
             reg = Regulatory(
                 label="Regulatory",
                 networklan= "172.30.0.0",
@@ -773,7 +848,6 @@ class CyberPhysicalSystem:
                 latitude=utilities[0].latitude,
                 longitude=utilities[0].longitude
             )
-
             regFirewall = Firewall([], [], reg.latitude, reg.longitude,
                                     utility="balancing_authority", substation="ba",
                                     adminIP = "",
@@ -802,31 +876,31 @@ class CyberPhysicalSystem:
             reg.add_node(regFirewall)
             reg.add_node(regRouter)
             reg.add_node(iccpClient)
-            for u in utilities:
-                reg.add_node(u.utilityFirewall[0])
-                # firewall command to add the firewalls
-                regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.0.6", f"10.{u.id}.0.3", "102", "TCP",
-                                         "allow")  # between utilICCPServer and regICCPClient
 
             # Add the non-node objects to the Utility
             reg.add_regRouter(regRouter)
             reg.add_regFirewall(regFirewall)
             reg.add_iccpClient(iccpClient)
 
-            #protocols added below to the router based on the ports
+            # protocols added below to the router based on the ports
             iccpClient.set_protocol("ICCP", "102", "TCP")
 
             # Add links
             reg.add_link(iccpClient.label, regFirewall.label, "Ethernet", 10.0, 10.0)
             reg.add_link(regFirewall.label, regRouter.label, "Ethernet", 10.0, 10.0)
+
             for u in utilities:
+                reg.add_node(u.utilityFirewall[0])
+                # firewall command to add the firewalls
+                regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.0.6", f"10.{u.id}.0.3", "102", "TCP",
+                                         "allow")  # between utilICCPServer and regICCPClient
                 reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
 
             regulatory.append(reg)
             name_json = "Regulatory.json"
             output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
 
-            return regulatory
+        return regulatory
 
 def to_json(obj):
     """Converts objects to a JSON-friendly format."""
@@ -875,11 +949,17 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object):
                 lon2 = row['Longitude']
         unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
 
+    # convert unique pairs to a dataframe with three columns
+    unique_pairs_df = pd.DataFrame(unique_pairs, columns=['SubNumberFrom', 'SubNumberTo', 'Distance'])
+    unique_pairs_df.to_csv('10k_substation_distances.csv', index=False)
     #get graph from saw object
-    if pw_case_object is not None:
-        power_graph = pw_case_object.to_graph("substation", geographic=True)
-    else:
+    if pw_case_object is None:
         power_graph = None
+    else:
+        power_graph = pw_case_object.to_graph("substation", geographic=True)
+        plt.plot(power_graph)
+
+    print("Power graph funciton executed")
     # print(power_graph.nodes(data=True))
     # for node in power_graph.nodes():
     #     print("Node:", node, "Attributes:", power_graph.nodes[node])
@@ -905,12 +985,17 @@ def generate_system_from_csv(csv_file, branches_csv, filepath):
         substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, saw)
         substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
         utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
-        regulatory = cps.generate_BA(substations, utilities)
+        regulatory = cps.generate_BA(substations, utilities, selected_case)
 
-no_powerworld = bool(config['DEFAULT']['no_powerworld'])
+no_powerworld = config['DEFAULT']['no_powerworld']
+if no_powerworld == 'True':
+    no_powerworld = True
+else:
+    no_powerworld = False
+print('No PowerWorld:', no_powerworld)
 selected_case = config['DEFAULT']['case']
 print('Selected case:', selected_case)
-if selected_case == '2k':
+if '2k' in selected_case:
     filepath = os.path.join(cwd, 'ACTIVSg2000.pwb')
     sub_file = "Substation_2k.csv"
     branch_file = "Branches_2k.csv"

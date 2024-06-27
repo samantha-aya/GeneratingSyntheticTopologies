@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from scipy.spatial import procrustes
 
-def network_match(cyber_nwk, power_nwk):
+def network_match(cyber_nwk, power_nwk, util_id):
     G1 = power_nwk
     G2 = cyber_nwk
 
@@ -78,7 +78,7 @@ def network_match(cyber_nwk, power_nwk):
     plt.xlabel('Longitude')
     plt.ylabel('Latitude')
     plt.grid(True)
-    plt.show()
+
 
     network_mapping = {label: node for label, node in label_mapping.items()}
     return network_mapping
@@ -93,5 +93,5 @@ if __name__ == "__main__":
     # cyber_nwk.add_nodes_from([1, 2, 3, 4])
     # cyber_nwk.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1)])
 
-    mapping = network_match(cyber_nwk, power_nwk)
+    mapping = network_match(cyber_nwk, power_nwk, util_id)
     #print("Network mapping:", mapping)

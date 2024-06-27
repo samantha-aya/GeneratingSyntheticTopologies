@@ -75,7 +75,7 @@ def map_labels_and_geo(G1, pos1, G2, optimized_pos):
         G2.nodes[node2]['pos'] = pos1[closest_node1]
     return label_mapping
 
-def map_labels_and_geo_unique(G1, pos1, G2, optimized_pos, itera):
+def map_labels_and_geo_unique(G1, pos1, G2, optimized_pos):
     # Create a cost matrix based on distances between nodes in G1 and optimized_pos (G2's nodes)
     size_G1 = len(G1.nodes())
     size_G2 = len(G2.nodes())
@@ -105,7 +105,7 @@ def map_labels_and_geo_unique(G1, pos1, G2, optimized_pos, itera):
 
     return label_mapping
 
-def main(cyber_nwk, power_nwk, itera):
+def main(cyber_nwk, power_nwk, util_id):
     # Assuming G1 and G2 are passed correctly and have node attributes 'Latitude' and 'Longitude'
     G1 = power_nwk
     G2 = cyber_nwk
@@ -127,10 +127,10 @@ def main(cyber_nwk, power_nwk, itera):
     logging.info('Optimized positions for G2: %s', optimized_pos2)
 
     # Mapping labels and geographic information with unique assignment
-    mapping_test = map_labels_and_geo_unique(G1, pos1, G2, optimized_pos2, itera)
+    mapping_test = map_labels_and_geo_unique(G1, pos1, G2, optimized_pos2)
 
     # Plotting
-    plt.figure(figsize=(14, 7))
+    plt.figure(figsize=(12, 6))
     ax1 = plt.subplot(121)
     nx.draw(G1, pos1, node_color='red', with_labels=True, node_size=50)
     plt.title('Network G1 (Original)')
@@ -140,10 +140,10 @@ def main(cyber_nwk, power_nwk, itera):
             with_labels=True, node_size=50)
     plt.title('Network G2 (Aligned with Labels)')
 
-    plt.show()
+    plt.savefig(f'power_cyber_for_{util_id}.png')
 
     return mapping_test
 
 if __name__ == "__main__":
-    main(cyber_nwk, power_nwk)
+    main(cyber_nwk, power_nwk, util_id)
 
