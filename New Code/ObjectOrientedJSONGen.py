@@ -49,7 +49,8 @@ class Firewall(Node):
         #multiple interfaces can be added
         firewallInterface = {
             "label": interfaceLabel, #or type? for example: eth0
-            "ipaddress": interfaceIP,
+            "ipaddress": interfaceIP
+            #"subnetMask": subnetMask
         }
         if interfaceLabel in self.interfaces:
             self.interfaces[interfaceLabel].append(firewallInterface)
@@ -90,7 +91,8 @@ class Router(Node):
         #multiple interfaces can be added
         routerInterface = {
             "label": interfaceLabel, #or type? for example: eth0
-            "ipaddress": interfaceIP,
+            "ipaddress": interfaceIP
+            #"subnetMask": subnetMask
         }
         if interfaceLabel in self.interfaces:
             self.interfaces[interfaceLabel].append(routerInterface)
@@ -523,7 +525,7 @@ class CyberPhysicalSystem:
             firewall.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.65") # interface to routing network
             firewall.add_interfaces("eth2", f"10.{utl_ID}.{row['Sub Num']}.97") # interface to corporate network
             router.add_interfaces("eth0", f"10.{utl_ID}.{row['Sub Num']}.66") # routing subnet (internal)
-            router.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.66") # routing subnet (external) ***this one will be changed
+            router.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.X") # routing subnet (external) ***this one will be changed
 
             #firewall command to add the firewalls
             firewall.add_acl_rule("acl0", "Allow DNP3", f"10.{utl_ID}.0.11",f"10.{utl_ID}.{row['Sub Num']}.3", "20000" ,"TCP", "allow") #from EMS to outstation
@@ -675,6 +677,9 @@ class CyberPhysicalSystem:
             for s in substations:
                 if s.utility_id == util.id:
                     util.add_node(s)
+                    substationsFirewall.add_acl_rule("acl0", "Allow DNP3", f"10.{util.id}.0.11", f"10.{utl_ID}.{s}.2", "20000", "TCP","allow")  # between utilEMS and SubRC,  outstation IP: f"10.{utl_ID}.{row['Sub Num']}.3"
+                    substationsFirewall.add_acl_rule("acl1", "Allow HTTPS", f"10.{util.id}.0.12", f"10.{utl_ID}.{s}.100", "443", "TCP","allow")  # between utilHMI and SubWebServer (in substation)
+
             util.add_node(DMZFirewall)
 
             # Add the non-node objects to the Utility
@@ -707,8 +712,8 @@ class CyberPhysicalSystem:
             utilFirewall.add_acl_rule("acl3", "Block SQL", "all","all", "3306" ,"TCP", "block") #SQL is not to be found in the utility
 
             #protocols added below
-            substationsFirewall.add_acl_rule("acl0", "Allow DNP3", f"10.{utl_ID}.0.11","XXX.3", "20000" ,"TCP", "allow") #between utilEMS and SubRC,  outstation IP: f"10.{utl_ID}.{row['Sub Num']}.3"
-            substationsFirewall.add_acl_rule("acl1", "Allow HTTPS", f"10.{utl_ID}.0.12","XXX.12", "443" ,"TCP", "allow") #between utilHMI and SubWebServer (in substation)
+            #substationsFirewall.add_acl_rule("acl0", "Allow DNP3", f"10.{utl_ID}.0.11","XXX.3", "20000" ,"TCP", "allow") #between utilEMS and SubRC,  outstation IP: f"10.{utl_ID}.{row['Sub Num']}.3"
+            #substationsFirewall.add_acl_rule("acl1", "Allow HTTPS", f"10.{utl_ID}.0.12","XXX.12", "443" ,"TCP", "allow") #between utilHMI and SubWebServer (in substation)
             DMZFirewall.add_acl_rule("acl2", "Allow ICCP", f"172.30.0.6",f"10.{utl_ID}.0.3", "102" ,"TCP", "allow") #between utilICCPServer and regICCPClient
             DMZFirewall.add_acl_rule("acl3", "Allow ICCP", f"10.{utl_ID}.0.3",f"10.{utl_ID}.0.11", "102" ,"TCP", "allow") #between utilICCPServer and utilEMS
             utilFirewall.add_acl_rule("acl4", "Allow ICCP", f"10.{utl_ID}.0.3", f"10.{utl_ID}.0.11", "102" ,"TCP", "allow") #allow HMI to send util data to ICCP server
