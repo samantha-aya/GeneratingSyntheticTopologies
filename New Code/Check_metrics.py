@@ -1,5 +1,6 @@
 import networkx as nx
 import json
+import statistics
 #import time
 
 #start_metrics = time.time()
@@ -39,9 +40,16 @@ network_density = nx.density(G)
 #total_time_metrics = end_metrics - start_metrics
 #total_time = (adding all three times, json, graph, and metrics)
 
+max_degree = max(node_degree.values())
+min_degree = min(node_degree.values())
+avg_degree = statistics.mean(node_degree.values())
+
 #print(average_path_length, node_degree, diameter, worst_case_connectivity, algebraic_connectivity, number_of_links, network_density)
 print("Average path length:  ", average_path_length)
 print("Diameter:  ", diameter)
+print("Minimum Degree: ", min_degree)
+print("Maximum Degree: ", max_degree)
+print("Average Degree: ", avg_degree)
 print("Worst Case Connectivity:  ", worst_case_connectivity)
 print("Algebraic connectivity:  ", algebraic_connectivity)
 print("Number of links:  ", number_of_links)
