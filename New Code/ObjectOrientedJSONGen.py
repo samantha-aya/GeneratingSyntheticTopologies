@@ -262,7 +262,10 @@ class Utility:
         self.linkSubEMStoSubsRouter = []
         self.linkSubsRoutertoSubsFirewall = []
         self.compromised = False
+        self.regulatory = ""
 
+    def add_regulatory(self, reg):
+        self.regulatory = reg
     def add_node(self, node):
         self.nodes.append(node)
     def add_utilityFirewall(self, utilFirewall):
@@ -411,71 +414,49 @@ class CyberPhysicalSystem:
 
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.X", (not using admin IP
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.1", # interface to OT network 
                                 #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.97", # interface to corporate network 
                                 #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.65", # interface to routing network
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Firewall {row['Sub Num']}",
                                 vlan='Corporate')
             router = Router([], adminIP={}, routingTable={}, utility=row["Utility Name"], substation=row["Sub Name"],
-            #                    adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.98",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", # routing subnet (internal)
                                 #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", # routing (external)
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Router {row['Sub Num']}",
                                 vlan='Corporate')
             switch=Switch([], adminIP={}, utility=row["Utility Name"], substation=row["Sub Name"],
-            #                    adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.1",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0", #remove IP addresses, only admin ip
                                 label=f"{row['Utility Name']}.{row['Sub Name']}.OT.Switch {(2*int(row['Sub Num'])-1)}",
                                 vlan='OT')
             corp_switch=Switch([], adminIP={}, utility=row["Utility Name"], substation=row["Sub Name"],
-             #                   adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.99",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #remove IP addresses, only admin ip
                                 label=f"{row['Utility Name']}.{row['Sub Name']}.Corporate.Switch {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             localDatabase = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.99", #corp host IP: 99
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalDatabase {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             localWebServer = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.100", #corp host IP: 100
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalWebServer {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             hmi = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.101",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.101", #corp host IP: 101
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..hmi {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             host1 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.102", #corp host IP: 102
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             host2 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.103", #corp host IP: 103
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             RC = RelayController(relayIPlist=["192.168.1.1", "192.168.1.2"], utility=row["Utility Name"], substation=row["Sub Name"],
-                                 #adminIP = "",
-                                 #adminIP=f"10.{utl_ID}.{row['Sub Num']}.2",
                                  ipaddress=f"10.{utl_ID}.{row['Sub Num']}.2", #OT host IP: 2
                                  label=f"{row['Utility Name']}.{row['Sub Name']}..RC {row['Sub Num']}",
                                  vlan='OT')
             outstation = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.{row['Sub Num']}.100",
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.3", #OT host IP: 3
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..outstation {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
@@ -495,7 +476,6 @@ class CyberPhysicalSystem:
                 relayiplist.append(ip)
                 relay = Relay("", [], 'Line', 'OC',
                               utility=row['Utility Name'], substation=row['Sub Name'],
-                              #adminIP=ip,
                               ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0",
                               vlan='OT',
                               label=f"{row['Utility Name']}.{row['Sub Name']}..Relay {relay_num+1}")
@@ -567,6 +547,7 @@ class CyberPhysicalSystem:
 
         return substations, unique_dict
     def generate_utilties(self, substations, utility_dict, topology, power_nwk):
+        metrics_df = pd.DataFrame()
         firewall_start = len(substations)+1
         router_start = len(substations)+1
         ems_start = 2501
@@ -601,46 +582,32 @@ class CyberPhysicalSystem:
 
             utilFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.0.1",
                                 ipaddress=f"10.{utl_ID}.0.21", #interface to router (to BA Firewall)
                                 #ipaddress=f"10.{utl_ID}.0.9", #interface to EMS/HMI subnet
                                 label=f"{key}.{key}..Firewall {firewall_start}",
                                 vlan='1')
             utilRouter=Router(interfaces=["eth0", "eth1"], adminIP={}, routingTable={}, utility=key, substation="",
-            #                   adminIP = "",
-                                #adminIP=f"10.{utl_ID}.0.2",
                                 ipaddress=f"10.{utl_ID}.0.0", #1
                                 label=f"{key}.{key}..Router {router_start}",
                                 vlan='1')
             utilSwitch=Switch([], adminIP={}, utility=key, substation="",
-            #                    adminIP = "",
-                                #adminIP=f"10.{utl_ID}.0.8",
                                 ipaddress=f"10.{utl_ID}.0.0", #remove IP addresses, keep admin ip
                                 label=f"{key}.{key}..Switch {ems_start}",
                                 vlan='OT')
             utilEMS=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.11",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1')
             utilHMI=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.12",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1')
             iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.0.3",
                                 ipaddress=f"10.{utl_ID}.0.3",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1') #need to fix this information or see what needs to be changed
             router_start = router_start + 1
             substationsRouter=Router([], adminIP={}, routingTable={}, utility=key, substation="",
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.0.4",
                                 ipaddress=f"10.{utl_ID}.0.18", 
                                      # we will need one other interface (and IP) for each substation link 
                                 label=f"{key}.{key}..Router {router_start}",
@@ -648,8 +615,6 @@ class CyberPhysicalSystem:
             firewall_start = firewall_start+1
             substationsFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.0.5",
                                 ipaddress=f"10.{utl_ID}.0.17", #interfact to substation router
                                 #ipaddress=f"10.{utl_ID}.0.10", #interface to EMS/HMI subnet
                                 label=f"{key}.{key}..Firewall {firewall_start}",
@@ -657,8 +622,6 @@ class CyberPhysicalSystem:
             firewall_start = firewall_start + 1
             DMZFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                #adminIP = "",
-                                #adminIP=f"10.{utl_ID}.0.7",
                                 ipaddress=f"10.{utl_ID}.0.26", #interface to router (to BA firewall)
                                 #ipaddress=f"10.{utl_ID}.0.2", #interface to ICCP server
                                 label=f"{key}.{key}..Firewall {firewall_start}",
@@ -759,7 +722,10 @@ class CyberPhysicalSystem:
                 number_of_generators = val.get('num_of_gens')
                 print("Number of substations in utility: ", number_of_substations)
                 print("Number of generators in utility: ", number_of_generators)
-                statistics_based_graph, max_deg_node = generate_nwk(number_of_substations, number_of_generators)
+                statistics_based_graph, max_deg_node, metrics_dict = generate_nwk(number_of_substations, number_of_generators)
+                metrics_dict['Utility'] = utl_ID
+                # store metrics_dict into metrics_df
+                metrics_df = metrics_df._append(metrics_dict, ignore_index=True)
                 # get a list of all substation numbers in the utility
                 substation_numbers = [s.substationNumber for s in substations if s.utility_id == util.id]
                 #print the substation numbers in the utility to check along with the utility id
@@ -799,67 +765,65 @@ class CyberPhysicalSystem:
                     util.add_link(source_substation.substationRouter[0].label, destination_substation.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                     logger.info(f"Link added between {source_substation.substationRouter[0].label} and {destination_substation.substationRouter[0].label}")
 
-
-
             # utilityRouter --> DMZFirewall
             util.add_link(utilRouter.label, DMZFirewall.label, "Ethernet", 10.0, 10.0)
 
             utilities.append(util)
             name_json = f"Region.{key}.json"
             output_to_json_file(util, filename=os.path.join(cwd, "Output\\Utilities", name_json))
+
+            metrics_df.to_csv("Output\\metrics.csv", index=False)
         return utilities
 
-    def generate_BA(self, substations, utilities, case):
+    def generate_BA(self, substations, utilities, case, n_ba):
         regulatory = []
-        reg = None #initialize reg
-        if '10k' in case:
-            num_regs = 30
+        if n_ba > 1:
+            print('n_ba > 1')
+            num_regs = n_ba
             # cluster utilities into 30 clusters
             kmeans = KMeans(n_clusters=num_regs, random_state=0).fit([[u.latitude, u.longitude] for u in utilities])
             # Extracting the centroids
             centroids = kmeans.cluster_centers_
             # Adding the cluster labels (regulatory names) to the original DataFrame
             for i, u in enumerate(utilities):
-                u.regulatory_name = f"Regulatory {kmeans.labels_[i]}"
+                u.add_regulatory(f"Regulatory {kmeans.labels_[i]}")
             # Create a dictionary with keys as the unique values and values as a sequence starting from 1
             starting_reg_number = 1
-            unique_dict = {
+            unique_dict_reg = {
                 name: {
                     'id': starting_reg_number + i,
                     'latitude': centroids[i][0],
                     'longitude': centroids[i][1],
-                    'num_of_utils': len([u for u in utilities if u.regulatory_name == name])
+                    'num_of_utils': len([u for u in utilities if u.regulatory == name])
                 }
                 for i, name in enumerate([f"Regulatory {i}" for i in range(num_regs)])
             }
-            for key, val in unique_dict.items():
+
+            print(unique_dict_reg)
+            for key, val in unique_dict_reg.items():
+                print(key)
                 reg = Regulatory(
-                    label=key,
+                    label=f"{key}",
                     networklan=f"172.{val.get('id')}.0.0",
-                    utils=[u for u in utilities if u.regulatory_name == key],
-                    utilFirewalls=[u.utilityFirewall for u in utilities if u.regulatory_name == key],
+                    utils=[u for u in utilities if u.regulatory == key],
+                    utilFirewalls=[u.utilityFirewall for u in utilities if u.regulatory == key],
                     latitude=val.get('latitude'),
                     longitude=val.get('longitude')
                 )
                 regFirewall = Firewall([], [], reg.latitude, reg.longitude,
                                        utility="balancing_authority", substation="ba",
-                                       adminIP="",
-                                       # adminIP=f"172.30.0.2",
                                        ipaddress=f"172.{val.get('id')}.0.2",  # interface to router
                                        # ipaddress=f"172.30.0.5", #interface to ICCP server
                                        label=f"balancing_authority.ba..Firewall 1701",
                                        vlan='1')
                 regRouter = Router(interfaces=["eth0", "eth1"], routingTable={},
+                                   adminIP={},
                                    utility="balancing_authority", substation="ba",
-                                   adminIP="",
-                                   # adminIP=f"172.30.0.3",
                                    ipaddress=f"172.{val.get('id')}.0.1",  # interface to firewall
                                    label=f"balancing_authority.ba..Router 1551",
                                    vlan='1')
                 iccpClient = Host([],
                                   utility="balancing_authority", substation="ba",
-                                  adminIP="",
-                                  # adminIP=f"172.30.0.1",
                                   ipaddress=f"172.{val.get('id')}.0.6",  # interface to firewall
                                   # subnetMask = 255.255.255.252 #ideally every host, and router interface, and firewall interface should have a subnet mask attribute
                                   label=f"balancing_authority.ba..Host 2801",
@@ -877,11 +841,11 @@ class CyberPhysicalSystem:
 
                 # protocols added below to the router based on the ports
                 # commands to add interfaces to firewalls and routers
-                regFirewall.add_interfaces("eth0", f"172.30.0.2")  # interface to router
-                regFirewall.add_interfaces("eth1", f"172.30.0.5")  # interface to ICCP server
-                regRouter.add_interfaces("eth0", f"172.30.0.1")  # interface to firewall
+                regFirewall.add_interfaces("eth0", f"172.{val.get('id')}.0.2")  # interface to router
+                regFirewall.add_interfaces("eth1", f"172.{val.get('id')}.0.5")  # interface to ICCP server
+                regRouter.add_interfaces("eth0", f"172.{val.get('id')}.0.1")  # interface to firewall
                 regRouter.add_interfaces("eth1",
-                                         f"172.30.0.XXX")  # interface to UCC #this one will be changed based on UCC subnet (interface towards UCC)
+                                         f"172.{val.get('id')}.0.XXX")  # interface to UCC #this one will be changed based on UCC subnet (interface towards UCC)
 
                 # protocols added below to the router based on the ports
                 iccpClient.set_protocol("ICCP", "102", "TCP")
@@ -890,40 +854,43 @@ class CyberPhysicalSystem:
                 reg.add_link(iccpClient.label, regFirewall.label, "Ethernet", 10.0, 10.0)
                 reg.add_link(regFirewall.label, regRouter.label, "Ethernet", 10.0, 10.0)
 
-            for u in utilities:
-                reg.add_node(u.utilityFirewall[0])
-                # firewall command to add the firewalls
-                regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.0.6", f"10.{u.id}.0.3", "102", "TCP",
-                                         "allow")  # between utilICCPServer and regICCPClient
-                reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
+                for u in utilities:
+                    reg.add_node(u.utilityFirewall[0])
+                    # firewall command to add the firewalls
+                    regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.{val.get('id')}.0.6", f"10.{u.id}.0.3", "102", "TCP",
+                                             "allow")  # between utilICCPServer and regICCPClient
+                    reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
+                regulatory.append(reg)
+                name_json = f"Regulatory{val.get('id')}.json"
+                output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
+
         else:
+            print('n_ba <= 1')
+            # cluster utilities into 30 clusters
+            kmeans = KMeans(n_clusters=1, random_state=0).fit([[u.latitude, u.longitude] for u in utilities])
+            # Extracting the centroids
+            centroid = kmeans.cluster_centers_
             reg = Regulatory(
                 label="Regulatory",
-                networklan= "172.30.0.0",
+                networklan="172.30.0.0",
                 utils=utilities,
                 utilFirewalls=[ut.utilityFirewall for ut in utilities],
-                latitude=utilities[0].latitude,
-                longitude=utilities[0].longitude
+                latitude=centroid[0][0],
+                longitude=centroid[0][1]
             )
             regFirewall = Firewall([], [], reg.latitude, reg.longitude,
                                     utility="balancing_authority", substation="ba",
-                                    #adminIP = "",
-                                    #adminIP=f"172.30.0.2",
                                     ipaddress=f"172.30.0.2", #interface to router
                                     #ipaddress=f"172.30.0.5", #interface to ICCP server
                                     label=f"balancing_authority.ba..Firewall 1701",
                                     vlan='1')
             regRouter = Router(interfaces=["eth0", "eth1"], adminIP={}, routingTable={},
                                     utility="balancing_authority", substation="ba",
-            #                        adminIP = "",
-                                    #adminIP=f"172.30.0.3",
                                     ipaddress=f"172.30.0.1", #interface to firewall
                                     label=f"balancing_authority.ba..Router 1551",
                                     vlan='1')
             iccpClient = Host([],
                                     utility="balancing_authority", substation="ba",
-                                    #adminIP = "",
-                                    #adminIP=f"172.30.0.1",
                                     ipaddress=f"172.30.0.6", #interface to firewall
                                     #subnetMask = 255.255.255.252 #ideally every host, and router interface, and firewall interface should have a subnet mask attribute
                                     label=f"balancing_authority.ba..Host 2801",
@@ -961,7 +928,7 @@ class CyberPhysicalSystem:
                 reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
 
             regulatory.append(reg)
-            name_json = "Regulatory.json"
+            name_json = f"Regulatory{reg.label}.json"
             output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
 
         return regulatory
@@ -974,48 +941,56 @@ def to_json(obj):
         return [to_json(item) for item in obj]
     else:
         return obj
-
 def output_to_json_file(substation, filename):
     """Outputs the regulatory structure to a JSON file."""
     with open(filename, "w") as file:
         json.dump(substation, file, default=to_json, indent=4)
+def get_substation_connections(branches_csv, substations_csv, pw_case_object, dist_file):
 
-def get_substation_connections(branches_csv, substations_csv, pw_case_object):
-    df2 = pd.read_csv(substations_csv, skiprows=1)
-    df2.fillna(99999, inplace=True)
-    df = pd.read_csv(branches_csv)
-    # Convert columns to tuples
-    df['Pairs'] = list(zip(df['SubNumberFrom'], df['SubNumberTo']))
-    df = df[df['SubNumberFrom'] != df['SubNumberTo']]
-    # Find unique pairs
-    unique_pairs0 = df['Pairs'].unique()
-    # Display unique pairs
-    # print(unique_pairs)
-    unique_pairs = [None] * len(unique_pairs0)
+    if not os.path.exists(dist_file):
+        print('creating csv file')
+        df2 = pd.read_csv(substations_csv, skiprows=1)
+        df2.fillna(99999, inplace=True)
+        df = pd.read_csv(branches_csv)
+        # Convert columns to tuples
+        df['Pairs'] = list(zip(df['SubNumberFrom'], df['SubNumberTo']))
+        df = df[df['SubNumberFrom'] != df['SubNumberTo']]
+        # Find unique pairs
+        unique_pairs0 = df['Pairs'].unique()
+        # Display unique pairs
+        # print(unique_pairs)
+        unique_pairs = [None] * len(unique_pairs0)
 
-    #make sure that the unique_pairs0 does not have pair[0] and pair[1] as both generation substations
-    for pair in unique_pairs0:
-        for index, row in df2.iterrows():
-            #if both numbers in the pair are generation substations, remove the pair
-            if row['Sub Num'] == pair[0] and row['Gen MW'] != 99999:
-                if row['Sub Num'] == pair[1] and row['Gen MW'] != 99999:
-                    # print("DELETED PAIR: ", pair)
-                    unique_pairs0 = np.delete(unique_pairs0, np.where(unique_pairs0 == pair), axis=0)
+        #make sure that the unique_pairs0 does not have pair[0] and pair[1] as both generation substations
+        for pair in unique_pairs0:
+            for index, row in df2.iterrows():
+                #if both numbers in the pair are generation substations, remove the pair
+                if row['Sub Num'] == pair[0] and row['Gen MW'] != 99999:
+                    if row['Sub Num'] == pair[1] and row['Gen MW'] != 99999:
+                        # print("DELETED PAIR: ", pair)
+                        unique_pairs0 = np.delete(unique_pairs0, np.where(unique_pairs0 == pair), axis=0)
 
-    #find the distance between the substations using latitude and longitude information from df2 using haversine function
-    for i in range(len(unique_pairs0)):
-        for index, row in df2.iterrows():
-            if row['Sub Num'] == unique_pairs0[i][0]:
-                lat1 = row['Latitude']
-                lon1 = row['Longitude']
-            if row['Sub Num'] == unique_pairs0[i][1]:
-                lat2 = row['Latitude']
-                lon2 = row['Longitude']
-        unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
+        #find the distance between the substations using latitude and longitude information from df2 using haversine function
+        for i in range(len(unique_pairs0)):
+            for index, row in df2.iterrows():
+                if row['Sub Num'] == unique_pairs0[i][0]:
+                    lat1 = row['Latitude']
+                    lon1 = row['Longitude']
+                if row['Sub Num'] == unique_pairs0[i][1]:
+                    lat2 = row['Latitude']
+                    lon2 = row['Longitude']
+            unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
 
-    # convert unique pairs to a dataframe with three columns
-    unique_pairs_df = pd.DataFrame(unique_pairs, columns=['SubNumberFrom', 'SubNumberTo', 'Distance'])
-    unique_pairs_df.to_csv('10k_substation_distances.csv', index=False)
+        # convert unique pairs to a dataframe with three columns
+        unique_pairs_df = pd.DataFrame(unique_pairs, columns=['SubNumberFrom', 'SubNumberTo', 'Distance'])
+        unique_pairs_df.to_csv(dist_file, index=False)
+    else:
+        print('Read from csv file')
+        unique_pairs_df = pd.read_csv(dist_file)
+
+    # convert the unique pairs dataframe to a unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
+    unique_pairs = unique_pairs_df.to_numpy()
+
     #get graph from saw object
     if pw_case_object is None:
         power_graph = None
@@ -1029,7 +1004,6 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object):
     #     print("Node:", node, "Attributes:", power_graph.nodes[node])
 
     return unique_pairs, power_graph
-
 def get_num_of_gens(df, name):
     try:
         # Return the count excluding rows where 'Gen MW' is 99999
@@ -1037,20 +1011,22 @@ def get_num_of_gens(df, name):
     except KeyError:
         # Return 0 if the key is not found
         return 0
-def generate_system_from_csv(csv_file, branches_csv, filepath):
+def generate_system_from_csv(csv_file, branches_csv, filepath, n_ba, dist_file):
     cps = CyberPhysicalSystem()
     if no_powerworld:
-        substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, None)
+        substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, None, dist_file)
         substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
         utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
-        regulatory = cps.generate_BA(substations, utilities)
+        regulatory = cps.generate_BA(substations, utilities, n_ba)
     else:
         saw = SAW(FileName=filepath)
-        substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, saw)
+        substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, saw, dist_file)
         substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
         utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
-        regulatory = cps.generate_BA(substations, utilities, selected_case)
+        regulatory = cps.generate_BA(substations, utilities, selected_case, n_ba)
 
+n_ba = int(config['DEFAULT']['n_ba'])
+print('Number of BAs:', n_ba)
 no_powerworld = config['DEFAULT']['no_powerworld']
 if no_powerworld == 'True':
     no_powerworld = True
@@ -1063,14 +1039,18 @@ if '2k' in selected_case:
     filepath = os.path.join(cwd, 'ACTIVSg2000.pwb')
     sub_file = "Substation_2k.csv"
     branch_file = "Branches_2k.csv"
+    dist_file = '2k_substation_distances.csv'
 elif '500' in selected_case:
     filepath = os.path.join(cwd, 'ACTIVSg500.pwb')
     sub_file = "Substation_500bus.csv"
     branch_file = "Branches_500.csv"
+    dist_file = '500_substation_distances.csv'
 elif '10k' in selected_case:
     filepath = os.path.join(cwd, 'ACTIVSg10k.pwb')
     sub_file = "Substation_10k.csv"
     branch_file = "Branches_10k.csv"
+    dist_file = '10k_substation_distances.csv'
 
-generate_system_from_csv(sub_file, branch_file, filepath)
+print('Filename:', filepath)
+generate_system_from_csv(sub_file, branch_file, filepath, n_ba, dist_file)
 

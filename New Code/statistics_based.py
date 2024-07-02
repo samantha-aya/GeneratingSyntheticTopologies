@@ -47,7 +47,6 @@ def havel_hakimi(seq):
     # recursive call
     return havel_hakimi(seq)
 
-
 def find_random_edge(g, exclude_edges=set()):
     edges = list(g.edges())
     random.shuffle(edges)
@@ -55,7 +54,6 @@ def find_random_edge(g, exclude_edges=set()):
         if edge not in exclude_edges and (edge[1], edge[0]) not in exclude_edges:
             return edge
     return None
-
 
 def double_edge_swap(g, u1, v1, u2, v2):
     # Ensure no parallel edges, self-loops, and edges exist in the graph
@@ -73,7 +71,6 @@ def double_edge_swap(g, u1, v1, u2, v2):
     g.add_edge(u2, v1)
     return True
 
-
 def reduce_nodes_to_n(g, n):
     nodes_to_remove = [node for node in g.nodes() if g.degree(node) == 1]
     while len(g.nodes()) > n and nodes_to_remove:
@@ -87,18 +84,13 @@ def reduce_nodes_to_n(g, n):
     if len(g.nodes()) > n:
         print(f"Unable to reduce the number of nodes to {n} by removing only nodes with degree 1")
 
-
 def generate_nwk(subs, gens):
-
+    metrics_dict = {}
     probability = lognormal(np.array(range(1,11)), 0.57627298, 0.56637515 )
     # add 0.003 to each value in probablity
     # probability = np.add(probability, 0.003)
-
-
     # generate n integers from the probablity distribution
     num_sub = subs
-    # sub_ratio = 200/333
-    # n = round(num_sub/sub_ratio)
     n = subs
     print("Num of vertices:", n)
 
@@ -263,7 +255,16 @@ def generate_nwk(subs, gens):
     print("Assortativity:", nx.degree_assortativity_coefficient(subbase))
     pos = nx.kamada_kawai_layout(subbase)
     nx.draw_networkx(subbase,pos=pos,node_color='blue',node_size=90,with_labels=False)
-    plt.show()
+
+    metrics_dict['Nodes'] = len(subbase.nodes())
+    metrics_dict['Density'] = density
+    metrics_dict['Diameter'] = diameter
+    metrics_dict['Average Diameter'] = nx.average_shortest_path_length(subbase)
+    metrics_dict['Spectral Gap'] = abs(eigens[0]) - abs(eigens[1])
+    metrics_dict['Clustering Coefficient'] = nx.average_clustering(subbase)
+    metrics_dict['Assortativity'] = nx.degree_assortativity_coefficient(subbase)
+    metrics_dict['Utility'] = ''
+
 
     #find the node with highest degree
     max_degree = 0
@@ -322,7 +323,7 @@ def generate_nwk(subs, gens):
     # colors = [node[1]['color'] for node in subbase.nodes(data=True)]
     # nx.draw_networkx(subbase, pos, with_labels=True, node_size=90, node_color=colors)
     # plt.show()
-    return subbase, max_node
+    return subbase, max_node, metrics_dict
 
     # avg_ebc_mw = 0.125
     # avg_ebc_plc = 0.0198
