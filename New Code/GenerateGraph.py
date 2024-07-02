@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import os
 import configparser
+#import time
 
+#start_graph = time.time()
 config = configparser.ConfigParser()
 config.read('settings.ini')
 configuration = config['DEFAULT']['topology_configuration']
@@ -276,3 +278,7 @@ if __name__ == "__main__":
     with open(file_path, 'r') as file:
         data = json.load(file)
     main(code_to_run, data)
+
+#end_graph = time.time()
+#total_time_graph = end_graph - start_graph
+#print(total_time_graph)

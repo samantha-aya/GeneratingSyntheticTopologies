@@ -1,6 +1,8 @@
 import networkx as nx
 import json
+#import time
 
+#start_metrics = time.time()
 filename = 'D:/Github/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
 # Open the JSON file and load its contents into a Python variable
 with open(filename, 'r') as file:
@@ -33,6 +35,9 @@ worst_case_connectivity = len(min(nx.connectivity.cuts.minimum_node_cut(G), key=
 algebraic_connectivity = nx.algebraic_connectivity(G)
 number_of_links = G.number_of_edges()
 network_density = nx.density(G)
+#end_metrics = time.time()
+#total_time_metrics = end_metrics - start_metrics
+#total_time = (adding all three times, json, graph, and metrics)
 
 #print(average_path_length, node_degree, diameter, worst_case_connectivity, algebraic_connectivity, number_of_links, network_density)
 print("Average path length:  ", average_path_length)
@@ -41,3 +46,4 @@ print("Worst Case Connectivity:  ", worst_case_connectivity)
 print("Algebraic connectivity:  ", algebraic_connectivity)
 print("Number of links:  ", number_of_links)
 print("Network Density:  ", network_density)
+#print("Total Generation Time",)
