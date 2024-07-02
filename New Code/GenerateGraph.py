@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import os
 import configparser
+#import time
 
+#start_graph = time.time()
 config = configparser.ConfigParser()
 config.read('settings.ini')
 configuration = config['DEFAULT']['topology_configuration']
@@ -289,5 +291,14 @@ if __name__ == "__main__":
     #2-Generate substation-utility graph on a map
     #3-Generate utility internal layout
     #4-Generate regulatory/region internal layout
-    file_path = os.path.join(cwd, 'Output\\Regulatory')
-    main(code_to_run, file_path)
+    file_path = os.path.join(cwd, 'Output\\Regulatory\\Regulatory.json')
+
+    # Load the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    main(code_to_run, data)
+
+#end_graph = time.time()
+#total_time_graph = end_graph - start_graph
+#print(total_time_graph)
+
