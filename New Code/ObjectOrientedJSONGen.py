@@ -148,7 +148,6 @@ class Relay(Node):
         self.relaySubType = relaysubtype
         self.protocol = {}
 
-
     def set_protocol(self, protocolLabel, port, transportLayer):
         #this functions lets us set the protocol for the relay
         protocol = {
@@ -425,31 +424,31 @@ class CyberPhysicalSystem:
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Router {row['Sub Num']}",
                                 vlan='Corporate')
             switch=Switch([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0", #remove IP addresses, only admin ip
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0", #remove IP addresses
                                 label=f"{row['Utility Name']}.{row['Sub Name']}.OT.Switch {(2*int(row['Sub Num'])-1)}",
                                 vlan='OT')
             corp_switch=Switch([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #remove IP addresses, only admin ip
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #remove IP addresses
                                 label=f"{row['Utility Name']}.{row['Sub Name']}.Corporate.Switch {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             localDatabase = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.99", #corp host IP: 99
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.68", #corp host IP: 68
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalDatabase {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             localWebServer = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.100", #corp host IP: 100
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.69", #corp host IP: 69
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalWebServer {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             hmi = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.101", #corp host IP: 101
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.70", #corp host IP: 70
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..hmi {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             host1 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.102", #corp host IP: 102
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", #corp host IP: 66
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             host2 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.103", #corp host IP: 103
+                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.67", #corp host IP: 67
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             RC = RelayController(relayIPlist=["192.168.1.1", "192.168.1.2"], utility=row["Utility Name"], substation=row["Sub Name"],
@@ -503,10 +502,10 @@ class CyberPhysicalSystem:
 
             # commands to add interfaces to routers and firewalls
             firewall.add_interfaces("eth0", f"10.{utl_ID}.{row['Sub Num']}.1","255.255.255.192") # interface to OT network
-            firewall.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.65","255.255.255.244") # interface to routing network
-            firewall.add_interfaces("eth2", f"10.{utl_ID}.{row['Sub Num']}.97","255.255.255.244") # interface to corporate network
-            router.add_interfaces("eth0", f"10.{utl_ID}.{row['Sub Num']}.66","255.255.255.244") # routing subnet (internal)
-            router.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.X","255.255.255.X") # routing subnet (external) ***this one will be changed
+            firewall.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.97","255.255.255.252") # interface to routing network
+            firewall.add_interfaces("eth2", f"10.{utl_ID}.{row['Sub Num']}.65","255.255.255.244") # interface to corporate network
+            router.add_interfaces("eth0", f"10.{utl_ID}.{row['Sub Num']}.98","255.255.255.252") # routing subnet (internal)
+            router.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.101","255.255.255.252") # routing subnet (external) ***this one will be changed
 
             #firewall command to add the firewalls
             firewall.add_acl_rule("acl0", "Allow DNP3", f"10.{utl_ID}.0.11",f"10.{utl_ID}.{row['Sub Num']}.3", "20000" ,"TCP", "allow") #from EMS to outstation
@@ -642,6 +641,7 @@ class CyberPhysicalSystem:
             for s in substations:
                 if s.utility_id == util.id:
                     util.add_node(s)
+                    substationsRouter.add_interfaces("eth1", f"10.{util.id}.{s}.102","255.255.255.252")  # routing subnet (external) ***this one will be changed
                     substationsFirewall.add_acl_rule("acl0", "Allow DNP3", f"10.{util.id}.0.11", f"10.{utl_ID}.{s}.2", "20000", "TCP","allow")  # between utilEMS and SubRC,  outstation IP: f"10.{utl_ID}.{row['Sub Num']}.3"
                     substationsFirewall.add_acl_rule("acl1", "Allow HTTPS", f"10.{util.id}.0.12", f"10.{utl_ID}.{s}.100", "443", "TCP","allow")  # between utilHMI and SubWebServer (in substation)
 
@@ -859,8 +859,8 @@ class CyberPhysicalSystem:
                 for u in utilities:
                     reg.add_node(u.utilityFirewall[0])
                     # firewall command to add the firewalls
-                    regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.{val.get('id')}.0.6", f"10.{u.id}.0.3", "102", "TCP",
-                                             "allow")  # between utilICCPServer and regICCPClient
+                    regRouter.add_interfaces("eth1", f"10.{u.id}.0.34","255.255.255.252")  # routing subnet (external) ***this one will be changed
+                    regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.{val.get('id')}.0.6", f"10.{u.id}.0.3", "102", "TCP","allow")  # between utilICCPServer and regICCPClient
                     reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
                 regulatory.append(reg)
                 name_json = f"Regulatory{val.get('id')}.json"
