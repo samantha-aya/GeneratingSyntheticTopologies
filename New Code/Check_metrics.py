@@ -5,8 +5,8 @@ from geopy.distance import geodesic
 import time
 
 start_metrics = time.time()
-#filename = 'D:/Github/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
-filename = 'C:/GitHubProjects/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
+filename = 'D:/Github/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
+#filename = 'C:/GitHubProjects/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
 # Open the JSON file and load its contents into a Python variable
 with open(filename, 'r') as file:
     json_data = json.load(file)
