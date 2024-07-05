@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import os
 import configparser
-#import time
+import time
 
-#start_graph = time.time()
+start_graph = time.time()
 config = configparser.ConfigParser()
 config.read('settings.ini')
 configuration = config['DEFAULT']['topology_configuration']
@@ -286,7 +286,7 @@ def main(code_to_run, file_path):
 
 
 if __name__ == "__main__":
-    code_to_run = 2
+    code_to_run = 1
     #1-Generate substation internal layout
     #2-Generate substation-utility graph on a map
     #3-Generate utility internal layout
@@ -298,7 +298,6 @@ if __name__ == "__main__":
         data = json.load(file)
     main(code_to_run, data)
 
-#end_graph = time.time()
-#total_time_graph = end_graph - start_graph
-#print(total_time_graph)
-
+end_graph = time.time()
+total_time_graph = end_graph - start_graph
+print(f"{total_time_graph:.2f} seconds")  #output time with 2 decimal places

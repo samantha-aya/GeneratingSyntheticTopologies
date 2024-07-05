@@ -9,11 +9,11 @@ from statistics_based import generate_nwk#import zeyu's function
 from esa import SAW
 from match import main
 import matplotlib.pyplot as plt
-#import time
+import time
 
 import logging
 
-#start_json = time.time()
+start_json = time.time()
 cwd = os.getcwd()
 # Configure logging
 for handler in logging.root.handlers[:]:
@@ -1056,6 +1056,6 @@ elif '10k' in selected_case:
 print('Filename:', filepath)
 generate_system_from_csv(sub_file, branch_file, filepath, n_ba, dist_file)
 
-#end_json = time.time()
-#total_time_json = end_json - start_json
-#print(total_time_josn)
+end_json = time.time()
+total_time_json = end_json - start_json
+print(f"{total_time_json:.2f} seconds")  #output time with 2 decimal places
