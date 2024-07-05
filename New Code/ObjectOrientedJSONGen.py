@@ -27,9 +27,8 @@ config.read('settings.ini')
 topology = config['DEFAULT']['topology_configuration']
 
 class Node:
-    def __init__(self, utility, substation, ipaddress, label, vlan):
+    def __init__(self, utility, substation, label, vlan):
         self.utility = utility
-        self.ipAddress = ipaddress
         if vlan == 'Corporate':
             self.subnetMask = '255.255.255.224'
         elif vlan == 'OT':
@@ -105,8 +104,9 @@ class Switch(Node):
         super().__init__(*args, **kwargs)
         self.arpTable = arpTable
 class RelayController(Node):
-    def __init__(self, relayIPlist, *args, **kwargs):
+    def __init__(self, ipaddress, relayIPlist, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.ipAddress = ipaddress
         self.relayIPlist = relayIPlist
         self.protocol = {}
 
@@ -124,8 +124,9 @@ class RelayController(Node):
 class Host(Node):
     #this class of node is used for ICCPServer (Reg), EMS (Utilities)
     #and of course for hosts anywhere (Reg, Uils, Subtations)
-    def __init__(self, openPorts, *args, **kwargs):
+    def __init__(self, ipaddress, openPorts, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.ipAddress = ipaddress
         self.protocol = {}
 
     def set_protocol(self, protocolLabel, port, transportLayer):
@@ -412,51 +413,50 @@ class CyberPhysicalSystem:
 
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.1", # interface to OT network
+                                #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.1", # interface to OT network
                                 #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.97", # interface to corporate network
                                 #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.65", # interface to routing network
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Firewall {row['Sub Num']}",
                                 vlan='Corporate')
 
             router = Router([], routingTable={}, utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", # routing subnet (internal)
+                                #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", # routing subnet (internal)
                                 #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", # routing (external)
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Router {row['Sub Num']}",
                                 vlan='Corporate')
             switch=Switch([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0", #remove IP addresses
+                                #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0", #remove IP addresses
                                 label=f"{row['Utility Name']}.{row['Sub Name']}.OT.Switch {(2*int(row['Sub Num'])-1)}",
                                 vlan='OT')
             corp_switch=Switch([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.96", #remove IP addresses
                                 label=f"{row['Utility Name']}.{row['Sub Name']}.Corporate.Switch {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
-            localDatabase = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.68", #corp host IP: 68
+            localDatabase = Host([f"10.{utl_ID}.{row['Sub Num']}.68"], openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.68", #corp host IP: 68
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalDatabase {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
-            localWebServer = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.69", #corp host IP: 69
+            localWebServer = Host([f"10.{utl_ID}.{row['Sub Num']}.69"], openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.69", #corp host IP: 69
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..LocalWebServer {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
-            hmi = Host([], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.70", #corp host IP: 70
+            hmi = Host([f"10.{utl_ID}.{row['Sub Num']}.70"], openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.70", #corp host IP: 70
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..hmi {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
-            host1 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", #corp host IP: 66
+            host1 = Host([f"10.{utl_ID}.{row['Sub Num']}.66"], openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", #corp host IP: 66
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
-            host2 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.67", #corp host IP: 67
+            host2 = Host([f"10.{utl_ID}.{row['Sub Num']}.67"], openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.67", #corp host IP: 67
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..Host {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
             RC = RelayController(relayIPlist=["192.168.1.1", "192.168.1.2"], utility=row["Utility Name"], substation=row["Sub Name"],
                                  ipaddress=f"10.{utl_ID}.{row['Sub Num']}.2", #OT host IP: 2
                                  label=f"{row['Utility Name']}.{row['Sub Name']}..RC {row['Sub Num']}",
                                  vlan='OT')
-            outstation = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
-                                ipaddress=f"10.{utl_ID}.{row['Sub Num']}.3", #OT host IP: 3
+            outstation = Host([f"10.{utl_ID}.{row['Sub Num']}.3"], openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
+                                #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.3", #OT host IP: 3
                                 label=f"{row['Utility Name']}.{row['Sub Name']}..outstation {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
 
@@ -475,7 +475,7 @@ class CyberPhysicalSystem:
                 relayiplist.append(ip)
                 relay = Relay("", [], 'Line', 'OC',
                               utility=row['Utility Name'], substation=row['Sub Name'],
-                              ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0",
+                              #ipaddress=f"10.{utl_ID}.{row['Sub Num']}.0",
                               vlan='OT',
                               label=f"{row['Utility Name']}.{row['Sub Name']}..Relay {relay_num+1}")
                 sub.add_node(relay)
@@ -581,49 +581,49 @@ class CyberPhysicalSystem:
 
             utilFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.21", #interface to router (to BA Firewall)
+                                #ipaddress=f"10.{utl_ID}.0.21", #interface to router (to BA Firewall)
                                 #ipaddress=f"10.{utl_ID}.0.9", #interface to EMS/HMI subnet
                                 label=f"{key}.{key}..Firewall {firewall_start}",
                                 vlan='1')
 
             utilRouter=Router(interfaces=["eth0", "eth1"], routingTable={}, utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.0", #1
+                                #ipaddress=f"10.{utl_ID}.0.0", #1
                                 label=f"{key}.{key}..Router {router_start}",
                                 vlan='1')
             utilSwitch=Switch([], utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.0", #remove IP addresses, keep admin ip
+                                #ipaddress=f"10.{utl_ID}.0.0", #remove IP addresses, keep admin ip
                                 label=f"{key}.{key}..Switch {ems_start}",
                                 vlan='OT')
-            utilEMS=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                ipaddress=f"10.{utl_ID}.0.11",
+            utilEMS=Host([f"10.{utl_ID}.0.11"], openPorts=[16, 32], utility=key, substation="utl",
+                                #ipaddress=f"10.{utl_ID}.0.11",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1')
-            utilHMI=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                ipaddress=f"10.{utl_ID}.0.12",
+            utilHMI=Host([f"10.{utl_ID}.0.12"], openPorts=[16, 32], utility=key, substation="utl",
+                                #ipaddress=f"10.{utl_ID}.0.12",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1')
-            iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                ipaddress=f"10.{utl_ID}.0.3",
+            iccpServer=Host([f"10.{utl_ID}.0.3"], openPorts=[16, 32], utility=key, substation="utl",
+                                #ipaddress=f"10.{utl_ID}.0.3",
                                 label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1') #need to fix this information or see what needs to be changed
             router_start = router_start + 1
 
             substationsRouter=Router([], routingTable={}, utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.18",
+                                #ipaddress=f"10.{utl_ID}.0.18",
                                      # we will need one other interface (and IP) for each substation link
                                 label=f"{key}.{key}..Router {router_start}",
                                 vlan='1')
             firewall_start = firewall_start+1
             substationsFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.17", #interfact to substation router
+                                #ipaddress=f"10.{utl_ID}.0.17", #interfact to substation router
                                 #ipaddress=f"10.{utl_ID}.0.10", #interface to EMS/HMI subnet
                                 label=f"{key}.{key}..Firewall {firewall_start}",
                                 vlan='1')
             firewall_start = firewall_start + 1
             DMZFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.26", #interface to router (to BA firewall)
+                                #ipaddress=f"10.{utl_ID}.0.26", #interface to router (to BA firewall)
                                 #ipaddress=f"10.{utl_ID}.0.2", #interface to ICCP server
                                 label=f"{key}.{key}..Firewall {firewall_start}",
                                 vlan='1')
@@ -641,7 +641,7 @@ class CyberPhysicalSystem:
             for s in substations:
                 if s.utility_id == util.id:
                     util.add_node(s)
-                    substationsRouter.add_interfaces("eth1", f"10.{util.id}.{s}.102","255.255.255.252")  # routing subnet (external) ***this one will be changed
+                    substationsRouter.add_interfaces(f"eth{s}", f"10.{util.id}.{s}.102","255.255.255.252")  # routing subnet (external) ***this one will be changed
                     substationsFirewall.add_acl_rule("acl0", "Allow DNP3", f"10.{util.id}.0.11", f"10.{utl_ID}.{s}.2", "20000", "TCP","allow")  # between utilEMS and SubRC,  outstation IP: f"10.{utl_ID}.{row['Sub Num']}.3"
                     substationsFirewall.add_acl_rule("acl1", "Allow HTTPS", f"10.{util.id}.0.12", f"10.{utl_ID}.{s}.100", "443", "TCP","allow")  # between utilHMI and SubWebServer (in substation)
 
@@ -665,7 +665,6 @@ class CyberPhysicalSystem:
             DMZFirewall.add_interfaces("eth0", f"10.{utl_ID}.0.2","255.255.255.248") #interface to ICCP server
             DMZFirewall.add_interfaces("eth1", f"10.{utl_ID}.0.26","255.255.255.252") #interface to router (to BA firewall)
             substationsRouter.add_interfaces("eth0", f"10.{utl_ID}.0.18","255.255.255.252") #interface to internal UCC
-            substationsRouter.add_interfaces("eth1", f"10.{utl_ID}.0.XXX","255.255.255.XXX") #this one will be changed based on substation subnet (interface to substation)
             utilRouter.add_interfaces("eth0", f"10.{utl_ID}.0.22","255.255.255.252") #interface towards util firewall
             utilRouter.add_interfaces("eth1", f"10.{utl_ID}.0.25","255.255.255.252") #interface towards DMZ
             utilRouter.add_interfaces("eth2", f"10.{utl_ID}.0.233","255.255.255.252") #interface towards BA
@@ -814,19 +813,18 @@ class CyberPhysicalSystem:
                 )
                 regFirewall = Firewall([], [], reg.latitude, reg.longitude,
                                        utility="balancing_authority", substation="ba",
-                                       ipaddress=f"172.{val.get('id')}.0.2",  # interface to router
+                                       #ipaddress=f"172.{val.get('id')}.0.2",  # interface to router
                                        # ipaddress=f"172.30.0.5", #interface to ICCP server
                                        label=f"balancing_authority.ba..Firewall 1701",
                                        vlan='1')
                 regRouter = Router(interfaces=["eth0", "eth1"], routingTable={},
-                                   adminIP={},
                                    utility="balancing_authority", substation="ba",
-                                   ipaddress=f"172.{val.get('id')}.0.1",  # interface to firewall
+                                   #ipaddress=f"172.{val.get('id')}.0.1",  # interface to firewall
                                    label=f"balancing_authority.ba..Router 1551",
                                    vlan='1')
-                iccpClient = Host([],
+                iccpClient = Host([f"172.{val.get('id')}.0.6"],
                                   utility="balancing_authority", substation="ba",
-                                  ipaddress=f"172.{val.get('id')}.0.6",  # interface to firewall
+                                  #ipaddress=f"172.{val.get('id')}.0.6",  # interface to firewall
                                   # subnetMask = 255.255.255.252 #ideally every host, and router interface, and firewall interface should have a subnet mask attribute
                                   label=f"balancing_authority.ba..Host 2801",
                                   vlan='1')
@@ -846,8 +844,7 @@ class CyberPhysicalSystem:
                 regFirewall.add_interfaces("eth0", f"172.{val.get('id')}.0.2")  # interface to router
                 regFirewall.add_interfaces("eth1", f"172.{val.get('id')}.0.5")  # interface to ICCP server
                 regRouter.add_interfaces("eth0", f"172.{val.get('id')}.0.1")  # interface to firewall
-                regRouter.add_interfaces("eth1",
-                                         f"172.{val.get('id')}.0.XXX")  # interface to UCC #this one will be changed based on UCC subnet (interface towards UCC)
+                regRouter.add_interfaces(f"eth{val.get('id')}", f"172.{val.get('id')}.0.34")  # interface to UCC #this one will be changed based on UCC subnet (interface towards UCC)
 
                 # protocols added below to the router based on the ports
                 iccpClient.set_protocol("ICCP", "102", "TCP")
@@ -882,18 +879,18 @@ class CyberPhysicalSystem:
             )
             regFirewall = Firewall([], [], reg.latitude, reg.longitude,
                                     utility="balancing_authority", substation="ba",
-                                    ipaddress=f"172.30.0.2", #interface to router
+                                    #ipaddress=f"172.30.0.2", #interface to router
                                     #ipaddress=f"172.30.0.5", #interface to ICCP server
                                     label=f"balancing_authority.ba..Firewall 1701",
                                     vlan='1')
             regRouter = Router(interfaces=["eth0", "eth1"], routingTable={},
                                     utility="balancing_authority", substation="ba",
-                                    ipaddress=f"172.30.0.1", #interface to firewall
+                                    #ipaddress=f"172.30.0.1", #interface to firewall
                                     label=f"balancing_authority.ba..Router 1551",
                                     vlan='1')
-            iccpClient = Host([],
+            iccpClient = Host([f"172.30.0.6"], [],
                                     utility="balancing_authority", substation="ba",
-                                    ipaddress=f"172.30.0.6", #interface to firewall
+                                    #ipaddress=f"172.30.0.6", #interface to firewall
                                     #subnetMask = 255.255.255.252 #ideally every host, and router interface, and firewall interface should have a subnet mask attribute
                                     label=f"balancing_authority.ba..Host 2801",
                                     vlan='1')

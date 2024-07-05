@@ -286,7 +286,7 @@ def main(code_to_run, file_path):
 
 
 if __name__ == "__main__":
-    code_to_run = 1
+    code_to_run = 3
     #1-Generate substation internal layout
     #2-Generate substation-utility graph on a map
     #3-Generate utility internal layout
