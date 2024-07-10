@@ -70,8 +70,7 @@
         "10.53.122.58",
         "10.53.122.59",
         "10.53.122.60",
-        "10.53.122.61",
-        "10.53.122.62"
+        "10.53.122.61"
     ],
     "routeAddress": "10.53.122.64",
     "routeSubnetMask": "255.255.255.224",
@@ -104,8 +103,7 @@
         "10.53.122.90",
         "10.53.122.91",
         "10.53.122.92",
-        "10.53.122.93",
-        "10.53.122.94"
+        "10.53.122.93"
     ],
     "corporateAddress": "10.53.122.96",
     "corporateSubnetMask": "255.255.255.224",
@@ -145,8 +143,7 @@
     "nodes": [
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.97",
-            "ipAddress": "10.53.122.96",
+            "ipAddress": "10.53.122.1",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "YORK 1",
@@ -155,44 +152,89 @@
             "acls": {
                 "acl0": [
                     {
-                        "description": "Block DNP3",
-                        "source": "10.52.1.",
-                        "destination": "10.52.1.",
+                        "description": "Allow DNP3",
+                        "source": "10.53.0.11",
+                        "destination": "10.53.122.3",
                         "port": "20000",
                         "transportLayer": "TCP",
-                        "action": "block"
+                        "action": "allow"
                     }
                 ],
                 "acl1": [
                     {
-                        "description": "Allow ICCP",
-                        "source": "10.52.1.",
-                        "destination": "10.52.1.",
-                        "port": "102",
+                        "description": "Allow HTTPS",
+                        "source": "10.53.0.12",
+                        "destination": "10.53.122.100",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Allow SQL",
+                        "source": "10.53.122.99",
+                        "destination": "10.53.122.3",
+                        "port": "3306",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }
                 ]
             },
-            "interfaces": [],
+            "interfaces": {
+                "eth0": [
+                    {
+                        "label": "eth0",
+                        "ipaddress": "10.53.122.1",
+                        "subnet": "255.255.255.192"
+                    }
+                ],
+                "eth1": [
+                    {
+                        "label": "eth1",
+                        "ipaddress": "10.53.122.65",
+                        "subnet": "255.255.255.244"
+                    }
+                ],
+                "eth2": [
+                    {
+                        "label": "eth2",
+                        "ipaddress": "10.53.122.97",
+                        "subnet": "255.255.255.244"
+                    }
+                ]
+            },
             "Latitude": 34.97,
             "Longitude": -81.19
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.98",
-            "ipAddress": "10.53.122.96",
+            "ipAddress": "10.53.122.66",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "YORK 1",
             "label": "Utility 3.YORK 1..Router 122",
             "compromised": false,
-            "interfaces": [],
+            "interfaces": {
+                "eth0": [
+                    {
+                        "label": "eth0",
+                        "ipaddress": "10.53.122.66",
+                        "subnet": "255.255.255.244"
+                    }
+                ],
+                "eth1": [
+                    {
+                        "label": "eth1",
+                        "ipaddress": "10.53.122.X",
+                        "subnet": "255.255.255.X"
+                    }
+                ]
+            },
             "routingTable": {}
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.1",
             "ipAddress": "10.53.122.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -203,7 +245,6 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.99",
             "ipAddress": "10.53.122.96",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
@@ -214,7 +255,6 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.3",
             "ipAddress": "10.53.122.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -229,7 +269,6 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.4",
             "ipAddress": "10.53.122.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -244,7 +283,6 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.5",
             "ipAddress": "10.53.122.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -259,7 +297,6 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.6",
             "ipAddress": "10.53.122.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -274,8 +311,7 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.2",
-            "ipAddress": "10.53.122.0",
+            "ipAddress": "10.53.122.2",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
             "substation": "YORK 1",
@@ -298,17 +334,16 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.100",
-            "ipAddress": "10.53.122.96",
+            "ipAddress": "10.53.122.102",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "YORK 1",
             "label": "Utility 3.YORK 1..Host 243",
             "compromised": false,
             "protocol": {
-                "DNP3": [
+                "HTTPS": [
                     {
-                        "port": "20000",
+                        "port": "443",
                         "transportLayer": "TCP"
                     }
                 ]
@@ -316,17 +351,16 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.100",
-            "ipAddress": "10.53.122.96",
+            "ipAddress": "10.53.122.103",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "YORK 1",
             "label": "Utility 3.YORK 1..Host 244",
             "compromised": false,
             "protocol": {
-                "DNP3": [
+                "HTTPS": [
                     {
-                        "port": "20000",
+                        "port": "443",
                         "transportLayer": "TCP"
                     }
                 ]
@@ -334,8 +368,7 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.100",
-            "ipAddress": "10.53.122.96",
+            "ipAddress": "10.53.122.99",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "YORK 1",
@@ -352,17 +385,56 @@
         },
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.100",
-            "ipAddress": "10.53.122.96",
+            "ipAddress": "10.53.122.100",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "YORK 1",
             "label": "Utility 3.YORK 1..LocalWebServer 244",
             "compromised": false,
             "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "ipAddress": "10.53.122.101",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORK 1",
+            "label": "Utility 3.YORK 1..hmi 243",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 3",
+            "ipAddress": "10.53.122.3",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "YORK 1",
+            "label": "Utility 3.YORK 1..outstation 244",
+            "compromised": false,
+            "protocol": {
                 "DNP3": [
                     {
                         "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
                         "transportLayer": "TCP"
                     }
                 ]
@@ -470,7 +542,6 @@
     "switches": [
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.1",
             "ipAddress": "10.53.122.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -483,8 +554,7 @@
     "rcs": [
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.2",
-            "ipAddress": "10.53.122.0",
+            "ipAddress": "10.53.122.2",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
             "substation": "YORK 1",
@@ -509,8 +579,7 @@
     "substationFirewall": [
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.97",
-            "ipAddress": "10.53.122.96",
+            "ipAddress": "10.53.122.1",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "YORK 1",
@@ -519,26 +588,58 @@
             "acls": {
                 "acl0": [
                     {
-                        "description": "Block DNP3",
-                        "source": "10.52.1.",
-                        "destination": "10.52.1.",
+                        "description": "Allow DNP3",
+                        "source": "10.53.0.11",
+                        "destination": "10.53.122.3",
                         "port": "20000",
                         "transportLayer": "TCP",
-                        "action": "block"
+                        "action": "allow"
                     }
                 ],
                 "acl1": [
                     {
-                        "description": "Allow ICCP",
-                        "source": "10.52.1.",
-                        "destination": "10.52.1.",
-                        "port": "102",
+                        "description": "Allow HTTPS",
+                        "source": "10.53.0.12",
+                        "destination": "10.53.122.100",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Allow SQL",
+                        "source": "10.53.122.99",
+                        "destination": "10.53.122.3",
+                        "port": "3306",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }
                 ]
             },
-            "interfaces": [],
+            "interfaces": {
+                "eth0": [
+                    {
+                        "label": "eth0",
+                        "ipaddress": "10.53.122.1",
+                        "subnet": "255.255.255.192"
+                    }
+                ],
+                "eth1": [
+                    {
+                        "label": "eth1",
+                        "ipaddress": "10.53.122.65",
+                        "subnet": "255.255.255.244"
+                    }
+                ],
+                "eth2": [
+                    {
+                        "label": "eth2",
+                        "ipaddress": "10.53.122.97",
+                        "subnet": "255.255.255.244"
+                    }
+                ]
+            },
             "Latitude": 34.97,
             "Longitude": -81.19
         }
@@ -546,21 +647,34 @@
     "substationRouter": [
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.98",
-            "ipAddress": "10.53.122.96",
+            "ipAddress": "10.53.122.66",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "YORK 1",
             "label": "Utility 3.YORK 1..Router 122",
             "compromised": false,
-            "interfaces": [],
+            "interfaces": {
+                "eth0": [
+                    {
+                        "label": "eth0",
+                        "ipaddress": "10.53.122.66",
+                        "subnet": "255.255.255.244"
+                    }
+                ],
+                "eth1": [
+                    {
+                        "label": "eth1",
+                        "ipaddress": "10.53.122.X",
+                        "subnet": "255.255.255.X"
+                    }
+                ]
+            },
             "routingTable": {}
         }
     ],
     "substationSwitch": [
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.1",
             "ipAddress": "10.53.122.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -573,8 +687,7 @@
     "substationrelayController": [
         {
             "utility": "Utility 3",
-            "adminIP": "10.53.122.2",
-            "ipAddress": "10.53.122.0",
+            "ipAddress": "10.53.122.2",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
             "substation": "YORK 1",
@@ -600,5 +713,5 @@
     "type": "generation",
     "genmw": 5.8,
     "genmvar": 2.7,
-    "connecting_TS_num": 60
+    "connecting_TS_num": 60.0
 }

@@ -70,8 +70,7 @@
         "10.52.195.58",
         "10.52.195.59",
         "10.52.195.60",
-        "10.52.195.61",
-        "10.52.195.62"
+        "10.52.195.61"
     ],
     "routeAddress": "10.52.195.64",
     "routeSubnetMask": "255.255.255.224",
@@ -104,8 +103,7 @@
         "10.52.195.90",
         "10.52.195.91",
         "10.52.195.92",
-        "10.52.195.93",
-        "10.52.195.94"
+        "10.52.195.93"
     ],
     "corporateAddress": "10.52.195.96",
     "corporateSubnetMask": "255.255.255.224",
@@ -145,8 +143,7 @@
     "nodes": [
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.97",
-            "ipAddress": "10.52.195.96",
+            "ipAddress": "10.52.195.1",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "RIDGEWAY 1",
@@ -155,44 +152,89 @@
             "acls": {
                 "acl0": [
                     {
-                        "description": "Block DNP3",
-                        "source": "10.52.1.",
-                        "destination": "10.52.1.",
+                        "description": "Allow DNP3",
+                        "source": "10.52.0.11",
+                        "destination": "10.52.195.3",
                         "port": "20000",
                         "transportLayer": "TCP",
-                        "action": "block"
+                        "action": "allow"
                     }
                 ],
                 "acl1": [
                     {
-                        "description": "Allow ICCP",
-                        "source": "10.52.1.",
-                        "destination": "10.52.1.",
-                        "port": "102",
+                        "description": "Allow HTTPS",
+                        "source": "10.52.0.12",
+                        "destination": "10.52.195.100",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Allow SQL",
+                        "source": "10.52.195.99",
+                        "destination": "10.52.195.3",
+                        "port": "3306",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }
                 ]
             },
-            "interfaces": [],
+            "interfaces": {
+                "eth0": [
+                    {
+                        "label": "eth0",
+                        "ipaddress": "10.52.195.1",
+                        "subnet": "255.255.255.192"
+                    }
+                ],
+                "eth1": [
+                    {
+                        "label": "eth1",
+                        "ipaddress": "10.52.195.65",
+                        "subnet": "255.255.255.244"
+                    }
+                ],
+                "eth2": [
+                    {
+                        "label": "eth2",
+                        "ipaddress": "10.52.195.97",
+                        "subnet": "255.255.255.244"
+                    }
+                ]
+            },
             "Latitude": 34.34,
             "Longitude": -80.7
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.98",
-            "ipAddress": "10.52.195.96",
+            "ipAddress": "10.52.195.66",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "RIDGEWAY 1",
             "label": "Utility 1.RIDGEWAY 1..Router 195",
             "compromised": false,
-            "interfaces": [],
+            "interfaces": {
+                "eth0": [
+                    {
+                        "label": "eth0",
+                        "ipaddress": "10.52.195.66",
+                        "subnet": "255.255.255.244"
+                    }
+                ],
+                "eth1": [
+                    {
+                        "label": "eth1",
+                        "ipaddress": "10.52.195.X",
+                        "subnet": "255.255.255.X"
+                    }
+                ]
+            },
             "routingTable": {}
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.1",
             "ipAddress": "10.52.195.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -203,7 +245,6 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.99",
             "ipAddress": "10.52.195.96",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
@@ -214,7 +255,6 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.3",
             "ipAddress": "10.52.195.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -229,7 +269,6 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.4",
             "ipAddress": "10.52.195.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -244,7 +283,6 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.5",
             "ipAddress": "10.52.195.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -259,7 +297,6 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.6",
             "ipAddress": "10.52.195.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -274,7 +311,6 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.7",
             "ipAddress": "10.52.195.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -289,7 +325,6 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.8",
             "ipAddress": "10.52.195.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -304,8 +339,7 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.2",
-            "ipAddress": "10.52.195.0",
+            "ipAddress": "10.52.195.2",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
             "substation": "RIDGEWAY 1",
@@ -330,17 +364,16 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.100",
-            "ipAddress": "10.52.195.96",
+            "ipAddress": "10.52.195.102",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "RIDGEWAY 1",
             "label": "Utility 1.RIDGEWAY 1..Host 389",
             "compromised": false,
             "protocol": {
-                "DNP3": [
+                "HTTPS": [
                     {
-                        "port": "20000",
+                        "port": "443",
                         "transportLayer": "TCP"
                     }
                 ]
@@ -348,17 +381,16 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.100",
-            "ipAddress": "10.52.195.96",
+            "ipAddress": "10.52.195.103",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "RIDGEWAY 1",
             "label": "Utility 1.RIDGEWAY 1..Host 390",
             "compromised": false,
             "protocol": {
-                "DNP3": [
+                "HTTPS": [
                     {
-                        "port": "20000",
+                        "port": "443",
                         "transportLayer": "TCP"
                     }
                 ]
@@ -366,8 +398,7 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.100",
-            "ipAddress": "10.52.195.96",
+            "ipAddress": "10.52.195.99",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "RIDGEWAY 1",
@@ -384,17 +415,56 @@
         },
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.100",
-            "ipAddress": "10.52.195.96",
+            "ipAddress": "10.52.195.100",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "RIDGEWAY 1",
             "label": "Utility 1.RIDGEWAY 1..LocalWebServer 390",
             "compromised": false,
             "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "ipAddress": "10.52.195.101",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIDGEWAY 1",
+            "label": "Utility 1.RIDGEWAY 1..hmi 389",
+            "compromised": false,
+            "protocol": {
+                "HTTPS": [
+                    {
+                        "port": "443",
+                        "transportLayer": "TCP"
+                    }
+                ]
+            }
+        },
+        {
+            "utility": "Utility 1",
+            "ipAddress": "10.52.195.3",
+            "subnetMask": "255.255.255.224",
+            "vlan": "Corporate",
+            "substation": "RIDGEWAY 1",
+            "label": "Utility 1.RIDGEWAY 1..outstation 390",
+            "compromised": false,
+            "protocol": {
                 "DNP3": [
                     {
                         "port": "20000",
+                        "transportLayer": "TCP"
+                    }
+                ],
+                "SQL": [
+                    {
+                        "port": "3306",
                         "transportLayer": "TCP"
                     }
                 ]
@@ -518,7 +588,6 @@
     "switches": [
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.1",
             "ipAddress": "10.52.195.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -531,8 +600,7 @@
     "rcs": [
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.2",
-            "ipAddress": "10.52.195.0",
+            "ipAddress": "10.52.195.2",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
             "substation": "RIDGEWAY 1",
@@ -559,8 +627,7 @@
     "substationFirewall": [
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.97",
-            "ipAddress": "10.52.195.96",
+            "ipAddress": "10.52.195.1",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "RIDGEWAY 1",
@@ -569,26 +636,58 @@
             "acls": {
                 "acl0": [
                     {
-                        "description": "Block DNP3",
-                        "source": "10.52.1.",
-                        "destination": "10.52.1.",
+                        "description": "Allow DNP3",
+                        "source": "10.52.0.11",
+                        "destination": "10.52.195.3",
                         "port": "20000",
                         "transportLayer": "TCP",
-                        "action": "block"
+                        "action": "allow"
                     }
                 ],
                 "acl1": [
                     {
-                        "description": "Allow ICCP",
-                        "source": "10.52.1.",
-                        "destination": "10.52.1.",
-                        "port": "102",
+                        "description": "Allow HTTPS",
+                        "source": "10.52.0.12",
+                        "destination": "10.52.195.100",
+                        "port": "443",
+                        "transportLayer": "TCP",
+                        "action": "allow"
+                    }
+                ],
+                "acl2": [
+                    {
+                        "description": "Allow SQL",
+                        "source": "10.52.195.99",
+                        "destination": "10.52.195.3",
+                        "port": "3306",
                         "transportLayer": "TCP",
                         "action": "allow"
                     }
                 ]
             },
-            "interfaces": [],
+            "interfaces": {
+                "eth0": [
+                    {
+                        "label": "eth0",
+                        "ipaddress": "10.52.195.1",
+                        "subnet": "255.255.255.192"
+                    }
+                ],
+                "eth1": [
+                    {
+                        "label": "eth1",
+                        "ipaddress": "10.52.195.65",
+                        "subnet": "255.255.255.244"
+                    }
+                ],
+                "eth2": [
+                    {
+                        "label": "eth2",
+                        "ipaddress": "10.52.195.97",
+                        "subnet": "255.255.255.244"
+                    }
+                ]
+            },
             "Latitude": 34.34,
             "Longitude": -80.7
         }
@@ -596,21 +695,34 @@
     "substationRouter": [
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.98",
-            "ipAddress": "10.52.195.96",
+            "ipAddress": "10.52.195.66",
             "subnetMask": "255.255.255.224",
             "vlan": "Corporate",
             "substation": "RIDGEWAY 1",
             "label": "Utility 1.RIDGEWAY 1..Router 195",
             "compromised": false,
-            "interfaces": [],
+            "interfaces": {
+                "eth0": [
+                    {
+                        "label": "eth0",
+                        "ipaddress": "10.52.195.66",
+                        "subnet": "255.255.255.244"
+                    }
+                ],
+                "eth1": [
+                    {
+                        "label": "eth1",
+                        "ipaddress": "10.52.195.X",
+                        "subnet": "255.255.255.X"
+                    }
+                ]
+            },
             "routingTable": {}
         }
     ],
     "substationSwitch": [
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.1",
             "ipAddress": "10.52.195.0",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
@@ -623,8 +735,7 @@
     "substationrelayController": [
         {
             "utility": "Utility 1",
-            "adminIP": "10.52.195.2",
-            "ipAddress": "10.52.195.0",
+            "ipAddress": "10.52.195.2",
             "subnetMask": "255.255.255.192",
             "vlan": "OT",
             "substation": "RIDGEWAY 1",
@@ -652,5 +763,5 @@
     "type": "generation",
     "genmw": 61.31,
     "genmvar": 33.45,
-    "connecting_TS_num": 144
+    "connecting_TS_num": 144.0
 }

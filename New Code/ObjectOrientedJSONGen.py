@@ -391,11 +391,13 @@ class CyberPhysicalSystem:
                 # If the substation is a generation substation, we need to connect it to a transmission substation
                 # from the pairs in substations_connections, find the pair that contains the current substation
                 # then find the pair with minimum distance between them
-                minimum_distance = 99999
+                minimum_distance = int(99999)
                 for pair in substation_connections:
                     if row['Sub Num'] in pair:
-                        if minimum_distance > pair[2]:
-                            minimum_distance = pair[2]
+                        print(pair)
+                        print(minimum_distance)
+                        if minimum_distance > int(pair[2]):
+                            minimum_distance = int(pair[2])
                             TS_num = pair[1] if row['Sub Num'] == pair[0] else pair[0]
                 sub = GenSubstation(
                     relaynum=row['# of Buses'],
@@ -584,55 +586,61 @@ class CyberPhysicalSystem:
                                 utility=key, substation="",
                                 ipaddress=f"10.{utl_ID}.0.21", #interface to router (to BA Firewall)
                                 #ipaddress=f"10.{utl_ID}.0.9", #interface to EMS/HMI subnet
-                                label=f"{key}.{key}..Firewall {firewall_start}",
+                                label=f"{key}.{key}..UtilityFirewall {firewall_start}",
                                 vlan='1')
 
             utilRouter=Router(interfaces=["eth0", "eth1"], routingTable={}, utility=key, substation="",
                                 ipaddress=f"10.{utl_ID}.0.0", #1
-                                label=f"{key}.{key}..Router {router_start}",
+                                label=f"{key}.{key}..UtilityRouter {router_start}",
                                 vlan='1')
             utilSwitch=Switch([], utility=key, substation="",
                                 ipaddress=f"10.{utl_ID}.0.0", #remove IP addresses, keep admin ip
                                 label=f"{key}.{key}..Switch {ems_start}",
                                 vlan='OT')
+            utilCorpSwitch = Switch([], utility=key, substation="",
+                                ipaddress=f"10.{utl_ID}.0.0",  # remove IP addresses, keep admin ip
+                                label=f"{key}.{key}.Corporate.Switch {ems_start}",
+                                vlan='Corporate')
             utilEMS=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 ipaddress=f"10.{utl_ID}.0.11",
-                                label=f"{key}.{key}..Host {ems_start}",
+                                label=f"{key}.{key}..EMS {ems_start}",
                                 vlan='1')
             utilHMI=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 ipaddress=f"10.{utl_ID}.0.12",
-                                label=f"{key}.{key}..Host {ems_start}",
+                                label=f"{key}.{key}..HMI {ems_start}",
                                 vlan='1')
             iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 ipaddress=f"10.{utl_ID}.0.3",
-                                label=f"{key}.{key}..Host {ems_start}",
+                                label=f"{key}.{key}..ICCPServer {ems_start}",
                                 vlan='1') #need to fix this information or see what needs to be changed
             router_start = router_start + 1
 
             substationsRouter=Router([], routingTable={}, utility=key, substation="",
                                 ipaddress=f"10.{utl_ID}.0.18",
                                      # we will need one other interface (and IP) for each substation link
-                                label=f"{key}.{key}..Router {router_start}",
+                                label=f"{key}.{key}..SubstationRouter {router_start}",
                                 vlan='1')
             firewall_start = firewall_start+1
             substationsFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
                                 ipaddress=f"10.{utl_ID}.0.17", #interfact to substation router
                                 #ipaddress=f"10.{utl_ID}.0.10", #interface to EMS/HMI subnet
-                                label=f"{key}.{key}..Firewall {firewall_start}",
+                                label=f"{key}.{key}..SubstationFirewall {firewall_start}",
                                 vlan='1')
             firewall_start = firewall_start + 1
             DMZFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
                                 ipaddress=f"10.{utl_ID}.0.26", #interface to router (to BA firewall)
                                 #ipaddress=f"10.{utl_ID}.0.2", #interface to ICCP server
-                                label=f"{key}.{key}..Firewall {firewall_start}",
+                                label=f"{key}.{key}..DMZFirewall {firewall_start}",
                                 vlan='1')
             firewall_start = firewall_start + 1
             router_start = router_start + 1
 
             util.add_node(utilFirewall)
             util.add_node(utilRouter)
+            util.add_node(utilSwitch)
+            util.add_node(utilCorpSwitch)
             util.add_node(utilEMS)
             util.add_node(utilHMI)
             util.add_node(iccpServer)
@@ -688,36 +696,45 @@ class CyberPhysicalSystem:
             iccpServer.set_protocol("ICCP", "102", "TCP")
             utilHMI.set_protocol("HTTPS", "443", "TCP")
 
+
+            # corporate switch to ICCP server
+            util.add_link(utilCorpSwitch.label, iccpServer.label, "Ethernet", 10.0, 10.0)
+            # DMZ firewall to corporate switch
+            util.add_link(DMZFirewall.label, utilCorpSwitch.label, "Ethernet", 10.0, 10.0)
+            # router to DMZ firewall
+            util.add_link(utilRouter.label, DMZFirewall.label, "Ethernet", 10.0, 10.0)
+
             # router --> firewall
             util.add_link(utilRouter.label, utilFirewall.label, "Ethernet", 10.0, 10.0)
             # utility_firewall --> EMSswitch
             util.add_link(utilFirewall.label, utilSwitch.label, "Ethernet", 10.0, 10.0)
-            # EMSswitch --> EMS
+            # switch --> EMS
             util.add_link(utilSwitch.label, utilEMS.label, "Ethernet", 10.0, 10.0)
+            # switch --> HMI
+            util.add_link(utilSwitch.label, utilHMI.label, "Ethernet", 10.0, 10.0)
 
             # EMSSwitch --> substationrouter
             util.add_link(utilSwitch.label, substationsFirewall.label, "Ethernet", 10.0, 10.0)
             # substationrouter --> substationFirewall
             util.add_link(substationsFirewall.label, substationsRouter.label, "Ethernet", 10.0, 10.0)
             # substationsRouter --> individual substation routers
-
-            df1 = pd.read_csv("Branches_500.csv")
-
             if "star" in topology:
                 #directly connect all substations to the utility
                 for s in substations:
-                    util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                    if s.utility_id == util.id:
+                        util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if "radial" in topology:
                 for s in substations:
-                    if hasattr(s, 'connecting_TS_num') and s.utility_id == util.id:
-                        for substation in substations:
-                            if substation.substationNumber == s.connecting_TS_num:
-                                s_to = substation
-                                break
-                        print("Connecting substation object found with router label   :", s_to.substationRouter[0].label)
-                        util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
-                    elif s.utility_id == util.id:
-                        util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                    if s.utility_id == util.id:
+                        if hasattr(s, 'connecting_TS_num') and s.utility_id == util.id:
+                            for substation in substations:
+                                if substation.substationNumber == s.connecting_TS_num:
+                                    s_to = substation
+                                    break
+                            print("Connecting substation object found with router label   :", s_to.substationRouter[0].label)
+                            util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                        elif s.utility_id == util.id:
+                            util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if "statistics" in topology:
                 #generate connections between utility, substations using Zeyu's statistics
                 number_of_substations = val.get('num_of_subs')
@@ -957,6 +974,8 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
         # Convert columns to tuples
         df['Pairs'] = list(zip(df['SubNumberFrom'], df['SubNumberTo']))
         df = df[df['SubNumberFrom'] != df['SubNumberTo']]
+        # convert Gen MW column to float
+        df2['Gen MW'] = df2['Gen MW'].astype(int)
         # Find unique pairs
         unique_pairs0 = df['Pairs'].unique()
         # Display unique pairs
@@ -965,12 +984,13 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
 
         #make sure that the unique_pairs0 does not have pair[0] and pair[1] as both generation substations
         for pair in unique_pairs0:
-            for index, row in df2.iterrows():
-                #if both numbers in the pair are generation substations, remove the pair
-                if row['Sub Num'] == pair[0] and row['Gen MW'] != 99999:
-                    if row['Sub Num'] == pair[1] and row['Gen MW'] != 99999:
-                        # print("DELETED PAIR: ", pair)
-                        unique_pairs0 = np.delete(unique_pairs0, np.where(unique_pairs0 == pair), axis=0)
+            matching_row0 = df2[df2['Sub Num'] == pair[0]]
+            matching_row1 = df2[df2['Sub Num'] == pair[1]]
+            # print(matching_row1)
+            #if both numbers in the pair are generation substations, remove the pair
+            if matching_row1['Gen MW'].values[0] != 99999 and matching_row0['Gen MW'].values[0] != 99999:
+                print("DELETED PAIR: ", pair)
+                unique_pairs0 = np.array([row for row in unique_pairs0 if not np.array_equal(row, pair)])
 
         #find the distance between the substations using latitude and longitude information from df2 using haversine function
         for i in range(len(unique_pairs0)):

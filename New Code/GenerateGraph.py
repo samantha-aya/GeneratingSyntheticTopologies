@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import os
 import configparser
+from networkx.drawing.nx_agraph import graphviz_layout
 #import time
 
 #start_graph = time.time()
@@ -61,48 +62,89 @@ def create_hierarchical_substation_graph_no_crossings(substation_data):
 
     return G, node_positions
 
-def create_hierarchical_utility_graph_no_crossings(utility_data):
+def create_hierarchical_utility_graph_no_crossings():
+    file_path = os.path.join(cwd, 'Output\\Utilities\\Region.Utility 0.json')
+    with open(file_path, 'r') as file:
+        utility_data = json.load(file)
     G = nx.DiGraph()
 
     # Define levels for different types of nodes in the hierarchy
     levels = {
-        "RC": 2,
-        "EMS": 1,
-        "Switch": 3,
-        "Router": 4,
-        "DMZ": 1,
-        "Host": 1,
-        "Firewall": 5,
-        "Bus": 0
+        "SubstationRouter": 0,
+        "SubstationFirewall": 1,
+        "Switch": 2,
+        "EMS": 1.5,
+        "HMI": 2.5,
+        "UtilityFirewall": 3,
+        "DMZFirewall": 4,
+        "UtilityRouter": 4,
+        "ICCPServer": 3,
     }
     node_positions = {}
-    y_level_dist = 1.0  # Vertical distance between levels
-    x_level_width = 1.0  # Horizontal distance between nodes in the same level
+    # x_level_width = 1.0  # Horizontal distance between nodes in the same level
 
-    # Initialize x positions for nodes in each level to avoid crossings
-    x_positions = {level: 0.0 for level in levels.values()}
+    # # Initialize x positions for nodes in each level to avoid crossings
+    # x_positions = {level: level for level in levels.values()}
 
     # Add nodes with positions based on their hierarchical level
+    switch_count=0
     for node in utility_data['nodes']:
-        node_id = node['label']
         words = node['label'].split('.')
+        node_id = node['label']
         if len(words) < 4:
-            continue # Extract node type from label
+            continue
         else:
             node_type = words[3].split(' ')[0]  # Extract node type from label
-        level = levels.get(node_type, 6)  # Default level for unrecognized types
-        x_pos = x_positions[level]
-        y_pos = level * y_level_dist
+        level = levels.get(node_type, 9)  # Default level for unrecognized types
+        # x_pos = x_positions[level]
+
+        # x_positions[level] += x_level_width  # Increment x position for the next node in the same level
+        if node_type == 'SubstationRouter' or node_type == 'UtilityRouter':
+            n_color = '#f2809f'
+            x_pos = -0.1
+            y_pos = level
+        elif node_type == 'SubstationFirewall' or node_type == 'UtilityFirewall':
+            n_color = '#faa673'
+            x_pos = -0.1
+            y_pos = level
+        elif node_type == 'Switch':
+            switch_count+=1
+            n_color = '#472f80'
+            if switch_count>1:
+                x_pos=-0.2
+                y_pos=level+3
+            else:
+                x_pos=-0.1
+                y_pos=level
+
+        elif node_type == 'EMS' or node_type == 'HMI':
+            n_color = '#2E6A57'
+            x_pos = -0.15
+            y_pos = level
+        elif node_type == 'DMZFirewall':
+            n_color = '#faa673'
+            x_pos = -0.2
+            y_pos = level
+        elif node_type == 'ICCPServer':
+            n_color = '#2E6A57'
+            x_pos = -0.2
+            y_pos = level
+
+
         node_positions[node_id] = (x_pos, y_pos)
-        x_positions[level] += x_level_width  # Increment x position for the next node in the same level
-        G.add_node(node_id, label=node['label'])
+        G.add_node(node_id, label=node_type, color=n_color, pos=(x_pos, y_pos))
 
     # Add links based on the connections specified in 'links'
     for link in utility_data['links']:
         if 'Bus' in link['destination']:
             continue
         else:
-            G.add_edge(link['source'], link['destination'])
+            label2 = link['destination'].split('.')
+            if 'Utility 0' not in label2[1]:
+                continue
+                # G.add_edge(link['source'], f'{label2[0]}.{label2[1]}')
+            else:
+                G.add_edge(link['source'], link['destination'])
 
     return G, node_positions
 
@@ -147,15 +189,15 @@ def create_utilities_graph_with_color(data, configuration, G):
     if 'star' in configuration:
         for utility in data['utilities']:
             utility_id = utility['label']
-            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='red')
+            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='#FFA500')
 
             for substation in utility['substations']:
                 if substation['type'] == 'generation':
                     G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
-                           color='green')
+                           color='#00FF00')
                 else:
                     G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
-                           color='blue')
+                           color='#00008B')
                 # print(utility_id)
                 # print(substation['substation'])
                 G.add_edge(utility_id, substation['substation'])
@@ -165,9 +207,9 @@ def create_utilities_graph_with_color(data, configuration, G):
             for substation in utility['substations']:
                 #if substation type is generation, color it green
                 if substation['type'] == 'generation':
-                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='green')
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='#00FF00')
                 elif substation['type'] == 'transmission':
-                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='blue')
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='#00008B')
             #add edge only if there is a link between utility and substation
             #add edges between substations
             for link in utility['links']:
@@ -181,7 +223,7 @@ def create_utilities_graph_with_color(data, configuration, G):
                     G.add_edge(source_id, dest_id)
 
             utility_id = utility['label']
-            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color="red")
+            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='#FFA500')
 
     else:
         print("Configuration is neither radial, statistics based nor star.")
@@ -200,7 +242,7 @@ def add_regulatory_nodes(path):
 
         utilities_graph_with_color = create_utilities_graph_with_color(data, configuration, G)
 
-        utilities_graph_with_color.add_node(data['label'], pos=(data['longitude'], data['latitude']), label='Reg', color='#FFD700')
+        utilities_graph_with_color.add_node(data['label'], pos=(data['longitude'], data['latitude']), label='Reg', color='#DC143C')
         #add edge between utility and region
         for utility in data['utilities']:
             utilities_graph_with_color.add_edge(utility['label'], data['label'])
@@ -209,24 +251,24 @@ def add_regulatory_nodes(path):
 
 
 def main(code_to_run, file_path):
-    # if code_to_run==1:
-    #     # Select a specific substation to visualize
-    #     selected_substation_data = data['utilities'][3]['substations'][40]
-    #     # print("###############")
-    #     # print(data['utilities'][0])
-    #     # print("###############")
-    #     # print(selected_substation_data)
-    #     # print("###############")
-    #     substation_graph, substation_positions = create_hierarchical_substation_graph_no_crossings(selected_substation_data)
-    #
-    #     # Plotting the substation graph
-    #     plt.figure(figsize=(12, 10))
-    #     labels = nx.get_node_attributes(substation_graph, 'label')
-    #     nx.draw(substation_graph, substation_positions, with_labels=True, labels=labels, node_size=500,
-    #             node_color='lightgreen', font_size=12, arrows=True)
-    #     plt.title(
-    #         f'Graph of Substation: {selected_substation_data["substation"]} with Hierarchical Structure and No Crossings')
-    #     plt.show()
+    if code_to_run==1:
+        # Select a specific substation to visualize
+        selected_substation_data = data['utilities'][3]['substations'][40]
+        # print("###############")
+        # print(data['utilities'][0])
+        # print("###############")
+        # print(selected_substation_data)
+        # print("###############")
+        substation_graph, substation_positions = create_hierarchical_substation_graph_no_crossings(selected_substation_data)
+
+        # Plotting the substation graph
+        plt.figure(figsize=(12, 10))
+        labels = nx.get_node_attributes(substation_graph, 'label')
+        nx.draw(substation_graph, substation_positions, with_labels=True, labels=labels, node_size=500,
+                node_color='lightgreen', font_size=12, arrows=True)
+        plt.title(
+            f'Graph of Substation: {selected_substation_data["substation"]} with Hierarchical Structure and No Crossings')
+        plt.show()
     if code_to_run==2:
         ##### Code to generate utility data #####
         # Load the shapefile
@@ -252,23 +294,35 @@ def main(code_to_run, file_path):
         colors = [graph_with_reg.nodes[node]['color'] for node in graph_with_reg.nodes]
         print(colors)
 
-        nx.draw(graph_with_reg, pos, with_labels=False, labels=labels, node_size=10, node_color=colors, width=0.4)
+        nx.draw(graph_with_reg, pos, with_labels=False, labels=labels, node_size=20, node_color=colors, width=0.2)
         plt.savefig('Output\\Regulatory\\radial.pdf')
         # plt.show()
     elif code_to_run==3:
         # Select a specific utility to visualize
-        selected_utility_data = data['utilities'][0]
-        utility_graph, utility_positions = create_hierarchical_utility_graph_no_crossings(
-            selected_utility_data)
-
-        # Plotting the substation graph
-        plt.figure(figsize=(12, 10))
+        # selected_utility_data = data['utilities'][0]
+        utility_graph, utility_positions = create_hierarchical_utility_graph_no_crossings()
+        colors = [utility_graph.nodes[node]['color'] for node in utility_graph.nodes]
         labels = nx.get_node_attributes(utility_graph, 'label')
-        nx.draw(utility_graph, utility_positions, with_labels=True, labels=labels, node_size=500,
-                node_color='lightgreen', font_size=12, arrows=True)
+
+        print(utility_positions)
+
+        # Plotting the graph
+        plt.figure(figsize=(18, 12))
+        labels = nx.get_node_attributes(utility_graph, 'label')
+        # layout = nx.spring_layout(utility_graph, iterations=300, k=15, pos=utility_positions)
+        nx.draw(utility_graph, pos=utility_positions, with_labels=False, labels=labels, node_size=1000, node_color=colors, font_size=12, font_weight='bold')
+        y_off = 0.3
+        utility_positions_higher = {}
+        for k, v in utility_positions.items():
+            utility_positions_higher[k] = (v[0], v[1]+y_off)
+        nx.draw_networkx_labels(utility_graph, utility_positions_higher, labels, font_size=20, font_weight='bold')
+        # nx.draw(utility_graph, utility_positions, with_labels=True, labels=labels, node_size=500,
+        #         node_color='lightgreen', font_size=12, arrows=True)
         plt.title(
-            f'Graph of Utility: {selected_utility_data["utility"]} with Hierarchical Structure and No Crossings')
-        # plt.show()
+            f'Graph of Utility: with Hierarchical Structure and No Crossings')
+        plt.savefig('Output\\Utilities\\Utility_Internal.png')
+        plt.show()
+
     elif code_to_run==4:
         # Select a specific substation to visualize
         selected_region_data = data['region'][0]
@@ -279,7 +333,7 @@ def main(code_to_run, file_path):
         plt.figure(figsize=(12, 10))
         labels = nx.get_node_attributes(region_graph, 'label')
         nx.draw(region_graph, region_positions, with_labels=True, labels=labels, node_size=500,
-                node_color='lightgreen', font_size=12, arrows=True)
+                node_color='lightgreen', font_size=12)
         plt.title(
             f'Graph of Substation: {selected_region_data["region"]} with Hierarchical Structure and No Crossings')
         # plt.show()
