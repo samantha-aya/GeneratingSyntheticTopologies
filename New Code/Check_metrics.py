@@ -48,6 +48,7 @@ diameter = nx.diameter(G) if nx.is_connected(G) else "Graph is not connected"
 worst_case_connectivity = len(min(nx.connectivity.cuts.minimum_node_cut(G), key=len)) if nx.is_connected(G) else "Graph is not connected"
 algebraic_connectivity = nx.algebraic_connectivity(G)
 number_of_links = G.number_of_edges()
+number_of_nodes = G.number_of_nodes()
 network_density = nx.density(G)
 
 #average shortest path length TRUE distance
@@ -77,5 +78,6 @@ print("Average Degree: ", avg_degree)
 print("Worst Case Connectivity:  ", worst_case_connectivity)
 print("Algebraic connectivity:  ", algebraic_connectivity)
 print("Number of links:  ", number_of_links)
+print("Total number of nodes:  ", number_of_nodes)
 print("Network Density:  ", network_density)
 print("Total Generation Time", total_time_metrics)
