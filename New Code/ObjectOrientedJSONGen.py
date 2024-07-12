@@ -585,13 +585,10 @@ class CyberPhysicalSystem:
 
             utilFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.21", #interface to router (to BA Firewall)
-                                #ipaddress=f"10.{utl_ID}.0.9", #interface to EMS/HMI subnet
                                 label=f"{key}.{key}..UtilityFirewall {firewall_start}",
                                 vlan='1')
 
             utilRouter=Router(interfaces=["eth0", "eth1"], routingTable={}, utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.0", #1
                                 label=f"{key}.{key}..UtilityRouter {router_start}",
                                 vlan='1')
 
@@ -602,22 +599,22 @@ class CyberPhysicalSystem:
                                 label=f"{key}.{key}..Switch {ems_start}",
                                 vlan='OT')
             utilCorpSwitch = Switch([], utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.0",  # remove IP addresses, keep admin ip
                                 label=f"{key}.{key}.Corporate.Switch {ems_start}",
                                 vlan='Corporate')
             utilEMS=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 ipaddress=f"10.{utl_ID}.0.11",
+                                subnetMask="255.255.255.248",
                                 label=f"{key}.{key}..EMS {ems_start}",
                                 vlan='1')
             utilHMI=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 ipaddress=f"10.{utl_ID}.0.12",
+                                subnetMask="255.255.255.248",
                                 label=f"{key}.{key}..HMI {ems_start}",
                                 vlan='1')
             iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 ipaddress=f"10.{utl_ID}.0.3",
                                 label=f"{key}.{key}..ICCPServer {ems_start}",
                                 subnetMask="255.255.255.248",
-                                label=f"{key}.{key}..Host {ems_start}",
                                 vlan='1')
             utilHMI=Host(openPorts=[16, 32], utility=key, substation="utl",
                                 ipaddress=f"10.{utl_ID}.0.12",
@@ -632,22 +629,16 @@ class CyberPhysicalSystem:
             router_start = router_start + 1
 
             substationsRouter=Router([], routingTable={}, utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.18",
-                                     # we will need one other interface (and IP) for each substation link
                                 label=f"{key}.{key}..SubstationRouter {router_start}",
                                 vlan='1')
             firewall_start = firewall_start+1
             substationsFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.17", #interfact to substation router
-                                #ipaddress=f"10.{utl_ID}.0.10", #interface to EMS/HMI subnet
                                 label=f"{key}.{key}..SubstationFirewall {firewall_start}",
                                 vlan='1')
             firewall_start = firewall_start + 1
             DMZFirewall=Firewall([], [], val.get('latitude'), val.get('longitude'),
                                 utility=key, substation="",
-                                ipaddress=f"10.{utl_ID}.0.26", #interface to router (to BA firewall)
-                                #ipaddress=f"10.{utl_ID}.0.2", #interface to ICCP server
                                 label=f"{key}.{key}..DMZFirewall {firewall_start}",
                                 vlan='1')
             firewall_start = firewall_start + 1
@@ -701,8 +692,6 @@ class CyberPhysicalSystem:
             utilFirewall.add_acl_rule("acl3", "Block SQL", "all","all", "3306" ,"TCP", "block") #SQL is not to be found in the utility
 
             #protocols added below
-            #substationsFirewall.add_acl_rule("acl0", "Allow DNP3", f"10.{utl_ID}.0.11","XXX.3", "20000" ,"TCP", "allow") #between utilEMS and SubRC,  outstation IP: f"10.{utl_ID}.{row['Sub Num']}.3"
-            #substationsFirewall.add_acl_rule("acl1", "Allow HTTPS", f"10.{utl_ID}.0.12","XXX.12", "443" ,"TCP", "allow") #between utilHMI and SubWebServer (in substation)
             DMZFirewall.add_acl_rule("acl2", "Allow ICCP", f"172.30.0.6",f"10.{utl_ID}.0.3", "102" ,"TCP", "allow") #between utilICCPServer and regICCPClient
             DMZFirewall.add_acl_rule("acl3", "Allow ICCP", f"10.{utl_ID}.0.3",f"10.{utl_ID}.0.11", "102" ,"TCP", "allow") #between utilICCPServer and utilEMS
             utilFirewall.add_acl_rule("acl4", "Allow ICCP", f"10.{utl_ID}.0.3", f"10.{utl_ID}.0.11", "102" ,"TCP", "allow") #allow HMI to send util data to ICCP server
@@ -853,9 +842,9 @@ class CyberPhysicalSystem:
                                    utility="balancing_authority", substation="ba",
                                    label=f"balancing_authority.ba..Router 1551",
                                    vlan='1')
-                iccpClient = Host(utility="balancing_authority", substation="ba",
-                                  ipaddress=f"172.{val.get('id')}.0.6",  # interface to firewall %%%subnetMask = "255.255.255.XXX"
-                                  subnetMask = "255.255.255.252", #ideally every host, and router interface, and firewall interface should have a subnet mask attribute
+                iccpClient = Host(openPorts=[16, 32], utility="balancing_authority", substation="ba",
+                                  ipaddress=f"172.{val.get('id')}.0.6",  # interface to firewall
+                                  subnetMask="255.255.255.252", #ideally every host, and router interface, and firewall interface should have a subnet mask attribute
                                   label=f"balancing_authority.ba..Host 2801",
                                   vlan='1')
 
@@ -871,9 +860,9 @@ class CyberPhysicalSystem:
 
                 # protocols added below to the router based on the ports
                 # commands to add interfaces to firewalls and routers
-                regFirewall.add_interfaces("eth0", f"172.{val.get('id')}.0.2", "255.255.255.252")  # interface to router
-                regFirewall.add_interfaces("eth1", f"172.{val.get('id')}.0.5", "255.255.255.252")  # interface to ICCP server
-                regRouter.add_interfaces("eth0", f"172.{val.get('id')}.0.1", "255.255.255.252")  # interface to firewall
+                regFirewall.add_interfaces("eth0", f"172.30.{val.get('id')}.2", "255.255.255.252")  # interface to router
+                regFirewall.add_interfaces("eth1", f"172.30.{val.get('id')}.5", "255.255.255.252")  # interface to ICCP server
+                regRouter.add_interfaces("eth0", f"172.30.{val.get('id')}.1", "255.255.255.252")  # interface to firewall
                 #regRouter.add_interfaces(f"eth{val.get('id')}", f"172.{val.get('id')}.0.34", "255.255.255.252")  # interface to UCC #this one will be changed based on UCC subnet (interface towards UCC)
 
                 # protocols added below to the router based on the ports
@@ -887,7 +876,7 @@ class CyberPhysicalSystem:
                     reg.add_node(u.utilityFirewall[0])
                     # firewall command to add the firewalls
                     regRouter.add_interfaces(f"eth{u.id}", f"10.{u.id}.0.34","255.255.255.252")  # routing subnet (external) ***this one will be changed
-                    regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.{val.get('id')}.0.6", f"10.{u.id}.0.3", "102", "TCP","allow")  # between utilICCPServer and regICCPClient
+                    regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.{val.get('id')}.6", f"10.{u.id}.0.3", "102", "TCP","allow")  # between utilICCPServer and regICCPClient
                     reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
                 regulatory.append(reg)
                 name_json = f"Regulatory{val.get('id')}.json"
@@ -953,7 +942,10 @@ class CyberPhysicalSystem:
                 regRouter.add_interfaces(f"eth{u.id}", f"10.{u.id}.0.34","255.255.255.252")  # interface to UCC #this one will be changed based on UCC subnet (interface towards UCC)
 
             regulatory.append(reg)
-            name_json = f"Regulatory{reg.label}.json"
+            if n_ba > 1:
+                name_json = f"Regulatory{reg.label}.json"
+            else:
+                name_json = f"Regulatory.json"
             output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
 
         return regulatory

@@ -3,15 +3,53 @@ import json
 import statistics
 from geopy.distance import geodesic
 import time
+import os
 
 start_metrics = time.time()
-filename = 'D:/Github/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
+G = nx.Graph()
+path = 'Output\\Utilities'
+files = os.listdir(path)
+added_routers = set()
+
+for file in files:
+    filepath = os.path.join(path, file)
+    print(filepath)
+    with open(filepath, 'r', encoding='utf-8') as file:
+        utility = json.load(file)
+        print(utility['substationsRouter'][0])
+        utilLabel = utility['substationsRouter'][0]['label']
+        for nodes in utility['nodes']:
+            if 'Router' in nodes['label']:
+                if nodes['label'] not in added_routers:
+                    print(nodes['label'])
+                    G.add_node(utility['utility'], pos=(utility['longitude'], utility['latitude']), label=nodes['label'])
+                    added_routers.add(nodes['label'])
+
+#            for substation in utility['substations']:
+#                for nodes in substation['nodes']:
+#                    if 'Router' in nodes['label']:
+#                        router_info = (substation['substation'], nodes['label'])
+#                        if nodes['label'] not in added_routers:
+#                            print(nodes['label'])
+#                            G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']),label=nodes['label'])
+#                            added_routers.add(router_info)
+
+            flag = 0
+            for links in utility['links']:
+                if 'SubstationRouter' in links["source"] and 'Router' in links["destination"]:
+                    #print(links["source"],links["destination"])
+                    G.add_edge(links["source"], links["destination"])
+                elif 'Router' in links["source"] and 'Router' not in links["destination"] and flag == 0:
+                    G.add_edge(links["source"], utilLabel)
+                    #print(links["source"],links["destination"])
+                    flag = 1
+
+#filename = 'D:/Github/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
 #filename = 'C:/GitHubProjects/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
 # Open the JSON file and load its contents into a Python variable
-with open(filename, 'r') as file:
-    json_data = json.load(file)
+#with open(filename, 'r') as file:
+#    json_data = json.load(file)
 
-G = nx.Graph()
 # Parse the JSON data to populate the graph
 # for utility in json_data["utilities"]:
 #     # add a node for each utility
@@ -25,20 +63,20 @@ G = nx.Graph()
 #             G.add_edge(link["source"], link["destination"])
 #         G.add_node(node["label"])
 coordinates = {}
-for node in json_data["nodes"]:
+#for node in json_data["nodes"]:
 #    label = node["label"]
 #    lat = node["latitude"]
 #    lon = node["longitude"]
 #    coordinates[label] = (lat, lon)
-    G.add_node(node["label"])
+#    G.add_node(node["label"])
 
-for link in json_data["links"]:
+#for link in json_data["links"]:
 #    source = link["source"]
 #    destination = link["destination"]
 #    source_coords = coordinates[source]
 #    destination_coords = coordinates[destination]
 #    weight = geodesic(source_coords, destination_coords).kilometers
-    G.add_edge(link["source"], link["destination"])
+#    G.add_edge(link["source"], link["destination"])
 
 # Calculating metrics
 average_path_length = nx.average_shortest_path_length(G) if nx.is_connected(G) else "Graph is not connected"
@@ -79,5 +117,7 @@ print("Worst Case Connectivity:  ", worst_case_connectivity)
 print("Algebraic connectivity:  ", algebraic_connectivity)
 print("Number of links:  ", number_of_links)
 print("Total number of nodes:  ", number_of_nodes)
+print("208 substations, 4 utilities, and 1 regulatory")
+print("208 + 8 + 1 = 217 total routers")
 print("Network Density:  ", network_density)
 print("Total Generation Time", total_time_metrics)
