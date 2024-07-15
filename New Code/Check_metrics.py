@@ -1,11 +1,14 @@
 import networkx as nx
 import json
 import statistics
+import numpy as np
 import time
 import os
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import configparser
+config = configparser.ConfigParser()
+config.read('settings.ini')
 
 start_metrics = time.time()
 G = nx.Graph()
@@ -65,25 +68,41 @@ for file in reg_files:
                n1 = [n for n, d in G.nodes(data=True) if d['label'] == link["source"]][0]
                n2 = [n for n, d in G.nodes(data=True) if d['label'] == link["destination"]][0]
                G.add_edge(n1, n2)
-case = config['DEFAULT']['case']
-if '500' in case:
-    gdf = gpd.read_file('Nc.shp')
-elif '2k' in case:
-    gdf = gpd.read_file('Tx.shp')
-elif '10k' in case:
-    gdf = gpd.read_file('WECC.shp')
+# case = config['DEFAULT']['case']
+# if '500' in case:
+#     gdf = gpd.read_file('Nc.shp')
+# elif '2k' in case:
+#     gdf = gpd.read_file('Tx.shp')
+# elif '10k' in case:
+#     gdf = gpd.read_file('WECC.shp')
 
-gdf = gpd.read_file('Nc.shp')
-fig, ax = plt.subplots(figsize=(15, 15))
-pos = nx.get_node_attributes(G, 'pos')
-colors = [G.nodes[node]['color'] for node in G.nodes]
-gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
-nx.draw(G, pos, with_labels=False, node_size=20, width=0.2, node_color=colors)
-plt.show()
+# gdf = gpd.read_file('Nc.shp')
+# fig, ax = plt.subplots(figsize=(15, 15))
+# pos = nx.get_node_attributes(G, 'pos')
+# colors = [G.nodes[node]['color'] for node in G.nodes]
+# gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
+# nx.draw(G, pos, with_labels=False, node_size=20, width=0.2, node_color=colors)
+# plt.show()
+
+
 # Calculating metrics
 average_path_length = nx.average_shortest_path_length(G) if nx.is_connected(G) else "Graph is not connected"
 # average_path_length & degree & diameter for routers only?
-node_degree = dict(G.degree())
+
+# gets node degree max and min and also plots the node degree distribution
+fig, ax = plt.subplots(figsize=(8, 6))
+degree_sequence = sorted((d for n, d in G.degree()), reverse=True)
+max_degree = max(degree_sequence)
+min_degree = min(degree_sequence)
+degrees, counts = np.unique(degree_sequence, return_counts=True)
+ax.bar(degrees, counts)
+ax.plot(degrees, counts, color='red', marker='o')
+ax.set_title("Node Degree Distribution", fontsize=16)
+ax.set_xlabel("Node Degree", fontsize=16)
+ax.set_ylabel("Number of Nodes", fontsize=16)
+fig.tight_layout()
+plt.show()
+
 diameter = nx.diameter(G) if nx.is_connected(G) else "Graph is not connected"
 worst_case_connectivity = len(min(nx.connectivity.cuts.minimum_node_cut(G), key=len)) if nx.is_connected(G) else "Graph is not connected"
 algebraic_connectivity = nx.algebraic_connectivity(G)
@@ -103,9 +122,7 @@ end_metrics = time.time()
 total_time_metrics = end_metrics - start_metrics
 # total_time = (adding all three times, json, graph, and metrics)
 
-max_degree = max(node_degree.values())
-min_degree = min(node_degree.values())
-avg_degree = statistics.mean(node_degree.values())
+
 
 #print(average_path_length, node_degree, diameter, worst_case_connectivity, algebraic_connectivity, number_of_links, network_density)
 print("Average path length:  ", average_path_length)
@@ -114,7 +131,7 @@ print("Average path length:  ", average_path_length)
 print("Diameter:  ", diameter)
 print("Minimum Degree: ", min_degree)
 print("Maximum Degree: ", max_degree)
-print("Average Degree: ", avg_degree)
+# print("Average Degree: ", avg_degree)
 # print("Worst Case Connectivity:  ", worst_case_connectivity)
 # print("Algebraic connectivity:  ", algebraic_connectivity)
 print("Number of links:  ", number_of_links)
