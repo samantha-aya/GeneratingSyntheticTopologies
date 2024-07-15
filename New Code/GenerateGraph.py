@@ -284,6 +284,9 @@ def main(code_to_run, file_path):
 
         graph_with_reg = add_regulatory_nodes('Output\\Regulatory')
 
+        print("Number of edges in the graph: ", graph_with_reg.number_of_edges())
+        print("Graph is connected: ", nx.is_connected(graph_with_reg))
+
         # Plotting
         fig, ax = plt.subplots(figsize=(15, 15))
         gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
@@ -341,7 +344,7 @@ def main(code_to_run, file_path):
 
 
 if __name__ == "__main__":
-    code_to_run = 3
+    code_to_run = 2
     #1-Generate substation internal layout
     #2-Generate substation-utility graph on a map
     #3-Generate utility internal layout

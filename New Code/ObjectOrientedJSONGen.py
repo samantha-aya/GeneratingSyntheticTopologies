@@ -768,8 +768,7 @@ class CyberPhysicalSystem:
                     statistics_based_graph.nodes[node]['label'] = mapping[node]
                 #print labels of the nodes in the statistics based graph
                 logger.info(f"Labels of the nodes in the statistics based graph: {statistics_based_graph.nodes(data=True)}")
-                logger.info(
-                    f"Labels of the nodes in the power based graph: {power_graph.nodes(data=True)}")
+                logger.info(f"Labels of the nodes in the power based graph: {power_graph.nodes(data=True)}")
                 #add links to the utility based on the statistics based graph
                 connected_subs = []
                 for edge in statistics_based_graph.edges:
@@ -777,27 +776,13 @@ class CyberPhysicalSystem:
                     logger.info(f"Source: {source}")
                     destination = statistics_based_graph.nodes[edge[1]]['label']
                     logger.info(f"Destination: {destination}")
-                    if int(source) == int(util_node):
-                        connected_subs.append(int(destination))
-                    if int(destination) == int(util_node):
-                        connected_subs.append(int(source))
-                    logger.info(f"Connected substations: {connected_subs}")
-                    #find the substation with substation number equal to source and destination
                     for substation in substations:
                         if substation.substationNumber == int(source):
                             source_substation = substation
                         if substation.substationNumber == int(destination):
                             destination_substation = substation
-                        if substation.substationNumber == int(max_deg_node):
-                            util.latitude = substation.latitude
-                            util.longitude = substation.longitude
-                        # for these connected substations, find the substation object and add the link between the substation router and the utility router
-                        if substation.substationNumber in connected_subs:
-                            util.add_link(substationsRouter.label, substation.substationRouter[0].label, "Ethernet",
-                                          10.0, 10.0)
                         if substation.substationNumber == int(util_node):
-                            util.latitude = substation.latitude
-                            util.longitude = substation.longitude
+                            substation.substationRouter[0].label = substationsRouter.label
                     logger.info(f"Source substation: {source_substation.substationNumber}")
                     logger.info(f"Destination substation: {destination_substation.substationNumber}")
                     util.add_link(source_substation.substationRouter[0].label, destination_substation.substationRouter[0].label, "Ethernet", 10.0, 10.0)
