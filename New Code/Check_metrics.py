@@ -42,7 +42,7 @@ for file in utils_files:
                        sub_routers += 1
 
         for link in utility['links']:
-            if ('SubstationRouter' in link["source"]) and ('Router' in link["destination"]) and link['source'] in added_routers and link['destination'] in added_routers:
+            if ('Router' in link["source"]) and ('Router' in link["destination"]) and link['source'] in added_routers and link['destination'] in added_routers:
                 n1 = [n for n, d in G.nodes(data=True) if d['label'] == link["source"]][0]
                 n2 = [n for n, d in G.nodes(data=True) if d['label'] == link["destination"]][0]
                 G.add_edge(n1, n2)
@@ -68,21 +68,21 @@ for file in reg_files:
                n1 = [n for n, d in G.nodes(data=True) if d['label'] == link["source"]][0]
                n2 = [n for n, d in G.nodes(data=True) if d['label'] == link["destination"]][0]
                G.add_edge(n1, n2)
-# case = config['DEFAULT']['case']
-# if '500' in case:
-#     gdf = gpd.read_file('Nc.shp')
-# elif '2k' in case:
-#     gdf = gpd.read_file('Tx.shp')
-# elif '10k' in case:
-#     gdf = gpd.read_file('WECC.shp')
+case = config['DEFAULT']['case']
+if '500' in case:
+    gdf = gpd.read_file('Nc.shp')
+elif '2k' in case:
+    gdf = gpd.read_file('Tx.shp')
+elif '10k' in case:
+    gdf = gpd.read_file('WECC.shp')
 
-# gdf = gpd.read_file('Nc.shp')
-# fig, ax = plt.subplots(figsize=(15, 15))
-# pos = nx.get_node_attributes(G, 'pos')
-# colors = [G.nodes[node]['color'] for node in G.nodes]
-# gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
-# nx.draw(G, pos, with_labels=False, node_size=20, width=0.2, node_color=colors)
-# plt.show()
+gdf = gpd.read_file('Nc.shp')
+fig, ax = plt.subplots(figsize=(15, 15))
+pos = nx.get_node_attributes(G, 'pos')
+colors = [G.nodes[node]['color'] for node in G.nodes]
+gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
+nx.draw(G, pos, with_labels=False, node_size=20, width=0.2, node_color=colors)
+plt.show()
 
 
 # Calculating metrics
