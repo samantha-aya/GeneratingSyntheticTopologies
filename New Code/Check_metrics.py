@@ -1,83 +1,85 @@
 import networkx as nx
 import json
 import statistics
-from geopy.distance import geodesic
 import time
 import os
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import configparser
 
 start_metrics = time.time()
 G = nx.Graph()
-path = 'Output\\Utilities'
-files = os.listdir(path)
+utils_path = 'Output\\Utilities'
+utils_files = os.listdir(utils_path)
 added_routers = set()
-
-for file in files:
-    filepath = os.path.join(path, file)
+util_routers = 0
+sub_routers = 0
+i=0
+for file in utils_files:
+    filepath = os.path.join(utils_path, file)
     print(filepath)
     with open(filepath, 'r', encoding='utf-8') as file:
         utility = json.load(file)
-        print(utility['substationsRouter'][0])
+        # print(utility['substationsRouter'][0])
         utilLabel = utility['substationsRouter'][0]['label']
         for nodes in utility['nodes']:
-            if 'Router' in nodes['label']:
-                if nodes['label'] not in added_routers:
-                    print(nodes['label'])
-                    G.add_node(utility['utility'], pos=(utility['longitude'], utility['latitude']), label=nodes['label'])
-                    added_routers.add(nodes['label'])
+            if 'Router' in nodes['label'] and nodes['label'] not in added_routers:
+                print(nodes['label'])
+                G.add_node(nodes['label'], pos=(utility['longitude'], utility['latitude']), label=nodes['label'], color='#FFA500')
+                added_routers.add(nodes['label'])
+                util_routers += 1
 
-#            for substation in utility['substations']:
-#                for nodes in substation['nodes']:
-#                    if 'Router' in nodes['label']:
-#                        router_info = (substation['substation'], nodes['label'])
-#                        if nodes['label'] not in added_routers:
-#                            print(nodes['label'])
-#                            G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']),label=nodes['label'])
-#                            added_routers.add(router_info)
+        for substation in utility['substations']:
+           for nodes in substation['nodes']:
+               if 'Router' in nodes['label']:
+                   router_info = nodes['label']
+                   if nodes['label'] not in added_routers:
+                       G.add_node(nodes['label'], pos=(substation['longitude'], substation['latitude']), label=nodes['label'], color='#00FF00')
+                       added_routers.add(router_info)
+                       sub_routers += 1
 
-            flag = 0
-            for links in utility['links']:
-                if 'SubstationRouter' in links["source"] and 'Router' in links["destination"]:
-                    #print(links["source"],links["destination"])
-                    G.add_edge(links["source"], links["destination"])
-                elif 'Router' in links["source"] and 'Router' not in links["destination"] and flag == 0:
-                    G.add_edge(links["source"], utilLabel)
-                    #print(links["source"],links["destination"])
-                    flag = 1
+        for link in utility['links']:
+            if ('SubstationRouter' in link["source"]) and ('Router' in link["destination"]) and link['source'] in added_routers and link['destination'] in added_routers:
+                n1 = [n for n, d in G.nodes(data=True) if d['label'] == link["source"]][0]
+                n2 = [n for n, d in G.nodes(data=True) if d['label'] == link["destination"]][0]
+                G.add_edge(n1, n2)
+            elif 'Router' in link["source"] and 'Router' not in link["destination"]:
+                G.add_edge(link["source"], utilLabel)
 
-#filename = 'D:/Github/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
-#filename = 'C:/GitHubProjects/ECEN689Project/New Code/Output/Regulatory/Regulatory.json'
-# Open the JSON file and load its contents into a Python variable
-#with open(filename, 'r') as file:
-#    json_data = json.load(file)
+# # add the utility edges
+reg_path = 'Output/Regulatory/'
+reg_files = os.listdir(reg_path)
+for file in reg_files:
+    filepath = os.path.join(reg_path, file)
+    print(filepath)
+    with open(filepath, 'r') as file:
+       reg_data = json.load(file)
+       # adding regulatory node to the graph
+       G.add_node(reg_data['regulatoryRouter'][0]['label'], pos=(reg_data['longitude'], reg_data['latitude']), label=reg_data['regulatoryRouter'][0]['label'], color='#DC143C')
+       added_routers.add(reg_data['regulatoryRouter'][0]['label'])
 
-# Parse the JSON data to populate the graph
-# for utility in json_data["utilities"]:
-#     # add a node for each utility
-#     G.add_node(utility['label'])
-#     for substation in utility["substations"]:
-#         # add a node for each substation firewall? or router?
-#         G.add_node(substation['label'])
-#         for node in substation["nodes"]:
-#             G.add_node(node["label"])
-#         for link in substation["links"]:
-#             G.add_edge(link["source"], link["destination"])
-#         G.add_node(node["label"])
-coordinates = {}
-#for node in json_data["nodes"]:
-#    label = node["label"]
-#    lat = node["latitude"]
-#    lon = node["longitude"]
-#    coordinates[label] = (lat, lon)
-#    G.add_node(node["label"])
+       print(reg_data['links'])
+       for link in reg_data['links']:
+           if ('Router' in link["source"]) and ('Router' in link["destination"]) and link['source'] in added_routers and link['destination'] in added_routers:
+               # find node with label link["source"] and link["destination"]
+               n1 = [n for n, d in G.nodes(data=True) if d['label'] == link["source"]][0]
+               n2 = [n for n, d in G.nodes(data=True) if d['label'] == link["destination"]][0]
+               G.add_edge(n1, n2)
+case = config['DEFAULT']['case']
+if '500' in case:
+    gdf = gpd.read_file('Nc.shp')
+elif '2k' in case:
+    gdf = gpd.read_file('Tx.shp')
+elif '10k' in case:
+    gdf = gpd.read_file('WECC.shp')
 
-#for link in json_data["links"]:
-#    source = link["source"]
-#    destination = link["destination"]
-#    source_coords = coordinates[source]
-#    destination_coords = coordinates[destination]
-#    weight = geodesic(source_coords, destination_coords).kilometers
-#    G.add_edge(link["source"], link["destination"])
-
+gdf = gpd.read_file('Nc.shp')
+fig, ax = plt.subplots(figsize=(15, 15))
+pos = nx.get_node_attributes(G, 'pos')
+colors = [G.nodes[node]['color'] for node in G.nodes]
+gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
+nx.draw(G, pos, with_labels=False, node_size=20, width=0.2, node_color=colors)
+plt.show()
 # Calculating metrics
 average_path_length = nx.average_shortest_path_length(G) if nx.is_connected(G) else "Graph is not connected"
 # average_path_length & degree & diameter for routers only?
@@ -99,7 +101,7 @@ network_density = nx.density(G)
 
 end_metrics = time.time()
 total_time_metrics = end_metrics - start_metrics
-#total_time = (adding all three times, json, graph, and metrics)
+# total_time = (adding all three times, json, graph, and metrics)
 
 max_degree = max(node_degree.values())
 min_degree = min(node_degree.values())
@@ -107,17 +109,24 @@ avg_degree = statistics.mean(node_degree.values())
 
 #print(average_path_length, node_degree, diameter, worst_case_connectivity, algebraic_connectivity, number_of_links, network_density)
 print("Average path length:  ", average_path_length)
-#print("Average shortest path length (km): ", avg_path_length_km)
-#print("Average shortest path length (miles): ", avg_path_length_miles)
+# print("Average shortest path length (km): ", avg_path_length_km)
+# print("Average shortest path length (miles): ", avg_path_length_miles)
 print("Diameter:  ", diameter)
 print("Minimum Degree: ", min_degree)
 print("Maximum Degree: ", max_degree)
 print("Average Degree: ", avg_degree)
-print("Worst Case Connectivity:  ", worst_case_connectivity)
-print("Algebraic connectivity:  ", algebraic_connectivity)
+# print("Worst Case Connectivity:  ", worst_case_connectivity)
+# print("Algebraic connectivity:  ", algebraic_connectivity)
 print("Number of links:  ", number_of_links)
 print("Total number of nodes:  ", number_of_nodes)
-print("208 substations, 4 utilities, and 1 regulatory")
+print(f"{sub_routers} substations, {util_routers} utilities, and 1 regulatory")
+print(f"{len(added_routers)}")
 print("208 + 8 + 1 = 217 total routers")
 print("Network Density:  ", network_density)
 print("Total Generation Time", total_time_metrics)
+
+
+components = list(nx.connected_components(G))
+print(f"The graph has {len(components)} connected components.")
+for i, component in enumerate(components, 1):
+    print(f"Component {i}: {component}")
