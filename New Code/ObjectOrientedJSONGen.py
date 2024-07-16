@@ -658,8 +658,8 @@ class CyberPhysicalSystem:
                 if s.utility_id == util.id:
                     util.add_node(s)
                     substationsRouter.add_interfaces(f"eth{s.substationNumber}", f"10.{util.id}.{s.substationNumber}.102","255.255.255.252")  # routing subnet (external) ***this one will be changed
-                    substationsFirewall.add_acl_rule("acl0", "Allow DNP3", f"10.{util.id}.0.11", f"10.{utl_ID}.{s.substationNumber}.2", "20000", "TCP","allow")  # between utilEMS and SubRC,  outstation IP: f"10.{utl_ID}.{row['Sub Num']}.3"
-                    substationsFirewall.add_acl_rule("acl1", "Allow HTTPS", f"10.{util.id}.0.12", f"10.{utl_ID}.{s.substationNumber}.100", "443", "TCP","allow")  # between utilHMI and SubWebServer (in substation)
+                    substationsFirewall.add_acl_rule(f"acl{s.substationNumber}", "Allow DNP3", f"10.{util.id}.0.11", f"10.{utl_ID}.{s.substationNumber}.2", "20000", "TCP","allow")  # between utilEMS and SubRC,  outstation IP: f"10.{utl_ID}.{row['Sub Num']}.3"
+                    substationsFirewall.add_acl_rule(f"acl{s.substationNumber}", "Allow HTTPS", f"10.{util.id}.0.12", f"10.{utl_ID}.{s.substationNumber}.69", "443", "TCP","allow")  # between utilHMI and SubWebServer (in substation)
 
             util.add_node(DMZFirewall)
 
@@ -685,17 +685,16 @@ class CyberPhysicalSystem:
             utilRouter.add_interfaces("eth1", f"10.{utl_ID}.0.25","255.255.255.252") #interface towards DMZ
             utilRouter.add_interfaces("eth2", f"10.{utl_ID}.0.33","255.255.255.252") #interface towards BA
 
-            #firewall command to add the firewall acls
-            utilFirewall.add_acl_rule("acl0", "Allow DNP3", "10.52.1.","10.52.1.", "20000" ,"TCP", "allow") #between utilEMS and SubRC
-            utilFirewall.add_acl_rule("acl1", "Allow HTTPS", "10.52.1.","10.52.1.", "443" ,"TCP", "allow") #between utilHMI and SubWebServer
-            utilFirewall.add_acl_rule("acl2", "Allow ICCP", "10.52.1.","10.52.1.", "102" ,"TCP", "allow") #between utilICCPServer and regICCPClient
+            #firewall command to add the firewall acls to utility firewall
+            utilFirewall.add_acl_rule("acl2", "Allow ICCP", f"10.{utl_ID}.0.11", f"10.{utl_ID}.0.3", "102" ,"TCP", "allow") #allow HMI to send util data to ICCP server
             utilFirewall.add_acl_rule("acl3", "Block SQL", "all","all", "3306" ,"TCP", "block") #SQL is not to be found in the utility
 
-            #protocols added below
-            DMZFirewall.add_acl_rule("acl2", "Allow ICCP", f"172.30.0.6",f"10.{utl_ID}.0.3", "102" ,"TCP", "allow") #between utilICCPServer and regICCPClient
-            DMZFirewall.add_acl_rule("acl3", "Allow ICCP", f"10.{utl_ID}.0.3",f"10.{utl_ID}.0.11", "102" ,"TCP", "allow") #between utilICCPServer and utilEMS
-            utilFirewall.add_acl_rule("acl4", "Allow ICCP", f"10.{utl_ID}.0.3", f"10.{utl_ID}.0.11", "102" ,"TCP", "allow") #allow HMI to send util data to ICCP server
-            
+            #firewall command to add the firewall acls to DMZ firewall (create loop to include all regs for the acls)
+            DMZFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.0.6",f"10.{utl_ID}.0.3", "102" ,"TCP", "allow") #between utilICCPServer and regICCPClient
+            DMZFirewall.add_acl_rule("acl1", "Allow ICCP", f"10.{utl_ID}.0.3",f"10.{utl_ID}.0.12", "102" ,"TCP", "allow") #between utilICCPServer and utilHMI
+
+            #firewall command to add the firewall acls to substations firewall
+
             #protocols added below
             utilEMS.set_protocol("DNP3", "20000", "TCP")
             iccpServer.set_protocol("ICCP", "102", "TCP")
