@@ -378,6 +378,7 @@ class CyberPhysicalSystem:
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
             
             if row["Gen MW"] == 99999:
+                print("Added ")
                 sub = Substation(
                     relaynum=row['# of Buses'],
                     label=sub_label,
@@ -388,19 +389,23 @@ class CyberPhysicalSystem:
                     latitude=row['Latitude'],
                     longitude=row['Longitude'],
                     utl_id=utl_ID)
-
             else:
                 # If the substation is a generation substation, we need to connect it to a transmission substation
                 # from the pairs in substations_connections, find the pair that contains the current substation
                 # then find the pair with minimum distance between them
                 minimum_distance = int(99999)
                 for pair in substation_connections:
-                    if row['Sub Num'] in pair:
+                    print(pair)
+                    print(minimum_distance)
+                    if int(row['Sub Num'])== int(pair[0]) or int(row['Sub Num']) == int(pair[1]):
                         print(pair)
                         print(minimum_distance)
                         if minimum_distance > int(pair[2]):
                             minimum_distance = int(pair[2])
                             TS_num = pair[1] if row['Sub Num'] == pair[0] else pair[0]
+                # if row["Sub Num"] == 7:
+                #     print(f"Could not find a transmission substation for {row['Sub Num']}")
+                #     exit(1)
                 sub = GenSubstation(
                     relaynum=row['# of Buses'],
                     label=sub_label,
@@ -413,7 +418,7 @@ class CyberPhysicalSystem:
                     utl_id=utl_ID,
                     genmw=row["Gen MW"],
                     genmvar=row["Gen Mvar"],
-                    connecting_TS_num=TS_num)
+                    connecting_TS_num=int(TS_num))
 
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
@@ -442,7 +447,7 @@ class CyberPhysicalSystem:
             hmi = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.70", #corp host IP: 70
                                 subnetMask="255.255.255.244",
-                                label=f"{row['Utility Name']}.{row['Sub Name']}..hmi {(2*int(row['Sub Num'])-1)}",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..HMI {(2*int(row['Sub Num'])-1)}",
                                 vlan='Corporate')
             host1 = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.66", #corp host IP: 66
@@ -462,7 +467,7 @@ class CyberPhysicalSystem:
             outstation = Host(openPorts=[16, 32], utility=row["Utility Name"], substation=row["Sub Name"],
                                 ipaddress=f"10.{utl_ID}.{row['Sub Num']}.3", #OT host IP: 3
                                 subnetMask="255.255.255.192",
-                                label=f"{row['Utility Name']}.{row['Sub Name']}..outstation {(2*int(row['Sub Num']))}",
+                                label=f"{row['Utility Name']}.{row['Sub Name']}..Outstation {(2*int(row['Sub Num']))}",
                                 vlan='Corporate')
 
             #Add above nodes to substation
@@ -481,7 +486,7 @@ class CyberPhysicalSystem:
                 relay = Relay("", [], 'Line', 'OC',
                               utility=row['Utility Name'], substation=row['Sub Name'],
                               vlan='OT',
-                              label=f"{row['Utility Name']}.{row['Sub Name']}..Relay {relay_num+1}")
+                              label=f"{row['Utility Name']}.{row['Sub Name']}..Relay {starting_relay_id}")
                 sub.add_node(relay)
                 # RC --> relays
                 sub.add_link(RC.label, relay.label, "Ethernet", 10.0, 10.0)
@@ -531,8 +536,12 @@ class CyberPhysicalSystem:
             sub.add_link(router.label, firewall.label, "Ethernet", 10.0, 10.0)
             # firewall --> switch.OT
             sub.add_link(firewall.label, switch.label, "Ethernet", 10.0, 10.0)
+            # outstation --> switch.OT
+            sub.add_link(outstation.label, switch.label,  "Ethernet", 10.0, 10.0)
             # switch.OT --> RC
             sub.add_link(switch.label, RC.label, "Ethernet", 10.0, 10.0)
+            # outstation --> switch.OT
+            sub.add_link(hmi.label, corp_switch.label, "Ethernet", 10.0, 10.0)
             # firewall --> switch.Corp
             sub.add_link(firewall.label, corp_switch.label, "Ethernet", 10.0, 10.0)
             # switch.Corp --> host1
@@ -732,8 +741,10 @@ class CyberPhysicalSystem:
                 for s in substations:
                     if s.utility_id == util.id:
                         if hasattr(s, 'connecting_TS_num') and s.utility_id == util.id:
+                            print("CONNECTING TS:", s.connecting_TS_num)
                             for substation in substations:
-                                if substation.substationNumber == s.connecting_TS_num:
+                                print("SUB NUM:", substation.substationNumber)
+                                if substation.substationNumber == int(s.connecting_TS_num):
                                     s_to = substation
                                     break
                             print("Connecting substation object found with router label   :", s_to.substationRouter[0].label)
@@ -822,7 +833,7 @@ class CyberPhysicalSystem:
                 for i, name in enumerate([f"Regulatory {i}" for i in range(num_regs)])
             }
 
-            print(unique_dict_reg)
+            # print(unique_dict_reg)
             for key, val in unique_dict_reg.items():
                 print(key)
                 reg = Regulatory(
@@ -971,44 +982,72 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
         # Convert columns to tuples
         df['Pairs'] = list(zip(df['SubNumberFrom'], df['SubNumberTo']))
         df = df[df['SubNumberFrom'] != df['SubNumberTo']]
-        # convert Gen MW column to float
+        # convert Gen MW column to int
         df2['Gen MW'] = df2['Gen MW'].astype(int)
         # Find unique pairs
-        unique_pairs0 = df['Pairs'].unique()
+        unique_pairs0 = np.array(df['Pairs'].unique())
         # Display unique pairs
-        # print(unique_pairs)
-        unique_pairs = [None] * len(unique_pairs0)
+        print(unique_pairs0)
 
+        #only tran-gen pairs
         #make sure that the unique_pairs0 does not have pair[0] and pair[1] as both generation substations
+        TG_unique_pairs0 = unique_pairs0
         for pair in unique_pairs0:
+            test = unique_pairs0
             matching_row0 = df2[df2['Sub Num'] == pair[0]]
             matching_row1 = df2[df2['Sub Num'] == pair[1]]
             # print(matching_row1)
             #if both numbers in the pair are generation substations, remove the pair
             if matching_row1['Gen MW'].values[0] != 99999 and matching_row0['Gen MW'].values[0] != 99999:
                 print("DELETED PAIR: ", pair)
-                unique_pairs0 = np.array([row for row in unique_pairs0 if not np.array_equal(row, pair)])
+                TG_unique_pairs0 = np.array([row for row in TG_unique_pairs0 if not np.array_equal(row, pair)])
+
+        unique_pairs = [None] * len(unique_pairs0)
+
+        # Convert the numpy array to a set of tuples for efficient checking
+        TG_unique_pairs0_set = set(map(tuple, TG_unique_pairs0))
+
+        # Iterate through unique_pairs0 and add pairs to the set if they are not present
+        for pair in unique_pairs0:
+            pair_tuple = tuple(pair)
+            if pair_tuple not in TG_unique_pairs0_set:
+                TG_unique_pairs0_set.add(pair_tuple)
+                print("Added pair: ", pair_tuple)
+
+        # Convert the set back to a numpy array
+        TG_unique_pairs0 = np.array(list(TG_unique_pairs0_set))
+
+        only_TS_GS_pairs = TG_unique_pairs0 # only contains transmission to generator connections
+
+        # output TG_unique_pairs0 to csv file
+        df_tg = pd.DataFrame(TG_unique_pairs0, columns=['SubNumberFrom', 'SubNumberTo'])
+        df_tg.to_csv('TG_unique_pairs0.csv', index=False)
 
         #find the distance between the substations using latitude and longitude information from df2 using haversine function
-        for i in range(len(unique_pairs0)):
+        for i in range(len(TG_unique_pairs0)):
             for index, row in df2.iterrows():
-                if row['Sub Num'] == unique_pairs0[i][0]:
+                if row['Sub Num'] == TG_unique_pairs0[i][0]:
                     lat1 = row['Latitude']
                     lon1 = row['Longitude']
-                if row['Sub Num'] == unique_pairs0[i][1]:
+                if row['Sub Num'] == TG_unique_pairs0[i][1]:
                     lat2 = row['Latitude']
                     lon2 = row['Longitude']
-            unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
+            unique_pairs[i] = (TG_unique_pairs0[i][0], TG_unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
 
         # convert unique pairs to a dataframe with three columns
         unique_pairs_df = pd.DataFrame(unique_pairs, columns=['SubNumberFrom', 'SubNumberTo', 'Distance'])
         unique_pairs_df.to_csv(dist_file, index=False)
     else:
         print('Read from csv file')
+        only_TS_GS_pairs = 0
         unique_pairs_df = pd.read_csv(dist_file)
 
+    unique_pairs_df.dropna(inplace=True)
+    unique_pairs_df.reset_index(drop=True, inplace=True)
+
+    print(unique_pairs_df)
     # convert the unique pairs dataframe to a unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))
-    unique_pairs = unique_pairs_df.to_numpy()
+    unique_pairs = unique_pairs_df.to_numpy(dtype=int)
 
     #get graph from saw object
     if pw_case_object is None:
@@ -1022,7 +1061,9 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
     # for node in power_graph.nodes():
     #     print("Node:", node, "Attributes:", power_graph.nodes[node])
 
-    return unique_pairs, power_graph
+    print(unique_pairs)
+
+    return unique_pairs, power_graph, only_TS_GS_pairs
 def get_num_of_gens(df, name):
     try:
         # Return the count excluding rows where 'Gen MW' is 99999
@@ -1033,13 +1074,13 @@ def get_num_of_gens(df, name):
 def generate_system_from_csv(csv_file, branches_csv, filepath, n_ba, dist_file):
     cps = CyberPhysicalSystem()
     if no_powerworld:
-        substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, None, dist_file)
+        substation_connections, power_nwk, only_TS_GS_pairs = get_substation_connections(branches_csv, csv_file, None, dist_file)
         substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
         utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
         regulatory = cps.generate_BA(substations, utilities, selected_case, n_ba)
     else:
         saw = SAW(FileName=filepath)
-        substation_connections, power_nwk = get_substation_connections(branches_csv, csv_file, saw, dist_file)
+        substation_connections, power_nwk, only_TS_GS_pairs = get_substation_connections(branches_csv, csv_file, saw, dist_file)
         substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
         utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
         regulatory = cps.generate_BA(substations, utilities, selected_case, n_ba)
