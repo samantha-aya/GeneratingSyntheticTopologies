@@ -7,6 +7,7 @@ import os
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import configparser
+import re
 config = configparser.ConfigParser()
 config.read('settings.ini')
 
@@ -18,6 +19,7 @@ added_routers = set()
 util_routers = 0
 sub_routers = 0
 i=0
+
 for file in utils_files:
     filepath = os.path.join(utils_path, file)
     print(filepath)
@@ -27,7 +29,7 @@ for file in utils_files:
         utilLabel = utility['substationsRouter'][0]['label']
         for nodes in utility['nodes']:
             if 'Router' in nodes['label'] and nodes['label'] not in added_routers:
-                print(nodes['label'])
+                #print(nodes['label'])
                 G.add_node(nodes['label'], pos=(utility['longitude'], utility['latitude']), label=nodes['label'], color='#FFA500')
                 added_routers.add(nodes['label'])
                 util_routers += 1
@@ -82,8 +84,7 @@ pos = nx.get_node_attributes(G, 'pos')
 colors = [G.nodes[node]['color'] for node in G.nodes]
 gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
 nx.draw(G, pos, with_labels=False, node_size=20, width=0.2, node_color=colors)
-plt.show()
-
+#plt.show()
 
 # Calculating metrics
 average_path_length = nx.average_shortest_path_length(G) if nx.is_connected(G) else "Graph is not connected"
@@ -101,7 +102,7 @@ ax.set_title("Node Degree Distribution", fontsize=16)
 ax.set_xlabel("Node Degree", fontsize=16)
 ax.set_ylabel("Number of Nodes", fontsize=16)
 fig.tight_layout()
-plt.show()
+#plt.show()
 
 diameter = nx.diameter(G) if nx.is_connected(G) else "Graph is not connected"
 worst_case_connectivity = len(min(nx.connectivity.cuts.minimum_node_cut(G), key=len)) if nx.is_connected(G) else "Graph is not connected"
@@ -109,6 +110,48 @@ algebraic_connectivity = nx.algebraic_connectivity(G)
 number_of_links = G.number_of_edges()
 number_of_nodes = G.number_of_nodes()
 network_density = nx.density(G)
+
+#Calculating total ACL count
+utilTotalACLs = 0
+subTotalACLs = 0
+regTotalACLs = 0
+
+# Loop through all files in the specified directory
+for file in reg_files:
+    filepath = os.path.join(reg_path, file)
+    with open(filepath, 'r') as file:
+        data = json.load(file)
+        for utility in data['utilities']:
+            for node in utility['nodes']:
+                if 'Firewall' in node['label']:
+                    keysList = list(node['acls'].keys())
+                    aclCount = len(keysList)
+                    utilTotalACLs +=aclCount
+                    print(keysList)
+                    #print(aclCount)
+            node = ""
+            for substation in utility['substations']:
+                for node in substation['nodes']:
+                    if '.Firewall' in node['label']:
+                        keysList = list(node['acls'].keys())
+                        aclCount = len(keysList)
+                        subTotalACLs += aclCount
+                        #print()
+                        print(keysList)
+                        #print(aclCount)
+
+totalACLs = utilTotalACLs + subTotalACLs + regTotalACLs
+print(f"Regulatory ACLs: ", regTotalACLs)
+print(f"Utility ACLs: ", utilTotalACLs)
+print(f"Substation ACLs: ", subTotalACLs)
+print(f"Number of ACLs: ", totalACLs)
+#        for substation in utility['substations']:
+#            for nodes in substation['nodes']:
+#                if 'acl' in nodes['acls']:
+#                    acl_count += 1
+#                    print(acl_count)
+#print(f"The string 'acl' appears {acl_count} times in the JSON files.")
+
 
 #average shortest path length TRUE distance
 #if nx.is_connected(G):
@@ -138,7 +181,6 @@ print("Number of links:  ", number_of_links)
 print("Total number of nodes:  ", number_of_nodes)
 print(f"{sub_routers} substations, {util_routers} utilities, and 1 regulatory")
 print(f"{len(added_routers)}")
-print("208 + 8 + 1 = 217 total routers")
 print("Network Density:  ", network_density)
 print("Total Generation Time", total_time_metrics)
 
