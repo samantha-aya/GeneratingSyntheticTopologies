@@ -130,7 +130,7 @@ def create_hierarchical_substation_graph_no_crossings(substation_data):
             x_pos = -0.2
             y_pos = level
         elif node_type == 'RC':
-            n_color = '#faa673'
+            n_color = '#9f80f2'
             x_pos = -0.2
             y_pos = level
         elif node_type == 'Relay':
@@ -166,7 +166,9 @@ def create_hierarchical_utility_graph_no_crossings():
     file_path = os.path.join(cwd, 'Output\\Utilities\\Region.Utility 0.json')
     with open(file_path, 'r') as file:
         utility_data = json.load(file)
-    G = nx.DiGraph()
+    G = nx.Graph()
+
+    levels={}
 
     # Define levels for different types of nodes in the hierarchy
     levels = {
@@ -201,36 +203,38 @@ def create_hierarchical_utility_graph_no_crossings():
         # x_positions[level] += x_level_width  # Increment x position for the next node in the same level
         if node_type == 'SubstationRouter' or node_type == 'UtilityRouter':
             n_color = '#f2809f'
-            x_pos = -0.1
+            x_pos = 0.1
             y_pos = level
         elif node_type == 'SubstationFirewall' or node_type == 'UtilityFirewall':
             n_color = '#faa673'
-            x_pos = -0.1
+            x_pos = 0.1
             y_pos = level
         elif node_type == 'Switch':
             switch_count+=1
             n_color = '#472f80'
             if switch_count>1:
-                x_pos=-0.2
-                y_pos=level+3
+                x_pos=-0.15
+                y_pos=level+1.5
             else:
-                x_pos=-0.1
+                x_pos=0.1
                 y_pos=level
-
         elif node_type == 'EMS' or node_type == 'HMI':
             n_color = '#2E6A57'
-            x_pos = -0.15
+            x_pos = 0
             y_pos = level
         elif node_type == 'DMZFirewall':
             n_color = '#faa673'
-            x_pos = -0.2
+            x_pos = -0.15
             y_pos = level
         elif node_type == 'ICCPServer':
             n_color = '#2E6A57'
-            x_pos = -0.2
+            x_pos = -0.15
             y_pos = level
 
 
+        print(node_id)
+        print(node_type)
+        print(x_pos,y_pos)
         node_positions[node_id] = (x_pos, y_pos)
         G.add_node(node_id, label=node_type, color=n_color, pos=(x_pos, y_pos))
 
@@ -352,7 +356,10 @@ def add_regulatory_nodes(path):
 
 def main(code_to_run, file_path):
     if code_to_run==1:
-        file_path = "Output/Substations/Region.Utility 0.ABBEVILLE.json"
+        file = "Output/Substations/"
+        files = os.listdir(file)
+
+        file_path = os.path.join(file, files[0])
         # Load the JSON file
         with open(file_path, 'r') as file:
             data = json.load(file)
@@ -363,14 +370,14 @@ def main(code_to_run, file_path):
         labels = nx.get_node_attributes(substation_graph, 'label')
 
         # Plotting the graph
-        plt.figure(figsize=(18, 12))
-        nx.draw(substation_graph, pos=substation_positions, with_labels=False, labels=labels, node_size=1000,
+        plt.figure(figsize=(9, 5))
+        nx.draw(substation_graph, pos=substation_positions, with_labels=False, labels=labels, node_size=300,
                 node_color=colors, font_size=12, font_weight='bold')
         y_off = 0.3
         substation_positions_higher = {}
         for k, v in substation_positions.items():
             substation_positions_higher[k] = (v[0], v[1] + y_off)
-        nx.draw_networkx_labels(substation_graph, substation_positions_higher, labels, font_size=20, font_weight='bold')
+        nx.draw_networkx_labels(substation_graph, substation_positions_higher, labels, font_size=10, font_weight='bold')
         plt.savefig('Output/Substations/Substation_Internal.png')
         plt.show()
     if code_to_run==2:
@@ -415,15 +422,15 @@ def main(code_to_run, file_path):
         print(utility_positions)
 
         # Plotting the graph
-        plt.figure(figsize=(18, 12))
+        plt.figure(figsize=(9, 5))
         labels = nx.get_node_attributes(utility_graph, 'label')
         # layout = nx.spring_layout(utility_graph, iterations=300, k=15, pos=utility_positions)
-        nx.draw(utility_graph, pos=utility_positions, with_labels=False, labels=labels, node_size=1000, node_color=colors, font_size=12, font_weight='bold')
+        nx.draw(utility_graph, pos=utility_positions, with_labels=False, labels=labels, node_size=300, node_color=colors, font_size=8, font_weight='bold')
         y_off = 0.3
         utility_positions_higher = {}
         for k, v in utility_positions.items():
             utility_positions_higher[k] = (v[0], v[1]+y_off)
-        nx.draw_networkx_labels(utility_graph, utility_positions_higher, labels, font_size=20, font_weight='bold')
+        nx.draw_networkx_labels(utility_graph, utility_positions_higher, labels, font_size=10, font_weight='bold')
         # nx.draw(utility_graph, utility_positions, with_labels=True, labels=labels, node_size=500,
         #         node_color='lightgreen', font_size=12, arrows=True)
         plt.title(
