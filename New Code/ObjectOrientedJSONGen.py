@@ -73,13 +73,14 @@ class Firewall(Node):
             self.acls[acl_name].append(rule)
         else:
             self.acls[acl_name] = [rule]
-
+##function to remove ACLs
 ##    def remove_acl_rule(self, acl_name, rule):
 ##        #remove specific acl
 ##        if acl_name in self.acls and rule in self.acls[acl_name]:
 ##            self.acls[acl_name].remove(rule)
 ##            if not self.acls[acl_name]:
 ##                del self.acls[acl_name]
+
 class Router(Node):
     def __init__(self, interfaces, routingTable, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -254,6 +255,7 @@ class Utility:
         self.utilityRouter = []
         self.utilitySwitch = []
         self.utilityEMS = []
+        self.utilityHMI = []
         self.iccpserver=[]
         self.substationsRouter = []
         self.substationsFirewall = []
@@ -277,6 +279,8 @@ class Utility:
         self.utilitySwitch.append(utilSwitch)
     def add_utilityEMS(self, utilEMS):
         self.utilityEMS.append(utilEMS)
+    def add_utilityHMI(self, utilHMI):
+        self.utilityHMI.append(utilHMI)
     def add_iccpserver(self, iccpServer):
         self.iccpserver.append(iccpServer)
     def add_substationsRouter(self, substationsRouter):
@@ -509,19 +513,19 @@ class CyberPhysicalSystem:
             sub.add_subSwitch(switch)
             sub.add_subRC(RC)
 
-            # commands to add interfaces to routers and firewalls
+            #Commands to add interfaces to routers and firewalls
             firewall.add_interfaces("eth0", f"10.{utl_ID}.{row['Sub Num']}.1","255.255.255.192") # interface to OT network
             firewall.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.97","255.255.255.252") # interface to routing network
             firewall.add_interfaces("eth2", f"10.{utl_ID}.{row['Sub Num']}.65","255.255.255.244") # interface to corporate network
             router.add_interfaces("eth0", f"10.{utl_ID}.{row['Sub Num']}.98","255.255.255.252") # routing subnet (internal)
             router.add_interfaces("eth1", f"10.{utl_ID}.{row['Sub Num']}.101","255.255.255.252") # routing subnet (external) ***this one will be changed
 
-            #firewall command to add the firewalls
+            #Command to add ACLs to the firewalls
             firewall.add_acl_rule("acl0", "Allow DNP3", f"10.{utl_ID}.0.11",f"10.{utl_ID}.{row['Sub Num']}.3", "20000" ,"TCP", "allow") #from EMS to outstation
             firewall.add_acl_rule("acl1", "Allow HTTPS", f"10.{utl_ID}.0.12",f"10.{utl_ID}.{row['Sub Num']}.100", "443" ,"TCP", "allow") #HMI to web server
             firewall.add_acl_rule("acl2", "Allow SQL", f"10.{utl_ID}.{row['Sub Num']}.99",f"10.{utl_ID}.{row['Sub Num']}.3", "3306" ,"TCP", "allow") #from database to outstation
 
-            #protocols added below to the components
+            #Protocols added below to the components
             RC.set_protocol("DNP3", "20000", "TCP")
             host1.set_protocol("HTTPS", "443", "TCP")
             host2.set_protocol("HTTPS", "443", "TCP")
@@ -677,6 +681,7 @@ class CyberPhysicalSystem:
             util.add_utilityRouter(utilRouter)
             util.add_utilitySwitch(utilSwitch)
             util.add_utilityEMS(utilEMS)
+            util.add_utilityHMI(utilHMI)
             util.add_iccpserver(iccpServer)
             util.add_substationsRouter(substationsRouter)
             util.add_substationsFirewall(substationsFirewall)

@@ -176,7 +176,6 @@ print("Total number of nodes:  ", number_of_nodes)
 print(f"{sub_routers} substations, {util_routers} utilities, and 1 regulatory")
 print(f"{len(added_routers)}")
 print("Network Density:  ", network_density)
-print("Total Generation Time", total_time_metrics)
 print("Regulatory ACLs: ", regTotalACLs)
 print("Utility ACLs: ", utilTotalACLs)
 print("Substation ACLs: ", subTotalACLs)
@@ -186,3 +185,5 @@ components = list(nx.connected_components(G))
 print(f"The graph has {len(components)} connected components.")
 for i, component in enumerate(components, 1):
     print(f"Component {i}: {component}")
+
+print("Time to check metrics: ", total_time_metrics)
