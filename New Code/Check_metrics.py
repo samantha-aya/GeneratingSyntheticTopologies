@@ -7,7 +7,6 @@ import os
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import configparser
-import re
 config = configparser.ConfigParser()
 config.read('settings.ini')
 
@@ -116,7 +115,6 @@ utilTotalACLs = 0
 subTotalACLs = 0
 regTotalACLs = 0
 
-# Loop through all files in the specified directory
 for file in reg_files:
     filepath = os.path.join(reg_path, file)
     with open(filepath, 'r') as file:
@@ -127,24 +125,32 @@ for file in reg_files:
                     keysList = list(node['acls'].keys())
                     aclCount = len(keysList)
                     utilTotalACLs +=aclCount
-                    print(keysList)
+                    #print(keysList)
                     #print(aclCount)
             node = ""
             for substation in utility['substations']:
                 for node in substation['nodes']:
-                    if '.Firewall' in node['label']:
+                    if 'Firewall' in node['label']:
                         keysList = list(node['acls'].keys())
                         aclCount = len(keysList)
                         subTotalACLs += aclCount
-                        #print()
-                        print(keysList)
+                        #print(keysList)
                         #print(aclCount)
+        node = ""
+        for regulatory in data['regulatoryFirewall']:
+            if 'Firewall' in regulatory['label']:
+                keysList = list(regulatory['acls'].keys())
+                aclCount = len(keysList)
+                regTotalACLs += aclCount
+                print(keysList)
+                # print(aclCount)
+
 
 totalACLs = utilTotalACLs + subTotalACLs + regTotalACLs
 print(f"Regulatory ACLs: ", regTotalACLs)
 print(f"Utility ACLs: ", utilTotalACLs)
 print(f"Substation ACLs: ", subTotalACLs)
-print(f"Number of ACLs: ", totalACLs)
+print(f"Total Number of ACLs: ", totalACLs)
 #        for substation in utility['substations']:
 #            for nodes in substation['nodes']:
 #                if 'acl' in nodes['acls']:

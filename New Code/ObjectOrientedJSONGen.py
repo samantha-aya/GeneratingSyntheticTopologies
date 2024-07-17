@@ -874,7 +874,7 @@ class CyberPhysicalSystem:
                     reg.add_node(u.utilityFirewall[0])
                     # firewall command to add the firewalls
                     regRouter.add_interfaces(f"eth{u.id}", f"10.{u.id}.0.34","255.255.255.252")  # routing subnet (external) ***this one will be changed
-                    regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.{val.get('id')}.6", f"10.{u.id}.0.3", "102", "TCP","allow")  # between utilICCPServer and regICCPClient
+                    regFirewall.add_acl_rule(f"acl{u.id}", "Allow ICCP", f"172.30.{val.get('id')}.6", f"10.{u.id}.0.3", "102", "TCP","allow")  # between utilICCPServer and regICCPClient
                     reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
                 regulatory.append(reg)
                 name_json = f"Regulatory{val.get('id')}.json"
@@ -934,8 +934,7 @@ class CyberPhysicalSystem:
             for u in utilities:
                 reg.add_node(u.utilityFirewall[0])
                 # firewall command to add the firewalls
-                regFirewall.add_acl_rule("acl0", "Allow ICCP", f"172.30.0.6", f"10.{u.id}.0.3", "102", "TCP",
-                                         "allow")  # between utilICCPServer and regICCPClient
+                regFirewall.add_acl_rule(f"acl{u.id}", "Allow ICCP", f"172.30.XXX.6", f"10.{u.id}.0.3","102", "TCP", "allow")  # between utilICCPServer and regICCPClient
                 reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
                 regRouter.add_interfaces(f"eth{u.id}", f"10.{u.id}.0.34","255.255.255.252")  # interface to UCC #this one will be changed based on UCC subnet (interface towards UCC)
 
