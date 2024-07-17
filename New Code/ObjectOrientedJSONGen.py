@@ -358,7 +358,7 @@ class CyberPhysicalSystem:
         # Adding the cluster labels (utility names) to the original DataFrame
         df['Utility Name'] = 'Utility ' + pd.Series(kmeans.labels_).astype(str)
         unique_values = df['Utility Name'].unique()
-        print(unique_values)
+        # print(unique_values)
         utility_centroids = {name: centroids[int(name.split(' ')[1])] for name in unique_values}
         # Create a dictionary with keys as the unique values and values as a sequence starting from 52
         starting_utl_number = 52
@@ -382,7 +382,7 @@ class CyberPhysicalSystem:
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
             
             if row["Gen MW"] == 99999:
-                print("Added ")
+                # print("Added ")
                 sub = Substation(
                     relaynum=row['# of Buses'],
                     label=sub_label,
@@ -399,11 +399,11 @@ class CyberPhysicalSystem:
                 # then find the pair with minimum distance between them
                 minimum_distance = int(99999)
                 for pair in substation_connections:
-                    print(pair)
-                    print(minimum_distance)
+                    # print(pair)
+                    # print(minimum_distance)
                     if int(row['Sub Num'])== int(pair[0]) or int(row['Sub Num']) == int(pair[1]):
-                        print(pair)
-                        print(minimum_distance)
+                        # print(pair)
+                        # print(minimum_distance)
                         if minimum_distance > int(pair[2]):
                             minimum_distance = int(pair[2])
                             TS_num = pair[1] if row['Sub Num'] == pair[0] else pair[0]
@@ -605,9 +605,6 @@ class CyberPhysicalSystem:
                                 label=f"{key}.{key}..UtilityRouter {router_start}",
                                 vlan='1')
 
-            utilRouter=Router(interfaces=["eth0", "eth1"], routingTable={}, utility=key, substation="",
-                                label=f"{key}.{key}..Router {router_start}",
-                                vlan='1')
             utilSwitch=Switch([], utility=key, substation="",
                                 label=f"{key}.{key}..Switch {ems_start}",
                                 vlan='OT')
@@ -629,16 +626,6 @@ class CyberPhysicalSystem:
                                 label=f"{key}.{key}..ICCPServer {ems_start}",
                                 subnetMask="255.255.255.248",
                                 vlan='1')
-            utilHMI=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                ipaddress=f"10.{utl_ID}.0.12",
-                                subnetMask="255.255.255.248",
-                                label=f"{key}.{key}..Host {ems_start}",
-                                vlan='1')
-            iccpServer=Host(openPorts=[16, 32], utility=key, substation="utl",
-                                ipaddress=f"10.{utl_ID}.0.3",
-                                subnetMask="255.255.255.248",
-                                label=f"{key}.{key}..Host {ems_start}",
-                                vlan='1') #need to fix this information or see what needs to be changed
             router_start = router_start + 1
 
             substationsRouter=Router([], routingTable={}, utility=key, substation="",
@@ -745,13 +732,13 @@ class CyberPhysicalSystem:
                 for s in substations:
                     if s.utility_id == util.id:
                         if hasattr(s, 'connecting_TS_num') and s.utility_id == util.id:
-                            print("CONNECTING TS:", s.connecting_TS_num)
+                            # print("CONNECTING TS:", s.connecting_TS_num)
                             for substation in substations:
-                                print("SUB NUM:", substation.substationNumber)
+                                # print("SUB NUM:", substation.substationNumber)
                                 if substation.substationNumber == int(s.connecting_TS_num):
                                     s_to = substation
                                     break
-                            print("Connecting substation object found with router label   :", s_to.substationRouter[0].label)
+                            # print("Connecting substation object found with router label   :", s_to.substationRouter[0].label)
                             util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                         elif s.utility_id == util.id:
                             util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
@@ -1002,7 +989,7 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
             # print(matching_row1)
             #if both numbers in the pair are generation substations, remove the pair
             if matching_row1['Gen MW'].values[0] != 99999 and matching_row0['Gen MW'].values[0] != 99999:
-                print("DELETED PAIR: ", pair)
+                # print("DELETED PAIR: ", pair)
                 TG_unique_pairs0 = np.array([row for row in TG_unique_pairs0 if not np.array_equal(row, pair)])
 
         unique_pairs = [None] * len(unique_pairs0)
@@ -1015,7 +1002,7 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
             pair_tuple = tuple(pair)
             if pair_tuple not in TG_unique_pairs0_set:
                 TG_unique_pairs0_set.add(pair_tuple)
-                print("Added pair: ", pair_tuple)
+                # print("Added pair: ", pair_tuple)
 
         # Convert the set back to a numpy array
         TG_unique_pairs0 = np.array(list(TG_unique_pairs0_set))
@@ -1041,7 +1028,7 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
         unique_pairs_df = pd.DataFrame(unique_pairs, columns=['SubNumberFrom', 'SubNumberTo', 'Distance'])
         unique_pairs_df.to_csv(dist_file, index=False)
     else:
-        print('Read from csv file')
+        # print('Read from csv file')
         only_TS_GS_pairs = 0
         unique_pairs_df = pd.read_csv(dist_file)
 
@@ -1059,12 +1046,12 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
         power_graph = pw_case_object.to_graph("substation", geographic=True)
         plt.plot(power_graph)
 
-    print("Power graph funciton executed")
+    # print("Power graph funciton executed")
     # print(power_graph.nodes(data=True))
     # for node in power_graph.nodes():
     #     print("Node:", node, "Attributes:", power_graph.nodes[node])
 
-    print(unique_pairs)
+    # print(unique_pairs)
 
     return unique_pairs, power_graph, only_TS_GS_pairs
 def get_num_of_gens(df, name):
