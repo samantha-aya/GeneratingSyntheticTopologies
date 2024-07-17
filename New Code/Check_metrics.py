@@ -145,19 +145,7 @@ for file in reg_files:
                 print(keysList)
                 # print(aclCount)
 
-
 totalACLs = utilTotalACLs + subTotalACLs + regTotalACLs
-print(f"Regulatory ACLs: ", regTotalACLs)
-print(f"Utility ACLs: ", utilTotalACLs)
-print(f"Substation ACLs: ", subTotalACLs)
-print(f"Total Number of ACLs: ", totalACLs)
-#        for substation in utility['substations']:
-#            for nodes in substation['nodes']:
-#                if 'acl' in nodes['acls']:
-#                    acl_count += 1
-#                    print(acl_count)
-#print(f"The string 'acl' appears {acl_count} times in the JSON files.")
-
 
 #average shortest path length TRUE distance
 #if nx.is_connected(G):
@@ -189,7 +177,10 @@ print(f"{sub_routers} substations, {util_routers} utilities, and 1 regulatory")
 print(f"{len(added_routers)}")
 print("Network Density:  ", network_density)
 print("Total Generation Time", total_time_metrics)
-
+print("Regulatory ACLs: ", regTotalACLs)
+print("Utility ACLs: ", utilTotalACLs)
+print("Substation ACLs: ", subTotalACLs)
+print("Total Number of ACLs: ", totalACLs)
 
 components = list(nx.connected_components(G))
 print(f"The graph has {len(components)} connected components.")
