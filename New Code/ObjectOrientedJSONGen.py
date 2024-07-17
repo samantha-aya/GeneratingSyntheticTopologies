@@ -203,6 +203,7 @@ class Substation:
         self.substationrelayController = []
         self.compromised = False
         self.type= "transmission"
+        self.connected = ""
 
     def add_node(self, node):
         self.nodes.append(node)
@@ -230,11 +231,11 @@ class Substation:
         self.substationrelayController.append(subRC)
 
 class GenSubstation(Substation):
-    def __init__(self, genmw, genmvar, connecting_TS_num, *args, **kwargs):
+    def __init__(self, genmw, genmvar, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.genmw = genmw
         self.genmvar = genmvar
-        self.connecting_TS_num=connecting_TS_num
+        self.connecting_TS_nums=[]
         self.type = "generation"
         
 class Utility:
@@ -376,7 +377,7 @@ class CyberPhysicalSystem:
         substations = []
         relay_num=100
         for _, row in df.iterrows():
-            TS_num = 99999
+
             # Constructing the base part of the ID
             sub_label = f"Region.{row['Utility Name']}.{row['Sub Name']}"
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
@@ -392,24 +393,12 @@ class CyberPhysicalSystem:
                     substation_num=row["Sub Num"],
                     latitude=row['Latitude'],
                     longitude=row['Longitude'],
-                    utl_id=utl_ID)
+                    utl_id=utl_ID
+                )
             else:
                 # If the substation is a generation substation, we need to connect it to a transmission substation
                 # from the pairs in substations_connections, find the pair that contains the current substation
                 # then find the pair with minimum distance between them
-                minimum_distance = int(99999)
-                for pair in substation_connections:
-                    # print(pair)
-                    # print(minimum_distance)
-                    if int(row['Sub Num'])== int(pair[0]) or int(row['Sub Num']) == int(pair[1]):
-                        # print(pair)
-                        # print(minimum_distance)
-                        if minimum_distance > int(pair[2]):
-                            minimum_distance = int(pair[2])
-                            TS_num = pair[1] if row['Sub Num'] == pair[0] else pair[0]
-                # if row["Sub Num"] == 7:
-                #     print(f"Could not find a transmission substation for {row['Sub Num']}")
-                #     exit(1)
                 sub = GenSubstation(
                     relaynum=row['# of Buses'],
                     label=sub_label,
@@ -421,8 +410,20 @@ class CyberPhysicalSystem:
                     longitude=row['Longitude'],
                     utl_id=utl_ID,
                     genmw=row["Gen MW"],
-                    genmvar=row["Gen Mvar"],
-                    connecting_TS_num=int(TS_num))
+                    genmvar=row["Gen Mvar"]
+                )
+                minimum_distance = int(99999)
+                all_t = []
+                for pair in substation_connections:
+                    if int(row['Sub Num']) == int(pair[0]) or int(row['Sub Num']) == int(pair[1]):
+                        if minimum_distance > int(pair[2]):
+                            minimum_distance = int(pair[2])
+                            if pair[1] if int(row['Sub Num']) == int(pair[0]) else int(pair[0]) not in all_t:  # Ensure unique entries
+                                sub.connecting_TS_nums.append(int(pair[1] if int(row['Sub Num']) == int(pair[0]) else int(pair[0])))
+                # if row["Sub Num"] == 7:
+                #     print(f"Could not find a transmission substation for {row['Sub Num']}")
+                #     exit(1)
+
 
             firewall = Firewall([], [], row['Latitude'], row['Longitude'],
                                 utility=row["Utility Name"], substation=row["Sub Name"],
@@ -729,19 +730,49 @@ class CyberPhysicalSystem:
                     if s.utility_id == util.id:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if "radial" in topology:
+                s_to = None
                 for s in substations:
                     if s.utility_id == util.id:
-                        if hasattr(s, 'connecting_TS_num') and s.utility_id == util.id:
+                        if s.type == "generation":
                             # print("CONNECTING TS:", s.connecting_TS_num)
                             for substation in substations:
-                                # print("SUB NUM:", substation.substationNumber)
-                                if substation.substationNumber == int(s.connecting_TS_num):
+                                if len(s.connecting_TS_nums) > 1:
+                                    # print("There are multiple connecting TS: ", s.connecting_TS_nums)
+                                    for i in range(len(s.connecting_TS_nums)):
+                                        if substation.substationNumber == int(s.connecting_TS_nums[i]) and substation.type == "transmission" and s.connected == "":
+                                            s_to = substation
+                                            print(f"Connecting TRANSMISSION substation number found: {s.connecting_TS_nums[i]} for {s.substationNumber}")
+                                            s.connected = "connected to transmission"
+                                            break
+                                    if s_to is not None:
+                                        util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
+                                                      "Ethernet", 10.0, 10.0)
+                                elif substation.substationNumber == int(s.connecting_TS_nums[0]):
                                     s_to = substation
+                                    util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
+                                                  "Ethernet", 10.0, 10.0)
+                                    print(f"Connecting substation number found: {s.connecting_TS_nums[0]} for {s.substationNumber}")
                                     break
                             # print("Connecting substation object found with router label   :", s_to.substationRouter[0].label)
-                            util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
-                        elif s.utility_id == util.id:
+                            # util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                        elif s.type == "transmission":
+                            # connect to utility
                             util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
+                            s.connected == "connected to utility"
+                # post processing step to add connections to leftover generating substations
+                for s in substations:
+                    if s.utility_id == util.id:
+                        if s.type == "generation" and s.connected == "":
+                            for substation in substations:
+                                if substation.substationNumber == int(s.connecting_TS_nums[len(s.connecting_TS_nums)-1]) and substation.type == "generation" and s.connected == "":
+                                    s_to = substation
+                                    print(f"Connecting substation number found: {s.connecting_TS_nums[len(s.connecting_TS_nums)-1]} for {s.substationNumber}")
+                                    s.connected = "connected to other generation"
+                                    break
+                            if s_to is not None:
+                                util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
+                                              "Ethernet", 10.0, 10.0)
+
             if "statistics" in topology:
                 #generate connections between utility, substations using Zeyu's statistics
                 number_of_substations = val.get('num_of_subs')
@@ -1034,6 +1065,8 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
 
     unique_pairs_df.dropna(inplace=True)
     unique_pairs_df.reset_index(drop=True, inplace=True)
+
+    unique_pairs_df.sort_values(by=['Distance'], inplace=True, ascending=False)
 
     print(unique_pairs_df)
     # convert the unique pairs dataframe to a unique_pairs[i] = (unique_pairs0[i][0], unique_pairs0[i][1], haversine.haversine((lat1, lon1), (lat2, lon2)))

@@ -317,13 +317,13 @@ def create_utilities_graph_with_color(data, configuration, G):
             #add edge only if there is a link between utility and substation
             #add edges between substations
             for link in utility['links']:
-                print(link['source'], link['destination'])
+                # print(link['source'], link['destination'])
                 if f"{utility['label']}.{utility['utility']}" not in link['destination'] or f"{utility['label']}.{utility['utility']}" not in link['source']:
                     #get substation id from link
                     source_id = link['source'].split(".")[1]
-                    print(source_id)
+                    # print(source_id)
                     dest_id = link['destination'].split(".")[1]
-                    print(dest_id)
+                    # print(dest_id)
                     G.add_edge(source_id, dest_id)
 
             utility_id = utility['label']
@@ -346,7 +346,7 @@ def add_regulatory_nodes(path):
 
         utilities_graph_with_color = create_utilities_graph_with_color(data, configuration, G)
 
-        utilities_graph_with_color.add_node(data['label'], pos=(data['longitude'], data['latitude']), label='Reg', color='#DC143C', size=2)
+        utilities_graph_with_color.add_node(data['label'], pos=(data['longitude'], data['latitude']), label='Reg', color='#DC143C', size=0.8)
         #add edge between utility and region
         for utility in data['utilities']:
             utilities_graph_with_color.add_edge(utility['label'], data['label'])
@@ -397,9 +397,14 @@ def main(code_to_run, file_path):
         print("Number of edges in the graph: ", graph_with_reg.number_of_edges())
         print("Graph is connected: ", nx.is_connected(graph_with_reg))
 
+        components = list(nx.connected_components(graph_with_reg))
+        print(f"The graph has {len(components)} connected components.")
+        for i, component in enumerate(components, 1):
+            print(f"Component {i}: {component}")
+
         # Plotting
         fig, ax = plt.subplots(figsize=(15, 15))
-        gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
+        gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.2)  # Plot the shapefile
 
 
         # Plot the utilities and substations
