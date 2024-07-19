@@ -83,7 +83,7 @@ pos = nx.get_node_attributes(G, 'pos')
 colors = [G.nodes[node]['color'] for node in G.nodes]
 gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
 nx.draw(G, pos, with_labels=False, node_size=20, width=0.2, node_color=colors)
-#plt.show()
+# plt.show()
 
 # Calculating metrics
 average_path_length = nx.average_shortest_path_length(G) if nx.is_connected(G) else "Graph is not connected"
@@ -101,7 +101,7 @@ ax.set_title("Node Degree Distribution", fontsize=16)
 ax.set_xlabel("Node Degree", fontsize=16)
 ax.set_ylabel("Number of Nodes", fontsize=16)
 fig.tight_layout()
-#plt.show()
+plt.show()
 
 diameter = nx.diameter(G) if nx.is_connected(G) else "Graph is not connected"
 worst_case_connectivity = len(min(nx.connectivity.cuts.minimum_node_cut(G), key=len)) if nx.is_connected(G) else "Graph is not connected"

@@ -269,10 +269,10 @@ def create_utilities_graph_with_color(data, configuration, G):
                 #if substation type is generation, color it green
                 if substation['type'] == 'generation':
                     G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
-                               color='#00FF00', size=20) # for 10k use size=0.2
+                               color='#00FF00', size=0.2) # for 10k use size=0.2, for others use 20
                 elif substation['type'] == 'transmission':
                     G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
-                               color='#00008B', size=20) # for 10k use size=0.2
+                               color='#00008B', size=0.2) # for 10k use size=0.2, for others use 20
             #add edge only if there is a link between utility and substation
             #add edges between substations
             for link in utility['links']:
@@ -286,7 +286,7 @@ def create_utilities_graph_with_color(data, configuration, G):
                     G.add_edge(source_id, dest_id)
 
             utility_id = utility['label']
-            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='#FFA500', size=50) # for 10k use size=0.5
+            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='#FFA500', size=0.5) # for 10k use size=0.5, for other use 50
 
     else:
         print("Configuration is neither radial, statistics based nor star.")
@@ -305,7 +305,7 @@ def add_regulatory_nodes(path):
 
         utilities_graph_with_color = create_utilities_graph_with_color(data, configuration, G)
 
-        utilities_graph_with_color.add_node(data['label'], pos=(data['longitude'], data['latitude']), label='Reg', color='#DC143C', size=100) # for 10k use size=1
+        utilities_graph_with_color.add_node(data['label'], pos=(data['longitude'], data['latitude']), label='Reg', color='#DC143C', size=1) # for 10k use size=1, for others use 100
         #add edge between utility and region
         for utility in data['utilities']:
             utilities_graph_with_color.add_edge(utility['label'], data['label'])

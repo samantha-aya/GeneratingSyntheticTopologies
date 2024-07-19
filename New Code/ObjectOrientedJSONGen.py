@@ -237,7 +237,7 @@ class GenSubstation(Substation):
         self.genmvar = genmvar
         self.connecting_TS_nums=[]
         self.type = "generation"
-        
+
 class Utility:
     def __init__(self, networkLan, utl_id, utility_name, substations, subFirewalls, latitude, longitude):
         self.networkLan = networkLan
@@ -341,7 +341,7 @@ class Regulatory:
         self.regulatoryFirewall.append(firewall)
 
 class CyberPhysicalSystem:
-    def load_substations_from_csv(self, csv_file, substation_connections):
+    def load_substations_from_csv(self, csv_file, substation_connections, case):
         df = pd.read_csv(csv_file, skiprows=1)
 
         #Replacing empty cells ('nan') with 9999, helps with reading the data since 'nan' doesn't work
@@ -369,7 +369,7 @@ class CyberPhysicalSystem:
                 'latitude': utility_centroids[name][0],
                 'longitude': utility_centroids[name][1],
                 'num_of_subs': df.groupby('Utility Name').size()[name],
-                'num_of_gens': get_num_of_gens(df, name)
+                'num_of_gens': get_num_of_gens(df, name, case)
             }
             for i, name in enumerate(unique_values)
         }
@@ -382,7 +382,14 @@ class CyberPhysicalSystem:
             sub_label = f"Region.{row['Utility Name']}.{row['Sub Name']}"
             utl_ID = unique_dict.get(row["Utility Name"]).get('id')
             
-            if row["Gen MW"] == 99999:
+            if case == '10k':
+                condition1 = int(row["# of Buses"]) > 1
+                condition2 = row["Nominal kV(max)"] > 115
+            else:
+                condition1 = True
+                condition2 = True
+
+            if row["Gen MW"] == 99999 and condition1 and condition2:
                 # print("Added ")
                 sub = Substation(
                     relaynum=row['# of Buses'],
@@ -730,8 +737,8 @@ class CyberPhysicalSystem:
                     if s.utility_id == util.id:
                         util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
             if "radial" in topology:
-                s_to = None
                 for s in substations:
+                    s_to = None
                     if s.utility_id == util.id:
                         if s.type == "generation":
                             # print("CONNECTING TS:", s.connecting_TS_num)
@@ -739,7 +746,7 @@ class CyberPhysicalSystem:
                                 if len(s.connecting_TS_nums) > 1:
                                     # print("There are multiple connecting TS: ", s.connecting_TS_nums)
                                     for i in range(len(s.connecting_TS_nums)):
-                                        if substation.substationNumber == int(s.connecting_TS_nums[i]) and substation.type == "transmission" and s.connected == "":
+                                        if substation.substationNumber == int(s.connecting_TS_nums[len(s.connecting_TS_nums)-(i+1)]) and substation.type == "transmission" and s.connected == "":
                                             s_to = substation
                                             print(f"Connecting TRANSMISSION substation number found: {s.connecting_TS_nums[i]} for {s.substationNumber}")
                                             s.connected = "connected to transmission"
@@ -750,6 +757,7 @@ class CyberPhysicalSystem:
                                         break
                                 elif substation.substationNumber == int(s.connecting_TS_nums[0]) and s.connected == "":
                                     s_to = substation
+                                    s.connected == "connected to the only one"
                                     util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
                                                   "Ethernet", 10.0, 10.0)
                                     print(f"Connecting substation number found: {s.connecting_TS_nums[0]} for {s.substationNumber}")
@@ -762,12 +770,13 @@ class CyberPhysicalSystem:
                             s.connected == "connected to utility"
                 # post processing step to add connections to leftover generating substations
                 for s in substations:
+                    s_to = None
                     if s.utility_id == util.id:
-                        if s.type == "generation" and s.connected == "":
+                        if s.type == "generation":
                             for substation in substations:
-                                if substation.substationNumber == int(s.connecting_TS_nums[len(s.connecting_TS_nums)-1]) and substation.type == "generation" and s.connected == "":
+                                if substation.substationNumber == int(s.connecting_TS_nums[len(s.connecting_TS_nums)-2]) and substation.type == "generation" and (s.connected == "" or s.connected == "connected to other generation" or s.connected == "connected to only one"):
                                     s_to = substation
-                                    print(f"Connecting substation number found: {s.connecting_TS_nums[len(s.connecting_TS_nums)-1]} for {s.substationNumber}")
+                                    print(f"Connecting GENERATION substation number found: {s.connecting_TS_nums[len(s.connecting_TS_nums)-1]} for {s.substationNumber}")
                                     s.connected = "connected to other generation"
                                     break
                             if s_to is not None:
@@ -1090,24 +1099,32 @@ def get_substation_connections(branches_csv, substations_csv, pw_case_object, di
     # print(unique_pairs)
 
     return unique_pairs, power_graph, only_TS_GS_pairs
-def get_num_of_gens(df, name):
+def get_num_of_gens(df, name, case):
     try:
         # Return the count excluding rows where 'Gen MW' is 99999
-        return df[df['Gen MW'] != 99999].groupby('Utility Name').size()[name]
+        condition1 = df['Gen MW'] != 99999
+        if case == '10k':
+            condition2 = df['# of Buses"'] == 1
+            result = df[condition1 & condition2].groupby('Utility Name').size()[name]
+        else:
+            result = df[condition1].groupby('Utility Name').size()[name]
+        logger.info(f"Number of generators in {name}: {result}")
+
+        return result
     except KeyError:
         # Return 0 if the key is not found
         return 0
-def generate_system_from_csv(csv_file, branches_csv, filepath, n_ba, dist_file):
+def generate_system_from_csv(csv_file, branches_csv, filepath, n_ba, dist_file, case):
     cps = CyberPhysicalSystem()
     if no_powerworld:
         substation_connections, power_nwk, only_TS_GS_pairs = get_substation_connections(branches_csv, csv_file, None, dist_file)
-        substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
+        substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections, case)
         utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
         regulatory = cps.generate_BA(substations, utilities, selected_case, n_ba)
     else:
         saw = SAW(FileName=filepath)
         substation_connections, power_nwk, only_TS_GS_pairs = get_substation_connections(branches_csv, csv_file, saw, dist_file)
-        substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections)
+        substations, utility_dict = cps.load_substations_from_csv(csv_file, substation_connections, case)
         utilities = cps.generate_utilties(substations, utility_dict, topology, power_nwk)
         regulatory = cps.generate_BA(substations, utilities, selected_case, n_ba)
 
@@ -1138,7 +1155,7 @@ elif '10k' in selected_case:
     dist_file = '10k_substation_distances.csv'
 
 print('Filename:', filepath)
-generate_system_from_csv(sub_file, branch_file, filepath, n_ba, dist_file)
+generate_system_from_csv(sub_file, branch_file, filepath, n_ba, dist_file, selected_case)
 
 end_json = time.time()
 total_time_json = end_json - start_json
