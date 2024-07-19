@@ -19,49 +19,6 @@ print("configuration is: ", configuration)
 cwd = os.getcwd()
 
 #### Create Hierarchical Graph of Substation Elements ####
-def oldcreate_hierarchical_substation_graph_no_crossings(substation_data):
-    G = nx.DiGraph()
-
-    # Define levels for different types of nodes in the hierarchy
-    levels = {
-        "RC": 1,
-        "Relay": 0,
-        "Switch": 2,
-        "Router": 4,
-        "Host": 1,
-        "Firewall": 3,
-        "LocalDatabase": 1,
-        "LocalWebServer": 1
-    }
-    node_positions = {}
-    y_level_dist = 1.0  # Vertical distance between levels
-    x_level_width = 1.0  # Horizontal distance between nodes in the same level
-
-    # Initialize x positions for nodes in each level to avoid crossings
-    x_positions = {level: 0.0 for level in levels.values()}
-
-
-    # Add nodes with positions based on their hierarchical level
-    i=1
-    for node in substation_data['nodes']:
-        node_id = node['label']
-        words = node['label'].split('.')
-        node_type = words[3].split(' ')[0]  # Extract node type from label
-        print(node_type)
-        level = levels.get(node_type, 6)  # Default level for unrecognized types
-        x_pos = x_positions[level]
-        y_pos = level * y_level_dist
-        node_positions[node_id] = (x_pos, y_pos)
-        x_positions[level] += x_level_width  # Increment x position for the next node in the same level
-        print(node['label'])
-        print(x_positions[level], y_pos)
-        G.add_node(node_id, label=node_type)#node['label'])
-
-    # Add links based on the connections specified in 'links'
-    for link in substation_data['links']:
-        G.add_edge(link['source'], link['destination'])
-
-    return G, node_positions
 
 def create_hierarchical_substation_graph_no_crossings(substation_data):
     G = nx.Graph()
@@ -311,9 +268,11 @@ def create_utilities_graph_with_color(data, configuration, G):
             for substation in utility['substations']:
                 #if substation type is generation, color it green
                 if substation['type'] == 'generation':
-                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='#00FF00', size=0.1)
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
+                               color='#00FF00', size=20) # for 10k use size=0.2
                 elif substation['type'] == 'transmission':
-                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub', color='#00008B', size=0.1)
+                    G.add_node(substation['substation'], pos=(substation['longitude'], substation['latitude']), label='Sub',
+                               color='#00008B', size=20) # for 10k use size=0.2
             #add edge only if there is a link between utility and substation
             #add edges between substations
             for link in utility['links']:
@@ -327,7 +286,7 @@ def create_utilities_graph_with_color(data, configuration, G):
                     G.add_edge(source_id, dest_id)
 
             utility_id = utility['label']
-            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='#FFA500', size=0.5)
+            G.add_node(utility_id, pos=(utility['longitude'], utility['latitude']), label='Util', color='#FFA500', size=50) # for 10k use size=0.5
 
     else:
         print("Configuration is neither radial, statistics based nor star.")
@@ -346,7 +305,7 @@ def add_regulatory_nodes(path):
 
         utilities_graph_with_color = create_utilities_graph_with_color(data, configuration, G)
 
-        utilities_graph_with_color.add_node(data['label'], pos=(data['longitude'], data['latitude']), label='Reg', color='#DC143C', size=0.8)
+        utilities_graph_with_color.add_node(data['label'], pos=(data['longitude'], data['latitude']), label='Reg', color='#DC143C', size=100) # for 10k use size=1
         #add edge between utility and region
         for utility in data['utilities']:
             utilities_graph_with_color.add_edge(utility['label'], data['label'])

@@ -747,7 +747,8 @@ class CyberPhysicalSystem:
                                     if s_to is not None:
                                         util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
                                                       "Ethernet", 10.0, 10.0)
-                                elif substation.substationNumber == int(s.connecting_TS_nums[0]):
+                                        break
+                                elif substation.substationNumber == int(s.connecting_TS_nums[0]) and s.connected == "":
                                     s_to = substation
                                     util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
                                                   "Ethernet", 10.0, 10.0)
@@ -774,6 +775,7 @@ class CyberPhysicalSystem:
                                               "Ethernet", 10.0, 10.0)
 
             if "statistics" in topology:
+                track_subs_to_delete = []
                 #generate connections between utility, substations using Zeyu's statistics
                 number_of_substations = val.get('num_of_subs')
                 number_of_generators = val.get('num_of_gens')
@@ -794,6 +796,7 @@ class CyberPhysicalSystem:
                 mapping = main(statistics_based_graph, power_graph, util.id)
                 util_node = mapping[max_deg_node]
                 logger.info(f"Utility node: {util_node}")
+                track_subs_to_delete.append(util_node)
                 logger.info(f"Mapping: {mapping}")
                 logger.info(f"Number of subs in mapping: {len(mapping)}")
                 #add node labels to the statistics based graph based on the mapping
