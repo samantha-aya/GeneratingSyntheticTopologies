@@ -125,37 +125,37 @@ subTotalACLs = 0
 regTotalACLs = 0
 totalACLs = 0
 
-# for file in reg_files:
-#     filepath = os.path.join(reg_path, file)
-#     with open(filepath, 'r') as file:
-#         data = json.load(file)
-#         for utility in data['utilities']:
-#             for node in utility['nodes']:
-#                 if 'Firewall' in node['label']:
-#                     keysList = list(node['acls'].keys())
-#                     aclCount = len(keysList)
-#                     utilTotalACLs +=aclCount
-#                     #print(keysList)
-#                     #print(aclCount)
-#             node = ""
-#             for substation in utility['substations']:
-#                 for node in substation['nodes']:
-#                     if 'Firewall' in node['label']:
-#                         keysList = list(node['acls'].keys())
-#                         aclCount = len(keysList)
-#                         subTotalACLs += aclCount
-#                         #print(keysList)
-#                         #print(aclCount)
-#         node = ""
-#         for regulatory in data['regulatoryFirewall']:
-#             if 'Firewall' in regulatory['label']:
-#                 keysList = list(regulatory['acls'].keys())
-#                 aclCount = len(keysList)
-#                 regTotalACLs += aclCount
-#                 print(keysList)
-#                 # print(aclCount)
-#
-# totalACLs = utilTotalACLs + subTotalACLs + regTotalACLs
+for file in reg_files:
+    filepath = os.path.join(reg_path, file)
+    with open(filepath, 'r') as file:
+        data = json.load(file)
+        for utility in data['utilities']:
+            for node in utility['nodes']:
+                if 'Firewall' in node['label']:
+                    keysList = list(node['acls'].keys())
+                    aclCount = len(keysList)
+                    utilTotalACLs +=aclCount
+                    #print(keysList)
+                    #print(aclCount)
+            node = ""
+            for substation in utility['substations']:
+                for node in substation['nodes']:
+                    if 'Firewall' in node['label']:
+                        keysList = list(node['acls'].keys())
+                        aclCount = len(keysList)
+                        subTotalACLs += aclCount
+                        #print(keysList)
+                        #print(aclCount)
+        node = ""
+        for regulatory in data['regulatoryFirewall']:
+            if 'Firewall' in regulatory['label']:
+                keysList = list(regulatory['acls'].keys())
+                aclCount = len(keysList)
+                regTotalACLs += aclCount
+                print(keysList)
+                # print(aclCount)
+
+totalACLs = utilTotalACLs + subTotalACLs + regTotalACLs
 
 #average shortest path length TRUE distance
 #if nx.is_connected(G):
