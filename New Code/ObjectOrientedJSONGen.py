@@ -743,25 +743,26 @@ class CyberPhysicalSystem:
                         if s.type == "generation":
                             # print("CONNECTING TS:", s.connecting_TS_num)
                             for substation in substations:
-                                if len(s.connecting_TS_nums) > 1:
-                                    # print("There are multiple connecting TS: ", s.connecting_TS_nums)
-                                    for i in range(len(s.connecting_TS_nums)):
-                                        if substation.substationNumber == int(s.connecting_TS_nums[len(s.connecting_TS_nums)-(i+1)]) and substation.type == "transmission" and s.connected == "":
-                                            s_to = substation
-                                            print(f"Connecting TRANSMISSION substation number found: {s.connecting_TS_nums[i]} for {s.substationNumber}")
-                                            s.connected = "connected to transmission"
+                                if substation.utility_id == util.id:
+                                    if len(s.connecting_TS_nums) > 1:
+                                        # print("There are multiple connecting TS: ", s.connecting_TS_nums)
+                                        for i in range(len(s.connecting_TS_nums)):
+                                            if substation.substationNumber == int(s.connecting_TS_nums[len(s.connecting_TS_nums)-(i+1)]) and substation.type == "transmission" and s.connected == "":
+                                                s_to = substation
+                                                print(f"Connecting TRANSMISSION substation number found: {s.connecting_TS_nums[i]} for {s.substationNumber}")
+                                                s.connected = "connected to transmission"
+                                                break
+                                        if s_to is not None:
+                                            util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
+                                                          "Ethernet", 10.0, 10.0)
                                             break
-                                    if s_to is not None:
+                                    elif substation.substationNumber == int(s.connecting_TS_nums[0]) and s.connected == "":
+                                        s_to = substation
+                                        s.connected == "connected to the only one"
                                         util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
                                                       "Ethernet", 10.0, 10.0)
+                                        print(f"Connecting substation number found: {s.connecting_TS_nums[0]} for {s.substationNumber}")
                                         break
-                                elif substation.substationNumber == int(s.connecting_TS_nums[0]) and s.connected == "":
-                                    s_to = substation
-                                    s.connected == "connected to the only one"
-                                    util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
-                                                  "Ethernet", 10.0, 10.0)
-                                    print(f"Connecting substation number found: {s.connecting_TS_nums[0]} for {s.substationNumber}")
-                                    break
                             # print("Connecting substation object found with router label   :", s_to.substationRouter[0].label)
                             # util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                         elif s.type == "transmission":
@@ -772,13 +773,17 @@ class CyberPhysicalSystem:
                 for s in substations:
                     s_to = None
                     if s.utility_id == util.id:
-                        if s.type == "generation":
+                        if s.type == "generation" and s.connected == "":
                             for substation in substations:
-                                if substation.substationNumber == int(s.connecting_TS_nums[len(s.connecting_TS_nums)-2]) and substation.type == "generation" and (s.connected == "" or s.connected == "connected to other generation" or s.connected == "connected to only one"):
+                                if substation.utility_id == util.id and substation.substationNumber == int(s.connecting_TS_nums[len(s.connecting_TS_nums)-2]) and substation.type == "generation":
                                     s_to = substation
                                     print(f"Connecting GENERATION substation number found: {s.connecting_TS_nums[len(s.connecting_TS_nums)-1]} for {s.substationNumber}")
                                     s.connected = "connected to other generation"
                                     break
+                                else:
+                                    util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet",
+                                                  10.0, 10.0)
+                                    s.connected == "connected to utility"
                             if s_to is not None:
                                 util.add_link(s_to.substationRouter[0].label, s.substationRouter[0].label,
                                               "Ethernet", 10.0, 10.0)

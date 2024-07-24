@@ -27,7 +27,7 @@ for file in utils_files:
         # print(utility['substationsRouter'][0])
         utilLabel = utility['substationsRouter'][0]['label']
         for nodes in utility['nodes']:
-            if 'Router' in nodes['label'] and nodes['label'] not in added_routers:
+            if 'Router' in nodes['label']:
                 #print(nodes['label'])
                 G.add_node(nodes['label'], pos=(utility['longitude'], utility['latitude']), label=nodes['label'], color='#FFA500')
                 added_routers.add(nodes['label'])
@@ -35,17 +35,23 @@ for file in utils_files:
 
         for substation in utility['substations']:
            for nodes in substation['nodes']:
-               if 'Router' in nodes['label']:
+               if 'Router' in str(nodes['label']):
                    router_info = nodes['label']
-                   if nodes['label'] not in added_routers:
-                       G.add_node(nodes['label'], pos=(substation['longitude'], substation['latitude']), label=nodes['label'], color='#00FF00')
-                       added_routers.add(router_info)
-                       sub_routers += 1
+                   print("Node added: ", router_info)
+                   # if nodes['label'] not in added_routers:
+                   G.add_node(nodes['label'], pos=(substation['longitude'], substation['latitude']), label=nodes['label'], color='#00FF00')
+                   added_routers.add(router_info)
+                   sub_routers += 1
 
         for link in utility['links']:
-            if ('Router' in link["source"]) and ('Router' in link["destination"]) and link['source'] in added_routers and link['destination'] in added_routers:
+            # print(link["source"])
+            # print(link["destination"])
+            if ('Router' in link["source"]) and ('Router' in link["destination"]): # and link['source'] in added_routers and link['destination'] in added_routers:
+                # print([n for n, d in G.nodes(data=True) if d['label'] == link["source"]])
                 n1 = [n for n, d in G.nodes(data=True) if d['label'] == link["source"]][0]
                 n2 = [n for n, d in G.nodes(data=True) if d['label'] == link["destination"]][0]
+                # print(n1)
+                # print(n2)
                 G.add_edge(n1, n2)
             elif 'Router' in link["source"] and 'Router' not in link["destination"]:
                 G.add_edge(link["source"], utilLabel)
@@ -70,6 +76,7 @@ for file in reg_files:
                n2 = [n for n, d in G.nodes(data=True) if d['label'] == link["destination"]][0]
                G.add_edge(n1, n2)
 case = config['DEFAULT']['case']
+config = config['DEFAULT']['topology_configuration']
 if '500' in case:
     gdf = gpd.read_file('Nc.shp')
 elif '2k' in case:
@@ -101,6 +108,7 @@ ax.set_title("Node Degree Distribution", fontsize=16)
 ax.set_xlabel("Node Degree", fontsize=16)
 ax.set_ylabel("Number of Nodes", fontsize=16)
 fig.tight_layout()
+plt.savefig(f'Node_Degree_Distribution_{case}_{config}.png', dpi=300)
 plt.show()
 
 diameter = nx.diameter(G) if nx.is_connected(G) else "Graph is not connected"
