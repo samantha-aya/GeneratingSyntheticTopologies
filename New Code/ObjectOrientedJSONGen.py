@@ -266,10 +266,9 @@ class Utility:
         self.linkSubEMStoSubsRouter = []
         self.linkSubsRoutertoSubsFirewall = []
         self.compromised = False
-        self.regulatory = ""
 
     def add_regulatory(self, reg):
-        self.regulatory = reg
+        self.regulatory = str(reg)
     def add_node(self, node):
         self.nodes.append(node)
     def add_utilityFirewall(self, utilFirewall):
@@ -308,13 +307,14 @@ class Utility:
         self.linkSubsRoutertoSubsFirewall.append(link)
 
 class Regulatory:
-    def __init__(self, label, networklan, utils, utilFirewalls, latitude, longitude):
+    def __init__(self, label, networklan, utils, utilFirewalls, latitude, longitude, no_utils):
         self.label = label
         self.networkLan = networklan
         self.subnetMask = "255.255.255.0"
         self.utilities = utils
         self.latitude = latitude
         self.longitude = longitude
+        self.number_of_utils = no_utils
         self.useableHost = [f"172.30.0.{i}" for i in range(1, 254)]
         self.utilityFirewalls = utilFirewalls
         self.iccpclient = []
@@ -872,6 +872,10 @@ class CyberPhysicalSystem:
                 for i, name in enumerate([f"Regulatory {i}" for i in range(num_regs)])
             }
 
+            firewall_start = 1700
+            router_start = 1550
+            iccp_start = 2800
+
             # print(unique_dict_reg)
             for key, val in unique_dict_reg.items():
                 print(key)
@@ -881,21 +885,25 @@ class CyberPhysicalSystem:
                     utils=[u for u in utilities if u.regulatory == key],
                     utilFirewalls=[u.utilityFirewall for u in utilities if u.regulatory == key],
                     latitude=val.get('latitude'),
-                    longitude=val.get('longitude')
+                    longitude=val.get('longitude'),
+                    no_utils=val.get('num_of_utils')
                 )
                 regFirewall = Firewall([], [], reg.latitude, reg.longitude,
                                     utility="balancing_authority", substation="ba",
-                                    label=f"balancing_authority.ba..Firewall 1701",
+                                    label=f"balancing_authority.ba..Firewall {firewall_start+1}",
                                     vlan='1')
+                firewall_start +=1
                 regRouter = Router(interfaces=["eth0", "eth1"], routingTable={},
                                    utility="balancing_authority", substation="ba",
-                                   label=f"balancing_authority.ba..Router 1551",
+                                   label=f"balancing_authority.ba..Router {router_start+1}",
                                    vlan='1')
+                router_start +=1
                 iccpClient = Host(openPorts=[16, 32], utility="balancing_authority", substation="ba",
                                   ipaddress=f"172.{val.get('id')}.0.6",  # interface to firewall
                                   subnetMask="255.255.255.252", #ideally every host, and router interface, and firewall interface should have a subnet mask attribute
-                                  label=f"balancing_authority.ba..Host 2801",
+                                  label=f"balancing_authority.ba..Host {iccp_start+1}",
                                   vlan='1')
+                iccp_start +=1
 
                 # Add node objects
                 reg.add_node(regFirewall)
@@ -922,11 +930,12 @@ class CyberPhysicalSystem:
                 reg.add_link(regFirewall.label, regRouter.label, "Ethernet", 10.0, 10.0)
 
                 for u in utilities:
-                    reg.add_node(u.utilityFirewall[0])
-                    # firewall command to add the firewalls
-                    regRouter.add_interfaces(f"eth{u.id}", f"10.{u.id}.0.34","255.255.255.252")  # routing subnet (external) ***this one will be changed
-                    regFirewall.add_acl_rule(f"acl{u.id}", "Allow ICCP", f"172.30.{val.get('id')}.6", f"10.{u.id}.0.3", "102", "TCP","allow")  # between utilICCPServer and regICCPClient
-                    reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
+                    if u.regulatory == key:
+                        reg.add_node(u.utilityFirewall[0])
+                        # firewall command to add the firewalls
+                        regRouter.add_interfaces(f"eth{u.id}", f"10.{u.id}.0.34","255.255.255.252")  # routing subnet (external) ***this one will be changed
+                        regFirewall.add_acl_rule(f"acl{u.id}", "Allow ICCP", f"172.30.{val.get('id')}.6", f"10.{u.id}.0.3", "102", "TCP","allow")  # between utilICCPServer and regICCPClient
+                        reg.add_link(regRouter.label, u.utilityRouter[0].label, "fiber", 10.0, 100.0)
                 regulatory.append(reg)
                 name_json = f"Regulatory{val.get('id')}.json"
                 output_to_json_file(reg, filename=os.path.join(cwd, "Output\\Regulatory", name_json))
@@ -943,7 +952,8 @@ class CyberPhysicalSystem:
                 utils=utilities,
                 utilFirewalls=[ut.utilityFirewall for ut in utilities],
                 latitude=centroid[0][0],
-                longitude=centroid[0][1]
+                longitude=centroid[0][1],
+                no_utils = len(utilities)
             )
             regFirewall = Firewall([], [], reg.latitude, reg.longitude,
                                     utility="balancing_authority", substation="ba",

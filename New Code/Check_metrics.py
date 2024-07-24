@@ -37,7 +37,7 @@ for file in utils_files:
            for nodes in substation['nodes']:
                if 'Router' in str(nodes['label']):
                    router_info = nodes['label']
-                   print("Node added: ", router_info)
+                   # print("Node added: ", router_info)
                    # if nodes['label'] not in added_routers:
                    G.add_node(nodes['label'], pos=(substation['longitude'], substation['latitude']), label=nodes['label'], color='#00FF00')
                    added_routers.add(router_info)
@@ -67,14 +67,16 @@ for file in reg_files:
        # adding regulatory node to the graph
        G.add_node(reg_data['regulatoryRouter'][0]['label'], pos=(reg_data['longitude'], reg_data['latitude']), label=reg_data['regulatoryRouter'][0]['label'], color='#DC143C')
        added_routers.add(reg_data['regulatoryRouter'][0]['label'])
-
-       print(reg_data['links'])
+       # print(reg_data['links'])
        for link in reg_data['links']:
            if ('Router' in link["source"]) and ('Router' in link["destination"]) and link['source'] in added_routers and link['destination'] in added_routers:
                # find node with label link["source"] and link["destination"]
                n1 = [n for n, d in G.nodes(data=True) if d['label'] == link["source"]][0]
+               print(n1)
                n2 = [n for n, d in G.nodes(data=True) if d['label'] == link["destination"]][0]
+               print(n2)
                G.add_edge(n1, n2)
+
 case = config['DEFAULT']['case']
 config = config['DEFAULT']['topology_configuration']
 if '500' in case:
@@ -84,13 +86,12 @@ elif '2k' in case:
 elif '10k' in case:
     gdf = gpd.read_file('WECC.shp')
 
-gdf = gpd.read_file('Nc.shp')
 fig, ax = plt.subplots(figsize=(15, 15))
 pos = nx.get_node_attributes(G, 'pos')
 colors = [G.nodes[node]['color'] for node in G.nodes]
 gdf.plot(ax=ax, color='white', edgecolor='black', alpha=0.1)  # Plot the shapefile
 nx.draw(G, pos, with_labels=False, node_size=20, width=0.2, node_color=colors)
-# plt.show()
+plt.show()
 
 # Calculating metrics
 average_path_length = nx.average_shortest_path_length(G) if nx.is_connected(G) else "Graph is not connected"
@@ -182,7 +183,7 @@ print("Maximum Degree: ", max_degree)
 # print("Algebraic connectivity:  ", algebraic_connectivity)
 print("Number of links:  ", number_of_links)
 print("Total number of nodes:  ", number_of_nodes)
-print(f"{sub_routers} substations, {util_routers} utilities, and 1 regulatory")
+print(f"{sub_routers} substations, {int(util_routers)/2} utilities, and 1 regulatory")
 print(f"{len(added_routers)}")
 print("Network Density:  ", network_density)
 print("Regulatory ACLs: ", regTotalACLs)
@@ -192,7 +193,7 @@ print("Total Number of ACLs: ", totalACLs)
 
 components = list(nx.connected_components(G))
 print(f"The graph has {len(components)} connected components.")
-for i, component in enumerate(components, 1):
-    print(f"Component {i}: {component}")
+# for i, component in enumerate(components, 1):
+#     print(f"Component {i}: {component}")
 
 print("Time to check metrics: ", total_time_metrics)
