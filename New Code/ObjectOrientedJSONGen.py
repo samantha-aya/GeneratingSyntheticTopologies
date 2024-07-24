@@ -780,7 +780,7 @@ class CyberPhysicalSystem:
                                     print(f"Connecting GENERATION substation number found: {s.connecting_TS_nums[len(s.connecting_TS_nums)-1]} for {s.substationNumber}")
                                     s.connected = "connected to other generation"
                                     break
-                                else:
+                                elif substation.utility_id == util.id:
                                     util.add_link(substationsRouter.label, s.substationRouter[0].label, "Ethernet",
                                                   10.0, 10.0)
                                     s.connected == "connected to utility"

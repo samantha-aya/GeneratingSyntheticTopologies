@@ -112,8 +112,8 @@ plt.savefig(f'Node_Degree_Distribution_{case}_{config}.png', dpi=300)
 plt.show()
 
 diameter = nx.diameter(G) if nx.is_connected(G) else "Graph is not connected"
-worst_case_connectivity = len(min(nx.connectivity.cuts.minimum_node_cut(G), key=len)) if nx.is_connected(G) else "Graph is not connected"
-algebraic_connectivity = nx.algebraic_connectivity(G)
+# worst_case_connectivity = len(min(nx.connectivity.cuts.minimum_node_cut(G), key=len)) if nx.is_connected(G) else "Graph is not connected"
+# algebraic_connectivity = nx.algebraic_connectivity(G)
 number_of_links = G.number_of_edges()
 number_of_nodes = G.number_of_nodes()
 network_density = nx.density(G)
@@ -122,38 +122,39 @@ network_density = nx.density(G)
 utilTotalACLs = 0
 subTotalACLs = 0
 regTotalACLs = 0
+totalACLs = 0
 
-for file in reg_files:
-    filepath = os.path.join(reg_path, file)
-    with open(filepath, 'r') as file:
-        data = json.load(file)
-        for utility in data['utilities']:
-            for node in utility['nodes']:
-                if 'Firewall' in node['label']:
-                    keysList = list(node['acls'].keys())
-                    aclCount = len(keysList)
-                    utilTotalACLs +=aclCount
-                    #print(keysList)
-                    #print(aclCount)
-            node = ""
-            for substation in utility['substations']:
-                for node in substation['nodes']:
-                    if 'Firewall' in node['label']:
-                        keysList = list(node['acls'].keys())
-                        aclCount = len(keysList)
-                        subTotalACLs += aclCount
-                        #print(keysList)
-                        #print(aclCount)
-        node = ""
-        for regulatory in data['regulatoryFirewall']:
-            if 'Firewall' in regulatory['label']:
-                keysList = list(regulatory['acls'].keys())
-                aclCount = len(keysList)
-                regTotalACLs += aclCount
-                print(keysList)
-                # print(aclCount)
-
-totalACLs = utilTotalACLs + subTotalACLs + regTotalACLs
+# for file in reg_files:
+#     filepath = os.path.join(reg_path, file)
+#     with open(filepath, 'r') as file:
+#         data = json.load(file)
+#         for utility in data['utilities']:
+#             for node in utility['nodes']:
+#                 if 'Firewall' in node['label']:
+#                     keysList = list(node['acls'].keys())
+#                     aclCount = len(keysList)
+#                     utilTotalACLs +=aclCount
+#                     #print(keysList)
+#                     #print(aclCount)
+#             node = ""
+#             for substation in utility['substations']:
+#                 for node in substation['nodes']:
+#                     if 'Firewall' in node['label']:
+#                         keysList = list(node['acls'].keys())
+#                         aclCount = len(keysList)
+#                         subTotalACLs += aclCount
+#                         #print(keysList)
+#                         #print(aclCount)
+#         node = ""
+#         for regulatory in data['regulatoryFirewall']:
+#             if 'Firewall' in regulatory['label']:
+#                 keysList = list(regulatory['acls'].keys())
+#                 aclCount = len(keysList)
+#                 regTotalACLs += aclCount
+#                 print(keysList)
+#                 # print(aclCount)
+#
+# totalACLs = utilTotalACLs + subTotalACLs + regTotalACLs
 
 #average shortest path length TRUE distance
 #if nx.is_connected(G):
