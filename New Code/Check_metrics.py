@@ -61,7 +61,7 @@ reg_path = 'Output/Regulatory/'
 reg_files = os.listdir(reg_path)
 for file in reg_files:
     filepath = os.path.join(reg_path, file)
-    print(filepath)
+    # print(filepath)
     with open(filepath, 'r') as file:
        reg_data = json.load(file)
        # adding regulatory node to the graph
@@ -72,9 +72,7 @@ for file in reg_files:
            if ('Router' in link["source"]) and ('Router' in link["destination"]) and link['source'] in added_routers and link['destination'] in added_routers:
                # find node with label link["source"] and link["destination"]
                n1 = [n for n, d in G.nodes(data=True) if d['label'] == link["source"]][0]
-               print(n1)
                n2 = [n for n, d in G.nodes(data=True) if d['label'] == link["destination"]][0]
-               print(n2)
                G.add_edge(n1, n2)
 
 case = config['DEFAULT']['case']
@@ -103,6 +101,8 @@ degree_sequence = sorted((d for n, d in G.degree()), reverse=True)
 max_degree = max(degree_sequence)
 min_degree = min(degree_sequence)
 degrees, counts = np.unique(degree_sequence, return_counts=True)
+# export node degree distribution to a csv file
+np.savetxt(f'Node_Degree_Distribution_{case}_{config}.csv', np.column_stack((degrees, counts)), delimiter=',', fmt='%d', header='Degree, Counts', comments='')
 ax.bar(degrees, counts)
 ax.plot(degrees, counts, color='red', marker='o')
 ax.set_title("Node Degree Distribution", fontsize=16)
