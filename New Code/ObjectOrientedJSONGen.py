@@ -293,18 +293,6 @@ class Utility:
     def add_link(self, source_id, destination_id, link_type, bandwidth, distance):
         link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
         self.links.append(link)
-    def add_linkUtlFirewalltoUtlRouter(self, source_id, destination_id, link_type, bandwidth, distance):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
-        self.linkUtlFirewalltoUtlRouter.append(link)
-    def add_linkUtlRoutertoEMS(self, source_id, destination_id, link_type, bandwidth, distance):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
-        self.linkUtlRoutertoEMS.append(link)
-    def add_linkSubEMStoSubsRouter(self, source_id, destination_id, link_type, bandwidth, distance):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
-        self.linkSubEMStoSubsRouter.append(link)
-    def add_linkSubsRoutertoSubsFirewall(self, source_id, destination_id, link_type, bandwidth, distance):
-        link = Link(source=source_id, destination=destination_id, link_type=link_type, bandwidth=bandwidth, distance=distance)
-        self.linkSubsRoutertoSubsFirewall.append(link)
 
 class Regulatory:
     def __init__(self, label, networklan, utils, utilFirewalls, latitude, longitude, no_utils):
@@ -833,17 +821,32 @@ class CyberPhysicalSystem:
                             destination_substation = substation
                         if substation.substationNumber == int(util_node):
                             substation.substationRouter[0].label = substationsRouter.label
+                            #delete this substation from the substations list
+                            track_subs_to_delete.append(substation.substationNumber)
                     logger.info(f"Source substation: {source_substation.substationNumber}")
                     logger.info(f"Destination substation: {destination_substation.substationNumber}")
                     util.add_link(source_substation.substationRouter[0].label, destination_substation.substationRouter[0].label, "Ethernet", 10.0, 10.0)
                     logger.info(f"Link added between {source_substation.substationRouter[0].label} and {destination_substation.substationRouter[0].label}")
+                # delete track_subs_to_delete from substations
+                for sub in track_subs_to_delete:
+                    for s in substations:
+                        if s.substationNumber == sub:
+                            substations.remove(s)
+                            break
+                # delete track_subs_to_delete from util.substations
+                for sub in track_subs_to_delete:
+                    for s in util.substations:
+                        if s.substationNumber == sub:
+                            util.substations.remove(s)
+                            break
 
             # utilityRouter --> DMZFirewall
             util.add_link(utilRouter.label, DMZFirewall.label, "Ethernet", 10.0, 10.0)
-
             utilities.append(util)
             name_json = f"Region.{key}.json"
             output_to_json_file(util, filename=os.path.join(cwd, "Output\\Utilities", name_json))
+
+
 
             metrics_df.to_csv("Output\\metrics.csv", index=False)
         return utilities

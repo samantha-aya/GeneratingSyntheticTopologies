@@ -61,10 +61,12 @@ for name, group in df_all.groupby('Type'):
     print(group)
     ax.bar(group['Degree'], group[' Counts'], label=name, width=0.8, alpha=0.8, color=colors[name])
     ax.plot(group['Degree'], group[' Counts'], marker='o', color=colors[name])
-ax.set_xlim(0, 15)
+ax.set_xlim(0, 10)
 ax.xaxis.set_major_locator(MaxNLocator(integer=True))
 ax.set_xlabel("Node Degree", fontsize=20)
 ax.set_ylabel("Number of Nodes", fontsize=20)
+# font size of the xticks and yticks
+ax.tick_params(axis='both', which='major', labelsize=20)
 ax.legend(fontsize=15)
 fig.tight_layout()
 plt.savefig(f'Node_Degree_Distribution_{case}.png', dpi=300)

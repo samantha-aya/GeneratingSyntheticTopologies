@@ -21,7 +21,7 @@ i=0
 
 for file in utils_files:
     filepath = os.path.join(utils_path, file)
-    print(filepath)
+    # print(filepath)
     with open(filepath, 'r', encoding='utf-8') as file:
         utility = json.load(file)
         # print(utility['substationsRouter'][0])
@@ -94,6 +94,8 @@ plt.show()
 # Calculating metrics
 average_path_length = nx.average_shortest_path_length(G) if nx.is_connected(G) else "Graph is not connected"
 # average_path_length & degree & diameter for routers only?
+diameter = nx.diameter(G) if nx.is_connected(G) else "Graph is not connected"
+
 
 # gets node degree max and min and also plots the node degree distribution
 fig, ax = plt.subplots(figsize=(8, 6))
@@ -112,7 +114,7 @@ fig.tight_layout()
 plt.savefig(f'Node_Degree_Distribution_{case}_{config}.png', dpi=300)
 plt.show()
 
-diameter = nx.diameter(G) if nx.is_connected(G) else "Graph is not connected"
+
 # worst_case_connectivity = len(min(nx.connectivity.cuts.minimum_node_cut(G), key=len)) if nx.is_connected(G) else "Graph is not connected"
 # algebraic_connectivity = nx.algebraic_connectivity(G)
 number_of_links = G.number_of_edges()
@@ -152,7 +154,7 @@ for file in reg_files:
                 keysList = list(regulatory['acls'].keys())
                 aclCount = len(keysList)
                 regTotalACLs += aclCount
-                print(keysList)
+                # print(keysList)
                 # print(aclCount)
 
 totalACLs = utilTotalACLs + subTotalACLs + regTotalACLs
@@ -169,7 +171,25 @@ end_metrics = time.time()
 total_time_metrics = end_metrics - start_metrics
 # total_time = (adding all three times, json, graph, and metrics)
 
+if '10k' in case:
+    avg_path_lengths = []
+    dias = []
+    components = list(nx.connected_components(G))
+    for component in components:
+        subgraph = G.subgraph(component)
+        avg_path_len = nx.average_shortest_path_length(subgraph) if nx.is_connected(subgraph) else "Graph is not connected"
+        avg_path_lengths.append(avg_path_len)
+        diam = nx.diameter(subgraph) if nx.is_connected(subgraph) else "Graph is not connected"
+        dias.append(diam)
 
+    average_path_length = statistics.mean(avg_path_lengths)
+    diameter = statistics.mean(dias)
+
+components = list(nx.connected_components(G))
+print(f"The graph has {len(components)} connected components.")
+
+for i, component in enumerate(components, 1):
+    print(f"Component {i}: {component}")
 
 #print(average_path_length, node_degree, diameter, worst_case_connectivity, algebraic_connectivity, number_of_links, network_density)
 print("Average path length:  ", average_path_length)
@@ -190,10 +210,5 @@ print("Regulatory ACLs: ", regTotalACLs)
 print("Utility ACLs: ", utilTotalACLs)
 print("Substation ACLs: ", subTotalACLs)
 print("Total Number of ACLs: ", totalACLs)
-
-components = list(nx.connected_components(G))
-print(f"The graph has {len(components)} connected components.")
-# for i, component in enumerate(components, 1):
-#     print(f"Component {i}: {component}")
 
 print("Time to check metrics: ", total_time_metrics)

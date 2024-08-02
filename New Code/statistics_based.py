@@ -11,6 +11,15 @@ import math
 import igraph as ig
 import matplotlib.pyplot as plt
 from numpy.linalg import norm
+import logging
+import os
+
+cwd = os.getcwd()
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
+logging.basicConfig(filename=os.path.join(cwd, 'progress_stats.log'), filemode='w', level=logging.INFO)
+#logging.basicConfig(filename='C:/ECEN689Project/New Code/progress.log', filemode='w', level=logging.INFO)
+loggerstat = logging.getLogger()
 
 def lognormal(x, a, b):
     # numpy.random.lognormal
@@ -163,6 +172,13 @@ def generate_nwk(subs, gens):
         #print('iteration:', i)
         g = ig.Graph.Degree_Sequence(seq.tolist(), method="simple") #nx.havel_hakimi_graph(seq.tolist()) #
         g = ig.Graph.to_networkx(g)
+
+        if len(g.nodes()) < n:
+            u = random.choice(list(g.nodes()))
+            g.add_node(len(g.nodes())+1)
+            g.add_edge(u, len(g.nodes())+1)
+
+        loggerstat.info(f"Graph generated with {len(g.nodes())} nodes and {len(g.edges())} edges")
 
         #if the graph is not connected then get all the isolated components and add edges between them
         if not nx.is_connected(g):
