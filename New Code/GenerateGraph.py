@@ -427,7 +427,7 @@ if __name__ == "__main__":
     # file_path = os.path.join(cwd, 'Output\\Regulatory\\Regulatory.json')
     #
     # # Load the JSON file
-    # with open(file_path, 'r') as file:
+    # with open(file_path, 'r') as file:G
     #     data = json.load(file)
     # main(code_to_run, data)
     main(code_to_run, [])
