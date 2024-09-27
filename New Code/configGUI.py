@@ -69,7 +69,7 @@ def save_settings_and_run():
     clear_output_directories()
 
     # Run the next script using subprocess
-    subprocess.run(["python", "ObjectOrientedJSONGen.py"])
+    subprocess.run(["C:/GitHubProjects/ECEN689Project/venv1/Scripts/python", "ObjectOrientedJSONGen.py"])
 
 # GUI Code
 root = tk.Tk()
