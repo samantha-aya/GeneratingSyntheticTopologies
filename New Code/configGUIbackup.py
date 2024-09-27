@@ -1,23 +1,23 @@
 import tkinter as tk
 from tkinter import ttk
-import configparser  # For working with INI files
+import configparser  #for settings.ini file
 import subprocess
 import os
-import shutil  # For deleting files and directories
-import time  # To track the elapsed time
-from threading import Thread  # To run the script asynchronously
+import shutil  #for deleting the old JSON files
+import time  #to track the elapsed time
+from threading import Thread  #to run the script asynchronously
 
-# Dictionary mapping the test case names to their corresponding values
+#dictionary values for settings file based on GUI input
 test_case_mapping = {
     'S. Carolina 500-bus': '500',
     'Texas 2,000-bus': '2k',
     'WECC 10,000-bus': '10k'
 }
 
-running = False  # Global flag to check if the script is running
+running = False  #global flag to check if the script is running
 
 
-# Function to clear the contents of the output directories
+#function to clear the output folders
 def clear_output_directories():
     directories_to_clear = [
         "Output\\Substations",
@@ -27,49 +27,49 @@ def clear_output_directories():
 
     for directory in directories_to_clear:
         if os.path.exists(directory):
-            # Clear the directory by removing its contents
+            #clear the directory by old JSONs
             for filename in os.listdir(directory):
                 file_path = os.path.join(directory, filename)
                 try:
                     if os.path.isfile(file_path) or os.path.islink(file_path):
-                        os.unlink(file_path)  # Remove the file or symbolic link
+                        os.unlink(file_path)  #remove the file
                     elif os.path.isdir(file_path):
-                        shutil.rmtree(file_path)  # Remove the directory and its contents
+                        shutil.rmtree(file_path)  #remove the directory and its contents
                 except Exception as e:
                     print(f'Failed to delete {file_path}. Reason: {e}')
 
 
-# Function to update the existing INI settings file and run the second script
+#function to update the existing INI settings file and run the second script
 def save_settings_and_run():
-    # Start a new thread for running the script and timing
+    #start a new thread for running the script and timing
     def run_script():
-        global running  # Set the flag to True when the script starts
+        global running  #set the flag to True when the script starts
         running = True
 
-        # Delay for 2 seconds before starting the timer
+        #delay for 2 seconds before starting the timer
         time.sleep(2)
 
         start_time = time.time()
 
-        # Show the timer label at the bottom after the script starts running
-        timer_label.place(x=10, y=240)  # Adjust the label slightly lower (y=240)
-        update_timer(start_time)  # Start updating the timer
+        #show the timer label at the bottom after the script starts running
+        timer_label.place(x=10, y=240)  #adjust the label location (y=240)
+        update_timer(start_time)  #start updating the timer
 
         config = configparser.ConfigParser()
 
-        # Load the existing INI settings file
+        #load the existing INI settings file
         config.read("settings.ini")
 
-        # Get the selected test case and map it to the desired value
+        #get the selected test case and map it to the desired value
         selected_test_case = testCasevar.get()
         mapped_test_case = test_case_mapping.get(selected_test_case, 'default_case')
 
-        # Update the settings with the new values from the GUI
-        config['DEFAULT']['n_clusters'] = str(int(uccNumber.get()))  # No quotes for n_clusters
-        config['DEFAULT']['n_ba'] = str(int(baNumber.get()))  # No quotes for n_ba
-        config['DEFAULT']['case'] = f"'{mapped_test_case}'"  # Save the mapped test case value in quotes
+        #update the settings with the new values from the GUI
+        config['DEFAULT']['n_clusters'] = str(int(uccNumber.get()))
+        config['DEFAULT']['n_ba'] = str(int(baNumber.get()))
+        config['DEFAULT']['case'] = f"'{mapped_test_case}'"  #save the mapped test case value in quotes
 
-        # Update topology and no_powerworld based on selection
+        #update topology and no_powerworld based on selection
         selected_topology = topologySelection.get()
         if selected_topology == 'star':
             config['DEFAULT']['topology_configuration'] = "'star'"
@@ -81,66 +81,76 @@ def save_settings_and_run():
             config['DEFAULT']['topology_configuration'] = "'statistics'"
             config['DEFAULT']['no_powerworld'] = "'False'"
 
-        # Save the updated settings back to the INI file
+        #save the updated settings back to the INI file
         with open("settings.ini", "w") as configfile:
             config.write(configfile)
 
-        # Clear the output directories before running the next script
+        #clear the output directories before running the next script
         clear_output_directories()
 
-        # Run the next script using subprocess
+        #run the next script using subprocess
         subprocess.run(["C:/GitHubProjects/ECEN689Project/venv1/Scripts/python", "ObjectOrientedJSONGen.py"])
+        #subprocess.run(["ECEN689Project//venv1//Scripts//python", "ObjectOrientedJSONGen.py"]) ???
 
         end_time = time.time()
         elapsed_time = end_time - start_time
-        update_timer_label(elapsed_time)  # Stop the timer and show final time with milliseconds
+        update_timer_label(elapsed_time)  #stop the timer and show final time including milliseconds (for analysis purposes)
 
-        running = False  # Set the flag to False when the script finishes
+        running = False  #set the flag to False when the script finishes
 
-    # Run the script in a separate thread
+    #run the script in a separate thread
     script_thread = Thread(target=run_script)
     script_thread.start()
 
 
-# Function to update the timer every 10 milliseconds (without milliseconds in the display)
+#function to update the timer every 10 milliseconds (without milliseconds in the display bc it's too much visually)
 def update_timer(start_time):
-    if running:  # Keep updating the timer while the script is running
+    if running:  #keep updating the timer while the script is running
         elapsed_time = time.time() - start_time
         hours, remainder = divmod(elapsed_time, 3600)
         minutes, remainder = divmod(remainder, 60)
         seconds = int(remainder)
 
         timer_label.config(
-            #text=f"Loading... Elapsed time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}")
-            text = f"Generating JSON files, time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}")
+            text=f"Generating JSON files, time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}")
 
-        # Schedule the next update in 10 milliseconds
+        #schedule the next update in 10 milliseconds
         root.after(10, lambda: update_timer(start_time))
 
 
-# Function to stop the timer and display the final elapsed time including milliseconds
+#function to stop the timer and display the final elapsed time including milliseconds
 def update_timer_label(elapsed_time):
     hours, remainder = divmod(elapsed_time, 3600)
     minutes, remainder = divmod(remainder, 60)
     seconds, milliseconds = divmod(remainder, 1)
 
-    # Display completed time including milliseconds at the end
+    #display completed time including milliseconds at the end
     timer_label.config(
         text=f"Completed! Total time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}.{int(milliseconds * 1000):03}")
 
+    #wait for a few seconds before running visualizationSelection.py
+    root.after(2000, run_visualization)  #wait for 3000 milliseconds (3 seconds)
 
-# GUI Code
+
+def run_visualization():
+    subprocess.run(["C:/GitHubProjects/ECEN689Project/venv1/Scripts/python", "visualizationSelection.py"])
+
+
+#GUI code
 root = tk.Tk()
-root.geometry('220x275')  # Set the size of the window
+root.geometry('220x275')  #set the size of the window
 
+#title
 configTitle = tk.Label(text="Configuration Window")
 configTitle.pack()
 configTitle.place(x=50, y=0)
 
+#label for test case selection
 caseSelection = tk.Label(text="Case:")
 caseSelection.pack()
 caseSelection.place(x=10, y=30)
 
+#combobox for test case selection
 testCasevar = tk.StringVar()
 testCase = ttk.Combobox(root, textvariable=testCasevar)
 testCase['values'] = ('S. Carolina 500-bus', 'Texas 2,000-bus', 'WECC 10,000-bus')
@@ -148,10 +158,12 @@ testCase.state(["readonly"])
 testCase.pack()
 testCase.place(x=50, y=30)
 
+#label for topology selection
 topology = tk.Label(text="Topology:")
 topology.pack()
 topology.place(x=10, y=60)
 
+#radio buttons for topologies
 topologySelection = tk.StringVar()
 star = ttk.Radiobutton(root, text='Star', variable=topologySelection, value='star')
 radial = ttk.Radiobutton(root, text='Radial', variable=topologySelection, value='radial')
@@ -163,6 +175,7 @@ star.place(x=70, y=60)
 radial.place(x=70, y=80)
 statistics.place(x=70, y=100)
 
+#label & spinbox for the UCC's
 numUCC = tk.Label(text="Number of UCC's:")
 numUCC.pack(side=tk.LEFT)
 numUCC.place(x=10, y=130)
@@ -170,6 +183,7 @@ uccNumber = tk.DoubleVar()
 uccSpinbox = tk.Spinbox(root, from_=1, to=100, increment=1, textvariable=uccNumber, width=4)
 uccSpinbox.place(x=120, y=130)
 
+#label & spinbox for the BA's
 numBA = tk.Label(text="Number of BA's:")
 numBA.pack(side=tk.LEFT)
 numBA.place(x=10, y=150)
@@ -177,11 +191,11 @@ baNumber = tk.DoubleVar()
 baSpinbox = tk.Spinbox(root, from_=1, to=50, increment=1, textvariable=baNumber, width=4)
 baSpinbox.place(x=120, y=150)
 
-# Create the timer label but keep it hidden initially
+#create the timer label but keep it hidden
 timer_label = tk.Label(root, text="Loading... Elapsed time: 00:00:00")
-timer_label.pack_forget()  # Hide the label initially
+timer_label.pack_forget()  #hide the label initially
 
-# Bind the "Run" button to save settings and run the script
+#bind the "Run" button to save settings and run the script
 runButton = tk.Button(
     root,
     text="Run",
@@ -189,7 +203,7 @@ runButton = tk.Button(
     height=1,
     bg="gray",
     fg="white",
-    command=save_settings_and_run  # Bind the function here
+    command=save_settings_and_run  #bind the function here
 )
 runButton.pack()
 runButton.place(x=90, y=200)
