@@ -1,13 +1,13 @@
 import tkinter as tk
 from tkinter import ttk
-import configparser  #for working with INI files
+import configparser  #for settings.ini file
 import subprocess
 import os
-import shutil  #for deleting files and directories
+import shutil  #for deleting the old JSON files
 import time  #to track the elapsed time
 from threading import Thread  #to run the script asynchronously
 
-#dictionary mapping the test case names to their corresponding values
+#dictionary values for settings file based on GUI input
 test_case_mapping = {
     'S. Carolina 500-bus': '500',
     'Texas 2,000-bus': '2k',
@@ -17,7 +17,7 @@ test_case_mapping = {
 running = False  #global flag to check if the script is running
 
 
-#function to clear the contents of the output directories
+#function to clear the output folders
 def clear_output_directories():
     directories_to_clear = [
         "Output\\Substations",
@@ -27,12 +27,12 @@ def clear_output_directories():
 
     for directory in directories_to_clear:
         if os.path.exists(directory):
-            #clear the directory by removing its contents
+            #clear the directory by old JSONs
             for filename in os.listdir(directory):
                 file_path = os.path.join(directory, filename)
                 try:
                     if os.path.isfile(file_path) or os.path.islink(file_path):
-                        os.unlink(file_path)  #remove the file or symbolic link
+                        os.unlink(file_path)  #remove the file
                     elif os.path.isdir(file_path):
                         shutil.rmtree(file_path)  #remove the directory and its contents
                 except Exception as e:
@@ -52,7 +52,7 @@ def save_settings_and_run():
         start_time = time.time()
 
         #show the timer label at the bottom after the script starts running
-        timer_label.place(x=10, y=240)  #adjust the label slightly lower (y=240)
+        timer_label.place(x=10, y=240)  #adjust the label location (y=240)
         update_timer(start_time)  #start updating the timer
 
         config = configparser.ConfigParser()
@@ -90,10 +90,11 @@ def save_settings_and_run():
 
         #run the next script using subprocess
         subprocess.run(["C:/GitHubProjects/ECEN689Project/venv1/Scripts/python", "ObjectOrientedJSONGen.py"])
+        #subprocess.run(["ECEN689Project//venv1//Scripts//python", "ObjectOrientedJSONGen.py"]) ???
 
         end_time = time.time()
         elapsed_time = end_time - start_time
-        update_timer_label(elapsed_time)  #stop the timer and show final time with milliseconds
+        update_timer_label(elapsed_time)  #stop the timer and show final time including milliseconds (for analysis purposes)
 
         running = False  #set the flag to False when the script finishes
 
@@ -102,7 +103,7 @@ def save_settings_and_run():
     script_thread.start()
 
 
-#function to update the timer every 10 milliseconds (without milliseconds in the display)
+#function to update the timer every 10 milliseconds (without milliseconds in the display bc it's too much visually)
 def update_timer(start_time):
     if running:  #keep updating the timer while the script is running
         elapsed_time = time.time() - start_time
@@ -128,7 +129,7 @@ def update_timer_label(elapsed_time):
         text=f"Completed! Total time: {int(hours):02}:{int(minutes):02}:{int(seconds):02}.{int(milliseconds * 1000):03}")
 
     #wait for a few seconds before running visualizationSelection.py
-    root.after(3000, run_visualization)  #wait for 3000 milliseconds (3 seconds)
+    root.after(2000, run_visualization)  #wait for 3000 milliseconds (3 seconds)
 
 
 def run_visualization():
@@ -139,14 +140,17 @@ def run_visualization():
 root = tk.Tk()
 root.geometry('220x275')  #set the size of the window
 
+#title
 configTitle = tk.Label(text="Configuration Window")
 configTitle.pack()
 configTitle.place(x=50, y=0)
 
+#label for test case selection
 caseSelection = tk.Label(text="Case:")
 caseSelection.pack()
 caseSelection.place(x=10, y=30)
 
+#combobox for test case selection
 testCasevar = tk.StringVar()
 testCase = ttk.Combobox(root, textvariable=testCasevar)
 testCase['values'] = ('S. Carolina 500-bus', 'Texas 2,000-bus', 'WECC 10,000-bus')
@@ -154,10 +158,12 @@ testCase.state(["readonly"])
 testCase.pack()
 testCase.place(x=50, y=30)
 
+#label for topology selection
 topology = tk.Label(text="Topology:")
 topology.pack()
 topology.place(x=10, y=60)
 
+#radio buttons for topologies
 topologySelection = tk.StringVar()
 star = ttk.Radiobutton(root, text='Star', variable=topologySelection, value='star')
 radial = ttk.Radiobutton(root, text='Radial', variable=topologySelection, value='radial')
@@ -169,6 +175,7 @@ star.place(x=70, y=60)
 radial.place(x=70, y=80)
 statistics.place(x=70, y=100)
 
+#label & spinbox for the UCC's
 numUCC = tk.Label(text="Number of UCC's:")
 numUCC.pack(side=tk.LEFT)
 numUCC.place(x=10, y=130)
@@ -176,6 +183,7 @@ uccNumber = tk.DoubleVar()
 uccSpinbox = tk.Spinbox(root, from_=1, to=100, increment=1, textvariable=uccNumber, width=4)
 uccSpinbox.place(x=120, y=130)
 
+#label & spinbox for the BA's
 numBA = tk.Label(text="Number of BA's:")
 numBA.pack(side=tk.LEFT)
 numBA.place(x=10, y=150)
@@ -183,7 +191,7 @@ baNumber = tk.DoubleVar()
 baSpinbox = tk.Spinbox(root, from_=1, to=50, increment=1, textvariable=baNumber, width=4)
 baSpinbox.place(x=120, y=150)
 
-#create the timer label but keep it hidden initially
+#create the timer label but keep it hidden
 timer_label = tk.Label(root, text="Loading... Elapsed time: 00:00:00")
 timer_label.pack_forget()  #hide the label initially
 
