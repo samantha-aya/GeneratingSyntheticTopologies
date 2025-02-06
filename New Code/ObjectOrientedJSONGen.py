@@ -856,7 +856,7 @@ class CyberPhysicalSystem:
         if n_ba > 1:
             print('n_ba > 1')
             num_regs = n_ba
-            # cluster utilities into 30 clusters
+            # cluster utilities into n_ba clusters
             kmeans = KMeans(n_clusters=num_regs, random_state=0).fit([[u.latitude, u.longitude] for u in utilities])
             # Extracting the centroids
             centroids = kmeans.cluster_centers_
